@@ -1,0 +1,1 @@
+*** NOTIFICACIÓN DE ASIGNACIÓN DE CANDIDATO NUEVO *** Se le ha asignado el candidato siguiente.   Compañía:  {!Lead.Company} Nombre del candidato:  {!Lead.Name} Haga clic en el vínculo para acceder directamente al candidato:  {!Lead.Link}

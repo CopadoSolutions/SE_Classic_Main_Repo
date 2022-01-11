@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Respuesta automática cuando se envía un caso nuevo en línea.</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>SOPORTE:  Respuesta por correo electrónico de Web para registro de casos (MUESTR</name>
+    <style>none</style>
+    <subject>{!Organization.Name} Case # {!Case.CaseNumber}:  {!Case.Subject}</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

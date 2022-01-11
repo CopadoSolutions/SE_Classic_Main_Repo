@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Notificación interna al propietario del candidato cuando se asigna un candidato nuevo.</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Candidatos:  Notificación de asignación nueva (MUESTRA)</name>
+    <style>none</style>
+    <subject>New lead assigned to you:  {!Lead.Name} from {!Lead.Company}</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

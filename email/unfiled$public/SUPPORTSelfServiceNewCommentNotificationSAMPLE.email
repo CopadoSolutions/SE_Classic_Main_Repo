@@ -1,0 +1,1 @@
+Su nº de caso {!Case.CaseNumber}: {!Case.Subject} se ha actualizado.  Haga clic en el vínculo siguiente para ver este caso en el portal de autoservicio. <inserte aquí el vínculo para la página de inicio de sesión del portal de autoservicio> Servicio de atención al cliente de {!Organization.Name}

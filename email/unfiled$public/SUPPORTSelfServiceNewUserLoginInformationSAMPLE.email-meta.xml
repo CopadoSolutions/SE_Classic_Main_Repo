@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Notificación del inicio de sesión y contraseña de nuevo usuario de autoservicio</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>SOPORTE:  Información de inicio de sesión de usuario nuevo de autoservicio (MUES</name>
+    <style>none</style>
+    <subject>Your {!Organization.Name} Self-Service username and password</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

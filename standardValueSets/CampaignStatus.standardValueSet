@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>In Progress</fullName>
+        <default>false</default>
+        <label>En curso</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Completed</fullName>
+        <default>false</default>
+        <label>Completada</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Aborted</fullName>
+        <default>false</default>
+        <label>Abortada</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Planned</fullName>
+        <default>true</default>
+        <label>Planificada</label>
+    </standardValue>
+</StandardValueSet>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Not Started</fullName>
+        <default>true</default>
+        <label>No iniciada</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>In Progress</fullName>
+        <default>false</default>
+        <label>En curso</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Completed</fullName>
+        <default>false</default>
+        <label>Completada</label>
+        <closed>true</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Waiting on someone else</fullName>
+        <default>false</default>
+        <label>Esperando a otra persona</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Deferred</fullName>
+        <default>false</default>
+        <label>Diferida</label>
+        <closed>false</closed>
+    </standardValue>
+</StandardValueSet>

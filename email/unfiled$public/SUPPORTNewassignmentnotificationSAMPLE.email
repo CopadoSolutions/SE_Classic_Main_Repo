@@ -1,0 +1,1 @@
+*** NOTIFICACIÓN DE ASIGNACIÓN DE CASO NUEVO *** Se le ha asignado el caso siguiente.   Compañía:  {!Account.Name} Nombre del contacto:  {!Contact.Name} Nº de caso:  {!Case.CaseNumber} Asunto:  {!Case.Subject} Descripción: {!Case.Description} Haga clic en el vínculo para acceder al caso:  {!Case.Link}

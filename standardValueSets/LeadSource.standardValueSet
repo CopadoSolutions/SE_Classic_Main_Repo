@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Advertisement</fullName>
+        <default>false</default>
+        <label>Publicidad</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Employee Referral</fullName>
+        <default>false</default>
+        <label>Referencia del empleado</label>
+    </standardValue>
+    <standardValue>
+        <fullName>External Referral</fullName>
+        <default>false</default>
+        <label>Referencia externa</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Partner</fullName>
+        <default>false</default>
+        <label>Socio</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Public Relations</fullName>
+        <default>false</default>
+        <label>Relaciones públicas</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Seminar - Internal</fullName>
+        <default>false</default>
+        <label>Seminario - Interno</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Seminar - Partner</fullName>
+        <default>false</default>
+        <label>Seminario - Socio</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Trade Show</fullName>
+        <default>false</default>
+        <label>Feria</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Web</fullName>
+        <default>false</default>
+        <label>Web</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Word of mouth</fullName>
+        <default>false</default>
+        <label>Por comentarios de terceros</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Other</fullName>
+        <default>false</default>
+        <label>Otros</label>
+    </standardValue>
+</StandardValueSet>

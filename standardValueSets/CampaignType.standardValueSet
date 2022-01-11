@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Advertisement</fullName>
+        <default>true</default>
+        <label>Publicidad</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Email</fullName>
+        <default>false</default>
+        <label>Correo electrónico</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Telemarketing</fullName>
+        <default>false</default>
+        <label>Telemarketing</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Banner Ads</fullName>
+        <default>false</default>
+        <label>Publicidad en forma de anuncios</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Seminar / Conference</fullName>
+        <default>false</default>
+        <label>Seminario / Congreso</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Public Relations</fullName>
+        <default>false</default>
+        <label>Relaciones públicas</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Partners</fullName>
+        <default>false</default>
+        <label>Socios</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Referral Program</fullName>
+        <default>false</default>
+        <label>Programa de referencias</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Other</fullName>
+        <default>false</default>
+        <label>Otros</label>
+    </standardValue>
+</StandardValueSet>
