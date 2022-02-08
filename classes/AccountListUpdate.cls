@@ -1,4 +1,4 @@
-public class AccountListUpdate {
+public without sharing class AccountListUpdate {
     
     public static void applyDiscount( Account[] accounts ) {
         List<Account>accs = new List<Account>();
@@ -7,9 +7,13 @@ public class AccountListUpdate {
             accs.add(ac);
    		}
         try {
-            upsert accs; 
+            
+            if ( !Schema.sObjectType.Account.fields.name.isUpdateable() ) {
+                return;
+            } 
+            update accs;
         } catch( DMLException e ) {
-            System.debug('Error = ' + e);
+            System.debug( LoggingLevel.WARN, 'Error = ' + e );
         }
         
 	}
