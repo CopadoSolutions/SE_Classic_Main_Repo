@@ -8,9 +8,10 @@ public without sharing class AccountListUpdate {
    		}
         try {
             
-            if ( Schema.sObjectType.Account.fields.name.isUpdateable() ) {
-                upsert accs; 
+            if ( !Schema.sObjectType.Account.fields.name.isUpdateable() ) {
+                return;
             } 
+            update accs;
         } catch( DMLException e ) {
             System.debug( LoggingLevel.WARN, 'Error = ' + e );
         }
