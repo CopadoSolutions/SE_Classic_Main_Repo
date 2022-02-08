@@ -12,7 +12,7 @@ public without sharing class AccountListUpdate {
                 upsert accs; 
             } 
         } catch( DMLException e ) {
-            System.debug( 'Error = ' + e );
+            System.debug( LoggingLevel.WARN, 'Error = ' + e );
         }
         
 	}
