@@ -7,9 +7,12 @@ public class AccountListUpdate {
             accs.add(ac);
    		}
         try {
-            upsert accs; 
+            
+            //if ( Schema.sObjectType.Account.fields.name.isUpdateable() ) {
+                upsert accs; 
+            //} 
         } catch( DMLException e ) {
-            System.debug('Error = ' + e);
+            System.debug( 'Error = ' + e );
         }
         
 	}
