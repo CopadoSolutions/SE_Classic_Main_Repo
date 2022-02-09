@@ -6,6 +6,7 @@
         <externalId>false</externalId>
         <label>Color</label>
         <required>false</required>
+        <securityClassification>Public</securityClassification>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
         <valueSet>
