@@ -1,0 +1,3 @@
+<aura:component implements="force:appHostable,force:hasRecordId">
+    <wave:waveDashboard dashboardId="0FK7Y000000KzPvWAK" />
+</aura:component>
