@@ -1,0 +1,16 @@
+{
+    "Cards": [
+    ],
+    "componentName": "cfUpdateAccountOpportunityCard",
+    "dataSource": {
+        "type": null
+    },
+    "enableLwc": false,
+    "previewType": "runTime",
+    "repeatCards": false,
+    "templates": {
+        "0": {
+            "templateUrl": "Create Account/Opportunity Template"
+        }
+    }
+}
