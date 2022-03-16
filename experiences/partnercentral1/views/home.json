@@ -1,0 +1,64 @@
+{
+  "appPageId" : "48052e26-5693-4c96-9a2b-fce6f4b11f8c",
+  "componentName" : "siteforce:sldsTwoCol84Layout",
+  "id" : "ede7a058-7ca9-46d1-a2f9-881f198ee700",
+  "label" : "Home",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "richTextValue" : "             <h1 style=\"text-align: center;\">                 <b style=\"font-size: 28px; color: #1e2443;\">Welcome!</b>             </h1>             <p style=\"text-align: center;\">                 <span style=\"font-size: 20px;\">Work on leads, register deals, and track progress with analytics.</span>             </p>        "
+      },
+      "componentName" : "forceCommunity:richTextInline",
+      "id" : "e19086c1-a696-46a5-ad41-e598e68eb585",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "listViewIdForNavigation" : "AllOpenLeads",
+        "navigateToListView" : true,
+        "pageSize" : 5,
+        "sortBy" : "CreatedDate",
+        "title" : "Lead Inbox"
+      },
+      "componentName" : "forceCommunity:leadInbox",
+      "id" : "bad79ca9-5c7e-4835-bc4d-3288ae838a1f",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "bf9d30f7-b3c6-4c8e-af0f-59f5ce7e05f2",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "id" : "64f118e4-6576-4216-b61c-1cfae1dc00bf",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "07af7131-1019-4004-84c3-26d9e8fd3141",
+    "regionName" : "sidebar",
+    "type" : "region"
+  }, {
+    "id" : "330996cf-ba55-490f-8297-7d3a0b2cc76e",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "Home"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "71eff707-1896-45c9-80f6-85b1fb9ae154",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "135e43f5-28da-41f9-b229-c556936278d1",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Home",
+  "type" : "view",
+  "viewType" : "home"
+}
