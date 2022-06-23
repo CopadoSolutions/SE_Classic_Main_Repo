@@ -208,6 +208,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>AccountListUpdater__c.Account__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>AdvAccountForecastFact.ForecastedQuantity</field>
         <readable>false</readable>
     </fieldPermissions>
