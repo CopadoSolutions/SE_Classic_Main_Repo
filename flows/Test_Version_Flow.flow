@@ -33,6 +33,9 @@
         <locationY>278</locationY>
         <actionName>CollaborationGroup.NewGroupRecord</actionName>
         <actionType>quickAction</actionType>
+        <connector>
+            <targetReference>Step_3</targetReference>
+        </connector>
         <flowTransactionModel>CurrentTransaction</flowTransactionModel>
         <inputParameters>
             <name>RecordId</name>
@@ -42,6 +45,22 @@
         </inputParameters>
         <inputParameters>
             <name>contextId</name>
+            <value>
+                <stringValue></stringValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <description>asdfsa</description>
+        <name>Step_3</name>
+        <label>Step 3</label>
+        <locationX>176</locationX>
+        <locationY>398</locationY>
+        <actionName>activateSessionPermSet</actionName>
+        <actionType>activateSessionPermSet</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>PermSetName</name>
             <value>
                 <stringValue></stringValue>
             </value>
@@ -77,5 +96,5 @@
             <targetReference>Step_1</targetReference>
         </connector>
     </start>
-    <status>Active</status>
+    <status>Draft</status>
 </Flow>
