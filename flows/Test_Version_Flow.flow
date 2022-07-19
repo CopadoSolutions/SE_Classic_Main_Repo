@@ -58,6 +58,25 @@
         <locationY>398</locationY>
         <actionName>activateSessionPermSet</actionName>
         <actionType>activateSessionPermSet</actionType>
+        <connector>
+            <targetReference>Step_4</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>PermSetName</name>
+            <value>
+                <stringValue></stringValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <description>asdfasdfas</description>
+        <name>Step_4</name>
+        <label>Step 4</label>
+        <locationX>176</locationX>
+        <locationY>518</locationY>
+        <actionName>deactivateSessionPermSet</actionName>
+        <actionType>deactivateSessionPermSet</actionType>
         <flowTransactionModel>CurrentTransaction</flowTransactionModel>
         <inputParameters>
             <name>PermSetName</name>
@@ -96,5 +115,5 @@
             <targetReference>Step_1</targetReference>
         </connector>
     </start>
-    <status>Active</status>
+    <status>Draft</status>
 </Flow>
