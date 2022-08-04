@@ -1,6 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Flow xmlns="http://soap.sforce.com/2006/04/metadata">
     <apiVersion>55.0</apiVersion>
+    <assignments>
+        <name>set_account_city</name>
+        <label>set account city</label>
+        <locationX>176</locationX>
+        <locationY>431</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.BillingAddress</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue></stringValue>
+            </value>
+        </assignmentItems>
+    </assignments>
     <environments>Default</environments>
     <interviewLabel>Account Updates (Test) {!$Flow.CurrentDateTime}</interviewLabel>
     <label>Account Updates (Test)</label>
@@ -28,6 +41,9 @@
         <label>update account fields</label>
         <locationX>176</locationX>
         <locationY>311</locationY>
+        <connector>
+            <targetReference>set_account_city</targetReference>
+        </connector>
         <inputAssignments>
             <field>BillingState</field>
             <value>
