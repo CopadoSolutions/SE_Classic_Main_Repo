@@ -315,6 +315,11 @@
                     <default>false</default>
                     <label>Three</label>
                 </value>
+                <value>
+                    <fullName>Four</fullName>
+                    <default>false</default>
+                    <label>Four</label>
+                </value>
             </valueSetDefinition>
         </valueSet>
     </fields>
@@ -422,6 +427,10 @@
         <label>Account One</label>
         <picklistValues>
             <picklist>Pick_One__c</picklist>
+            <values>
+                <fullName>Four</fullName>
+                <default>false</default>
+            </values>
             <values>
                 <fullName>One</fullName>
                 <default>false</default>
