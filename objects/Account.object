@@ -358,6 +358,16 @@
         </filters>
         <label>New This Week</label>
     </listViews>
+    <recordTypes>
+        <fullName>Account_One</fullName>
+        <active>true</active>
+        <label>Account One</label>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Account_Two</fullName>
+        <active>true</active>
+        <label>Account Two</label>
+    </recordTypes>
     <searchLayouts>
         <customTabListAdditionalFields>ACCOUNT.NAME</customTabListAdditionalFields>
         <customTabListAdditionalFields>ACCOUNT.ADDRESS1_CITY</customTabListAdditionalFields>
