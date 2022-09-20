@@ -290,6 +290,64 @@
         <trackFeedHistory>false</trackFeedHistory>
     </fields>
     <fields>
+        <fullName>Pick_One__c</fullName>
+        <externalId>false</externalId>
+        <label>Pick One</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>One</fullName>
+                    <default>false</default>
+                    <label>One</label>
+                </value>
+                <value>
+                    <fullName>Two</fullName>
+                    <default>false</default>
+                    <label>Two</label>
+                </value>
+                <value>
+                    <fullName>Three</fullName>
+                    <default>false</default>
+                    <label>Three</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Pick_Two__c</fullName>
+        <externalId>false</externalId>
+        <label>Pick Two</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>one</fullName>
+                    <default>false</default>
+                    <label>one</label>
+                </value>
+                <value>
+                    <fullName>two</fullName>
+                    <default>false</default>
+                    <label>two</label>
+                </value>
+                <value>
+                    <fullName>three</fullName>
+                    <default>false</default>
+                    <label>three</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
         <fullName>Rating</fullName>
         <trackFeedHistory>false</trackFeedHistory>
         <type>Picklist</type>
@@ -362,11 +420,71 @@
         <fullName>Account_One</fullName>
         <active>true</active>
         <label>Account One</label>
+        <picklistValues>
+            <picklist>Pick_One__c</picklist>
+            <values>
+                <fullName>One</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Three</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Two</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Pick_Two__c</picklist>
+            <values>
+                <fullName>one</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>three</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>two</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
     </recordTypes>
     <recordTypes>
         <fullName>Account_Two</fullName>
         <active>true</active>
         <label>Account Two</label>
+        <picklistValues>
+            <picklist>Pick_One__c</picklist>
+            <values>
+                <fullName>One</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Three</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Two</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Pick_Two__c</picklist>
+            <values>
+                <fullName>one</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>three</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>two</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
     </recordTypes>
     <searchLayouts>
         <customTabListAdditionalFields>ACCOUNT.NAME</customTabListAdditionalFields>
