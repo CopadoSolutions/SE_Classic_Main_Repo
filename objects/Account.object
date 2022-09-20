@@ -290,6 +290,40 @@
         <trackFeedHistory>false</trackFeedHistory>
     </fields>
     <fields>
+        <fullName>Pick_One__c</fullName>
+        <externalId>false</externalId>
+        <label>Pick One</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>One</fullName>
+                    <default>false</default>
+                    <label>One</label>
+                </value>
+                <value>
+                    <fullName>Two</fullName>
+                    <default>false</default>
+                    <label>Two</label>
+                </value>
+                <value>
+                    <fullName>Three</fullName>
+                    <default>false</default>
+                    <label>Three</label>
+                </value>
+                <value>
+                    <fullName>Four</fullName>
+                    <default>false</default>
+                    <label>Four</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
         <fullName>Rating</fullName>
         <trackFeedHistory>false</trackFeedHistory>
         <type>Picklist</type>
@@ -358,6 +392,30 @@
         </filters>
         <label>New This Week</label>
     </listViews>
+    <recordTypes>
+        <fullName>Account_One</fullName>
+        <active>true</active>
+        <label>Account One</label>
+        <picklistValues>
+            <picklist>Pick_One__c</picklist>
+            <values>
+                <fullName>Four</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>One</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Three</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Two</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
     <searchLayouts>
         <customTabListAdditionalFields>ACCOUNT.NAME</customTabListAdditionalFields>
         <customTabListAdditionalFields>ACCOUNT.ADDRESS1_CITY</customTabListAdditionalFields>
