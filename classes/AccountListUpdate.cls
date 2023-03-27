@@ -1,20 +1,19 @@
 public without sharing class AccountListUpdate {
     
     public static void applyDiscount( Account[] accounts ) {
-        //List<Account>accs = new List<Account>();
-        List<Account>accountList = new List<Account>();
+        List<Account>accs = new List<Account>();
    		for ( Account ac : accounts ) {
       		ac.name = 'First Account';
-            accountList.add(ac);
+            accs.add(ac);
    		}
         try {
             
             if ( !Schema.sObjectType.Account.fields.name.isUpdateable() ) {
                 return;
             } 
-            update accountList;
-        } catch( DMLException ex ) {
-            System.debug( LoggingLevel.WARN, 'Error = ' + ex );
+            update accs;
+        } catch( DMLException e ) {
+            System.debug( LoggingLevel.WARN, 'Error = ' + e );
         }
         
 	}
