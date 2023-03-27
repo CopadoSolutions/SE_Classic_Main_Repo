@@ -1,13 +1,6 @@
-trigger AccountTrigger on Account (before insert, after insert) {
-    if (Trigger.isBefore && Trigger.isInsert) {
-        for (Account acc: Trigger.new) {
-        	if(acc.name == 'Parent Account'){
-            	System.debug('Found Account');   
-        	}
-    	}
-    }
+trigger AccountTrigger on Account (before insert, before update) {
     
-    if (Trigger.isAfter && Trigger.isUpdate) {
-        System.debug('In After Update');
-    }
+    //This comment is brand new!
+    AccountTriggerHandler.setDefaultRegion(trigger.new);
+
 }
