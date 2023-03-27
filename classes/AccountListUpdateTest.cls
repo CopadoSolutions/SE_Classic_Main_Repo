@@ -1,30 +1,48 @@
 @isTest
-public class AccountListUpdateTest {
-    private static List <Account> accs;
-    private static Account acc1, acc2;
+private class AccountListUpdateTest {
     
-    public static void testSetup() {
-    	accs = new List<Account>();
-        acc1 = new Account(name = 'Test Account');
-        acc2 = new Account(name = 'Parent Account');
-        accs.add(acc1);
-        accs.add(acc2);
-        insert accs;
-    }
-    
-	@isTest static void applyDiscountTest() {
-        testSetup();
-        Test.startTest();
-        	AccountListUpdate.applyDiscount(accs);
-        Test.stopTest();
+    @isTest
+    static void testApplyDiscount() {
+        // Create test accounts
+        Account[] accounts = new List<Account>{
+            new Account(Name='Account 1'),
+            new Account(Name='Account 2')
+        };
         
+        // Call the applyDiscount method
+        AccountListUpdate.applyDiscount(accounts);
+        
+        // Verify that the account names have been updated
+        System.assertEquals('First Account', accounts[0].Name);
+        System.assertEquals('First Account', accounts[1].Name);
     }
     
-    @isTest static void getAccountTest() {
-        testSetup();
-        Test.startTest();
-        	AccountListUpdate.getAccount(accs);
-        Test.stopTest();
+    @isTest
+    static void testGetAccount() {
+        // Create test accounts
+        Account[] accounts = new List<Account>{
+            new Account(Name='Account 1'),
+            new Account(Name='Parent Account'),
+            new Account(Name='Account 2')
+        };
         
+        // Call the getAccount method
+        Account result = AccountListUpdate.getAccount(accounts);
+        
+        // Verify that the correct account is returned
+        System.assertEquals('Second Account', result.Name);
+        
+        // Call the getAccount method again with different accounts
+        Account[] newAccounts = new List<Account>{
+            new Account(Name='Account 1'),
+            new Account(Name='Account 2')
+        };
+        
+        // Call the getAccount method
+        Account newResult = AccountListUpdate.getAccount(newAccounts);
+        
+        // Verify that the correct account is returned
+        System.assertEquals('First Account', newResult.Name);
     }
+    
 }
