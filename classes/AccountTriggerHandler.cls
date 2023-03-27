@@ -8,7 +8,7 @@ public class AccountTriggerHandler {
         for (Account acc: Lacc) {
           
             if (acc.Region__c == null || acc.Region__c == '') {
-                acc.Region__c = 'EMEA';
+                acc.Region__c = 'South';
             }
         }
     }

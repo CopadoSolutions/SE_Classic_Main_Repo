@@ -312,14 +312,29 @@
             <valueSetDefinition>
                 <sorted>false</sorted>
                 <value>
-                    <fullName>North America</fullName>
+                    <fullName>Northeast</fullName>
                     <default>false</default>
-                    <label>North America</label>
+                    <label>Northeast</label>
                 </value>
                 <value>
-                    <fullName>EMEA</fullName>
+                    <fullName>Southeast</fullName>
                     <default>false</default>
-                    <label>EMEA</label>
+                    <label>Southeast</label>
+                </value>
+                <value>
+                    <fullName>West</fullName>
+                    <default>false</default>
+                    <label>West</label>
+                </value>
+                <value>
+                    <fullName>Midwest</fullName>
+                    <default>false</default>
+                    <label>Midwest</label>
+                </value>
+                <value>
+                    <fullName>South</fullName>
+                    <default>false</default>
+                    <label>South</label>
                 </value>
             </valueSetDefinition>
         </valueSet>
