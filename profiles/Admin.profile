@@ -106,6 +106,14 @@
         <visible>true</visible>
     </applicationVisibilities>
     <classAccesses>
+        <apexClass>ContactController</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>ContactControllerTest</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>DevTracker</apexClass>
         <enabled>true</enabled>
     </classAccesses>
@@ -5972,6 +5980,10 @@
     </userPermissions>
     <userPermissions>
         <enabled>true</enabled>
+        <name>ManageOrchInstsAndWorkItems</name>
+    </userPermissions>
+    <userPermissions>
+        <enabled>true</enabled>
         <name>ManagePackageLicenses</name>
     </userPermissions>
     <userPermissions>
@@ -6133,6 +6145,10 @@
     <userPermissions>
         <enabled>true</enabled>
         <name>SendSitRequests</name>
+    </userPermissions>
+    <userPermissions>
+        <enabled>true</enabled>
+        <name>ShareFilesWithNetworks</name>
     </userPermissions>
     <userPermissions>
         <enabled>true</enabled>
