@@ -109,41 +109,6 @@
         <description>Adds geocodes for Address</description>
         <developerName>Lead_Geo_Clean_Rule_for_Address</developerName>
         <fieldMappings>
-            <SObjectType>Lead</SObjectType>
-            <developerName>Lead_Geo_Clean_Rule_for_AddressOutputMapping</developerName>
-            <fieldMappingRows>
-                <SObjectType>Lead</SObjectType>
-                <fieldMappingFields>
-                    <dataServiceField>GeoAccuracyNum</dataServiceField>
-                    <dataServiceObjectName>DatacloudAddress</dataServiceObjectName>
-                    <priority>1</priority>
-                </fieldMappingFields>
-                <fieldName>GeocodeAccuracy</fieldName>
-                <mappingOperation>Autofill</mappingOperation>
-            </fieldMappingRows>
-            <fieldMappingRows>
-                <SObjectType>Lead</SObjectType>
-                <fieldMappingFields>
-                    <dataServiceField>Latitude</dataServiceField>
-                    <dataServiceObjectName>DatacloudAddress</dataServiceObjectName>
-                    <priority>1</priority>
-                </fieldMappingFields>
-                <fieldName>Latitude</fieldName>
-                <mappingOperation>Autofill</mappingOperation>
-            </fieldMappingRows>
-            <fieldMappingRows>
-                <SObjectType>Lead</SObjectType>
-                <fieldMappingFields>
-                    <dataServiceField>Longitude</dataServiceField>
-                    <dataServiceObjectName>DatacloudAddress</dataServiceObjectName>
-                    <priority>1</priority>
-                </fieldMappingFields>
-                <fieldName>Longitude</fieldName>
-                <mappingOperation>Autofill</mappingOperation>
-            </fieldMappingRows>
-            <masterLabel>LeadOutputMapping</masterLabel>
-        </fieldMappings>
-        <fieldMappings>
             <SObjectType>DatacloudAddress</SObjectType>
             <developerName>Lead_Geo_Clean_Rule_for_AddressInputMapping</developerName>
             <fieldMappingRows>
@@ -197,6 +162,41 @@
                 <mappingOperation>Autofill</mappingOperation>
             </fieldMappingRows>
             <masterLabel>LeadInputMapping</masterLabel>
+        </fieldMappings>
+        <fieldMappings>
+            <SObjectType>Lead</SObjectType>
+            <developerName>Lead_Geo_Clean_Rule_for_AddressOutputMapping</developerName>
+            <fieldMappingRows>
+                <SObjectType>Lead</SObjectType>
+                <fieldMappingFields>
+                    <dataServiceField>GeoAccuracyNum</dataServiceField>
+                    <dataServiceObjectName>DatacloudAddress</dataServiceObjectName>
+                    <priority>1</priority>
+                </fieldMappingFields>
+                <fieldName>GeocodeAccuracy</fieldName>
+                <mappingOperation>Autofill</mappingOperation>
+            </fieldMappingRows>
+            <fieldMappingRows>
+                <SObjectType>Lead</SObjectType>
+                <fieldMappingFields>
+                    <dataServiceField>Latitude</dataServiceField>
+                    <dataServiceObjectName>DatacloudAddress</dataServiceObjectName>
+                    <priority>1</priority>
+                </fieldMappingFields>
+                <fieldName>Latitude</fieldName>
+                <mappingOperation>Autofill</mappingOperation>
+            </fieldMappingRows>
+            <fieldMappingRows>
+                <SObjectType>Lead</SObjectType>
+                <fieldMappingFields>
+                    <dataServiceField>Longitude</dataServiceField>
+                    <dataServiceObjectName>DatacloudAddress</dataServiceObjectName>
+                    <priority>1</priority>
+                </fieldMappingFields>
+                <fieldName>Longitude</fieldName>
+                <mappingOperation>Autofill</mappingOperation>
+            </fieldMappingRows>
+            <masterLabel>LeadOutputMapping</masterLabel>
         </fieldMappings>
         <masterLabel>Geocodes for Lead Address</masterLabel>
         <matchRule>DatacloudAddressMatchRule</matchRule>
@@ -313,6 +313,41 @@
         <description>Adds geocodes for Shipping Address</description>
         <developerName>Account_Geo_Clean_Rule_for_Shipping_Address</developerName>
         <fieldMappings>
+            <SObjectType>Account</SObjectType>
+            <developerName>Account_Geo_Clean_Rule_for_Shipping_AddressOutputMapping</developerName>
+            <fieldMappingRows>
+                <SObjectType>Account</SObjectType>
+                <fieldMappingFields>
+                    <dataServiceField>GeoAccuracyNum</dataServiceField>
+                    <dataServiceObjectName>DatacloudAddress</dataServiceObjectName>
+                    <priority>1</priority>
+                </fieldMappingFields>
+                <fieldName>ShippingGeocodeAccuracy</fieldName>
+                <mappingOperation>Autofill</mappingOperation>
+            </fieldMappingRows>
+            <fieldMappingRows>
+                <SObjectType>Account</SObjectType>
+                <fieldMappingFields>
+                    <dataServiceField>Latitude</dataServiceField>
+                    <dataServiceObjectName>DatacloudAddress</dataServiceObjectName>
+                    <priority>1</priority>
+                </fieldMappingFields>
+                <fieldName>ShippingLatitude</fieldName>
+                <mappingOperation>Autofill</mappingOperation>
+            </fieldMappingRows>
+            <fieldMappingRows>
+                <SObjectType>Account</SObjectType>
+                <fieldMappingFields>
+                    <dataServiceField>Longitude</dataServiceField>
+                    <dataServiceObjectName>DatacloudAddress</dataServiceObjectName>
+                    <priority>1</priority>
+                </fieldMappingFields>
+                <fieldName>ShippingLongitude</fieldName>
+                <mappingOperation>Autofill</mappingOperation>
+            </fieldMappingRows>
+            <masterLabel>AccountShippingOutputMapping</masterLabel>
+        </fieldMappings>
+        <fieldMappings>
             <SObjectType>DatacloudAddress</SObjectType>
             <developerName>Account_Geo_Clean_Rule_for_Shipping_AddressInputMapping</developerName>
             <fieldMappingRows>
@@ -366,41 +401,6 @@
                 <mappingOperation>Autofill</mappingOperation>
             </fieldMappingRows>
             <masterLabel>AccountShippingInputMapping</masterLabel>
-        </fieldMappings>
-        <fieldMappings>
-            <SObjectType>Account</SObjectType>
-            <developerName>Account_Geo_Clean_Rule_for_Shipping_AddressOutputMapping</developerName>
-            <fieldMappingRows>
-                <SObjectType>Account</SObjectType>
-                <fieldMappingFields>
-                    <dataServiceField>GeoAccuracyNum</dataServiceField>
-                    <dataServiceObjectName>DatacloudAddress</dataServiceObjectName>
-                    <priority>1</priority>
-                </fieldMappingFields>
-                <fieldName>ShippingGeocodeAccuracy</fieldName>
-                <mappingOperation>Autofill</mappingOperation>
-            </fieldMappingRows>
-            <fieldMappingRows>
-                <SObjectType>Account</SObjectType>
-                <fieldMappingFields>
-                    <dataServiceField>Latitude</dataServiceField>
-                    <dataServiceObjectName>DatacloudAddress</dataServiceObjectName>
-                    <priority>1</priority>
-                </fieldMappingFields>
-                <fieldName>ShippingLatitude</fieldName>
-                <mappingOperation>Autofill</mappingOperation>
-            </fieldMappingRows>
-            <fieldMappingRows>
-                <SObjectType>Account</SObjectType>
-                <fieldMappingFields>
-                    <dataServiceField>Longitude</dataServiceField>
-                    <dataServiceObjectName>DatacloudAddress</dataServiceObjectName>
-                    <priority>1</priority>
-                </fieldMappingFields>
-                <fieldName>ShippingLongitude</fieldName>
-                <mappingOperation>Autofill</mappingOperation>
-            </fieldMappingRows>
-            <masterLabel>AccountShippingOutputMapping</masterLabel>
         </fieldMappings>
         <masterLabel>Geocodes for Account Shipping Address</masterLabel>
         <matchRule>DatacloudAddressMatchRule</matchRule>
