@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Belegpostenspalte</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Belegpostenspalten</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value><!-- Belegpostenspalte --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+        <value><!-- Belegpostenspalten --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value><!-- Belegpostenspalte --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>true</plural>
+        <value><!-- Belegpostenspalten --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value><!-- Belegpostenspalte --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value><!-- Belegpostenspalten --></value>
+    </caseValues>
+    <fields>
+        <help>Bestimmt, wie Spaltenbezeichnung und -werte ausgerichtet werden.</help>
+        <label><!-- Alignment --></label>
+        <name>SBQQ__Alignment__c</name>
+        <picklistValues>
+            <masterLabel>Center</masterLabel>
+            <translation>Zentriert</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Left</masterLabel>
+            <translation>Links</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Right</masterLabel>
+            <translation>Rechts</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Der Abstand in Pixel zwischen dem unteren Rand und dem Inhalt.</help>
+        <label><!-- Bottom Margin (px) --></label>
+        <name>SBQQ__BottomMargin__c</name>
+    </fields>
+    <fields>
+        <help>Das Feld, aus dem die dynamische Überschrift für diese Spalte stammt.</help>
+        <label><!-- Column Heading Field --></label>
+        <name>SBQQ__ColumnHeadingField__c</name>
+        <picklistValues>
+            <masterLabel>Type</masterLabel>
+            <translation>Typ</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Feld im Angebotsobjekt, das steuert, ob diese Spalte im erstellten PDF-Dokument gedruckt wird.</help>
+        <label><!-- Conditional Print Field --></label>
+        <name>SBQQ__ConditionalPrintField__c</name>
+        <picklistValues>
+            <masterLabel>Group Line Items</masterLabel>
+            <translation>Belegposten gruppieren</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Reihenfolge, in der die Spalte, die dieses Feld darstellt, angezeigt wird.</help>
+        <label><!-- Display Order --></label>
+        <name>SBQQ__DisplayOrder__c</name>
+    </fields>
+    <fields>
+        <help>Die Zahl der Dezimalstellen für Ziffern in der Spalte wird auf der Grundlage der größten Genauigkeit in der Spalte festgelegt.</help>
+        <label><!-- Dynamic Number Scale --></label>
+        <name>SBQQ__DynamicNumberScale__c</name>
+    </fields>
+    <fields>
+        <help>API-Name für das Feld im Angebotsbelegpostenobjekt, das in dieser Spalte angezeigt werden soll.</help>
+        <label><!-- Field Name --></label>
+        <name>SBQQ__FieldName__c</name>
+    </fields>
+    <fields>
+        <help>Wählen Sie die Schriftartfamilie aus, die auf diese Spalte angewandt werden soll.</help>
+        <label><!-- Font Family --></label>
+        <name>SBQQ__FontFamily__c</name>
+        <picklistValues>
+            <masterLabel>Courier</masterLabel>
+            <translation>Courier</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dosis</masterLabel>
+            <translation>Dosis</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Droid Sans</masterLabel>
+            <translation>Droid Sans</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Droid Serif</masterLabel>
+            <translation>Droid Serif</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Helvetica</masterLabel>
+            <translation>Helvetica</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Merriweather</masterLabel>
+            <translation>Merriweather</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Montserrat</masterLabel>
+            <translation>Montserrat</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Noto Sans JP</masterLabel>
+            <translation>Noto Sans JP</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Noto Sans KR</masterLabel>
+            <translation>Noto Sans KR</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Noto Sans SC</masterLabel>
+            <translation>Noto Sans SC</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Noto Sans TC</masterLabel>
+            <translation>Noto Sans TC</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Open Sans</masterLabel>
+            <translation>Open Sans</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PT Sans</masterLabel>
+            <translation>PT Sans</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PT Serif</masterLabel>
+            <translation>PT Serif</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Play</masterLabel>
+            <translation>Play</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Roboto</masterLabel>
+            <translation>Roboto</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Roboto Light</masterLabel>
+            <translation>Roboto Light</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Times</masterLabel>
+            <translation>Times</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Titillium Web</masterLabel>
+            <translation>Titillium Web</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ubuntu</masterLabel>
+            <translation>Ubuntu</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Geben Sie die Schriftgröße (in Punkt) für Text in dieser Spalte an. Wird keine Einstellung vorgenommen, wird der Wert aus der Vorlage übernommen.</help>
+        <label><!-- Font Size (pt) --></label>
+        <name>SBQQ__FontSize__c</name>
+    </fields>
+    <fields>
+        <help>Geben Sie die Schriftbreite für Text in dieser Spalte an. Wird keine Einstellung vorgenommen, wird standardmäßig &quot;Normal&quot; verwendet.</help>
+        <label><!-- Font Weight --></label>
+        <name>SBQQ__FontWeight__c</name>
+        <picklistValues>
+            <masterLabel>Bold</masterLabel>
+            <translation>Fett</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Normal</masterLabel>
+            <translation>Normal</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Geben Sie die Farbe (in Hex) für Text in der Überschrift dieser Spalte an. Wird keine Einstellung vorgenommen, wird die Textfarbe für diese Spalte übernommen.</help>
+        <label><!-- Heading Text Color --></label>
+        <name>SBQQ__HeadingTextColor__c</name>
+    </fields>
+    <fields>
+        <help>Blendet den Wert in dieser Spalte aus, wenn der Belegposten eine Produktoption ist.</help>
+        <label><!-- Hide On Product Options --></label>
+        <name>SBQQ__HideOnComponents__c</name>
+    </fields>
+    <fields>
+        <help>Der Abstand in Pixel zwischen dem linken Rand und dem Inhalt.</help>
+        <label><!-- Left Margin (px) --></label>
+        <name>SBQQ__LeftMargin__c</name>
+    </fields>
+    <fields>
+        <help>Der Abstand in Pixel zwischen dem rechten Rand und dem Inhalt.</help>
+        <label><!-- Right Margin (px) --></label>
+        <name>SBQQ__RightMargin__c</name>
+    </fields>
+    <fields>
+        <help>Gibt an, ob dieses Feld im Master-Belegposten zusammengefasst werden soll. Nur anwendbar, wenn auf der Vorlage &quot;Rollup-Feld&quot; festgelegt wurde.</help>
+        <label><!-- Roll Up --></label>
+        <name>SBQQ__RollUp__c</name>
+    </fields>
+    <fields>
+        <help>Abschnitt, für den diese Belegpostenspalte gilt. Wird kein Abschnitt angegeben, bedeutet dies, dass die Spalte für alle Abschnitte gilt.</help>
+        <label><!-- Section --></label>
+        <name>SBQQ__Section__c</name>
+        <relationshipLabel><!-- Line Columns --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Aktivieren Sie dieses Kontrollkästchen, wenn dieses Feld in einer eigenen Zeile angezeigt werden soll. Verwenden Sie diese Option für Felder mit langem Text wie etwa Produktbeschreibungen.</help>
+        <label><!-- Separate Line --></label>
+        <name>SBQQ__SeparateLine__c</name>
+    </fields>
+    <fields>
+        <help>Zusammenfassende Bezeichnung für die Untergruppenebene.</help>
+        <label><!-- Sub Group Summary Label --></label>
+        <name>SBQQ__SubGroupSummaryLabel__c</name>
+    </fields>
+    <fields>
+        <help>Geben Sie die Schriftbreite für Text in der Zusammenfassungszeile dieser Spalte an. Wird keine Einstellung vorgenommen, wird standardmäßig die Schriftbreite für die Spalte verwendet.</help>
+        <label><!-- Summary Font Weight --></label>
+        <name>SBQQ__SummaryFontWeight__c</name>
+        <picklistValues>
+            <masterLabel>Bold</masterLabel>
+            <translation>Fett</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Normal</masterLabel>
+            <translation>Normal</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Funktion, die zum Summieren von Werten in dieser Spalte verwendet wird.</help>
+        <label><!-- Summary Function --></label>
+        <name>SBQQ__SummaryFunction__c</name>
+        <picklistValues>
+            <masterLabel>SUM</masterLabel>
+            <translation>SUM</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Bezeichnung für diese Spalte in der Zusammenfassungszeile.</help>
+        <label><!-- Summary Label --></label>
+        <name>SBQQ__SummaryLabel__c</name>
+    </fields>
+    <fields>
+        <help>Leben Sie die Ebene fest, auf der diese Spalte zusammengefasst werden soll.</help>
+        <label><!-- Summary Level --></label>
+        <name>SBQQ__SummaryLevel__c</name>
+        <picklistValues>
+            <masterLabel>All</masterLabel>
+            <translation>Alle</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sub Group</masterLabel>
+            <translation>Untergruppe</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Geben Sie die Farbe (in Hex) für den Zellenhintergrund in der Zusammenfassungszeile für diese Spalte an. Wird keine Einstellung vorgenommen, wird die Schattierungsfarbe der Vorlage übernommen.</help>
+        <label><!-- Summary Shading Color --></label>
+        <name>SBQQ__SummaryShadingColor__c</name>
+    </fields>
+    <fields>
+        <help>Geben Sie die Farbe (in Hex) für Text in der Zusammenfassungszeile dieser Spalte an. Wird keine Einstellung vorgenommen, wird die Textfarbe für diese Spalte übernommen.</help>
+        <label><!-- Summary Text Color --></label>
+        <name>SBQQ__SummaryTextColor__c</name>
+    </fields>
+    <fields>
+        <help>Vorlage, in der dieses Feld angezeigt werden soll.</help>
+        <label><!-- Template --></label>
+        <name>SBQQ__Template__c</name>
+        <relationshipLabel><!-- Line Columns --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Geben Sie die Farbe (in Hex) für Text in dieser Spalte an. Wird keine Einstellung vorgenommen, wird die Textfarbe aus der Vorlage übernommen.</help>
+        <label><!-- Text Color --></label>
+        <name>SBQQ__TextColor__c</name>
+    </fields>
+    <fields>
+        <help>Der Abstand in Pixel zwischen dem oberen Rand und dem Inhalt.</help>
+        <label><!-- Top Margin (px) --></label>
+        <name>SBQQ__TopMargin__c</name>
+    </fields>
+    <fields>
+        <help>Aktivieren Sie dieses Kontrollkästchen für eine bedingungsabhängig angezeigte Spalte, um eine oder mehrere andere Spalten zu ersetzen. Bei deaktiviertem Kontrollkästchen steht die Breite dieser Spalte in ausgeblendetem Zustand anderen Spalten zur Verfügung, sodass die Tabellenbreite unverändert bleibt.</help>
+        <label><!-- Discard Width When Hidden --></label>
+        <name>SBQQ__WidthDiscardedWhenHidden__c</name>
+    </fields>
+    <fields>
+        <help>Breite (Prozentsatz) der Spalte, die dieses Feld einnimmt.</help>
+        <label><!-- Width --></label>
+        <name>SBQQ__Width__c</name>
+    </fields>
+    <gender>Feminine</gender>
+    <layouts>
+        <layout>Line Column Layout</layout>
+        <sections>
+            <label>Spaltenoptionen</label>
+            <section>Column Options</section>
+        </sections>
+        <sections>
+            <label>Benutzerdefinierte Links</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>Stilinformationen</label>
+            <section>Style Information</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Spaltenüberschrift</nameFieldLabel>
+    <webLinks>
+        <label><!-- Translate --></label>
+        <name>SBQQ__Translate</name>
+    </webLinks>
+</CustomObjectTranslation>

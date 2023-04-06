@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>商品機能</value>
+    </caseValues>
+    <fieldSets>
+        <label><!-- Configurator --></label>
+        <name>SBQQ__Configurator</name>
+    </fieldSets>
+    <fields>
+        <help>関連するオプションが含まれる複数の機能が同じグループになるように、この機能をカテゴリに割り当てます。</help>
+        <label><!-- Category --></label>
+        <name>SBQQ__Category__c</name>
+        <picklistValues>
+            <masterLabel>Hardware</masterLabel>
+            <translation>ハードウェア</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Software</masterLabel>
+            <translation>ソフトウェア</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>設定時にこの機能に使用される項目セットの API 参照名。</help>
+        <label><!-- Configuration Field Set --></label>
+        <name>SBQQ__ConfigurationFieldSet__c</name>
+        <picklistValues>
+            <masterLabel>OptionConfiguration</masterLabel>
+            <translation>OptionConfiguration</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>この機能を含む商品バンドル。商品の詳細ページから機能を作成した場合は、この項目はすでに入力されています。</help>
+        <label><!-- Configured SKU --></label>
+        <name>SBQQ__ConfiguredSKU__c</name>
+        <relationshipLabel><!-- Features --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>この機能のすべてのオプションによって選択された商品に適用される割引率表。これは、商品で選択されている割引率表を上書きします。</help>
+        <label><!-- Discount Schedule --></label>
+        <name>SBQQ__DiscountSchedule__c</name>
+        <relationshipLabel><!-- Product Features --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>設定時にこの機能の動的オプションを絞り込むときに使用される項目セットの API 参照名。</help>
+        <label><!-- Dynamic Option Filter Field Set --></label>
+        <name>SBQQ__DynamicProductFilterFieldSet__c</name>
+        <picklistValues>
+            <masterLabel>ConfiguratorFilter</masterLabel>
+            <translation>ConfiguratorFilter</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>設定時にこの機能の動的オプションを表示するときに使用される項目セットの API 参照名。</help>
+        <label><!-- Dynamic Option Lookup Field Set --></label>
+        <name>SBQQ__DynamicProductLookupFieldSet__c</name>
+        <picklistValues>
+            <masterLabel>ConfiguratorLookup</masterLabel>
+            <translation>ConfiguratorLookup</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>商品バンドルの一部として選択できるこの機能のオプションの最大数。</help>
+        <label><!-- Max Options --></label>
+        <name>SBQQ__MaxOptionCount__c</name>
+    </fields>
+    <fields>
+        <help>商品バンドルに含める必要があるこの機能のオプションの最小数。</help>
+        <label><!-- Min Options --></label>
+        <name>SBQQ__MinOptionCount__c</name>
+    </fields>
+    <fields>
+        <help>商品の関連リストでの並び替え順を決定する連続番号。</help>
+        <label><!-- Number --></label>
+        <name>SBQQ__Number__c</name>
+    </fields>
+    <fields>
+        <help>ユーザがこの商品に付随するオプションを選択する方法を決定します。[クリック] の場合は、オプションの横にチェックボックスが表示されます。[追加] の場合は、定義済みのオプションを表示するボタンが表示されます。[動的] の場合は、すべての有効な商品を表示するボタンが表示されます。</help>
+        <label><!-- Option Selection Method --></label>
+        <name>SBQQ__OptionSelectionMethod__c</name>
+        <picklistValues>
+            <masterLabel>Add</masterLabel>
+            <translation>加算</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Click</masterLabel>
+            <translation>クリック</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dynamic</masterLabel>
+            <translation>動的</translation>
+        </picklistValues>
+    </fields>
+    <layouts>
+        <layout>Product Feature Layout</layout>
+        <sections>
+            <label>カスタムリンク</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>機能名</nameFieldLabel>
+    <validationRules>
+        <errorMessage><!-- Min Options cannot be negative. --></errorMessage>
+        <name>SBQQ__MinOptionValidation</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Translate --></label>
+        <name>SBQQ__Translate</name>
+    </webLinks>
+</CustomObjectTranslation>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>RollbackFeatureTest</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>RollbackFeatureTest</value>
+    </caseValues>
+    <fields>
+        <label><!-- Test Field --></label>
+        <name>Test_Field__c</name>
+    </fields>
+    <gender>Feminine</gender>
+</CustomObjectTranslation>

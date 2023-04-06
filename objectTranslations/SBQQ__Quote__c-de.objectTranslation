@@ -1,0 +1,698 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Angebot</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Angebote</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value><!-- Angebot --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+        <value><!-- Angebote --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value><!-- Angebot --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>true</plural>
+        <value><!-- Angebote --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value><!-- Angebot --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value><!-- Angebote --></value>
+    </caseValues>
+    <fieldSets>
+        <label><!-- Calculating Fields --></label>
+        <name>SBQQ__CalculatingFields</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Line Editor --></label>
+        <name>SBQQ__LineEditor</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Non-Current Quote Locked Fields --></label>
+        <name>SBQQ__NonCurrentQuoteLockedFields</name>
+    </fieldSets>
+    <fields>
+        <help>Der Kundenaccount für dieses Angebot. Standardwert ist der Account für die Opportunity beim Erstellen eines Angebots.</help>
+        <label><!-- Account --></label>
+        <name>SBQQ__Account__c</name>
+        <relationshipLabel><!-- Quotes --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Geben Sie den Betrag ein, der bei diesem Angebot zusätzlich als Rabatt gewährt wird.</help>
+        <label><!-- Addl. Disc. Amount --></label>
+        <name>SBQQ__AdditionalDiscountAmount__c</name>
+    </fields>
+    <fields>
+        <help>Durchschnittlicher Kundenrabatt (in Prozent) für dieses Angebot.</help>
+        <label><!-- Avg. Customer Disc. (%) --></label>
+        <name>SBQQ__AverageCustomerDiscount__c</name>
+    </fields>
+    <fields>
+        <help>Durchschnittlicher Partnerrabatt (in Prozent) für dieses Angebot.</help>
+        <label><!-- Avg. Partner Disc. (%) --></label>
+        <name>SBQQ__AveragePartnerDiscount__c</name>
+    </fields>
+    <fields>
+        <help>Stadt der Rechnungsanschrift für dieses Angebot.</help>
+        <label><!-- Bill To City --></label>
+        <name>SBQQ__BillingCity__c</name>
+    </fields>
+    <fields>
+        <help>Land der Rechnungsanschrift für dieses Angebot.</help>
+        <label><!-- Bill To Country --></label>
+        <name>SBQQ__BillingCountry__c</name>
+    </fields>
+    <fields>
+        <help>Legt die Abrechnungshäufigkeit fest.</help>
+        <label><!-- Billing Frequency --></label>
+        <name>SBQQ__BillingFrequency__c</name>
+    </fields>
+    <fields>
+        <help>Name der Rechnungsanschrift.</help>
+        <label><!-- Bill To Name --></label>
+        <name>SBQQ__BillingName__c</name>
+    </fields>
+    <fields>
+        <help>Postleitzahl der Rechnungsanschrift für dieses Angebot.</help>
+        <label><!-- Bill To Postal Code --></label>
+        <name>SBQQ__BillingPostalCode__c</name>
+    </fields>
+    <fields>
+        <help>Bundesland/Kanton der Rechnungsanschrift für dieses Angebot.</help>
+        <label><!-- Bill To State --></label>
+        <name>SBQQ__BillingState__c</name>
+    </fields>
+    <fields>
+        <help>Straße der Rechnungsanschrift für dieses Angebot.</help>
+        <label><!-- Bill To Street --></label>
+        <name>SBQQ__BillingStreet__c</name>
+    </fields>
+    <fields>
+        <help>Mit &quot;Nach Abonnement-Enddatum&quot; wird ein separater Vertrag für jedes eindeutige Abonnement-Enddatum erstellt, der nur diese Abonnements enthält. Mit &quot;Einzelner Vertrag&quot; wird ein Vertrag erstellt, der alle Abonnements unabhängig von ihren jeweiligen Enddaten enthält.</help>
+        <label><!-- Contracting Method --></label>
+        <name>SBQQ__ContractingMethod__c</name>
+        <picklistValues>
+            <masterLabel>By Subscription End Date</masterLabel>
+            <translation>Nach Abonnement-Enddatum</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Single Contract</masterLabel>
+            <translation>Einzelner Vertrag</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Dies ist ein Rollup-Summenfeld.</help>
+        <label><!-- Customer Amount --></label>
+        <name>SBQQ__CustomerAmount__c</name>
+    </fields>
+    <fields>
+        <help>Zusätzlicher Rabatt, der dem Kunden bei diesem Angebot gewährt wird. Sie können diesen Wert für einzelne Belegposten überschreiben. Belegposten, für die nicht explizit ein zusätzlicher Rabatt angegeben wird, verwenden standardmäßig diesen Wert.</help>
+        <label><!-- Additional Disc. (%) --></label>
+        <name>SBQQ__CustomerDiscount__c</name>
+    </fields>
+    <fields>
+        <help>Anzahl an Tagen seit der Eröffnung des Angebots.</help>
+        <label><!-- Days Quote Open --></label>
+        <name>SBQQ__DaysQuoteOpen__c</name>
+    </fields>
+    <fields>
+        <help>Vorlage, die für dieses Angebot verwendet werden soll. Salesforce CPQ wählt automatisch die hier angegebene Vorlage aus, wenn Sie auf &quot;Dokument erstellen&quot; klicken.</help>
+        <label><!-- Default Template --></label>
+        <name>SBQQ__DefaultTemplate__c</name>
+        <relationshipLabel><!-- Quotes --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Methode, mit der die Produkte in diesem Angebot geliefert werden.</help>
+        <label><!-- Delivery Method --></label>
+        <name>SBQQ__DeliveryMethod__c</name>
+        <picklistValues>
+            <masterLabel>Download</masterLabel>
+            <translation>Download</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ship</masterLabel>
+            <translation>Versand</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Der Händlerrabatt, der für dieses Angebot gilt, sofern nichts anderes für einzelne Belegposten festgelegt wurde.</help>
+        <label><!-- Distributor Discount --></label>
+        <name>SBQQ__DistributorDiscount__c</name>
+    </fields>
+    <fields>
+        <help>Händler für dieses Angebot. Standardwert ist der Opportunity-Partner mit der Rolle &quot;Händler&quot;.</help>
+        <label><!-- Distributor --></label>
+        <name>SBQQ__Distributor__c</name>
+        <relationshipLabel><!-- Distributor Quotes --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Gibt den Status Ihres Dokuments an: &quot;Ausstehend&quot;, &quot;Gesendet&quot; oder &quot;Fehlgeschlagen&quot;.</help>
+        <label><!-- Document Status --></label>
+        <name>SBQQ__DocumentStatus__c</name>
+        <picklistValues>
+            <masterLabel>Failed</masterLabel>
+            <translation>Fehlgeschlagen</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending</masterLabel>
+            <translation>Ausstehend</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sent</masterLabel>
+            <translation>Gesendet</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Falls eine spezielle E-Mail-Vorlage für aus diesem Angebot erstellte und per E-Mail versendete Dokumente verwendet werden soll, geben Sie hier die ID dieser E-Mail-Vorlage ein.</help>
+        <label><!-- Email Template Id --></label>
+        <name>SBQQ__EmailTemplateId__c</name>
+    </fields>
+    <fields>
+        <help>Enddatum für Abonnements in dieser Gruppe.</help>
+        <label><!-- End Date --></label>
+        <name>SBQQ__EndDate__c</name>
+    </fields>
+    <fields>
+        <help>Datum, nach dem das Angebot nicht mehr gültig ist</help>
+        <label><!-- Expires On --></label>
+        <name>SBQQ__ExpirationDate__c</name>
+    </fields>
+    <fields>
+        <help>Geben Sie das Enddatum bei Produkten mit mehreren Segmenten ein, um das erste Segment zuzuteilen.</help>
+        <label><!-- First Segment Term End Date --></label>
+        <name>SBQQ__FirstSegmentTermEndDate__c</name>
+    </fields>
+    <fields>
+        <help>Generiert einen Vertragspreis auf der Basis aller angepassten Angebotsbelegposten im Angebot, sofern gekennzeichnet.</help>
+        <label><!-- Generate Contracted Price --></label>
+        <name>SBQQ__GenerateContractedPrice__c</name>
+        <picklistValues>
+            <masterLabel>Discount Schedule</masterLabel>
+            <translation>Rabattregelung</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Do Not Generate</masterLabel>
+            <translation>Nicht generieren</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Price</masterLabel>
+            <translation>Preis</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Einführung, die auf dem erstellten PDF-Dokument ausgegeben werden kann.</help>
+        <label><!-- Introduction --></label>
+        <name>SBQQ__Introduction__c</name>
+    </fields>
+    <fields>
+        <help>Interner eindeutiger Schlüssel zur Kennzeichnung von &quot;Einkaufswagen&quot;-Angeboten unabhängig von internen IDs</help>
+        <label><!-- Key --></label>
+        <name>SBQQ__Key__c</name>
+    </fields>
+    <fields>
+        <help>Die Anzahl der Belegposten in diesem Angebot.</help>
+        <label><!-- Line Item Count --></label>
+        <name>SBQQ__LineItemCount__c</name>
+    </fields>
+    <fields>
+        <help>Wählen Sie diese Option aus, um SolutionGroups(TM) zu verwenden oder eigene Gruppen auf der Seite &quot;Belegposten bearbeiten&quot;, um Kategorien und Zwischensummen für Angebotsbelegposten zu erstellen.</help>
+        <label><!-- Group Line Items --></label>
+        <name>SBQQ__LineItemsGrouped__c</name>
+    </fields>
+    <fields>
+        <help>Aktivieren Sie dieses Kontrollkästchen, um einzelne Belegposten auf dem erstellten PDF-Angebotsdokument für Gruppenangebote auszugeben.</help>
+        <label><!-- Print Line Items --></label>
+        <name>SBQQ__LineItemsPrinted__c</name>
+    </fields>
+    <fields>
+        <help>Listengesamtbetrag jedes nicht-optionalen Belegpostens in diesem Angebot.</help>
+        <label><!-- List Amount --></label>
+        <name>SBQQ__ListAmount__c</name>
+    </fields>
+    <fields>
+        <help>Standardmäßiger Aufschlagsatz, der für Belegposten in diesem Angebot gilt. Sie können diesen Wert für einzelne Gruppen und Belegposten überschreiben.</help>
+        <label><!-- Markup (%) --></label>
+        <name>SBQQ__MarkupRate__c</name>
+    </fields>
+    <fields>
+        <help>Mastervertrag, mit dem Abonnementprodukte in diesem Angebot gemeinsam beendet werden sollen.</help>
+        <label><!-- Master Contract --></label>
+        <name>SBQQ__MasterContract__c</name>
+        <relationshipLabel><!-- Co-Terminated Quotes --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Nettogesamtbetrag jedes nicht-optionalen Belegpostens in diesem Angebot.</help>
+        <label><!-- Net Amount --></label>
+        <name>SBQQ__NetAmount__c</name>
+    </fields>
+    <fields>
+        <help>Hinweise, die auf dem erstellten PDF-Dokument ausgegeben werden.</help>
+        <label><!-- Notes --></label>
+        <name>SBQQ__Notes__c</name>
+    </fields>
+    <fields>
+        <help>Mit diesem Angebot verknüpfte Opportunity.</help>
+        <label><!-- Opportunity --></label>
+        <name>SBQQ__Opportunity2__c</name>
+        <relationshipLabel><!-- Quotes --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Wenn diese Option markiert ist, während die Angebotseinstellung auf &quot;Angeordnet&quot; festgelegt ist, wird ein Auftrag für jede einzelne Angebotsbelegposten-Gruppe mit ihren zugehörigen Angebotsbelegposten erstellt.</help>
+        <label><!-- Order By Quote Line Group --></label>
+        <name>SBQQ__OrderByQuoteLineGroup__c</name>
+    </fields>
+    <fields>
+        <help>Das Angebotsbelegposten-Feld, mit dem die Auftragsgruppierung festgelegt wird.</help>
+        <label><!-- Order By --></label>
+        <name>SBQQ__OrderBy__c</name>
+        <picklistValues>
+            <masterLabel>ProductFamily__c</masterLabel>
+            <translation>ProductFamily__c</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>QuantityBasedFormulaField__c</masterLabel>
+            <translation>QuantityBasedFormulaField__c</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Die eindeutige Kennung für die Transaktion &quot;Ändern: Erneutes Angebot&quot;. Dabei handelt es sich um die ID des ursprünglichen Primärangebots.</help>
+        <label><!-- Order Group ID --></label>
+        <name>SBQQ__OrderGroupID__c</name>
+    </fields>
+    <fields>
+        <help>Aktivieren Sie dieses Kontrollkästchen, um automatisch einen Auftrag aus diesem Angebot zu erstellen, wenn es sich um ein Primärangebot handelt.</help>
+        <label><!-- Ordered --></label>
+        <name>SBQQ__Ordered__c</name>
+    </fields>
+    <fields>
+        <help>Wenn dieser Angebotsdatensatz eine Änderung für ein erneutes Angebot darstellt, stellen Sie mit diesem Feld die Verknüpfung zum ursprünglichen Angebot her.</help>
+        <label><!-- Original Quote --></label>
+        <name>SBQQ__OriginalQuote__c</name>
+        <relationshipLabel><!-- Amend: Re-Quotes --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Wählen Sie die Papiergröße für dieses Dokument.</help>
+        <label><!-- Paper Size --></label>
+        <name>SBQQ__PaperSize__c</name>
+    </fields>
+    <fields>
+        <help>Bei dieser Opportunity für den Partner gewährter Rabatt.</help>
+        <label><!-- Partner Discount --></label>
+        <name>SBQQ__PartnerDiscount__c</name>
+    </fields>
+    <fields>
+        <help>Hauptpartner bei diesem Geschäftsabschluss (sofern vorhanden). Standardmäßig wird in dieses Feld der Partner eingetragen, der in der Themenliste &quot;Partner&quot; der Opportunity als Hauptpartner gekennzeichnet ist.</help>
+        <label><!-- Partner --></label>
+        <name>SBQQ__Partner__c</name>
+        <relationshipLabel><!-- Partner Quotes --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Bedingungen für die Bezahlung der Posten in diesem Angebot.</help>
+        <label><!-- Payment Terms --></label>
+        <name>SBQQ__PaymentTerms__c</name>
+        <picklistValues>
+            <masterLabel>Due on receipt</masterLabel>
+            <translation>Fällig bei Erhalt</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Net 15</masterLabel>
+            <translation>15 Tage Netto</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Net 30</masterLabel>
+            <translation>30 Tage Netto</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Net 45</masterLabel>
+            <translation>45 Tage Netto</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Net 60</masterLabel>
+            <translation>60 Tage Netto</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Net 90</masterLabel>
+            <translation>90 Tage Netto</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Das Preisbuch, das mit diesem Angebot verknüpft ist.</help>
+        <label><!-- Price Book --></label>
+        <name>SBQQ__PriceBook__c</name>
+        <relationshipLabel><!-- Quotes --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>ID des Preisbuchs, das von diesem Angebot verwendet wird.</help>
+        <label><!-- Pricebook ID --></label>
+        <name>SBQQ__PricebookId__c</name>
+    </fields>
+    <fields>
+        <help>Hauptansprechpartner für das Angebot. Der Name dieser Person wird auf dem erstellten Angebotsdokument ausgegeben.</help>
+        <label><!-- Primary Contact --></label>
+        <name>SBQQ__PrimaryContact__c</name>
+        <relationshipLabel><!-- Quotes --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Aktivieren Sie das Kontrollkästchen, um dieses Angebot als Primärangebot der Opportunity festzulegen und Angebotsbelegposten mit Opportunity-Belegposten zu synchronisieren.</help>
+        <label><!-- Primary --></label>
+        <name>SBQQ__Primary__c</name>
+    </fields>
+    <fields>
+        <help>Die für dieses Angebot verwendete Sprache für die Massenerstellung von Angebotsdokumenten</help>
+        <label><!-- Quote Language --></label>
+        <name>SBQQ__QuoteLanguage__c</name>
+        <picklistValues>
+            <masterLabel>Chinese (Simplified)</masterLabel>
+            <translation>Chinesisch (Vereinfacht)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chinese (Traditional)</masterLabel>
+            <translation>Chinesisch (Traditionell)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Danish</masterLabel>
+            <translation>Dänisch</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dutch</masterLabel>
+            <translation>Niederländisch</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>English</masterLabel>
+            <translation>Englisch</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Finnish</masterLabel>
+            <translation>Finnisch</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>French</masterLabel>
+            <translation>Französisch</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>German</masterLabel>
+            <translation>Deutsch</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Italian</masterLabel>
+            <translation>Italienisch</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Japanese</masterLabel>
+            <translation>Japanisch</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Korean</masterLabel>
+            <translation>Koreanisch</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Norwegian</masterLabel>
+            <translation>Norwegisch</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Portuguese (Brazilian)</masterLabel>
+            <translation>Portugiesisch (Brasilien)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Russian</masterLabel>
+            <translation>Russisch</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Spanish</masterLabel>
+            <translation>Spanisch</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Spanish (Mexican)</masterLabel>
+            <translation>Spanisch (Mexikanisch)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Swedish</masterLabel>
+            <translation>Schwedisch</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Thai</masterLabel>
+            <translation>Thailändisch</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>ID des geführten Verkaufsprozesses, der für dieses Angebot verwendet werden soll (sofern vorhanden).</help>
+        <label><!-- Quote Process Id --></label>
+        <name>SBQQ__QuoteProcessId__c</name>
+    </fields>
+    <fields>
+        <help>Speichert die ID einer Angebotsvorlage (sofern angegeben) für die Verwendung beim Erstellen von PDF-Angebotsdokumenten.</help>
+        <label><!-- Quote Template Id --></label>
+        <name>SBQQ__QuoteTemplateId__c</name>
+    </fields>
+    <fields>
+        <help>Gesamtbetrag der nicht-optionalen Belegposten vor Anwendung zusätzlicher Rabatte.</help>
+        <label><!-- Regular Amount --></label>
+        <name>SBQQ__RegularAmount__c</name>
+    </fields>
+    <fields>
+        <help>Geben Sie die Laufzeit der Verlängerung an. Standardmäßig entspricht sie der ursprünglichen Vertragslaufzeit.</help>
+        <label><!-- Renewal Term --></label>
+        <name>SBQQ__RenewalTerm__c</name>
+    </fields>
+    <fields>
+        <help>Rate, um die der Verlängerungspreis steigt.</help>
+        <label><!-- Renewal Uplift (%) --></label>
+        <name>SBQQ__RenewalUpliftRate__c</name>
+    </fields>
+    <fields>
+        <help>Der für dieses Angebot zuständige Vertriebsmitarbeiter, falls dieser nicht der Inhaber des Angebotsdatensatzes ist.</help>
+        <label><!-- Sales Rep --></label>
+        <name>SBQQ__SalesRep__c</name>
+        <relationshipLabel><!-- Quotes --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Stadt der Lieferanschrift für dieses Angebot.</help>
+        <label><!-- Ship To City --></label>
+        <name>SBQQ__ShippingCity__c</name>
+    </fields>
+    <fields>
+        <help>Land der Lieferanschrift für dieses Angebot.</help>
+        <label><!-- Ship To Country --></label>
+        <name>SBQQ__ShippingCountry__c</name>
+    </fields>
+    <fields>
+        <help>Name der Lieferanschrift für dieses Angebot.</help>
+        <label><!-- Ship To Name --></label>
+        <name>SBQQ__ShippingName__c</name>
+    </fields>
+    <fields>
+        <help>Postleitzahl der Lieferanschrift für dieses Angebot.</help>
+        <label><!-- Ship To Postal Code --></label>
+        <name>SBQQ__ShippingPostalCode__c</name>
+    </fields>
+    <fields>
+        <help>Bundesland/Kanton der Lieferanschrift für dieses Angebot.</help>
+        <label><!-- Ship To State --></label>
+        <name>SBQQ__ShippingState__c</name>
+    </fields>
+    <fields>
+        <help>Straße der Lieferanschrift für dieses Angebot.</help>
+        <label><!-- Ship To Street --></label>
+        <name>SBQQ__ShippingStreet__c</name>
+    </fields>
+    <fields>
+        <help>Quelle des duplizierten Angebots. Bei einem duplizierten Angebot verweist dies auf das ursprünglich duplizierte Angebot.</help>
+        <label><!-- Source --></label>
+        <name>SBQQ__Source__c</name>
+        <relationshipLabel><!-- Quotes (Source) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Startdatum für Abonnements in diesem Angebot.</help>
+        <label><!-- Start Date --></label>
+        <name>SBQQ__StartDate__c</name>
+    </fields>
+    <fields>
+        <help>Status, der angibt, in welcher Phase des Lebenszyklus sich das Angebot befindet.</help>
+        <label><!-- Status --></label>
+        <name>SBQQ__Status__c</name>
+        <picklistValues>
+            <masterLabel>Accepted</masterLabel>
+            <translation>Akzeptiert</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Approved</masterLabel>
+            <translation>Genehmigt</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Denied</masterLabel>
+            <translation>Abgelehnt</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Draft</masterLabel>
+            <translation>Entwurf</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Review</masterLabel>
+            <translation>Wird überprüft</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Presented</masterLabel>
+            <translation>Vorgelegt</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rejected</masterLabel>
+            <translation>Abgelehnt</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Abonnementlaufzeit, die für die Zuteilung berechtigter Produkte nach Tag oder Monat verwendet wird. Wird vom Administrator festgelegt.</help>
+        <label><!-- Subscription Term --></label>
+        <name>SBQQ__SubscriptionTerm__c</name>
+    </fields>
+    <fields>
+        <help>Geben Sie den gewünschten Kundenbetrag ein, um automatisch den zusätzlichen Rabatt für rabattfähige Belegposten zu berechnen.</help>
+        <label><!-- Target Customer Amount --></label>
+        <name>SBQQ__TargetCustomerAmount__c</name>
+    </fields>
+    <fields>
+        <help>Gesamtbetrag des Kundenrabatts. Hierzu zählen alle vertraglich vereinbarten, mengenabhängigen, zusammengesetzten und zusätzlichen Rabatte.</help>
+        <label><!-- Total Customer Disc. Amount --></label>
+        <name>SBQQ__TotalCustomerDiscountAmount__c</name>
+    </fields>
+    <fields>
+        <help>Gibt die Art des Angebots an.</help>
+        <label><!-- Type --></label>
+        <name>SBQQ__Type__c</name>
+        <picklistValues>
+            <masterLabel>Amendment</masterLabel>
+            <translation>Änderung</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quote</masterLabel>
+            <translation>Angebot</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Re-Quote</masterLabel>
+            <translation>Erneutes Angebot</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Renewal</masterLabel>
+            <translation>Vertragsverlängerung</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Gibt an, ob das Angebot jemals geöffnet wurde, um zu bestimmen, ob es sich um ein neues Angebot handelt.</help>
+        <label><!-- Unopened --></label>
+        <name>SBQQ__Unopened__c</name>
+    </fields>
+    <fields>
+        <help>Aktivieren Sie dieses Kontrollkästchen, um das Wasserzeichen im Angebotsdokument anzuzeigen.</help>
+        <label><!-- Watermark Shown --></label>
+        <name>SBQQ__WatermarkShown__c</name>
+    </fields>
+    <gender>Neuter</gender>
+    <layouts>
+        <layout>Quote Layout</layout>
+        <sections>
+            <label>Zusatztext</label>
+            <section>Additional Text</section>
+        </sections>
+        <sections>
+            <label>Adressinformationen</label>
+            <section>Address Information</section>
+        </sections>
+        <sections>
+            <label>Vertragsinformationen</label>
+            <section>Contract Information</section>
+        </sections>
+        <sections>
+            <label>Benutzerdefinierte Links</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>Rabattinformationen</label>
+            <section>Discount Information</section>
+        </sections>
+        <sections>
+            <label>Partnerinformationen</label>
+            <section>Partner Information</section>
+        </sections>
+        <sections>
+            <label>Angebotsoptionen</label>
+            <section>Quote Options</section>
+        </sections>
+        <sections>
+            <label>Neuberechnung</label>
+            <section>Recalculating</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Angebotsnummer</nameFieldLabel>
+    <validationRules>
+        <errorMessage><!-- The End Date must come after the Start Date. --></errorMessage>
+        <name>SBQQ__End_Date_Before_Start_Date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- First Segment Term End Date must fall between Quote Start Date and Quote End Date --></errorMessage>
+        <name>SBQQ__Invalid_First_Segment_Term_End_Date</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- CloneWithRelated --></label>
+        <name>SBQQ__CloneWithRelated</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- CloneWithRelatedClassic --></label>
+        <name>SBQQ__CloneWithRelatedClassic</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- CreateOrderFromQuote --></label>
+        <name>SBQQ__CreateOrderFromQuote</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- EditLines --></label>
+        <name>SBQQ__EditLines</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GenerateDocument --></label>
+        <name>SBQQ__GenerateDocument</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- ImportLines --></label>
+        <name>SBQQ__ImportLines</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- IncludeDocument --></label>
+        <name>SBQQ__IncludeDocument</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- ModifyQuoteTerms --></label>
+        <name>SBQQ__ModifyQuoteTerms</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- PreviewDocument --></label>
+        <name>SBQQ__PreviewDocument</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- RefreshMultiplePrices --></label>
+        <name>SBQQ__RefreshMultiplePrices</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- RefreshPrices --></label>
+        <name>SBQQ__RefreshPrices</name>
+    </webLinks>
+</CustomObjectTranslation>

@@ -1,0 +1,842 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>見積品目</value>
+    </caseValues>
+    <fieldSets>
+        <label><!-- Line Editor --></label>
+        <name>SBQQ__LineEditor</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Non-Current Quote Line Locked Fields --></label>
+        <name>SBQQ__NonCurrentQuoteLineLockedFields</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Segmented Line Editor --></label>
+        <name>SBQQ__SegmentedLineEditor</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Segmented Line Editor Summary --></label>
+        <name>SBQQ__SegmentedLineEditorSummary</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Standard Line Item Drawer --></label>
+        <name>SBQQ__StandardLineItemDrawer</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Summary Fields --></label>
+        <name>SBQQ__SummaryFields</name>
+    </fieldSets>
+    <fields>
+        <help>この品目に適用される追加の顧客割引の絶対額。</help>
+        <label><!-- Additional Disc. (Amt) --></label>
+        <name>SBQQ__AdditionalDiscountAmount__c</name>
+    </fields>
+    <fields>
+        <help>この品目に適用される追加割引の合計。追加割引は、ボリューム割引または交渉済み価格に加えて適用される割引として定義されます。</help>
+        <label><!-- Additional Disc. --></label>
+        <name>SBQQ__AdditionalDiscount__c</name>
+    </fields>
+    <fields>
+        <help>ボリューム割引の計算に影響を与えるこの商品の追加数量。</help>
+        <label><!-- Additional Quantity --></label>
+        <name>SBQQ__AdditionalQuantity__c</name>
+    </fields>
+    <fields>
+        <help>この品目によって表される納入商品が返金可能かどうかを示します。</help>
+        <label><!-- Allow Asset Refunds --></label>
+        <name>SBQQ__AllowAssetRefund__c</name>
+    </fields>
+    <fields>
+        <help>商品がバッチで販売される場合、ここに各バッチの数量が保存されます。デフォルトは商品から取得されます。</help>
+        <label><!-- Batch Quantity --></label>
+        <name>SBQQ__BatchQuantity__c</name>
+    </fields>
+    <fields>
+        <help>請求サイクルを定義します。</help>
+        <label><!-- Billing Frequency --></label>
+        <name>SBQQ__BillingFrequency__c</name>
+    </fields>
+    <fields>
+        <help>請求の発生タイミングを定義する請求種別。[前払い請求] の場合は、商品またはサービスを提供する前に顧客に請求でき、[後払い請求] の場合は、商品またはサービスの提供後に顧客に請求することができます。</help>
+        <label><!-- Billing Type --></label>
+        <name>SBQQ__BillingType__c</name>
+    </fields>
+    <fields>
+        <help>数量および数量範囲に基づいて商品に固定価格を割り当てます。これは、自動的に計算された数量 * 単価の価格を上書きします。</help>
+        <label><!-- Block Price --></label>
+        <name>SBQQ__BlockPrice__c</name>
+        <relationshipLabel><!-- Quote Lines --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>この品目がパッケージを表しているかどうか、つまりこの見積内の他の品目を含んでいるかどうかを示します。</help>
+        <label><!-- Package --></label>
+        <name>SBQQ__Bundle__c</name>
+    </fields>
+    <fields>
+        <help>計算された数量がある品目の場合、この項目にはユーザによって入力された元の数量が保持されます。</help>
+        <label><!-- Original Quantity --></label>
+        <name>SBQQ__BundledQuantity__c</name>
+    </fields>
+    <fields>
+        <help>この品目の商品がこの見積内の別の商品にバンドルされている (含まれている) ことを示します。バンドルされている品目は、価格が 0 で、価格や数量は編集できません。</help>
+        <label><!-- Bundled --></label>
+        <name>SBQQ__Bundled__c</name>
+    </fields>
+    <fields>
+        <help>この品目がアップグレードバンドルの自動選択されたオプションであることを示します。</help>
+        <label><!-- Carry-Over Line --></label>
+        <name>SBQQ__CarryoverLine__c</name>
+    </fields>
+    <fields>
+        <help>商品課金の種別。これは関連付けられている商品から派生するシステム項目です。</help>
+        <label><!-- Charge Type --></label>
+        <name>SBQQ__ChargeType__c</name>
+    </fields>
+    <fields>
+        <help>このパッケージ内のコンポーネントの合計額。</help>
+        <label><!-- Component Cost --></label>
+        <name>SBQQ__ComponentCost__c</name>
+    </fields>
+    <fields>
+        <help>このコンポーネントの追加割引を親パッケージの割引に固定します。</help>
+        <label><!-- Component Discounted By Package --></label>
+        <name>SBQQ__ComponentDiscountedByPackage__c</name>
+    </fields>
+    <fields>
+        <help>この設定のコンポーネントのリスト合計。この項目は、この品目が設定可能な商品を参照している場合にのみ入力されます。</help>
+        <label><!-- Component List Total --></label>
+        <name>SBQQ__ComponentListTotal__c</name>
+    </fields>
+    <fields>
+        <help>コンポーネントレベルで設定された全体に対する割合の範囲。この項目は、商品オプションからコピーされた全体に対する割合の範囲を上書きします。</help>
+        <label><!-- Component Percent of Total Scope --></label>
+        <name>SBQQ__ComponentSubscriptionScope__c</name>
+        <picklistValues>
+            <masterLabel>Both</masterLabel>
+            <translation>両方</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Components</masterLabel>
+            <translation>コンポーネント</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Package</masterLabel>
+            <translation>パッケージ</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>この設定のコンポーネントの合計額。この項目は、この品目が設定可能な商品を参照している場合にのみ入力されます。</help>
+        <label><!-- Component Net Total --></label>
+        <name>SBQQ__ComponentTotal__c</name>
+    </fields>
+    <fields>
+        <help>このコンポーネントの上昇を親パッケージの上昇に固定します。上昇は、複数セグメントの商品にのみ適用されます。</help>
+        <label><!-- Component Uplifted By Package --></label>
+        <name>SBQQ__ComponentUpliftedByPackage__c</name>
+    </fields>
+    <fields>
+        <help>コンポーネント品目を表示するかどうかを示します。</help>
+        <label><!-- Component Visibility --></label>
+        <name>SBQQ__ComponentVisibility__c</name>
+    </fields>
+    <fields>
+        <help>数量に従って大きくなる割引率 (履歴)。</help>
+        <label><!-- Compound Discount (%) --></label>
+        <name>SBQQ__CompoundDiscountRate__c</name>
+    </fields>
+    <fields>
+        <help>この見積品目の設定が必要であることをマークするフラグ。この商品の再設定を要求するためにカスタムコードによって使用することができます。</help>
+        <label><!-- Configuration Required --></label>
+        <name>SBQQ__ConfigurationRequired__c</name>
+    </fields>
+    <fields>
+        <help>商品に商談の取引先用の交渉済み価格設定がある場合の契約価格。契約価格は取引先で使用することができ、あらゆる価格表のあらゆる商品に適用できます。</help>
+        <label><!-- Contracted Price --></label>
+        <name>SBQQ__ContractedPrice__c</name>
+        <relationshipLabel><!-- Quote Lines --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>この品目のコストを編集できるかどうかを指定します。</help>
+        <label><!-- Cost Editable --></label>
+        <name>SBQQ__CostEditable__c</name>
+    </fields>
+    <fields>
+        <help>この品目のコストレコード。</help>
+        <label><!-- Cost --></label>
+        <name>SBQQ__Cost__c</name>
+        <relationshipLabel><!-- Quote Lines --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>この品目によって見積を作成する商品の顧客単価。これは、すべてのパートナー割引を除外した正味単価です。</help>
+        <label><!-- Customer Unit Price --></label>
+        <name>SBQQ__CustomerPrice__c</name>
+    </fields>
+    <fields>
+        <help>この見積品目の顧客合計。これは、すべてのパートナー割引を除外した正味合計です。</help>
+        <label><!-- Customer Total --></label>
+        <name>SBQQ__CustomerTotal__c</name>
+    </fields>
+    <fields>
+        <help>サブスクリプションの期間。商品がサブスクリプションの場合にのみ適用されます。これは、品目が最初に生成されるときに関連商品のサブスクリプション期間からコピーされます。</help>
+        <label><!-- Default Subscription Term --></label>
+        <name>SBQQ__DefaultSubscriptionTerm__c</name>
+    </fields>
+    <fields>
+        <help>この品目の説明。</help>
+        <label><!-- Description --></label>
+        <name>SBQQ__Description__c</name>
+    </fields>
+    <fields>
+        <help>MDQ 商品内のディメンション。すべての各セグメントが独立した価格設定になります。各商品には複数の価格ディメンションが含まれる場合があります。1 年間の価格ディメンションはサブスクリプションとして扱われます。</help>
+        <label><!-- Price Dimension --></label>
+        <name>SBQQ__Dimension__c</name>
+        <relationshipLabel><!-- Quote Lines --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>割引率表の種別。関連付けられている割引率表の [種別] 項目からコピーされます。</help>
+        <label><!-- Discount Schedule Type --></label>
+        <name>SBQQ__DiscountScheduleType__c</name>
+        <picklistValues>
+            <masterLabel>Range</masterLabel>
+            <translation>範囲</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Slab</masterLabel>
+            <translation>スラブ</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>購入した数量または期間を使用して商品の価格から割引される割引率または割引金額を指定します。異なる割引率の段階の数量/期間の範囲を設定します。割引は [リスト価格] に適用され、結果の合計は [定価] に保存されます</help>
+        <label><!-- Discount Schedule --></label>
+        <name>SBQQ__DiscountSchedule__c</name>
+        <relationshipLabel><!-- Quote Lines --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>この品目で使用される割引層。この項目は、ボリューム割引が適用されていて、割引率表の種別が [範囲] である場合にのみ入力されます。</help>
+        <label><!-- Discount Tier --></label>
+        <name>SBQQ__DiscountTier__c</name>
+        <relationshipLabel><!-- Quote Lines (Volume Discounted) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>この品目に適用される追加の顧客割引のパーセント。</help>
+        <label><!-- Additional Disc. (%) --></label>
+        <name>SBQQ__Discount__c</name>
+    </fields>
+    <fields>
+        <help>これはパートナー価格に適用される割引で、正味価格に反映されます。</help>
+        <label><!-- Distributor Discount --></label>
+        <name>SBQQ__DistributorDiscount__c</name>
+    </fields>
+    <fields>
+        <help>この品目の機能と動的オプションを識別します。</help>
+        <label><!-- Dynamic Option ID --></label>
+        <name>SBQQ__DynamicOptionId__c</name>
+    </fields>
+    <fields>
+        <help>このサブスクリプションの有効な終了日。</help>
+        <label><!-- Effective End Date --></label>
+        <name>SBQQ__EffectiveEndDate__c</name>
+    </fields>
+    <fields>
+        <help>合計の計算に使用される有効な数量。商品の価格がブロック価格である場合、スラブ割引率表が適用される場合、または既存のサブスクリプションである場合以外は数量と同じです。</help>
+        <label><!-- Effective Quantity --></label>
+        <name>SBQQ__EffectiveQuantity__c</name>
+    </fields>
+    <fields>
+        <help>このサブスクリプションの有効な開始日。</help>
+        <label><!-- Effective Start Date --></label>
+        <name>SBQQ__EffectiveStartDate__c</name>
+    </fields>
+    <fields>
+        <help>この品目が表すサービスが終了する日付 (商品がサブスクリプションの場合のみ適用)。</help>
+        <label><!-- End Date --></label>
+        <name>SBQQ__EndDate__c</name>
+    </fields>
+    <fields>
+        <help>顧客がすでにこの商品を所有していることを示します。通常、これは、アドオン見積でオプションがある商品に使用されます。商品は、コンフィグレータを実行するためにのみ見積に含まれています。</help>
+        <label><!-- Existing --></label>
+        <name>SBQQ__Existing__c</name>
+    </fields>
+    <fields>
+        <help>この見積品目が属するお気に入り。</help>
+        <label><!-- Favorite --></label>
+        <name>SBQQ__Favorite__c</name>
+        <relationshipLabel><!-- Quote Lines --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>フラグが付いている場合、調整済み見積品目に基づいて契約価格を生成します。</help>
+        <label><!-- Generate Contracted Price --></label>
+        <name>SBQQ__GenerateContractedPrice__c</name>
+        <picklistValues>
+            <masterLabel>Discount Schedule</masterLabel>
+            <translation>割引率表</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Do Not Generate</masterLabel>
+            <translation>生成しない</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Price</masterLabel>
+            <translation>価格</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>この品目の粗利益の金額。</help>
+        <label><!-- Gross Profit --></label>
+        <name>SBQQ__GrossProfit__c</name>
+    </fields>
+    <fields>
+        <help>この品目が属するグループ (存在する場合)。</help>
+        <label><!-- Group --></label>
+        <name>SBQQ__Group__c</name>
+        <relationshipLabel><!-- Quote Lines --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>生成される PDF ドキュメントでこの品目が非表示かどうかを表します。</help>
+        <label><!-- Hidden --></label>
+        <name>SBQQ__Hidden__c</name>
+    </fields>
+    <fields>
+        <help>品目が不完全なデータベースに保存されたときに、アプリケーションロジックによってフラグが内部的に設定されます。これは、価格ルールを評価しているときに発生することがあります。入力規則を時期尚早に起動することを避けるため、入力規則のこの項目をテストします。ページレイアウトに追加するなど、その他の変更は行わないでください。</help>
+        <label><!-- Incomplete --></label>
+        <name>SBQQ__Incomplete__c</name>
+    </fields>
+    <fields>
+        <help>この品目によって見積を作成する商品のリスト単価。リスト単価は価格表から取得されます。</help>
+        <label><!-- List Unit Price --></label>
+        <name>SBQQ__ListPrice__c</name>
+    </fields>
+    <fields>
+        <help>この見積品目のリスト合計。</help>
+        <label><!-- List Total --></label>
+        <name>SBQQ__ListTotal__c</name>
+    </fields>
+    <fields>
+        <help>この品目のマークアップ金額。</help>
+        <label><!-- Markup (Amt) --></label>
+        <name>SBQQ__MarkupAmount__c</name>
+    </fields>
+    <fields>
+        <help>この品目のマークアップのパーセント。</help>
+        <label><!-- Markup (%) --></label>
+        <name>SBQQ__MarkupRate__c</name>
+    </fields>
+    <fields>
+        <help>この項目のマークアップ金額。この値は、マークアップの率または絶対額を商品のコストに適用することによって自動的に計算されます。</help>
+        <label><!-- Markup --></label>
+        <name>SBQQ__Markup__c</name>
+    </fields>
+    <fields>
+        <help>この商品の最高リスト単価。リスト価格が動的に計算される場合にリスト価格の上限を適用するために使用されます。</help>
+        <label><!-- Maximum List Unit Price --></label>
+        <name>SBQQ__MaximumPrice__c</name>
+    </fields>
+    <fields>
+        <help>この商品の最低リスト単価。リスト価格が動的に計算される場合にリスト価格の下限を適用するために使用されます。</help>
+        <label><!-- Minimum List Unit Price --></label>
+        <name>SBQQ__MinimumPrice__c</name>
+    </fields>
+    <fields>
+        <help>この品目によって見積を作成する商品の正味単価。</help>
+        <label><!-- Net Unit Price --></label>
+        <name>SBQQ__NetPrice__c</name>
+    </fields>
+    <fields>
+        <help>この見積品目の正味合計。</help>
+        <label><!-- Net Total --></label>
+        <name>SBQQ__NetTotal__c</name>
+    </fields>
+    <fields>
+        <help>この品目を割引不可能とマークします。</help>
+        <label><!-- Non Discountable --></label>
+        <name>SBQQ__NonDiscountable__c</name>
+    </fields>
+    <fields>
+        <help>この品目をパートナーが割引できないようにする場合は、チェックボックスをオンにします。</help>
+        <label><!-- Non Partner Discountable --></label>
+        <name>SBQQ__NonPartnerDiscountable__c</name>
+    </fields>
+    <fields>
+        <help>グループまたは見積内でのこの品目の位置を示す番号。</help>
+        <label><!-- Number --></label>
+        <name>SBQQ__Number__c</name>
+    </fields>
+    <fields>
+        <help>この商品がパッケージの一部であるために適用される割引。</help>
+        <label><!-- Option Discount (Amt) --></label>
+        <name>SBQQ__OptionDiscountAmount__c</name>
+    </fields>
+    <fields>
+        <help>この品目がオプション SKU である場合、この項目には、オプションに適用されるパッケージへの割引が取得されます。</help>
+        <label><!-- Option Discount (%) --></label>
+        <name>SBQQ__OptionDiscount__c</name>
+    </fields>
+    <fields>
+        <help>このオプションのネストレベルを示します (オプションから生成された品目にのみ適用)。</help>
+        <label><!-- Option Level --></label>
+        <name>SBQQ__OptionLevel__c</name>
+    </fields>
+    <fields>
+        <help>オプション種別を示します。これは、関連する商品オプションからコピーされます。数量の計算方法を決定します。</help>
+        <label><!-- Option Type --></label>
+        <name>SBQQ__OptionType__c</name>
+        <picklistValues>
+            <masterLabel>Accessory</masterLabel>
+            <translation>アクセサリ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Component</masterLabel>
+            <translation>コンポーネント</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Related Product</masterLabel>
+            <translation>関連商品</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>この品目をオプションとしてマークします。オプション品目は、見積合計に加算されず、商談にも移行されません。</help>
+        <label><!-- Optional --></label>
+        <name>SBQQ__Optional__c</name>
+    </fields>
+    <fields>
+        <help>この品目によって見積を作成する商品の元の単価。元の価格は価格表から取得されます。</help>
+        <label><!-- Original Price --></label>
+        <name>SBQQ__OriginalPrice__c</name>
+    </fields>
+    <fields>
+        <help>この品目の派生元見積品目の ID。</help>
+        <label><!-- Original Quote Line Id --></label>
+        <name>SBQQ__OriginalQuoteLineId__c</name>
+    </fields>
+    <fields>
+        <help>この品目によって見積を作成する商品の 1 単位のコスト (コスト表が適用されていない場合)。</help>
+        <label><!-- Original Unit Cost --></label>
+        <name>SBQQ__OriginalUnitCost__c</name>
+    </fields>
+    <fields>
+        <help>このパッケージのコスト合計。コンポーネントのコストも含みます。</help>
+        <label><!-- Package Cost --></label>
+        <name>SBQQ__PackageCost__c</name>
+    </fields>
+    <fields>
+        <help>コンポーネントを含むこのパッケージのリスト価格の合計。</help>
+        <label><!-- Package List Total --></label>
+        <name>SBQQ__PackageListTotal__c</name>
+    </fields>
+    <fields>
+        <help>このパッケージ内の各コンポーネントについて自動生成される商品コードリスト。</help>
+        <label><!-- Package Product Code --></label>
+        <name>SBQQ__PackageProductCode__c</name>
+    </fields>
+    <fields>
+        <help>このパッケージ内の各コンポーネントから生成される動的な商品説明。</help>
+        <label><!-- Package Product Description --></label>
+        <name>SBQQ__PackageProductDescription__c</name>
+    </fields>
+    <fields>
+        <help>コンポーネントを含むこのパッケージの合計金額。</help>
+        <label><!-- Package Total --></label>
+        <name>SBQQ__PackageTotal__c</name>
+    </fields>
+    <fields>
+        <help>組織がチャネル/VARI を通じて販売を行う場合、見積または個別の商品品目に対してパートナー割引を適用できます。パートナー割引は、すべての自動割引と自由裁量の割引を適用した後に適用されます。</help>
+        <label><!-- Partner Discount --></label>
+        <name>SBQQ__PartnerDiscount__c</name>
+    </fields>
+    <fields>
+        <help>パートナー単価。パートナー割引適用後で流通業者割引前の価格。</help>
+        <label><!-- Partner Unit Price --></label>
+        <name>SBQQ__PartnerPrice__c</name>
+    </fields>
+    <fields>
+        <help>パートナー割引の合計。</help>
+        <label><!-- Partner Total --></label>
+        <name>SBQQ__PartnerTotal__c</name>
+    </fields>
+    <fields>
+        <help>設定されている場合、この値はこのセグメントの上昇を計算するときに前のセグメントの定価として使用されます。</help>
+        <label><!-- Previous Segment Regular Price --></label>
+        <name>SBQQ__PreviousSegmentPrice__c</name>
+    </fields>
+    <fields>
+        <help>設定されている場合、この値はこのセグメントの上昇を計算するときに前のセグメントの上昇金額として使用されます。</help>
+        <label><!-- Previous Segment Uplift --></label>
+        <name>SBQQ__PreviousSegmentUplift__c</name>
+    </fields>
+    <fields>
+        <help>この品目の価格が編集可能かどうかを示すフラグ。</help>
+        <label><!-- Price Editable --></label>
+        <name>SBQQ__PriceEditable__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pricebook Entry Id --></label>
+        <name>SBQQ__PricebookEntryId__c</name>
+    </fields>
+    <fields>
+        <help>この品目の価格が編集可能かどうかを示すフラグ。</help>
+        <label><!-- Pricing Method Editable --></label>
+        <name>SBQQ__PricingMethodEditable__c</name>
+    </fields>
+    <fields>
+        <help>この品目の価格の計算方法を示します。リスト: リスト価格から割引を引きます。コスト: コストにマークアップを加えます。</help>
+        <label><!-- Pricing Method --></label>
+        <name>SBQQ__PricingMethod__c</name>
+        <picklistValues>
+            <masterLabel>Block</masterLabel>
+            <translation>ブロック</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cost</masterLabel>
+            <translation>コスト</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Custom</masterLabel>
+            <translation>カスタム</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>List</masterLabel>
+            <translation>リスト</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Percent Of Total</masterLabel>
+            <translation>全体に対する割合</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>この商品の以前の購入を合わせた数量。</help>
+        <label><!-- Prior Quantity --></label>
+        <name>SBQQ__PriorQuantity__c</name>
+    </fields>
+    <fields>
+        <help>この品目が参照する商品のコード。</help>
+        <label><!-- Product Code --></label>
+        <name>SBQQ__ProductCode__c</name>
+    </fields>
+    <fields>
+        <help>Salesforce 内でこれを分類/グループ化/整理する方法 (新規または既存の商品ファミリ)。さらに、商品選択のときにこの項目を使用して、適切な商品または商品 SKU に絞り込むこともできます。</help>
+        <label><!-- Product Family --></label>
+        <name>SBQQ__ProductFamily__c</name>
+    </fields>
+    <fields>
+        <help>この品目が参照する商品の名前。</help>
+        <label><!-- Product Name --></label>
+        <name>SBQQ__ProductName__c</name>
+    </fields>
+    <fields>
+        <help>この品目を生成した商品オプション (存在する場合)。</help>
+        <label><!-- Product Option --></label>
+        <name>SBQQ__ProductOption__c</name>
+        <relationshipLabel><!-- Quote Lines --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>この品目で見積を作成する商品。</help>
+        <label><!-- Product --></label>
+        <name>SBQQ__Product__c</name>
+        <relationshipLabel><!-- Quote Lines --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>按分価格の計算に使用する計算された比率。</help>
+        <label><!-- Prorate Multiplier --></label>
+        <name>SBQQ__ProrateMultiplier__c</name>
+    </fields>
+    <fields>
+        <help>按分されたリスト単価。</help>
+        <label><!-- Prorated List Price --></label>
+        <name>SBQQ__ProratedListPrice__c</name>
+    </fields>
+    <fields>
+        <help>この品目によって見積を作成する商品の按分された価格。この価格は、商品がサブスクリプションで、品目が按分される場合のみ、特別価格と異なります。</help>
+        <label><!-- Prorated Unit Price --></label>
+        <name>SBQQ__ProratedPrice__c</name>
+    </fields>
+    <fields>
+        <help>見積の対象となる数量。</help>
+        <label><!-- Quantity --></label>
+        <name>SBQQ__Quantity__c</name>
+    </fields>
+    <fields>
+        <help>この品目が属する見積。</help>
+        <label><!-- Quote --></label>
+        <name>SBQQ__Quote__c</name>
+        <relationshipLabel><!-- Quote Lines --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>追加割引前の単価。</help>
+        <label><!-- Regular Unit Price --></label>
+        <name>SBQQ__RegularPrice__c</name>
+    </fields>
+    <fields>
+        <help>追加割引前の単価に数量を掛けたもの。</help>
+        <label><!-- Regular Total --></label>
+        <name>SBQQ__RegularTotal__c</name>
+    </fields>
+    <fields>
+        <help>この品目が商品の更新を表していることを示します。この項目は変更しないでください。</help>
+        <label><!-- Renewal --></label>
+        <name>SBQQ__Renewal__c</name>
+    </fields>
+    <fields>
+        <help>この品目が商品の更新を表している場合、更新される納入商品。</help>
+        <label><!-- Renewed Asset --></label>
+        <name>SBQQ__RenewedAsset__c</name>
+        <relationshipLabel><!-- Quote Lines --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>この見積品目によって更新されるサブスクリプション。</help>
+        <label><!-- Renewed Subscription --></label>
+        <name>SBQQ__RenewedSubscription__c</name>
+        <relationshipLabel><!-- Quote Lines --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>この見積上で、この品目を必要とする他の商品を示します。</help>
+        <label><!-- Required By --></label>
+        <name>SBQQ__RequiredBy__c</name>
+        <relationshipLabel><!-- Quote Lines --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>複数セグメント商品で、インデックスはセグメント表内でのこの見積品目の位置を表します。</help>
+        <label><!-- Segment Index --></label>
+        <name>SBQQ__SegmentIndex__c</name>
+    </fields>
+    <fields>
+        <help>複数セグメント商品で、複数ディメンションの見積品目をグループ化するために使用する共有キーです。</help>
+        <label><!-- Segment Key --></label>
+        <name>SBQQ__SegmentKey__c</name>
+    </fields>
+    <fields>
+        <help>複数セグメント商品で、この品目に関連付けられている列ヘッダーの表示ラベル (「1 年目」など) です。</help>
+        <label><!-- Segment Label --></label>
+        <name>SBQQ__SegmentLabel__c</name>
+    </fields>
+    <fields>
+        <help>コピーされた見積品目のソース。</help>
+        <label><!-- Source --></label>
+        <name>SBQQ__Source__c</name>
+        <relationshipLabel><!-- Quote Lines (Source) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>この品目の特別価格を達成するために適用される割引層または契約価格の名前。</help>
+        <label><!-- Special Price Description --></label>
+        <name>SBQQ__SpecialPriceDescription__c</name>
+    </fields>
+    <fields>
+        <help>この品目で提供される特別価格の種別を保存します。値が Null の場合は、特別価格が設定されていないことを示します。</help>
+        <label><!-- Special Price Type --></label>
+        <name>SBQQ__SpecialPriceType__c</name>
+        <picklistValues>
+            <masterLabel>Contracted Price</masterLabel>
+            <translation>契約価格</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Custom</masterLabel>
+            <translation>カスタム</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Renewal</masterLabel>
+            <translation>更新</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>この品目の特別単価。ボリューム割引や契約価格など。</help>
+        <label><!-- Special Price --></label>
+        <name>SBQQ__SpecialPrice__c</name>
+    </fields>
+    <fields>
+        <help>この商品のサブスクリプションの開始日。</help>
+        <label><!-- Start Date --></label>
+        <name>SBQQ__StartDate__c</name>
+    </fields>
+    <fields>
+        <help>このサブスクリプション品目が対象とする納入商品のリスト。指示されない限り、更新しないでください。</help>
+        <label><!-- Subscribed Asset IDs --></label>
+        <name>SBQQ__SubscribedAssetIds__c</name>
+    </fields>
+    <fields>
+        <help>全体に対する割合が商品のリスト価格と正価のどちらに基づいて計算されるかを決定します。</help>
+        <label><!-- Percent of Total Base --></label>
+        <name>SBQQ__SubscriptionBase__c</name>
+    </fields>
+    <fields>
+        <help>全体に対する割合の計算を特定の商品に限定するために定義された商品のカテゴリ 商品レコードからコピーされます。</help>
+        <label><!-- Percent of Total Category --></label>
+        <name>SBQQ__SubscriptionCategory__c</name>
+        <picklistValues>
+            <masterLabel>Hardware</masterLabel>
+            <translation>ハードウェア</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Software</masterLabel>
+            <translation>ソフトウェア</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>この品目の価格を計算するときに使用される全体に対する割合。</help>
+        <label><!-- Percent of Total (%) --></label>
+        <name>SBQQ__SubscriptionPercent__c</name>
+    </fields>
+    <fields>
+        <help>サブスクリプション価格の計算方法を示します。これが空白の場合、品目はサブスクリプション商品ではありません。</help>
+        <label><!-- Subscription Pricing --></label>
+        <name>SBQQ__SubscriptionPricing__c</name>
+        <picklistValues>
+            <masterLabel>Fixed Price</masterLabel>
+            <translation>固定価格:</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Percent Of Total</masterLabel>
+            <translation>全体に対する割合</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>合計価格に対する割合の計算方法を示します。[見積] の場合、すべての非サブスクリプションを使用し、全体に対する割合に見積の商品を含めます。[グループ] の場合、非サブスクリプション商品のみを使用し、全体に対する割合に同じグループの商品を含めます。</help>
+        <label><!-- Percent of Total Scope --></label>
+        <name>SBQQ__SubscriptionScope__c</name>
+        <picklistValues>
+            <masterLabel>Group</masterLabel>
+            <translation>グループ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quote</masterLabel>
+            <translation>見積</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>全体に対する割合の計算対象商品の価格。</help>
+        <label><!-- Percent of Total Target Price --></label>
+        <name>SBQQ__SubscriptionTargetPrice__c</name>
+    </fields>
+    <fields>
+        <help>このサブスクリプションの期間。この商品がサブスクリプションではない場合、この値は無効です。</help>
+        <label><!-- Subscription Term --></label>
+        <name>SBQQ__SubscriptionTerm__c</name>
+    </fields>
+    <fields>
+        <help>課税規則の税コードを指定します。</help>
+        <label><!-- Tax code --></label>
+        <name>SBQQ__TaxCode__c</name>
+    </fields>
+    <fields>
+        <help>品目が課税対象かどうかを示します</help>
+        <label><!-- Taxable --></label>
+        <name>SBQQ__Taxable__c</name>
+    </fields>
+    <fields>
+        <help>サブスクリプション期間に基づく割引率表。[グループ] に設定すると、グループ期間の割引率が適用されます。[見積] に設定すると、グループ内に異なる期間があっても見積全体の期間の割引率が適用されます。</help>
+        <label><!-- Term Discount Schedule --></label>
+        <name>SBQQ__TermDiscountSchedule__c</name>
+        <relationshipLabel><!-- Quote Lines (Term Discouned) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>この品目の割引に使用する期間割引率表内の階層。</help>
+        <label><!-- Term Discount Tier --></label>
+        <name>SBQQ__TermDiscountTier__c</name>
+        <relationshipLabel><!-- Quote Lines (Term Discounted) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>期間割引率表に対してサブスクリプション期間を適用することによって計算される割引。</help>
+        <label><!-- Term Discount --></label>
+        <name>SBQQ__TermDiscount__c</name>
+    </fields>
+    <fields>
+        <help>この品目の割引合計金額。ボリューム割引、契約割引、追加割引を含みます。</help>
+        <label><!-- Total Discount (Amt) --></label>
+        <name>SBQQ__TotalDiscountAmount__c</name>
+    </fields>
+    <fields>
+        <help>この品目の割引合計。ボリューム割引、契約割引、追加割引を含みます。</help>
+        <label><!-- Total Discount (%) --></label>
+        <name>SBQQ__TotalDiscountRate__c</name>
+    </fields>
+    <fields>
+        <help>この品目によって見積を作成する商品の 1 単位のコスト。</help>
+        <label><!-- Unit Cost --></label>
+        <name>SBQQ__UnitCost__c</name>
+    </fields>
+    <fields>
+        <help>個別品目の全期間正価。</help>
+        <label><!-- Unprorated Net Price --></label>
+        <name>SBQQ__UnproratedNetPrice__c</name>
+    </fields>
+    <fields>
+        <help>この見積品目によってアップグレードされる納入商品。見積が契約されると、この納入商品の [使用終了日] が入力され、この納入商品が廃止されたことが示されます。</help>
+        <label><!-- Upgraded Asset --></label>
+        <name>SBQQ__UpgradedAsset__c</name>
+        <relationshipLabel><!-- Quote Lines (Upgrade) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>別の商品にアップグレードされるこの品目の以前の数量の一部。</help>
+        <label><!-- Upgraded Quantity --></label>
+        <name>SBQQ__UpgradedQuantity__c</name>
+    </fields>
+    <fields>
+        <help>この見積品目によってアップグレードされるサブスクリプション。見積が契約されると、このサブスクリプションの [解除日] 項目が入力されます。</help>
+        <label><!-- Upgraded Subscription --></label>
+        <name>SBQQ__UpgradedSubscription__c</name>
+        <relationshipLabel><!-- Quote Lines (Upgrade) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>上昇 (金額) は、通貨金額として測定されます。上昇は MDQ セグメントにパーセントでのみ適用できるため、この項目はシステムによって計算されます。</help>
+        <label><!-- Uplift (Amt) --></label>
+        <name>SBQQ__UpliftAmount__c</name>
+    </fields>
+    <fields>
+        <help>上昇は、前年の価格に対する割合として適用されます。適用後の価格は [特別価格] または [契約価格] の上にある [定価] 項目に入力されます。上昇は、1 年ごとに複利で計算されます。上昇は、サブスクリプションの最初の年には適用できません。</help>
+        <label><!-- Uplift --></label>
+        <name>SBQQ__Uplift__c</name>
+    </fields>
+    <fields>
+        <help>購入した数量または期間を使用して商品の価格から割引される割合に基づくボリューム割引を指定します。異なる割引率の階層の数量または期間の範囲を設定できます。また、サブスクリプション期間に割引率表を適用することもできます。</help>
+        <label><!-- Volume Discount --></label>
+        <name>SBQQ__VolumeDiscount__c</name>
+    </fields>
+    <layouts>
+        <layout>Quote Line Layout</layout>
+        <sections>
+            <label>カスタムリンク</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>詳細情報</label>
+            <section>Description Information</section>
+        </sections>
+        <sections>
+            <label>割引情報</label>
+            <section>Discount Information</section>
+        </sections>
+        <sections>
+            <label>価格設定情報</label>
+            <section>Pricing Information</section>
+        </sections>
+        <sections>
+            <label>再計算</label>
+            <section>Recalculating</section>
+        </sections>
+        <sections>
+            <label>サブスクリプション情報</label>
+            <section>Subscription Information</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>品目名</nameFieldLabel>
+    <validationRules>
+        <errorMessage><!-- You may not specify additional discount as both percentage and absolute amount. --></errorMessage>
+        <name>SBQQ__Additional_discount_percent_or_amount</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You may not specify markup as both percentage and absolute amount. --></errorMessage>
+        <name>SBQQ__Markup_percent_or_amount</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- When Charge Type is Recurring, a Billing Type must be selected. --></errorMessage>
+        <name>SBQQ__RecurringChargeTypeMustHaveBillingType</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- When Charge Type is One-Time, a Billing Frequency value cannot not be selected. --></errorMessage>
+        <name>SBQQ__Validate_billing_frequency</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- When Charge Type is One-Time or Usage, a Billing Type value cannot be selected. --></errorMessage>
+        <name>SBQQ__Validate_billing_type</name>
+    </validationRules>
+</CustomObjectTranslation>

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>商品アクション</value>
+    </caseValues>
+    <fields>
+        <help>ルールがトリガされたときに更新する項目を選択します。</help>
+        <label><!-- Filter Field --></label>
+        <name>SBQQ__FilterField__c</name>
+        <picklistValues>
+            <masterLabel>Product Code</masterLabel>
+            <translation>商品コード</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product Family</masterLabel>
+            <translation>商品ファミリ</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>選択した [条件項目] 内の更新する値を入力します。</help>
+        <label><!-- Filter Value --></label>
+        <name>SBQQ__FilterValue__c</name>
+    </fields>
+    <fields>
+        <help>[条件項目] を [条件値] に適用する方法を決定する演算子を選択します。</help>
+        <label><!-- Operator --></label>
+        <name>SBQQ__Operator__c</name>
+        <picklistValues>
+            <masterLabel>contains</masterLabel>
+            <translation>次の文字列を含む</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>equals</masterLabel>
+            <translation>次の文字列と一致する</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>not equals</masterLabel>
+            <translation>次の文字列と一致しない</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>starts with</masterLabel>
+            <translation>次の文字列で始まる</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- ParentRuleIsActive --></label>
+        <name>SBQQ__ParentRuleIsActive__c</name>
+    </fields>
+    <fields>
+        <help>見積で自動的に選択される商品を選択します。注意: 商品ルールの [種別] は [選択] に設定する必要があります。</help>
+        <label><!-- Product --></label>
+        <name>SBQQ__Product__c</name>
+        <relationshipLabel><!-- Product Actions --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>[商品ルックアップ] 項目の商品が見積で選択されるようにする場合はオンにします。</help>
+        <label><!-- Required --></label>
+        <name>SBQQ__Required__c</name>
+    </fields>
+    <fields>
+        <help>この商品アクションを実行するルール。</help>
+        <label><!-- Rule --></label>
+        <name>SBQQ__Rule__c</name>
+        <relationshipLabel><!-- Actions --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>アクションの種類を指定します。</help>
+        <label><!-- Type --></label>
+        <name>SBQQ__Type__c</name>
+        <picklistValues>
+            <masterLabel>Add</masterLabel>
+            <translation>加算</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Default Filter</masterLabel>
+            <translation>デフォルトの条件</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Disable</masterLabel>
+            <translation>無効化</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Disable &amp; Remove</masterLabel>
+            <translation>無効化して削除</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Enable</masterLabel>
+            <translation>有効化</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Enable &amp; Add</masterLabel>
+            <translation>有効化して追加</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hide</masterLabel>
+            <translation>非表示</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hide &amp; Remove</masterLabel>
+            <translation>非表示にして削除</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Optional Filter</masterLabel>
+            <translation>オプション条件</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Remove</masterLabel>
+            <translation>削除</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Show</masterLabel>
+            <translation>表示</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Show &amp; Add</masterLabel>
+            <translation>表示して追加</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>値項目がグローバルな設定属性項目である場合、特定の属性を識別するために使用します。</help>
+        <label><!-- Value Attribute --></label>
+        <name>SBQQ__ValueAttribute__c</name>
+        <relationshipLabel><!-- Product Actions --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>[条件項目] を [条件値] ではなくこの項目と比較します。</help>
+        <label><!-- Value Field --></label>
+        <name>SBQQ__ValueField__c</name>
+        <picklistValues>
+            <masterLabel>Product Code</masterLabel>
+            <translation>商品コード</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>[値項目] が定義されている Salesforce オブジェクトを選択します。</help>
+        <label><!-- Value Object --></label>
+        <name>SBQQ__ValueObject__c</name>
+        <picklistValues>
+            <masterLabel>Configuration Attributes</masterLabel>
+            <translation>設定属性</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product</masterLabel>
+            <translation>商品</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quote</masterLabel>
+            <translation>見積</translation>
+        </picklistValues>
+    </fields>
+    <layouts>
+        <layout>Product Action Layout</layout>
+        <sections>
+            <label>カスタムリンク</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>条件情報</label>
+            <section>Filter Information</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>商品アクション番号</nameFieldLabel>
+    <validationRules>
+        <errorMessage><!-- Value Attribute required since the Value Field is a global Configuration Attribute field. --></errorMessage>
+        <name>SBQQ__Value_attr_required_if_global_field</name>
+    </validationRules>
+</CustomObjectTranslation>

@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Konfigurationsattribut</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Konfigurationsattribute</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value><!-- Konfigurationsattribut --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+        <value><!-- Konfigurationsattribute --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value><!-- Konfigurationsattribut --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>true</plural>
+        <value><!-- Konfigurationsattribute --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value><!-- Konfigurationsattribut --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value><!-- Konfigurationsattribute --></value>
+    </caseValues>
+    <fields>
+        <help>Aktivieren Sie dieses Kontrollkästchen, um Änderungen sofort auf diese Option anzuwenden. Verwenden Sie dies eher selten, um die Systemleistung für die Benutzer nicht zu beeinträchtigen.</help>
+        <label><!-- Apply Immediately --></label>
+        <name>SBQQ__AppliedImmediately__c</name>
+    </fields>
+    <fields>
+        <help>Aktivieren Sie dieses Kontrollkästchen, um die ausgewählten Konfigurationsattribute auf Produktoptionen anzuwenden.</help>
+        <label><!-- Apply To Product Options --></label>
+        <name>SBQQ__ApplyToProductOptions__c</name>
+    </fields>
+    <fields>
+        <help>Legen Sie den Wert dieses Attributs fest, wenn Sie ein Produkt aus einer dynamischen Funktion hinzufügen, das den Wert im entsprechenden Feld des hinzugefügten Produkts verwendet.</help>
+        <label><!-- Auto-Select --></label>
+        <name>SBQQ__AutoSelect__c</name>
+    </fields>
+    <fields>
+        <help>Spalten bestehen aus einer Auswahlliste (mit den Werten 1, 2 und 3) für jedes Konfigurationsattribut. Es sind maximal drei Spalten zulässig.</help>
+        <label><!-- Column Order --></label>
+        <name>SBQQ__ColumnOrder__c</name>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation>1</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation>2</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3</masterLabel>
+            <translation>3</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>API des Zielfelds im Standardobjekt für den Standardwert des Attributs.</help>
+        <label><!-- Default Field --></label>
+        <name>SBQQ__DefaultField__c</name>
+    </fields>
+    <fields>
+        <help>Zielobjekt für den Standardwert des Attributs.</help>
+        <label><!-- Default Object --></label>
+        <name>SBQQ__DefaultObject__c</name>
+        <picklistValues>
+            <masterLabel>Quote</masterLabel>
+            <translation>Quote__c</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quote Line Group</masterLabel>
+            <translation>QuoteLineGroup__c</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Ist keine Anzeigereihenfolge mit einem Konfigurationsattribut verknüpft, wird die Reihenfolge anhand des Namens des zugehörigen Inhalts bestimmt.</help>
+        <label><!-- Row Order --></label>
+        <name>SBQQ__DisplayOrder__c</name>
+    </fields>
+    <fields>
+        <help>Geben Sie die Funktion an, in der dieses Attribut eingegeben werden soll.</help>
+        <label><!-- Feature --></label>
+        <name>SBQQ__Feature__c</name>
+        <relationshipLabel><!-- Configuration Attributes --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Gibt an, ob dieses Attribut ein globales Zielfeld aufweist.</help>
+        <label><!-- Global --></label>
+        <name>SBQQ__Global__c</name>
+    </fields>
+    <fields>
+        <help>Geben Sie Werte aus dem zugehörigen Auswahllistenfeld im Objekt &quot;Produktoption&quot; ein, die bei diesem Paket ausgeblendet werden sollen.</help>
+        <label><!-- Hidden Values --></label>
+        <name>SBQQ__HiddenValues__c</name>
+    </fields>
+    <fields>
+        <help>Als &quot;Ausgeblendet&quot; gekennzeichnete Konfigurationsattribute werden auf der Produktkonfigurator-Seite nicht angezeigt.</help>
+        <label><!-- Hidden --></label>
+        <name>SBQQ__Hidden__c</name>
+    </fields>
+    <fields>
+        <help>Geben Sie die Position dieses Attributs an. Bei &quot;Oben&quot; wird es oberhalb der Optionen dargestellt, bei &quot;Unten&quot; unterhalb.</help>
+        <label><!-- Position --></label>
+        <name>SBQQ__Position__c</name>
+        <picklistValues>
+            <masterLabel>Bottom</masterLabel>
+            <translation>Unten</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Top</masterLabel>
+            <translation>Oben</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Geben Sie das Produkt an, für das Sie das Attribut erstellen.</help>
+        <label><!-- Product --></label>
+        <name>SBQQ__Product__c</name>
+        <relationshipLabel><!-- Configuration Attributes --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Geben Sie an, ob für dieses Attribut ein Wert angegeben werden muss.</help>
+        <label><!-- Required --></label>
+        <name>SBQQ__Required__c</name>
+    </fields>
+    <fields>
+        <help>Geben Sie Werte aus dem zugehörigen Auswahllistenfeld im Objekt &quot;Produktoption&quot; ein, die bei diesem Paket angezeigt werden sollen.</help>
+        <label><!-- Shown Values --></label>
+        <name>SBQQ__ShownValues__c</name>
+    </fields>
+    <fields>
+        <help>Geben Sie das Feld im Objekt &quot;Produktoption&quot; an, das den Wert dieses Attributs enthalten wird.</help>
+        <label><!-- Target Field --></label>
+        <name>SBQQ__TargetField__c</name>
+        <picklistValues>
+            <masterLabel>Discount (%)</masterLabel>
+            <translation>Rabatt (%)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Discount (Amt)</masterLabel>
+            <translation>Rabatt (Betrag)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unit Price</masterLabel>
+            <translation>Stückpreis</translation>
+        </picklistValues>
+    </fields>
+    <gender>Neuter</gender>
+    <layouts>
+        <layout>Configuration Attribute Layout</layout>
+        <sections>
+            <label>Benutzerdefinierte Links</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Global Attribute Layout</layout>
+        <sections>
+            <label>Benutzerdefinierte Links</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Attributname</nameFieldLabel>
+    <recordTypes>
+        <description><!-- Configuration Attribute associated to a product --></description>
+        <label><!-- Configuration Attribute --></label>
+        <name>SBQQ__Configuration_Attribute</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Definition of an Attribute Item --></description>
+        <label><!-- Global Attribute --></label>
+        <name>SBQQ__Global_Attribute</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- Column Order is required. --></errorMessage>
+        <name>SBQQ__Column_Order_is_required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Product is required. --></errorMessage>
+        <name>SBQQ__Product_is_required_if_not_global</name>
+    </validationRules>
+</CustomObjectTranslation>

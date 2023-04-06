@@ -189,7 +189,7 @@
         <type>Text</type>
     </nameField>
     <pluralLabel>Developers</pluralLabel>
-    <searchLayouts />
+    <searchLayouts/>
     <sharingModel>ReadWrite</sharingModel>
     <visibility>Public</visibility>
 </CustomObject>

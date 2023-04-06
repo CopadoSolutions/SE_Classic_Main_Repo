@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>契約価格</value>
+    </caseValues>
+    <fields>
+        <help>この価格が交渉された取引先。</help>
+        <label><!-- Account --></label>
+        <name>SBQQ__Account__c</name>
+        <relationshipLabel><!-- Contracted Prices --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>この価格を規定する販売契約。</help>
+        <label><!-- Contract --></label>
+        <name>SBQQ__Contract__c</name>
+        <relationshipLabel><!-- Contracted Prices --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>この契約価格の説明。これは、この価格を使用する見積品目の [特別価格の説明] にコピーされます。</help>
+        <label><!-- Description --></label>
+        <name>SBQQ__Description__c</name>
+    </fields>
+    <fields>
+        <help>この顧客でこの商品に使用するボリューム割引率表。</help>
+        <label><!-- Discount Schedule --></label>
+        <name>SBQQ__DiscountSchedule__c</name>
+        <relationshipLabel><!-- Contracted Prices --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>この契約価格で表される、リスト価格表価格の割引 (%)。この項目と価格の両方ではなく、いずれか一方を設定する必要があります。</help>
+        <label><!-- Discount --></label>
+        <name>SBQQ__Discount__c</name>
+    </fields>
+    <fields>
+        <help>この契約価格が有効になる日。</help>
+        <label><!-- Effective Date --></label>
+        <name>SBQQ__EffectiveDate__c</name>
+    </fields>
+    <fields>
+        <help>この契約価格が期限切れになる日。</help>
+        <label><!-- Expiration Date --></label>
+        <name>SBQQ__ExpirationDate__c</name>
+    </fields>
+    <fields>
+        <help>この価格を商品のセットに適用する場合は、商品ファミリなど、条件で使用する項目を選択します。カスタム項目を使用している場合、API 参照名を選択リスト値として [条件項目] に追加します。</help>
+        <label><!-- Filter Field --></label>
+        <name>SBQQ__FilterField__c</name>
+        <picklistValues>
+            <masterLabel>Product</masterLabel>
+            <translation>商品</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product Code</masterLabel>
+            <translation>商品コード</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product Family</masterLabel>
+            <translation>商品ファミリ</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>この契約価格を適用する必要があるかどうかを判断するために、条件項目のテスト基準となる値。</help>
+        <label><!-- Filter Value --></label>
+        <name>SBQQ__FilterValue__c</name>
+    </fields>
+    <fields>
+        <help>この商品の追加割引を許可しない場合はこのチェックボックスをオンにします。</help>
+        <label><!-- Non Discountable --></label>
+        <name>SBQQ__NonDiscountable__c</name>
+    </fields>
+    <fields>
+        <help>[条件項目] と [条件値] の内容を照合するときに使用する演算子を選択します。</help>
+        <label><!-- Operator --></label>
+        <name>SBQQ__Operator__c</name>
+        <picklistValues>
+            <masterLabel>contains</masterLabel>
+            <translation>次の文字列を含む</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ends with</masterLabel>
+            <translation>次の文字列で終わる</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>equals</masterLabel>
+            <translation>次の文字列と一致する</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>greater or equals</masterLabel>
+            <translation>＞＝</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>greater than</masterLabel>
+            <translation>＞</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>less or equals</masterLabel>
+            <translation>＜＝</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>less than</masterLabel>
+            <translation>＜</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>not equals</masterLabel>
+            <translation>次の文字列と一致しない</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>この契約価格の発生源である見積品目。</help>
+        <label><!-- Original Quote Line --></label>
+        <name>SBQQ__OriginalQuoteLine__c</name>
+        <relationshipLabel><!-- Contracted Prices --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>顧客と交渉された価格を入力します。この値は、価格表の価格やボリューム割引価格など、他の価格を上書きします。</help>
+        <label><!-- Price --></label>
+        <name>SBQQ__Price__c</name>
+    </fields>
+    <fields>
+        <help>この割引に適用する価格表から商品を選択します。</help>
+        <label><!-- Product --></label>
+        <name>SBQQ__Product__c</name>
+        <relationshipLabel><!-- Contracted Prices --></relationshipLabel>
+    </fields>
+    <layouts>
+        <layout>Contracted Price Layout</layout>
+        <sections>
+            <label>カスタムリンク</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>説明</label>
+            <section>Description</section>
+        </sections>
+        <sections>
+            <label>商品情報</label>
+            <section>Product Information</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>契約価格番号</nameFieldLabel>
+    <validationRules>
+        <errorMessage><!-- You must enter either Discount, Price, or Discount Schedule. --></errorMessage>
+        <name>SBQQ__Discount_or_price_required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You may not specify both product and filter. --></errorMessage>
+        <name>SBQQ__Either_product_or_filter</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Operator is required when Filter Field is specified. --></errorMessage>
+        <name>SBQQ__Filter_requires_operators</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You must specify either product or filter field --></errorMessage>
+        <name>SBQQ__Product_or_filter_required</name>
+    </validationRules>
+</CustomObjectTranslation>

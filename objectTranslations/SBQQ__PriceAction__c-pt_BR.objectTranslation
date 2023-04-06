@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Ação de preço</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Ações de preços</value>
+    </caseValues>
+    <fields>
+        <help>Selecione o campo que você deseja que seja atualizado quando as condições forem atendidas.</help>
+        <label><!-- Target Field --></label>
+        <name>SBQQ__Field__c</name>
+        <picklistValues>
+            <masterLabel>Discount (%)</masterLabel>
+            <translation>Desconto (%)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Discount (Amt)</masterLabel>
+            <translation>Desconto (Valor)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Markup (%)</masterLabel>
+            <translation>Aumento (%)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Markup (Amt)</masterLabel>
+            <translation>Aumento (Valor)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unit Price</masterLabel>
+            <translation>Preço unitário</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Insira uma fórmula com operadores, funções e campos disponíveis na cotação e no objeto de destino. Não é compatível com a calculadora legada.</help>
+        <label><!-- Formula --></label>
+        <name>SBQQ__Formula__c</name>
+    </fields>
+    <fields>
+        <help>Número que determina a ordem em que várias ações em uma regra são executadas.</help>
+        <label><!-- Order --></label>
+        <name>SBQQ__Order__c</name>
+    </fields>
+    <fields>
+        <label><!-- ParentRuleIsActive --></label>
+        <name>SBQQ__ParentRuleIsActive__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rule Lookup Object --></label>
+        <name>SBQQ__RuleLookupObject__c</name>
+    </fields>
+    <fields>
+        <label><!-- RuleTargetsCalculator --></label>
+        <name>SBQQ__RuleTargetsCalculator__c</name>
+    </fields>
+    <fields>
+        <help>Regra de preço executando essa ação.</help>
+        <label><!-- Rule --></label>
+        <name>SBQQ__Rule__c</name>
+        <relationshipLabel><!-- Price Actions --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Nome da API do campo a retornar da linha que corresponde à condição.</help>
+        <label><!-- Source Lookup Field --></label>
+        <name>SBQQ__SourceLookupField__c</name>
+        <picklistValues>
+            <masterLabel>SBQQ__Value__c</masterLabel>
+            <translation>SBQQ__Value__c</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Variável de resumo que adquire o valor para essa ação.</help>
+        <label><!-- Source Variable --></label>
+        <name>SBQQ__SourceVariable__c</name>
+        <relationshipLabel><!-- Price Actions (Source) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Use Cotação ou Linha de cotação quando Escopo de avaliação da regra de preço = Cálculo, use Opção de produto quando Escopo de avaliação da regra de preço = Configuração</help>
+        <label><!-- Target Object --></label>
+        <name>SBQQ__TargetObject__c</name>
+        <picklistValues>
+            <masterLabel>Product Option</masterLabel>
+            <translation>Opção de produto</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quote</masterLabel>
+            <translation>Cotação</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quote Line</masterLabel>
+            <translation>Linha de cotação</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Se o valor que você deseja inserir for calculado em outro campo da Linha de cotação, selecione o campo aqui.</help>
+        <label><!-- Source Field --></label>
+        <name>SBQQ__ValueField__c</name>
+    </fields>
+    <fields>
+        <help>Insira o valor que você deseja inserir no Campo de destino quando as condições forem atendidas.</help>
+        <label><!-- Value --></label>
+        <name>SBQQ__Value__c</name>
+    </fields>
+    <gender>Feminine</gender>
+    <layouts>
+        <layout>Price Action Layout</layout>
+        <sections>
+            <label>Links personalizados</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>Origens de ação de preço</label>
+            <section>Price Action Sources</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Nº da ação</nameFieldLabel>
+    <validationRules>
+        <errorMessage><!-- Price Action Target Object does not match Evaluation Scope --></errorMessage>
+        <name>SBQQ__Target_Object_Validation</name>
+    </validationRules>
+</CustomObjectTranslation>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Certificat d’exemption de taxe</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Certificats d’exemption de taxe</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account --></label>
+        <name>SBQQ__Account__c</name>
+        <relationshipLabel><!-- Tax Exemption Certificates --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Un certificat actif définit le champ « Exempté de taxe ? » dans Actif sur vrai</help>
+        <label><!-- Active --></label>
+        <name>SBQQ__Active__c</name>
+    </fields>
+    <fields>
+        <label><!-- Certificate Number --></label>
+        <name>SBQQ__CertificateNumber__c</name>
+    </fields>
+    <fields>
+        <help>Facultatif : permet de suivre l’adresse de la société associée au certificat</help>
+        <label><!-- Country --></label>
+        <name>SBQQ__Country__c</name>
+    </fields>
+    <fields>
+        <label><!-- County --></label>
+        <name>SBQQ__County__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Issued --></label>
+        <name>SBQQ__DateIssued__c</name>
+    </fields>
+    <fields>
+        <help>Un certificat doit être marqué par défaut uniquement s’il est actif</help>
+        <label><!-- Default --></label>
+        <name>SBQQ__Default__c</name>
+    </fields>
+    <fields>
+        <help>Le nom de la société ou le nom DBA associé au certificat</help>
+        <label><!-- Exempt Company Name --></label>
+        <name>SBQQ__ExemptCompanyName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Expiration Date --></label>
+        <name>SBQQ__ExpirationDate__c</name>
+    </fields>
+    <fields>
+        <help>L’autorité, par exemple une agence gouvernementale ou un pays (pour les organisations européennes), qui a émis le certificat</help>
+        <label><!-- Issuing Authority --></label>
+        <name>SBQQ__IssuingAuthority__c</name>
+    </fields>
+    <fields>
+        <label><!-- Notes --></label>
+        <name>SBQQ__Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Postal Code --></label>
+        <name>SBQQ__PostalCode__c</name>
+    </fields>
+    <fields>
+        <label><!-- State --></label>
+        <name>SBQQ__State__c</name>
+    </fields>
+    <fields>
+        <label><!-- Street Address_2 --></label>
+        <name>SBQQ__StreetAddress_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Street Address --></label>
+        <name>SBQQ__StreetAddress__c</name>
+    </fields>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Tax Exemption Certificate Layout</layout>
+        <sections>
+            <label>Informations sur la société</label>
+            <section>Company Information</section>
+        </sections>
+        <sections>
+            <label>Liens personnalisés</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>Certificat de taxe</label>
+            <section>Tax Certificate</section>
+        </sections>
+        <sections>
+            <label>Détails du certificat de taxe</label>
+            <section>Tax Certificate Details</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Nom du certificat d’exemption de taxe</nameFieldLabel>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

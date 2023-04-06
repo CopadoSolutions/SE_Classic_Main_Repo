@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>サマリー変数</value>
+    </caseValues>
+    <fields>
+        <help>集計関数に作用される見積品目項目。</help>
+        <label><!-- Aggregate Field --></label>
+        <name>SBQQ__AggregateField__c</name>
+        <picklistValues>
+            <masterLabel>Quantity</masterLabel>
+            <translation>数量</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>この変数の計算に使用される集計関数。</help>
+        <label><!-- Aggregate Function --></label>
+        <name>SBQQ__AggregateFunction__c</name>
+        <picklistValues>
+            <masterLabel>Average</masterLabel>
+            <translation>平均</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Count</masterLabel>
+            <translation>カウント</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Max</masterLabel>
+            <translation>最大</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Min</masterLabel>
+            <translation>最小</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sum</masterLabel>
+            <translation>合計</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>条件が 2 つのサマリー変数の結果に基づいている場合、このサマリー変数と共に構成元となるサマリー変数。</help>
+        <label><!-- Variable Element --></label>
+        <name>SBQQ__CombineWith__c</name>
+        <relationshipLabel><!-- Composed By --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>この変数が変数要素または値要素でどのように構成されるのかを指定します。</help>
+        <label><!-- Composite Operator --></label>
+        <name>SBQQ__CompositeOperator__c</name>
+        <picklistValues>
+            <masterLabel>Add</masterLabel>
+            <translation>加算</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Divide</masterLabel>
+            <translation>除算</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Multiply</masterLabel>
+            <translation>乗算</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Subtract</masterLabel>
+            <translation>減算</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>見積項目に基づいてレコードをさらに制限する場合、見積の同じ項目に対して照合する項目を選択します。</help>
+        <label><!-- Constraint Field --></label>
+        <name>SBQQ__ConstraintField__c</name>
+        <picklistValues>
+            <masterLabel>Status</masterLabel>
+            <translation>状況</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Type</masterLabel>
+            <translation>種別</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>このサマリー変数に含める項目を絞り込むときに使用する項目を選択します。</help>
+        <label><!-- Filter Field --></label>
+        <name>SBQQ__FilterField__c</name>
+        <picklistValues>
+            <masterLabel>Product Code</masterLabel>
+            <translation>商品コード</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product Family</masterLabel>
+            <translation>商品ファミリ</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>この条件で照合する値を入力します。</help>
+        <label><!-- Filter Value --></label>
+        <name>SBQQ__FilterValue__c</name>
+    </fields>
+    <fields>
+        <help>条件で使用する演算子を選択します。</help>
+        <label><!-- Operator --></label>
+        <name>SBQQ__Operator__c</name>
+        <picklistValues>
+            <masterLabel>contains</masterLabel>
+            <translation>次の文字列を含む</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ends with</masterLabel>
+            <translation>次の文字列で終わる</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>equals</masterLabel>
+            <translation>次の文字列と一致する</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>greater or equals</masterLabel>
+            <translation>＞＝</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>greater than</masterLabel>
+            <translation>＞</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>less or equals</masterLabel>
+            <translation>＜＝</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>less than</masterLabel>
+            <translation>＜</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>not equals</masterLabel>
+            <translation>次の文字列と一致しない</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>starts with</masterLabel>
+            <translation>次の文字列で始まる</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>サマリー変数の範囲を入力します。</help>
+        <label><!-- Scope --></label>
+        <name>SBQQ__Scope__c</name>
+        <picklistValues>
+            <masterLabel>Assets</masterLabel>
+            <translation>納入商品</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quote</masterLabel>
+            <translation>見積</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>集計するオブジェクトを選択します。</help>
+        <label><!-- Target Object --></label>
+        <name>SBQQ__TargetObject__c</name>
+        <picklistValues>
+            <masterLabel>Asset</masterLabel>
+            <translation>納入商品</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product Option</masterLabel>
+            <translation>商品オプション</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quote Line</masterLabel>
+            <translation>見積品目</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Subscription</masterLabel>
+            <translation>サブスクリプション</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>構成操作で使用する値を入力します。</help>
+        <label><!-- Value Element --></label>
+        <name>SBQQ__ValueElement__c</name>
+    </fields>
+    <layouts>
+        <layout>Summary Variable Layout</layout>
+        <sections>
+            <label>複合情報</label>
+            <section>Composite Information</section>
+        </sections>
+        <sections>
+            <label>カスタムリンク</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>条件情報</label>
+            <section>Filter Information</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>変数名</nameFieldLabel>
+</CustomObjectTranslation>

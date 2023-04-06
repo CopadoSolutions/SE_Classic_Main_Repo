@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Produktfunktion</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Produktfunktionen</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value><!-- Produktfunktion --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+        <value><!-- Produktfunktionen --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value><!-- Produktfunktion --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>true</plural>
+        <value><!-- Produktfunktionen --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value><!-- Produktfunktion --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value><!-- Produktfunktionen --></value>
+    </caseValues>
+    <fieldSets>
+        <label><!-- Configurator --></label>
+        <name>SBQQ__Configurator</name>
+    </fieldSets>
+    <fields>
+        <help>Weisen Sie diese Funktion einer Kategorie zu, sodass mehrere Funktionen mit zusammenhängenden Optionen zusammen gruppiert werden.</help>
+        <label><!-- Category --></label>
+        <name>SBQQ__Category__c</name>
+        <picklistValues>
+            <masterLabel>Hardware</masterLabel>
+            <translation>Hardware</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Software</masterLabel>
+            <translation>Software</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Der API-Name des Feldsets, das bei der Konfiguration für diese Funktion verwendet wird.</help>
+        <label><!-- Configuration Field Set --></label>
+        <name>SBQQ__ConfigurationFieldSet__c</name>
+        <picklistValues>
+            <masterLabel>OptionConfiguration</masterLabel>
+            <translation>Optionskonfiguration</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Das Produktpaket, das diese Funktion enthält. Wenn Sie die Funktion aus der Produktdetailseite heraus erstellt haben, sollte dieses Feld bereits ausgefüllt sein.</help>
+        <label><!-- Configured SKU --></label>
+        <name>SBQQ__ConfiguredSKU__c</name>
+        <relationshipLabel><!-- Features --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Rabattregelung, die auf das Produkt angewandt werden soll, das von allen Optionen in dieser Funktion ausgewählt wurde. Dies überschreibt die im Produkt ausgewählte Rabattregelung.</help>
+        <label><!-- Discount Schedule --></label>
+        <name>SBQQ__DiscountSchedule__c</name>
+        <relationshipLabel><!-- Product Features --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Der API-Name des Feldsets, das während der Konfiguration beim Filtern dynamischer Optionen für diese Funktion verwendet wird.</help>
+        <label><!-- Dynamic Option Filter Field Set --></label>
+        <name>SBQQ__DynamicProductFilterFieldSet__c</name>
+        <picklistValues>
+            <masterLabel>ConfiguratorFilter</masterLabel>
+            <translation>Konfiguratorfilter</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Der API-Name des Feldsets, das während der Konfiguration beim Anzeigen dynamischer Optionen für diese Funktion verwendet wird.</help>
+        <label><!-- Dynamic Option Lookup Field Set --></label>
+        <name>SBQQ__DynamicProductLookupFieldSet__c</name>
+        <picklistValues>
+            <masterLabel>ConfiguratorLookup</masterLabel>
+            <translation>Konfigurator nachschlagen</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Maximale Anzahl von Optionen für diese Funktion, die als Bestandteil des Projektpakets ausgewählt werden können.</help>
+        <label><!-- Max Options --></label>
+        <name>SBQQ__MaxOptionCount__c</name>
+    </fields>
+    <fields>
+        <help>Mindestanzahl von Optionen für diese Funktion, die Bestandteil des Projektpakets sein müssen.</help>
+        <label><!-- Min Options --></label>
+        <name>SBQQ__MinOptionCount__c</name>
+    </fields>
+    <fields>
+        <help>Laufende Nummer, die bestimmt, wie die Funktionen in der Themenliste des Produkts sortiert werden.</help>
+        <label><!-- Number --></label>
+        <name>SBQQ__Number__c</name>
+    </fields>
+    <fields>
+        <help>Bestimmt, wie der Benutzer mit diesem Produkt verknüpfte Optionen auswählt. Bei der Methode &quot;Klicken&quot; werden Kontrollkästchen neben den Optionen angezeigt. Bei &quot;Hinzufügen&quot; wird eine Schaltfläche angezeigt, die vordefinierte Optionen einblendet. &quot;Dynamisch&quot; führt zur Anzeige einer Schaltfläche, mit der eine Liste aller aktiven Produkte angezeigt wird.</help>
+        <label><!-- Option Selection Method --></label>
+        <name>SBQQ__OptionSelectionMethod__c</name>
+        <picklistValues>
+            <masterLabel>Add</masterLabel>
+            <translation>Addieren</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Click</masterLabel>
+            <translation>Klicken</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dynamic</masterLabel>
+            <translation>Dynamisch</translation>
+        </picklistValues>
+    </fields>
+    <gender>Feminine</gender>
+    <layouts>
+        <layout>Product Feature Layout</layout>
+        <sections>
+            <label>Benutzerdefinierte Links</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Name der Funktion</nameFieldLabel>
+    <validationRules>
+        <errorMessage><!-- Min Options cannot be negative. --></errorMessage>
+        <name>SBQQ__MinOptionValidation</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Translate --></label>
+        <name>SBQQ__Translate</name>
+    </webLinks>
+</CustomObjectTranslation>

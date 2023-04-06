@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Entrada de proceso</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Entradas de proceso</value>
+    </caseValues>
+    <fields>
+        <help>Seleccione la casilla de verificación para entrada de proceso.</help>
+        <label><!-- Active --></label>
+        <name>SBQQ__Active__c</name>
+    </fields>
+    <fields>
+        <label><!-- Binary Choice --></label>
+        <name>SBQQ__BinaryChoice__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation>No</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation>Sí</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Indica qué condiciones de entrada de proceso deben cumplirse.</help>
+        <label><!-- Conditions Met --></label>
+        <name>SBQQ__ConditionsMet__c</name>
+        <picklistValues>
+            <masterLabel>All</masterLabel>
+            <translation>Todo</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Any</masterLabel>
+            <translation>Cualquiera</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Campo de presupuesto que origina el valor predeterminado para esta entrada.</help>
+        <label><!-- Default Field --></label>
+        <name>SBQQ__DefaultField__c</name>
+        <picklistValues>
+            <masterLabel>Bill To Country</masterLabel>
+            <translation>País para facturar</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ship To Country</masterLabel>
+            <translation>País para enviar</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Ingrese el orden en el que se debe mostrar la entrada de proceso.</help>
+        <label><!-- Display Order --></label>
+        <name>SBQQ__DisplayOrder__c</name>
+    </fields>
+    <fields>
+        <help>Seleccione el nombre de API para el campo que acepta el ingreso de usuario.</help>
+        <label><!-- Input Field --></label>
+        <name>SBQQ__InputField__c</name>
+        <picklistValues>
+            <masterLabel>BinaryChoice__c</masterLabel>
+            <translation>BinaryChoice__c</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IntegerInput__c</masterLabel>
+            <translation>IntegerInput__c</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Ingrese un valor numérico.</help>
+        <label><!-- Integer Input --></label>
+        <name>SBQQ__IntegerInput__c</name>
+    </fields>
+    <fields>
+        <help>El texto que desea que se muestre al usuario en la solicitud.</help>
+        <label><!-- Label --></label>
+        <name>SBQQ__Label__c</name>
+    </fields>
+    <fields>
+        <help>Seleccione el operador que hay que utilizar cuando se compara la entrada de Campo de entrada con el Campo de producto.</help>
+        <label><!-- Operator --></label>
+        <name>SBQQ__Operator__c</name>
+        <picklistValues>
+            <masterLabel>contains</masterLabel>
+            <translation>contiene</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ends with</masterLabel>
+            <translation>termina por</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>equals</masterLabel>
+            <translation>igual a</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>greater or equals</masterLabel>
+            <translation>mayor o igual</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>greater than</masterLabel>
+            <translation>mayor que</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>less or equals</masterLabel>
+            <translation>menor o igual</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>less than</masterLabel>
+            <translation>menor que</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>not equals</masterLabel>
+            <translation>no igual a</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>starts with</masterLabel>
+            <translation>comienza por</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Process Input Condition --></label>
+        <name>SBQQ__ProcessInputCondition__c</name>
+        <relationshipLabel><!-- Process Inputs --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Campo en el objeto Producto empleado para filtrar productos que coinciden con esta entrada.</help>
+        <label><!-- Product Field --></label>
+        <name>SBQQ__ProductField__c</name>
+        <picklistValues>
+            <masterLabel>Product Code</masterLabel>
+            <translation>Código del producto</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product Family</masterLabel>
+            <translation>Familia de productos</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product Name</masterLabel>
+            <translation>Nombre del producto</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Proceso de presupuesto que es propietario de la entrada.</help>
+        <label><!-- Quote Process --></label>
+        <name>SBQQ__QuoteProcess__c</name>
+        <relationshipLabel><!-- Process Inputs --></relationshipLabel>
+    </fields>
+    <gender>Feminine</gender>
+    <layouts>
+        <layout>Process Input Layout</layout>
+        <sections>
+            <label>Vínculos personalizados</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>Filtro de productos</label>
+            <section>Product Filter</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Nombre de entrada</nameFieldLabel>
+    <validationRules>
+        <errorMessage><!-- Both Product Field and Operator must be set if either are set. --></errorMessage>
+        <name>SBQQ__ProductFieldAndOperatorSet</name>
+    </validationRules>
+</CustomObjectTranslation>

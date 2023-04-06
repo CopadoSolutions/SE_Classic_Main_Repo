@@ -26,4 +26,9 @@
         <default>false</default>
         <label>Invoicing</label>
     </standardValue>
+    <standardValue>
+        <fullName>Place Order</fullName>
+        <default>false</default>
+        <label>Place Order</label>
+    </standardValue>
 </StandardValueSet>

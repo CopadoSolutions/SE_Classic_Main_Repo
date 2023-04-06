@@ -199,6 +199,7 @@
     </fields>
     <fields>
         <fullName>SourceProductItemId</fullName>
+        <inlineHelpText>For better search results, enter as many details as possible. For example, instead of searching for &quot;cable&quot;, search for &quot;cable coaxial&quot;, or enter part of a product code.</inlineHelpText>
         <trackHistory>false</trackHistory>
         <type>Lookup</type>
     </fields>

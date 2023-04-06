@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Konfigurationsregel</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Konfigurationsregeln</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value><!-- Konfigurationsregel --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+        <value><!-- Konfigurationsregeln --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value><!-- Konfigurationsregel --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>true</plural>
+        <value><!-- Konfigurationsregeln --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value><!-- Konfigurationsregel --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value><!-- Konfigurationsregeln --></value>
+    </caseValues>
+    <fields>
+        <help>Gibt an, ob diese Regel beim Prüfen von Konfigurationen verwendet werden soll.</help>
+        <label><!-- Active --></label>
+        <name>SBQQ__Active__c</name>
+    </fields>
+    <fields>
+        <help>Die übergeordnete Paketkonfiguration wird zusammen mit der angegebenen Ebene eingeschlossen, wenn die Bedingungen dieser Regel im Konfigurator für Benachrichtigungs-, Validierungs- und Auswahlregeln ausgewertet werden.</help>
+        <label><!-- Parent Bundle Condition Level --></label>
+        <name>SBQQ__AscendingNestedLevel__c</name>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation>1</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Zulassen, dass bei der Ausführung im Konfigurator untergeordnete Paketkonfigurationen bis zur angegebenen Ebene Ziel der Aktionen dieser Regel sind.</help>
+        <label><!-- Child Bundle Action Level --></label>
+        <name>SBQQ__DescendingActionNesting__c</name>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation>1</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Untergeordnete Paketkonfigurationen werden bis zur angegebenen Ebene eingeschlossen, wenn die Bedingungen dieser Regel im Konfigurator für Benachrichtigungs-, Validierungs- und Auswahlregeln ausgewertet werden.</help>
+        <label><!-- Child Bundle Condition Level --></label>
+        <name>SBQQ__DescendingNestedLevel__c</name>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation>1</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Wählen Sie die Produktfunktion aus, die von dieser Regel geprüft werden soll.</help>
+        <label><!-- Product Feature --></label>
+        <name>SBQQ__ProductFeature__c</name>
+        <relationshipLabel><!-- Configuration Rules --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Wählen Sie die Produktregel aus, die die Logik zur Validierung Ihrer Produktkonfigurationen enthält.</help>
+        <label><!-- Product Rule --></label>
+        <name>SBQQ__ProductRule__c</name>
+        <relationshipLabel><!-- Configuration Rules --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Wählen Sie das konfigurierte Produkt aus, das von dieser Regel geprüft werden soll.</help>
+        <label><!-- Product --></label>
+        <name>SBQQ__Product__c</name>
+        <relationshipLabel><!-- Configuration Rules --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Geben Sie an, wann diese Regel ausgewertet werden soll.</help>
+        <label><!-- Rule Evaluation Event --></label>
+        <name>SBQQ__RuleEvaluationEvent__c</name>
+    </fields>
+    <fields>
+        <help>Typ von Produktregel, der von dieser Konfigurationsregel referenziert wird.</help>
+        <label><!-- Rule Type --></label>
+        <name>SBQQ__RuleType__c</name>
+    </fields>
+    <gender>Feminine</gender>
+    <layouts>
+        <layout>Configuration Rule Layout</layout>
+        <sections>
+            <label>Benutzerdefinierte Links</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Regelnummer</nameFieldLabel>
+    <validationRules>
+        <errorMessage><!-- Condition Level only supported for Validation, Alert and Selection product rules. --></errorMessage>
+        <name>SBQQ__Ensure_rule_type_nested_level</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Action Level only supported for Selection product rules. --></errorMessage>
+        <name>SBQQ__Ensure_rule_type_nested_level_actions</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The maximum supported Bundle Level is 1. --></errorMessage>
+        <name>SBQQ__Ensure_supported_nested_level</name>
+    </validationRules>
+</CustomObjectTranslation>

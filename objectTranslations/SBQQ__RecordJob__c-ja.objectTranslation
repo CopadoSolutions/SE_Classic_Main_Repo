@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>レコードジョブ</value>
+    </caseValues>
+    <fields>
+        <help>オンになっている場合、レコードのジョブの [完了] 状況がユーザに通知されています。</help>
+        <label><!-- Is Read --></label>
+        <name>SBQQ__IsRead__c</name>
+    </fields>
+    <fields>
+        <help>実行されたバックグラウンドジョブの詳細 (ジョブ ID が指定されていない場合)。</help>
+        <label><!-- Job Details --></label>
+        <name>SBQQ__JobDetails__c</name>
+    </fields>
+    <fields>
+        <label><!-- Job Id --></label>
+        <name>SBQQ__JobId__c</name>
+    </fields>
+    <fields>
+        <help>実行されたバックグラウンドジョブの状況 (ジョブ ID が指定されていない場合)。</help>
+        <label><!-- Job Status --></label>
+        <name>SBQQ__JobStatus__c</name>
+    </fields>
+    <fields>
+        <label><!-- Record Id --></label>
+        <name>SBQQ__RecordId__c</name>
+    </fields>
+    <fields>
+        <help>ジョブの完了時にリダイレクトされる URL。</help>
+        <label><!-- Redirect URL --></label>
+        <name>SBQQ__RedirectUrl__c</name>
+    </fields>
+    <fields>
+        <help>実行されたバックグラウンドジョブのスタックトレース (ジョブ ID が指定されていない場合)。</help>
+        <label><!-- Stacktrace --></label>
+        <name>SBQQ__Stacktrace__c</name>
+    </fields>
+    <nameFieldLabel>名前</nameFieldLabel>
+</CustomObjectTranslation>
