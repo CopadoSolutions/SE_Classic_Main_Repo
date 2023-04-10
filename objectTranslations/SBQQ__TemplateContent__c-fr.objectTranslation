@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Contenu du modèle</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Contenus du modèle</value>
+    </caseValues>
+    <fields>
+        <help>URL vers une page VisualForce qui génère un contenu lorsque le type défini sur « Personnalisé ».</help>
+        <label><!-- Custom Source --></label>
+        <name>SBQQ__CustomSource__c</name>
+    </fields>
+    <fields>
+        <help>Famille de polices à utiliser lors de la restitution de ce contenu dans le document de devis PDF généré.</help>
+        <label><!-- Font Family --></label>
+        <name>SBQQ__FontFamily__c</name>
+        <picklistValues>
+            <masterLabel>Courier</masterLabel>
+            <translation>Courier</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dosis</masterLabel>
+            <translation>Dosis</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Droid Sans</masterLabel>
+            <translation>Droid Sans</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Droid Serif</masterLabel>
+            <translation>Droid Serif</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Helvetica</masterLabel>
+            <translation>Helvetica</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Merriweather</masterLabel>
+            <translation>Merriweather</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Montserrat</masterLabel>
+            <translation>Montserrat</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Noto Sans JP</masterLabel>
+            <translation>Noto Sans JP</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Noto Sans KR</masterLabel>
+            <translation>Noto Sans KR</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Noto Sans SC</masterLabel>
+            <translation>Noto Sans SC</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Noto Sans TC</masterLabel>
+            <translation>Noto Sans TC</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Open Sans</masterLabel>
+            <translation>Open Sans</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PT Sans</masterLabel>
+            <translation>PT Sans</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PT Serif</masterLabel>
+            <translation>PT Serif</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Play</masterLabel>
+            <translation>Play</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Roboto</masterLabel>
+            <translation>Roboto</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Roboto Light</masterLabel>
+            <translation>Roboto Light</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Times</masterLabel>
+            <translation>Times</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Titillium Web</masterLabel>
+            <translation>Titillium Web</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ubuntu</masterLabel>
+            <translation>Ubuntu</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Taille de police à utiliser lors de la restitution de ce contenu dans le document de devis PDF généré.</help>
+        <label><!-- Font Size --></label>
+        <name>SBQQ__FontSize__c</name>
+    </fields>
+    <fields>
+        <help>Contient le balisage si ce document est de type « Balisage ».</help>
+        <label><!-- Markup --></label>
+        <name>SBQQ__Markup__c</name>
+    </fields>
+    <fields>
+        <help>Version HTML d&apos;origine du contenu dans le champ Balisage.</help>
+        <label><!-- Raw Markup --></label>
+        <name>SBQQ__RawMarkup__c</name>
+    </fields>
+    <fields>
+        <help>Style du tableau utilisé pour les éléments de ligne. Standard (par défaut) = champs définis par l&apos;utilisateur sous la forme de colonnes avec les éléments de ligne répertoriés verticalement.</help>
+        <label><!-- Table Style --></label>
+        <name>SBQQ__TableStyle__c</name>
+        <picklistValues>
+            <masterLabel>Price Dimensions as Columns</masterLabel>
+            <translation>Dimensions de prix sous forme de colonnes</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Price Dimensions as Rows with Summary</masterLabel>
+            <translation>Dimensions de prix sous forme de lignes avec un résumé</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Standard</masterLabel>
+            <translation>Standard</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Couleur par défaut (en valeur hexadécimale) appliquée au texte rendu dans ce contenu.</help>
+        <label><!-- Text Color --></label>
+        <name>SBQQ__TextColor__c</name>
+    </fields>
+    <fields>
+        <help>Type de ce contenu.</help>
+        <label><!-- Type --></label>
+        <name>SBQQ__Type__c</name>
+        <picklistValues>
+            <masterLabel>Custom</masterLabel>
+            <translation>Personnalisé</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HTML</masterLabel>
+            <translation>HTML</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Line Items</masterLabel>
+            <translation>Éléments de ligne</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quote Terms</masterLabel>
+            <translation>Clauses du devis</translation>
+        </picklistValues>
+    </fields>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Template Content Layout</layout>
+        <sections>
+            <label>Corps</label>
+            <section>Body</section>
+        </sections>
+        <sections>
+            <label>Liens personnalisés</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Nom du contenu</nameFieldLabel>
+    <startsWith>Consonant</startsWith>
+    <webLinks>
+        <label><!-- Translate --></label>
+        <name>SBQQ__Translate</name>
+    </webLinks>
+</CustomObjectTranslation>

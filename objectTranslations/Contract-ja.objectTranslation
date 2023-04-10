@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label><!-- Active Contract Lookup --></label>
+        <name>SBQQ__ActiveContractLookup</name>
+    </fieldSets>
+    <fields>
+        <help>この契約が有効かどうかを決定します。</help>
+        <label><!-- Active Contract --></label>
+        <name>SBQQ__ActiveContract__c</name>
+    </fields>
+    <fields>
+        <help>他に指定されていない場合、修正商談のレコードタイプ。</help>
+        <label><!-- Amendment Opportunity Record Type Id --></label>
+        <name>SBQQ__AmendmentOpportunityRecordTypeId__c</name>
+    </fields>
+    <fields>
+        <help>修正商談の現在のフェーズ。</help>
+        <label><!-- Amendment Opportunity Stage --></label>
+        <name>SBQQ__AmendmentOpportunityStage__c</name>
+    </fields>
+    <fields>
+        <help>元の商談の所有者。</help>
+        <label><!-- Amendment Owner --></label>
+        <name>SBQQ__AmendmentOwner__c</name>
+        <relationshipLabel><!-- Contracts (Amendment Owner) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>修正の価格表 ID。</help>
+        <label><!-- Amendment Pricebook Id --></label>
+        <name>SBQQ__AmendmentPricebookId__c</name>
+    </fields>
+    <fields>
+        <help>更新開始日と修正終了日の計算ベース。</help>
+        <label><!-- Amendment &amp; Renewal Behavior --></label>
+        <name>SBQQ__AmendmentRenewalBehavior__c</name>
+        <picklistValues>
+            <masterLabel>Earliest End Date</masterLabel>
+            <translation>最も早い終了日</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Latest End Date</masterLabel>
+            <translation>最も遅い終了日</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>修正の開始日。空白の場合、修正は現在の日付で開始します。</help>
+        <label><!-- Amendment Start Date --></label>
+        <name>SBQQ__AmendmentStartDate__c</name>
+    </fields>
+    <fields>
+        <help>元の商談から更新商談に取引先責任者ロールを含めるには選択します。</help>
+        <label><!-- Default Renewal Contact Roles --></label>
+        <name>SBQQ__DefaultRenewalContactRoles__c</name>
+    </fields>
+    <fields>
+        <help>元の商談パートナーを更新商談に含めるには選択します。</help>
+        <label><!-- Default Renewal Partners --></label>
+        <name>SBQQ__DefaultRenewalPartners__c</name>
+    </fields>
+    <fields>
+        <help>オフにすると、修正見積終了日は [修正および更新動作] 設定に従って設定されます。オンにすると、終了日は設定されません。</help>
+        <label><!-- Disable Amendment Co-Term --></label>
+        <name>SBQQ__DisableAmendmentCoTerm__c</name>
+    </fields>
+    <fields>
+        <help>時間ベースのワークフローで使用する契約終了日。</help>
+        <label><!-- Expiration Date --></label>
+        <name>SBQQ__ExpirationDate__c</name>
+    </fields>
+    <fields>
+        <help>セグメント化されたサブスクリプション商品を更新見積でどのように表示するかを定義します。セグメント化を解除すると、最終セグメントのデータで標準見積品目として更新されます。</help>
+        <label><!-- MDQ Renewal Behavior --></label>
+        <name>SBQQ__MDQRenewalBehavior__c</name>
+        <picklistValues>
+            <masterLabel>De-segmented</masterLabel>
+            <translation>セグメント化解除</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>この契約をこの取引先の主契約として指定するには選択します。更新時、すべての契約はこの契約に集約されます。</help>
+        <label><!-- Master Contract --></label>
+        <name>SBQQ__MasterContract__c</name>
+    </fields>
+    <fields>
+        <help>元の商談から使用される価格表の ID。</help>
+        <label><!-- Opportunity Pricebook Id --></label>
+        <name>SBQQ__OpportunityPricebookId__c</name>
+    </fields>
+    <fields>
+        <help>この契約の作成元である商談。</help>
+        <label><!-- Opportunity --></label>
+        <name>SBQQ__Opportunity__c</name>
+        <relationshipLabel><!-- Contracts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Order --></label>
+        <name>SBQQ__Order__c</name>
+        <relationshipLabel><!-- Contracts --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>更新見積のバンドル階層を保持するにはチェックボックスをオンにします。</help>
+        <label><!-- Preserve Bundle Structure --></label>
+        <name>SBQQ__PreserveBundleStructureUponRenewals__c</name>
+    </fields>
+    <fields>
+        <help>この契約の作成元である見積。</help>
+        <label><!-- Quote --></label>
+        <name>SBQQ__Quote__c</name>
+        <relationshipLabel><!-- Contracts --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>売上予測目的で更新商談の生成をトリガする場合に選択します。更新見積を自動的に生成することはありません。</help>
+        <label><!-- Renewal Forecast --></label>
+        <name>SBQQ__RenewalForecast__c</name>
+    </fields>
+    <fields>
+        <help>デフォルトと異なる場合、更新商談のレコードタイプ。</help>
+        <label><!-- Renewal Opportunity Record Type Id --></label>
+        <name>SBQQ__RenewalOpportunityRecordTypeId__c</name>
+    </fields>
+    <fields>
+        <help>この更新のデフォルトの商談フェーズを上書きします。更新商談で有効にするには、これを [更新売上予測] の選択より前に行う必要があります。</help>
+        <label><!-- Renewal Opportunity Stage --></label>
+        <name>SBQQ__RenewalOpportunityStage__c</name>
+    </fields>
+    <fields>
+        <help>この契約の更新を追跡するために生成された更新商談。</help>
+        <label><!-- Renewal Opportunity --></label>
+        <name>SBQQ__RenewalOpportunity__c</name>
+        <relationshipLabel><!-- Renewal Contracts --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>元の商談の所有者。</help>
+        <label><!-- Renewal Owner --></label>
+        <name>SBQQ__RenewalOwner__c</name>
+        <relationshipLabel><!-- Contracts (Renewal Owner) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>元の商談の価格表 ID を使用しない場合、更新商談で使用する価格表 ID を指定します。</help>
+        <label><!-- Renewal Pricebook Id --></label>
+        <name>SBQQ__RenewalPricebookId__c</name>
+    </fields>
+    <fields>
+        <help>更新商談で更新見積を自動的に生成する場合はこのオプションを選択します。</help>
+        <label><!-- Renewal Quoted --></label>
+        <name>SBQQ__RenewalQuoted__c</name>
+    </fields>
+    <fields>
+        <help>更新の期間を指定します。デフォルトでは、元の契約期間と同じになります。</help>
+        <label><!-- Renewal Term --></label>
+        <name>SBQQ__RenewalTerm__c</name>
+    </fields>
+    <fields>
+        <help>更新価格の増加率。</help>
+        <label><!-- Renewal Uplift (%) --></label>
+        <name>SBQQ__RenewalUpliftRate__c</name>
+    </fields>
+    <fields>
+        <help>同じ商品のサブスクリプションの数量を更新見積と修正の 1 つの品目に統合する場合に選択します。</help>
+        <label><!-- Combine Subscription Quantities --></label>
+        <name>SBQQ__SubscriptionQuantitiesCombined__c</name>
+    </fields>
+    <layouts>
+        <layout>CPQ Contract Layout</layout>
+        <sections>
+            <label><!-- Amendments --></label>
+            <section>Amendments</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Recalculating --></label>
+            <section>Recalculating</section>
+        </sections>
+        <sections>
+            <label><!-- Salesforce CPQ Information --></label>
+            <section>Salesforce CPQ Information</section>
+        </sections>
+        <sections>
+            <label><!-- System Info --></label>
+            <section>System Info</section>
+        </sections>
+    </layouts>
+    <webLinks>
+        <label><!-- Amend --></label>
+        <name>SBQQ__Amend</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- RenewContracts --></label>
+        <name>SBQQ__RenewContracts</name>
+    </webLinks>
+</CustomObjectTranslation>

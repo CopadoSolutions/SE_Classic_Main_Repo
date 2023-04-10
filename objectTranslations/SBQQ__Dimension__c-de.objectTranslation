@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Preisdimension</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Preisdimensionen</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value><!-- Preisdimension --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+        <value><!-- Preisdimensionen --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value><!-- Preisdimension --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>true</plural>
+        <value><!-- Preisdimensionen --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value><!-- Preisdimension --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value><!-- Preisdimensionen --></value>
+    </caseValues>
+    <fields>
+        <help>Steuert, ob Kosten für dieses Produkt in einzelnen Angeboten geändert werden können.</help>
+        <label><!-- Cost Editable --></label>
+        <name>SBQQ__CostEditable__c</name>
+        <picklistValues>
+            <masterLabel>Inherit</masterLabel>
+            <translation>Übernehmen</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation>Nein</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation>Ja</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Geben Sie die Anfangsmenge des Produkts beim Hinzufügen an.</help>
+        <label><!-- Default Quantity --></label>
+        <name>SBQQ__DefaultQuantity__c</name>
+    </fields>
+    <fields>
+        <help>Rabattregelung, die bei dieser Dimension verwendet werden soll.</help>
+        <label><!-- Discount Schedule --></label>
+        <name>SBQQ__DiscountSchedule__c</name>
+        <relationshipLabel><!-- Price Dimensions --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Kennzeichnet diese Dimension als nicht rabattfähig.</help>
+        <label><!-- Non Discountable --></label>
+        <name>SBQQ__NonDiscountable__c</name>
+        <picklistValues>
+            <masterLabel>Inherit</masterLabel>
+            <translation>Übernehmen</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation>Nein</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation>Ja</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Kennzeichnet diese Dimension als nicht rabattfähig für Partner.</help>
+        <label><!-- Non Partner Discountable --></label>
+        <name>SBQQ__NonPartnerDiscountable__c</name>
+        <picklistValues>
+            <masterLabel>Inherit</masterLabel>
+            <translation>Übernehmen</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation>Nein</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation>Ja</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Verknüpft diese Dimension mit einem bestimmten Preisbuch</help>
+        <label><!-- Price Book --></label>
+        <name>SBQQ__PriceBook__c</name>
+        <relationshipLabel><!-- Price Dimensions --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Gibt an, dass es bei dieser Dimension zulässig ist, den Preis bei der Angebotserstellung uneingeschränkt zu ändern.</help>
+        <label><!-- Price Editable --></label>
+        <name>SBQQ__PriceEditable__c</name>
+        <picklistValues>
+            <masterLabel>Inherit</masterLabel>
+            <translation>Übernehmen</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation>Nein</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation>Ja</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Wählen Sie ein Produkt aus, mit dem diese Preisdimension verknüpft werden soll.</help>
+        <label><!-- Product --></label>
+        <name>SBQQ__Product__c</name>
+        <relationshipLabel><!-- Price Dimensions --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Hiermit erlauben oder verhindern Sie eine Änderung der Menge für diese Dimension.</help>
+        <label><!-- Quantity Editable --></label>
+        <name>SBQQ__QuantityEditable__c</name>
+        <picklistValues>
+            <masterLabel>Inherit</masterLabel>
+            <translation>Übernehmen</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation>Nein</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation>Ja</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Gibt die Anzahl an Dezimalstellen im Feld &quot;Menge&quot; an.</help>
+        <label><!-- Quantity Scale --></label>
+        <name>SBQQ__QuantityScale__c</name>
+    </fields>
+    <fields>
+        <help>Gibt an, ob dieses Produkt besteuert ist.</help>
+        <label><!-- Taxable --></label>
+        <name>SBQQ__Taxable__c</name>
+        <picklistValues>
+            <masterLabel>Inherit</masterLabel>
+            <translation>Übernehmen</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation>Nein</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation>Ja</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Dies ist eine Regelung für Rabatte, die auf der Abonnementlaufzeit basieren. In diese Felder eingegebene Werte überschreiben die auf der Produktebene festgelegten Werte.</help>
+        <label><!-- Term Discount Schedule --></label>
+        <name>SBQQ__TermDiscountSchedule__c</name>
+        <relationshipLabel><!-- Price Dimensions (Term Discount Schedule) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Wählen Sie die Art von Preisdimension aus: einmalig oder jährlich. Jährliche Dimensionen werden immer wie Abonnements behandelt.</help>
+        <label><!-- Type --></label>
+        <name>SBQQ__Type__c</name>
+        <picklistValues>
+            <masterLabel>Custom</masterLabel>
+            <translation>Benutzerdefiniert</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Month</masterLabel>
+            <translation>Monat</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>One-time</masterLabel>
+            <translation>Einmalig</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quarter</masterLabel>
+            <translation>Quartal</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Year</masterLabel>
+            <translation>Jahr</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Stückpreis für diese Dimension. Dieser Wert überschreibt den Wert aus dem Preisbuch.</help>
+        <label><!-- Unit Price --></label>
+        <name>SBQQ__UnitPrice__c</name>
+    </fields>
+    <gender>Feminine</gender>
+    <layouts>
+        <layout>Price Dimension Layout</layout>
+        <sections>
+            <label>Benutzerdefinierte Links</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>Preise</label>
+            <section>Pricing</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Dimensionsname</nameFieldLabel>
+    <webLinks>
+        <label><!-- Translate --></label>
+        <name>SBQQ__Translate</name>
+    </webLinks>
+</CustomObjectTranslation>

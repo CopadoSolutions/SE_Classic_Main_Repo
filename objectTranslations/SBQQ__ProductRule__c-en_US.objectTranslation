@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- Indicates whether this rule is active or inactive. --></help>
+        <label><!-- Active --></label>
+        <name>SBQQ__Active__c</name>
+    </fields>
+    <fields>
+        <help><!-- Can only be entered if the Conditions Met is Custom. Enter a combination of the Error Condition Index #s, AND, OR, and parenthesis (e.g. (123 AND 124) AND 125). --></help>
+        <label><!-- Advanced Condition --></label>
+        <name>SBQQ__AdvancedCondition__c</name>
+    </fields>
+    <fields>
+        <help><!-- Choose the behavior for your conditions: All is AND, Any is OR, Custom is a combination of AND/OR. --></help>
+        <label><!-- Conditions Met --></label>
+        <name>SBQQ__ConditionsMet__c</name>
+        <picklistValues>
+            <masterLabel>All</masterLabel>
+            <translation><!-- All --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Any</masterLabel>
+            <translation><!-- Any --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Custom</masterLabel>
+            <translation><!-- Custom --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Enter a message to displayed when rule is activated.  An error message will be displayed when a Validations is fired.  A warning message will be displayed when an Alert is fired. Does not apply to Filter rules. --></help>
+        <label><!-- Message --></label>
+        <name>SBQQ__ErrorMessage__c</name>
+    </fields>
+    <fields>
+        <help><!-- Specify when this rule should be evaluated. --></help>
+        <label><!-- Evaluation Event --></label>
+        <name>SBQQ__EvaluationEvent__c</name>
+        <picklistValues>
+            <masterLabel>Always</masterLabel>
+            <translation><!-- Always --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Edit</masterLabel>
+            <translation><!-- Edit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Load</masterLabel>
+            <translation><!-- Load --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Save</masterLabel>
+            <translation><!-- Save --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Specify the order of evaluation for this price rule. Higher ordered rules are evaluated last which means they &quot;win&quot; in case of conflict. --></help>
+        <label><!-- Evaluation Order --></label>
+        <name>SBQQ__EvaluationOrder__c</name>
+    </fields>
+    <fields>
+        <help><!-- Field on Lookup Object corresponding to Product Rule Message. Field must be text. --></help>
+        <label><!-- Lookup Message Field --></label>
+        <name>SBQQ__LookupMessageField__c</name>
+        <picklistValues>
+            <masterLabel>SBQQ__Message__c</masterLabel>
+            <translation><!-- SBQQ__Message__c --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- API Name of the Custom Object that stores the lookup data. --></help>
+        <label><!-- Lookup Object --></label>
+        <name>SBQQ__LookupObject__c</name>
+        <picklistValues>
+            <masterLabel>SBQQ__LookupData__c</masterLabel>
+            <translation><!-- SBQQ__LookupData__c --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Field on Lookup Object corresponding to Product Action Product Lookup. Field must be a lookup to the Product object. --></help>
+        <label><!-- Lookup Product Field --></label>
+        <name>SBQQ__LookupProductField__c</name>
+        <picklistValues>
+            <masterLabel>SBQQ__Product__c</masterLabel>
+            <translation><!-- SBQQ__Product__c --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Field on Lookup Object corresponding to Product Action Required checkbox. Field must be checkbox. --></help>
+        <label><!-- Lookup Required Field --></label>
+        <name>SBQQ__LookupRequiredField__c</name>
+        <picklistValues>
+            <masterLabel>SBQQ__Required__c</masterLabel>
+            <translation><!-- SBQQ__Required__c --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Field on Lookup Object corresponding to Product Action Type picklist. Field must be a Picklist or Text. --></help>
+        <label><!-- Lookup Type Field --></label>
+        <name>SBQQ__LookupTypeField__c</name>
+        <picklistValues>
+            <masterLabel>SBQQ__Type__c</masterLabel>
+            <translation><!-- SBQQ__Type__c --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Applies the rule to the entire quote or specific product. --></help>
+        <label><!-- Scope --></label>
+        <name>SBQQ__Scope__c</name>
+        <picklistValues>
+            <masterLabel>Product</masterLabel>
+            <translation><!-- Product --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quote</masterLabel>
+            <translation><!-- Quote --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Type of rule. Validation displays error messages. Selection causes products to be added or suggested. Alert displays a warning, but requires no rectification. Filter refines option lookup results for Dynamic Bundles. --></help>
+        <label><!-- Type --></label>
+        <name>SBQQ__Type__c</name>
+        <picklistValues>
+            <masterLabel>Alert</masterLabel>
+            <translation><!-- Alert --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Filter</masterLabel>
+            <translation><!-- Filter --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Selection</masterLabel>
+            <translation><!-- Selection --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Validation</masterLabel>
+            <translation><!-- Validation --></translation>
+        </picklistValues>
+    </fields>
+    <layouts>
+        <layout>Product Rule Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Lookup Query Information --></label>
+            <section>Lookup Query Information</section>
+        </sections>
+    </layouts>
+    <validationRules>
+        <errorMessage><!-- The Scope field must point to &apos;Product&apos; for Filter type Product Rules. --></errorMessage>
+        <name>SBQQ__FilterTypeScope</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Only rules with Scope &apos;Product&apos; can have Evaluation Events of type &apos;Edit&apos; or &apos;Load&apos; --></errorMessage>
+        <name>SBQQ__ProductEvaluationEventValidation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The Evaluation Event field must be populated with a value. --></errorMessage>
+        <name>SBQQ__RequiredEvaluationEvent</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- CloneWithRelated --></label>
+        <name>SBQQ__CloneWithRelated</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- CloneWithRelatedClassic --></label>
+        <name>SBQQ__CloneWithRelatedClassic</name>
+    </webLinks>
+</CustomObjectTranslation>

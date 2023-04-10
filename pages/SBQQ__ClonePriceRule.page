@@ -1,0 +1,173 @@
+<!--
+ - Created by jfeingold on 7/11/16.
+ -->
+
+<apex:page id="ClonePriceRule" standardController="SBQQ__PriceRule__c" extensions="SBQQ.PriceRuleExtController" title="{!$Label.sbqq__lbl_clone_price_rule_preview}">
+	<apex:stylesheet value="{!$Resource['sb']}"/>
+	<c:theme />
+	<div id="sbCloneRelated" class="sb">
+		<div class="sbForm"><apex:form >
+			<c:pageHeader title="{!$Label.sbqq__lbl_price_rule_clone_preview}" iconName="sf-icon-copy resize">
+				<div class="sbBtns">
+					<apex:commandButton styleClass="sbBtn" action="{!onClone}" value="{!onCloneLabel}" />
+					<apex:commandButton styleClass="sbBtn" action="{!onCancel}" value="{!onCancelLabel}" />
+				</div>
+			</c:pageHeader>
+			<apex:pageMessages />
+			<apex:outputPanel rendered="{!conditions.size!=0}"><div class="sbGroup">
+				<header class="sbPageBlockSection">
+					<h3>
+						<apex:outputText value="{!$ObjectType.SBQQ__PriceCondition__c.label}"/>&nbsp;
+						<apex:outputText value="({!conditions.size})"/>
+					</h3>
+					<div class="sbTool toggleButton"><i class="sf-icon-down" /></div>
+				</header>
+				<div class="tableContainer standard">
+					<table class="sbTable">
+						<thead>
+						<tr>
+							<th><apex:outputText value="{!$ObjectType.SBQQ__PriceCondition__c.fields.SBQQ__Index__c.label}"/></th>
+							<th><apex:outputText value="{!$ObjectType.SBQQ__PriceCondition__c.fields.SBQQ__Object__c.label}"/></th>
+							<th><apex:outputText value="{!$ObjectType.SBQQ__PriceCondition__c.fields.SBQQ__Field__c.label}"/></th>
+							<th><apex:outputText value="{!$ObjectType.SBQQ__PriceCondition__c.fields.SBQQ__TestedFormula__c.label}"/></th>
+							<th><apex:outputText value="{!$ObjectType.SBQQ__PriceCondition__c.fields.SBQQ__TestedVariable__c.label}"/></th>
+							<th><apex:outputText value="{!$ObjectType.SBQQ__PriceCondition__c.fields.SBQQ__Operator__c.label}"/></th>
+							<th><apex:outputText value="{!$ObjectType.SBQQ__PriceCondition__c.fields.SBQQ__FilterType__c.label}"/></th>
+							<th><apex:outputText value="{!$ObjectType.SBQQ__PriceCondition__c.fields.SBQQ__Value__c.label}"/></th>
+							<th><apex:outputText value="{!$ObjectType.SBQQ__PriceCondition__c.fields.SBQQ__FilterFormula__c.label}"/></th>
+							<th><apex:outputText value="{!$ObjectType.SBQQ__PriceCondition__c.fields.SBQQ__FilterVariable__c.label}"/></th>
+						</tr>
+						</thead>
+						<tbody>
+						<apex:repeat var="pc" value="{!conditions}" rows="15">
+							<tr>
+								<td><apex:outputField value="{!pc.SBQQ__Index__c}"/></td>
+								<td><apex:outputField value="{!pc.SBQQ__Object__c}"/></td>
+								<td><apex:outputField value="{!pc.SBQQ__Field__c}"/></td>
+								<td><apex:outputField value="{!pc.SBQQ__TestedFormula__c}"/></td>
+								<td><apex:outputField value="{!pc.SBQQ__TestedVariable__c}"/></td>
+								<td><apex:outputField value="{!pc.SBQQ__Operator__c}"/></td>
+								<td><apex:outputField value="{!pc.SBQQ__FilterType__c}"/></td>
+								<td><apex:outputField value="{!pc.SBQQ__Value__c}"/></td>
+								<td><apex:outputField value="{!pc.SBQQ__FilterFormula__c}"/></td>
+								<td><apex:outputField value="{!pc.SBQQ__FilterVariable__c}"/></td>
+							</tr>
+						</apex:repeat>
+						<apex:outputPanel rendered="{!conditions.size>15}">
+							<tr><td colspan="42">
+								<apex:outputText value="{!$Label.sbqq__lbl_additional_cloned_items}">
+									<apex:param value="{!conditions.size-15}"></apex:param>
+								</apex:outputText>
+							</td></tr>
+						</apex:outputPanel>
+						</tbody>
+					</table>
+				</div>
+			</div></apex:outputPanel>
+			<apex:outputPanel rendered="{!queries.size!=0}"><div class="sbGroup">
+				<header class="sbPageBlockSection">
+					<h3>
+						<apex:outputText value="{!$ObjectType.SBQQ__LookupQuery__c.label}"/>&nbsp;
+						<apex:outputText value="({!queries.size})"/>
+					</h3>
+					<div class="sbTool toggleButton"><i class="sf-icon-down" /></div>
+				</header>
+				<div class="tableContainer standard">
+					<table class="sbTable">
+						<thead>
+						<tr>
+							<th><apex:outputText value="{!$ObjectType.SBQQ__LookupQuery__c.fields.SBQQ__MatchType__c.label}"/></th>
+							<th><apex:outputText value="{!$ObjectType.SBQQ__LookupQuery__c.fields.SBQQ__TestedObject__c.label}"/></th>
+							<th><apex:outputText value="{!$ObjectType.SBQQ__LookupQuery__c.fields.SBQQ__TestedField__c.label}"/></th>
+							<th><apex:outputText value="{!$ObjectType.SBQQ__LookupQuery__c.fields.SBQQ__TestedValue__c.label}"/></th>
+							<th><apex:outputText value="{!$ObjectType.SBQQ__LookupQuery__c.fields.SBQQ__Operator__c.label}"/></th>
+							<th><apex:outputText value="{!$ObjectType.SBQQ__LookupQuery__c.fields.SBQQ__LookupField__c.label}"/></th>
+						</tr>
+						</thead>
+						<tbody>
+						<apex:repeat var="lq" value="{!queries}" rows="15">
+							<tr>
+								<td><apex:outputField value="{!lq.SBQQ__MatchType__c}"/></td>
+								<td><apex:outputField value="{!lq.SBQQ__TestedObject__c}"/></td>
+								<td><apex:outputField value="{!lq.SBQQ__TestedField__c}"/></td>
+								<td><apex:outputField value="{!lq.SBQQ__TestedValue__c}"/></td>
+								<td><apex:outputField value="{!lq.SBQQ__Operator__c}"/></td>
+								<td><apex:outputField value="{!lq.SBQQ__LookupField__c}"/></td>
+							</tr>
+						</apex:repeat>
+						<apex:outputPanel rendered="{!queries.size>15}">
+							<tr><td colspan="42">
+								<apex:outputText value="{!$Label.sbqq__lbl_additional_cloned_items}">
+									<apex:param value="{!queries.size-15}"></apex:param>
+								</apex:outputText>
+							</td></tr>
+						</apex:outputPanel>
+						</tbody>
+					</table>
+				</div>
+			</div></apex:outputPanel>
+			<apex:outputPanel rendered="{!actions.size!=0}"><div class="sbGroup">
+				<header class="sbPageBlockSection">
+					<h3>
+						<apex:outputText value="{!$ObjectType.SBQQ__PriceAction__c.label}"/>&nbsp;
+						<apex:outputText value="({!actions.size})"/>
+					</h3>
+					<div class="sbTool toggleButton"><i class="sf-icon-down" /></div>
+				</header>
+				<div class="tableContainer standard">
+					<table class="sbTable">
+						<thead>
+						<tr>
+							<th><apex:outputText value="{!$ObjectType.SBQQ__PriceAction__c.fields.SBQQ__Order__c.label}"/></th>
+							<th><apex:outputText value="{!$ObjectType.SBQQ__PriceAction__c.fields.SBQQ__TargetObject__c.label}"/></th>
+							<th><apex:outputText value="{!$ObjectType.SBQQ__PriceAction__c.fields.SBQQ__Field__c.label}"/></th>
+							<th><apex:outputText value="{!$ObjectType.SBQQ__PriceAction__c.fields.SBQQ__Value__c.label}"/></th>
+							<th><apex:outputText value="{!$ObjectType.SBQQ__PriceAction__c.fields.SBQQ__ValueField__c.label}"/></th>
+							<th><apex:outputText value="{!$ObjectType.SBQQ__PriceAction__c.fields.SBQQ__Formula__c.label}"/></th>
+							<th><apex:outputText value="{!$ObjectType.SBQQ__PriceAction__c.fields.SBQQ__SourceVariable__c.label}"/></th>
+							<th><apex:outputText value="{!$ObjectType.SBQQ__PriceAction__c.fields.SBQQ__SourceLookupField__c.label}"/></th>
+						</tr>
+						</thead>
+						<tbody>
+						<apex:repeat var="pa" value="{!actions}" rows="15">
+							<tr>
+								<td><apex:outputField value="{!pa.SBQQ__Order__c}"/></td>
+								<td><apex:outputField value="{!pa.SBQQ__TargetObject__c}"/></td>
+								<td><apex:outputField value="{!pa.SBQQ__Field__c}"/></td>
+								<td><apex:outputField value="{!pa.SBQQ__Value__c}"/></td>
+								<td><apex:outputField value="{!pa.SBQQ__ValueField__c}"/></td>
+								<td><apex:outputField value="{!pa.SBQQ__Formula__c}"/></td>
+								<td><apex:outputField value="{!pa.SBQQ__SourceVariable__c}"/></td>
+								<td><apex:outputField value="{!pa.SBQQ__SourceLookupField__c}"/></td>
+							</tr>
+						</apex:repeat>
+						<apex:outputPanel rendered="{!actions.size>15}">
+							<tr><td colspan="42">
+								<apex:outputText value="{!$Label.sbqq__lbl_additional_cloned_items}">
+									<apex:param value="{!actions.size-15}"></apex:param>
+								</apex:outputText>
+							</td></tr>
+						</apex:outputPanel>
+						</tbody>
+					</table>
+				</div>
+			</div></apex:outputPanel>
+		</apex:form></div>
+	</div>
+	<script>
+
+		var buttons = document.getElementsByClassName('toggleButton');
+		var tables = document.getElementsByClassName('tableContainer');
+
+		for (var i=0; i<buttons.length;i++) (function(i) {
+			buttons[i].onclick = function(){
+				if (tables[i].style.display=='block') {
+					tables[i].style.display='none';
+				} else {
+					tables[i].style.display = 'block';
+				}
+			}
+		})(i);
+
+	</script>
+</apex:page>

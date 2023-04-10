@@ -1,0 +1,500 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <customHelpPage>SBQQ__SummaryVariableHelp</customHelpPage>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <description>Variable that summarizes quote line items.</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableEnhancedLookup>false</enableEnhancedLookup>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>false</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>Private</externalSharingModel>
+    <fields>
+        <fullName>SBQQ__AggregateField__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Quote Line field that&apos;s acted upon by the aggregate function.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Quote Line field that&apos;s acted upon by the aggregate function.</inlineHelpText>
+        <label>Aggregate Field</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Quantity</fullName>
+                    <default>false</default>
+                    <label>Quantity</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SBQQ__AggregateFunction__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Aggregate function used to calculate this variable.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Aggregate function used to calculate this variable.</inlineHelpText>
+        <label>Aggregate Function</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Count</fullName>
+                    <default>false</default>
+                    <label>Count</label>
+                </value>
+                <value>
+                    <fullName>Sum</fullName>
+                    <default>false</default>
+                    <label>Sum</label>
+                </value>
+                <value>
+                    <fullName>Average</fullName>
+                    <default>false</default>
+                    <label>Average</label>
+                </value>
+                <value>
+                    <fullName>Min</fullName>
+                    <default>false</default>
+                    <label>Min</label>
+                </value>
+                <value>
+                    <fullName>Max</fullName>
+                    <default>false</default>
+                    <label>Max</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SBQQ__CombineWith__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>Another variable to compose with this variable to produce the final result.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Another summary variable to compose with this summary variable if your condition is based on both results.</inlineHelpText>
+        <label>Variable Element</label>
+        <referenceTo>SBQQ__SummaryVariable__c</referenceTo>
+        <relationshipLabel>Composed By</relationshipLabel>
+        <relationshipName>CombinedBy</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__CompositeOperator__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Operator to use in composing this variable with another variable or value to produce final result used in rules.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Specify how this variable should be composed with Variable Element or Value Element.</inlineHelpText>
+        <label>Composite Operator</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Add</fullName>
+                    <default>false</default>
+                    <label>Add</label>
+                </value>
+                <value>
+                    <fullName>Subtract</fullName>
+                    <default>false</default>
+                    <label>Subtract</label>
+                </value>
+                <value>
+                    <fullName>Multiply</fullName>
+                    <default>false</default>
+                    <label>Multiply</label>
+                </value>
+                <value>
+                    <fullName>Divide</fullName>
+                    <default>false</default>
+                    <label>Divide</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SBQQ__ConstraintField__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The field that will limit records further based on a quote field.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>If you want to limit records further based on a quote field, select the field that you want to match against the same field on the quote.</inlineHelpText>
+        <label>Constraint Field</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Type</fullName>
+                    <default>false</default>
+                    <label>Type</label>
+                </value>
+                <value>
+                    <fullName>Status</fullName>
+                    <default>false</default>
+                    <label>Status</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SBQQ__FilterField__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Items that are filtered for inclusion in this summary variable.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select the field to use when filtering items for inclusion in this summary variable.</inlineHelpText>
+        <label>Filter Field</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Product Code</fullName>
+                    <default>false</default>
+                    <label>Product Code</label>
+                </value>
+                <value>
+                    <fullName>Product Family</fullName>
+                    <default>false</default>
+                    <label>Product Family</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SBQQ__FilterValue__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The value that matches this filter.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter the value to match in this filter.</inlineHelpText>
+        <label>Filter Value</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SBQQ__Operator__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The operator being used in the filter.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Choose the operator to use in your filter.</inlineHelpText>
+        <label>Operator</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>equals</fullName>
+                    <default>false</default>
+                    <label>equals</label>
+                </value>
+                <value>
+                    <fullName>not equals</fullName>
+                    <default>false</default>
+                    <label>not equals</label>
+                </value>
+                <value>
+                    <fullName>less than</fullName>
+                    <default>false</default>
+                    <label>less than</label>
+                </value>
+                <value>
+                    <fullName>less or equals</fullName>
+                    <default>false</default>
+                    <label>less or equals</label>
+                </value>
+                <value>
+                    <fullName>greater than</fullName>
+                    <default>false</default>
+                    <label>greater than</label>
+                </value>
+                <value>
+                    <fullName>greater or equals</fullName>
+                    <default>false</default>
+                    <label>greater or equals</label>
+                </value>
+                <value>
+                    <fullName>starts with</fullName>
+                    <default>false</default>
+                    <label>starts with</label>
+                </value>
+                <value>
+                    <fullName>ends with</fullName>
+                    <default>false</default>
+                    <label>ends with</label>
+                </value>
+                <value>
+                    <fullName>contains</fullName>
+                    <default>false</default>
+                    <label>contains</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SBQQ__Scope__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The scope of your summary variable.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter the scope of your summary variable.</inlineHelpText>
+        <label>Scope</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Quote</fullName>
+                    <default>true</default>
+                    <label>Quote</label>
+                </value>
+                <value>
+                    <fullName>Assets</fullName>
+                    <default>false</default>
+                    <label>Assets</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SBQQ__TargetObject__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Name of object being summarized.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select the object you want to aggregate.</inlineHelpText>
+        <label>Target Object</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Quote Line</fullName>
+                    <default>false</default>
+                    <label>Quote Line</label>
+                </value>
+                <value>
+                    <fullName>Product Option</fullName>
+                    <default>false</default>
+                    <label>Product Option</label>
+                </value>
+                <value>
+                    <fullName>Asset</fullName>
+                    <default>false</default>
+                    <label>Asset</label>
+                </value>
+                <value>
+                    <fullName>Subscription</fullName>
+                    <default>false</default>
+                    <label>Subscription</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SBQQ__ValueElement__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Value used by Composite Operator in composing final result for this variable.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter value to use in composing operation.</inlineHelpText>
+        <label>Value Element</label>
+        <precision>16</precision>
+        <required>false</required>
+        <scale>4</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <label>Summary Variable</label>
+    <listViews>
+        <fullName>SBQQ__All</fullName>
+        <columns>NAME</columns>
+        <columns>SBQQ__Scope__c</columns>
+        <columns>SBQQ__AggregateField__c</columns>
+        <columns>SBQQ__AggregateFunction__c</columns>
+        <columns>SBQQ__Operator__c</columns>
+        <columns>SBQQ__FilterField__c</columns>
+        <columns>SBQQ__FilterValue__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <label>Variable Name</label>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Summary Variables</pluralLabel>
+    <searchLayouts>
+        <lookupDialogsAdditionalFields>SBQQ__AggregateField__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>SBQQ__AggregateFunction__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>SBQQ__Scope__c</lookupDialogsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

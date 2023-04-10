@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Produto favorito</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Produtos favoritos</value>
+    </caseValues>
+    <fields>
+        <label><!-- Configuration Attributes --></label>
+        <name>SBQQ__ConfigurationAttributes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Discount Schedule --></label>
+        <name>SBQQ__DiscountSchedule__c</name>
+        <relationshipLabel><!-- Favorite Product --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Identifica o recurso e a opção dinâmica para essa linha.</help>
+        <label><!-- Dynamic Option ID --></label>
+        <name>SBQQ__DynamicOptionId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Favorite --></label>
+        <name>SBQQ__Favorite__c</name>
+        <relationshipLabel><!-- Favorite Product --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Product Option --></label>
+        <name>SBQQ__ProductOption__c</name>
+        <relationshipLabel><!-- Favorite Product --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Product --></label>
+        <name>SBQQ__Product__c</name>
+        <relationshipLabel><!-- Favorite Product --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Quantity --></label>
+        <name>SBQQ__Quantity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Required By --></label>
+        <name>SBQQ__RequiredBy__c</name>
+        <relationshipLabel><!-- Favorite Product --></relationshipLabel>
+    </fields>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Favorite Product Layout</layout>
+        <sections>
+            <label>Links personalizados</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Nome do produto favorito</nameFieldLabel>
+</CustomObjectTranslation>

@@ -1,0 +1,746 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>見積テンプレート</value>
+    </caseValues>
+    <fields>
+        <help>すべてのパッケージ商品を見積ドキュメントに出力する必要がある場合は、チェックボックスをオンにします。オフにすると、ゼロでないパッケージ商品のみが出力されます。</help>
+        <label><!-- Show All Package Product --></label>
+        <name>SBQQ__AllPackageProductsShown__c</name>
+    </fields>
+    <fields>
+        <help>[請求先] セクションで使用されるタイトル。デフォルト値は [請求先] です。</help>
+        <label><!-- Bill To Title --></label>
+        <name>SBQQ__BillToTitle__c</name>
+    </fields>
+    <fields>
+        <help>16 進値で表される表の境界線の色。</help>
+        <label><!-- Border Color --></label>
+        <name>SBQQ__BorderColor__c</name>
+    </fields>
+    <fields>
+        <help>ページの下余白。</help>
+        <label><!-- Bottom Margin --></label>
+        <name>SBQQ__BottomMargin__c</name>
+    </fields>
+    <fields>
+        <help>[バンドル] が有効になっている見積品目をこのテンプレートから生成される見積ドキュメントに表示する場合は、チェックボックスをオンにします。</help>
+        <label><!-- Show Bundled Products --></label>
+        <name>SBQQ__BundledProductsShown__c</name>
+    </fields>
+    <fields>
+        <help>見積ドキュメントに表示される会社住所の市区郡部分。</help>
+        <label><!-- Company City --></label>
+        <name>SBQQ__CompanyCity__c</name>
+    </fields>
+    <fields>
+        <help>見積ドキュメントに表示される会社住所の国部分。</help>
+        <label><!-- Company Country --></label>
+        <name>SBQQ__CompanyCountry__c</name>
+    </fields>
+    <fields>
+        <help>見積ドキュメントに表示される会社メール。例: sales@mycompany.com</help>
+        <label><!-- Company Email --></label>
+        <name>SBQQ__CompanyEmail__c</name>
+    </fields>
+    <fields>
+        <help>見積ドキュメントに表示される会社 FAX。</help>
+        <label><!-- Company Fax --></label>
+        <name>SBQQ__CompanyFax__c</name>
+    </fields>
+    <fields>
+        <help>見積ドキュメントに表示される会社名。</help>
+        <label><!-- Company Name --></label>
+        <name>SBQQ__CompanyName__c</name>
+    </fields>
+    <fields>
+        <help>見積ドキュメントに表示される会社電話。</help>
+        <label><!-- Company Phone --></label>
+        <name>SBQQ__CompanyPhone__c</name>
+    </fields>
+    <fields>
+        <help>見積ドキュメントに表示される会社住所の郵便番号部分。</help>
+        <label><!-- Company Postal Code --></label>
+        <name>SBQQ__CompanyPostalCode__c</name>
+    </fields>
+    <fields>
+        <help>見積ドキュメントに表示される会社スローガン。</help>
+        <label><!-- Company Slogan --></label>
+        <name>SBQQ__CompanySlogan__c</name>
+    </fields>
+    <fields>
+        <help>見積ドキュメントに表示される会社住所の都道府県部分。</help>
+        <label><!-- Company State --></label>
+        <name>SBQQ__CompanyState__c</name>
+    </fields>
+    <fields>
+        <help>見積ドキュメントに表示される会社住所の町名・番地部分。</help>
+        <label><!-- Company Street --></label>
+        <name>SBQQ__CompanyStreet__c</name>
+    </fields>
+    <fields>
+        <help>[コンポーネント] が有効になっているコンポーネント商品を見積ドキュメントに表示しない場合は、チェックボックスをオンにします。</help>
+        <label><!-- Hide Component Products --></label>
+        <name>SBQQ__ComponentProductsHidden__c</name>
+    </fields>
+    <fields>
+        <help>顧客割引を計算する見積オブジェクトの項目。</help>
+        <label><!-- Customer Discount Field --></label>
+        <name>SBQQ__CustomerDiscountField__c</name>
+        <picklistValues>
+            <masterLabel>Total Discount (Amt)</masterLabel>
+            <translation>割引合計 (金額)</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>小計セクションと合計セクションの顧客割引で使用される表示ラベル。</help>
+        <label><!-- Customer Discount Label --></label>
+        <name>SBQQ__CustomerDiscountLabel__c</name>
+    </fields>
+    <fields>
+        <help>見積レベルの顧客割引を見積合計に表示する場合は、チェックボックスをオンにします。</help>
+        <label><!-- Show Customer Discount --></label>
+        <name>SBQQ__CustomerDiscountShown__c</name>
+    </fields>
+    <fields>
+        <help>このテンプレートをデフォルトとしてマークする場合は、このチェックボックスをオンにします。</help>
+        <label><!-- Default --></label>
+        <name>SBQQ__Default__c</name>
+    </fields>
+    <fields>
+        <help>このテンプレートのリリース状況。このテンプレートをシステム管理者以外のユーザに表示する場合は、[リリース済み] に変更します。</help>
+        <label><!-- Deployment Status --></label>
+        <name>SBQQ__DeploymentStatus__c</name>
+        <picklistValues>
+            <masterLabel>Deployed</masterLabel>
+            <translation>リリース済み</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Development</masterLabel>
+            <translation>開発中</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>見積ドキュメントの割引率表を表示する方法を選択します。[見積品目ごと] では、見積品目ごとに割引率表と割引層が右寄せで表示されます。</help>
+        <label><!-- Show Discount Schedule --></label>
+        <name>SBQQ__DiscountScheduleShown__c</name>
+        <picklistValues>
+            <masterLabel>Per Quote Line</masterLabel>
+            <translation>見積品目ごと</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>最初のページか最後のページ、または最初と最後の両方のページで、テンプレートのヘッダーとフッターを除外します。</help>
+        <label><!-- Exclude Header &amp; Footer --></label>
+        <name>SBQQ__ExcludeHeaderFooter__c</name>
+        <picklistValues>
+            <masterLabel>First Page</masterLabel>
+            <translation>最初のページ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>First and Last</masterLabel>
+            <translation>最初と最後</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Last Page</masterLabel>
+            <translation>最後のページ</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>すべてのページ、最初のページ、2 番目のページ、最初と最後のページのページ採番を除外します。</help>
+        <label><!-- Exclude Page Numbers --></label>
+        <name>SBQQ__ExcludedPages__c</name>
+        <picklistValues>
+            <masterLabel>All Pages</masterLabel>
+            <translation>すべての Apex ページ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>First Page</masterLabel>
+            <translation>最初のページ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>First and Last</masterLabel>
+            <translation>最初と最後</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Last Page</masterLabel>
+            <translation>最後のページ</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>このテンプレートのテキストに適用されるフォントのファミリ。</help>
+        <label><!-- Font Family --></label>
+        <name>SBQQ__FontFamily__c</name>
+        <picklistValues>
+            <masterLabel>Courier</masterLabel>
+            <translation>Courier</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dosis</masterLabel>
+            <translation>Dosis</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Droid Sans</masterLabel>
+            <translation>Droid Sans</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Droid Serif</masterLabel>
+            <translation>Droid Serif</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Helvetica</masterLabel>
+            <translation>Helvetica</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Merriweather</masterLabel>
+            <translation>Merriweather</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Montserrat</masterLabel>
+            <translation>Montserrat</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Noto Sans JP</masterLabel>
+            <translation>Noto Sans JP</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Noto Sans KR</masterLabel>
+            <translation>Noto Sans KR</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Noto Sans SC</masterLabel>
+            <translation>Noto Sans SC</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Noto Sans TC</masterLabel>
+            <translation>Noto Sans TC</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Open Sans</masterLabel>
+            <translation>Open Sans</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PT Sans</masterLabel>
+            <translation>PT Sans</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PT Serif</masterLabel>
+            <translation>PT Serif</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Play</masterLabel>
+            <translation>再生</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Roboto</masterLabel>
+            <translation>Roboto</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Roboto Light</masterLabel>
+            <translation>Roboto Light</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Times</masterLabel>
+            <translation>Times</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Titillium Web</masterLabel>
+            <translation>Titillium Web</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ubuntu</masterLabel>
+            <translation>Ubuntu</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>この見積ドキュメントのテキストのデフォルトのフォントサイズ。</help>
+        <label><!-- Font Size --></label>
+        <name>SBQQ__FontSize__c</name>
+    </fields>
+    <fields>
+        <help>フッターに表示されるテンプレートコンテンツ。</help>
+        <label><!-- Footer Content --></label>
+        <name>SBQQ__FooterContent__c</name>
+        <relationshipLabel><!-- Quote Templates (Footer) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>このテンプレートから生成されるドキュメントのフッターの高さ。</help>
+        <label><!-- Footer Height --></label>
+        <name>SBQQ__FooterHeight__c</name>
+    </fields>
+    <fields>
+        <help>XSL FO ツリーを生成するためにこのテンプレートで使用される Visualforce ページの名前。</help>
+        <label><!-- Generator Name --></label>
+        <name>SBQQ__GeneratorName__c</name>
+    </fields>
+    <fields>
+        <help>総計の小計表示ラベルと合計表示ラベルのプレフィックス。</help>
+        <label><!-- Grand Total Prefix --></label>
+        <name>SBQQ__GrandTotalPrefix__c</name>
+    </fields>
+    <fields>
+        <help>品目のグループ化および小計を行うときに使用する値が含まれる項目を選択します。</help>
+        <label><!-- Group Field --></label>
+        <name>SBQQ__GroupField__c</name>
+        <picklistValues>
+            <masterLabel>Product Family</masterLabel>
+            <translation>商品ファミリ</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>このテンプレートのグループタイトルテキストに適用されるフォントのファミリ。</help>
+        <label><!-- Group Font Family --></label>
+        <name>SBQQ__GroupFontFamily__c</name>
+        <picklistValues>
+            <masterLabel>Courier</masterLabel>
+            <translation>Courier</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dosis</masterLabel>
+            <translation>Dosis</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Droid Sans</masterLabel>
+            <translation>Droid Sans</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Droid Serif</masterLabel>
+            <translation>Droid Serif</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Helvetica</masterLabel>
+            <translation>Helvetica</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Merriweather</masterLabel>
+            <translation>Merriweather</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Montserrat</masterLabel>
+            <translation>Montserrat</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Noto Sans JP</masterLabel>
+            <translation>Noto Sans JP</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Noto Sans KR</masterLabel>
+            <translation>Noto Sans KR</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Noto Sans SC</masterLabel>
+            <translation>Noto Sans SC</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Noto Sans TC</masterLabel>
+            <translation>Noto Sans TC</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Open Sans</masterLabel>
+            <translation>Open Sans</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PT Sans</masterLabel>
+            <translation>PT Sans</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PT Serif</masterLabel>
+            <translation>PT Serif</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Play</masterLabel>
+            <translation>再生</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Roboto</masterLabel>
+            <translation>Roboto</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Roboto Light</masterLabel>
+            <translation>Roboto Light</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Times</masterLabel>
+            <translation>Times</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Titillium Web</masterLabel>
+            <translation>Titillium Web</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ubuntu</masterLabel>
+            <translation>Ubuntu</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>グループタイトルのデフォルトフォントサイズ</help>
+        <label><!-- Group Font Size --></label>
+        <name>SBQQ__GroupFontSize__c</name>
+    </fields>
+    <fields>
+        <help>グループタイトルのフォントスタイル。空白にした場合のデフォルトは標準です。</help>
+        <label><!-- Group Font Style --></label>
+        <name>SBQQ__GroupFontStyle__c</name>
+        <picklistValues>
+            <masterLabel>Bold</masterLabel>
+            <translation>太字</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Italic</masterLabel>
+            <translation>イタリック体</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Normal</masterLabel>
+            <translation>標準</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Underline</masterLabel>
+            <translation>下線</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>ピクセル単位のグループ間の間隔。</help>
+        <label><!-- Group Gap (px) --></label>
+        <name>SBQQ__GroupGap__c</name>
+    </fields>
+    <fields>
+        <help>グループタイトルや説明を含むテーブルセルの影の色。</help>
+        <label><!-- Group Shading Color --></label>
+        <name>SBQQ__GroupShadingColor__c</name>
+    </fields>
+    <fields>
+        <help>グループタイトルとグループの説明の位置を指定します。空白にした場合のデフォルトは左です。</help>
+        <label><!-- Group Text Alignment --></label>
+        <name>SBQQ__GroupTextAlignment__c</name>
+        <picklistValues>
+            <masterLabel>Center</masterLabel>
+            <translation>中央揃え</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Left</masterLabel>
+            <translation>左</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Right</masterLabel>
+            <translation>右</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>グループのタイトルおよび説明のテキストの色。</help>
+        <label><!-- Group Text Color --></label>
+        <name>SBQQ__GroupTextColor__c</name>
+    </fields>
+    <fields>
+        <help>ヘッダーに表示されるテンプレートコンテンツを参照します。</help>
+        <label><!-- Header Content --></label>
+        <name>SBQQ__HeaderContent__c</name>
+        <relationshipLabel><!-- Quote Templates (Header) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>このテンプレートから生成されるドキュメントのヘッダーの高さ。</help>
+        <label><!-- Header Height --></label>
+        <name>SBQQ__HeaderHeight__c</name>
+    </fields>
+    <fields>
+        <help>このテンプレートから生成されるドキュメントのグループ小計を非表示にする場合は、チェックボックスをオンにします。</help>
+        <label><!-- Hide Group Subtotals --></label>
+        <name>SBQQ__HideGroupSubtotals__c</name>
+    </fields>
+    <fields>
+        <help>[はじめに] 項目に表示されるセクションのタイトル。タイトルを表示しない場合は、この項目を空白のままにしておきます。</help>
+        <label><!-- Introduction Title --></label>
+        <name>SBQQ__IntroductionTitle__c</name>
+    </fields>
+    <fields>
+        <help>ページの左余白。</help>
+        <label><!-- Left Margin --></label>
+        <name>SBQQ__LeftMargin__c</name>
+    </fields>
+    <fields>
+        <help>生成されるドキュメントの品目の採番方法を指定します。[見積で開始] では、すべての品目がグループ (存在する場合) を考慮せずに順番に採番されます。[グループで開始] では、各グループ内で番号がリセットされます。</help>
+        <label><!-- Line Numbering --></label>
+        <name>SBQQ__LineNumbering__c</name>
+        <picklistValues>
+            <masterLabel>Start at group</masterLabel>
+            <translation>グループで開始</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Start at quote</masterLabel>
+            <translation>見積で開始</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>ドキュメントの品目の並び替えに使用される項目を指定します。</help>
+        <label><!-- Line Sort Field --></label>
+        <name>SBQQ__LineSortField__c</name>
+        <picklistValues>
+            <masterLabel>Number</masterLabel>
+            <translation>番号</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>見積 PDF で使用されるロゴ画像が含まれるドキュメントの Salesforce ID。</help>
+        <label><!-- Logo Document Id --></label>
+        <name>SBQQ__LogoDocumentId__c</name>
+    </fields>
+    <fields>
+        <help>[メモ] 項目が表示されるセクションのタイトル。タイトルを表示しない場合は、この項目を空白のままにしておきます。</help>
+        <label><!-- Notes Title --></label>
+        <name>SBQQ__NotesTitle__c</name>
+    </fields>
+    <fields>
+        <help>インチ単位のページの高さ。</help>
+        <label><!-- Page Height --></label>
+        <name>SBQQ__PageHeight__c</name>
+    </fields>
+    <fields>
+        <help>ドキュメントのページ番号の配置を指定します。この項目を空白にすると、デフォルトの [中央揃え] になります。</help>
+        <label><!-- Page Number Alignment --></label>
+        <name>SBQQ__PageNumberAlignment__c</name>
+        <picklistValues>
+            <masterLabel>Center</masterLabel>
+            <translation>中央揃え</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Left</masterLabel>
+            <translation>左</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Right</masterLabel>
+            <translation>右</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>ドキュメントのどこにページ番号を表示するのかを指定します。この項目を空白にすると、デフォルトの [フッター] になります。</help>
+        <label><!-- Page Number Position --></label>
+        <name>SBQQ__PageNumberPosition__c</name>
+        <picklistValues>
+            <masterLabel>Footer</masterLabel>
+            <translation>フッター</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Header</masterLabel>
+            <translation>ヘッダー</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>ページ番号のテキストの説明を宣言します。「{0}」は単独で現在のページを表します。「{1}」は「{0}」と連動しており、ページ番号と共に合計ページを表します。この項目を空白にすると、デフォルトの [ページ {0}/{1}] になります。</help>
+        <label><!-- Page Number Text --></label>
+        <name>SBQQ__PageNumberText__c</name>
+    </fields>
+    <fields>
+        <help>このテンプレートで生成される PDF ドキュメントのページの方向。</help>
+        <label><!-- Page Orientation --></label>
+        <name>SBQQ__PageOrientation__c</name>
+        <picklistValues>
+            <masterLabel>Landscape</masterLabel>
+            <translation>横</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Portrait</masterLabel>
+            <translation>縦</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>インチ単位のページの幅。</help>
+        <label><!-- Page Width --></label>
+        <name>SBQQ__PageWidth__c</name>
+    </fields>
+    <fields>
+        <help>小計セクションと合計セクションのパートナー割引で使用される表示ラベル。</help>
+        <label><!-- Partner Discount Label --></label>
+        <name>SBQQ__PartnerDiscountLabel__c</name>
+    </fields>
+    <fields>
+        <help>見積レベルのパートナー割引を見積合計に表示する場合は、チェックボックスをオンにします。</help>
+        <label><!-- Show Partner Discount --></label>
+        <name>SBQQ__PartnerDiscountShown__c</name>
+    </fields>
+    <fields>
+        <help>このテンプレートから生成される更新見積に更新商品を表示する場合は、チェックボックスをオンにします。</help>
+        <label><!-- Show Renewed Products --></label>
+        <name>SBQQ__RenewedProductsShown__c</name>
+    </fields>
+    <fields>
+        <help>ページの右余白設定。</help>
+        <label><!-- Right Margin --></label>
+        <name>SBQQ__RightMargin__c</name>
+    </fields>
+    <fields>
+        <help>積み上げに使用される見積品目項目。この項目で同じ値が返されるすべての品目は、その値が発生した最初の品目に積み上げられます。</help>
+        <label><!-- Roll-Up Field --></label>
+        <name>SBQQ__RollUpField__c</name>
+        <picklistValues>
+            <masterLabel>Product</masterLabel>
+            <translation>商品</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>16 進数で表される列ヘッダーの影の色。</help>
+        <label><!-- Shading Color --></label>
+        <name>SBQQ__ShadingColor__c</name>
+    </fields>
+    <fields>
+        <help>[納入先] セクションで使用される表示ラベル。デフォルト値は [納入先] です。</help>
+        <label><!-- Ship To Title --></label>
+        <name>SBQQ__ShipToTitle__c</name>
+    </fields>
+    <fields>
+        <help>品目をサブグループ化するために使用される項目。</help>
+        <label><!-- Sub Group Field --></label>
+        <name>SBQQ__SubGroupField__c</name>
+        <picklistValues>
+            <masterLabel>Product Family</masterLabel>
+            <translation>商品ファミリ</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>合計を計算してグループ/見積の小計として表示する項目を選択します。</help>
+        <label><!-- Subtotal Field --></label>
+        <name>SBQQ__SubtotalField__c</name>
+        <picklistValues>
+            <masterLabel>Customer Total</masterLabel>
+            <translation>顧客合計</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>List Total</masterLabel>
+            <translation>リスト合計</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Net Total</masterLabel>
+            <translation>正価合計</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Regular Total</masterLabel>
+            <translation>通常合計</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>小計項目の表示ラベルを入力します。</help>
+        <label><!-- Subtotal Label --></label>
+        <name>SBQQ__SubtotalLabel__c</name>
+    </fields>
+    <fields>
+        <help>規約番号に対する見積規約本文のインデント (ピクセル単位)。</help>
+        <label><!-- Term Body Indent (px) --></label>
+        <name>SBQQ__TermBodyIndent__c</name>
+    </fields>
+    <fields>
+        <help>契約条件が表示されるセクションのタイトル。</help>
+        <label><!-- Terms &amp; Conditions Title --></label>
+        <name>SBQQ__TermsConditionsTitle__c</name>
+    </fields>
+    <fields>
+        <help>このテンプレートで生成される各ドキュメントに出力される契約条件。</help>
+        <label><!-- Terms &amp; Conditions --></label>
+        <name>SBQQ__TermsConditions__c</name>
+    </fields>
+    <fields>
+        <help>このテンプレートで表示される見積規約を採番する場合は、チェックボックスをオンにします。</help>
+        <label><!-- Number Terms --></label>
+        <name>SBQQ__TermsNumbered__c</name>
+    </fields>
+    <fields>
+        <help>このテンプレートのテキストに適用されるデフォルトの色 (16 進数)。</help>
+        <label><!-- Text Color --></label>
+        <name>SBQQ__TextColor__c</name>
+    </fields>
+    <fields>
+        <help>ページの上余白。</help>
+        <label><!-- Top Margin --></label>
+        <name>SBQQ__TopMargin__c</name>
+    </fields>
+    <fields>
+        <help>合計を計算してグループ/見積の合計として表示する項目を選択します。</help>
+        <label><!-- Total Field --></label>
+        <name>SBQQ__TotalField__c</name>
+        <picklistValues>
+            <masterLabel>Customer Total</masterLabel>
+            <translation>顧客合計</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>List Total</masterLabel>
+            <translation>リスト合計</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Net Total</masterLabel>
+            <translation>正価合計</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>合計項目で設定される項目の表示ラベルを入力します。</help>
+        <label><!-- Total Label --></label>
+        <name>SBQQ__TotalLabel__c</name>
+    </fields>
+    <fields>
+        <help>見積ドキュメントの見積合計を非表示にする場合は、チェックボックスをオンにします。</help>
+        <label><!-- Hide Totals --></label>
+        <name>SBQQ__TotalsHidden__c</name>
+    </fields>
+    <fields>
+        <help>見積 PDF で使用される透かし画像が含まれるドキュメントの Salesforce ID。</help>
+        <label><!-- Watermark ID --></label>
+        <name>SBQQ__WatermarkId__c</name>
+    </fields>
+    <layouts>
+        <layout>Quote Template Layout</layout>
+        <sections>
+            <label>会社情報</label>
+            <section>Corporate Information</section>
+        </sections>
+        <sections>
+            <label>カスタムリンク</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>グループスタイル情報</label>
+            <section>Group Style Information</section>
+        </sections>
+        <sections>
+            <label>ヘッダー/フッター情報</label>
+            <section>Header/Footer Information</section>
+        </sections>
+        <sections>
+            <label>ページ情報</label>
+            <section>Page Information</section>
+        </sections>
+        <sections>
+            <label>出力オプション</label>
+            <section>Print Options</section>
+        </sections>
+        <sections>
+            <label>セクションタイトル</label>
+            <section>Section Titles</section>
+        </sections>
+        <sections>
+            <label>スタイル情報</label>
+            <section>Style Information</section>
+        </sections>
+        <sections>
+            <label>契約条件</label>
+            <section>Terms &amp;amp; Conditions</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>テンプレート名</nameFieldLabel>
+    <validationRules>
+        <errorMessage><!-- Footer Height can not be blank if Page Number Position is set to Footer. --></errorMessage>
+        <name>SBQQ__Blank_Footer_Height</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Header Height can not be blank if Page Number Position is set to Header. --></errorMessage>
+        <name>SBQQ__Blank_Header_Height</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- CloneWithRelated --></label>
+        <name>SBQQ__CloneWithRelated</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- CloneWithRelatedClassic --></label>
+        <name>SBQQ__CloneWithRelatedClassic</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Translate --></label>
+        <name>SBQQ__Translate</name>
+    </webLinks>
+</CustomObjectTranslation>

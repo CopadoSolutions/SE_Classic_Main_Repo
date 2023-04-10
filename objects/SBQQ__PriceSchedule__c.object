@@ -1,0 +1,603 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <customHelpPage>SBQQ__PriceScheduleHelp</customHelpPage>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <description>Volume Price Schedule that applies automatic discounts based on quantity.</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableEnhancedLookup>false</enableEnhancedLookup>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>Private</externalSharingModel>
+    <fields>
+        <fullName>SBQQ__Account__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>Account that this Price Schedule applies to. Only used in combination with Price Schedule Override on Quote Line Editor UI.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Account that this Price Schedule applies to. Only used in combination with Price Schedule Override on Quote Line Editor UI.</inlineHelpText>
+        <label>Account</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Price Schedules</relationshipLabel>
+        <relationshipName>PriceSchedules</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__AggregationScope__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Indicates whether quote lines referencing this schedule should be aggregated within quote, group or not at all for the purposes of volume discount calculation.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Specify how to aggregate quantities of quote lines for products using this schedule. By default quantity of each line (even for the same product) is considered independently.</inlineHelpText>
+        <label>Aggregation Scope</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Quote</fullName>
+                    <default>false</default>
+                    <label>Quote</label>
+                </value>
+                <value>
+                    <fullName>Group</fullName>
+                    <default>false</default>
+                    <label>Group</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SBQQ__ConstraintField__c</fullName>
+        <deprecated>false</deprecated>
+        <description>For cross-order schedules, if you want to limit which subscriptions and assets are used to calculate your volume discounts, select the field that you want to match against the same field on the quote.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select the field that you want to match against the same field on the quote.</inlineHelpText>
+        <label>Constraint Field</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Account__c</fullName>
+                    <default>false</default>
+                    <label>Account__c</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SBQQ__CrossOrders__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Specifies whether volume discount should be applied on combined quantities across prior orders.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select the checkbox if you want to extend volume discounts on total volume owned by customer (i.e. quantity quoted plus prior purchases).</inlineHelpText>
+        <label>Cross Orders</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__CrossProducts__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Flag that indicates whether volume discount calculations should aggregate quantities of all products using this schedule.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select the checkbox to aggregate quantities of all products using this schedule for the purpose of volume discount calculation. Slab discounts cannot be used for Cross Product discounts.</inlineHelpText>
+        <label>Cross Products</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__Description__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Description for this Price Schedule.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Description for this Price Schedule.</inlineHelpText>
+        <label>Description</label>
+        <length>5000</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>SBQQ__DiscountUnit__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This is the Discount Unit for the Price Schedule.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Specify the Discount Unit: Amount or Percent.</inlineHelpText>
+        <label>Discount Unit</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Percent</fullName>
+                    <default>true</default>
+                    <label>Percent</label>
+                </value>
+                <value>
+                    <fullName>Amount</fullName>
+                    <default>false</default>
+                    <label>Amount</label>
+                </value>
+                <value>
+                    <fullName>Price</fullName>
+                    <default>false</default>
+                    <label>Price</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SBQQ__ExcludedPricebookIds__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Comma-seperated list of price book IDs for which this Price Schedule should not apply.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter a list of price book IDs separated by commas that should not be applied to this Price Schedule.</inlineHelpText>
+        <label>Excluded Pricebook IDs</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__IncludeBundledProducts__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>If checked, the Quantities of Bundled Product Options will be included in the Aggregation Scope</description>
+        <externalId>false</externalId>
+        <inlineHelpText>If checked, the Quantities of Bundled Product Options will be included in the Aggregation Scope</inlineHelpText>
+        <label>Include Bundled Quantities</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__OrderProduct__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>Order product that this Price Schedule applies to.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Order product that this Price Schedule applies to.</inlineHelpText>
+        <label>Order Product</label>
+        <lookupFilter>
+            <active>true</active>
+            <errorMessage>Please select Order Products of the associated order.</errorMessage>
+            <filterItems>
+                <field>OrderItem.OrderId</field>
+                <operation>equals</operation>
+                <valueField>$Source.SBQQ__Order__c</valueField>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>OrderItem</referenceTo>
+        <relationshipLabel>Price Schedules</relationshipLabel>
+        <relationshipName>PriceSchedules</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__Order__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>Order that this Price Schedule applies to.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Order that this Price Schedule applies to.</inlineHelpText>
+        <label>Order</label>
+        <referenceTo>Order</referenceTo>
+        <relationshipLabel>Price Schedules</relationshipLabel>
+        <relationshipName>PriceSchedules</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__OriginalDiscountSchedule__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>The discount schedule that this price schedule is originated from.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The discount schedule that this price schedule is originated from.</inlineHelpText>
+        <label>Original Discount Schedule</label>
+        <referenceTo>SBQQ__DiscountSchedule__c</referenceTo>
+        <relationshipLabel>Price Schedules</relationshipLabel>
+        <relationshipName>PriceSchedules</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__OverrideBehavior__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Determines if the current Discount Tier that the product falls within is editable, if all Discount Tiers are editable, or none.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Determines if the current Discount Tier that the product falls within is editable, if all Discount Tiers are editable, or none.</inlineHelpText>
+        <label>Override Behavior</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>All</fullName>
+                    <default>false</default>
+                    <label>All</label>
+                </value>
+                <value>
+                    <fullName>Current Tier Only</fullName>
+                    <default>false</default>
+                    <label>Current Tier Only</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SBQQ__PriceScale__c</fullName>
+        <defaultValue>2</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Decimal places for prices produced by this Price Schedule.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Decimal places for prices produced by this Price Schedule.</inlineHelpText>
+        <label>Price Scale</label>
+        <precision>8</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SBQQ__PriceType__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The price type that determines how the prices or discounts are calculated.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The price type that determines how the prices or discounts are calculated.</inlineHelpText>
+        <label>Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>SBQQ__PriceType</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SBQQ__Pricebook__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>Price book that this Price Schedule applies to. Only used in combination with Product lookup to assign product/price book specific schedule.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Price book that this Price Schedule applies to. Only used in combination with Product lookup to assign product/price book specific schedule.</inlineHelpText>
+        <label>Price Book</label>
+        <referenceTo>Pricebook2</referenceTo>
+        <relationshipLabel>Price Schedules</relationshipLabel>
+        <relationshipName>PriceSchedules</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__Product__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>Product that this Price Schedule applies to. Only used in combination with Price Book lookup to assign product/price book specific schedule.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Product that this Price Schedule applies to. Only used in combination with Price Book lookup to assign product/price book specific schedule.</inlineHelpText>
+        <label>Product</label>
+        <referenceTo>Product2</referenceTo>
+        <relationshipLabel>Price Schedules</relationshipLabel>
+        <relationshipName>PriceSchedules</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__QuoteLineQuantityField__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Field used to calculate Price Schedule pricing.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Field used to calculate Price Schedule pricing.</inlineHelpText>
+        <label>Quote Line Quantity Field</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Quantity</fullName>
+                    <default>true</default>
+                    <label>Quantity</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SBQQ__QuoteLine__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>Quote Line that this Price Schedule applies to. Only used in combination with Price Schedule Override on Quote Line Editor UI.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Quote Line that this Price Schedule applies to. Only used in combination with Price Schedule Override on Quote Line Editor UI.</inlineHelpText>
+        <label>Quote Line</label>
+        <referenceTo>SBQQ__QuoteLine__c</referenceTo>
+        <relationshipLabel>Price Schedules</relationshipLabel>
+        <relationshipName>PriceSchedules</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__Quote__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>Quote that this Price Schedule applies to. Only used in combination with Price Schedule Override on Quote Line Editor UI.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Quote that this Price Schedule applies to. Only used in combination with Price Schedule Override on Quote Line Editor UI.</inlineHelpText>
+        <label>Quote</label>
+        <referenceTo>SBQQ__Quote__c</referenceTo>
+        <relationshipLabel>Price Schedules</relationshipLabel>
+        <relationshipName>PriceSchedules</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__TermDiscount__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Term discount in total applied to this price schedule.  The value is available only for Tiered price type.  For Volume price type, the term discount is available for each price tier.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Term discount in total applied to this price schedule.  The value is available only for Tiered price type.  For Volume price type, the term discount is available for each price tier.</inlineHelpText>
+        <label>Term Discount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__UsePriceForAmount__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>If checked, the user defined Price Schedule&apos;s Discount Unit will be set to Price.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>If checked, the user defined Price Schedule&apos;s Discount Unit will be set to Price.</inlineHelpText>
+        <label>Use Price For Amount</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__UserDefined__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Identifies whether this schedule was created by an end user or an admin.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Identifies whether this schedule was created by an end user or an admin.</inlineHelpText>
+        <label>User Defined</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <label>Price Schedule</label>
+    <listViews>
+        <fullName>SBQQ__All</fullName>
+        <columns>NAME</columns>
+        <columns>SBQQ__Description__c</columns>
+        <columns>CREATEDBY_USER</columns>
+        <columns>UPDATEDBY_USER</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <listViews>
+        <fullName>SBQQ__All1</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <label>Schedule Name</label>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Price Schedules</pluralLabel>
+    <searchLayouts>
+        <customTabListAdditionalFields>SBQQ__Description__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>UPDATEDBY_USER</customTabListAdditionalFields>
+        <lookupDialogsAdditionalFields>SBQQ__Description__c</lookupDialogsAdditionalFields>
+        <searchFilterFields>NAME</searchFilterFields>
+        <searchFilterFields>UPDATEDBY_USER</searchFilterFields>
+        <searchResultsAdditionalFields>CREATEDBY_USER</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>UPDATEDBY_USER</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
+    <webLinks>
+        <fullName>SBQQ__EditTiers</fullName>
+        <availability>online</availability>
+        <description>Launches the page that edits multiple tiers at once.</description>
+        <displayType>button</displayType>
+        <height>0</height>
+        <linkType>page</linkType>
+        <masterLabel>Edit Tiers</masterLabel>
+        <openType>sidebar</openType>
+        <page>SBQQ__EditDiscountTiers</page>
+        <protected>false</protected>
+    </webLinks>
+</CustomObject>

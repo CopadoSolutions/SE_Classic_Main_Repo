@@ -186,6 +186,10 @@
         <trackHistory>false</trackHistory>
         <type>Lookup</type>
     </fields>
+    <fields>
+        <fullName>PrivacyConsentStatus</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
     <listViews>
         <fullName>All_CommSubscriptionConsents</fullName>
         <filterScope>Everything</filterScope>

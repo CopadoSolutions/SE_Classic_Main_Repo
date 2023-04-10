@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Tarjeta de intervalo de uso (Reservado)</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Tarjetas de intervalo de uso (Reservado)</value>
+    </caseValues>
+    <fields>
+        <help>Agrupa intervalos de uso por el campo seleccionado durante la creación y facturación del documento</help>
+        <label><!-- Attribute Field --></label>
+        <name>SBQQ__AttributeField__c</name>
+        <picklistValues>
+            <masterLabel>UsagePriceMethod__c</masterLabel>
+            <translation>UsagePriceMethod__c</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Billing Frequency --></label>
+        <name>SBQQ__BillingFrequency__c</name>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>SBQQ__Description__c</name>
+    </fields>
+    <fields>
+        <help>La tarjeta de intervalo de uso que duplicó para crear esta tarjeta de intervalo de uso</help>
+        <label><!-- Original Usage Rate Card --></label>
+        <name>SBQQ__OriginalUsageRateCard__c</name>
+        <relationshipLabel><!-- Usage Rate Cards (Original Usage Rate Card) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>La partida de presupuesto que esta tarjeta de intervalo de uso de pedidos cubre</help>
+        <label><!-- Quote Line --></label>
+        <name>SBQQ__QuoteLine__c</name>
+        <relationshipLabel><!-- Usage Rate Cards --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>La suscripción que esta tarjeta de intervalo de uso cubre</help>
+        <label><!-- Subscription --></label>
+        <name>SBQQ__Subscription__c</name>
+        <relationshipLabel><!-- Usage Rate Cards --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>La tarjeta de intervalo de uso que incorporó al presupuesto original</help>
+        <label><!-- Template Rate Card --></label>
+        <name>SBQQ__TemplateRateCard__c</name>
+        <relationshipLabel><!-- Quoted Rate Cards --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Seleccione el modo en que Salesforce Billing factura intervalos de uso para esta tarjeta de intervalo de uso. Intervalo factura un único intervalo mientras que Porción factura todos los intervalos de uso aplicables.</help>
+        <label><!-- Type --></label>
+        <name>SBQQ__Type__c</name>
+        <picklistValues>
+            <masterLabel>Range</masterLabel>
+            <translation>Intervalo</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Slab</masterLabel>
+            <translation>Porción</translation>
+        </picklistValues>
+    </fields>
+    <gender>Feminine</gender>
+    <layouts>
+        <layout>Usage Rate Card Layout</layout>
+        <sections>
+            <label>Asociaciones</label>
+            <section>Associations</section>
+        </sections>
+        <sections>
+            <label>Vínculos personalizados</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Nombre de tarjeta de intervalo de uso</nameFieldLabel>
+    <webLinks>
+        <label><!-- CloneWithRelated --></label>
+        <name>SBQQ__CloneWithRelated</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- CloneWithRelatedClassic --></label>
+        <name>SBQQ__CloneWithRelatedClassic</name>
+    </webLinks>
+</CustomObjectTranslation>

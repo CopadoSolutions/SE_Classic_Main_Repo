@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Carte de taux d&apos;utilisation (réservé)</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Cartes de taux d&apos;utilisation (réservé)</value>
+    </caseValues>
+    <fields>
+        <help>Groupez les taux d&apos;utilisation par le champ sélectionné durant la génération du document et la facturation</help>
+        <label><!-- Attribute Field --></label>
+        <name>SBQQ__AttributeField__c</name>
+        <picklistValues>
+            <masterLabel>UsagePriceMethod__c</masterLabel>
+            <translation>UsagePriceMethod__c</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Billing Frequency --></label>
+        <name>SBQQ__BillingFrequency__c</name>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>SBQQ__Description__c</name>
+    </fields>
+    <fields>
+        <help>La carte de taux d&apos;utilisation que vous avez clonée pour créer cette carte</help>
+        <label><!-- Original Usage Rate Card --></label>
+        <name>SBQQ__OriginalUsageRateCard__c</name>
+        <relationshipLabel><!-- Usage Rate Cards (Original Usage Rate Card) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>La ligne de devis couverte par cette carte de taux d&apos;utilisation</help>
+        <label><!-- Quote Line --></label>
+        <name>SBQQ__QuoteLine__c</name>
+        <relationshipLabel><!-- Usage Rate Cards --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>La souscription couverte par cette carte de taux d&apos;utilisation</help>
+        <label><!-- Subscription --></label>
+        <name>SBQQ__Subscription__c</name>
+        <relationshipLabel><!-- Usage Rate Cards --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>La carte de taux d&apos;utilisation que vous avez ajoutée au devis d&apos;origine</help>
+        <label><!-- Template Rate Card --></label>
+        <name>SBQQ__TemplateRateCard__c</name>
+        <relationshipLabel><!-- Quoted Rate Cards --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Choisissez comment Salesforce facture les taux d&apos;utilisation de cette carte. « Plage » facture une carte unique tandis que « Par palier » facture tous les taux d&apos;utilisation applicables.</help>
+        <label><!-- Type --></label>
+        <name>SBQQ__Type__c</name>
+        <picklistValues>
+            <masterLabel>Range</masterLabel>
+            <translation>Plage</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Slab</masterLabel>
+            <translation>Par palier</translation>
+        </picklistValues>
+    </fields>
+    <gender>Feminine</gender>
+    <layouts>
+        <layout>Usage Rate Card Layout</layout>
+        <sections>
+            <label>Associations</label>
+            <section>Associations</section>
+        </sections>
+        <sections>
+            <label>Liens personnalisés</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Nom de la carte de taux d&apos;utilisation</nameFieldLabel>
+    <startsWith>Consonant</startsWith>
+    <webLinks>
+        <label><!-- CloneWithRelated --></label>
+        <name>SBQQ__CloneWithRelated</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- CloneWithRelatedClassic --></label>
+        <name>SBQQ__CloneWithRelatedClassic</name>
+    </webLinks>
+</CustomObjectTranslation>

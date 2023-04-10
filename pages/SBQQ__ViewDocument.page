@@ -1,0 +1,29 @@
+<apex:page standardController="SBQQ__QuoteDocument__c" extensions="SBQQ.QuoteDocumentController" docType="html-5.0" showHeader="{!(!$Setup.SBQQ__GeneralSettings__c.SBQQ__GlobalHeaderPermUsed__c || !$Permission.SBQQ__HideGlobalHeader) && formFactor == 'desktop'}" standardStylesheets="false" title="{!$ObjectType.SBQQ__QuoteDocument__c.label}">
+    <apex:variable var="stylesheet" value="{!IF(formFactor == 'desktop', 'sb', 'MobileCSS')}" />
+    <apex:stylesheet value="{!$Resource[stylesheet]}"/>
+    <c:theme formFactor="{!formFactor}"/>
+
+    <div id="qq" class="sb">
+        <c:pageHeader title="{!$ObjectType.SBQQ__QuoteDocument__c.label}" subtitle="{!quoteDocName}" formFactor="{!formFactor}" iconName="sf-icon-gdoc resize" customTheme="18" />
+        <div class="sbBody">
+            <div class="sbPageBlockSection">
+                <c:pageBlockSection >
+                    <apex:outputText value="{!$ObjectType.SBQQ__QuoteDocument__c.label} "/>
+                    <apex:outputLink value="{!$CurrentPage.parameters.retURL}" id="qDocLink">{!quoteDocName}</apex:outputLink>
+                    <apex:outputText value=" {!$Label.sbqq__msg_attachment_is_downloaded_successfully}"/>
+                </c:pageBlockSection>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        function redirect(){
+            window.location.href = window.location.origin + {!viewLink};
+        }
+        
+        if (typeof sforce != 'undefined' && sforce && sforce.one && {!isAttachment} && {!$User.UITheme == 'Theme4t'}) {
+             sforce.one.navigateToSObject('{!viewRecordId}');
+        } else {
+             window.onload = redirect;
+        }
+    </script>
+</apex:page>

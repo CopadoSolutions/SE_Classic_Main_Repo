@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Grupo de linhas de cotação</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Grupos de linhas de cotação</value>
+    </caseValues>
+    <fieldSets>
+        <label><!-- Line Editor --></label>
+        <name>SBQQ__LineEditor</name>
+    </fieldSets>
+    <fields>
+        <help>Conta à qual esse Grupo de linhas de cotação faz referência.</help>
+        <label><!-- Account --></label>
+        <name>SBQQ__Account__c</name>
+        <relationshipLabel><!-- Quote Line Groups --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Taxa de desconto adicional aplicada a itens de linha nesse grupo.</help>
+        <label><!-- Additional  Disc. (%) --></label>
+        <name>SBQQ__AdditionalDiscountRate__c</name>
+    </fields>
+    <fields>
+        <help>Define a frequência de faturamento.</help>
+        <label><!-- Billing Frequency --></label>
+        <name>SBQQ__BillingFrequency__c</name>
+    </fields>
+    <fields>
+        <help>Total para esses itens de linha do grupo antes de qualquer desconto de parceiro ser aplicado.</help>
+        <label><!-- Customer Total --></label>
+        <name>SBQQ__CustomerTotal__c</name>
+    </fields>
+    <fields>
+        <help>Descrição para esse grupo.</help>
+        <label><!-- Description --></label>
+        <name>SBQQ__Description__c</name>
+    </fields>
+    <fields>
+        <help>Data final para assinaturas nesse grupo.</help>
+        <label><!-- End Date --></label>
+        <name>SBQQ__EndDate__c</name>
+    </fields>
+    <fields>
+        <help>Favorito ao qual esse Grupo de linhas de cotação pertence.</help>
+        <label><!-- Favorite --></label>
+        <name>SBQQ__Favorite__c</name>
+        <relationshipLabel><!-- Quote Line Groups --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Total para esses itens de linha do grupo antes de qualquer desconto ser aplicado.</help>
+        <label><!-- List Total --></label>
+        <name>SBQQ__ListTotal__c</name>
+    </fields>
+    <fields>
+        <help>Taxa de aumento padrão aplicada aos itens de linha nesse grupo. Isso substituirá o nível do item de linha.</help>
+        <label><!-- Markup (%) --></label>
+        <name>SBQQ__MarkupRate__c</name>
+    </fields>
+    <fields>
+        <help>Total para esses itens de linha do grupo depois de todos os descontos serem aplicados.</help>
+        <label><!-- Net Total --></label>
+        <name>SBQQ__NetTotal__c</name>
+    </fields>
+    <fields>
+        <help>Ordem de classificação desse grupo dentro da sua cotação.</help>
+        <label><!-- Number --></label>
+        <name>SBQQ__Number__c</name>
+    </fields>
+    <fields>
+        <help>Marca todo o grupo como opcional.</help>
+        <label><!-- Optional --></label>
+        <name>SBQQ__Optional__c</name>
+    </fields>
+    <fields>
+        <help>Processo de cotação usado com esse grupo. Substitui o campo do nível de cotação.</help>
+        <label><!-- Quote Process --></label>
+        <name>SBQQ__QuoteProcess__c</name>
+        <relationshipLabel><!-- Quote Line Groups --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Cotação à qual esse grupo pertence.</help>
+        <label><!-- Quote --></label>
+        <name>SBQQ__Quote__c</name>
+        <relationshipLabel><!-- Quote Line Groups --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Selecione a caixa de seleção para gerar um contrato separado para assinaturas nesse grupo.</help>
+        <label><!-- Separate Contract --></label>
+        <name>SBQQ__SeparateContract__c</name>
+    </fields>
+    <fields>
+        <help>Grupo de soluções do qual esse grupo de cotações foi gerado (se houver).</help>
+        <label><!-- Solution Group --></label>
+        <name>SBQQ__SolutionGroup__c</name>
+        <relationshipLabel><!-- Quote Line Groups --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Origem do grupo de linhas de cotação clonado.</help>
+        <label><!-- Source --></label>
+        <name>SBQQ__Source__c</name>
+        <relationshipLabel><!-- Quote Line Groups --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Data inicial para assinaturas nesse grupo.</help>
+        <label><!-- Start Date --></label>
+        <name>SBQQ__StartDate__c</name>
+    </fields>
+    <fields>
+        <help>Termo da assinatura usado para dividir os produtos elegíveis proporcionalmente nesse grupo.</help>
+        <label><!-- Subscription Term --></label>
+        <name>SBQQ__SubscriptionTerm__c</name>
+    </fields>
+    <fields>
+        <help>Insira o valor do cliente desejado para calcular automaticamente o desconto adicional nos itens de linha descontáveis.</help>
+        <label><!-- Target Customer Amount --></label>
+        <name>SBQQ__TargetCustomerAmount__c</name>
+    </fields>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Quote Line Group Layout</layout>
+        <sections>
+            <label>Links personalizados</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>Descrição</label>
+            <section>Description</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Nome do grupo</nameFieldLabel>
+</CustomObjectTranslation>

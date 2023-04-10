@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Requête de référence</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Requêtes de référence</value>
+    </caseValues>
+    <fields>
+        <help>Nom d&apos;API du champ personnalisé utilisé dans la requête.</help>
+        <label><!-- Lookup Field --></label>
+        <name>SBQQ__LookupField__c</name>
+        <picklistValues>
+            <masterLabel>SBQQ__Category__c</masterLabel>
+            <translation>SBQQ__Category__c</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Si Type de correspondance = Valeur de champ, sélectionnez un Objet testé et un Champ testé. Si Type de correspondance = Valeur statique, saisissez la valeur dans Valeur testée. Si Type de correspondance = Attribut de configuration, spécifiez un Attribut de configuration.</help>
+        <label><!-- Match Type --></label>
+        <name>SBQQ__MatchType__c</name>
+        <picklistValues>
+            <masterLabel>Configuration Attribute Value</masterLabel>
+            <translation>Valeur d&apos;attribut de configuration</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Field Value</masterLabel>
+            <translation>Valeur de champ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Static Value</masterLabel>
+            <translation>Valeur statique</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>L&apos;opérateur est appliqué lors de la comparaison du champ à la valeur.</help>
+        <label><!-- Operator --></label>
+        <name>SBQQ__Operator__c</name>
+        <picklistValues>
+            <masterLabel>equals</masterLabel>
+            <translation>égal à</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>greater or equals</masterLabel>
+            <translation>supérieur ou égal à</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>greater than</masterLabel>
+            <translation>supérieur à</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>less or equals</masterLabel>
+            <translation>inférieur ou égal à</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>less than</masterLabel>
+            <translation>inférieur à</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>not equals</masterLabel>
+            <translation>différent de</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- ParentRuleIsActive --></label>
+        <name>SBQQ__ParentRuleIsActive__c</name>
+    </fields>
+    <fields>
+        <help>La règle de tarification associée à cette requête de référence. Remplace le champ principal-détails hérité.</help>
+        <label><!-- Price Rule --></label>
+        <name>SBQQ__PriceRule2__c</name>
+        <relationshipLabel><!-- Lookup Queries (Price Rule) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Règle produit associée à cette requête de référence</help>
+        <label><!-- Product Rule --></label>
+        <name>SBQQ__ProductRule__c</name>
+        <relationshipLabel><!-- Lookup Queries (Product Rule) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Parent Rule Lookup Object --></label>
+        <name>SBQQ__RuleLookupObject__c</name>
+    </fields>
+    <fields>
+        <label><!-- RuleTargetsCalculator --></label>
+        <name>SBQQ__RuleTargetsCalculator__c</name>
+    </fields>
+    <fields>
+        <help>Attribut de configuration évalué par cette requête. Requis si Type de correspondance = Attribut de configuration et uniquement si cette requête est associée à une règle produit.</help>
+        <label><!-- Tested Configuration Attribute --></label>
+        <name>SBQQ__TestedConfigurationAttribute__c</name>
+        <relationshipLabel><!-- Lookup Queries --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Champ du Devis, de la Ligne de devis ou de l&apos;Option de devis qui est évalué par cette requête. Requis si Type de correspondance = Valeur de champ.</help>
+        <label><!-- Tested Field --></label>
+        <name>SBQQ__TestedField__c</name>
+        <picklistValues>
+            <masterLabel>Product Code</masterLabel>
+            <translation>Code produit</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Objet par rapport auquel la requête est évaluée. Requis si Type de correspondance = Valeur de champ.</help>
+        <label><!-- Tested Object --></label>
+        <name>SBQQ__TestedObject__c</name>
+        <picklistValues>
+            <masterLabel>Product Option</masterLabel>
+            <translation>Option produit</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quote</masterLabel>
+            <translation>Devis</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quote Line</masterLabel>
+            <translation>Ligne de devis</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>La valeur à laquelle vous souhaitez correspondre dans le champ sélectionné avec l&apos;opérateur choisi. Requis si Type de correspondance = Valeur statique.</help>
+        <label><!-- Tested Value --></label>
+        <name>SBQQ__TestedValue__c</name>
+    </fields>
+    <gender>Feminine</gender>
+    <layouts>
+        <layout>Lookup Query Layout</layout>
+        <sections>
+            <label>Liens personnalisés</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>Informations sur la référence</label>
+            <section>Lookup Information</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>N° de requête de référence</nameFieldLabel>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Testing Configuration Attributes is only supported for Lookup Queries associated with Product Rules. --></errorMessage>
+        <name>SBQQ__Configuration_Attribute_Validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Associate a lookup object on the product rule before creating a Lookup Query. --></errorMessage>
+        <name>SBQQ__LookupObjectMustExist</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Tested Value is required if Match Type = Static Value. Tested Object and Tested Field are required if Match Type = Field Value. Tested Configuration Attribute is required if Match Type = Configuration Attribute. --></errorMessage>
+        <name>SBQQ__Match_Type_Validation</name>
+    </validationRules>
+</CustomObjectTranslation>

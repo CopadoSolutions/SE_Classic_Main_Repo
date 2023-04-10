@@ -140,6 +140,11 @@
         <type>Lookup</type>
     </fields>
     <fields>
+        <fullName>AdvAcctForecastSetUseId</fullName>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
         <fullName>ForecastedQuantity</fullName>
         <trackHistory>false</trackHistory>
     </fields>
@@ -179,6 +184,10 @@
         <fullName>PeriodId</fullName>
         <trackHistory>false</trackHistory>
         <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>PeriodStartDate</fullName>
+        <trackHistory>false</trackHistory>
     </fields>
     <fields>
         <fullName>ProductId</fullName>

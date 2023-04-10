@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Angebotsklausel</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Angebotsklauseln</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value><!-- Angebotsklausel --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+        <value><!-- Angebotsklauseln --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value><!-- Angebotsklausel --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>true</plural>
+        <value><!-- Angebotsklauseln --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value><!-- Angebotsklausel --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value><!-- Angebotsklauseln --></value>
+    </caseValues>
+    <fields>
+        <help>Gibt an, dass diese Angebotsklausel zur Verwendung verfügbar ist.</help>
+        <label><!-- Active --></label>
+        <name>SBQQ__Active__c</name>
+    </fields>
+    <fields>
+        <help>Kann nur eingegeben werden, wenn &quot;Erfüllte Bedingungen&quot; auf &quot;Benutzerdefiniert&quot; eingestellt ist. Geben Sie eine Kombination aus den Indexnummern der Klauselbedingung, AND, OR und Klammern ein (e.g. (123 AND 124) AND 125).</help>
+        <label><!-- Advanced Condition --></label>
+        <name>SBQQ__AdvancedCondition__c</name>
+    </fields>
+    <fields>
+        <help>Textinhalt dieser Klausel</help>
+        <label><!-- Body --></label>
+        <name>SBQQ__Body__c</name>
+    </fields>
+    <fields>
+        <help>Wählen Sie das Verhalten für Ihre Bedingungen: &quot;Alle&quot; entspricht AND, &quot;Beliebige&quot; entspricht OR. &quot;Benutzerdefiniert&quot; ist eine Kombination aus AND und OR.</help>
+        <label><!-- Conditions Met --></label>
+        <name>SBQQ__ConditionsMet__c</name>
+        <picklistValues>
+            <masterLabel>All</masterLabel>
+            <translation>Alle</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Any</masterLabel>
+            <translation>Beliebig</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Custom</masterLabel>
+            <translation>Benutzerdefiniert</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Bestimmt, ob eine Angebotsklausel vom Benutzer bearbeitet werden kann</help>
+        <label><!-- Locked --></label>
+        <name>SBQQ__Locked__c</name>
+    </fields>
+    <fields>
+        <help>Übergeordnete Klausel für diese Klausel.</help>
+        <label><!-- Parent Term --></label>
+        <name>SBQQ__ParentTerm__c</name>
+        <relationshipLabel><!-- Sub Terms --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Gibt die Reihenfolge an, in der die Klauseln im Angebotsdokument ausgegeben werden.</help>
+        <label><!-- Print Order --></label>
+        <name>SBQQ__PrintOrder__c</name>
+    </fields>
+    <fields>
+        <help>Angebot, für das diese Klausel gilt. Wird leer gelassen, wenn es sich um eine Standardklausel handelt.</help>
+        <label><!-- Quote --></label>
+        <name>SBQQ__Quote__c</name>
+        <relationshipLabel><!-- Quote Terms --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Gibt die Standardklausel an, die gerade geändert wird.</help>
+        <label><!-- Standard Term --></label>
+        <name>SBQQ__StandardTerm__c</name>
+        <relationshipLabel><!-- Modified Terms --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Status dieser Angebotsklausel.</help>
+        <label><!-- Status --></label>
+        <name>SBQQ__Status__c</name>
+        <picklistValues>
+            <masterLabel>Approved</masterLabel>
+            <translation>Genehmigt</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Draft</masterLabel>
+            <translation>Entwurf</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Review</masterLabel>
+            <translation>Wird überprüft</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rejected</masterLabel>
+            <translation>Abgelehnt</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Vorlageninhalt, auf den diese Klausel angewandt wird.</help>
+        <label><!-- Template Content --></label>
+        <name>SBQQ__TemplateContent__c</name>
+        <relationshipLabel><!-- Quote Terms --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Gibt an, ob es sich um eine Standardklausel bzw. eine benutzerdefinierte oder geänderte Klausel handelt.</help>
+        <label><!-- Type --></label>
+        <name>SBQQ__Type__c</name>
+    </fields>
+    <gender>Feminine</gender>
+    <layouts>
+        <layout>Quote Term Layout</layout>
+        <sections>
+            <label>Text</label>
+            <section>Body</section>
+        </sections>
+        <sections>
+            <label>Benutzerdefinierte Links</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Klauselnummer</nameFieldLabel>
+    <webLinks>
+        <label><!-- Translate --></label>
+        <name>SBQQ__Translate</name>
+    </webLinks>
+</CustomObjectTranslation>

@@ -130,6 +130,11 @@
     <enableFeeds>false</enableFeeds>
     <externalSharingModel>Private</externalSharingModel>
     <fields>
+        <fullName>BusinessHoursId</fullName>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
         <fullName>Category</fullName>
         <trackHistory>false</trackHistory>
         <type>Picklist</type>
@@ -147,13 +152,29 @@
         <trackHistory>false</trackHistory>
     </fields>
     <fields>
+        <fullName>EntitlementId</fullName>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
         <fullName>Impact</fullName>
         <trackHistory>false</trackHistory>
         <type>Picklist</type>
     </fields>
     <fields>
+        <fullName>IsClosed</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
         <fullName>IsMajorIncident</fullName>
         <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>IsStopped</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>MilestoneStatus</fullName>
     </fields>
     <fields>
         <fullName>OwnerId</fullName>
@@ -193,6 +214,14 @@
         <type>Lookup</type>
     </fields>
     <fields>
+        <fullName>SlaExitDate</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>SlaStartDate</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
         <fullName>StartDateTime</fullName>
         <trackHistory>false</trackHistory>
     </fields>
@@ -203,6 +232,9 @@
     </fields>
     <fields>
         <fullName>StatusCode</fullName>
+    </fields>
+    <fields>
+        <fullName>StopStartDate</fullName>
         <trackHistory>false</trackHistory>
     </fields>
     <fields>

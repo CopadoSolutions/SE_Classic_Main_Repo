@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Colonne de ligne</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Colonnes de ligne</value>
+    </caseValues>
+    <fields>
+        <help>Détermine l&apos;alignement des étiquettes et valeurs de colonne.</help>
+        <label><!-- Alignment --></label>
+        <name>SBQQ__Alignment__c</name>
+        <picklistValues>
+            <masterLabel>Center</masterLabel>
+            <translation>Centre</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Left</masterLabel>
+            <translation>Gauche</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Right</masterLabel>
+            <translation>Droite</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Espace en pixels entre la bordure inférieure et le contenu.</help>
+        <label><!-- Bottom Margin (px) --></label>
+        <name>SBQQ__BottomMargin__c</name>
+    </fields>
+    <fields>
+        <help>Le champ source du titre dynamique de cette colonne.</help>
+        <label><!-- Column Heading Field --></label>
+        <name>SBQQ__ColumnHeadingField__c</name>
+        <picklistValues>
+            <masterLabel>Type</masterLabel>
+            <translation>Type</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Champ de l&apos;objet Devis qui contrôle si cette colonne est imprimée dans le document PDF généré.</help>
+        <label><!-- Conditional Print Field --></label>
+        <name>SBQQ__ConditionalPrintField__c</name>
+        <picklistValues>
+            <masterLabel>Group Line Items</masterLabel>
+            <translation>Éléments de ligne de groupe</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Ordre d&apos;affichage de la colonne qui héberge ce champ.</help>
+        <label><!-- Display Order --></label>
+        <name>SBQQ__DisplayOrder__c</name>
+    </fields>
+    <fields>
+        <help>L&apos;échelle décimale des chiffres de la colonne est basée sur la précision la plus élevé dans la colonne.</help>
+        <label><!-- Dynamic Number Scale --></label>
+        <name>SBQQ__DynamicNumberScale__c</name>
+    </fields>
+    <fields>
+        <help>Nom d&apos;API du champ de l&apos;objet Ligne de devis que vous souhaitez afficher dans cette colonne.</help>
+        <label><!-- Field Name --></label>
+        <name>SBQQ__FieldName__c</name>
+    </fields>
+    <fields>
+        <help>Sélectionnez la famille de polices à appliquer à cette colonne. Si vous laissez ce champ vide, la colonne hérite de la police du modèle.</help>
+        <label><!-- Font Family --></label>
+        <name>SBQQ__FontFamily__c</name>
+        <picklistValues>
+            <masterLabel>Courier</masterLabel>
+            <translation>Courier</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dosis</masterLabel>
+            <translation>Dosis</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Droid Sans</masterLabel>
+            <translation>Droid Sans</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Droid Serif</masterLabel>
+            <translation>Droid Serif</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Helvetica</masterLabel>
+            <translation>Helvetica</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Merriweather</masterLabel>
+            <translation>Merriweather</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Montserrat</masterLabel>
+            <translation>Montserrat</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Noto Sans JP</masterLabel>
+            <translation>Noto Sans JP</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Noto Sans KR</masterLabel>
+            <translation>Noto Sans KR</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Noto Sans SC</masterLabel>
+            <translation>Noto Sans SC</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Noto Sans TC</masterLabel>
+            <translation>Noto Sans TC</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Open Sans</masterLabel>
+            <translation>Open Sans</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PT Sans</masterLabel>
+            <translation>PT Sans</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PT Serif</masterLabel>
+            <translation>PT Serif</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Play</masterLabel>
+            <translation>Play</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Roboto</masterLabel>
+            <translation>Roboto</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Roboto Light</masterLabel>
+            <translation>Roboto Light</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Times</masterLabel>
+            <translation>Times</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Titillium Web</masterLabel>
+            <translation>Titillium Web</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ubuntu</masterLabel>
+            <translation>Ubuntu</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Spécifie la taille de la police (en points) du texte de cette colonne. Si vous laissez ce champ vide, le texte hérite de la taille de police du modèle.</help>
+        <label><!-- Font Size (pt) --></label>
+        <name>SBQQ__FontSize__c</name>
+    </fields>
+    <fields>
+        <help>Spécifiez l&apos;épaisseur de police du texte cette colonne. Si vous laissez ce champ vide, l&apos;épaisseur « Normal » est appliquée au texte.</help>
+        <label><!-- Font Weight --></label>
+        <name>SBQQ__FontWeight__c</name>
+        <picklistValues>
+            <masterLabel>Bold</masterLabel>
+            <translation>Gras</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Normal</masterLabel>
+            <translation>Normal</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Spécifiez la couleur (en valeur hexadécimale) du texte du titre de cette colonne. Si vous laissez ce champ vide, le titre hérite de la couleur du texte de la colonne.</help>
+        <label><!-- Heading Text Color --></label>
+        <name>SBQQ__HeadingTextColor__c</name>
+    </fields>
+    <fields>
+        <help>Masquer la valeur de cette colonne si l&apos;élément de ligne est une option produit.</help>
+        <label><!-- Hide On Product Options --></label>
+        <name>SBQQ__HideOnComponents__c</name>
+    </fields>
+    <fields>
+        <help>Espace en pixels entre la bordure gauche et le contenu.</help>
+        <label><!-- Left Margin (px) --></label>
+        <name>SBQQ__LeftMargin__c</name>
+    </fields>
+    <fields>
+        <help>Espace en pixels entre la bordure droite et le contenu.</help>
+        <label><!-- Right Margin (px) --></label>
+        <name>SBQQ__RightMargin__c</name>
+    </fields>
+    <fields>
+        <help>Indique si ce champ doit être cumulé dans la ligne principale. Applicable uniquement si Cumuler le champ est spécifié dans le modèle.</help>
+        <label><!-- Roll Up --></label>
+        <name>SBQQ__RollUp__c</name>
+    </fields>
+    <fields>
+        <help>Section à laquelle cette colonne de ligne s&apos;applique. Aucune section signifie que la colonne s&apos;applique à toutes les sections.</help>
+        <label><!-- Section --></label>
+        <name>SBQQ__Section__c</name>
+        <relationshipLabel><!-- Line Columns --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Sélectionnez cette case pour imprimer ce champ sur sa propre ligne. Utilisée pour les champs de texte long tels que les descriptions de produits.</help>
+        <label><!-- Separate Line --></label>
+        <name>SBQQ__SeparateLine__c</name>
+    </fields>
+    <fields>
+        <help>Étiquette de résumé au niveau sous-groupe.</help>
+        <label><!-- Sub Group Summary Label --></label>
+        <name>SBQQ__SubGroupSummaryLabel__c</name>
+    </fields>
+    <fields>
+        <help>Spécifiez l&apos;épaisseur de police du texte de la ligne de résumé de cette colonne. Si vous laissez ce champ vide, l&apos;épaisseur de police de toute la colonne s&apos;applique par défaut.</help>
+        <label><!-- Summary Font Weight --></label>
+        <name>SBQQ__SummaryFontWeight__c</name>
+        <picklistValues>
+            <masterLabel>Bold</masterLabel>
+            <translation>Gras</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Normal</masterLabel>
+            <translation>Normal</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Fonction utilisée pour résumer les valeurs de cette colonne.</help>
+        <label><!-- Summary Function --></label>
+        <name>SBQQ__SummaryFunction__c</name>
+        <picklistValues>
+            <masterLabel>SUM</masterLabel>
+            <translation>SUM</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Sortie de l&apos;étiquette de cette colonne dans la ligne de résumé.</help>
+        <label><!-- Summary Label --></label>
+        <name>SBQQ__SummaryLabel__c</name>
+    </fields>
+    <fields>
+        <help>Sélectionnez le niveau auquel cette colonne doit être résumée.</help>
+        <label><!-- Summary Level --></label>
+        <name>SBQQ__SummaryLevel__c</name>
+        <picklistValues>
+            <masterLabel>All</masterLabel>
+            <translation>Tous</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sub Group</masterLabel>
+            <translation>Sous-groupe</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Spécifiez la couleur (en valeur hexadécimale) à l&apos;arrière-plan de la cellule de la ligne de résumé de cette colonne. Si vous laissez ce champ vide, l&apos;arrière-plan hérite de la couleur de trame du modèle.</help>
+        <label><!-- Summary Shading Color --></label>
+        <name>SBQQ__SummaryShadingColor__c</name>
+    </fields>
+    <fields>
+        <help>Spécifiez la couleur (en valeur hexadécimale) du texte de la ligne du résumé de cette colonne. Si vous laissez ce champ vide, la ligne du résumé hérite de la couleur du texte de la colonne.</help>
+        <label><!-- Summary Text Color --></label>
+        <name>SBQQ__SummaryTextColor__c</name>
+    </fields>
+    <fields>
+        <help>Modèle dans lequel ce champ doit être affiché.</help>
+        <label><!-- Template --></label>
+        <name>SBQQ__Template__c</name>
+        <relationshipLabel><!-- Line Columns --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Spécifiez la couleur (en valeur hexadécimale) du texte de cette colonne. Si vous laissez ce champ vide, le texte hérite de la couleur du modèle.</help>
+        <label><!-- Text Color --></label>
+        <name>SBQQ__TextColor__c</name>
+    </fields>
+    <fields>
+        <help>Espace en pixels entre la bordure supérieure et le contenu.</help>
+        <label><!-- Top Margin (px) --></label>
+        <name>SBQQ__TopMargin__c</name>
+    </fields>
+    <fields>
+        <help>Sélectionnez la case lorsque les colonnes sont affichées de façon conditionnelle pour remplacer une ou plusieurs autres colonnes. Si cette case n&apos;est pas sélectionnée, lorsque cette colonne est masquée, sa largeur est réattribuée à une autre colonne et la largeur du tableau reste inchangée.</help>
+        <label><!-- Discard Width When Hidden --></label>
+        <name>SBQQ__WidthDiscardedWhenHidden__c</name>
+    </fields>
+    <fields>
+        <help>Largeur (pourcentage) de la colonne occupée par ce champ.</help>
+        <label><!-- Width --></label>
+        <name>SBQQ__Width__c</name>
+    </fields>
+    <gender>Feminine</gender>
+    <layouts>
+        <layout>Line Column Layout</layout>
+        <sections>
+            <label>Options de colonne</label>
+            <section>Column Options</section>
+        </sections>
+        <sections>
+            <label>Liens personnalisés</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>Informations sur le style</label>
+            <section>Style Information</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Titre de la colonne</nameFieldLabel>
+    <startsWith>Consonant</startsWith>
+    <webLinks>
+        <label><!-- Translate --></label>
+        <name>SBQQ__Translate</name>
+    </webLinks>
+</CustomObjectTranslation>

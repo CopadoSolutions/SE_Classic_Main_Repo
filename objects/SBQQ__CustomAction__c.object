@@ -1,0 +1,2156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <customHelpPage>SBQQ__CustomActionsHelp</customHelpPage>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <description>Custom action definition.</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>false</enableReports>
+    <enableSearch>false</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>Private</externalSharingModel>
+    <fields>
+        <fullName>SBQQ__Action__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Action that this custom action performs.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Action that this custom action performs.</inlineHelpText>
+        <label>Action</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>SBQQ__Location__c</controllingField>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Add Products</fullName>
+                    <default>false</default>
+                    <label>Add Products</label>
+                </value>
+                <value>
+                    <fullName>Add Favorites</fullName>
+                    <default>false</default>
+                    <label>Add Favorites</label>
+                </value>
+                <value>
+                    <fullName>Upgrade Assets</fullName>
+                    <default>false</default>
+                    <label>Upgrade Assets</label>
+                </value>
+                <value>
+                    <fullName>Renew Subscriptions</fullName>
+                    <default>false</default>
+                    <label>Renew Subscriptions</label>
+                </value>
+                <value>
+                    <fullName>Save</fullName>
+                    <default>false</default>
+                    <label>Save</label>
+                </value>
+                <value>
+                    <fullName>Quick Save</fullName>
+                    <default>false</default>
+                    <label>Quick Save</label>
+                </value>
+                <value>
+                    <fullName>Cancel</fullName>
+                    <default>false</default>
+                    <label>Cancel</label>
+                </value>
+                <value>
+                    <fullName>Calculate</fullName>
+                    <default>false</default>
+                    <label>Calculate</label>
+                </value>
+                <value>
+                    <fullName>Delete Lines</fullName>
+                    <default>false</default>
+                    <label>Delete Lines</label>
+                </value>
+                <value>
+                    <fullName>Add Group</fullName>
+                    <default>false</default>
+                    <label>Add Group</label>
+                </value>
+                <value>
+                    <fullName>Ungroup</fullName>
+                    <default>false</default>
+                    <label>Ungroup</label>
+                </value>
+                <value>
+                    <fullName>Add Solution Group</fullName>
+                    <default>false</default>
+                    <label>Add Solution Group</label>
+                </value>
+                <value>
+                    <fullName>Reset Discounts</fullName>
+                    <default>false</default>
+                    <label>Reset Discounts</label>
+                </value>
+                <value>
+                    <fullName>Optional: All</fullName>
+                    <default>false</default>
+                    <label>Optional: All</label>
+                </value>
+                <value>
+                    <fullName>Optional: None</fullName>
+                    <default>false</default>
+                    <label>Optional: None</label>
+                </value>
+                <value>
+                    <fullName>Clone Group</fullName>
+                    <default>false</default>
+                    <label>Clone Group</label>
+                </value>
+                <value>
+                    <fullName>Delete Group</fullName>
+                    <default>false</default>
+                    <label>Delete Group</label>
+                </value>
+                <value>
+                    <fullName>Add To Favorites</fullName>
+                    <default>false</default>
+                    <label>Add To Favorites</label>
+                </value>
+                <value>
+                    <fullName>Remove From Favorites</fullName>
+                    <default>false</default>
+                    <label>Remove From Favorites</label>
+                </value>
+                <value>
+                    <fullName>Delete Line</fullName>
+                    <default>false</default>
+                    <label>Delete Line</label>
+                </value>
+                <value>
+                    <fullName>Clone Line</fullName>
+                    <default>false</default>
+                    <label>Clone Line</label>
+                </value>
+                <value>
+                    <fullName>Reconfigure Line</fullName>
+                    <default>false</default>
+                    <label>Reconfigure Line</label>
+                </value>
+                <value>
+                    <fullName>Desegment Line</fullName>
+                    <default>false</default>
+                    <label>Desegment Line</label>
+                </value>
+                <value>
+                    <fullName>Resegment Line</fullName>
+                    <default>false</default>
+                    <label>Resegment Line</label>
+                </value>
+                <value>
+                    <fullName>View Discount Schedule</fullName>
+                    <default>false</default>
+                    <label>View Discount Schedule</label>
+                </value>
+                <value>
+                    <fullName>Launch External</fullName>
+                    <default>false</default>
+                    <label>Launch External</label>
+                </value>
+                <value>
+                    <fullName>Clone with Related</fullName>
+                    <default>false</default>
+                    <label>Clone with Related</label>
+                </value>
+                <value>
+                    <fullName>Create Order</fullName>
+                    <default>false</default>
+                    <label>Create Order</label>
+                </value>
+                <value>
+                    <fullName>Edit Lines</fullName>
+                    <default>false</default>
+                    <label>Edit Lines</label>
+                </value>
+                <value>
+                    <fullName>Generate Document</fullName>
+                    <default>false</default>
+                    <label>Generate Document</label>
+                </value>
+                <value>
+                    <fullName>Import Lines</fullName>
+                    <default>false</default>
+                    <label>Import Lines</label>
+                </value>
+                <value>
+                    <fullName>Modify Quote Terms</fullName>
+                    <default>false</default>
+                    <label>Modify Quote Terms</label>
+                </value>
+                <value>
+                    <fullName>Include Document</fullName>
+                    <default>false</default>
+                    <label>Include Document</label>
+                </value>
+                <value>
+                    <fullName>Preview Document</fullName>
+                    <default>false</default>
+                    <label>Preview Document</label>
+                </value>
+                <value>
+                    <fullName>Refresh Prices</fullName>
+                    <default>false</default>
+                    <label>Refresh Prices</label>
+                </value>
+                <value>
+                    <fullName>Amend Assets</fullName>
+                    <default>false</default>
+                    <label>Amend Assets</label>
+                </value>
+                <value>
+                    <fullName>Renew Assets</fullName>
+                    <default>false</default>
+                    <label>Renew Assets</label>
+                </value>
+                <value>
+                    <fullName>Amend</fullName>
+                    <default>false</default>
+                    <label>Amend</label>
+                </value>
+                <value>
+                    <fullName>Renew Contracts</fullName>
+                    <default>false</default>
+                    <label>Renew Contracts</label>
+                </value>
+                <value>
+                    <fullName>Amend Contract</fullName>
+                    <default>false</default>
+                    <label>Amend Contract</label>
+                </value>
+                <value>
+                    <fullName>Edit Order Products</fullName>
+                    <default>false</default>
+                    <label>Edit Order Products</label>
+                </value>
+                <value>
+                    <fullName>View</fullName>
+                    <default>false</default>
+                    <label>View</label>
+                </value>
+                <value>
+                    <fullName>Email</fullName>
+                    <default>false</default>
+                    <label>Email</label>
+                </value>
+                <value>
+                    <fullName>Save and Navigate</fullName>
+                    <default>false</default>
+                    <label>Save and Navigate</label>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>Quote Document Panel</controllingFieldValue>
+                <valueName>View</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Quote Document Panel</controllingFieldValue>
+                <valueName>Email</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Quote</controllingFieldValue>
+                <valueName>Save</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Quote</controllingFieldValue>
+                <valueName>Quick Save</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Quote</controllingFieldValue>
+                <valueName>Cancel</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Quote</controllingFieldValue>
+                <valueName>Calculate</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Quote</controllingFieldValue>
+                <valueName>Delete Lines</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Quote</controllingFieldValue>
+                <valueName>Add Group</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Quote</controllingFieldValue>
+                <valueName>Ungroup</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Quote</controllingFieldValue>
+                <valueName>Add Solution Group</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Quote</controllingFieldValue>
+                <controllingFieldValue>Group</controllingFieldValue>
+                <valueName>Reset Discounts</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Quote</controllingFieldValue>
+                <controllingFieldValue>Group</controllingFieldValue>
+                <valueName>Optional: All</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Quote</controllingFieldValue>
+                <controllingFieldValue>Group</controllingFieldValue>
+                <valueName>Optional: None</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Quote</controllingFieldValue>
+                <valueName>Save and Navigate</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Quote/Group</controllingFieldValue>
+                <valueName>Add Products</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Quote/Group</controllingFieldValue>
+                <valueName>Add Favorites</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Quote/Group</controllingFieldValue>
+                <valueName>Upgrade Assets</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Quote/Group</controllingFieldValue>
+                <valueName>Renew Subscriptions</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Group</controllingFieldValue>
+                <valueName>Clone Group</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Group</controllingFieldValue>
+                <valueName>Delete Group</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Line</controllingFieldValue>
+                <valueName>Add To Favorites</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Line</controllingFieldValue>
+                <valueName>Remove From Favorites</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Line</controllingFieldValue>
+                <valueName>Delete Line</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Line</controllingFieldValue>
+                <valueName>Clone Line</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Line</controllingFieldValue>
+                <valueName>Reconfigure Line</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Line</controllingFieldValue>
+                <valueName>Desegment Line</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Line</controllingFieldValue>
+                <valueName>Resegment Line</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Line</controllingFieldValue>
+                <valueName>View Discount Schedule</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Configurator</controllingFieldValue>
+                <valueName>Launch External</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Quote Panel</controllingFieldValue>
+                <valueName>Clone with Related</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Quote Panel</controllingFieldValue>
+                <controllingFieldValue>Opportunity Panel</controllingFieldValue>
+                <valueName>Create Order</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Quote Panel</controllingFieldValue>
+                <valueName>Edit Lines</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Quote Panel</controllingFieldValue>
+                <valueName>Generate Document</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Quote Panel</controllingFieldValue>
+                <valueName>Import Lines</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Quote Panel</controllingFieldValue>
+                <valueName>Modify Quote Terms</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Quote Panel</controllingFieldValue>
+                <controllingFieldValue>Opportunity Panel</controllingFieldValue>
+                <valueName>Include Document</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Quote Panel</controllingFieldValue>
+                <valueName>Preview Document</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Quote Panel</controllingFieldValue>
+                <valueName>Refresh Prices</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Account Panel</controllingFieldValue>
+                <valueName>Amend Assets</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Account Panel</controllingFieldValue>
+                <valueName>Renew Assets</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Contract Panel</controllingFieldValue>
+                <valueName>Amend</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Contract Panel</controllingFieldValue>
+                <valueName>Renew Contracts</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Opportunity Panel</controllingFieldValue>
+                <valueName>Amend Contract</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Order Panel</controllingFieldValue>
+                <valueName>Edit Order Products</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SBQQ__Active__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Flag that determines whether this action is used.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select the checkbox to make this action available for use.</inlineHelpText>
+        <label>Active</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__BrandButton__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Indicates this Custom Action is a Brand Button. Affects styling of un-nested Actions only.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Indicates this Custom Action is a Brand Button. Affects styling of un-nested Actions only.</inlineHelpText>
+        <label>Brand Button</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__Class__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Css class of the custom action for easy identification on HTML.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Css class of the custom action for easy identification on HTML.</inlineHelpText>
+        <label>Class</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SBQQ__ConditionsMet__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Choose the behavior for your conditions: All is AND; Any is OR.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Choose the behavior for your conditions: All is AND; Any is OR.</inlineHelpText>
+        <label>Conditions Met</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>All</fullName>
+                    <default>true</default>
+                    <label>All</label>
+                </value>
+                <value>
+                    <fullName>Any</fullName>
+                    <default>false</default>
+                    <label>Any</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SBQQ__Default__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Sets action to be the default overriding action.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select checkbox to set action as the default overriding action.</inlineHelpText>
+        <label>Default</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__Description__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Description of the Custom Action which will appear when users hover over the button.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter the value for what you want to appear when a user hovers over the Custom Action button.</inlineHelpText>
+        <label>Description</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__DisplayOrder__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The order in which this action display in the UI.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The order in which this action display in the UI.</inlineHelpText>
+        <label>Display Order</label>
+        <precision>3</precision>
+        <required>true</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SBQQ__EventHandlerName__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Method name for the click handler of this custom action.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Method name for the click handler of this custom action.</inlineHelpText>
+        <label>Event Handler Name</label>
+        <length>150</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SBQQ__IconClass__c</fullName>
+        <deprecated>false</deprecated>
+        <description>CSS class name for the icon of this custom action.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>CSS class name for the icon of this custom action.</inlineHelpText>
+        <label>Icon Class</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SBQQ__Icon__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Icon for this custom action</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Icon for this custom action</inlineHelpText>
+        <label>Icon</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>3dots</fullName>
+                    <default>false</default>
+                    <label>3dots</label>
+                </value>
+                <value>
+                    <fullName>add</fullName>
+                    <default>false</default>
+                    <label>add</label>
+                </value>
+                <value>
+                    <fullName>adduser</fullName>
+                    <default>false</default>
+                    <label>adduser</label>
+                </value>
+                <value>
+                    <fullName>align-justify</fullName>
+                    <default>false</default>
+                    <label>align-justify</label>
+                </value>
+                <value>
+                    <fullName>approval</fullName>
+                    <default>false</default>
+                    <label>approval</label>
+                </value>
+                <value>
+                    <fullName>apps</fullName>
+                    <default>false</default>
+                    <label>apps</label>
+                </value>
+                <value>
+                    <fullName>arrowdown</fullName>
+                    <default>false</default>
+                    <label>arrowdown</label>
+                </value>
+                <value>
+                    <fullName>arrowup</fullName>
+                    <default>false</default>
+                    <label>arrowup</label>
+                </value>
+                <value>
+                    <fullName>attach</fullName>
+                    <default>false</default>
+                    <label>attach</label>
+                </value>
+                <value>
+                    <fullName>attention</fullName>
+                    <default>false</default>
+                    <label>attention</label>
+                </value>
+                <value>
+                    <fullName>attention-circled</fullName>
+                    <default>false</default>
+                    <label>attention-circled</label>
+                </value>
+                <value>
+                    <fullName>back</fullName>
+                    <default>false</default>
+                    <label>back</label>
+                </value>
+                <value>
+                    <fullName>ban</fullName>
+                    <default>false</default>
+                    <label>ban</label>
+                </value>
+                <value>
+                    <fullName>bold</fullName>
+                    <default>false</default>
+                    <label>bold</label>
+                </value>
+                <value>
+                    <fullName>builder</fullName>
+                    <default>false</default>
+                    <label>builder</label>
+                </value>
+                <value>
+                    <fullName>calendar</fullName>
+                    <default>false</default>
+                    <label>calendar</label>
+                </value>
+                <value>
+                    <fullName>cancel</fullName>
+                    <default>false</default>
+                    <label>cancel</label>
+                </value>
+                <value>
+                    <fullName>cancel-circled</fullName>
+                    <default>false</default>
+                    <label>cancel-circled</label>
+                </value>
+                <value>
+                    <fullName>ccw</fullName>
+                    <default>false</default>
+                    <label>ccw</label>
+                </value>
+                <value>
+                    <fullName>center_align_text</fullName>
+                    <default>false</default>
+                    <label>center_align_text</label>
+                </value>
+                <value>
+                    <fullName>chart</fullName>
+                    <default>false</default>
+                    <label>chart</label>
+                </value>
+                <value>
+                    <fullName>chat</fullName>
+                    <default>false</default>
+                    <label>chat</label>
+                </value>
+                <value>
+                    <fullName>check</fullName>
+                    <default>false</default>
+                    <label>check</label>
+                </value>
+                <value>
+                    <fullName>chevrondown</fullName>
+                    <default>false</default>
+                    <label>chevrondown</label>
+                </value>
+                <value>
+                    <fullName>chevronleft</fullName>
+                    <default>false</default>
+                    <label>chevronleft</label>
+                </value>
+                <value>
+                    <fullName>chevronright</fullName>
+                    <default>false</default>
+                    <label>chevronright</label>
+                </value>
+                <value>
+                    <fullName>chevronup</fullName>
+                    <default>false</default>
+                    <label>chevronup</label>
+                </value>
+                <value>
+                    <fullName>circle-empty</fullName>
+                    <default>false</default>
+                    <label>circle-empty</label>
+                </value>
+                <value>
+                    <fullName>clear</fullName>
+                    <default>false</default>
+                    <label>clear</label>
+                </value>
+                <value>
+                    <fullName>clock</fullName>
+                    <default>false</default>
+                    <label>clock</label>
+                </value>
+                <value>
+                    <fullName>close</fullName>
+                    <default>false</default>
+                    <label>close</label>
+                </value>
+                <value>
+                    <fullName>cog</fullName>
+                    <default>false</default>
+                    <label>cog</label>
+                </value>
+                <value>
+                    <fullName>comments</fullName>
+                    <default>false</default>
+                    <label>comments</label>
+                </value>
+                <value>
+                    <fullName>compass</fullName>
+                    <default>false</default>
+                    <label>compass</label>
+                </value>
+                <value>
+                    <fullName>contact</fullName>
+                    <default>false</default>
+                    <label>contact</label>
+                </value>
+                <value>
+                    <fullName>contract</fullName>
+                    <default>false</default>
+                    <label>contract</label>
+                </value>
+                <value>
+                    <fullName>contract-1</fullName>
+                    <default>false</default>
+                    <label>contract-1</label>
+                </value>
+                <value>
+                    <fullName>copy</fullName>
+                    <default>false</default>
+                    <label>copy</label>
+                </value>
+                <value>
+                    <fullName>custom_apps</fullName>
+                    <default>false</default>
+                    <label>custom_apps</label>
+                </value>
+                <value>
+                    <fullName>custom93</fullName>
+                    <default>false</default>
+                    <label>custom93</label>
+                </value>
+                <value>
+                    <fullName>cut</fullName>
+                    <default>false</default>
+                    <label>cut</label>
+                </value>
+                <value>
+                    <fullName>cw</fullName>
+                    <default>false</default>
+                    <label>cw</label>
+                </value>
+                <value>
+                    <fullName>dashboard</fullName>
+                    <default>false</default>
+                    <label>dashboard</label>
+                </value>
+                <value>
+                    <fullName>dayview</fullName>
+                    <default>false</default>
+                    <label>dayview</label>
+                </value>
+                <value>
+                    <fullName>delete</fullName>
+                    <default>false</default>
+                    <label>delete</label>
+                </value>
+                <value>
+                    <fullName>discountscheduleicons-02</fullName>
+                    <default>false</default>
+                    <label>discountscheduleicons-02</label>
+                </value>
+                <value>
+                    <fullName>docs</fullName>
+                    <default>false</default>
+                    <label>docs</label>
+                </value>
+                <value>
+                    <fullName>document</fullName>
+                    <default>false</default>
+                    <label>document</label>
+                </value>
+                <value>
+                    <fullName>dot-circled</fullName>
+                    <default>false</default>
+                    <label>dot-circled</label>
+                </value>
+                <value>
+                    <fullName>down</fullName>
+                    <default>false</default>
+                    <label>down</label>
+                </value>
+                <value>
+                    <fullName>down-dir</fullName>
+                    <default>false</default>
+                    <label>down-dir</label>
+                </value>
+                <value>
+                    <fullName>download</fullName>
+                    <default>false</default>
+                    <label>download</label>
+                </value>
+                <value>
+                    <fullName>drafts</fullName>
+                    <default>false</default>
+                    <label>drafts</label>
+                </value>
+                <value>
+                    <fullName>edit</fullName>
+                    <default>false</default>
+                    <label>edit</label>
+                </value>
+                <value>
+                    <fullName>email</fullName>
+                    <default>false</default>
+                    <label>email</label>
+                </value>
+                <value>
+                    <fullName>email-1</fullName>
+                    <default>false</default>
+                    <label>email-1</label>
+                </value>
+                <value>
+                    <fullName>error</fullName>
+                    <default>false</default>
+                    <label>error</label>
+                </value>
+                <value>
+                    <fullName>event</fullName>
+                    <default>false</default>
+                    <label>event</label>
+                </value>
+                <value>
+                    <fullName>event-1</fullName>
+                    <default>false</default>
+                    <label>event-1</label>
+                </value>
+                <value>
+                    <fullName>exchange</fullName>
+                    <default>false</default>
+                    <label>exchange</label>
+                </value>
+                <value>
+                    <fullName>expand</fullName>
+                    <default>false</default>
+                    <label>expand</label>
+                </value>
+                <value>
+                    <fullName>fast-backward</fullName>
+                    <default>false</default>
+                    <label>fast-backward</label>
+                </value>
+                <value>
+                    <fullName>fast-forward</fullName>
+                    <default>false</default>
+                    <label>fast-forward</label>
+                </value>
+                <value>
+                    <fullName>favorite</fullName>
+                    <default>false</default>
+                    <label>favorite</label>
+                </value>
+                <value>
+                    <fullName>feed</fullName>
+                    <default>false</default>
+                    <label>feed</label>
+                </value>
+                <value>
+                    <fullName>feedback</fullName>
+                    <default>false</default>
+                    <label>feedback</label>
+                </value>
+                <value>
+                    <fullName>file</fullName>
+                    <default>false</default>
+                    <label>file</label>
+                </value>
+                <value>
+                    <fullName>filter</fullName>
+                    <default>false</default>
+                    <label>filter</label>
+                </value>
+                <value>
+                    <fullName>filterlist</fullName>
+                    <default>false</default>
+                    <label>filterlist</label>
+                </value>
+                <value>
+                    <fullName>forward</fullName>
+                    <default>false</default>
+                    <label>forward</label>
+                </value>
+                <value>
+                    <fullName>frozen</fullName>
+                    <default>false</default>
+                    <label>frozen</label>
+                </value>
+                <value>
+                    <fullName>gdoc</fullName>
+                    <default>false</default>
+                    <label>gdoc</label>
+                </value>
+                <value>
+                    <fullName>groups</fullName>
+                    <default>false</default>
+                    <label>groups</label>
+                </value>
+                <value>
+                    <fullName>help</fullName>
+                    <default>false</default>
+                    <label>help</label>
+                </value>
+                <value>
+                    <fullName>help-circled</fullName>
+                    <default>false</default>
+                    <label>help-circled</label>
+                </value>
+                <value>
+                    <fullName>home</fullName>
+                    <default>false</default>
+                    <label>home</label>
+                </value>
+                <value>
+                    <fullName>image</fullName>
+                    <default>false</default>
+                    <label>image</label>
+                </value>
+                <value>
+                    <fullName>info</fullName>
+                    <default>false</default>
+                    <label>info</label>
+                </value>
+                <value>
+                    <fullName>info-circled</fullName>
+                    <default>false</default>
+                    <label>info-circled</label>
+                </value>
+                <value>
+                    <fullName>insert_tag_field</fullName>
+                    <default>false</default>
+                    <label>insert_tag_field</label>
+                </value>
+                <value>
+                    <fullName>insert_template</fullName>
+                    <default>false</default>
+                    <label>insert_template</label>
+                </value>
+                <value>
+                    <fullName>italic</fullName>
+                    <default>false</default>
+                    <label>italic</label>
+                </value>
+                <value>
+                    <fullName>justify_text</fullName>
+                    <default>false</default>
+                    <label>justify_text</label>
+                </value>
+                <value>
+                    <fullName>layout</fullName>
+                    <default>false</default>
+                    <label>layout</label>
+                </value>
+                <value>
+                    <fullName>left</fullName>
+                    <default>false</default>
+                    <label>left</label>
+                </value>
+                <value>
+                    <fullName>left_align_text</fullName>
+                    <default>false</default>
+                    <label>left_align_text</label>
+                </value>
+                <value>
+                    <fullName>left-dir</fullName>
+                    <default>false</default>
+                    <label>left-dir</label>
+                </value>
+                <value>
+                    <fullName>level-down</fullName>
+                    <default>false</default>
+                    <label>level-down</label>
+                </value>
+                <value>
+                    <fullName>like</fullName>
+                    <default>false</default>
+                    <label>like</label>
+                </value>
+                <value>
+                    <fullName>link</fullName>
+                    <default>false</default>
+                    <label>link</label>
+                </value>
+                <value>
+                    <fullName>list</fullName>
+                    <default>false</default>
+                    <label>list</label>
+                </value>
+                <value>
+                    <fullName>lock</fullName>
+                    <default>false</default>
+                    <label>lock</label>
+                </value>
+                <value>
+                    <fullName>magicwand</fullName>
+                    <default>false</default>
+                    <label>magicwand</label>
+                </value>
+                <value>
+                    <fullName>move</fullName>
+                    <default>false</default>
+                    <label>move</label>
+                </value>
+                <value>
+                    <fullName>new</fullName>
+                    <default>false</default>
+                    <label>new</label>
+                </value>
+                <value>
+                    <fullName>new_window</fullName>
+                    <default>false</default>
+                    <label>new_window</label>
+                </value>
+                <value>
+                    <fullName>notebook</fullName>
+                    <default>false</default>
+                    <label>notebook</label>
+                </value>
+                <value>
+                    <fullName>notification</fullName>
+                    <default>false</default>
+                    <label>notification</label>
+                </value>
+                <value>
+                    <fullName>ok</fullName>
+                    <default>false</default>
+                    <label>ok</label>
+                </value>
+                <value>
+                    <fullName>open</fullName>
+                    <default>false</default>
+                    <label>open</label>
+                </value>
+                <value>
+                    <fullName>open_folder</fullName>
+                    <default>false</default>
+                    <label>open_folder</label>
+                </value>
+                <value>
+                    <fullName>opened_folder</fullName>
+                    <default>false</default>
+                    <label>opened_folder</label>
+                </value>
+                <value>
+                    <fullName>opportunity</fullName>
+                    <default>false</default>
+                    <label>opportunity</label>
+                </value>
+                <value>
+                    <fullName>page</fullName>
+                    <default>false</default>
+                    <label>page</label>
+                </value>
+                <value>
+                    <fullName>paste</fullName>
+                    <default>false</default>
+                    <label>paste</label>
+                </value>
+                <value>
+                    <fullName>pdf</fullName>
+                    <default>false</default>
+                    <label>pdf</label>
+                </value>
+                <value>
+                    <fullName>pencil</fullName>
+                    <default>false</default>
+                    <label>pencil</label>
+                </value>
+                <value>
+                    <fullName>people</fullName>
+                    <default>false</default>
+                    <label>people</label>
+                </value>
+                <value>
+                    <fullName>photo</fullName>
+                    <default>false</default>
+                    <label>photo</label>
+                </value>
+                <value>
+                    <fullName>plus</fullName>
+                    <default>false</default>
+                    <label>plus</label>
+                </value>
+                <value>
+                    <fullName>post</fullName>
+                    <default>false</default>
+                    <label>post</label>
+                </value>
+                <value>
+                    <fullName>preview</fullName>
+                    <default>false</default>
+                    <label>preview</label>
+                </value>
+                <value>
+                    <fullName>pricebook</fullName>
+                    <default>false</default>
+                    <label>pricebook</label>
+                </value>
+                <value>
+                    <fullName>priority</fullName>
+                    <default>false</default>
+                    <label>priority</label>
+                </value>
+                <value>
+                    <fullName>product</fullName>
+                    <default>false</default>
+                    <label>product</label>
+                </value>
+                <value>
+                    <fullName>question_feed</fullName>
+                    <default>false</default>
+                    <label>question_feed</label>
+                </value>
+                <value>
+                    <fullName>quotes</fullName>
+                    <default>false</default>
+                    <label>quotes</label>
+                </value>
+                <value>
+                    <fullName>recent</fullName>
+                    <default>false</default>
+                    <label>recent</label>
+                </value>
+                <value>
+                    <fullName>record</fullName>
+                    <default>false</default>
+                    <label>record</label>
+                </value>
+                <value>
+                    <fullName>refresh</fullName>
+                    <default>false</default>
+                    <label>refresh</label>
+                </value>
+                <value>
+                    <fullName>related_list</fullName>
+                    <default>false</default>
+                    <label>related_list</label>
+                </value>
+                <value>
+                    <fullName>remove_link</fullName>
+                    <default>false</default>
+                    <label>remove_link</label>
+                </value>
+                <value>
+                    <fullName>replace</fullName>
+                    <default>false</default>
+                    <label>replace</label>
+                </value>
+                <value>
+                    <fullName>reply</fullName>
+                    <default>false</default>
+                    <label>reply</label>
+                </value>
+                <value>
+                    <fullName>report</fullName>
+                    <default>false</default>
+                    <label>report</label>
+                </value>
+                <value>
+                    <fullName>richtextbulletedlist</fullName>
+                    <default>false</default>
+                    <label>richtextbulletedlist</label>
+                </value>
+                <value>
+                    <fullName>richtextindent</fullName>
+                    <default>false</default>
+                    <label>richtextindent</label>
+                </value>
+                <value>
+                    <fullName>richtextnumberedlist</fullName>
+                    <default>false</default>
+                    <label>richtextnumberedlist</label>
+                </value>
+                <value>
+                    <fullName>richtextoutdent</fullName>
+                    <default>false</default>
+                    <label>richtextoutdent</label>
+                </value>
+                <value>
+                    <fullName>right</fullName>
+                    <default>false</default>
+                    <label>right</label>
+                </value>
+                <value>
+                    <fullName>right_align_text</fullName>
+                    <default>false</default>
+                    <label>right_align_text</label>
+                </value>
+                <value>
+                    <fullName>right-dir</fullName>
+                    <default>false</default>
+                    <label>right-dir</label>
+                </value>
+                <value>
+                    <fullName>rows</fullName>
+                    <default>false</default>
+                    <label>rows</label>
+                </value>
+                <value>
+                    <fullName>search</fullName>
+                    <default>false</default>
+                    <label>search</label>
+                </value>
+                <value>
+                    <fullName>separator</fullName>
+                    <default>false</default>
+                    <label>separator</label>
+                </value>
+                <value>
+                    <fullName>settings</fullName>
+                    <default>false</default>
+                    <label>settings</label>
+                </value>
+                <value>
+                    <fullName>share</fullName>
+                    <default>false</default>
+                    <label>share</label>
+                </value>
+                <value>
+                    <fullName>side_list</fullName>
+                    <default>false</default>
+                    <label>side_list</label>
+                </value>
+                <value>
+                    <fullName>snippet</fullName>
+                    <default>false</default>
+                    <label>snippet</label>
+                </value>
+                <value>
+                    <fullName>socialshare</fullName>
+                    <default>false</default>
+                    <label>socialshare</label>
+                </value>
+                <value>
+                    <fullName>sort</fullName>
+                    <default>false</default>
+                    <label>sort</label>
+                </value>
+                <value>
+                    <fullName>sort-name-down</fullName>
+                    <default>false</default>
+                    <label>sort-name-down</label>
+                </value>
+                <value>
+                    <fullName>sort-name-up</fullName>
+                    <default>false</default>
+                    <label>sort-name-up</label>
+                </value>
+                <value>
+                    <fullName>spinner</fullName>
+                    <default>false</default>
+                    <label>spinner</label>
+                </value>
+                <value>
+                    <fullName>standard_objects</fullName>
+                    <default>false</default>
+                    <label>standard_objects</label>
+                </value>
+                <value>
+                    <fullName>star</fullName>
+                    <default>false</default>
+                    <label>star</label>
+                </value>
+                <value>
+                    <fullName>star-empty</fullName>
+                    <default>false</default>
+                    <label>star-empty</label>
+                </value>
+                <value>
+                    <fullName>success</fullName>
+                    <default>false</default>
+                    <label>success</label>
+                </value>
+                <value>
+                    <fullName>summary</fullName>
+                    <default>false</default>
+                    <label>summary</label>
+                </value>
+                <value>
+                    <fullName>summarydetail</fullName>
+                    <default>false</default>
+                    <label>summarydetail</label>
+                </value>
+                <value>
+                    <fullName>table</fullName>
+                    <default>false</default>
+                    <label>table</label>
+                </value>
+                <value>
+                    <fullName>task</fullName>
+                    <default>false</default>
+                    <label>task</label>
+                </value>
+                <value>
+                    <fullName>th</fullName>
+                    <default>false</default>
+                    <label>th</label>
+                </value>
+                <value>
+                    <fullName>thanks</fullName>
+                    <default>false</default>
+                    <label>thanks</label>
+                </value>
+                <value>
+                    <fullName>th-large</fullName>
+                    <default>false</default>
+                    <label>th-large</label>
+                </value>
+                <value>
+                    <fullName>th-list</fullName>
+                    <default>false</default>
+                    <label>th-list</label>
+                </value>
+                <value>
+                    <fullName>tile_card_list</fullName>
+                    <default>false</default>
+                    <label>tile_card_list</label>
+                </value>
+                <value>
+                    <fullName>today</fullName>
+                    <default>false</default>
+                    <label>today</label>
+                </value>
+                <value>
+                    <fullName>to-end</fullName>
+                    <default>false</default>
+                    <label>to-end</label>
+                </value>
+                <value>
+                    <fullName>to-start</fullName>
+                    <default>false</default>
+                    <label>to-start</label>
+                </value>
+                <value>
+                    <fullName>underline</fullName>
+                    <default>false</default>
+                    <label>underline</label>
+                </value>
+                <value>
+                    <fullName>undo</fullName>
+                    <default>false</default>
+                    <label>undo</label>
+                </value>
+                <value>
+                    <fullName>unlock</fullName>
+                    <default>false</default>
+                    <label>unlock</label>
+                </value>
+                <value>
+                    <fullName>up</fullName>
+                    <default>false</default>
+                    <label>up</label>
+                </value>
+                <value>
+                    <fullName>up-dir</fullName>
+                    <default>false</default>
+                    <label>up-dir</label>
+                </value>
+                <value>
+                    <fullName>upload</fullName>
+                    <default>false</default>
+                    <label>upload</label>
+                </value>
+                <value>
+                    <fullName>user</fullName>
+                    <default>false</default>
+                    <label>user</label>
+                </value>
+                <value>
+                    <fullName>warning</fullName>
+                    <default>false</default>
+                    <label>warning</label>
+                </value>
+                <value>
+                    <fullName>zoomin</fullName>
+                    <default>false</default>
+                    <label>zoomin</label>
+                </value>
+                <value>
+                    <fullName>zoomout</fullName>
+                    <default>false</default>
+                    <label>zoomout</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SBQQ__Label__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Label displayed for this action in the UI.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Label displayed for this action in the UI.</inlineHelpText>
+        <label>Label</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Add Products</fullName>
+                    <default>true</default>
+                    <label>Add Products</label>
+                </value>
+                <value>
+                    <fullName>Add Favorites</fullName>
+                    <default>false</default>
+                    <label>Add Favorites</label>
+                </value>
+                <value>
+                    <fullName>Renew Subscriptions</fullName>
+                    <default>false</default>
+                    <label>Renew Subscriptions</label>
+                </value>
+                <value>
+                    <fullName>Upgrade Assets</fullName>
+                    <default>false</default>
+                    <label>Upgrade Assets</label>
+                </value>
+                <value>
+                    <fullName>Save</fullName>
+                    <default>false</default>
+                    <label>Save</label>
+                </value>
+                <value>
+                    <fullName>Quick Save</fullName>
+                    <default>false</default>
+                    <label>Quick Save</label>
+                </value>
+                <value>
+                    <fullName>Cancel</fullName>
+                    <default>false</default>
+                    <label>Cancel</label>
+                </value>
+                <value>
+                    <fullName>Reset Discounts</fullName>
+                    <default>false</default>
+                    <label>Reset Discounts</label>
+                </value>
+                <value>
+                    <fullName>Optional: All</fullName>
+                    <default>false</default>
+                    <label>Optional: All</label>
+                </value>
+                <value>
+                    <fullName>Optional: None</fullName>
+                    <default>false</default>
+                    <label>Optional: None</label>
+                </value>
+                <value>
+                    <fullName>Calculate</fullName>
+                    <default>false</default>
+                    <label>Calculate</label>
+                </value>
+                <value>
+                    <fullName>Delete Lines</fullName>
+                    <default>false</default>
+                    <label>Delete Lines</label>
+                </value>
+                <value>
+                    <fullName>Add Group</fullName>
+                    <default>false</default>
+                    <label>Add Group</label>
+                </value>
+                <value>
+                    <fullName>Ungroup</fullName>
+                    <default>false</default>
+                    <label>Ungroup</label>
+                </value>
+                <value>
+                    <fullName>Add Solution Group</fullName>
+                    <default>false</default>
+                    <label>Add Solution Group</label>
+                </value>
+                <value>
+                    <fullName>Clone Group</fullName>
+                    <default>false</default>
+                    <label>Clone Group</label>
+                </value>
+                <value>
+                    <fullName>Delete Group</fullName>
+                    <default>false</default>
+                    <label>Delete Group</label>
+                </value>
+                <value>
+                    <fullName>Add To Favorites</fullName>
+                    <default>false</default>
+                    <label>Add To Favorites</label>
+                </value>
+                <value>
+                    <fullName>Remove From Favorites</fullName>
+                    <default>false</default>
+                    <label>Remove From Favorites</label>
+                </value>
+                <value>
+                    <fullName>Delete Line</fullName>
+                    <default>false</default>
+                    <label>Delete Line</label>
+                </value>
+                <value>
+                    <fullName>Clone Line</fullName>
+                    <default>false</default>
+                    <label>Clone Line</label>
+                </value>
+                <value>
+                    <fullName>Reconfigure Line</fullName>
+                    <default>false</default>
+                    <label>Reconfigure Line</label>
+                </value>
+                <value>
+                    <fullName>Desegment Line</fullName>
+                    <default>false</default>
+                    <label>Desegment Line</label>
+                </value>
+                <value>
+                    <fullName>Resegment Line</fullName>
+                    <default>false</default>
+                    <label>Resegment Line</label>
+                </value>
+                <value>
+                    <fullName>View Discount Schedule</fullName>
+                    <default>false</default>
+                    <label>View Discount Schedule</label>
+                </value>
+                <value>
+                    <fullName>Launch External</fullName>
+                    <default>false</default>
+                    <label>Launch External</label>
+                </value>
+                <value>
+                    <fullName>Edit Lines</fullName>
+                    <default>false</default>
+                    <label>Edit Lines</label>
+                </value>
+                <value>
+                    <fullName>Preview Document</fullName>
+                    <default>false</default>
+                    <label>Preview Document</label>
+                </value>
+                <value>
+                    <fullName>Generate Document</fullName>
+                    <default>false</default>
+                    <label>Generate Document</label>
+                </value>
+                <value>
+                    <fullName>Include Document</fullName>
+                    <default>false</default>
+                    <label>Include Document</label>
+                </value>
+                <value>
+                    <fullName>Modify Quote Terms</fullName>
+                    <default>false</default>
+                    <label>Modify Quote Terms</label>
+                </value>
+                <value>
+                    <fullName>Clone with Related</fullName>
+                    <default>false</default>
+                    <label>Clone with Related</label>
+                </value>
+                <value>
+                    <fullName>Create Order</fullName>
+                    <default>false</default>
+                    <label>Create Order</label>
+                </value>
+                <value>
+                    <fullName>Import Lines</fullName>
+                    <default>false</default>
+                    <label>Import Lines</label>
+                </value>
+                <value>
+                    <fullName>Refresh Prices</fullName>
+                    <default>false</default>
+                    <label>Refresh Prices</label>
+                </value>
+                <value>
+                    <fullName>Amend</fullName>
+                    <default>false</default>
+                    <label>Amend</label>
+                </value>
+                <value>
+                    <fullName>Amend Contract</fullName>
+                    <default>false</default>
+                    <label>Amend Contract</label>
+                </value>
+                <value>
+                    <fullName>Amend Assets</fullName>
+                    <default>false</default>
+                    <label>Amend Assets</label>
+                </value>
+                <value>
+                    <fullName>Renew Contracts</fullName>
+                    <default>false</default>
+                    <label>Renew Contracts</label>
+                </value>
+                <value>
+                    <fullName>Email</fullName>
+                    <default>false</default>
+                    <label>Email</label>
+                </value>
+                <value>
+                    <fullName>View</fullName>
+                    <default>false</default>
+                    <label>View</label>
+                </value>
+                <value>
+                    <fullName>Edit Order Products</fullName>
+                    <default>false</default>
+                    <label>Edit Order Products</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SBQQ__Location__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Location of this action on the page.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Location of this action on the page.</inlineHelpText>
+        <label>Location</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>SBQQ__Page__c</controllingField>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Quote</fullName>
+                    <default>true</default>
+                    <label>Quote</label>
+                </value>
+                <value>
+                    <fullName>Quote/Group</fullName>
+                    <default>false</default>
+                    <label>Quote/Group</label>
+                </value>
+                <value>
+                    <fullName>Group</fullName>
+                    <default>false</default>
+                    <label>Group</label>
+                </value>
+                <value>
+                    <fullName>Line</fullName>
+                    <default>false</default>
+                    <label>Line</label>
+                </value>
+                <value>
+                    <fullName>Configurator</fullName>
+                    <default>false</default>
+                    <label>Configurator</label>
+                </value>
+                <value>
+                    <fullName>Quote Panel</fullName>
+                    <default>false</default>
+                    <label>Quote Panel</label>
+                </value>
+                <value>
+                    <fullName>Account Panel</fullName>
+                    <default>false</default>
+                    <label>Account Panel</label>
+                </value>
+                <value>
+                    <fullName>Contract Panel</fullName>
+                    <default>false</default>
+                    <label>Contract Panel</label>
+                </value>
+                <value>
+                    <fullName>Opportunity Panel</fullName>
+                    <default>false</default>
+                    <label>Opportunity Panel</label>
+                </value>
+                <value>
+                    <fullName>Order Panel</fullName>
+                    <default>false</default>
+                    <label>Order Panel</label>
+                </value>
+                <value>
+                    <fullName>Quote Document Panel</fullName>
+                    <default>false</default>
+                    <label>Quote Document Panel</label>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>Product Configurator</controllingFieldValue>
+                <valueName>Configurator</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Quote Line Editor</controllingFieldValue>
+                <valueName>Quote</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Quote Line Editor</controllingFieldValue>
+                <valueName>Quote/Group</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Quote Line Editor</controllingFieldValue>
+                <valueName>Group</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Quote Line Editor</controllingFieldValue>
+                <valueName>Line</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Quote Detail</controllingFieldValue>
+                <valueName>Quote Panel</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Account Detail</controllingFieldValue>
+                <valueName>Account Panel</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Contract Detail</controllingFieldValue>
+                <valueName>Contract Panel</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Opportunity Detail</controllingFieldValue>
+                <valueName>Opportunity Panel</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Order Detail</controllingFieldValue>
+                <valueName>Order Panel</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Quote Document Detail</controllingFieldValue>
+                <valueName>Quote Document Panel</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SBQQ__PageHandlerName__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Page name for this custom action.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Page name for this custom action.</inlineHelpText>
+        <label>Page Handler Name</label>
+        <length>150</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SBQQ__Page__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The page of which to add the custom action.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The page of which to add the custom action.</inlineHelpText>
+        <label>Page</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Product Configurator</fullName>
+                    <default>false</default>
+                    <label>Product Configurator</label>
+                </value>
+                <value>
+                    <fullName>Quote Line Editor</fullName>
+                    <default>true</default>
+                    <label>Quote Line Editor</label>
+                </value>
+                <value>
+                    <fullName>Quote Detail</fullName>
+                    <default>false</default>
+                    <label>Quote Detail</label>
+                </value>
+                <value>
+                    <fullName>Account Detail</fullName>
+                    <default>false</default>
+                    <label>Account Detail</label>
+                </value>
+                <value>
+                    <fullName>Contract Detail</fullName>
+                    <default>false</default>
+                    <label>Contract Detail</label>
+                </value>
+                <value>
+                    <fullName>Opportunity Detail</fullName>
+                    <default>false</default>
+                    <label>Opportunity Detail</label>
+                </value>
+                <value>
+                    <fullName>Order Detail</fullName>
+                    <default>false</default>
+                    <label>Order Detail</label>
+                </value>
+                <value>
+                    <fullName>Quote Document Detail</fullName>
+                    <default>false</default>
+                    <label>Quote Document Detail</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SBQQ__ParentCustomAction__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>Reference to the parent custom action that this action is grouped under.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Reference to the parent custom action that this action is grouped under.</inlineHelpText>
+        <label>Parent Custom Action</label>
+        <lookupFilter>
+            <active>true</active>
+            <filterItems>
+                <field>SBQQ__CustomAction__c.SBQQ__Type__c</field>
+                <operation>equals</operation>
+                <value>Menu</value>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>SBQQ__CustomAction__c</referenceTo>
+        <relationshipLabel>Custom Actions</relationshipLabel>
+        <relationshipName>Custom_Actions</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__ReturnURL__c</fullName>
+        <deprecated>false</deprecated>
+        <description>URL to return to after successful execution. Not applicable to all actions.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>URL to return to after successful execution. Not applicable to all actions.</inlineHelpText>
+        <label>Return URL</label>
+        <length>2000</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>2</visibleLines>
+    </fields>
+    <fields>
+        <fullName>SBQQ__TargetObject__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Object targeted by this action.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Object targeted by this action.</inlineHelpText>
+        <label>Target Object</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Product</fullName>
+                    <default>false</default>
+                    <label>Product</label>
+                </value>
+                <value>
+                    <fullName>Asset</fullName>
+                    <default>false</default>
+                    <label>Asset</label>
+                </value>
+                <value>
+                    <fullName>Subscription</fullName>
+                    <default>false</default>
+                    <label>Subscription</label>
+                </value>
+                <value>
+                    <fullName>Favorite</fullName>
+                    <default>false</default>
+                    <label>Favorite</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SBQQ__Type__c</fullName>
+        <deprecated>false</deprecated>
+        <description>UI element that this custom action is rendered as.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>UI element that this custom action is rendered as.</inlineHelpText>
+        <label>Type</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Button</fullName>
+                    <default>false</default>
+                    <label>Button</label>
+                </value>
+                <value>
+                    <fullName>Menu</fullName>
+                    <default>false</default>
+                    <label>Menu</label>
+                </value>
+                <value>
+                    <fullName>Separator</fullName>
+                    <default>false</default>
+                    <label>Separator</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SBQQ__URLTarget__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Method of navigating to the URL.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Method of navigating to the URL.</inlineHelpText>
+        <label>URL Target</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Popup</fullName>
+                    <default>false</default>
+                    <label>Popup</label>
+                </value>
+                <value>
+                    <fullName>Replace Page</fullName>
+                    <default>false</default>
+                    <label>Replace Page</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SBQQ__URL__c</fullName>
+        <deprecated>false</deprecated>
+        <description>URL to visit &apos;URL&apos; is selected as the Target Object.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Specify URL to navigate to. You have access to Line, Group, and Quote record fields dependent on selected location. Examples: http://www.salesforce.com, http://www.yoursite.com/{!Id}, or /{!SBQQ__Quote__c.Name}/{!SBQQ__YourCustomVar__c}</inlineHelpText>
+        <label>URL</label>
+        <length>2000</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>2</visibleLines>
+    </fields>
+    <label>Custom Action</label>
+    <listViews>
+        <fullName>SBQQ__All</fullName>
+        <columns>SBQQ__Active__c</columns>
+        <columns>SBQQ__DisplayOrder__c</columns>
+        <columns>NAME</columns>
+        <columns>SBQQ__Type__c</columns>
+        <columns>SBQQ__Label__c</columns>
+        <columns>SBQQ__ParentCustomAction__c</columns>
+        <columns>SBQQ__Location__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+        <language>en_US</language>
+    </listViews>
+    <nameField>
+        <label>Name</label>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Custom Actions</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ReadWrite</sharingModel>
+    <validationRules>
+        <fullName>SBQQ__Non_empty_URL_for_Save_and_Navigate</fullName>
+        <active>true</active>
+        <description>Non-empty URL for Save and Navigate Custom Action.</description>
+        <errorConditionFormula>AND (ISPICKVAL(SBQQ__Action__c, &quot;Save and Navigate&quot;), ISBLANK( SBQQ__URL__c ))</errorConditionFormula>
+        <errorDisplayField>SBQQ__URL__c</errorDisplayField>
+        <errorMessage>URL can&apos;t be empty for Custom Action &quot;Save and Navigate&quot;</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>SBQQ__URLTarget_for_Save_and_Navigate</fullName>
+        <active>true</active>
+        <description>URL target needs to be Replace Page for Custom Action &quot;Save and Navigate&quot;</description>
+        <errorConditionFormula>ISPICKVAL(SBQQ__Action__c, &quot;Save and Navigate&quot;) &amp;&amp; NOT( ISPICKVAL( SBQQ__URLTarget__c , &quot;Replace Page&quot;) )</errorConditionFormula>
+        <errorDisplayField>SBQQ__URLTarget__c</errorDisplayField>
+        <errorMessage>URL target needs to be Replace Page for Custom Action &quot;Save and Navigate&quot;</errorMessage>
+    </validationRules>
+    <visibility>Public</visibility>
+</CustomObject>

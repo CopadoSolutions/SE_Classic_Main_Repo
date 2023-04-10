@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- Set the order in which this item will appear to a sales user in the Related Content menu. If blank, the content will be sorted last. --></help>
+        <label><!-- Display Order --></label>
+        <name>SBQQ__DisplayOrder__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter a file name for the related content. --></help>
+        <label><!-- Document Name --></label>
+        <name>SBQQ__DocumentName__c</name>
+    </fields>
+    <fields>
+        <help><!-- Record ID that contains the content, such as document or Salesforce content. --></help>
+        <label><!-- External Id --></label>
+        <name>SBQQ__ExternalId__c</name>
+    </fields>
+    <fields>
+        <help><!-- Opportunity related to this content. --></help>
+        <label><!-- Opportunity --></label>
+        <name>SBQQ__Opportunity__c</name>
+        <relationshipLabel><!-- Additional Documents --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Product related to this content. --></help>
+        <label><!-- Product --></label>
+        <name>SBQQ__Product__c</name>
+        <relationshipLabel><!-- Additional Documents --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Template related to this content. --></help>
+        <label><!-- Quote Template --></label>
+        <name>SBQQ__QuoteTemplate__c</name>
+        <relationshipLabel><!-- Additional Documents --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Quote related to this content. --></help>
+        <label><!-- Quote --></label>
+        <name>SBQQ__Quote__c</name>
+        <relationshipLabel><!-- Additional Documents --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Select the checkbox if this content is required for the product. Users must include it when generating a quote document. --></help>
+        <label><!-- Required --></label>
+        <name>SBQQ__Required__c</name>
+    </fields>
+    <fields>
+        <help><!-- Template Section related to this content. --></help>
+        <label><!-- Template Section --></label>
+        <name>SBQQ__TemplateSection__c</name>
+        <relationshipLabel><!-- Additional Documents --></relationshipLabel>
+    </fields>
+    <layouts>
+        <layout>Related Content Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <webLinks>
+        <label><!-- NewQuoteRelatedContent --></label>
+        <name>SBQQ__NewQuoteRelatedContent</name>
+    </webLinks>
+</CustomObjectTranslation>
