@@ -1,0 +1,90 @@
+<apex:page standardController="SBQQ__Quote__c" extensions="SBQQ.QuoteTermEditorController,SBQQ.ServiceRouter" showHeader="{!(!$Setup.SBQQ__GeneralSettings__c.SBQQ__GlobalHeaderPermUsed__c || !$Permission.SBQQ__HideGlobalHeader)}" docType="html-5.0" id="QuoteTermEditor" standardStylesheets="false" title="{!$Label.sbqq__lbl_modify_term}">
+	<apex:variable var="stylesheet" value="{!IF(formFactor == 'desktop', 'sb', 'MobileCSS')}"/>
+	<apex:stylesheet value="{!$Resource[stylesheet]}"/>
+	<c:theme formFactor="{!formFactor}"/>
+
+	<apex:includeScript value="/soap/ajax/28.0/connection.js" />
+	<apex:includeScript value="{!$Resource.SBQQ__jQuery}"/>
+	<apex:includeScript value="{!URLFOR($Resource.SBQQ__AngularJS,'angular.min.js')}"/>
+	<apex:includeScript value="{!URLFOR($Resource.SBQQ__AngularJS,'angular-sanitize.min.js')}"/>
+	<apex:includeScript value="{!URLFOR($Resource.SBQQ__AngularJS,'/i18n/angular-locale_en-us.js')}"/>
+	<apex:includeScript value="{!$Resource.SBQQ__UIBootstrap}"/>
+	<apex:includeScript value="{!$Resource.SBQQ__Directives}"/>
+	<apex:includeScript value="{!$Resource.SBQQ__WebUI}"/>
+	<apex:includeScript value="{!$Resource.SBQQ__UI}"/>
+	<apex:includeScript value="{!$Resource.SBQQ__HtmlSanitizer}"/>
+	<apex:includeScript value="{!$Resource.SBQQ__RemotingServiceProxies}"/>
+	<apex:includeScript value="{!$Resource.SBQQ__QuoteTermEditorUI}"/>
+	<apex:includeScript value="{!$Resource.SBQQ__InfiniteScroll}"/>
+	<apex:includeScript value="{!$Resource.SBQQ__Ajax}"/>
+	<apex:includeScript value="{!$Resource.SBQQ__sb_ms_js}"/>
+	<script type="text/javascript">
+		$(document).ready(function () {
+			var quoteName = '{!$ObjectType.Quote__c.Name}';
+			var namespace = (quoteName.toLowerCase().substring(0,4) == 'sbqq') ? 'SBQQ' : '';
+			var qq = createSalesforceCPQModule();
+			qq.factory('packageNamespace', function() {return namespace});
+			qq.factory('quoteTermEditorProxy', ['packageNamespace', function(namespace) {return new RemotingQuoteTermEditorProxy(namespace);}]);
+			qq.factory('labelFactory', function() { return {
+				undo_message: '{!JSENCODE($Label.msg_undo_action_msg)}',
+				confirm_message: '{!JSENCODE($Label.msg_confirm_prompt)}',
+				dirty_message: '{!JSENCODE($Label.msg_dirty_prompt)}',
+				missing_templates_message: '{!JSENCODE($Label.msg_need_some_templates)}',
+				revert_message: '{!JSENCODE($Label.msg_revert_modified_quote_term)}'
+			}});
+			angular.bootstrap(document, ['qq']);
+			document.getElementById('qq').style.display = 'block';
+		});
+	</script>
+
+	<style>
+		#qte {
+			margin: 40px;
+		}
+	</style>
+
+	<div id="qq" style="display: none" class="sb">
+		<div id="sbQuoteTermEditor" ng-controller="QuoteTermEditorCtrl" ng-init="onLoad('{!Quote__c}')">
+			<c:pageHeader title="{!$Label.sbqq__lbl_modify_term}"
+						  subtitle="{!SBQQ__Quote__c.Name}"
+						  formFactor="{!formFactor}"
+						  iconName="sf-icon-document"
+						  customTheme="18">
+				<apex:outputPanel layout="none" rendered="{!formfactor == 'desktop'}">
+					<div class="sbTools">
+						<div class="sbBtn" title="{!$Label.lbl_close}" role="button" ng-click="onClose()">{!$Label.lbl_close}</div>
+					</div>
+				</apex:outputPanel>
+			</c:pageHeader>
+			<apex:pageMessages />
+			<c:messages messagesExpr="messages" formFactor="{!formFactor}"/>
+			<c:container bodyRendered="{!hasEditPermission}">
+				<c:status displayExpr="blockingOperationInProgress" formFactor="{!formFactor}"/>
+				<div class="sbDocOptionsContainer">
+					<div class="sbPageBlock">
+						<div class="sbBody">
+							<c:quoteDocumentOptions formFactor="{!formFactor}" isPreview="true"/>
+						</div>
+					</div>
+				</div>
+				<div id="qte">
+					<div>
+						<c:quoteTermsEditor formFactor="{!formFactor}"/>
+					</div>
+				</div>
+			</c:container>
+		</div>
+	</div>
+	<script>
+		/* Salesforce-prescribed workaround for platform defect where scrolling on ios 8 causes blank screen */
+		(function () {
+			try {
+				var a = navigator.userAgent;
+				if (a.indexOf('Salesforce') != -1 && (a.indexOf('iPhone') != -1 || a.indexOf('iPad') != -1) && a.indexOf('OS/7') == -1 && a.indexOf('OS 7') == -1 && a.indexOf('Safari') == -1) {
+					var s = document.createElement('style');
+					s.innerHTML = 'html,html body{overflow: auto;-webkit-overflow-scrolling:touch;}body{position:absolute;left:0;right:0;top:0;bottom:0;}';
+					document.getElementsByTagName('head')[0].appendChild(s);
+				}} catch (e) {}})();
+		var userLanguage = '{!JSENCODE(userLanguage)}';
+	</script>
+</apex:page>

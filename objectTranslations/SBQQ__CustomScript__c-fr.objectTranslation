@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Script personnalisé</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Scripts personnalisés</value>
+    </caseValues>
+    <fields>
+        <help>Code qui peut être exécuté par une ressource externe.</help>
+        <label><!-- Code --></label>
+        <name>SBQQ__Code__c</name>
+    </fields>
+    <fields>
+        <help>Saisissez les noms d&apos;API de tous les champs Groupe de ligne de devis référencés par ce plug-in, un par ligne.</help>
+        <label><!-- Quote Line Group Fields --></label>
+        <name>SBQQ__GroupFields__c</name>
+    </fields>
+    <fields>
+        <help>Saisissez les noms d&apos;API de tous les champs Devis référencés par ce plug-in, un par ligne.</help>
+        <label><!-- Quote Fields --></label>
+        <name>SBQQ__QuoteFields__c</name>
+    </fields>
+    <fields>
+        <help>Saisissez les noms d&apos;API de tous les champs Ligne de devis référencés par ce plug-in, un par ligne.</help>
+        <label><!-- Quote Line Fields --></label>
+        <name>SBQQ__QuoteLineFields__c</name>
+    </fields>
+    <fields>
+        <label><!-- Transpiled Code --></label>
+        <name>SBQQ__TranspiledCode__c</name>
+    </fields>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Custom Script Layout</layout>
+        <sections>
+            <label>Liens personnalisés</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>Compilation</label>
+            <section>Transpiling</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Nom du script</nameFieldLabel>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

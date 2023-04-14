@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Tâche d&apos;enregistrement</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Tâches d&apos;enregistrement</value>
+    </caseValues>
+    <fields>
+        <help>Si cette case est sélectionnée, l&apos;utilisateur a été alerté du statut terminé de la tâche de l&apos;enregistrement.</help>
+        <label><!-- Is Read --></label>
+        <name>SBQQ__IsRead__c</name>
+    </fields>
+    <fields>
+        <help>Les détails de la tâche d’arrière-plan exécutée si aucun ID de tâche n’a été spécifié.</help>
+        <label><!-- Job Details --></label>
+        <name>SBQQ__JobDetails__c</name>
+    </fields>
+    <fields>
+        <label><!-- Job Id --></label>
+        <name>SBQQ__JobId__c</name>
+    </fields>
+    <fields>
+        <help>Le statut de la tâche d’arrière-plan exécutée si aucun ID de tâche n’a été spécifié.</help>
+        <label><!-- Job Status --></label>
+        <name>SBQQ__JobStatus__c</name>
+    </fields>
+    <fields>
+        <label><!-- Record Id --></label>
+        <name>SBQQ__RecordId__c</name>
+    </fields>
+    <fields>
+        <help>URL de redirection utilisée une fois la tâche terminée.</help>
+        <label><!-- Redirect URL --></label>
+        <name>SBQQ__RedirectUrl__c</name>
+    </fields>
+    <fields>
+        <help>La trace de pile de la tâche exécutée en arrière-plan si aucun ID de tâche n&apos;a été spécifié.</help>
+        <label><!-- Stacktrace --></label>
+        <name>SBQQ__Stacktrace__c</name>
+    </fields>
+    <gender>Feminine</gender>
+    <nameFieldLabel>Nom</nameFieldLabel>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

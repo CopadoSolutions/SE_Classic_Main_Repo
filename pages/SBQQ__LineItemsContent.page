@@ -1,0 +1,12 @@
+<apex:page language="{!vfLanguage}" controller="SBQQ.DocumentGeneratorController" contentType="application/xml" showHeader="false" sidebar="false">
+    <apex:outputPanel layout="none" rendered="{!hasQuote}">
+        <c:lineItemGroups quote2="{!quote2}" template="{!template}" 
+        	staticGroups="{!staticGroups}" dynamicGroups="{!dynamicGroups}"
+        	currencyFormatPattern="{!currencyFormatPattern}"
+        	fontSize="{!fontSize}" fontFamily="{!fontFamily}" textColor="{!textColor}" tableStyle="{!tableStyle}"/>
+        <c:quoteTotals quote2="{!quote2}" template="{!template}" 
+        	staticGroups="{!staticGroups}" dynamicGroups="{!dynamicGroups}"
+        	currencyFormatPattern="{!currencyFormatPattern}"
+        	fontSize="{!fontSize}" fontFamily="{!fontFamily}" textColor="{!textColor}"/>
+    </apex:outputPanel>
+</apex:page>

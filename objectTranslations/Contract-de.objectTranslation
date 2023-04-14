@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label><!-- Active Contract Lookup --></label>
+        <name>SBQQ__ActiveContractLookup</name>
+    </fieldSets>
+    <fields>
+        <help>Gibt an, ob dieser Vertrag Gültigkeit hat.</help>
+        <label><!-- Active Contract --></label>
+        <name>SBQQ__ActiveContract__c</name>
+    </fields>
+    <fields>
+        <help>Datensatztyp der Änderungs-Opportunity, sofern nichts anderes festgelegt ist.</help>
+        <label><!-- Amendment Opportunity Record Type Id --></label>
+        <name>SBQQ__AmendmentOpportunityRecordTypeId__c</name>
+    </fields>
+    <fields>
+        <help>Die aktuelle Phase der Änderungs-Opportunity.</help>
+        <label><!-- Amendment Opportunity Stage --></label>
+        <name>SBQQ__AmendmentOpportunityStage__c</name>
+    </fields>
+    <fields>
+        <help>Inhaber der ursprünglichen Opportunity.</help>
+        <label><!-- Amendment Owner --></label>
+        <name>SBQQ__AmendmentOwner__c</name>
+        <relationshipLabel><!-- Contracts (Amendment Owner) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Preisbuch-ID Ihrer Änderung.</help>
+        <label><!-- Amendment Pricebook Id --></label>
+        <name>SBQQ__AmendmentPricebookId__c</name>
+    </fields>
+    <fields>
+        <help>Die Basis, auf deren Grundlage das Startdatum für die Verlängerung und das Enddatum für die Änderung berechnet werden.</help>
+        <label><!-- Amendment &amp; Renewal Behavior --></label>
+        <name>SBQQ__AmendmentRenewalBehavior__c</name>
+        <picklistValues>
+            <masterLabel>Earliest End Date</masterLabel>
+            <translation>Frühestes Enddatum</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Latest End Date</masterLabel>
+            <translation>Spätestes Enddatum</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Startdatum Ihrer Änderung. Wenn Sie das Feld leer lassen, beginnt die Änderung zum aktuellen Tagedatum.</help>
+        <label><!-- Amendment Start Date --></label>
+        <name>SBQQ__AmendmentStartDate__c</name>
+    </fields>
+    <fields>
+        <help>Aktivieren Sie diese Einstellung, um Kontaktrollen aus der ursprünglichen Opportunity in die Verlängerungs-Opportunity einzubeziehen.</help>
+        <label><!-- Default Renewal Contact Roles --></label>
+        <name>SBQQ__DefaultRenewalContactRoles__c</name>
+    </fields>
+    <fields>
+        <help>Aktivieren Sie diese Einstellung, um Partner aus der ursprünglichen Opportunity in die Verlängerungs-Opportunity einzubeziehen.</help>
+        <label><!-- Default Renewal Partners --></label>
+        <name>SBQQ__DefaultRenewalPartners__c</name>
+    </fields>
+    <fields>
+        <help>Wenn diese Option deaktiviert ist, wird das Angebots-Enddatum der Änderung entsprechend der Einstellung für &quot;Änderungs- und Verlängerungsverhalten&quot; festgelegt. Wenn die Option aktiviert ist, wird kein Enddatum festgelegt.</help>
+        <label><!-- Disable Amendment Co-Term --></label>
+        <name>SBQQ__DisableAmendmentCoTerm__c</name>
+    </fields>
+    <fields>
+        <help>Datum des Vertragsendes für die Verwendung in zeitbasierten Workflows.</help>
+        <label><!-- Expiration Date --></label>
+        <name>SBQQ__ExpirationDate__c</name>
+    </fields>
+    <fields>
+        <help>Definiert, wie segmentierte abonnementbezogene Produkte in Verlängerungsangeboten angezeigt werden. &quot;Segmentierung aufgehoben&quot; wird als Standardangebotsbelegposten mit den Daten des letzten Segments verlängert.</help>
+        <label><!-- MDQ Renewal Behavior --></label>
+        <name>SBQQ__MDQRenewalBehavior__c</name>
+        <picklistValues>
+            <masterLabel>De-segmented</masterLabel>
+            <translation>Segmentierung aufgehoben</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Wählen Sie diese Option, um diesen Vertrag als den Mastervertrag für diesen Account festzulegen. Bei einer Verlängerung werden alle Verträge in diesem Vertrag zusammengeführt.</help>
+        <label><!-- Master Contract --></label>
+        <name>SBQQ__MasterContract__c</name>
+    </fields>
+    <fields>
+        <help>ID des Preisbuchs aus der ursprünglichen Opportunity.</help>
+        <label><!-- Opportunity Pricebook Id --></label>
+        <name>SBQQ__OpportunityPricebookId__c</name>
+    </fields>
+    <fields>
+        <help>Die Opportunity, aus der dieser Vertrag erstellt wurde.</help>
+        <label><!-- Opportunity --></label>
+        <name>SBQQ__Opportunity__c</name>
+        <relationshipLabel><!-- Contracts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Order --></label>
+        <name>SBQQ__Order__c</name>
+        <relationshipLabel><!-- Contracts --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Aktivieren Sie dieses Kontrollkästchen, um die Pakethierarchie bei Verlängerungsangeboten beizubehalten.</help>
+        <label><!-- Preserve Bundle Structure --></label>
+        <name>SBQQ__PreserveBundleStructureUponRenewals__c</name>
+    </fields>
+    <fields>
+        <help>Angebot, aus dem dieser Vertrag erstellt wurde.</help>
+        <label><!-- Quote --></label>
+        <name>SBQQ__Quote__c</name>
+        <relationshipLabel><!-- Contracts --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Wählen Sie dies aus, um die Erstellung einer Verlängerungs-Opportunity zu Prognosezwecken auszulösen. Es wird nicht automatisch ein Verlängerungsangebot erstellt.</help>
+        <label><!-- Renewal Forecast --></label>
+        <name>SBQQ__RenewalForecast__c</name>
+    </fields>
+    <fields>
+        <help>Datensatztyp der Verlängerungs-Opportunity, falls abweichend vom Standard.</help>
+        <label><!-- Renewal Opportunity Record Type Id --></label>
+        <name>SBQQ__RenewalOpportunityRecordTypeId__c</name>
+    </fields>
+    <fields>
+        <help>Überschreiben Sie die Opportunity-Standardphase für diese Verlängerung. Dies muss vor der Auswahl von &quot;Verlängerungsprognose&quot; erfolgen, um für die Verlängerungs-Opportunity umgesetzt zu werden.</help>
+        <label><!-- Renewal Opportunity Stage --></label>
+        <name>SBQQ__RenewalOpportunityStage__c</name>
+    </fields>
+    <fields>
+        <help>Verlängerungs-Opportunity, die erstellt wird, um die Verlängerung dieses Vertrags nachzuverfolgen.</help>
+        <label><!-- Renewal Opportunity --></label>
+        <name>SBQQ__RenewalOpportunity__c</name>
+        <relationshipLabel><!-- Renewal Contracts --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Inhaber der ursprünglichen Opportunity.</help>
+        <label><!-- Renewal Owner --></label>
+        <name>SBQQ__RenewalOwner__c</name>
+        <relationshipLabel><!-- Contracts (Renewal Owner) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Geben Sie eine Preisbuch-ID für Verlängerungs-Opportunities an, wenn Sie nicht die Preisbuch-ID der ursprünglichen Opportunity verwenden möchten.</help>
+        <label><!-- Renewal Pricebook Id --></label>
+        <name>SBQQ__RenewalPricebookId__c</name>
+    </fields>
+    <fields>
+        <help>Wählen Sie diese Option aus, wenn automatisch ein Verlängerungs-Angebot für Verlängerungs-Opportunities erstellt werden soll.</help>
+        <label><!-- Renewal Quoted --></label>
+        <name>SBQQ__RenewalQuoted__c</name>
+    </fields>
+    <fields>
+        <help>Geben Sie die Laufzeit der Verlängerung an. Standardmäßig entspricht sie der ursprünglichen Vertragslaufzeit.</help>
+        <label><!-- Renewal Term --></label>
+        <name>SBQQ__RenewalTerm__c</name>
+    </fields>
+    <fields>
+        <help>Rate, um die der Verlängerungspreis steigt.</help>
+        <label><!-- Renewal Uplift (%) --></label>
+        <name>SBQQ__RenewalUpliftRate__c</name>
+    </fields>
+    <fields>
+        <help>Wählen Sie diese Option aus, um bei Verlängerungsangeboten und Änderungen die Abonnementmengen für dasselbe Produkt in einem Belegposten zusammenzufassen.</help>
+        <label><!-- Combine Subscription Quantities --></label>
+        <name>SBQQ__SubscriptionQuantitiesCombined__c</name>
+    </fields>
+    <layouts>
+        <layout>CPQ Contract Layout</layout>
+        <sections>
+            <label><!-- Amendments --></label>
+            <section>Amendments</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Recalculating --></label>
+            <section>Recalculating</section>
+        </sections>
+        <sections>
+            <label><!-- Salesforce CPQ Information --></label>
+            <section>Salesforce CPQ Information</section>
+        </sections>
+        <sections>
+            <label><!-- System Info --></label>
+            <section>System Info</section>
+        </sections>
+    </layouts>
+    <webLinks>
+        <label><!-- Amend --></label>
+        <name>SBQQ__Amend</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- RenewContracts --></label>
+        <name>SBQQ__RenewContracts</name>
+    </webLinks>
+</CustomObjectTranslation>

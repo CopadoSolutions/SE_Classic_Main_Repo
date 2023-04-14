@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- Enter the maximum allowable discount for this product category. --></help>
+        <label><!-- Max Discount (%) --></label>
+        <name>SBQQ__MaxDiscountRate__c</name>
+    </fields>
+    <layouts>
+        <layout>Discount Category Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+</CustomObjectTranslation>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>List</customSettingsType>
+    <description>Extra metadata about the field that&apos;s not accessible via the API.</description>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>SBQQ__FieldName__c</fullName>
+        <deprecated>false</deprecated>
+        <description>API name of the field described by this record.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter API name of the field.</inlineHelpText>
+        <label>Field Name</label>
+        <length>80</length>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SBQQ__ObjectName__c</fullName>
+        <deprecated>false</deprecated>
+        <description>API name of the object that contains the field described by this record.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter API name of the object that contains the field.</inlineHelpText>
+        <label>Object Name</label>
+        <length>80</length>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Field Metadata</label>
+    <visibility>Public</visibility>
+</CustomObject>

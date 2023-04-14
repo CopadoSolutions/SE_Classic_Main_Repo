@@ -1,0 +1,2108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <description>Line item on a Web Quote.</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>false</enableReports>
+    <enableSearch>false</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ControlledByParent</externalSharingModel>
+    <fieldSets>
+        <fullName>SBQQ__LineEditor</fullName>
+        <availableFields>
+            <field>SBQQ__CustomerTotal__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>SBQQ__Description__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>SBQQ__DistributorDiscount__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>SBQQ__EndDate__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>SBQQ__GrossProfit__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>SBQQ__ListTotal__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>SBQQ__Markup__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>SBQQ__NetPrice__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>SBQQ__Number__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>SBQQ__Optional__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>SBQQ__PartnerPrice__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>SBQQ__PricingMethod__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>SBQQ__PriorQuantity__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>SBQQ__ProductFamily__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>SBQQ__RegularPrice__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>SBQQ__StartDate__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>SBQQ__SubscriptionScope__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>SBQQ__Taxable__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>SBQQ__UnitCost__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <description>Used to render columns on Edit Lines screen.</description>
+        <displayedFields>
+            <field>SBQQ__ProductCode__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>SBQQ__ProductName__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>SBQQ__Quantity__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>SBQQ__ListPrice__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>SBQQ__AdditionalDiscount__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>SBQQ__CustomerPrice__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>SBQQ__NetTotal__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <label>LineEditor</label>
+    </fieldSets>
+    <fieldSets>
+        <fullName>SBQQ__SegmentedLineEditor</fullName>
+        <availableFields>
+            <field>SBQQ__AdditionalQuantity__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>SBQQ__BatchQuantity__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>SBQQ__CostEditable__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>SBQQ__CustomerPrice__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>SBQQ__CustomerTotal__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>SBQQ__Description__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>SBQQ__DistributorDiscount__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>SBQQ__EndDate__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>SBQQ__GrossProfit__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>SBQQ__Hidden__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>SBQQ__ListTotal__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>SBQQ__Markup__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>SBQQ__Optional__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>SBQQ__PackageCost__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>SBQQ__PackageListTotal__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>SBQQ__PackageProductCode__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>SBQQ__PackageTotal__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>SBQQ__PartnerDiscount__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>SBQQ__PricingMethod__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>SBQQ__ProductCode__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>SBQQ__ProductName__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>SBQQ__ProratedListPrice__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>SBQQ__RegularPrice__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>SBQQ__RegularTotal__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>SBQQ__StartDate__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>SBQQ__SubscriptionBase__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>SBQQ__SubscriptionCategory__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>SBQQ__SubscriptionPercent__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>SBQQ__SubscriptionTerm__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>SBQQ__Taxable__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>SBQQ__UnitCost__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <description>Quote Line fields to display for segmented Products when clicking into Line Item Detail in the Line Editor</description>
+        <displayedFields>
+            <field>SBQQ__Quantity__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>SBQQ__ListPrice__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>SBQQ__Uplift__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>SBQQ__AdditionalDiscount__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>SBQQ__NetPrice__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>SBQQ__NetTotal__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <label>Segmented Line Editor</label>
+    </fieldSets>
+    <fieldSets>
+        <fullName>SBQQ__SegmentedLineEditorSummary</fullName>
+        <availableFields>
+            <field>SBQQ__Optional__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>SBQQ__ProductFamily__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <description>Quote Line fields to display in the summary line for segmented products (read-only).</description>
+        <displayedFields>
+            <field>SBQQ__ProductCode__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>SBQQ__ProductName__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <label>Segmented Line Editor Summary</label>
+    </fieldSets>
+    <fields>
+        <fullName>SBQQ__AdditionalDiscountAmount__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Additional customer discount extended on this line item in terms of absolute amount.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Additional customer discount extended on this line item in the form of an absolute amount.</inlineHelpText>
+        <label>Additional Disc. (Amt)</label>
+        <precision>14</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__AdditionalDiscount__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Total additional discount extends on this line item. Additional discount is defined as discount extended on top of volume discount or negotiated prices.</description>
+        <externalId>false</externalId>
+        <formula>(SBQQ__RegularPrice__c - SBQQ__CustomerPrice__c) *  SBQQ__EffectiveQuantity__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Total additional discounts extended to this line item. Additional discount is defined as discount extended on top of volume discount or negotiated prices.</inlineHelpText>
+        <label>Additional Disc.</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__AdditionalQuantity__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Additional quantity for this product that contributes to volume discount calculations.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Additional quantity for this product that contributes to volume discount calculations.</inlineHelpText>
+        <label>Additional Quantity</label>
+        <precision>12</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SBQQ__BatchQuantity__c</fullName>
+        <deprecated>false</deprecated>
+        <description>For products sold in batches quantity in each batch. Defaulted from the product record.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>If products are sold in batches, this stores the quantity in each batch, defaulted from the product.</inlineHelpText>
+        <label>Batch Quantity</label>
+        <precision>12</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SBQQ__BlockPrice__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>Block Price record used to price this line item.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Block Price record used to price this line item.</inlineHelpText>
+        <label>Block Price</label>
+        <referenceTo>SBQQ__BlockPrice__c</referenceTo>
+        <relationshipLabel>Web Quote Lines</relationshipLabel>
+        <relationshipName>WebQuoteLines</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__Bundle__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Indicates this line item represents a package -- meaning it includes other line items in this quote.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Indicates this line item represents a package -- meaning it includes other line items in this quote.</inlineHelpText>
+        <label>Package</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__BundledQuantity__c</fullName>
+        <deprecated>false</deprecated>
+        <description>For items with calculated quantities this field holds the original quantity entered by the user.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>For items with calculated quantities this field holds the original quantity entered by the user.</inlineHelpText>
+        <label>Original Quantity</label>
+        <precision>12</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SBQQ__Bundled__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Indicates the product on this line item is bundled (included) by another product in this quote. Bundled lines items have a zero price and do not allow price or quantity to be edited.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Indicates the product on this line item is bundled (included) by another product in this quote. Bundled lines items have a zero price and do not allow price or quantity to be edited.</inlineHelpText>
+        <label>Bundled</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__ComponentCost__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Total cost of components in this package.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Total cost of components in this package.</inlineHelpText>
+        <label>Component Cost</label>
+        <precision>16</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__ComponentDiscountedByPackage__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Fixes additional discount for this component to the parent package discount.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Fixes additional discount for this component to the parent package discount.</inlineHelpText>
+        <label>Component Discounted By Package</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__ComponentListTotal__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Total list amount of components in this configuration. This field is only populated if this line item references a configurable product.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Total list amount of components in this configuration. This field is only populated if this line item references a configurable product.</inlineHelpText>
+        <label>Component List Total</label>
+        <precision>16</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__ComponentSubscriptionScope__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Subscription scope set at the component level. This field overrides the subscription scope copied from the product.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Subscription scope set at the component level. This field overrides the subscription scope copied from the product.</inlineHelpText>
+        <label>Component Subscription Scope</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Package</fullName>
+                    <default>false</default>
+                    <label>Package</label>
+                </value>
+                <value>
+                    <fullName>Components</fullName>
+                    <default>false</default>
+                    <label>Components</label>
+                </value>
+                <value>
+                    <fullName>Both</fullName>
+                    <default>false</default>
+                    <label>Both</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SBQQ__ComponentTotal__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Sum total amount of components in this configuration. This field is only populated if this line item references a configurable product.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Sum total amount of components in this configuration. This field is only populated if this line item references a configurable product.</inlineHelpText>
+        <label>Component Net Total</label>
+        <precision>16</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__ComponentUpliftedByPackage__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Fixes uplift for this component to the parent package uplift. Uplift only applies to multi-segmented products.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Fixes uplift for this component to the parent package uplift. Uplift only applies to multi-segmented products.</inlineHelpText>
+        <label>Component Uplifted By Package</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__ComponentVisibility__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Indicates the visibility of the component line item.</description>
+        <externalId>false</externalId>
+        <formula>TEXT(SBQQ__ProductOption__r.SBQQ__QuoteLineVisibility__c)</formula>
+        <inlineHelpText>Indicates the visibility of the component line item.</inlineHelpText>
+        <label>Component Visibility</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SBQQ__CompoundDiscountRate__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Discount rate compounded by quantity (historic).</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Discount rate compounded by quantity (historic).</inlineHelpText>
+        <label>Compound Discount (%)</label>
+        <precision>8</precision>
+        <required>false</required>
+        <scale>3</scale>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__ConfigurationRequired__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Flag that marks this quote line as requiring configuration. Can be used by custom code to request this product be re-configured.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select the checkbox if the quote line requires configuration. Can be used by custom code to request this product be re-configured.</inlineHelpText>
+        <label>Configuration Required</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__ContractedPrice__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>Contracted price if the product has negotiated pricing for the opportunity&apos;s account.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Contracted price if the product has negotiated pricing for the opportunity&apos;s account.</inlineHelpText>
+        <label>Contracted Price</label>
+        <referenceTo>SBQQ__ContractedPrice__c</referenceTo>
+        <relationshipLabel>Quote Lines</relationshipLabel>
+        <relationshipName>WebQuoteLines</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__CostEditable__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Specifies whether cost can be edited on this line item.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Specifies whether cost can be edited on this line item.</inlineHelpText>
+        <label>Cost Editable</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__Cost__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>Cost record used to cost this line item.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Cost record used to cost this line item.</inlineHelpText>
+        <label>Cost</label>
+        <referenceTo>SBQQ__Cost__c</referenceTo>
+        <relationshipLabel>Web Quote Lines</relationshipLabel>
+        <relationshipName>WebQuoteLines</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__CustomerPrice__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Customer unit price for the product quoted by this line item. This is the Net Unit Price excluding any partner discounts.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Customer unit price for the product quoted by this line item. This is the Net Unit Price excluding any partner discounts.</inlineHelpText>
+        <label>Customer Unit Price</label>
+        <precision>14</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__CustomerTotal__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Customer total price for this quote line item. This is the Net Total excluding any partner discounts.</description>
+        <externalId>false</externalId>
+        <formula>IF(SBQQ__Renewal__c, 0, SBQQ__CustomerPrice__c * SBQQ__EffectiveQuantity__c)</formula>
+        <inlineHelpText>Customer total price for this quote line item. This is the Net Total excluding any partner discounts.</inlineHelpText>
+        <label>Customer Total</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__DefaultSubscriptionTerm__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Term length of the subscription, which only applies if the product is a subscription. It is copied from the Subscription Term of the related product when the line item is first generated.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Term length of the subscription, which only applies if the product is a subscription. It is copied from the Subscription Term of the related product when the line item is first generated.</inlineHelpText>
+        <label>Default Subscription Term</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SBQQ__Description__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Description for this line item.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Description for this line item.</inlineHelpText>
+        <label>Description</label>
+        <length>32000</length>
+        <trackTrending>false</trackTrending>
+        <type>Html</type>
+        <visibleLines>15</visibleLines>
+    </fields>
+    <fields>
+        <fullName>SBQQ__Dimension__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>For MDQ products, this allows each segment to be priced independently.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>For MDQ products, each segment will be priced independently.</inlineHelpText>
+        <label>Price Dimension</label>
+        <referenceTo>SBQQ__Dimension__c</referenceTo>
+        <relationshipLabel>Web Quote Lines</relationshipLabel>
+        <relationshipName>Web_Quote_Lines</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__DiscountScheduleType__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Discount schedule type. Must be a stored value because it&apos;s used in formula fields that are rolled up.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Discount schedule type. Copied from Type field in associated discount schedule.</inlineHelpText>
+        <label>Discount Schedule Type</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Range</fullName>
+                    <default>false</default>
+                    <label>Range</label>
+                </value>
+                <value>
+                    <fullName>Slab</fullName>
+                    <default>false</default>
+                    <label>Slab</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SBQQ__DiscountSchedule__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>Discount schedule to be used in computing volume unit price. This field is copied from the corresponding product.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Discount schedule to be used in computing volume unit price. This field is copied from the corresponding product.</inlineHelpText>
+        <label>Discount Schedule</label>
+        <referenceTo>SBQQ__DiscountSchedule__c</referenceTo>
+        <relationshipLabel>Web Quote Lines</relationshipLabel>
+        <relationshipName>WebQuoteLines</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__DiscountTier__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>Discount tier used by this line item. This field is only populated if a volume discounted was applied and discount schedule is of type &quot;Range&quot;.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Discount tier used by this line item. This field is only populated if a volume discounted was applied and discount schedule is of type &quot;Range&quot;.</inlineHelpText>
+        <label>Discount Tier</label>
+        <referenceTo>SBQQ__DiscountTier__c</referenceTo>
+        <relationshipLabel>Quote Lines</relationshipLabel>
+        <relationshipName>WebQuoteLines</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__Discount__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Additional customer discount extended for this line item expressed in terms of percentage.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Additional customer discount extended to this line item expressed in form of a percentage.</inlineHelpText>
+        <label>Additional Disc. (%)</label>
+        <precision>11</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__DistributorDiscount__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Distributor discount applied to this line.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Distributor discount applied to this line.</inlineHelpText>
+        <label>Distributor Discount</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__EffectiveEndDate__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Effective end date for this subscription.</description>
+        <externalId>false</externalId>
+        <formula>IF(ISBLANK(SBQQ__EndDate__c),
+  SBQQ__Quote__r.SBQQ__EndDate__c,
+  SBQQ__EndDate__c
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Effective end date for this subscription.</inlineHelpText>
+        <label>Effective End Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__EffectiveQuantity__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Effective quantity used in computing totals. Same as quantity unless the product is block priced or covered by &quot;Slab&quot; discount schedule.</description>
+        <externalId>false</externalId>
+        <formula>CASE(SBQQ__PricingMethod__c,
+  &apos;Block&apos;, 1,
+  IF(ISPICKVAL(SBQQ__DiscountScheduleType__c, &apos;Slab&apos;), 1, 
+    IF(SBQQ__Existing__c, SBQQ__Quantity__c - SBQQ__PriorQuantity__c, SBQQ__Quantity__c)
+  )
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Effective quantity used in computing totals. Same as quantity unless the product is block priced or covered by &quot;Slab&quot; discount schedule.</inlineHelpText>
+        <label>Effective Quantity</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SBQQ__EffectiveStartDate__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Effective start date for this subscription.</description>
+        <externalId>false</externalId>
+        <formula>IF(ISBLANK(SBQQ__StartDate__c),
+  SBQQ__Quote__r.SBQQ__StartDate__c,
+  SBQQ__StartDate__c
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Effective start date for this subscription.</inlineHelpText>
+        <label>Effective Start Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__EndDate__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Date the service represented by this line item will end (only applies if product is a subscription).</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Date the service represented by this line item will end (only applies if product is a subscription).</inlineHelpText>
+        <label>End Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__Existing__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Indicates whether customer already owns this product. This is typically used for products with options during add-on quoting. The product is on the quote solely to drive the Configurator.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select the checkbox if the customer already owns this product. This is typically used for products with options during add-on quoting. The product is on the quote solely to drive the Configurator.</inlineHelpText>
+        <label>Existing</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__GrossProfit__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Gross profit amount on this line item.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Gross profit amount on this line item.</inlineHelpText>
+        <label>Gross Profit</label>
+        <precision>16</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__Hidden__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Hides this line item from generated PDF.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select the checkbox to hide this line item from generated PDF.</inlineHelpText>
+        <label>Hidden</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__Incomplete__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Flag set internally by the application logic when a line is saved to the database that&apos;s incomplete. This may happen when price rules are evaluated. Test this field in validation rules to avoid them from firing prematurely. Do NOT add to page layout or otherwise update.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select the checbox to apply internal application logic, which controls when rules, such as validation rules, trigger. Do NOT add to page layout or otherwise update.</inlineHelpText>
+        <label>Incomplete</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__ListPrice__c</fullName>
+        <deprecated>false</deprecated>
+        <description>List unit price for the product quoted by this line item.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>List unit price for the product quoted by this line item.</inlineHelpText>
+        <label>List Unit Price</label>
+        <precision>14</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__ListTotal__c</fullName>
+        <deprecated>false</deprecated>
+        <description>List total price for this quote line item.</description>
+        <externalId>false</externalId>
+        <formula>IF(OR(SBQQ__Renewal__c, SBQQ__Bundled__c), 0,
+  CASE(SBQQ__PricingMethod__c,
+    &apos;Block&apos;, IF(ISBLANK(SBQQ__ProratedListPrice__c),SBQQ__ListPrice__c * IF(ISBLANK(SBQQ__ProrateMultiplier__c),1, SBQQ__ProrateMultiplier__c),SBQQ__ProratedListPrice__c),
+    IF(ISBLANK(SBQQ__ProratedListPrice__c),SBQQ__ListPrice__c * IF(ISBLANK(SBQQ__ProrateMultiplier__c),1, SBQQ__ProrateMultiplier__c),SBQQ__ProratedListPrice__c) * IF(SBQQ__Existing__c, SBQQ__Quantity__c - SBQQ__PriorQuantity__c, SBQQ__Quantity__c)
+  )
+)</formula>
+        <inlineHelpText>List total price for this quote line item.</inlineHelpText>
+        <label>List Total</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__MarkupAmount__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Markup on this line item in the form of an absolute amount.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Markup on this line item in the form of an absolute amount.</inlineHelpText>
+        <label>Markup (Amt)</label>
+        <precision>16</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__MarkupRate__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Markup on this line item in the form of a percentage.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Markup on this line item in the form of a percentage.</inlineHelpText>
+        <label>Markup (%)</label>
+        <precision>8</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__Markup__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Markup amount on this item. This value is automatically calculated by applying markup rate or absolute amount, whichever is specified.</description>
+        <externalId>false</externalId>
+        <formula>IF(NOT(ISBLANK(SBQQ__MarkupRate__c)), SBQQ__UnitCost__c * SBQQ__MarkupRate__c, SBQQ__UnitCost__c + SBQQ__MarkupAmount__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Markup amount on this item. This value is automatically calculated by applying markup rate or absolute amount, whichever is specified.</inlineHelpText>
+        <label>Markup</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__MaximumPrice__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Maximum unit price for this product. Used to enforce price ceiling for products with dynamically calculated prices.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Maximum unit price for this product. Used to enforce price ceiling for products with dynamically calculated prices.</inlineHelpText>
+        <label>Maximum Unit Price</label>
+        <precision>16</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__MinimumPrice__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Minimum unit price for this product. Used to enforce price floor for products with dynamically calculated prices.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Minimum unit price for this product. Used to enforce price floor for products with dynamically calculated prices.</inlineHelpText>
+        <label>Minimum Unit Price</label>
+        <precision>16</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__NetPrice__c</fullName>
+        <deprecated>false</deprecated>
+        <description>List unit price for the product quoted by this line item.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>List unit price for the product quoted by this line item.</inlineHelpText>
+        <label>Net Unit Price</label>
+        <precision>14</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__NetTotal__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Net total price for this quote line item.</description>
+        <externalId>false</externalId>
+        <formula>IF(SBQQ__Renewal__c, 0, SBQQ__NetPrice__c * SBQQ__EffectiveQuantity__c)</formula>
+        <inlineHelpText>Net total price for this quote line item.</inlineHelpText>
+        <label>Net Total</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__NonDiscountable__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Indicates whether this line item is non-discountable.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select the checkbox to indicate if discounts are allowed on this line item.</inlineHelpText>
+        <label>Non Discountable</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__NonPartnerDiscountable__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Indicates that this line item is non-discountable for partners.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select the checkbox to make this line item non-discountable for partners.</inlineHelpText>
+        <label>Non Partner Discountable</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__Number__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Number indicating this line&apos;s position within its group or quote.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Number indicating this line&apos;s position within its group or quote.</inlineHelpText>
+        <label>Number</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SBQQ__OptionDiscountAmount__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Discount extended on this product because it&apos;s part of a package.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Discount extended on this product because it&apos;s part of a package.</inlineHelpText>
+        <label>Option Discount (Amt)</label>
+        <precision>12</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__OptionDiscount__c</fullName>
+        <deprecated>false</deprecated>
+        <description>If this line is for an optional SKU, this field captures any discount given to the package and extended to the option.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>If this line is for an optional SKU, this field captures any discount given to the package and extended to the option.</inlineHelpText>
+        <label>Option Discount (%)</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__OptionLevel__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Indicates nest level of this option (only applies to lines that are generated from options).</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Indicates nest level of this option (only applies to lines that are generated from options).</inlineHelpText>
+        <label>Option Level</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SBQQ__OptionType__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Option type copied from related Product Option. Determines how quantity is calculated.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Option type copied from related Product Option. Determines how quantity is calculated.</inlineHelpText>
+        <label>Option Type</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Component</fullName>
+                    <default>false</default>
+                    <label>Component</label>
+                </value>
+                <value>
+                    <fullName>Accessory</fullName>
+                    <default>false</default>
+                    <label>Accessory</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SBQQ__Optional__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Marks this line as optional. Optional line items don&apos;t contribute to quote totals and are not transferred to the Opportunity.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select the checkbox to make this line optional. Optional line items don&apos;t contribute to quote totals and are not transferred to the Opportunity.</inlineHelpText>
+        <label>Optional</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__PackageCost__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Total cost for this package including the cost of its components.</description>
+        <externalId>false</externalId>
+        <formula>SBQQ__ComponentCost__c + (SBQQ__UnitCost__c * SBQQ__Quantity__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Total cost for this package including the cost of its components.</inlineHelpText>
+        <label>Package Cost</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__PackageListTotal__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Total list price of this package including its components.</description>
+        <externalId>false</externalId>
+        <formula>SBQQ__ComponentListTotal__c +  SBQQ__ListTotal__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Total list price of this package including its components.</inlineHelpText>
+        <label>Package List Total</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__PackageProductCode__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Product code for the package generated by appending codes of selected components according to specified pattern.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Automatically generated list of product codes for each component in this package.</inlineHelpText>
+        <label>Package Product Code</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SBQQ__PackageTotal__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Total price of this package including its components.</description>
+        <externalId>false</externalId>
+        <formula>SBQQ__ComponentTotal__c + SBQQ__NetTotal__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Total price of this package including its components.</inlineHelpText>
+        <label>Package Total</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__PartnerDiscount__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Partner discounts are applied after all automatic and discretionary discounts. The partner discount is taken into account in the Partner Price.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Partner discounts are applied after all automatic and discretionary discounts. The partner discount is taken into account in the Partner Price.</inlineHelpText>
+        <label>Partner Discount</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__PartnerPrice__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Partner unit price. Price after partner discount but before distributor discount.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Partner unit price. Price after partner discount but before distributor discount.</inlineHelpText>
+        <label>Partner Unit Price</label>
+        <precision>14</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__PartnerTotal__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>IF(SBQQ__Renewal__c, 0, SBQQ__PartnerPrice__c * SBQQ__EffectiveQuantity__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Partner total</inlineHelpText>
+        <label>Partner Total</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__PriceEditable__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Flag indicating if this line item&apos;s price is editable.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select the checkbox to indicate that this line item&apos;s price is editable.</inlineHelpText>
+        <label>Price Editable</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__PricingMethodEditable__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Specifies whether pricing method can be edited on this line item.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select the checkbox to specify that the pricing method can be edited on this line item.</inlineHelpText>
+        <label>Pricing Method Editable</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__PricingMethod__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Determines how the price for this line item is set. List means it&apos;s calculated by subtracting discount from list price. Cost means it&apos;s calculated by adding markup to cost.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Indicates how the price for this line item is calculated: List, by subtracting discount from list price or Cost, by adding markup to cost.</inlineHelpText>
+        <label>Pricing Method</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>List</fullName>
+                    <default>true</default>
+                    <label>List</label>
+                </value>
+                <value>
+                    <fullName>Cost</fullName>
+                    <default>false</default>
+                    <label>Cost</label>
+                </value>
+                <value>
+                    <fullName>Block</fullName>
+                    <default>false</default>
+                    <label>Block</label>
+                </value>
+                <value>
+                    <fullName>Custom</fullName>
+                    <default>false</default>
+                    <label>Custom</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SBQQ__PriorQuantity__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Combined quantity of this product from prior purchases.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Combined quantity of this product from prior purchases.</inlineHelpText>
+        <label>Prior Quantity</label>
+        <precision>12</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SBQQ__ProductCode__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Code for the product referenced by this line.</description>
+        <externalId>false</externalId>
+        <formula>SBQQ__Product__r.ProductCode</formula>
+        <inlineHelpText>Code for the product referenced by this line.</inlineHelpText>
+        <label>Product Code</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SBQQ__ProductFamily__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Product Family for the product referenced by this line item.</description>
+        <externalId>false</externalId>
+        <formula>TEXT(SBQQ__Product__r.Family)</formula>
+        <inlineHelpText>Product Family for the product referenced by this line item.</inlineHelpText>
+        <label>Product Family</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SBQQ__ProductName__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Name for the product referenced by this line item.</description>
+        <externalId>false</externalId>
+        <formula>SBQQ__Product__r.Name</formula>
+        <inlineHelpText>Name for the product referenced by this line item.</inlineHelpText>
+        <label>Product Name</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SBQQ__ProductOption__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>Product option that generated this line (if any).</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Product option that generated this line (if any).</inlineHelpText>
+        <label>Product Option</label>
+        <referenceTo>SBQQ__ProductOption__c</referenceTo>
+        <relationshipLabel>Quote Lines</relationshipLabel>
+        <relationshipName>WebQuoteLines</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__Product__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>Product quoted by this line item.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Product quoted by this line item.</inlineHelpText>
+        <label>Product</label>
+        <referenceTo>Product2</referenceTo>
+        <relationshipLabel>Web Quote Lines</relationshipLabel>
+        <relationshipName>WebQuoteLines</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__ProrateMultiplier__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Calculated ratio used to compute Prorated Price.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Calculated ratio used to compute Prorated Price.</inlineHelpText>
+        <label>Prorate Multiplier</label>
+        <precision>8</precision>
+        <required>false</required>
+        <scale>4</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SBQQ__ProratedListPrice__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Prorated list unit price.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Prorated list unit price.</inlineHelpText>
+        <label>Prorated List Price</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__ProratedPrice__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Prorated price for the product quoted by this line item. This price will only differ from Special Price if the product is a subscription and the line item is being prorated.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Prorated price for the product quoted by this line item. This price will only differ from Special Price if the product is a subscription and the line item is being prorated.</inlineHelpText>
+        <label>Prorated Unit Price</label>
+        <precision>14</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__Quantity__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Quantity of the line item being quoted.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Quantity of the line item being quoted.</inlineHelpText>
+        <label>Quantity</label>
+        <precision>12</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SBQQ__Quote__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Parent quote record.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Parent quote record.</inlineHelpText>
+        <label>Quote</label>
+        <referenceTo>SBQQ__WebQuote__c</referenceTo>
+        <relationshipLabel>Quote Lines</relationshipLabel>
+        <relationshipName>LineItems</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>SBQQ__RegularPrice__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Unit price before additional discounts are applied.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Unit price before additional discounts are applied.</inlineHelpText>
+        <label>Regular Unit Price</label>
+        <precision>14</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__RegularTotal__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>IF(SBQQ__Renewal__c, 0, SBQQ__RegularPrice__c * SBQQ__EffectiveQuantity__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Regular Total</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__Renewal__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Indicates this line item represents a product being renewed. Only non-subscription products for quote type &quot;Renewal&quot; will have this field set to true. Under normal circumstances this field should not be modified via UI.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Indicates this line item represents a product being renewed. This field should not be modified.</inlineHelpText>
+        <label>Renewal</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__RenewedAsset__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>Asset being renewed if this line item represents a product renewal.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Asset being renewed if this line item represents a product renewal.</inlineHelpText>
+        <label>Renewed Asset</label>
+        <referenceTo>Asset</referenceTo>
+        <relationshipLabel>Quote Lines</relationshipLabel>
+        <relationshipName>WebQuoteLines</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__RenewedSubscription__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>Subscription being renewed by this quote line.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Subscription being renewed by this quote line.</inlineHelpText>
+        <label>Renewed Subscription</label>
+        <referenceTo>SBQQ__Subscription__c</referenceTo>
+        <relationshipLabel>Web Quote Lines</relationshipLabel>
+        <relationshipName>RenewalWebQuoteLines</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__RequiredBy__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>Links this line to another line in the same quote whose product requires this line&apos;s product.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Indicates which other product on this quote requires it.</inlineHelpText>
+        <label>Required By</label>
+        <referenceTo>SBQQ__WebQuoteLine__c</referenceTo>
+        <relationshipLabel>Quote Lines</relationshipLabel>
+        <relationshipName>WebQuoteLines</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__SegmentIndex__c</fullName>
+        <deprecated>false</deprecated>
+        <description>For multi-segmented Products, Index representing this Quote Line&apos;s position in the segment table.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>For multi-segmented Products, Index representing this Quote Line&apos;s position in the segment table.</inlineHelpText>
+        <label>Segment Index</label>
+        <precision>2</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SBQQ__SegmentKey__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This represents the segment that contains a unique value.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This represents the segment that contains a unique value.</inlineHelpText>
+        <label>Segment Key</label>
+        <length>30</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SBQQ__SegmentLabel__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This is the Column header label associated with this line.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This is the Column header label associated with this line.</inlineHelpText>
+        <label>Segment Label</label>
+        <length>25</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SBQQ__Source__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>Source of cloned quote line.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Source quote line item of cloned quote line item, if any.</inlineHelpText>
+        <label>Source</label>
+        <referenceTo>SBQQ__WebQuoteLine__c</referenceTo>
+        <relationshipLabel>Web Quote Lines (Source)</relationshipLabel>
+        <relationshipName>WebClones</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__SpecialPriceDescription__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Name of the Discount Tier or description of Contracted Price that generated special price for this line item.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Name of the Discount Tier or Contacted Price applied to get the special price for this line item.</inlineHelpText>
+        <label>Special Price Description</label>
+        <length>80</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SBQQ__SpecialPriceType__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Stores the type of special price offered on this line item. Null value indicates there is no special pricing. Under normal circumstances this field should not be modified via UI.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Type of special pricing extended.</inlineHelpText>
+        <label>Special Price Type</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Contracted Price</fullName>
+                    <default>false</default>
+                    <label>Contracted Price</label>
+                </value>
+                <value>
+                    <fullName>Renewal</fullName>
+                    <default>false</default>
+                    <label>Renewal</label>
+                </value>
+                <value>
+                    <fullName>Volume Discount</fullName>
+                    <default>false</default>
+                    <label>Volume Discount</label>
+                </value>
+                <value>
+                    <fullName>Custom</fullName>
+                    <default>false</default>
+                    <label>Custom</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SBQQ__SpecialPrice__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Special (volume-discounted or contracted) unit price for the product being quoted by this line item.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Special unit price for this line item, such as volume discount or contracted price.</inlineHelpText>
+        <label>Special Price</label>
+        <precision>14</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__StartDate__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Date the service represented by this line item will begin (only applies if product is a subscription).</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The date the subscription for which this product begins.</inlineHelpText>
+        <label>Start Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__SubscribedAssetIds__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Comma separated list of asset IDs covered by this subscription line. Only applicable to renewal quotes.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>List of assets covered by this subscription line item. Do not update unless instructed.</inlineHelpText>
+        <label>Subscribed Asset IDs</label>
+        <length>19000</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>SBQQ__SubscriptionBase__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Determines whether dynamic subscriptions are calculated off List, Customer or Net product price.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Indicates if subscription pricing uses List, Customer, or Net price.</inlineHelpText>
+        <label>Subscription Base</label>
+        <length>30</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SBQQ__SubscriptionCategory__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Category defined on the product to limit percent-of-total calculations to certain products.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Category defined on the product to limit percent-of-total calculations to certain products.</inlineHelpText>
+        <label>Subscription Category</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Hardware</fullName>
+                    <default>false</default>
+                    <label>Hardware</label>
+                </value>
+                <value>
+                    <fullName>Software</fullName>
+                    <default>false</default>
+                    <label>Software</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SBQQ__SubscriptionPercent__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Percent of non-subscription product total to be used as the price of this subscription.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Percent of non-subscription product total to be used when calculating this line item price.</inlineHelpText>
+        <label>Subscription Percent</label>
+        <precision>7</precision>
+        <required>false</required>
+        <scale>3</scale>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__SubscriptionPricing__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Determines how the subscription on this line item is priced. Blank value means this line contains product that&apos;s not a subscription.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Determines how the subscription price is calculated. If this is blank, the line items is not a subscription product.</inlineHelpText>
+        <label>Subscription Pricing</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Fixed Price</fullName>
+                    <default>false</default>
+                    <label>Fixed Price</label>
+                </value>
+                <value>
+                    <fullName>Percent Of Total</fullName>
+                    <default>false</default>
+                    <label>Percent Of Total</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SBQQ__SubscriptionScope__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Determines how dynamic subscription prices are calculated. If scope is set to &quot;Quote&quot; any non-subscription product is used in calculating every dynamic subscription. If scope is set to &quot;Group&quot; only products in the same group as the dynamic subscription are used.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Determines how dynamic subscription prices are calculated: Quote uses all the non-subscription products in the quote while Group uses only non-subscription products in the same group.</inlineHelpText>
+        <label>Subscription Scope</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Quote</fullName>
+                    <default>true</default>
+                    <label>Quote</label>
+                </value>
+                <value>
+                    <fullName>Group</fullName>
+                    <default>false</default>
+                    <label>Group</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SBQQ__SubscriptionTargetPrice__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Price of the subscription target product on which maintenance should calculate.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Price of the subscription target product on which maintenance should calculate.</inlineHelpText>
+        <label>Subscription Target Price</label>
+        <precision>14</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__SubscriptionTerm__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Term for the subscription product in this line. If the product is not a subscription this value has no effect.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Term for the subscription product in this line. If the product is not a subscription this value has no effect.</inlineHelpText>
+        <label>Subscription Term</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SBQQ__Taxable__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Indicates if the line item is taxable.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select the checkbox to indicate that the line item is taxable.</inlineHelpText>
+        <label>Taxable</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__TermDiscountSchedule__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>Schedule for discounts based on subscription term.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Schedule for discounts based on subscription term.</inlineHelpText>
+        <label>Term Discount Schedule</label>
+        <referenceTo>SBQQ__DiscountSchedule__c</referenceTo>
+        <relationshipLabel>Web Quote Lines (Term Discounted)</relationshipLabel>
+        <relationshipName>TermDiscountedWebQuoteLines</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__TermDiscountTier__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>Tier within the term discount schedule used to discount this line item.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Tier within the term discount schedule used to discount this line item.</inlineHelpText>
+        <label>Term Discount Tier</label>
+        <referenceTo>SBQQ__DiscountTier__c</referenceTo>
+        <relationshipLabel>Web Quote Lines (Term Discounted)</relationshipLabel>
+        <relationshipName>TermDiscountedWebQuoteLines</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__TermDiscount__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Discount calculated by applying subscription term against term discount schedule.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Discount calculated by applying subscription term against term discount schedule.</inlineHelpText>
+        <label>Term Discount</label>
+        <precision>14</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__TotalDiscountAmount__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Total discount for this line item including volume discount, contracted discount, and additional discount.</description>
+        <externalId>false</externalId>
+        <formula>(SBQQ__ProratedListPrice__c - SBQQ__CustomerPrice__c) * SBQQ__EffectiveQuantity__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Total discount for this line item including volume discount, contracted discount, and additional discount.</inlineHelpText>
+        <label>Total Discount (Amt)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__UnitCost__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Cost for one unit of product quoted on this line item.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Cost for one unit of product quoted on this line item.</inlineHelpText>
+        <label>Unit Cost</label>
+        <precision>16</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__UpgradedAsset__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>Asset being upgraded by this quote line. Only populated if this quote line represents an upgrade.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Asset upgraded by this quote line. When the quote is contracted this asset&apos;s Usage End Date will be populated to indicate that it&apos;s retired.</inlineHelpText>
+        <label>Upgraded Asset</label>
+        <referenceTo>Asset</referenceTo>
+        <relationshipLabel>Web Quote Lines (Upgrade)</relationshipLabel>
+        <relationshipName>UpgradeWebLines</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__UpgradedSubscription__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>Subscription being upgraded by this quote line.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Subscription upgraded by this quote line. When the quote is contracted this subscription&apos;s Terminated Date field will be populated.</inlineHelpText>
+        <label>Upgraded Subscription</label>
+        <referenceTo>SBQQ__Subscription__c</referenceTo>
+        <relationshipLabel>Web Quote Lines (Upgrade)</relationshipLabel>
+        <relationshipName>UpgradeWebLines</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__UpliftAmount__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This is measured as a currency amount. This is a system-calculated field and Uplift can only be applied in %.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This is measured as a currency amount.</inlineHelpText>
+        <label>Uplift (Amt)</label>
+        <precision>12</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__Uplift__c</fullName>
+        <defaultValue>0.0</defaultValue>
+        <deprecated>false</deprecated>
+        <description>This is measured as a percent.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter this as a percent.</inlineHelpText>
+        <label>Uplift</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>1</scale>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__VolumeDiscount__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Volume discount in amount of Opportunity&apos;s currency applied to this line item.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Volume discount amount applied to this line item.</inlineHelpText>
+        <label>Volume Discount</label>
+        <precision>14</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <label>Web Quote Line</label>
+    <nameField>
+        <displayFormat>WQL-{000000}</displayFormat>
+        <label>Quote Line #</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Web Quote Lines</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

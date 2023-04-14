@@ -2,14 +2,24 @@
 <CommunitiesSettings xmlns="http://soap.sforce.com/2006/04/metadata">
     <applyLoginPageTypeToEmbeddedLogin>false</applyLoginPageTypeToEmbeddedLogin>
     <blockEmbeddedLoginUnknownURLRedirect>false</blockEmbeddedLoginUnknownURLRedirect>
+    <canModerateAllFeedPosts>false</canModerateAllFeedPosts>
+    <embeddedVisualforcePages>false</embeddedVisualforcePages>
+    <enableCommunityWorkspaces>true</enableCommunityWorkspaces>
     <enableCspContactVisibilityPref>false</enableCspContactVisibilityPref>
+    <enableCspNotesOnAccConPref>true</enableCspNotesOnAccConPref>
     <enableExternalAccHierPref>false</enableExternalAccHierPref>
     <enableGuestPermDisOptOutCruc>false</enableGuestPermDisOptOutCruc>
     <enableGuestRecordReassignOrgPref>true</enableGuestRecordReassignOrgPref>
     <enableGuestSecurityOptOutCruc>false</enableGuestSecurityOptOutCruc>
+    <enableGuvSecurityOptOutPref>false</enableGuvSecurityOptOutPref>
     <enableInviteChatterGuestEnabled>true</enableInviteChatterGuestEnabled>
-    <enableNetworksEnabled>false</enableNetworksEnabled>
+    <enableNameFieldsUserPIIEnabled>true</enableNameFieldsUserPIIEnabled>
+    <enableNetPortalUserReportOpts>false</enableNetPortalUserReportOpts>
+    <enableNetworksEnabled>true</enableNetworksEnabled>
     <enableOotbProfExtUserOpsEnable>false</enableOotbProfExtUserOpsEnable>
     <enablePRMAccRelPref>false</enablePRMAccRelPref>
+    <enablePowerCustomerCaseStatus>false</enablePowerCustomerCaseStatus>
+    <enablePreventBadgeGuestAccess>true</enablePreventBadgeGuestAccess>
     <enableRelaxPartnerAccountFieldPref>false</enableRelaxPartnerAccountFieldPref>
+    <enableUnsupportedBrowserModalPref>true</enableUnsupportedBrowserModalPref>
 </CommunitiesSettings>

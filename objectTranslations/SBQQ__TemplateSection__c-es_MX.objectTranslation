@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Sección de plantilla</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Secciones de plantillas</value>
+    </caseValues>
+    <fields>
+        <help>Color de los bordes de tablas expresados en notación hexadecimal.</help>
+        <label><!-- Border Color --></label>
+        <name>SBQQ__BorderColor__c</name>
+    </fields>
+    <fields>
+        <help>Margen izquierdo en la parte inferior de esta sección.</help>
+        <label><!-- Bottom Margin --></label>
+        <name>SBQQ__BottomMargin__c</name>
+    </fields>
+    <fields>
+        <help>Seleccione esta casilla de verificación para ocultar el encabezado de la columna. Solo se aplica a secciones que apuntan al contenido de la plantilla del tipo &quot;Partidas&quot;.</help>
+        <label><!-- Hide Column Header --></label>
+        <name>SBQQ__ColumnHeaderHidden__c</name>
+    </fields>
+    <fields>
+        <help>Campo en el objeto Presupuesto que controla si esta sección se imprime en documentos PDF generados.</help>
+        <label><!-- Conditional Print Field --></label>
+        <name>SBQQ__ConditionalPrintField__c</name>
+        <picklistValues>
+            <masterLabel>Group Line Items</masterLabel>
+            <translation>Agrupar partidas</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Primary</masterLabel>
+            <translation>Principal</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Seleccione el contenido de plantillas que se mostrará en esta sección de plantillas.</help>
+        <label><!-- Content --></label>
+        <name>SBQQ__Content__c</name>
+        <relationshipLabel><!-- Template Sections --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Especifique el orden (de arriba a abajo) en el que se representa esta sección en relación a otras secciones de la plantilla.</help>
+        <label><!-- Display Order --></label>
+        <name>SBQQ__DisplayOrder__c</name>
+    </fields>
+    <fields>
+        <help>Filtro empleado para filtrar registros representados por esta sección.</help>
+        <label><!-- Filter Field --></label>
+        <name>SBQQ__FilterField__c</name>
+        <picklistValues>
+            <masterLabel>Optional</masterLabel>
+            <translation>Opcional</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Operador empleado para filtrar registros representados por esta sección.</help>
+        <label><!-- Filter Operator --></label>
+        <name>SBQQ__FilterOperator__c</name>
+        <picklistValues>
+            <masterLabel>contains</masterLabel>
+            <translation>contiene</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ends with</masterLabel>
+            <translation>termina por</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>equals</masterLabel>
+            <translation>igual a</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>greater or equals</masterLabel>
+            <translation>mayor o igual</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>greater than</masterLabel>
+            <translation>mayor que</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>less or equals</masterLabel>
+            <translation>menor o igual</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>less than</masterLabel>
+            <translation>menor que</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>not equals</masterLabel>
+            <translation>no igual a</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>starts with</masterLabel>
+            <translation>comienza por</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Valor empleado para filtrar registros representados por esta sección.</help>
+        <label><!-- Filter Value --></label>
+        <name>SBQQ__FilterValue__c</name>
+    </fields>
+    <fields>
+        <help>Especifique el campo utilizado en la agrupación de partidas representado por esta sección. Solo se aplica a la sección Partidas.</help>
+        <label><!-- Group Field --></label>
+        <name>SBQQ__GroupField__c</name>
+        <picklistValues>
+            <masterLabel>Product Family</masterLabel>
+            <translation>Familia de productos</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Subscription Category</masterLabel>
+            <translation>Categoría de suscripciones</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Especifica si se debe intentar mantener el contenido unido en la misma página.</help>
+        <label><!-- Keep Together --></label>
+        <name>SBQQ__KeepTogether__c</name>
+        <picklistValues>
+            <masterLabel>Always</masterLabel>
+            <translation>Siempre</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Auto</masterLabel>
+            <translation>Automático</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Especifica si se debe intentar mantener el contenido unido en la misma página con el siguiente bloque de contenido.</help>
+        <label><!-- Keep With Next --></label>
+        <name>SBQQ__KeepWithNext__c</name>
+        <picklistValues>
+            <masterLabel>Always</masterLabel>
+            <translation>Siempre</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Auto</masterLabel>
+            <translation>Automático</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Especifica si se debe intentar mantener el contenido unido en la misma página con el anterior bloque de contenido.</help>
+        <label><!-- Keep With Previous --></label>
+        <name>SBQQ__KeepWithPrevious__c</name>
+        <picklistValues>
+            <masterLabel>Always</masterLabel>
+            <translation>Siempre</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Auto</masterLabel>
+            <translation>Automático</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Especifica si debe insertarse un salto de página antes, después o antes y después de este contenido.</help>
+        <label><!-- Page Break --></label>
+        <name>SBQQ__PageBreak__c</name>
+        <picklistValues>
+            <masterLabel>After</masterLabel>
+            <translation>Después</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Before</masterLabel>
+            <translation>Antes</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Both</masterLabel>
+            <translation>Ambos</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Seleccione la casilla de verificación para imprimir totales de presupuesto después de esta sección. Solo se aplica a las secciones Partidas.</help>
+        <label><!-- Print Quote Totals --></label>
+        <name>SBQQ__QuoteTotalsPrinted__c</name>
+    </fields>
+    <fields>
+        <help>Campo de presupuesto empleado para resúmenes. Todas las partidas con este campo devuelven el mismo valor y se resumirán en la primera partida donde esté el valor.</help>
+        <label><!-- Roll-Up Field --></label>
+        <name>SBQQ__RollUpField__c</name>
+        <picklistValues>
+            <masterLabel>Product</masterLabel>
+            <translation>Producto</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Seleccione &quot;Siempre&quot; para mostrar el subtotal, los descuentos y la suma total sin que importen otros parámetros. Seleccione &quot;Nunca&quot; para no mostrarlos en ningún momento sin que importen otros parámetros. Al dejar este campo en blanco se representará el resumen como se define en los campos de la plantilla.</help>
+        <label><!-- Summary Display --></label>
+        <name>SBQQ__SummaryDisplay__c</name>
+        <picklistValues>
+            <masterLabel>Always</masterLabel>
+            <translation>Siempre</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Never</masterLabel>
+            <translation>Nunca</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Plantilla de presupuesto que utiliza esta sección de plantilla.</help>
+        <label><!-- Template --></label>
+        <name>SBQQ__Template__c</name>
+        <relationshipLabel><!-- Sections --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Margen izquierdo en la parte superior de esta sección.</help>
+        <label><!-- Top Margin --></label>
+        <name>SBQQ__TopMargin__c</name>
+    </fields>
+    <gender>Feminine</gender>
+    <layouts>
+        <layout>Template Section Layout</layout>
+        <sections>
+            <label>Vínculos personalizados</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>Información de filtrado</label>
+            <section>Filtering Information</section>
+        </sections>
+        <sections>
+            <label>Saltos de página</label>
+            <section>Page Breaks</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Nombre de la sección</nameFieldLabel>
+    <webLinks>
+        <label><!-- IncludeDocument --></label>
+        <name>SBQQ__IncludeDocument</name>
+    </webLinks>
+</CustomObjectTranslation>

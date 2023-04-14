@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Ação favorita</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Ações favoritas</value>
+    </caseValues>
+    <fields>
+        <label><!-- Favorite --></label>
+        <name>SBQQ__Favorite__c</name>
+        <relationshipLabel><!-- Favorite Shares --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- User --></label>
+        <name>SBQQ__User__c</name>
+        <relationshipLabel><!-- Favorite Shares --></relationshipLabel>
+    </fields>
+    <gender>Feminine</gender>
+    <layouts>
+        <layout>Favorite Share Layout</layout>
+        <sections>
+            <label>Links personalizados</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Nome do compartilhamento favorito</nameFieldLabel>
+</CustomObjectTranslation>

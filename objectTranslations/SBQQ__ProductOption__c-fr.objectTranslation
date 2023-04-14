@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Option de produit</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Options de produit</value>
+    </caseValues>
+    <fieldSets>
+        <label><!-- OptionConfiguration --></label>
+        <name>SBQQ__OptionConfiguration</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- OptionLookup --></label>
+        <name>SBQQ__OptionLookup</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- SearchFilters --></label>
+        <name>SBQQ__SearchFilters</name>
+    </fieldSets>
+    <fields>
+        <help>L&apos;option « Appliquer immédiatement lors de la sélection » applique les modifications immédiatement après la sélection du produit, alors que l&apos;option « Appliquer immédiatement lors d&apos;un changement de quantité » applique les modifications lorsque la quantité change. L&apos;option « Toujours » applique les modifications dans les deux cas, lors de la sélection du produit et lors d&apos;un changement de quantité.</help>
+        <label><!-- Apply Immediately Context --></label>
+        <name>SBQQ__AppliedImmediatelyContext__c</name>
+        <picklistValues>
+            <masterLabel>Always</masterLabel>
+            <translation>Toujours</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>On Quantity Change</masterLabel>
+            <translation>Lors d&apos;un changement de quantité</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>On Selection</masterLabel>
+            <translation>Sur sélection</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Sélectionnez la case pour appliquer immédiatement les modifications à cette option. À utiliser avec précaution afin d&apos;éviter de ralentir l&apos;expérience utilisateur.</help>
+        <label><!-- Apply Immediately --></label>
+        <name>SBQQ__AppliedImmediately__c</name>
+    </fields>
+    <fields>
+        <help>Sélectionnez cette case pour indiquer que le produit associé est groupé avec le produit principal. Les options d&apos;offres groupées ont une quantité fixe et un prix nul, car le prix est inclus dans le produit principal. Laissez cette case désactivée si le prix doit être ajouté à l&apos;option.</help>
+        <label><!-- Bundled --></label>
+        <name>SBQQ__Bundled__c</name>
+    </fields>
+    <fields>
+        <help>Position de ce composant dans le code produit généré pour la configuration.</help>
+        <label><!-- Component Code Position --></label>
+        <name>SBQQ__ComponentCodePosition__c</name>
+    </fields>
+    <fields>
+        <help>Code du composant représenté par cette option.</help>
+        <label><!-- Component Code --></label>
+        <name>SBQQ__ComponentCode__c</name>
+    </fields>
+    <fields>
+        <help>Position de ce composant dans la description produit générée pour la configuration.</help>
+        <label><!-- Component Description Position --></label>
+        <name>SBQQ__ComponentDescriptionPosition__c</name>
+    </fields>
+    <fields>
+        <help>Description du composant représenté par cette option. Il est utilisé avec le champ Modèle de description configuré dans l&apos;objet Produit.</help>
+        <label><!-- Component Description --></label>
+        <name>SBQQ__ComponentDescription__c</name>
+    </fields>
+    <fields>
+        <help>Unité de gestion de stock du produit de l&apos;offre groupée configurée avec cette option. Si vous créez l&apos;option depuis la page de détail du produit, elle doit déjà être renseignée.</help>
+        <label><!-- Configured SKU --></label>
+        <name>SBQQ__ConfiguredSKU__c</name>
+        <relationshipLabel><!-- Options --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Sélectionnez le tableau de tarification de ce produit à afficher par défaut lors de la définition des dimensions de prix.</help>
+        <label><!-- Default Pricing Table --></label>
+        <name>SBQQ__DefaultPricingTable__c</name>
+        <picklistValues>
+            <masterLabel>Segmented</masterLabel>
+            <translation>Segmenté</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Standard</masterLabel>
+            <translation>Standard</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Remise (montant) basée sur le champ, lorsque le produit référencé pour cette option est offert seul. Cependant, vous devez étendre une remise si le produit fait partie d&apos;une offre groupée.</help>
+        <label><!-- Discount (Amt) --></label>
+        <name>SBQQ__DiscountAmount__c</name>
+    </fields>
+    <fields>
+        <help>Référence le barème de remise à appliquer au produit sélectionné par cette option. Ce barème de remise remplace le barème de remise sélectionné dans le produit ou la fonctionnalité.</help>
+        <label><!-- Discount Schedule --></label>
+        <name>SBQQ__DiscountSchedule__c</name>
+        <relationshipLabel><!-- Product Options --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Saisissez une remise (%) basée sur le champ, lorsque le produit référencé pour cette option est offert seul. Cependant, vous devez étendre une remise si le produit fait partie d&apos;une offre groupée.</help>
+        <label><!-- Discount (%) --></label>
+        <name>SBQQ__Discount__c</name>
+    </fields>
+    <fields>
+        <help>Sélectionnez cette case pour appliquer automatiquement une remise supplémentaire au package parent de ce composant. Seule une remise en pourcentage peut être appliquée.</help>
+        <label><!-- Discounted By Package --></label>
+        <name>SBQQ__DiscountedByPackage__c</name>
+    </fields>
+    <fields>
+        <help>Quantité existante de ce produit. Calculée en référence les ressources associées au compte.</help>
+        <label><!-- Existing Quantity --></label>
+        <name>SBQQ__ExistingQuantity__c</name>
+    </fields>
+    <fields>
+        <help>Saisissez ou référencez la fonctionnalité qui inclut cette option. Elle dépend de l&apos;unité de gestion de stock configurée.</help>
+        <label><!-- Feature --></label>
+        <name>SBQQ__Feature__c</name>
+        <relationshipLabel><!-- Product Options --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Quantité maximale autorisée pour cette option.</help>
+        <label><!-- Max Quantity --></label>
+        <name>SBQQ__MaxQuantity__c</name>
+    </fields>
+    <fields>
+        <help>Quantité minimale autorisée pour cette option.</help>
+        <label><!-- Min Quantity --></label>
+        <name>SBQQ__MinQuantity__c</name>
+    </fields>
+    <fields>
+        <help>Définit l&apos;ordre d&apos;affichage de cette option dans la fonctionnalité à laquelle elle est associée.</help>
+        <label><!-- Number --></label>
+        <name>SBQQ__Number__c</name>
+    </fields>
+    <fields>
+        <help>Saisissez ou référencez l&apos;unité de gestion de stock du produit qui doit être ajoutée lors de la sélection de ce produit.</help>
+        <label><!-- Optional SKU --></label>
+        <name>SBQQ__OptionalSKU__c</name>
+        <relationshipLabel><!-- Optional For --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Sélectionnez cette case pour marquer le prix comme modifiable, ce qui autorise les utilisateurs à apporter des modifications aux prix des options.</help>
+        <label><!-- Price Editable --></label>
+        <name>SBQQ__PriceEditable__c</name>
+    </fields>
+    <fields>
+        <help>Code produit de l&apos;unité de gestion de stock produit facultative.</help>
+        <label><!-- Product Code --></label>
+        <name>SBQQ__ProductCode__c</name>
+    </fields>
+    <fields>
+        <help>Extrait la valeur du Type de configuration de l&apos;objet Produit afin d&apos;éviter le chargement d&apos;un enregistrement produit associé.</help>
+        <label><!-- Product Configuration Type --></label>
+        <name>SBQQ__ProductConfigurationType__c</name>
+    </fields>
+    <fields>
+        <help>Description de l&apos;unité de gestion de stock facultative.</help>
+        <label><!-- Product Description --></label>
+        <name>SBQQ__ProductDescription__c</name>
+    </fields>
+    <fields>
+        <help>Famille de produits de l&apos;unité de gestion de stock produit facultative.</help>
+        <label><!-- Product Family --></label>
+        <name>SBQQ__ProductFamily__c</name>
+    </fields>
+    <fields>
+        <help>Nom de l&apos;unité de gestion de stock facultative.</help>
+        <label><!-- Product Name --></label>
+        <name>SBQQ__ProductName__c</name>
+    </fields>
+    <fields>
+        <help>Spécifie le nombre de décimales utilisées dans le champ Quantité.</help>
+        <label><!-- Product Quantity Scale --></label>
+        <name>SBQQ__ProductQuantityScale__c</name>
+    </fields>
+    <fields>
+        <help>Type de tarification à utiliser pour cet abonnement. « Aucun » signifie que ce produit est sans abonnement.</help>
+        <label><!-- Product Subscription Pricing --></label>
+        <name>SBQQ__ProductSubscriptionPricing__c</name>
+    </fields>
+    <fields>
+        <help>Sélectionnez cette case pour autoriser la modification de la quantité, même lorsque cela est spécifié sur l&apos;option.</help>
+        <label><!-- Quantity Editable --></label>
+        <name>SBQQ__QuantityEditable__c</name>
+    </fields>
+    <fields>
+        <help>Quantité du produit associé qui doit être ajouté au devis.</help>
+        <label><!-- Quantity --></label>
+        <name>SBQQ__Quantity__c</name>
+    </fields>
+    <fields>
+        <help>Configurez la visibilité de la ligne de devis générée par cette option.</help>
+        <label><!-- Quote Line Visibility --></label>
+        <name>SBQQ__QuoteLineVisibility__c</name>
+        <picklistValues>
+            <masterLabel>Always</masterLabel>
+            <translation>Toujours</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Document Only</masterLabel>
+            <translation>Document uniquement</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Editor Only</masterLabel>
+            <translation>Éditeur uniquement</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Never</masterLabel>
+            <translation>Jamais</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Option produit qui remplace cette option produit lors d&apos;un renouvellement. Utilisez-la pour générer un devis avec une Unité de gestion de stock différente lors du renouvellement.</help>
+        <label><!-- Renewal Product Option --></label>
+        <name>SBQQ__RenewalProductOption__c</name>
+        <relationshipLabel><!-- Product Options --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Sélectionnez cette case si ce produit est requis dans l&apos;offre groupée.</help>
+        <label><!-- Required --></label>
+        <name>SBQQ__Required__c</name>
+    </fields>
+    <fields>
+        <help>Sélectionnez cette case si cette option produit doit être automatiquement sélectionnée par défaut.</help>
+        <label><!-- Selected --></label>
+        <name>SBQQ__Selected__c</name>
+    </fields>
+    <fields>
+        <help>Sélectionnez le mode de calcul de l’option de pourcentage du total des produits. « Package » est spécifique au produit parent. « Composants » est spécifique aux composants semblables. « Les deux » est spécifique au parent et aux composants semblables.</help>
+        <label><!-- Percent of Total Scope --></label>
+        <name>SBQQ__SubscriptionScope__c</name>
+        <picklistValues>
+            <masterLabel>Both</masterLabel>
+            <translation>Les deux</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Components</masterLabel>
+            <translation>Composants</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Package</masterLabel>
+            <translation>Package</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Sélectionnez la case pour indiquer que cette option est gérée par le système, ce qui signifie que l&apos;utilisateur ne peut plus la sélectionner.</help>
+        <label><!-- System --></label>
+        <name>SBQQ__System__c</name>
+    </fields>
+    <fields>
+        <help>Utilisez « Composant » si cette option, y compris la quantité, dépend du parent. Utilisez « Accessoire » si cette option dépend du parent, mais que la quantité est indépendante. Utilisez « Produit associé » pour associée, mais totalement indépendante des produits.</help>
+        <label><!-- Type --></label>
+        <name>SBQQ__Type__c</name>
+        <picklistValues>
+            <masterLabel>Accessory</masterLabel>
+            <translation>Accessoire</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Component</masterLabel>
+            <translation>Composant</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Related Product</masterLabel>
+            <translation>Produit associé</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Prix unitaire de cette option. Cela remplace la valeur du catalogue de prix.</help>
+        <label><!-- Unit Price --></label>
+        <name>SBQQ__UnitPrice__c</name>
+    </fields>
+    <fields>
+        <help>Sélectionnez cette case pour appliquer automatiquement l&apos;augmentation à partir du package parent de ce composant. S&apos;applique uniquement aux composants qui sont des produits à segments multiples.</help>
+        <label><!-- Uplifted By Package --></label>
+        <name>SBQQ__UpliftedByPackage__c</name>
+    </fields>
+    <gender>Feminine</gender>
+    <layouts>
+        <layout>Product Option Layout</layout>
+        <sections>
+            <label>Paramètres avancés</label>
+            <section>Advanced Settings</section>
+        </sections>
+        <sections>
+            <label>Liens personnalisés</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>Informations sur l&apos;unité de gestion de stock facultative</label>
+            <section>Optional SKU Information</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Nom de l&apos;option</nameFieldLabel>
+    <startsWith>Vowel</startsWith>
+    <validationRules>
+        <errorMessage><!-- The &apos;Apply Immediately&apos; field must be checked before providing an &apos;Apply Immediately Context&apos;. Otherwise, please change the &apos;Apply Immediately Context&apos; field to ‘None&apos;. --></errorMessage>
+        <name>SBQQ__Apply_Immediately_Context_Validation</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Translate --></label>
+        <name>SBQQ__Translate</name>
+    </webLinks>
+</CustomObjectTranslation>

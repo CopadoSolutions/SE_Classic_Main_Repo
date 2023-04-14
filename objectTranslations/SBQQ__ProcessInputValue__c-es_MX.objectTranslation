@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Valores de Entrada de proceso</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Valores de Entrada de proceso</value>
+    </caseValues>
+    <fields>
+        <help>Seleccione la entrada de proceso a la que pertenece el objeto.</help>
+        <label><!-- Process Input ID --></label>
+        <name>SBQQ__ProcessInputID__c</name>
+        <relationshipLabel><!-- Process Input Values --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>El Id. del presupuesto al que pertenece este valor de entrada de proceso.</help>
+        <label><!-- Quote ID --></label>
+        <name>SBQQ__QuoteId__c</name>
+        <relationshipLabel><!-- Process Input Values --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Este valor de entrada de proceso pertenece al usuario.</help>
+        <label><!-- UserID --></label>
+        <name>SBQQ__UserID__c</name>
+        <relationshipLabel><!-- Process Input Values --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Esta es la respuesta al valor de la entrada de proceso.</help>
+        <label><!-- Value --></label>
+        <name>SBQQ__Value__c</name>
+    </fields>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Process Input Values Layout</layout>
+        <sections>
+            <label>Vínculos personalizados</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Nombre de valor de proceso de presupuest</nameFieldLabel>
+</CustomObjectTranslation>

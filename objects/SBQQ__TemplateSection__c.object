@@ -1,0 +1,592 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <customHelpPage>SBQQ__TemplateSectionHelp</customHelpPage>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <description>Section of content displayed on specific template.</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>false</enableReports>
+    <enableSearch>false</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ControlledByParent</externalSharingModel>
+    <fields>
+        <fullName>SBQQ__BorderColor__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Color of table borders expressed as a hexadecimal value.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Color of table borders expressed as a hexadecimal value.</inlineHelpText>
+        <label>Border Color</label>
+        <length>6</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SBQQ__BottomMargin__c</fullName>
+        <defaultValue>0</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Margin left at the bottom of this section.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Margin left at the bottom of this section.</inlineHelpText>
+        <label>Bottom Margin</label>
+        <precision>14</precision>
+        <required>true</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SBQQ__ColumnHeaderHidden__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Flag that determines whether column header is displayed or not. Only applies to sections pointing to template content of type &quot;Line Items&quot;.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select the checkbox to hide the column header. Only applies to sections pointing to template content of type &quot;Line Items&quot;.</inlineHelpText>
+        <label>Hide Column Header</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__ConditionalPrintField__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Field on quote object that controls whether this section prints on generated PDF documents.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Field on quote object that controls whether this section prints on generated PDF documents.</inlineHelpText>
+        <label>Conditional Print Field</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Group Line Items</fullName>
+                    <default>false</default>
+                    <label>Group Line Items</label>
+                </value>
+                <value>
+                    <fullName>Primary</fullName>
+                    <default>false</default>
+                    <label>Primary</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SBQQ__Content__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>Source of content for this section.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select the template content to display in this template section.</inlineHelpText>
+        <label>Content</label>
+        <referenceTo>SBQQ__TemplateContent__c</referenceTo>
+        <relationshipLabel>Template Sections</relationshipLabel>
+        <relationshipName>TemplateSections</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__DisplayOrder__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Order in which this section is rendered relative to other sections on the template.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Specify the order (top down) in which this section is rendered relative to other sections on the template.</inlineHelpText>
+        <label>Display Order</label>
+        <precision>8</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SBQQ__FilterField__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Field used to filter records rendered by this section.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Field used to filter records rendered by this section.</inlineHelpText>
+        <label>Filter Field</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Optional</fullName>
+                    <default>false</default>
+                    <label>Optional</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SBQQ__FilterOperator__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Operator used for filtering records rendered by this section.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Operator used for filtering records rendered by this section.</inlineHelpText>
+        <label>Filter Operator</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>equals</fullName>
+                    <default>false</default>
+                    <label>equals</label>
+                </value>
+                <value>
+                    <fullName>not equals</fullName>
+                    <default>false</default>
+                    <label>not equals</label>
+                </value>
+                <value>
+                    <fullName>less than</fullName>
+                    <default>false</default>
+                    <label>less than</label>
+                </value>
+                <value>
+                    <fullName>less or equals</fullName>
+                    <default>false</default>
+                    <label>less or equals</label>
+                </value>
+                <value>
+                    <fullName>greater than</fullName>
+                    <default>false</default>
+                    <label>greater than</label>
+                </value>
+                <value>
+                    <fullName>greater or equals</fullName>
+                    <default>false</default>
+                    <label>greater or equals</label>
+                </value>
+                <value>
+                    <fullName>starts with</fullName>
+                    <default>false</default>
+                    <label>starts with</label>
+                </value>
+                <value>
+                    <fullName>ends with</fullName>
+                    <default>false</default>
+                    <label>ends with</label>
+                </value>
+                <value>
+                    <fullName>contains</fullName>
+                    <default>false</default>
+                    <label>contains</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SBQQ__FilterValue__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Value used in filtering records rendered by this section.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Value used in filtering records rendered by this section.</inlineHelpText>
+        <label>Filter Value</label>
+        <length>200</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SBQQ__GroupField__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Field used in grouping lines rendered by this section. Only applicable to Line Items section.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Specify field used in grouping lines rendered by this section. Only applicable to Line Items section.</inlineHelpText>
+        <label>Group Field</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Product Family</fullName>
+                    <default>false</default>
+                    <label>Product Family</label>
+                </value>
+                <value>
+                    <fullName>Subscription Category</fullName>
+                    <default>false</default>
+                    <label>Subscription Category</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SBQQ__KeepTogether__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Imposes &quot;keep-together.within-page&quot; condition on this block of content.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Specifies whether an attempt should be made to keep contents together on the same page.</inlineHelpText>
+        <label>Keep Together</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Auto</fullName>
+                    <default>true</default>
+                    <label>Auto</label>
+                </value>
+                <value>
+                    <fullName>Always</fullName>
+                    <default>false</default>
+                    <label>Always</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SBQQ__KeepWithNext__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Imposes &quot;keep-with-next.within-page&quot; condition on this block of content.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Specifies whether an attempt should be made to keep contents together on the same page with next block of content.</inlineHelpText>
+        <label>Keep With Next</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Auto</fullName>
+                    <default>true</default>
+                    <label>Auto</label>
+                </value>
+                <value>
+                    <fullName>Always</fullName>
+                    <default>false</default>
+                    <label>Always</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SBQQ__KeepWithPrevious__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Imposes &quot;keep-with-previous.within-page&quot; condition on this block of content.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Specifies whether an attempt should be made to keep contents together on the same page with previous block of content.</inlineHelpText>
+        <label>Keep With Previous</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Auto</fullName>
+                    <default>false</default>
+                    <label>Auto</label>
+                </value>
+                <value>
+                    <fullName>Always</fullName>
+                    <default>false</default>
+                    <label>Always</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SBQQ__PageBreak__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Specifies page breaking behavior for this content.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Specifies whether page break should be inserted before, after or both before/after this content.</inlineHelpText>
+        <label>Page Break</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Before</fullName>
+                    <default>false</default>
+                    <label>Before</label>
+                </value>
+                <value>
+                    <fullName>After</fullName>
+                    <default>false</default>
+                    <label>After</label>
+                </value>
+                <value>
+                    <fullName>Both</fullName>
+                    <default>false</default>
+                    <label>Both</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SBQQ__QuoteTotalsPrinted__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Forces quote totals to print after line items rendered by this section.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select the checkbox to print quote totals after this section. Only applicable to Line Items sections.</inlineHelpText>
+        <label>Print Quote Totals</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__RollUpField__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Field on quote line object that&apos;s used to rollup lines.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Quote line field used for roll-up. All lines where this field returns the same value will be rolled up into the first line where the value occurs.</inlineHelpText>
+        <label>Roll-Up Field</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Product</fullName>
+                    <default>false</default>
+                    <label>Product</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SBQQ__SummaryDisplay__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Specifies how line items rendered by this section are summarized.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Choose &quot;Always&quot; to display subtotal, discounts and grand total regardless of any other settings. Choose &quot;Never&quot; to never display regardless of other settings. Leaving this field blank will render summary as defined by template fields.</inlineHelpText>
+        <label>Summary Display</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Always</fullName>
+                    <default>false</default>
+                    <label>Always</label>
+                </value>
+                <value>
+                    <fullName>Never</fullName>
+                    <default>false</default>
+                    <label>Never</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SBQQ__Template__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Quote template that uses this template section.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Quote template that uses this template section.</inlineHelpText>
+        <label>Template</label>
+        <referenceTo>SBQQ__QuoteTemplate__c</referenceTo>
+        <relationshipLabel>Sections</relationshipLabel>
+        <relationshipName>Sections</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>SBQQ__TopMargin__c</fullName>
+        <defaultValue>0</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Margin left at the top of this section.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Margin left at the top of this section.</inlineHelpText>
+        <label>Top Margin</label>
+        <precision>14</precision>
+        <required>true</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <label>Template Section</label>
+    <nameField>
+        <label>Section Name</label>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Template Sections</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+    <visibility>Public</visibility>
+    <webLinks>
+        <fullName>SBQQ__IncludeDocument</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <height>600</height>
+        <linkType>page</linkType>
+        <masterLabel>Include Document</masterLabel>
+        <openType>sidebar</openType>
+        <page>SBQQ__NewTemplateSectionRelatedContent</page>
+        <protected>false</protected>
+    </webLinks>
+</CustomObject>

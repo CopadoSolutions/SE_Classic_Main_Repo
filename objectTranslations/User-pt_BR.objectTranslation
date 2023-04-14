@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label><!-- PersonalInfo_EPIM --></label>
+        <name>PersonalInfo_EPIM</name>
+    </fieldSets>
+    <fields>
+        <help>Personalize a guia padrão na página Pesquisa de produto.</help>
+        <label><!-- Default Product Lookup Tab --></label>
+        <name>SBQQ__DefaultProductLookupTab__c</name>
+        <picklistValues>
+            <masterLabel>Guided Selling</masterLabel>
+            <translation>Venda guiada</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Search Filters</masterLabel>
+            <translation>Filtros de pesquisa</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Marque para permitir que esse usuário altere o formato de saída dos documentos de cotação.</help>
+        <label><!-- Allow Output Format Change --></label>
+        <name>SBQQ__OutputFormatChangeAllowed__c</name>
+    </fields>
+    <fields>
+        <help>Selecione &quot;Seguido&quot; para exibir produtos que você segue no Chatter antes de outros ao adicionar à cotação.</help>
+        <label><!-- Product Sort Preference --></label>
+        <name>SBQQ__ProductSortPreference__c</name>
+        <picklistValues>
+            <masterLabel>Followed</masterLabel>
+            <translation>Seguido</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Marque para limpar os filtros e os resultados da pesquisa sempre que adicionar produtos às suas cotações. Caso contrário, suas seleções anteriores serão mantidas.</help>
+        <label><!-- Reset Product Lookup --></label>
+        <name>SBQQ__ResetProductLookup__c</name>
+    </fields>
+    <fields>
+        <label><!-- Theme --></label>
+        <name>SBQQ__Theme__c</name>
+    </fields>
+    <layouts>
+        <layout>Community Member Layout</layout>
+        <layoutType>CommunityMemberLayout</layoutType>
+        <sections>
+            <label><!-- Basic Information --></label>
+            <section>Basic Information</section>
+        </sections>
+        <sections>
+            <label><!-- Chatter Settings --></label>
+            <section>Chatter Settings</section>
+        </sections>
+        <sections>
+            <label><!-- Language And Locale Settings --></label>
+            <section>Language And Locale Settings</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Formato Perfil de usuario</layout>
+        <layoutType>UserAlt</layoutType>
+        <sections>
+            <label><!-- Acerca de --></label>
+            <section>Acerca de</section>
+        </sections>
+        <sections>
+            <label><!-- Contacto --></label>
+            <section>Contacto</section>
+        </sections>
+        <sections>
+            <label><!-- Fondo --></label>
+            <section>Fondo</section>
+        </sections>
+    </layouts>
+    <webLinks>
+        <label><!-- Select_Theme --></label>
+        <name>SBQQ__Select_Theme</name>
+    </webLinks>
+</CustomObjectTranslation>

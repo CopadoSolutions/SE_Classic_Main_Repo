@@ -1,0 +1,509 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <customHelpPage>SBQQ__ProductRuleHelp</customHelpPage>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <description>Rule that governs valid product configurations.</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableEnhancedLookup>false</enableEnhancedLookup>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>false</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>Private</externalSharingModel>
+    <fields>
+        <fullName>SBQQ__Active__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Flag that indicates whether this rule is active or inactive.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Indicates whether this rule is active or inactive.</inlineHelpText>
+        <label>Active</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__AdvancedCondition__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Can only be entered if the Conditions Met is Custom. Enter a combination of the Error Condition Index #s, AND, OR, and parenthesis (e.g. (123 AND 124) AND 125).</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Can only be entered if the Conditions Met is Custom. Enter a combination of the Error Condition Index #s, AND, OR, and parenthesis (e.g. (123 AND 124) AND 125).</inlineHelpText>
+        <label>Advanced Condition</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__ConditionsMet__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Choose the behavior for your conditions: All is AND, Any is OR, Custom is a combination of AND/OR.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Choose the behavior for your conditions: All is AND, Any is OR, Custom is a combination of AND/OR.</inlineHelpText>
+        <label>Conditions Met</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>All</fullName>
+                    <default>false</default>
+                    <label>All</label>
+                </value>
+                <value>
+                    <fullName>Any</fullName>
+                    <default>false</default>
+                    <label>Any</label>
+                </value>
+                <value>
+                    <fullName>Custom</fullName>
+                    <default>false</default>
+                    <label>Custom</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SBQQ__ErrorMessage__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Enter a message to displayed when rule is activated.  An error message will be displayed when a Validations is fired.  A warning message will be displayed when an Alert is fired. Does not apply to Filter rules.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter a message to displayed when rule is activated.  An error message will be displayed when a Validations is fired.  A warning message will be displayed when an Alert is fired. Does not apply to Filter rules.</inlineHelpText>
+        <label>Message</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__EvaluationEvent__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Event that causes this rule to be evaluated.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Specify when this rule should be evaluated.</inlineHelpText>
+        <label>Evaluation Event</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Load</fullName>
+                    <default>false</default>
+                    <label>Load</label>
+                </value>
+                <value>
+                    <fullName>Edit</fullName>
+                    <default>false</default>
+                    <label>Edit</label>
+                </value>
+                <value>
+                    <fullName>Save</fullName>
+                    <default>false</default>
+                    <label>Save</label>
+                </value>
+                <value>
+                    <fullName>Always</fullName>
+                    <default>false</default>
+                    <label>Always</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SBQQ__EvaluationOrder__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Order in which this price rule is evaluated.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Specify the order of evaluation for this price rule. Higher ordered rules are evaluated last which means they &quot;win&quot; in case of conflict.</inlineHelpText>
+        <label>Evaluation Order</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SBQQ__LookupMessageField__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Field on Lookup Object corresponding to Product Rule Message. Field must be text.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Field on Lookup Object corresponding to Product Rule Message. Field must be text.</inlineHelpText>
+        <label>Lookup Message Field</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>SBQQ__Message__c</fullName>
+                    <default>false</default>
+                    <label>SBQQ__Message__c</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SBQQ__LookupObject__c</fullName>
+        <deprecated>false</deprecated>
+        <description>API Name of the Custom Object that stores the lookup data.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>API Name of the Custom Object that stores the lookup data.</inlineHelpText>
+        <label>Lookup Object</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>SBQQ__LookupData__c</fullName>
+                    <default>false</default>
+                    <label>SBQQ__LookupData__c</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SBQQ__LookupProductField__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Field on Lookup Object corresponding to Product Action Product Lookup. Field must be a lookup to the Product object.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Field on Lookup Object corresponding to Product Action Product Lookup. Field must be a lookup to the Product object.</inlineHelpText>
+        <label>Lookup Product Field</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>SBQQ__Product__c</fullName>
+                    <default>false</default>
+                    <label>SBQQ__Product__c</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SBQQ__LookupRequiredField__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Field on Lookup Object corresponding to Product Action Required checkbox. Field must be checkbox.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Field on Lookup Object corresponding to Product Action Required checkbox. Field must be checkbox.</inlineHelpText>
+        <label>Lookup Required Field</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>SBQQ__Required__c</fullName>
+                    <default>false</default>
+                    <label>SBQQ__Required__c</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SBQQ__LookupTypeField__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Field on Lookup Object corresponding to Product Action Type picklist. Field must be a Picklist or Text.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Field on Lookup Object corresponding to Product Action Type picklist. Field must be a Picklist or Text.</inlineHelpText>
+        <label>Lookup Type Field</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>SBQQ__Type__c</fullName>
+                    <default>false</default>
+                    <label>SBQQ__Type__c</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SBQQ__Scope__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Scopes the rule to the entire quote or specific product.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Applies the rule to the entire quote or specific product.</inlineHelpText>
+        <label>Scope</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Quote</fullName>
+                    <default>true</default>
+                    <label>Quote</label>
+                </value>
+                <value>
+                    <fullName>Product</fullName>
+                    <default>false</default>
+                    <label>Product</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SBQQ__Type__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Type of rule. Validation displays error messages. Selection causes products to be added or suggested. Alert displays a warning, but requires no rectification. Filter refines option lookup results for Dynamic Bundles.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Type of rule. Validation displays error messages. Selection causes products to be added or suggested. Alert displays a warning, but requires no rectification. Filter refines option lookup results for Dynamic Bundles.</inlineHelpText>
+        <label>Type</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Validation</fullName>
+                    <default>false</default>
+                    <label>Validation</label>
+                </value>
+                <value>
+                    <fullName>Selection</fullName>
+                    <default>false</default>
+                    <label>Selection</label>
+                </value>
+                <value>
+                    <fullName>Alert</fullName>
+                    <default>false</default>
+                    <label>Alert</label>
+                </value>
+                <value>
+                    <fullName>Filter</fullName>
+                    <default>false</default>
+                    <label>Filter</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <label>Product Rule</label>
+    <listViews>
+        <fullName>SBQQ__All</fullName>
+        <columns>NAME</columns>
+        <columns>SBQQ__Active__c</columns>
+        <columns>UPDATEDBY_USER</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <label>Product Rule Name</label>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Product Rules</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ReadWrite</sharingModel>
+    <validationRules>
+        <fullName>SBQQ__FilterTypeScope</fullName>
+        <active>true</active>
+        <description>Validation for Filter type Product Rules not having a value of &apos;Product&apos; in the Scope field.</description>
+        <errorConditionFormula>AND( 
+ISPICKVAL(SBQQ__Type__c, &quot;Filter&quot;),
+NOT(ISPICKVAL(SBQQ__Scope__c, &quot;Product&quot;))
+)</errorConditionFormula>
+        <errorMessage>The Scope field must point to &apos;Product&apos; for Filter type Product Rules.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>SBQQ__ProductEvaluationEventValidation</fullName>
+        <active>true</active>
+        <description>Validation for Scope Quote having an Evaluation Event of &apos;Edit&apos; and &apos;Load&apos;</description>
+        <errorConditionFormula>OR(AND(ISPICKVAL(SBQQ__EvaluationEvent__c, &quot;Edit&quot;), ISPICKVAL(SBQQ__Scope__c, &quot;Quote&quot;)), AND(ISPICKVAL(SBQQ__EvaluationEvent__c, &quot;Load&quot;), ISPICKVAL(SBQQ__Scope__c, &quot;Quote&quot;)))</errorConditionFormula>
+        <errorMessage>Only rules with Scope &apos;Product&apos; can have Evaluation Events of type &apos;Edit&apos; or &apos;Load&apos;</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>SBQQ__RequiredEvaluationEvent</fullName>
+        <active>true</active>
+        <description>Validation for required evaluation events if scope is filled in.</description>
+        <errorConditionFormula>AND(
+            ISBLANK(TEXT(SBQQ__EvaluationEvent__c)),
+            OR(ISPICKVAL(SBQQ__Scope__c, &quot;Quote&quot;), ISPICKVAL(SBQQ__Scope__c, &quot;Product&quot;))
+            )</errorConditionFormula>
+        <errorMessage>The Evaluation Event field must be populated with a value.</errorMessage>
+    </validationRules>
+    <visibility>Public</visibility>
+    <webLinks>
+        <fullName>SBQQ__CloneWithRelated</fullName>
+        <availability>online</availability>
+        <description>Launches the Product Rules preview page that allows users to clone the product rule and its related records or cancel the process.</description>
+        <displayType>button</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <linkType>url</linkType>
+        <masterLabel>Clone with Related</masterLabel>
+        <openType>replace</openType>
+        <protected>false</protected>
+        <url>/apex/SBQQ__CloneProductRule?id={!SBQQ__ProductRule__c.Id}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>SBQQ__CloneWithRelatedClassic</fullName>
+        <availability>online</availability>
+        <description>Clones this product rule with related child records.</description>
+        <displayType>button</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <linkType>url</linkType>
+        <masterLabel>Clone with Related</masterLabel>
+        <openType>replace</openType>
+        <protected>false</protected>
+        <url>{!URLFOR($Action.SBQQ__ProductRule__c.Clone, SBQQ__ProductRule__c.Id, [retURL=$Site.Prefix &amp; &apos;/&apos; &amp; SBQQ__ProductRule__c.Id,saveURL=$Site.Prefix &amp; &apos;/apex/SBQQ__CloneProductRule?id=&apos; &amp; SBQQ__ProductRule__c.Id])}</url>
+    </webLinks>
+</CustomObject>

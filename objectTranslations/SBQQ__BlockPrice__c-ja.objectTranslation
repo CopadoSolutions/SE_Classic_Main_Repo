@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>ブロック価格</value>
+    </caseValues>
+    <fields>
+        <help>このブロック価格が有効になる日付。この値はブロック価格のスナップショットが注文作成時に作成されたときに取得されます。</help>
+        <label><!-- Effective Date --></label>
+        <name>SBQQ__EffectiveDate__c</name>
+    </fields>
+    <fields>
+        <help>このブロック価格の数量範囲の下限。</help>
+        <label><!-- Lower Bound --></label>
+        <name>SBQQ__LowerBound__c</name>
+    </fields>
+    <fields>
+        <help>注文商品の作成時にこのブロック価格が適用される注文商品。</help>
+        <label><!-- Order Product --></label>
+        <name>SBQQ__OrderProduct__c</name>
+        <relationshipLabel><!-- Block Price Snapshots --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>このブロック価格のスナップショットの生成元である元の商品のブロック価格。</help>
+        <label><!-- Original Block Price --></label>
+        <name>SBQQ__OriginalBlockPrice__c</name>
+        <relationshipLabel><!-- Block Prices --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>該当する場合、ブロック価格設定を受信する価格表を選択します。</help>
+        <label><!-- Price Book --></label>
+        <name>SBQQ__PriceBook2__c</name>
+        <relationshipLabel><!-- Block Prices --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>指定された数量範囲内の親商品の価格。</help>
+        <label><!-- Price --></label>
+        <name>SBQQ__Price__c</name>
+    </fields>
+    <fields>
+        <help>該当する場合、ブロック価格設定を受信する商品を選択します。</help>
+        <label><!-- Product --></label>
+        <name>SBQQ__Product__c</name>
+        <relationshipLabel><!-- Block Prices --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>注文商品の作成時にこのブロック価格が適用される見積品目。</help>
+        <label><!-- Quote Line --></label>
+        <name>SBQQ__QuoteLine__c</name>
+        <relationshipLabel><!-- Block Prices --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>このブロック価格の数量範囲の上限。</help>
+        <label><!-- Upper Bound --></label>
+        <name>SBQQ__UpperBound__c</name>
+    </fields>
+    <layouts>
+        <layout>Block Price Layout</layout>
+        <sections>
+            <label>カスタムリンク</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>スナップショット情報</label>
+            <section>Snapshot Information</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>価格名</nameFieldLabel>
+    <webLinks>
+        <label><!-- EditAll --></label>
+        <name>SBQQ__EditAll</name>
+    </webLinks>
+</CustomObjectTranslation>
