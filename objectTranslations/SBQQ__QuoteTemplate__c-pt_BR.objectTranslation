@@ -1,0 +1,751 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Modelo de cotação</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Modelos de cotação</value>
+    </caseValues>
+    <fields>
+        <help>Selecione a caixa de seleção caso todos os produtos do pacote devam ser impressos em documentos de cotação, caso contrário, apenas aqueles que forem diferentes de zero serão impressos.</help>
+        <label><!-- Show All Package Product --></label>
+        <name>SBQQ__AllPackageProductsShown__c</name>
+    </fields>
+    <fields>
+        <help>Título usado para a seção Faturar a. O Valor padrão é &quot;Faturar a&quot;.</help>
+        <label><!-- Bill To Title --></label>
+        <name>SBQQ__BillToTitle__c</name>
+    </fields>
+    <fields>
+        <help>Cor das bordas da tabela expressas como um valor hexadecimal.</help>
+        <label><!-- Border Color --></label>
+        <name>SBQQ__BorderColor__c</name>
+    </fields>
+    <fields>
+        <help>Margem inferior na página.</help>
+        <label><!-- Bottom Margin --></label>
+        <name>SBQQ__BottomMargin__c</name>
+    </fields>
+    <fields>
+        <help>Selecione a caixa de seleção se os itens de linha de cotação com a opção Empacotado habilitada forem exibidos em documentos de cotação gerados a partir desse modelo.</help>
+        <label><!-- Show Bundled Products --></label>
+        <name>SBQQ__BundledProductsShown__c</name>
+    </fields>
+    <fields>
+        <help>Parte da cidade do endereço da empresa exibida em documentos de cotação.</help>
+        <label><!-- Company City --></label>
+        <name>SBQQ__CompanyCity__c</name>
+    </fields>
+    <fields>
+        <help>Parte do país do endereço da empresa exibido em documentos de cotação.</help>
+        <label><!-- Company Country --></label>
+        <name>SBQQ__CompanyCountry__c</name>
+    </fields>
+    <fields>
+        <help>Email da empresa exibido em documentos de cotação. Por exemplo, vendas@minhaempresa.com</help>
+        <label><!-- Company Email --></label>
+        <name>SBQQ__CompanyEmail__c</name>
+    </fields>
+    <fields>
+        <help>FAX da empresa exibido em documentos de cotação.</help>
+        <label><!-- Company Fax --></label>
+        <name>SBQQ__CompanyFax__c</name>
+    </fields>
+    <fields>
+        <help>Nome da empresa conforme exibido em documentos de cotação.</help>
+        <label><!-- Company Name --></label>
+        <name>SBQQ__CompanyName__c</name>
+    </fields>
+    <fields>
+        <help>Telefone da empresa exibido em documentos de cotação.</help>
+        <label><!-- Company Phone --></label>
+        <name>SBQQ__CompanyPhone__c</name>
+    </fields>
+    <fields>
+        <help>Parte do código postal do endereço da empresa exibido em documentos de cotação.</help>
+        <label><!-- Company Postal Code --></label>
+        <name>SBQQ__CompanyPostalCode__c</name>
+    </fields>
+    <fields>
+        <help>Slogan da empresa exibido em documentos de cotação.</help>
+        <label><!-- Company Slogan --></label>
+        <name>SBQQ__CompanySlogan__c</name>
+    </fields>
+    <fields>
+        <help>Parte do Estado do endereço da empresa exibido em documentos de cotação.</help>
+        <label><!-- Company State --></label>
+        <name>SBQQ__CompanyState__c</name>
+    </fields>
+    <fields>
+        <help>Parte da rua do endereço da empresa exibido em documentos de cotação.</help>
+        <label><!-- Company Street --></label>
+        <name>SBQQ__CompanyStreet__c</name>
+    </fields>
+    <fields>
+        <help>Selecione a caixa de seleção caso os produtos do componente com Componente habilitado não devam ser impressos em documentos de cotação.</help>
+        <label><!-- Hide Component Products --></label>
+        <name>SBQQ__ComponentProductsHidden__c</name>
+    </fields>
+    <fields>
+        <help>Campo no objeto de Cotação que calcula o desconto do cliente.</help>
+        <label><!-- Customer Discount Field --></label>
+        <name>SBQQ__CustomerDiscountField__c</name>
+        <picklistValues>
+            <masterLabel>Total Discount (Amt)</masterLabel>
+            <translation>Desconto total (Valor)</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Rótulo usado para desconto do cliente em seções de subtotais e totais.</help>
+        <label><!-- Customer Discount Label --></label>
+        <name>SBQQ__CustomerDiscountLabel__c</name>
+    </fields>
+    <fields>
+        <help>Selecione a caixa de seleção se quiser que o desconto do cliente no nível da cotação seja exibido nos totais da cotação.</help>
+        <label><!-- Show Customer Discount --></label>
+        <name>SBQQ__CustomerDiscountShown__c</name>
+    </fields>
+    <fields>
+        <help>Selecione essa caixa de seleção para marcar esse modelo como padrão.</help>
+        <label><!-- Default --></label>
+        <name>SBQQ__Default__c</name>
+    </fields>
+    <fields>
+        <help>Status de implantação desse modelo. Altere para &quot;Implantado&quot; para tornar esse modelo visível a usuários não administradores.</help>
+        <label><!-- Deployment Status --></label>
+        <name>SBQQ__DeploymentStatus__c</name>
+        <picklistValues>
+            <masterLabel>Deployed</masterLabel>
+            <translation>Implantado</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Development</masterLabel>
+            <translation>Em desenvolvimento</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Escolha como exibir cronogramas de descontos no documento de cotação. A opção Por linha de cotação mostrará o cronograma de descontos e a os Níveis alinhados à direita sob cada Linha de cotação.</help>
+        <label><!-- Show Discount Schedule --></label>
+        <name>SBQQ__DiscountScheduleShown__c</name>
+        <picklistValues>
+            <masterLabel>Per Quote Line</masterLabel>
+            <translation>Por linha de cotação</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Exclui o cabeçalho e o rodapé do modelo da Primeira página, Última página ou tanto da Primeira quanto da Última página.</help>
+        <label><!-- Exclude Header &amp; Footer --></label>
+        <name>SBQQ__ExcludeHeaderFooter__c</name>
+        <picklistValues>
+            <masterLabel>First Page</masterLabel>
+            <translation>Primeira página</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>First and Last</masterLabel>
+            <translation>Primeira e última</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Last Page</masterLabel>
+            <translation>Última página</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Exclui a numeração de página para Todas as páginas, Primeira página, Segunda página e/ou tanto para a Primeira quanto para a Segunda página.</help>
+        <label><!-- Exclude Page Numbers --></label>
+        <name>SBQQ__ExcludedPages__c</name>
+        <picklistValues>
+            <masterLabel>All Pages</masterLabel>
+            <translation>Todas as páginas</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>First Page</masterLabel>
+            <translation>Primeira página</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>First and Last</masterLabel>
+            <translation>Primeira e última</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Last Page</masterLabel>
+            <translation>Última página</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Família da fonte que deve ser aplicada ao texto nesse modelo.</help>
+        <label><!-- Font Family --></label>
+        <name>SBQQ__FontFamily__c</name>
+        <picklistValues>
+            <masterLabel>Courier</masterLabel>
+            <translation>Courier</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dosis</masterLabel>
+            <translation>Dosis</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Droid Sans</masterLabel>
+            <translation>Droid Sans</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Droid Serif</masterLabel>
+            <translation>Droid Serif</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Helvetica</masterLabel>
+            <translation>Helvetica</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Merriweather</masterLabel>
+            <translation>Merriweather</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Montserrat</masterLabel>
+            <translation>Montserrat</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Noto Sans JP</masterLabel>
+            <translation>Noto Sans JP</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Noto Sans KR</masterLabel>
+            <translation>Noto Sans KR</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Noto Sans SC</masterLabel>
+            <translation>Noto Sans SC</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Noto Sans TC</masterLabel>
+            <translation>Noto Sans TC</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Open Sans</masterLabel>
+            <translation>Open Sans</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PT Sans</masterLabel>
+            <translation>PT Sans</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PT Serif</masterLabel>
+            <translation>PT Serif</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Play</masterLabel>
+            <translation>Play</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Roboto</masterLabel>
+            <translation>Roboto</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Roboto Light</masterLabel>
+            <translation>Roboto Light</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Times</masterLabel>
+            <translation>Times</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Titillium Web</masterLabel>
+            <translation>Titillium Web</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ubuntu</masterLabel>
+            <translation>Ubuntu</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Tamanho da fonte padrão para o texto nesse documento de cotação.</help>
+        <label><!-- Font Size --></label>
+        <name>SBQQ__FontSize__c</name>
+    </fields>
+    <fields>
+        <help>O conteúdo do modelo que deve ser renderizado no rodapé.</help>
+        <label><!-- Footer Content --></label>
+        <name>SBQQ__FooterContent__c</name>
+        <relationshipLabel><!-- Quote Templates (Footer) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Altura do rodapé em documentos gerados a partir desse modelo.</help>
+        <label><!-- Footer Height --></label>
+        <name>SBQQ__FooterHeight__c</name>
+    </fields>
+    <fields>
+        <help>Nome da página do Visualforce que deve ser usada por esse modelo para gerar a árvore do XSL FO.</help>
+        <label><!-- Generator Name --></label>
+        <name>SBQQ__GeneratorName__c</name>
+    </fields>
+    <fields>
+        <help>Prefixo para rótulos de subtotal e total em totais gerais.</help>
+        <label><!-- Grand Total Prefix --></label>
+        <name>SBQQ__GrandTotalPrefix__c</name>
+    </fields>
+    <fields>
+        <help>Selecione o campo que tem os valores que você deseja usar ao agrupar e calcular o subtotal dos itens de linha.</help>
+        <label><!-- Group Field --></label>
+        <name>SBQQ__GroupField__c</name>
+        <picklistValues>
+            <masterLabel>Product Family</masterLabel>
+            <translation>Família de produtos</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Família da fonte que deve ser aplicada ao texto de título do Grupo nesse modelo.</help>
+        <label><!-- Group Font Family --></label>
+        <name>SBQQ__GroupFontFamily__c</name>
+        <picklistValues>
+            <masterLabel>Courier</masterLabel>
+            <translation>Courier</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dosis</masterLabel>
+            <translation>Dosis</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Droid Sans</masterLabel>
+            <translation>Droid Sans</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Droid Serif</masterLabel>
+            <translation>Droid Serif</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Helvetica</masterLabel>
+            <translation>Helvetica</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Merriweather</masterLabel>
+            <translation>Merriweather</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Montserrat</masterLabel>
+            <translation>Montserrat</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Noto Sans JP</masterLabel>
+            <translation>Noto Sans JP</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Noto Sans KR</masterLabel>
+            <translation>Noto Sans KR</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Noto Sans SC</masterLabel>
+            <translation>Noto Sans SC</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Noto Sans TC</masterLabel>
+            <translation>Noto Sans TC</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Open Sans</masterLabel>
+            <translation>Open Sans</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PT Sans</masterLabel>
+            <translation>PT Sans</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PT Serif</masterLabel>
+            <translation>PT Serif</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Play</masterLabel>
+            <translation>Play</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Roboto</masterLabel>
+            <translation>Roboto</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Roboto Light</masterLabel>
+            <translation>Roboto Light</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Times</masterLabel>
+            <translation>Times</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Titillium Web</masterLabel>
+            <translation>Titillium Web</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ubuntu</masterLabel>
+            <translation>Ubuntu</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Tamanho da fonte padrão para títulos de Grupo</help>
+        <label><!-- Group Font Size --></label>
+        <name>SBQQ__GroupFontSize__c</name>
+    </fields>
+    <fields>
+        <help>Estilo da fonte para títulos do Grupo. O Padrão será normal se estiver em branco.</help>
+        <label><!-- Group Font Style --></label>
+        <name>SBQQ__GroupFontStyle__c</name>
+        <picklistValues>
+            <masterLabel>Bold</masterLabel>
+            <translation>Negrito</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Italic</masterLabel>
+            <translation>Italic</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Normal</masterLabel>
+            <translation>Normal</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Underline</masterLabel>
+            <translation>Sublinhado</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Folga entre os grupos em pixels.</help>
+        <label><!-- Group Gap (px) --></label>
+        <name>SBQQ__GroupGap__c</name>
+    </fields>
+    <fields>
+        <help>Cor do sombreamento para células da tabela contendo título e descrição do grupo.</help>
+        <label><!-- Group Shading Color --></label>
+        <name>SBQQ__GroupShadingColor__c</name>
+    </fields>
+    <fields>
+        <help>Especifica o alinhamento do título do Grupo e da Descrição do grupo. É assumido como padrão para Esquerda se estiver em branco.</help>
+        <label><!-- Group Text Alignment --></label>
+        <name>SBQQ__GroupTextAlignment__c</name>
+        <picklistValues>
+            <masterLabel>Center</masterLabel>
+            <translation>Centro</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Left</masterLabel>
+            <translation>Esquerda</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Right</masterLabel>
+            <translation>Direita</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Cor do título do grupo e texto de descrição.</help>
+        <label><!-- Group Text Color --></label>
+        <name>SBQQ__GroupTextColor__c</name>
+    </fields>
+    <fields>
+        <help>Conteúdo do modelo de referências que deve ser renderizado no cabeçalho.</help>
+        <label><!-- Header Content --></label>
+        <name>SBQQ__HeaderContent__c</name>
+        <relationshipLabel><!-- Quote Templates (Header) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Altura do cabeçalho em documentos gerados a partir desse modelo.</help>
+        <label><!-- Header Height --></label>
+        <name>SBQQ__HeaderHeight__c</name>
+    </fields>
+    <fields>
+        <help>Selecione a caixa de seleção se quiser ocultar os subtotais do grupo em documentos gerados a partir desse modelo.</help>
+        <label><!-- Hide Group Subtotals --></label>
+        <name>SBQQ__HideGroupSubtotals__c</name>
+    </fields>
+    <fields>
+        <help>Título da seção exibida no campo Introdução. Para não exibir nenhum título, deixe esse campo em branco.</help>
+        <label><!-- Introduction Title --></label>
+        <name>SBQQ__IntroductionTitle__c</name>
+    </fields>
+    <fields>
+        <help>Margem esquerda na página.</help>
+        <label><!-- Left Margin --></label>
+        <name>SBQQ__LeftMargin__c</name>
+    </fields>
+    <fields>
+        <help>Especifique como numerar itens de linha em documentos gerados. &quot;Iniciar na cotação&quot; numera todas as linhas sequencialmente entre os grupos (se houver). &quot;Iniciar no grupo&quot; redefine os números dentro de cada grupo.</help>
+        <label><!-- Line Numbering --></label>
+        <name>SBQQ__LineNumbering__c</name>
+        <picklistValues>
+            <masterLabel>Start at group</masterLabel>
+            <translation>Iniciar no grupo</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Start at quote</masterLabel>
+            <translation>Iniciar na cotação</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Especifique o campo usado na classificação de itens de linha no documento.</help>
+        <label><!-- Line Sort Field --></label>
+        <name>SBQQ__LineSortField__c</name>
+        <picklistValues>
+            <masterLabel>Number</masterLabel>
+            <translation>Número</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>ID do Salesforce para o documento contendo a imagem de logotipo usada no PDF da cotação.</help>
+        <label><!-- Logo Document Id --></label>
+        <name>SBQQ__LogoDocumentId__c</name>
+    </fields>
+    <fields>
+        <help>Título da seção exibida no campo Observações. Para não exibir o título, deixe esse campo em branco.</help>
+        <label><!-- Notes Title --></label>
+        <name>SBQQ__NotesTitle__c</name>
+    </fields>
+    <fields>
+        <help>Altura da página em polegadas.</help>
+        <label><!-- Page Height --></label>
+        <name>SBQQ__PageHeight__c</name>
+    </fields>
+    <fields>
+        <help>Especifique o alinhamento do número de página para o documento. O Centro será assumido como padrão se o campo estiver em branco.</help>
+        <label><!-- Page Number Alignment --></label>
+        <name>SBQQ__PageNumberAlignment__c</name>
+        <picklistValues>
+            <masterLabel>Center</masterLabel>
+            <translation>Centro</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Left</masterLabel>
+            <translation>Esquerda</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Right</masterLabel>
+            <translation>Direita</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Especifique onde os números de página são exibidos no documento. O Rodapé é assumido como padrão se o campo estiver em branco.</help>
+        <label><!-- Page Number Position --></label>
+        <name>SBQQ__PageNumberPosition__c</name>
+        <picklistValues>
+            <masterLabel>Footer</masterLabel>
+            <translation>Rodapé</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Header</masterLabel>
+            <translation>Cabeçalho</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Declare a descrição de texto do número de página. &quot;{0}&quot; independentemente representa a página atual. &quot;{1}&quot; depende de &quot;{0}&quot; e representa o total de páginas com números de página. O padrão &quot;Página {0} de {1}&quot; será usado se o campo ficar em branco.</help>
+        <label><!-- Page Number Text --></label>
+        <name>SBQQ__PageNumberText__c</name>
+    </fields>
+    <fields>
+        <help>Orientação da página em documentos PDF gerados com esse modelo.</help>
+        <label><!-- Page Orientation --></label>
+        <name>SBQQ__PageOrientation__c</name>
+        <picklistValues>
+            <masterLabel>Landscape</masterLabel>
+            <translation>Paisagem</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Portrait</masterLabel>
+            <translation>Retrato</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Largura da página em polegadas.</help>
+        <label><!-- Page Width --></label>
+        <name>SBQQ__PageWidth__c</name>
+    </fields>
+    <fields>
+        <help>Rótulo usado para desconto do parceiro em seções de subtotais e totais.</help>
+        <label><!-- Partner Discount Label --></label>
+        <name>SBQQ__PartnerDiscountLabel__c</name>
+    </fields>
+    <fields>
+        <help>Selecione a caixa de seleção se quiser que o desconto do parceiro no nível da cotação seja exibido nos totais da cotação.</help>
+        <label><!-- Show Partner Discount --></label>
+        <name>SBQQ__PartnerDiscountShown__c</name>
+    </fields>
+    <fields>
+        <help>Selecione a caixa de seleção caso os produtos renovados devam ser mostrados em cotações de renovação desse modelo.</help>
+        <label><!-- Show Renewed Products --></label>
+        <name>SBQQ__RenewedProductsShown__c</name>
+    </fields>
+    <fields>
+        <help>Configuração da margem direita na página.</help>
+        <label><!-- Right Margin --></label>
+        <name>SBQQ__RightMargin__c</name>
+    </fields>
+    <fields>
+        <help>Campo de linha de cotação usado para acúmulo. Todas as linhas em que esse campo retorna o mesmo valor serão acumuladas para a primeira linha em que o valor ocorre.</help>
+        <label><!-- Roll-Up Field --></label>
+        <name>SBQQ__RollUpField__c</name>
+        <picklistValues>
+            <masterLabel>Product</masterLabel>
+            <translation>Produto</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Cor do sombreamento nos cabeçalhos de coluna expressos como hexadecimal.</help>
+        <label><!-- Shading Color --></label>
+        <name>SBQQ__ShadingColor__c</name>
+    </fields>
+    <fields>
+        <help>Rótulo usado para a seção &quot;Enviar para&quot;. O valor padrão é &quot;Enviar para&quot;.</help>
+        <label><!-- Ship To Title --></label>
+        <name>SBQQ__ShipToTitle__c</name>
+    </fields>
+    <fields>
+        <help>Campo usado para subagrupar itens de linha.</help>
+        <label><!-- Sub Group Field --></label>
+        <name>SBQQ__SubGroupField__c</name>
+        <picklistValues>
+            <masterLabel>Product Family</masterLabel>
+            <translation>Família de produtos</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Selecione um Campo para somar e exibir como subtotal de grupo/cotação.</help>
+        <label><!-- Subtotal Field --></label>
+        <name>SBQQ__SubtotalField__c</name>
+        <picklistValues>
+            <masterLabel>Customer Total</masterLabel>
+            <translation>Total do cliente</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>List Total</masterLabel>
+            <translation>Total de lista</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Net Total</masterLabel>
+            <translation>Total líquido</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Regular Total</masterLabel>
+            <translation>Total regular</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Insira um rótulo para o campo do subtotal.</help>
+        <label><!-- Subtotal Label --></label>
+        <name>SBQQ__SubtotalLabel__c</name>
+    </fields>
+    <fields>
+        <help>Recuo em pixels do corpo do termo da cotação com relação ao número do termo.</help>
+        <label><!-- Term Body Indent (px) --></label>
+        <name>SBQQ__TermBodyIndent__c</name>
+    </fields>
+    <fields>
+        <help>Título da seção que exibe os Termos e condições.</help>
+        <label><!-- Terms &amp; Conditions Title --></label>
+        <name>SBQQ__TermsConditionsTitle__c</name>
+    </fields>
+    <fields>
+        <help>Termos e condições impressos em cada documento gerado com esse modelo.</help>
+        <label><!-- Terms &amp; Conditions --></label>
+        <name>SBQQ__TermsConditions__c</name>
+    </fields>
+    <fields>
+        <help>Selecione a caixa de seleção caso os termos da cotação renderizados por esse modelo devam ser numerados.</help>
+        <label><!-- Number Terms --></label>
+        <name>SBQQ__TermsNumbered__c</name>
+    </fields>
+    <fields>
+        <help>Cor padrão (em HEX) aplicada ao texto neste modelo.</help>
+        <label><!-- Text Color --></label>
+        <name>SBQQ__TextColor__c</name>
+    </fields>
+    <fields>
+        <help>Margem superior na página.</help>
+        <label><!-- Top Margin --></label>
+        <name>SBQQ__TopMargin__c</name>
+    </fields>
+    <fields>
+        <help>Selecione o Campo para somar e exibir como total de grupo/cotação.</help>
+        <label><!-- Total Field --></label>
+        <name>SBQQ__TotalField__c</name>
+        <picklistValues>
+            <masterLabel>Customer Total</masterLabel>
+            <translation>Total do cliente</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>List Total</masterLabel>
+            <translation>Total de lista</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Net Total</masterLabel>
+            <translation>Total líquido</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Insira o rótulo para o campo definido no Campo de total.</help>
+        <label><!-- Total Label --></label>
+        <name>SBQQ__TotalLabel__c</name>
+    </fields>
+    <fields>
+        <help>Selecione a caixa de seleção para ocultar totais no documento de cotação.</help>
+        <label><!-- Hide Totals --></label>
+        <name>SBQQ__TotalsHidden__c</name>
+    </fields>
+    <fields>
+        <help>ID do Salesforce para o documento contendo a imagem de marca d&apos;água usada no PDF da cotação.</help>
+        <label><!-- Watermark ID --></label>
+        <name>SBQQ__WatermarkId__c</name>
+    </fields>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Quote Template Layout</layout>
+        <sections>
+            <label>Informações corporativas</label>
+            <section>Corporate Information</section>
+        </sections>
+        <sections>
+            <label>Links personalizados</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>Informações de estilo do grupo</label>
+            <section>Group Style Information</section>
+        </sections>
+        <sections>
+            <label>Informações de cabeçalho/rodapé</label>
+            <section>Header/Footer Information</section>
+        </sections>
+        <sections>
+            <label>Informações da página</label>
+            <section>Page Information</section>
+        </sections>
+        <sections>
+            <label>Opções de impressão</label>
+            <section>Print Options</section>
+        </sections>
+        <sections>
+            <label>Títulos da seção</label>
+            <section>Section Titles</section>
+        </sections>
+        <sections>
+            <label>Informações de estilo</label>
+            <section>Style Information</section>
+        </sections>
+        <sections>
+            <label>Termos e condições</label>
+            <section>Terms &amp;amp; Conditions</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Nome do modelo</nameFieldLabel>
+    <validationRules>
+        <errorMessage><!-- Footer Height can not be blank if Page Number Position is set to Footer. --></errorMessage>
+        <name>SBQQ__Blank_Footer_Height</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Header Height can not be blank if Page Number Position is set to Header. --></errorMessage>
+        <name>SBQQ__Blank_Header_Height</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- CloneWithRelated --></label>
+        <name>SBQQ__CloneWithRelated</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- CloneWithRelatedClassic --></label>
+        <name>SBQQ__CloneWithRelatedClassic</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Translate --></label>
+        <name>SBQQ__Translate</name>
+    </webLinks>
+</CustomObjectTranslation>

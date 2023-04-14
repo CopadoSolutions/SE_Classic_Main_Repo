@@ -1,0 +1,49 @@
+<apex:page controller="SBQQ.ContractSelectorController" tabStyle="SBQQ__Quote__c" showHeader="{!(!$Setup.SBQQ__GeneralSettings__c.SBQQ__GlobalHeaderPermUsed__c || !$Permission.SBQQ__HideGlobalHeader)}" docType="html-5.0" standardStylesheets="false" title="{!$Label.sbqq__lbl_contract_selector}">
+	<apex:stylesheet value="{!$Resource['sb']}"/>
+	<c:theme />
+	<div id="sbSelectContract" class="sb">
+		<apex:form >
+			<c:pageHeader title="{!$Label.sbqq__lbl_existing_contracts}" subtitle="{!quote.Name}" iconName="sf-icon-contract-1">
+				<div class="sbButtons">
+		          	<apex:commandButton styleClass="sbBtn" action="{!onSelect}" value="{!$Label.sbqq__lbl_select}"/>
+					<apex:commandButton styleClass="sbBtn" action="{!onSkip}" value="{!$Label.sbqq__lbl_skip}"/>
+					<apex:commandButton styleClass="sbBtn" action="{!onCancel}" value="{!$Label.sbqq__lbl_cancel}"/>
+		        </div>
+			</c:pageHeader>
+			<div class="sbBody">
+        		<div class="sbPageBlockSection">
+        			<apex:pageMessages />
+					<apex:inputHidden id="selectedContractId" value="{!selectedContractId}"/>
+					<c:pageBlockSection title="{!$Label.sbqq__lbl_select_contract}">
+						<table class="sbTable" border="0" cellspacing="0" cellpadding="0" width="100%">
+							<thead class="dr-table-thead">
+								<tr class="headerRow">
+									<th class="headerRow">&nbsp;</th>
+									<apex:repeat var="field" value="{!$ObjectType.Contract.FieldSets.SBQQ__ActiveContractLookup}">
+										<th class="headerRow">
+											<apex:outputText value="{!$ObjectType.Contract.Fields[field].label}"/>
+										</th>
+									</apex:repeat>
+								</tr>
+							</thead>
+							<tbody>
+								<apex:repeat id="contracts" var="contract" value="{!contracts}">
+									<tr class="dataRow">
+										<td class="dataCell">
+											<input type="radio" name="contractSelector" value="{!contract.record.Id}" onclick="document.getElementById('{!JSENCODE($Component.selectedContractId)}').value = this.value"/>
+										</td>
+										<apex:repeat var="field" value="{!$ObjectType.Contract.FieldSets.SBQQ__ActiveContractLookup}">
+											<td class="dataCell">
+												<apex:outputField value="{!contract.record[field]}" />
+											</td>
+										</apex:repeat>
+									</tr>
+								</apex:repeat>
+							</tbody>
+						</table>
+					</c:pageBlockSection>
+	        	</div>
+		    </div>
+		</apex:form>
+	</div>
+</apex:page>

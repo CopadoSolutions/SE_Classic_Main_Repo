@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Contrainte d&apos;option</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Contraintes d&apos;option</value>
+    </caseValues>
+    <fields>
+        <help>Marque cette contrainte comme active ou inactive.</help>
+        <label><!-- Active --></label>
+        <name>SBQQ__Active__c</name>
+    </fields>
+    <fields>
+        <help>Sélectionnez si vous souhaitez référencer les achats antérieurs d&apos;Option contraignante dans le Compte.</help>
+        <label><!-- Check Prior Purchases --></label>
+        <name>SBQQ__CheckPriorPurchases__c</name>
+    </fields>
+    <fields>
+        <help>Unité de gestion de stock produit contrainte.</help>
+        <label><!-- Configured SKU --></label>
+        <name>SBQQ__ConfiguredSKU__c</name>
+        <relationshipLabel><!-- Option Constraints --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Sélectionnez l&apos;option dans l&apos;offre groupée que vous souhaitez appliquer à cette contrainte.</help>
+        <label><!-- Constrained Option --></label>
+        <name>SBQQ__ConstrainedOption__c</name>
+        <relationshipLabel><!-- Constraints --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Sélectionnez une option supplémentaire si l&apos;Option contrainte contraint une autre option.</help>
+        <label><!-- Constraining Option --></label>
+        <name>SBQQ__ConstrainingOption__c</name>
+        <relationshipLabel><!-- Constraining --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Si plusieurs contraintes d&apos;options ciblent la même option contrainte, le regroupement des contraintes d&apos;options dans le même groupe nécessite la sélection de toutes les options contraignantes.</help>
+        <label><!-- Option Constraint Group --></label>
+        <name>SBQQ__OptionConstraintGroup__c</name>
+    </fields>
+    <fields>
+        <help>Sélectionnez le comportement de cette contrainte : Dépendance signifie que l&apos;inclusion est requise, alors qu&apos;Exclusion signifie que la contrainte d&apos;option n&apos;est pas sélectionnée lorsque l&apos;option est contraignante et inversement.</help>
+        <label><!-- Type --></label>
+        <name>SBQQ__Type__c</name>
+        <picklistValues>
+            <masterLabel>Dependency</masterLabel>
+            <translation>Dépendance</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Exclusion</masterLabel>
+            <translation>Exclusion</translation>
+        </picklistValues>
+    </fields>
+    <gender>Feminine</gender>
+    <layouts>
+        <layout>Option Constraint Layout</layout>
+        <sections>
+            <label>Liens personnalisés</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Nom de la contrainte</nameFieldLabel>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

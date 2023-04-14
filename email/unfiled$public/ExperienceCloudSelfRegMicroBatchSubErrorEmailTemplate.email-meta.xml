@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Esta plantilla se aplica a las solicitudes de registro automático que se procesan en lotes después del envío de la solicitud. Un usuario recibe este correo electrónico cuando hay un error al procesar su solicitud de registro automático.</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Experience Cloud: Correo electrónico de usuario de error de envío de microlote de registro automático</name>
+    <style>none</style>
+    <subject>Falló su registro en {!Community_Name}</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

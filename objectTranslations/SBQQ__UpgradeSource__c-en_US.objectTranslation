@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- Specify product to upgrade from. --></help>
+        <label><!-- Source Product --></label>
+        <name>SBQQ__SourceProduct__c</name>
+        <relationshipLabel><!-- Available Upgrade Sources --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Specify a ratio for quantity conversion from Upgrade Source to Upgrade Product. e.g. &quot;5:1&quot; indicates that 5 units of Upgrade Source convert to 1 unit of Upgrade Product. If blank, no Upgrade Conversion Rate is enforced. --></help>
+        <label><!-- Upgrade Conversion Rate --></label>
+        <name>SBQQ__UpgradeConversionRate__c</name>
+    </fields>
+    <fields>
+        <help><!-- Specify the product to upgrade to. --></help>
+        <label><!-- Upgrade Product --></label>
+        <name>SBQQ__UpgradeProduct__c</name>
+        <relationshipLabel><!-- Upgrade Sources --></relationshipLabel>
+    </fields>
+    <layouts>
+        <layout>Upgrade Source Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <validationRules>
+        <errorMessage><!-- Conversion Rate must be represented as a ratio of the format &quot;Upgrade Source:Upgrade Product&quot;. --></errorMessage>
+        <name>SBQQ__Conversion_Rate_Must_Fit_Ratio_Format</name>
+    </validationRules>
+</CustomObjectTranslation>

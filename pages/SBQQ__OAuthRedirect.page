@@ -1,0 +1,10 @@
+<apex:page id="OAuthRedirect" showHeader="false" sidebar="false" standardStylesheets="false">
+    <h2 id="oauth_done_msg">{!$Label.sbqq__msg_oauth_redirect}</h2>
+    <script>
+        if(window.opener) {
+            window.opener.focus();
+            window.opener.location.href = window.opener.location.href;
+            window.close();
+        }
+    </script>
+</apex:page>

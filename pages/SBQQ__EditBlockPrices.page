@@ -1,0 +1,129 @@
+<apex:page standardController="SBQQ__BlockPrice__c" extensions="SBQQ.BlockPriceEditorController" recordSetVar="prices" title="{!$Label.sbqq__lbl_edit_block_prices}">
+    <apex:stylesheet value="{!$Resource['sb']}"/>
+    <apex:sectionHeader title="{!$Label.sbqq__lbl_edit_block_prices}" subtitle="{!product.Name}"/>
+
+    <apex:pageMessages />
+
+    <apex:form >
+        <apex:actionFunction name="onPriceBookChange" action="{!onPriceBookChange}" rerender="prices, clonePriceBookOptions, allPriceBooks" />
+        <apex:actionFunction name="setIsDirty" action="{!setIsDirty}" rerender="allPriceBooks" />
+        <apex:actionFunction name="onClonePriceBook" action="{!onClonePriceBook}" rerender="prices, allPriceBooks" />
+        <apex:pageBlock title="{!$ObjectType.SBQQ__BlockPrice__c.labelPlural}" mode="edit">
+            <apex:pageBlockButtons >
+                <apex:commandButton action="{!onSave}" value="{!$Label.sbqq__lbl_save}"/>
+                <apex:commandButton action="{!onSaveAs}" value="{!$Label.sbqq__lbl_quick_save}"/>
+                <apex:commandButton action="{!onCancel}" value="{!$Label.sbqq__lbl_cancel}" immediate="true"/>
+            </apex:pageBlockButtons>
+            <div id="sbBlockPrice">
+                <apex:outputPanel id="allPriceBooks">
+                    <div id="sbPriceBookGroup">
+                        <apex:outputText styleClass="sbPriceBookText" value="{!$ObjectType.SBQQ__BlockPrice__c.fields.SBQQ__PriceBook2__c.label}"/>
+                        <apex:selectList size="1" value="{!priceBookId}" styleClass="sbPriceBookSelect priceBookOptions" onchange="confirmChange('{!isDirty}', '{!priceBookId}',this)">
+                            <apex:selectOptions value="{!priceBookOptions}"></apex:selectOptions>
+                        </apex:selectList>
+                    </div>
+                    <div id="sbClonePriceBookGroup">
+                        <apex:outputText styleClass="sbPriceBookText" value="{!$Label.sbqq__lbl_clone_from}"/>
+                        <apex:outputPanel >
+                            <apex:selectList size="1" value="{!priceBookIdCopy}" styleClass="sbPriceBookSelect" id="clonePriceBookOptions">
+                                <apex:selectOptions value="{!clonePriceBookOptions}"></apex:selectOptions>
+                            </apex:selectList>
+                        </apex:outputPanel>
+                        <apex:commandButton styleClass="sbCloneFromPriceBook" onclick="confirmClone({!isDirty})" value="{!$Label.sbqq__lbl_clone}" rerender="allPriceBooks"/>
+                    </div>
+                </apex:outputPanel>
+            </div>
+            <apex:outputPanel id="prices">
+                <table class="list" border="0" cellspacing="0" cellpadding="0">
+                    <thead class="dr-table-thead">
+                    <tr class="headerRow">
+                        <th class="headerRow">
+                            <apex:outputText value="{!$ObjectType.SBQQ__BlockPrice__c.fields.Name.label}"/>
+                        </th>
+                        <th class="headerRow">
+                            <apex:outputText value="{!$ObjectType.SBQQ__BlockPrice__c.fields.SBQQ__LowerBound__c.label}"/>
+                        </th>
+                        <th class="headerRow">
+                            <apex:outputText value="{!$ObjectType.SBQQ__BlockPrice__c.fields.SBQQ__UpperBound__c.label}"/>
+                        </th>
+                        <apex:repeat var="currency" value="{!priceModel.columnHeadings}">
+                            <th class="headerRow">
+                                <apex:outputText value="{!$ObjectType.SBQQ__BlockPrice__c.fields.SBQQ__Price__c.label} ({!currency})"/>
+                                <apex:outputPanel rendered="{!priceModel.hasOverageRate}">
+                                    <br/>
+                                    <apex:outputText value="{!priceModel.overageRateFieldLabel} ({!currency})"/>
+                                </apex:outputPanel>
+                            </th>
+                        </apex:repeat>
+                        <th class="headerRow"></th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <apex:repeat var="row" value="{!priceModel.priceRows}">
+                        <tr class="dataRow" >
+                            <td class="dataCell">
+                                <apex:inputText onchange="setIsDirty()" styleClass="blockName" value="{!row.template.Name}"/>
+                            </td>
+                            <td class="dataCell">
+                                <apex:inputField onchange="setIsDirty()" styleClass="lowerBound" value="{!row.template.SBQQ__LowerBound__c}"/>
+                            </td>
+                            <td class="dataCell">
+                                <apex:inputField onchange="setIsDirty()" value="{!row.template.SBQQ__UpperBound__c}"/>
+                            </td>
+                            <apex:repeat var="price" value="{!row.prices}">
+                                <td class="dataCell">
+                                    <apex:inputField onchange="setIsDirty()" value="{!price.SBQQ__Price__c}"/>
+                                    <apex:outputPanel rendered="{!priceModel.hasOverageRate}">
+                                        <br/>
+                                        <apex:inputField onchange="setIsDirty()" value="{!price[priceModel.overageRateFieldName]}"/>
+                                    </apex:outputPanel>
+                                </td>
+                            </apex:repeat>
+                            <td class="dataCell">
+                                <apex:commandButton value="+" action="{!onAddPrice}" oncomplete="setFocusOnNewBlock('{!newBlockIdx}')" rerender="prices, allPriceBooks">
+                                    <apex:param name="selection" assignTo="{!targetRowId}" value="{!row.id}"/>
+                                </apex:commandButton>
+                                <apex:commandButton value="-" immediate="true" action="{!onRemovePrice}" rerender="prices" rendered="{!OR(priceModel.rowCount > 1,NOT(row.first))}">
+                                    <apex:param name="selection" assignTo="{!targetRowId}" value="{!row.id}"/>
+                                </apex:commandButton>
+                            </td>
+                        </tr>
+                    </apex:repeat>
+                    </tbody>
+                </table>
+            </apex:outputPanel>
+            <apex:outputPanel id="scriptPanel">
+                <script language="JavaScript">
+					function setFocusOnNewBlock(newBlockIdx) {
+						var blockNames = document.getElementsByClassName("blockName");
+						var target = blockNames[newBlockIdx];
+						target.focus();
+					}
+
+					function confirmChange(isDirty, pbId, element) {
+						var isDirty = isDirty === 'true' ? true : false;
+                        var pbId = (pbId != null && pbId != '') ? pbId.valueOf() : '';
+						if (isDirty) {
+                            if (confirm("Your changes will be lost if you do not save.") == false) {
+                                element.value = pbId;
+                                return;
+                            }
+						}
+						onPriceBookChange();
+					}
+
+					function confirmClone(isDirty) {
+					    if (isDirty) {
+                            if (confirm("Your changes will be lost if you do not save.") == false) {
+                                return;
+                            }
+					    }
+                        onClonePriceBook();
+					}
+				</script>
+            </apex:outputPanel>
+
+        </apex:pageBlock>
+    </apex:form>
+
+</apex:page>

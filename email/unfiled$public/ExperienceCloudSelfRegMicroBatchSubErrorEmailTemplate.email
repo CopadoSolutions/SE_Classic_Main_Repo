@@ -1,0 +1,14 @@
+Se produjo un problema con su registro en {!Community_Name}.
+
+
+              Resuelva el siguiente error: 
+
+{!SelfReg_MicroBatch_Error}
+
+
+              Diríjase a {!Community_Url} para intentarlo de nuevo, o póngase en contacto con su administrador para obtener ayuda.
+
+
+              Gracias,
+
+              {!Organization.Name}

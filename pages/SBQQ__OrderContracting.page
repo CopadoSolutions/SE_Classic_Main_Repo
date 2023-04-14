@@ -1,0 +1,6 @@
+<apex:page id="OrderContracting" standardController="Order" extensions="SBQQ.QueueableJobCheckerExt">
+    <c:standardRecalculating recordId="{!record.Id}" jobId="{!queueableJobId}" jobStatus="{!jobStatus}" jobType="{!jobType}"
+                             inProgressMessage="{!$Label.sbqq__msg_background_contracting_in_progress}"
+                             jobStatusChecker="{!$RemoteAction.QueueableJobCheckerExt.getJobStatus}"
+                             jobDetails="{!$Label.sbqq__msg_background_contracting_in_progress} {!jobDetails}" autoRefresh="{!autoRefresh}"/>
+</apex:page>
