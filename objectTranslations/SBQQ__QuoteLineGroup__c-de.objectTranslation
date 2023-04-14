@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Gruppe von Angebotsbelegposten</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Gruppen von Angebotsbelegposten</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value><!-- Gruppe von Angebotsbelegposten --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+        <value><!-- Gruppen von Angebotsbelegposten --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value><!-- Gruppe von Angebotsbelegposten --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>true</plural>
+        <value><!-- Gruppen von Angebotsbelegposten --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value><!-- Gruppe von Angebotsbelegposten --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value><!-- Gruppen von Angebotsbelegposten --></value>
+    </caseValues>
+    <fieldSets>
+        <label><!-- Line Editor --></label>
+        <name>SBQQ__LineEditor</name>
+    </fieldSets>
+    <fields>
+        <help>Account, den diese Gruppe mit Angebotsbelegposten referenziert.</help>
+        <label><!-- Account --></label>
+        <name>SBQQ__Account__c</name>
+        <relationshipLabel><!-- Quote Line Groups --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Standardsatz für den zusätzlichen Rabatt, der auf Belegposten in dieser Gruppe angewandt wird.</help>
+        <label><!-- Additional  Disc. (%) --></label>
+        <name>SBQQ__AdditionalDiscountRate__c</name>
+    </fields>
+    <fields>
+        <help>Legt die Abrechnungshäufigkeit fest.</help>
+        <label><!-- Billing Frequency --></label>
+        <name>SBQQ__BillingFrequency__c</name>
+    </fields>
+    <fields>
+        <help>Gesamtbetrag der Belegposten dieser Gruppe vor der Anwendung von Partnerrabatten.</help>
+        <label><!-- Customer Total --></label>
+        <name>SBQQ__CustomerTotal__c</name>
+    </fields>
+    <fields>
+        <help>Beschreibung für diese Gruppe.</help>
+        <label><!-- Description --></label>
+        <name>SBQQ__Description__c</name>
+    </fields>
+    <fields>
+        <help>Enddatum für Abonnements in dieser Gruppe.</help>
+        <label><!-- End Date --></label>
+        <name>SBQQ__EndDate__c</name>
+    </fields>
+    <fields>
+        <help>Favorit, zu dem diese Gruppe mit Angebotsbelegposten gehört.</help>
+        <label><!-- Favorite --></label>
+        <name>SBQQ__Favorite__c</name>
+        <relationshipLabel><!-- Quote Line Groups --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Gesamtbetrag für die Belegposten dieser Gruppe vor der Anwendung von Rabatten.</help>
+        <label><!-- List Total --></label>
+        <name>SBQQ__ListTotal__c</name>
+    </fields>
+    <fields>
+        <help>Standardmäßiger Aufschlagsatz, der auf Belegposten in dieser Gruppe angewandt wird. Dieser Wert überschreibt die Festlegung auf der Belegpostenebene.</help>
+        <label><!-- Markup (%) --></label>
+        <name>SBQQ__MarkupRate__c</name>
+    </fields>
+    <fields>
+        <help>Gesamtbetrag für die Belegposten dieser Gruppe nach der Anwendung aller Rabatte.</help>
+        <label><!-- Net Total --></label>
+        <name>SBQQ__NetTotal__c</name>
+    </fields>
+    <fields>
+        <help>Sortierreihenfolge dieser Gruppe innerhalb des Angebots.</help>
+        <label><!-- Number --></label>
+        <name>SBQQ__Number__c</name>
+    </fields>
+    <fields>
+        <help>Kennzeichnet die gesamte Gruppe als optional.</help>
+        <label><!-- Optional --></label>
+        <name>SBQQ__Optional__c</name>
+    </fields>
+    <fields>
+        <help>Der bei dieser Gruppe verwendete Angebotsprozess. Überschreibt den Wert auf Angebotsebene.</help>
+        <label><!-- Quote Process --></label>
+        <name>SBQQ__QuoteProcess__c</name>
+        <relationshipLabel><!-- Quote Line Groups --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Angebot, zu dem diese Gruppe gehört.</help>
+        <label><!-- Quote --></label>
+        <name>SBQQ__Quote__c</name>
+        <relationshipLabel><!-- Quote Line Groups --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Aktivieren Sie dieses Kontrollkästchen, um einen separaten Vertrag für Abonnements in dieser Gruppe zu generieren.</help>
+        <label><!-- Separate Contract --></label>
+        <name>SBQQ__SeparateContract__c</name>
+    </fields>
+    <fields>
+        <help>Lösungsgruppe, aus der diese Angebotsgruppe erstellt wurde (sofern vorhanden).</help>
+        <label><!-- Solution Group --></label>
+        <name>SBQQ__SolutionGroup__c</name>
+        <relationshipLabel><!-- Quote Line Groups --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Quelle einer duplizierten Gruppe von Angebotsbelegposten.</help>
+        <label><!-- Source --></label>
+        <name>SBQQ__Source__c</name>
+        <relationshipLabel><!-- Quote Line Groups --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Startdatum für Abonnements in dieser Gruppe.</help>
+        <label><!-- Start Date --></label>
+        <name>SBQQ__StartDate__c</name>
+    </fields>
+    <fields>
+        <help>Abonnementlaufzeit, die für die Zuteilung berechtigter Produkte in dieser Gruppe verwendet wird.</help>
+        <label><!-- Subscription Term --></label>
+        <name>SBQQ__SubscriptionTerm__c</name>
+    </fields>
+    <fields>
+        <help>Geben Sie den gewünschten Kundenbetrag ein, um automatisch den zusätzlichen Rabatt für rabattfähige Belegposten zu berechnen.</help>
+        <label><!-- Target Customer Amount --></label>
+        <name>SBQQ__TargetCustomerAmount__c</name>
+    </fields>
+    <gender>Feminine</gender>
+    <layouts>
+        <layout>Quote Line Group Layout</layout>
+        <sections>
+            <label>Benutzerdefinierte Links</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>Beschreibung</label>
+            <section>Description</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Gruppenname</nameFieldLabel>
+</CustomObjectTranslation>

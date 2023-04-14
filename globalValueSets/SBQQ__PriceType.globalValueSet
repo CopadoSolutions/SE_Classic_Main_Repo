@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Volume</fullName>
+        <default>false</default>
+        <label>Volume</label>
+    </customValue>
+    <customValue>
+        <fullName>Tiered</fullName>
+        <default>false</default>
+        <label>Tiered</label>
+    </customValue>
+    <masterLabel>Price Type</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

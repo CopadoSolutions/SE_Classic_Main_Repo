@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Fonctionnalité produit</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Fonctionnalités produit</value>
+    </caseValues>
+    <fieldSets>
+        <label><!-- Configurator --></label>
+        <name>SBQQ__Configurator</name>
+    </fieldSets>
+    <fields>
+        <help>Attribuez cette fonctionnalité à une catégorie afin de regrouper les fonctionnalités contenant des options associées.</help>
+        <label><!-- Category --></label>
+        <name>SBQQ__Category__c</name>
+        <picklistValues>
+            <masterLabel>Hardware</masterLabel>
+            <translation>Matériel</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Software</masterLabel>
+            <translation>Logiciel</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Le nom d&apos;API du champ défini, utilisé pour cette fonctionnalité durant la configuration.</help>
+        <label><!-- Configuration Field Set --></label>
+        <name>SBQQ__ConfigurationFieldSet__c</name>
+        <picklistValues>
+            <masterLabel>OptionConfiguration</masterLabel>
+            <translation>OptionConfiguration</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>L&apos;offre groupée de produits qui inclut cette fonctionnalité. Si vous avez créé la fonctionnalité à partir de la page de détail du produit, il doit déjà être renseigné.</help>
+        <label><!-- Configured SKU --></label>
+        <name>SBQQ__ConfiguredSKU__c</name>
+        <relationshipLabel><!-- Features --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Barème de remise à appliquer au produit sélectionné par toutes les options dans cette fonctionnalité. Il remplace le barème de remise sélectionné dans le produit.</help>
+        <label><!-- Discount Schedule --></label>
+        <name>SBQQ__DiscountSchedule__c</name>
+        <relationshipLabel><!-- Product Features --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Le nom d&apos;API de l&apos;ensemble de champs utilisé lors du filtrage des options dynamiques pour cette fonctionnalité lors de la configuration.</help>
+        <label><!-- Dynamic Option Filter Field Set --></label>
+        <name>SBQQ__DynamicProductFilterFieldSet__c</name>
+        <picklistValues>
+            <masterLabel>ConfiguratorFilter</masterLabel>
+            <translation>ConfiguratorFilter</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Le nom d&apos;API de l&apos;ensemble de champs utilisé lors de l&apos;affichage des options dynamiques pour cette fonctionnalité lors de la configuration.</help>
+        <label><!-- Dynamic Option Lookup Field Set --></label>
+        <name>SBQQ__DynamicProductLookupFieldSet__c</name>
+        <picklistValues>
+            <masterLabel>ConfiguratorLookup</masterLabel>
+            <translation>ConfiguratorLookup</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Nombre maximum d&apos;options qui peuvent être sélectionnées pour cette fonctionnalité dans l&apos;offre groupée de produits.</help>
+        <label><!-- Max Options --></label>
+        <name>SBQQ__MaxOptionCount__c</name>
+    </fields>
+    <fields>
+        <help>Nombre minimum d&apos;options qui peuvent être sélectionnées pour cette fonctionnalité dans l&apos;offre groupée de produits.</help>
+        <label><!-- Min Options --></label>
+        <name>SBQQ__MinOptionCount__c</name>
+    </fields>
+    <fields>
+        <help>Numéro séquentiel qui détermine l&apos;ordre de tri des fonctionnalités dans la liste associée du produit.</help>
+        <label><!-- Number --></label>
+        <name>SBQQ__Number__c</name>
+    </fields>
+    <fields>
+        <help>Détermine comment l&apos;utilisateur sélectionne les options jointes à ce produit. « Cliquer » présente les options avec des cases à cocher en regard. « Ajouter » affiche un bouton qui présente des options prédéfinies. « Dynamique » affiche un bouton qui présente tous les produits actifs.</help>
+        <label><!-- Option Selection Method --></label>
+        <name>SBQQ__OptionSelectionMethod__c</name>
+        <picklistValues>
+            <masterLabel>Add</masterLabel>
+            <translation>Ajouter</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Click</masterLabel>
+            <translation>Cliquer</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dynamic</masterLabel>
+            <translation>Dynamique</translation>
+        </picklistValues>
+    </fields>
+    <gender>Feminine</gender>
+    <layouts>
+        <layout>Product Feature Layout</layout>
+        <sections>
+            <label>Liens personnalisés</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Nom de la fonctionnalité</nameFieldLabel>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Min Options cannot be negative. --></errorMessage>
+        <name>SBQQ__MinOptionValidation</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Translate --></label>
+        <name>SBQQ__Translate</name>
+    </webLinks>
+</CustomObjectTranslation>

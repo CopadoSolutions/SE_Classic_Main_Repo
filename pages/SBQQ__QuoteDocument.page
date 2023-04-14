@@ -1,0 +1,114 @@
+<apex:page language="{!vfLanguage}" controller="SBQQ.DocumentGeneratorController" contentType="application/xml" cache="false" showHeader="false" sidebar="false">
+    <root xmlns="http://www.w3.org/1999/XSL/Format">
+        <apex:variable var="shadingColor" value="{!IF(template.SBQQ__ShadingColor__c=='FFFFFF','',template.SBQQ__ShadingColor__c)}"/>
+        <c:layoutMasterSet template="{!template}" headerHeight="0" footerHeight="15"/>
+
+        <page-sequence master-reference="default-master">
+            <!--Apex can not parse special characters (<>='') properly, so we need to create apex variables and concatenate them-->
+            <apex:variable var="pn" value="<page-number/>"/>
+            <apex:variable var="pncAttr" value=" ref-id='"/>
+            <apex:variable var="pncAttrValue" value="{!pncAttr}last-page'/>"/>
+            <apex:variable var="pnc" value="<page-number-citation {!pncAttrValue}"/>
+
+            <static-content flow-name="xsl-region-before">
+                <apex:variable rendered="{!pageNumber == 'true' && template.SBQQ__PageNumberPosition__c == 'Header'}" value="" var="tempHead">
+                    <c:pageNumber template="{!template}" pageNumber="{!pageNumber}" pn="{!pn}" pnc="{!pnc}"/>
+                </apex:variable>
+                <!-- Static Contents need at least an empty block inside to render properly, since it needs to reserve space in the document. -->
+                <block></block>
+            </static-content>
+            <static-content flow-name="xsl-region-after">
+                <apex:variable rendered="{!pageNumber == 'true' && (template.SBQQ__PageNumberPosition__c == '' || template.SBQQ__PageNumberPosition__c == 'Footer')}" value="" var="tempFoot">
+                    <c:pageNumber template="{!template}" pageNumber="{!pageNumber}" pn="{!pn}" pnc="{!pnc}"/>
+                </apex:variable>
+                <!-- Static Contents need at least an empty block inside to render properly, since it needs to reserve space in the document. -->
+                <block></block>
+            </static-content>
+            <flow flow-name="xsl-region-body">
+                <apex:outputPanel layout="none" rendered="{!hasQuote}">
+                    <table font-size="8.5pt" table-layout="fixed" width="100%">
+                        <table-column column-width="300px" />
+                        <table-column column-width="proportional-column-width(1)" />
+                        <table-column column-width="130px" />
+
+                        <table-body>
+                            <table-row>
+                                <table-cell padding="5px">
+                                    <c:companyInfo quote="{!quote}" template="{!template}"/>
+                                </table-cell>
+                                <table-cell>
+                                    <block> </block>
+                                </table-cell>
+                                <table-cell text-align="right" padding="5px">
+                                    <c:quoteInfo quote="{!quote}" template="{!template}"/>
+                                </table-cell>
+                            </table-row>
+                        </table-body>
+                    </table>
+
+                    <c:customerInfo quote="{!quote}" template="{!template}"/>
+                    <c:salesInfo quote="{!quote}" template="{!template}"/>
+
+                    <!--  Introduction -->
+                    <c:container bodyRendered="{!NOT(ISBLANK(quote.SBQQ__Introduction__c))}">
+                    <block margin-top="0.2in" keep-together.within-column="always">
+                        <block font-size="9pt" font-weight="bold">
+                            <apex:outputText value="{!HTMLENCODE(template.SBQQ__IntroductionTitle__c)}"/>
+                        </block>
+                        <block font-size="8pt">
+                            <c:multiLineText value="{!HTMLENCODE(quote.SBQQ__Introduction__c)}"/>
+                        </block>
+                    </block>
+                    </c:container>
+
+                    <c:lineItemGroups quote2="{!quote2}" template="{!template}"
+                    	staticGroups="{!staticGroups}" dynamicGroups="{!dynamicGroups}"
+                    	currencyFormatPattern="{!currencyFormatPattern}"
+                    	fontSize="7.5" fontFamily="{!fontFamily}" textColor="{!textColor}"/>
+                    <c:quoteTotals quote2="{!quote2}" template="{!template}"
+                    	staticGroups="{!staticGroups}" dynamicGroups="{!dynamicGroups}"
+                    	currencyFormatPattern="{!currencyFormatPattern}"
+                    	fontSize="7.5" fontFamily="{!fontFamily}" textColor="{!textColor}"/>
+                    <!--  Notes -->
+                    <c:container bodyRendered="{!NOT(ISBLANK(quote.SBQQ__Notes__c))}">
+                    <block margin-top="0.2in" font-size="9pt" font-weight="bold">
+                        <apex:outputText value="{!HTMLENCODE(template.SBQQ__NotesTitle__c)}"/>
+                    </block>
+                    <block font-size="8pt">
+                        <c:multiLineText value="{!HTMLENCODE(quote.SBQQ__Notes__c)}"/>
+                    </block>
+                    </c:container>
+
+                    <!--  Terms & Conditions -->
+                    <block margin-top="0.2in" font-size="9pt" font-weight="bold">
+                        <apex:outputText value="{!HTMLENCODE(template.SBQQ__TermsConditionsTitle__c)}"/>
+                    </block>
+                    <block font-size="8pt">
+                        <c:multiLineText value="{!HTMLENCODE(template.SBQQ__TermsConditions__c)}"/>
+                        <c:quoteTerms quote="{!quote2}" template="{!template}" bodyIndent="{!IF(ISBLANK(template.SBQQ__TermBodyIndent__c),15,template.SBQQ__TermBodyIndent__c)}"/>
+                    </block>
+
+                    <c:signatureBlock />
+
+                    <block margin-top="0.3in" font-size="9pt">
+                        Please sign and email to
+                        <inline> </inline><apex:outputText value="{!quote.SalesRep__r.Name}"/>
+                        <inline> at </inline><apex:outputText value="{!quote.SalesRep__r.Email}"/>
+                        <c:container bodyRendered="{!NOT(ISNULL(quote.SalesRep__r.Fax))}">
+                            <inline>or fax to </inline>
+                            <apex:outputText value="{!quote.SalesRep__r.Fax}"/>
+                        </c:container>
+                    </block>            .
+
+                    <block margin-top="0.1in" text-align="center" font-size="8.5pt" font-family="sans-serif" font-weight="bold"
+                        width="100%" padding="5px" background-color="#{!shadingColor}">
+                        THANK YOU FOR YOUR BUSINESS!
+                    </block>
+                </apex:outputPanel>
+                <!--  This is here to get total page count -->
+                <block id="last-page" />
+            </flow>
+        </page-sequence>
+    </root>
+
+</apex:page>

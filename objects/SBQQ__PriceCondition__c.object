@@ -1,0 +1,450 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <customHelpPage>SBQQ__PriceConditionHelp</customHelpPage>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <description>Condition that fires the parent price rule.</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableEnhancedLookup>false</enableEnhancedLookup>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>false</enableReports>
+    <enableSearch>false</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ControlledByParent</externalSharingModel>
+    <fields>
+        <fullName>SBQQ__Field__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Field on Quote Line or Product Option object that is evaluated by this condition.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Choose the field that should contain the value you enter in the Value field.</inlineHelpText>
+        <label>Field</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Product Code</fullName>
+                    <default>false</default>
+                    <label>Product Code</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SBQQ__FilterFormula__c</fullName>
+        <deprecated>false</deprecated>
+        <description>You can construct a formula using many of Salesforce&apos;s available operators and functions. Refer to Salesforce CPQ documentation for the full list. You can also add in information from the quote or the target object field (i.e., SBQQ__QuoteLine__c.SBQQ__ListPrice__c).</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter a formula with operators, functions, and available fields on quote and target object. Not supported on legacy calculator.</inlineHelpText>
+        <label>Filter Formula</label>
+        <length>131072</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>SBQQ__FilterType__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Type of filtering used in this condition.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Choose Variable to evaluate this condition against a Summary Variable; otherwise, choose Value.</inlineHelpText>
+        <label>Filter Type</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Value</fullName>
+                    <default>false</default>
+                    <label>Value</label>
+                </value>
+                <value>
+                    <fullName>Variable</fullName>
+                    <default>false</default>
+                    <label>Variable</label>
+                </value>
+                <value>
+                    <fullName>Formula</fullName>
+                    <default>false</default>
+                    <label>Formula</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SBQQ__FilterVariable__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>Summary variable that filters this condition.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select the Summary Variable you want this condition to use as a filter.</inlineHelpText>
+        <label>Filter Variable</label>
+        <referenceTo>SBQQ__SummaryVariable__c</referenceTo>
+        <relationshipLabel>Filtered Price Conditions</relationshipLabel>
+        <relationshipName>FilteredPriceConditions</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__Index__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Assign an unique number to this Condition to reference it in the Price Rule&apos;s Advanced Condition.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Assign an unique number to this Condition to reference it in the Price Rule&apos;s Advanced Condition.</inlineHelpText>
+        <label>Index</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SBQQ__Object__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Object against which the condition is evaluated.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Object against which the condition is evaluated.</inlineHelpText>
+        <label>Object</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Quote</fullName>
+                    <default>false</default>
+                    <label>Quote</label>
+                </value>
+                <value>
+                    <fullName>Quote Line</fullName>
+                    <default>false</default>
+                    <label>Quote Line</label>
+                </value>
+                <value>
+                    <fullName>Product Option</fullName>
+                    <default>false</default>
+                    <label>Product Option</label>
+                </value>
+                <value>
+                    <fullName>Summary Variable</fullName>
+                    <default>false</default>
+                    <label>Summary Variable</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SBQQ__Operator__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The operator that is applied when comparing the Field with the Value.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select the operator to apply when comparing the Field with the Value.</inlineHelpText>
+        <label>Operator</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>equals</fullName>
+                    <default>false</default>
+                    <label>equals</label>
+                </value>
+                <value>
+                    <fullName>not equals</fullName>
+                    <default>false</default>
+                    <label>not equals</label>
+                </value>
+                <value>
+                    <fullName>less than</fullName>
+                    <default>false</default>
+                    <label>less than</label>
+                </value>
+                <value>
+                    <fullName>less or equals</fullName>
+                    <default>false</default>
+                    <label>less or equals</label>
+                </value>
+                <value>
+                    <fullName>greater than</fullName>
+                    <default>false</default>
+                    <label>greater than</label>
+                </value>
+                <value>
+                    <fullName>greater or equals</fullName>
+                    <default>false</default>
+                    <label>greater or equals</label>
+                </value>
+                <value>
+                    <fullName>starts with</fullName>
+                    <default>false</default>
+                    <label>starts with</label>
+                </value>
+                <value>
+                    <fullName>ends with</fullName>
+                    <default>false</default>
+                    <label>ends with</label>
+                </value>
+                <value>
+                    <fullName>contains</fullName>
+                    <default>false</default>
+                    <label>contains</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SBQQ__ParentRuleIsActive__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>SBQQ__Rule__r.SBQQ__Active__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>ParentRuleIsActive</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__RuleTargetsCalculator__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>ISPICKVAL(SBQQ__Rule__r.SBQQ__TargetObject__c, &apos;Calculator&apos;) || ISPICKVAL(SBQQ__Rule__r.SBQQ__TargetObject__c, &apos;Quote Line&apos;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>RuleTargetsCalculator</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__Rule__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Price rule running this condition.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Price rule running this condition.</inlineHelpText>
+        <label>Price Rule</label>
+        <referenceTo>SBQQ__PriceRule__c</referenceTo>
+        <relationshipLabel>Price Conditions</relationshipLabel>
+        <relationshipName>PriceConditions</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>SBQQ__TestedFormula__c</fullName>
+        <deprecated>false</deprecated>
+        <description>You can construct a formula using many of Salesforce&apos;s available operators and functions. Refer to Salesforce CPQ documentation for the full list. You can also add in information from the quote or the target object field (i.e., SBQQ__QuoteLine__c.SBQQ__ListPrice__c).</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter a formula with operators, functions, and available fields on quote and target object. Not supported on legacy calculator.</inlineHelpText>
+        <label>Tested Formula</label>
+        <length>131072</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>SBQQ__TestedVariable__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>Summary variable tested when evaluating this price condition.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Summary variable tested by this price condition.</inlineHelpText>
+        <label>Tested Variable</label>
+        <referenceTo>SBQQ__SummaryVariable__c</referenceTo>
+        <relationshipLabel>Price Conditions (Tested Variable)</relationshipLabel>
+        <relationshipName>TestedPriceConditions</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__Value__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Value to evaluate against.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter the value you want to match in the field you selected using the operator chosen.</inlineHelpText>
+        <label>Filter Value</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Price Condition</label>
+    <nameField>
+        <displayFormat>{0}</displayFormat>
+        <label>Condition #</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Price Conditions</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+    <validationRules>
+        <fullName>SBQQ__Filter_formula_field_null</fullName>
+        <active>true</active>
+        <description>Require Filter Formula when Filter Type is Formula.</description>
+        <errorConditionFormula>AND(ISPICKVAL(SBQQ__FilterType__c, &quot;Formula&quot;), ISBLANK(SBQQ__FilterFormula__c))</errorConditionFormula>
+        <errorMessage>If Filter Type is Formula, then Filter Formula cannot be empty.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>SBQQ__Tested_field_or_variable</fullName>
+        <active>true</active>
+        <description>Require either tested field or variable.</description>
+        <errorConditionFormula>AND(ISBLANK(TEXT(SBQQ__Field__c)),ISBLANK(SBQQ__TestedVariable__c),ISBLANK(SBQQ__TestedFormula__c))</errorConditionFormula>
+        <errorMessage>You must specify either field or tested variable.</errorMessage>
+    </validationRules>
+    <visibility>Public</visibility>
+</CustomObject>

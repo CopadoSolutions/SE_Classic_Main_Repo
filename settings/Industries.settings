@@ -6,4 +6,5 @@
     <enableObjectDetection>false</enableObjectDetection>
     <enableVisitCalendarSync>false</enableVisitCalendarSync>
     <enableVisitInventoryEnabled>false</enableVisitInventoryEnabled>
+    <rlaEditIfAccHasEdit>false</rlaEditIfAccHasEdit>
 </IndustriesSettings>

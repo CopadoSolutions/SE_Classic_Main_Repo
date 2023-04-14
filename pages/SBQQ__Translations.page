@@ -1,0 +1,149 @@
+<apex:page standardController="SBQQ__Localization__c" extensions="SBQQ.LocalizationController" docType="html-5.0" standardStylesheets="false" title="{!$Label.sbqq__lbl_translations}">
+	<apex:stylesheet value="{!IF(formfactor == 'desktop', $Resource['sb'], $Resource['MobileCSS'])}"/>
+    <!-- temporary style fix for error message -->
+    <style>
+        .messageCell h4 {
+            color: #cc0000;
+            vertical-align: sub !important;
+        }
+    </style>
+	<c:theme formFactor="{!formFactor}"/>
+	<apex:includeScript value="{!URLFOR($Resource.SBQQ__CKEditor, '/ckeditor/ckeditor.js')}"/>
+	<apex:includeScript value="{!$Resource.SBQQ__WebUI}"/>
+	<apex:includeScript value="{!$Resource.SBQQ__jQuery}"/>
+	
+	
+	<apex:form >
+		<apex:actionFunction name="onLanguageChange" action="{!onLanguageChange}" rerender="sbFieldsTable, sbUserDefinedFieldsTable" onComplete="reapplyEditorCSS()"/>
+		<div id="sbTranslate" class="sb">
+			<c:pageHeader title="{!$Label.sbqq__lbl_translations}" subtitle="{!targetObjectName}" iconName="sf-icon-replace resize">
+				<div class="sbButtons">
+					<apex:commandButton styleClass="sbBtn" value="{!$Label.sbqq__lbl_save}" action="{!onSave}"/>
+					<apex:commandButton styleClass="sbBtn" value="{!$Label.sbqq__lbl_quick_save}" action="{!onQuickSave}"/>
+					<apex:commandButton styleClass="sbBtn" value="{!$Label.sbqq__lbl_cancel}" action="{!onCancel}"/>
+				</div>
+			</c:pageHeader>
+		
+			<apex:pageMessages />
+			<div class="sbBody">
+				<div class="sbPageBlockSection">
+					<header>
+						<h3>{!$ObjectType.SBQQ__Localization__c.fields.SBQQ__Language__c.label}</h3>
+					</header>
+					<span>{!$Label.sbqq__lbl_select_language}</span>
+					<apex:selectList value="{!SBQQ__Localization__c.SBQQ__Language__c}" id="language" size="1" onchange="changeLanguage()">
+						<apex:selectOptions value="{!languages}" />
+					</apex:selectList>
+				</div>
+
+				<apex:outputPanel id="sbFieldsTable" styleClass="sbFieldsTable" rendered="{!supportStandard == true}">
+					<div class="sbPageBlockSection" >
+						<table class="sbTable">
+							<thead>
+								<tr>
+									<th>{!$Label.lbl_field_name}</th>
+									<th>{!$Label.lbl_field_value}</th>
+									<th>{!$Label.lbl_translated_value}</th>
+								</tr>
+							</thead>
+							<tbody>
+								<apex:repeat value="{!ObjectFields}" var="field" id="field">
+									<tr>
+										<td>
+											{!field.label}
+										</td>
+										<td>
+											<apex:outputtext value="{!targetObj[field.record['APIName__c']]}" rendered="{!field.type=='richTextArea'}" escape="false" />
+											<apex:outputtext value="{!targetObj[field.record['APIName__c']]}" rendered="{!NOT(field.type=='richTextArea')}" />
+										</td>
+										<td>
+											<apex:inputField value="{!field.record.SBQQ__Text__c}" label="{!field.label}" rendered="{!field.type=='text'}" html-maxlength="255"></apex:inputField>
+											<apex:inputTextarea value="{!field.record.SBQQ__TextArea__c}" label="{!field.label}" rendered="{!field.type=='textArea'}" rows="3" styleClass="sbLongTextArea"></apex:inputTextarea>
+											<apex:inputTextarea value="{!field.record.SBQQ__LongTextArea__c}" label="{!field.label}" rendered="{!field.type=='longTextArea'}" rows="3" styleClass="sbLongTextArea"></apex:inputTextarea>
+											<apex:inputTextarea value="{!field.record.SBQQ__RichTextArea__c}" label="{!field.label}" rendered="{!field.type=='richTextArea'}" styleClass="sbRTE"></apex:inputTextarea>
+										</td>
+									</tr>
+								</apex:repeat>
+							</tbody>
+						</table>
+					</div>
+				</apex:outputPanel>
+				<apex:outputPanel id="sbUserDefinedFieldsTable" styleClass="sbUserDefinedFieldsTable" rendered="{!supportUserDefined == true}">
+					<div class="sbPageBlockSection">
+						<table class="sbTable">
+								<thead>
+									<tr>
+										<th>#</th>
+										<th>{!$Label.lbl_field_variable_name}</th>
+										<th>{!$Label.lbl_field_description}</th>
+										<th>{!$Label.lbl_translated_value}</th>
+										<th></th>
+									</tr>
+								</thead>
+								<tbody>
+									<apex:variable value="{!0}" var="rowNum"/>
+									<apex:repeat value="{!UserDefinedFieldNodes}" var="fieldNode">
+										<apex:variable var="rowNum" value="{!rowNum + 1}"/>
+										<tr>
+											<td class="rowNumber">
+												<apex:outputText value="{!rowNum}"/>
+											</td>
+											<td>
+												<apex:inputField value="{!fieldNode.record.SBQQ__APIName__c}" html-maxlength="255"/>
+											</td>
+											<td>
+												<apex:inputField value="{!fieldNode.record.SBQQ__Description__c}" html-maxlength="255" styleClass="sbDescription"/>
+											</td>
+											<td>
+												<apex:inputTextarea value="{!fieldNode.record.SBQQ__LongTextArea__c}"  rendered="{!fieldNode.type=='longTextArea'}" rows="3" styleClass="sbLongTextArea"></apex:inputTextarea>
+											</td>
+											<td>
+												<div class="sbButtons">
+													<apex:commandButton styleClass="sbBtn" value="+" action="{!onAdd}" reRender="sbUserDefinedFieldsTable">
+														<apex:param name="selection" assignTo="{!targetRowIndex}" value="{!rowNum-1}"/>
+													</apex:commandButton>
+													<apex:commandButton styleClass="sbBtn" value="-" action="{!onRemove}" reRender="sbUserDefinedFieldsTable">
+														<apex:param name="selection" assignTo="{!targetRowIndex}" value="{!rowNum-1}"/>
+													</apex:commandButton>
+												</div>
+											</td>
+										</tr>
+									</apex:repeat>
+								</tbody>
+							</table>
+					</div>
+				</apex:outputPanel>
+			</div>
+		</div>
+	</apex:form>
+
+	<script>
+    function reapplyEditorCSS() {
+        var ta = document.querySelectorAll('textarea.sbRTE'),
+                len = ta ? ta.length : 0,
+                sfTools = [ // configure ckeditor to "match" SF as we don't want "extra" functionality on this page
+                    ["Undo", "Redo"],
+                    ["Bold", "Italic", "Underline", "Strike"],
+                    ["-", "Link", "sfdcImage"],
+                    ["-",
+                        "JustifyLeft", "JustifyCenter", "JustifyRight"
+                    ],
+                    ["-", "BulletedList", "NumberedList"],
+                    ["Indent", "Outdent"]
+                ];
+
+        var ckConfig = SB.ckeditorConfig;
+        ckConfig.language = '{!JSENCODE(userLanguage)}';
+        for (var i = 0; i < len; i++) {
+            CKEDITOR.inline(ta[i], $.extend({toolbar: sfTools}, ckConfig));
+        }
+    }
+
+	function changeLanguage() {
+		onLanguageChange();
+	}
+
+	reapplyEditorCSS();
+
+	</script>
+</apex:page>

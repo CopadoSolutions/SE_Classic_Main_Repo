@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Trabalho de registro</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Trabalhos de registro</value>
+    </caseValues>
+    <fields>
+        <help>Se marcado, o usuário foi alertado do status concluído do trabalho do registro.</help>
+        <label><!-- Is Read --></label>
+        <name>SBQQ__IsRead__c</name>
+    </fields>
+    <fields>
+        <help>Os detalhes do trabalho em segundo plano executado, se nenhum ID de trabalho tiver sido especificado.</help>
+        <label><!-- Job Details --></label>
+        <name>SBQQ__JobDetails__c</name>
+    </fields>
+    <fields>
+        <label><!-- Job Id --></label>
+        <name>SBQQ__JobId__c</name>
+    </fields>
+    <fields>
+        <help>O status do trabalho em segundo plano executado, se nenhum ID de trabalho tiver sido especificado.</help>
+        <label><!-- Job Status --></label>
+        <name>SBQQ__JobStatus__c</name>
+    </fields>
+    <fields>
+        <label><!-- Record Id --></label>
+        <name>SBQQ__RecordId__c</name>
+    </fields>
+    <fields>
+        <help>URL para redirecionar quando o trabalho for finalizado.</help>
+        <label><!-- Redirect URL --></label>
+        <name>SBQQ__RedirectUrl__c</name>
+    </fields>
+    <fields>
+        <help>O rastreio de pilha do trabalho em segundo plano executado, se nenhum ID de trabalho tiver sido especificado.</help>
+        <label><!-- Stacktrace --></label>
+        <name>SBQQ__Stacktrace__c</name>
+    </fields>
+    <gender>Masculine</gender>
+    <nameFieldLabel>Nome</nameFieldLabel>
+</CustomObjectTranslation>

@@ -15,6 +15,7 @@
     <enableResendBouncedEmails>false</enableResendBouncedEmails>
     <enableRestrictTlsToDomains>false</enableRestrictTlsToDomains>
     <enableUseOrgFootersForExtTrans>false</enableUseOrgFootersForExtTrans>
+    <enableVerifyEmailDomainByDkim>false</enableVerifyEmailDomainByDkim>
     <sendEmailsEvenWhenAutomationUpdatesSameRecord>false</sendEmailsEvenWhenAutomationUpdatesSameRecord>
     <sendMassEmailNotification>true</sendMassEmailNotification>
     <sendTextOnlySystemEmails>false</sendTextOnlySystemEmails>

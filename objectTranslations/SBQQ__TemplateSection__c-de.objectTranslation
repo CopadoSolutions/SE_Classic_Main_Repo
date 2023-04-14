@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Vorlagenabschnitt</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Vorlagenabschnitte</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value><!-- Vorlagenabschnitt --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+        <value><!-- Vorlagenabschnitte --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value><!-- Vorlagenabschnitt --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>true</plural>
+        <value><!-- Vorlagenabschnitte --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value><!-- Vorlagenabschnitt --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value><!-- Vorlagenabschnitte --></value>
+    </caseValues>
+    <fields>
+        <help>Farbe von Tabellenrahmen, angegeben als Hexadezimalwert.</help>
+        <label><!-- Border Color --></label>
+        <name>SBQQ__BorderColor__c</name>
+    </fields>
+    <fields>
+        <help>Rand am unteren Ende dieses Abschnitts.</help>
+        <label><!-- Bottom Margin --></label>
+        <name>SBQQ__BottomMargin__c</name>
+    </fields>
+    <fields>
+        <help>Aktivieren Sie das Kontrollkästchen, um die Spaltenüberschrift auszublenden. Gilt nur für Abschnitte, die auf Vorlageninhalt vom Typ &quot;Belegposten&quot; verweisen.</help>
+        <label><!-- Hide Column Header --></label>
+        <name>SBQQ__ColumnHeaderHidden__c</name>
+    </fields>
+    <fields>
+        <help>Feld im Angebotsobjekt, das steuert, ob dieser Abschnitt in generierten PDF-Dokumenten gedruckt wird.</help>
+        <label><!-- Conditional Print Field --></label>
+        <name>SBQQ__ConditionalPrintField__c</name>
+        <picklistValues>
+            <masterLabel>Group Line Items</masterLabel>
+            <translation>Belegposten gruppieren</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Primary</masterLabel>
+            <translation>Primär</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Wählen Sie den Vorlageninhalt aus, der in diesem Vorlagenabschnitt angezeigt werden soll.</help>
+        <label><!-- Content --></label>
+        <name>SBQQ__Content__c</name>
+        <relationshipLabel><!-- Template Sections --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Geben Sie die Reihenfolge (von oben nach unten) an, in der dieser Abschnitt in Bezug auf andere Vorlagenabschnitte dargestellt wird.</help>
+        <label><!-- Display Order --></label>
+        <name>SBQQ__DisplayOrder__c</name>
+    </fields>
+    <fields>
+        <help>Feld, das zum Filtern der von diesem Abschnitt dargestellten Datensätze verwendet wird.</help>
+        <label><!-- Filter Field --></label>
+        <name>SBQQ__FilterField__c</name>
+        <picklistValues>
+            <masterLabel>Optional</masterLabel>
+            <translation>Optional</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Operator, der zum Filtern der von diesem Abschnitt dargestellten Datensätze verwendet wird.</help>
+        <label><!-- Filter Operator --></label>
+        <name>SBQQ__FilterOperator__c</name>
+        <picklistValues>
+            <masterLabel>contains</masterLabel>
+            <translation>enthält</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ends with</masterLabel>
+            <translation>endet auf</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>equals</masterLabel>
+            <translation>gleich</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>greater or equals</masterLabel>
+            <translation>größer oder gleich</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>greater than</masterLabel>
+            <translation>größer als</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>less or equals</masterLabel>
+            <translation>kleiner oder gleich</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>less than</masterLabel>
+            <translation>kleiner als</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>not equals</masterLabel>
+            <translation>ungleich</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>starts with</masterLabel>
+            <translation>beginnt mit</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Wert, der beim Filtern der von diesem Abschnitt dargestellten Datensätze verwendet wird.</help>
+        <label><!-- Filter Value --></label>
+        <name>SBQQ__FilterValue__c</name>
+    </fields>
+    <fields>
+        <help>Geben Sie das Feld an, das zum Gruppieren der von diesem Abschnitt dargestellten Belegposten verwendet wird. Gilt nur für Abschnitte vom Typ &quot;Belegposten&quot;.</help>
+        <label><!-- Group Field --></label>
+        <name>SBQQ__GroupField__c</name>
+        <picklistValues>
+            <masterLabel>Product Family</masterLabel>
+            <translation>Produktfamilie</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Subscription Category</masterLabel>
+            <translation>Abonnementkategorie</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Gibt an, ob versucht werden soll, Inhalte zusammen auf derselben Seite zu platzieren.</help>
+        <label><!-- Keep Together --></label>
+        <name>SBQQ__KeepTogether__c</name>
+        <picklistValues>
+            <masterLabel>Always</masterLabel>
+            <translation>Immer</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Auto</masterLabel>
+            <translation>Auto</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Gibt an, ob versucht werden soll, Inhalte auf derselben Seite wie den nächsten Inhaltsblock zu platzieren.</help>
+        <label><!-- Keep With Next --></label>
+        <name>SBQQ__KeepWithNext__c</name>
+        <picklistValues>
+            <masterLabel>Always</masterLabel>
+            <translation>Immer</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Auto</masterLabel>
+            <translation>Auto</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Gibt an, ob versucht werden soll, Inhalte auf derselben Seite wie den vorherigen Inhaltsblock zu platzieren.</help>
+        <label><!-- Keep With Previous --></label>
+        <name>SBQQ__KeepWithPrevious__c</name>
+        <picklistValues>
+            <masterLabel>Always</masterLabel>
+            <translation>Immer</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Auto</masterLabel>
+            <translation>Auto</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Gibt an, ob vor, nach oder sowohl vor als auch nach diesem Inhalt ein Seitenumbruch eingefügt werden soll.</help>
+        <label><!-- Page Break --></label>
+        <name>SBQQ__PageBreak__c</name>
+        <picklistValues>
+            <masterLabel>After</masterLabel>
+            <translation>Nach</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Before</masterLabel>
+            <translation>Vor</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Both</masterLabel>
+            <translation>Beide</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Aktivieren Sie das Kontrollkästchen, um Angebotsgesamtwerte nach diesem Abschnitt auszugeben. Gilt nur für Abschnitte vom Typ &quot;Belegposten&quot;.</help>
+        <label><!-- Print Quote Totals --></label>
+        <name>SBQQ__QuoteTotalsPrinted__c</name>
+    </fields>
+    <fields>
+        <help>Angebotsbelegposten-Feld, das für Rollups verwendet wird. Alle Posten, bei denen dieses Feld denselben Wert zurückgibt, werden im ersten Posten zusammengefasst, in dem der Wert auftritt.</help>
+        <label><!-- Roll-Up Field --></label>
+        <name>SBQQ__RollUpField__c</name>
+        <picklistValues>
+            <masterLabel>Product</masterLabel>
+            <translation>Produkt</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Wählen Sie &quot;Immer&quot;, um unabhängig von anderen Einstellungen die Zwischensumme, Rabatte und die Gesamtsumme anzuzeigen. Bei Auswahl von &quot;Nie&quot; werden diese Werte nie unabhängig von anderen Einstellungen angezeigt. Wenn Sie dieses Feld leer lassen, richtet sich die Anzeige von Summen nach der Festlegung für Vorlagenfelder.</help>
+        <label><!-- Summary Display --></label>
+        <name>SBQQ__SummaryDisplay__c</name>
+        <picklistValues>
+            <masterLabel>Always</masterLabel>
+            <translation>Immer</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Never</masterLabel>
+            <translation>Nie</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Angebotsvorlage, die diesen Vorlagenabschnitt verwendet.</help>
+        <label><!-- Template --></label>
+        <name>SBQQ__Template__c</name>
+        <relationshipLabel><!-- Sections --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Rand am oberen Ende dieses Abschnitts.</help>
+        <label><!-- Top Margin --></label>
+        <name>SBQQ__TopMargin__c</name>
+    </fields>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Template Section Layout</layout>
+        <sections>
+            <label>Benutzerdefinierte Links</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>Filterinformationen</label>
+            <section>Filtering Information</section>
+        </sections>
+        <sections>
+            <label>Seitenumbrüche</label>
+            <section>Page Breaks</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Abschnittsname</nameFieldLabel>
+    <webLinks>
+        <label><!-- IncludeDocument --></label>
+        <name>SBQQ__IncludeDocument</name>
+    </webLinks>
+</CustomObjectTranslation>

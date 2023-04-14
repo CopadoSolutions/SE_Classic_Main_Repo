@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- Indicates whether this rule is active or not. --></help>
+        <label><!-- Active --></label>
+        <name>SBQQ__Active__c</name>
+    </fields>
+    <fields>
+        <help><!-- Can only be entered if the Conditions Met is Custom. Enter a combination of the Price Condition Index #s, AND, OR, and parenthesis (e.g. (123 AND 124) AND 125). --></help>
+        <label><!-- Advanced Condition --></label>
+        <name>SBQQ__AdvancedCondition__c</name>
+    </fields>
+    <fields>
+        <help><!-- Choose the behavior for your conditions: All is AND, Any is OR, Custom is a combination of AND/OR. --></help>
+        <label><!-- Conditions Met --></label>
+        <name>SBQQ__ConditionsMet__c</name>
+        <picklistValues>
+            <masterLabel>All</masterLabel>
+            <translation><!-- All --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Any</masterLabel>
+            <translation><!-- Any --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Custom</masterLabel>
+            <translation><!-- Custom --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- When None or Save is selected, the Configurator scoped price rules will fire on save.  When Edit is selected, the Configurator scoped price rules will fire on edit and save. --></help>
+        <label><!-- Configurator Evaluation Event --></label>
+        <name>SBQQ__ConfiguratorEvaluationEvent__c</name>
+        <picklistValues>
+            <masterLabel>Edit</masterLabel>
+            <translation><!-- Edit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Save</masterLabel>
+            <translation><!-- Save --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Specify when this rule should be evaluated. Only to be used when targeting Quote Line and not supported on legacy calculator. --></help>
+        <label><!-- Calculator Evaluation Event --></label>
+        <name>SBQQ__EvaluationEvent__c</name>
+        <picklistValues>
+            <masterLabel>After Calculate</masterLabel>
+            <translation><!-- After Calculate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Before Calculate</masterLabel>
+            <translation><!-- Before Calculate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>On Calculate</masterLabel>
+            <translation><!-- On Calculate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>On Initialization</masterLabel>
+            <translation><!-- On Initialization --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Specify the order of evaluation for this price rule. Higher ordered rules are evaluated last which means they &quot;win&quot; in case of conflict. --></help>
+        <label><!-- Evaluation Order --></label>
+        <name>SBQQ__EvaluationOrder__c</name>
+    </fields>
+    <fields>
+        <help><!-- API Name of the Custom Object that stores the lookup data. --></help>
+        <label><!-- Lookup Object --></label>
+        <name>SBQQ__LookupObject__c</name>
+        <picklistValues>
+            <masterLabel>SBQQ__LookupData__c</masterLabel>
+            <translation><!-- SBQQ__LookupData__c --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Choose a product to associate to this rule. --></help>
+        <label><!-- Product --></label>
+        <name>SBQQ__Product__c</name>
+        <relationshipLabel><!-- Price Rules --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Event during which this rule is evaluated. --></help>
+        <label><!-- Evaluation Scope --></label>
+        <name>SBQQ__TargetObject__c</name>
+        <picklistValues>
+            <masterLabel>Calculator</masterLabel>
+            <translation><!-- Calculator --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Configurator</masterLabel>
+            <translation><!-- Configurator --></translation>
+        </picklistValues>
+    </fields>
+    <layouts>
+        <layout>Price Rule Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <webLinks>
+        <label><!-- CloneWithRelated --></label>
+        <name>SBQQ__CloneWithRelated</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- CloneWithRelatedClassic --></label>
+        <name>SBQQ__CloneWithRelatedClassic</name>
+    </webLinks>
+</CustomObjectTranslation>

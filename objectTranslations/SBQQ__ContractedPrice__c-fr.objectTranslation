@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Prix contracté</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Prix contractés</value>
+    </caseValues>
+    <fields>
+        <help>Compte pour lequel ce prix a été négocié.</help>
+        <label><!-- Account --></label>
+        <name>SBQQ__Account__c</name>
+        <relationshipLabel><!-- Contracted Prices --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Contrat de vente qui régit ce prix.</help>
+        <label><!-- Contract --></label>
+        <name>SBQQ__Contract__c</name>
+        <relationshipLabel><!-- Contracted Prices --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Description de ce prix contracté, copiée dans la « Description du prix spécial » des éléments de ligne de devis qui utilisent ce prix.</help>
+        <label><!-- Description --></label>
+        <name>SBQQ__Description__c</name>
+    </fields>
+    <fields>
+        <help>Barème de remise sur volume à utiliser pour ce produit avec ce client.</help>
+        <label><!-- Discount Schedule --></label>
+        <name>SBQQ__DiscountSchedule__c</name>
+        <relationshipLabel><!-- Contracted Prices --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Remise sur le prix catalogue (en pourcentage) représentée par ce prix contracté. Ce champ ou le prix doit être défini, mais pas les deux.</help>
+        <label><!-- Discount --></label>
+        <name>SBQQ__Discount__c</name>
+    </fields>
+    <fields>
+        <help>Date à laquelle ce prix contracté est entré en vigueur.</help>
+        <label><!-- Effective Date --></label>
+        <name>SBQQ__EffectiveDate__c</name>
+    </fields>
+    <fields>
+        <help>Date d&apos;expiration de ce prix contracté.</help>
+        <label><!-- Expiration Date --></label>
+        <name>SBQQ__ExpirationDate__c</name>
+    </fields>
+    <fields>
+        <help>Sélectionnez un champ à utiliser dans un filtre, tel que Gamme de produits, si vous souhaitez appliquer ce prix à un ensemble de produits. Si vous utilisez un champ personnalisé, ajoutez le nom d&apos;API au champ de filtrage en tant que valeur de liste de sélection.</help>
+        <label><!-- Filter Field --></label>
+        <name>SBQQ__FilterField__c</name>
+        <picklistValues>
+            <masterLabel>Product</masterLabel>
+            <translation>Produit</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product Code</masterLabel>
+            <translation>Code produit</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product Family</masterLabel>
+            <translation>Famille de produits</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Valeur à laquelle le champ de filtrage est comparé afin de déterminer si ce prix contracté doit être appliqué.</help>
+        <label><!-- Filter Value --></label>
+        <name>SBQQ__FilterValue__c</name>
+    </fields>
+    <fields>
+        <help>Sélectionnez la case pour interdire toute remise supplémentaire sur ce produit.</help>
+        <label><!-- Non Discountable --></label>
+        <name>SBQQ__NonDiscountable__c</name>
+    </fields>
+    <fields>
+        <help>Sélectionnez l&apos;opérateur à utiliser lors de la correspondance entre le contenu du champ de filtrage et de la valeur de filtrage.</help>
+        <label><!-- Operator --></label>
+        <name>SBQQ__Operator__c</name>
+        <picklistValues>
+            <masterLabel>contains</masterLabel>
+            <translation>contient</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ends with</masterLabel>
+            <translation>se termine par</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>equals</masterLabel>
+            <translation>égal à</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>greater or equals</masterLabel>
+            <translation>supérieur ou égal à</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>greater than</masterLabel>
+            <translation>supérieur à</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>less or equals</masterLabel>
+            <translation>inférieur ou égal à</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>less than</masterLabel>
+            <translation>inférieur à</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>not equals</masterLabel>
+            <translation>différent de</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>L&apos;élément de ligne d&apos;où provient ce prix contracté.</help>
+        <label><!-- Original Quote Line --></label>
+        <name>SBQQ__OriginalQuoteLine__c</name>
+        <relationshipLabel><!-- Contracted Prices --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Saisissez le prix qui a été négocié avec le client. Cette valeur remplace les autres prix, notamment celui d&apos;un catalogue de prix ou d&apos;un prix avec une remise sur volume.</help>
+        <label><!-- Price --></label>
+        <name>SBQQ__Price__c</name>
+    </fields>
+    <fields>
+        <help>Sélectionnez un produit d&apos;un catalogue de prix que vous souhaitez appliquer à cette remise.</help>
+        <label><!-- Product --></label>
+        <name>SBQQ__Product__c</name>
+        <relationshipLabel><!-- Contracted Prices --></relationshipLabel>
+    </fields>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Contracted Price Layout</layout>
+        <sections>
+            <label>Liens personnalisés</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>Description</label>
+            <section>Description</section>
+        </sections>
+        <sections>
+            <label>Informations sur le produit</label>
+            <section>Product Information</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Numéro du prix contracté</nameFieldLabel>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- You must enter either Discount, Price, or Discount Schedule. --></errorMessage>
+        <name>SBQQ__Discount_or_price_required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You may not specify both product and filter. --></errorMessage>
+        <name>SBQQ__Either_product_or_filter</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Operator is required when Filter Field is specified. --></errorMessage>
+        <name>SBQQ__Filter_requires_operators</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You must specify either product or filter field --></errorMessage>
+        <name>SBQQ__Product_or_filter_required</name>
+    </validationRules>
+</CustomObjectTranslation>

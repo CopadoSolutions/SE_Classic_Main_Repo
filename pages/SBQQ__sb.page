@@ -1,0 +1,307 @@
+<apex:page action="{!checkLicense}" tabStyle="SBQQ__Quote__c" doctype="html-5.0" showHeader="{!(!$Setup.SBQQ__GeneralSettings__c.SBQQ__GlobalHeaderPermUsed__c || !$Permission.SBQQ__HideGlobalHeader) && formFactor == 'desktop'}" cache="true" standardStylesheets="false" controller="SBQQ.ServiceRouter" extensions="SBQQ.OAuthExtension,SBQQ.SettingsExtension,SBQQ.ThemeExtension,SBQQ.LicenseCheckerExt">
+	<style>
+		body {
+			overflow: hidden !important;
+		}
+
+		.showTemplatePreviewMode::before {
+			content: 'Previewing most recently used quote';
+			display: inline-block;
+			width: 100%;
+			padding: 0.5rem 0 ;
+			text-align: center;
+			font-size: 1.6em;
+			color: #16325c;
+			background-color: #ffb75d;
+			background-image: linear-gradient(45deg,rgba(0,0,0,.025) 25%,transparent 25%,transparent 50%,rgba(0,0,0,.025) 50%,rgba(0,0,0,.025) 75%,transparent 75%,transparent);
+			background-size: 100px 100px;
+			white-space: pre;
+		}
+
+		#bodyCell {
+			position: relative;
+			overflow: hidden;
+			padding: 0px;
+			display: inline-block;
+			width: 100%;
+			min-height: 500px;
+		}
+
+		#sidebarCell.sidebarCollapsed {
+			padding-left: 0;
+			width:1px;
+		}
+		.noSidebarCell.noSidebarCell {
+			padding: 0;
+		}
+		#MoreTabs_Tab > #MoreTabs_List {
+			z-index: 10;  // must be larger than fixed page header (tab overflow dropdown)
+		}
+
+		.sbPleaseWait{
+			font-family: 'Salesforce Sans', 'Open Sans', Arial, sans-serif;
+			font-size: 1.3rem;
+			font-weight: 300;
+			left: 0;
+			line-height: 200px;
+			margin-top: -100px;
+			position: absolute;
+			text-align: center;
+			top: 50%;
+			width: 100%;
+		}
+
+		iron-dropdown > #contentWrapper {
+			min-width: 0;
+		}
+	</style>
+	<script>if( document.head.createShadowRoot ) Polymer = {dom: 'shady', useNativeCSSProperties: true};</script>
+
+  <script>
+    !function(global){
+      var webComponentsSupported = ('registerElement' in document
+        && 'import' in document.createElement('link')
+        && 'content' in document.createElement('template'));
+
+      if (!webComponentsSupported) {
+        var wcPoly = document.createElement('script');
+        wcPoly.src = '{!$Resource.webcomponents_lite}';
+        document.head.appendChild(wcPoly);
+      }
+    }(this)
+  </script>
+	<script src="{!$Resource.sb_app_3rd_js}" type="text/javascript"></script>
+	<link id="sb_app_html_import" rel="import" href="{!$Resource.sb_app_html}"></link>
+	<script src="{!$Resource.sb_app_js}" type="text/javascript"></script>
+
+	<div id="pw" class="sbPleaseWait" style="display:none">{!$Label.lbl_please_wait}</div>
+
+    <sb-page-container id="sbPageContainer"></sb-page-container>
+    <div id="sb-app"></div>
+
+	<script>
+		var pleaseWait;
+		if((navigator.userAgent.match(/Tablet|iPad|iPod/i) && !navigator.userAgent.match(/Tablet PC/i)) || navigator.userAgent.match(/Android/i) || navigator.userAgent.match(/Mobi/i)) { // phone or tablet
+			document.querySelector('#pw').style.display = 'block';
+		} else { // desktop
+            document.querySelector('#sbPageContainer').classList.add('--desktop');
+			pleaseWait = setTimeout(function() {
+				document.querySelector('#pw').style.display = 'block';
+			}, 1000);
+		}
+	</script>
+
+	<script>
+		(function( window ) {
+		    var userSettings = {!userSettings};
+			window.sb = window.sb || {};
+			window.sb.vfSessionId = '{!$API.Session_Id}';
+			window.sb.visibilityStateStart = document.visibilityState;
+			window.sb.labels = <c:sb_labels />;
+			window.sb.mode = Object.freeze({debugMode: userSettings['debugMode']});
+			window.sb.pkgVersion = userSettings['pkgVersion'];
+			escapeLabelKeys();
+
+			System.import('perfMetrics/MetricsService.js').then(function (ms) {
+				// There is a flag to only show performance metrics if internal development or subscriber access
+				// that must be enabled before EPT metrics are logged.
+				var metricsService = new ms.MetricsService();
+				// Measure EPT performance on the page
+				init(metricsService);
+				// With true passed to addEventListener, the event is executed in the capturing phase, and with false
+				// the event handler is executed in the bubbling phase. We want the capturing phase.
+				document.addEventListener('click', function () {
+					// Measure EPT for every click on the page
+					metricsService.startTransaction();
+				}, true);
+				document.addEventListener('sf-qle-data-changed', function(e) {
+				    var numLines = e.detail && e.detail.quote && e.detail.quote.lineItems ? e.detail.quote.lineItems.length : 0;
+					metricsService.addExternalLogMetrics( { quoteLine: numLines } );
+				}, true);
+			});
+
+			// Need to escape the keys in labels map
+			// Sb-i18n uses this.innerHTML which returns escaped characters when getting text to translate
+			function escapeLabelKeys() {
+				for(var labelKey in window.sb.labels) {
+					if(labelKey.includes('&') || labelKey.includes('<') || labelKey.includes('>')) {
+						var escapedLabelKey = labelKey.replace(/&/g, '&amp' + ';').replace(/</g, '&lt' + ';').replace(/>/g, '&gt'  + ';');
+						window.sb.labels[escapedLabelKey] = window.sb.labels[labelKey];
+						delete window.sb.labels[labelKey];
+					}
+				}
+			}
+
+			function init(metricsService) {
+				window.addEventListener("load", function() {
+					adjustBody();
+				});
+
+
+				window.addEventListener("resize", function() {
+					adjustBody();
+				});
+
+				function adjustBody() {
+					var bodyCell = document.querySelector('#bodyCell');
+					if(bodyCell) {
+						var heightOffset = document.querySelector('#globalHeaderBar') ? 166 : 130;
+						var height = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+						bodyCell.style.minHeight = (height - heightOffset) + 'px';
+						var width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+						bodyCell.style.maxWidth = (width - 12) + 'px';
+					}
+				}
+
+				// map of urls to 3rd parties on filesystem not included in HTML import or ES6 import
+				var libUrls = {
+					intl: '{!URLFOR($Resource.sb_i18n_cldr)}',
+					tinymce: '{!URLFOR($Resource.sb_tinymce)}'
+				};
+
+				function whenJSQCReady(cb) { checkJSQC(cb, 0); }
+				function checkJSQC(cb, tries) {
+					if(window.SB && window.SB.JSQC) {
+						cb();
+					} else if(tries <= 50) {
+						window.setTimeout(function(){ checkJSQC(cb, tries + 1); }, 100);
+					} else {
+						throw "JSQC is unavailable (window.SB.JSQC) after 10 tries";
+					}
+				}
+
+				function lazyLoadSbApp() {
+                    // if user sets a theme, it is added
+                    if ('{!userTheme}') {
+                        var theme = document.querySelector('link#sb_app_html_import').import.querySelector('dom-module#sb-common-styles template')
+                        var commonStyles = theme.content.querySelector('style');
+                        commonStyles.innerText += window.atob('{!userTheme}');
+                    }
+					System.import('app.js').then(function (mod) {
+						var sbPageContainer = document.querySelector('#sbPageContainer');
+						mod.App.init(sbPageContainer, null, userSettings, libUrls).then(function () {
+							whenJSQCReady(initApp);
+							function initApp(){
+								metricsService.startTransaction();
+
+								if (pleaseWait)
+									clearTimeout(pleaseWait);
+
+								// the default page to land the user on
+								var HOME = '/product/search';
+								document.querySelector('body').removeAttribute('unresolved');
+
+								// clear the hash so in aloha you can refresh the page by reloading the URL
+								var previous = window.location.hash;
+								window.location.hash = '';
+								var editable = true;
+								var route = window.location.hash.length > 1 ? window.location.hash.slice(1) : (previous || getRoute() || HOME);
+
+								sbPageContainer.route = route;
+								document.querySelector('#pw').style.display = 'none';
+
+								function getRoute() {
+									if('{!JSENCODE($CurrentPage.parameters.selectContract)}' === 'true') {
+										return getSelectContractRoute();
+									} else {
+										return getLineEditorRoute();
+									}
+								}
+
+								function getLineEditorRoute() {
+									var quoteId = '{!JSENCODE($CurrentPage.parameters.id)}' == '' ? '{!JSENCODE($CurrentPage.parameters.newid)}' : '{!JSENCODE($CurrentPage.parameters.id)}';
+
+									if (!editable) {
+										alert('{!$Label.msg_quote_already_fully_ordered}');
+										window.location = '/' + quoteId;
+									}
+
+									var cmd = '{!JSENCODE($CurrentPage.parameters.cmd)}' == '' ? '' : '&cmd={!JSENCODE($CurrentPage.parameters.cmd)}';
+									return quoteId ? 'quote/le?qId=' + quoteId + cmd : null;
+								}
+
+								function getSelectContractRoute() {
+									var action = '{!JSENCODE($CurrentPage.parameters.action)}';
+									if(action) {
+										var accountId = '{!JSENCODE($CurrentPage.parameters.id)}';
+										var selectedAssetIds = '{!JSENCODE($CurrentPage.parameters.selectedAssetIds)}';
+										return 'contract/lookup?accId=' + accountId + '&action=' + action + '&selectedAssetIds=' + selectedAssetIds;
+									}
+									var quoteId = '{!JSENCODE($CurrentPage.parameters.id)}' == '' ? '{!JSENCODE($CurrentPage.parameters.newid)}' : '{!JSENCODE($CurrentPage.parameters.id)}';
+									return quoteId ? 'contract/lookup?qId=' + quoteId : null;
+								}
+
+								var themeDocId = '{!JSENCODE($CurrentPage.parameters.themeDocId)}';
+								if (themeDocId) {
+									sbPageContainer.classList.add('showTemplatePreviewMode');
+								}
+							}
+						});
+					})
+					.catch(function (err) {
+						console.error(err);
+						console.log(err.originalErr);
+					});
+				}
+
+				var webComponentsSupported = ('registerElement' in document
+				  && 'import' in document.createElement('link')
+				  && 'content' in document.createElement('template'));
+
+        if (userSettings['inCommunity']) {
+            window.addEventListener('load', function(e) {
+                lazyLoadSbApp();
+            });
+        } else {
+        	if (webComponentsSupported)
+                lazyLoadSbApp();
+        	else
+        		window.addEventListener('WebComponentsReady', function(e) {
+        		    lazyLoadSbApp();
+              	});
+        }
+			}
+		})( window );
+	</script>
+
+	<script src="{!$Resource.JSQC}" type="text/javascript"></script>
+  <script src="{!$Resource.JSAR}" type="text/javascript"></script>
+
+	<style>
+		@font-face {
+			font-family: 'Salesforce Sans';
+			src: url("{!URLFOR($Resource.salesforce_sans, 'SalesforceSans-Regular.woff2')}") format('woff2'),
+		       url("{!URLFOR($Resource.salesforce_sans, 'SalesforceSans-Regular.woff')}") format('woff');
+			font-style: normal;
+			font-weight: 400;
+		}
+		@font-face {
+			font-family: 'Salesforce Sans';
+			src: url("{!URLFOR($Resource.salesforce_sans, 'SalesforceSans-Light.woff2')}") format('woff2'),
+			     url("{!URLFOR($Resource.salesforce_sans, 'SalesforceSans-Light.woff')}") format('woff');
+			font-style: normal;
+			font-weight: 300;
+		}
+		@font-face {
+			font-family: 'Salesforce Sans';
+			src: url("{!URLFOR($Resource.salesforce_sans, 'SalesforceSans-Italic.woff2')}") format('woff2'),
+		       url("{!URLFOR($Resource.salesforce_sans, 'SalesforceSans-Italic.woff')}") format('woff');
+			font-style: italic;
+			font-weight: 300;
+		}
+		@font-face {
+			font-family: 'Salesforce Sans';
+			src: url("{!URLFOR($Resource.salesforce_sans, 'SalesforceSans-Bold.woff2')}") format('woff2'),
+	         url("{!URLFOR($Resource.salesforce_sans, 'SalesforceSans-Bold.woff')}") format('woff');
+			font-style: normal;
+			font-weight: 700;
+		}
+		@font-face {
+			font-family: 'Salesforce Sans';
+			src: url("{!URLFOR($Resource.salesforce_sans, 'SalesforceSans-BoldItalic.woff2')}") format('woff2'),
+		       url("{!URLFOR($Resource.salesforce_sans, 'SalesforceSans-BoldItalic.woff')}") format('woff');
+			font-style: italic;
+			font-weight: 700;
+		}
+	</style>
+</apex:page>

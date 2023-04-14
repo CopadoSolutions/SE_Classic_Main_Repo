@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Règle de produit</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Règles de produit</value>
+    </caseValues>
+    <fields>
+        <help>Indique si cette règle est active ou inactive.</help>
+        <label><!-- Active --></label>
+        <name>SBQQ__Active__c</name>
+    </fields>
+    <fields>
+        <help>Peut être saisi uniquement si Conditions remplies est Personnalisé. Saisissez une combinaison de numéros d&apos;index de condition d&apos;erreur, AND, OR, et des parenthèses (ex.: (123 AND 124) AND 125).</help>
+        <label><!-- Advanced Condition --></label>
+        <name>SBQQ__AdvancedCondition__c</name>
+    </fields>
+    <fields>
+        <help>Sélectionnez le comportement de vos conditions : Toutes correspond à AND, N&apos;importe correspond à OR, Personnalisé combine AND et OR.</help>
+        <label><!-- Conditions Met --></label>
+        <name>SBQQ__ConditionsMet__c</name>
+        <picklistValues>
+            <masterLabel>All</masterLabel>
+            <translation>Tous</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Any</masterLabel>
+            <translation>N&apos;importe</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Custom</masterLabel>
+            <translation>Personnalisé</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Saisissez le message à afficher lorsque la règle est activée. Un message d&apos;erreur est affiché lors du déclenchement d&apos;une validation. Un message d&apos;avertissement est affiché lors du déclenchement d&apos;une alerte. Ne s&apos;applique pas aux règles de filtrage.</help>
+        <label><!-- Message --></label>
+        <name>SBQQ__ErrorMessage__c</name>
+    </fields>
+    <fields>
+        <help>Spécifiez quand cette règle doit être évaluée.</help>
+        <label><!-- Evaluation Event --></label>
+        <name>SBQQ__EvaluationEvent__c</name>
+        <picklistValues>
+            <masterLabel>Always</masterLabel>
+            <translation>Toujours</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Edit</masterLabel>
+            <translation>Modification</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Load</masterLabel>
+            <translation>Chargement</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Save</masterLabel>
+            <translation>Enregistrer</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Spécifiez l&apos;ordre d&apos;évaluation de cette règle de prix. Les règles de niveau supérieur sont évaluées en dernier, ce qui signifie qu&apos;elles « gagnent » en cas de conflit.</help>
+        <label><!-- Evaluation Order --></label>
+        <name>SBQQ__EvaluationOrder__c</name>
+    </fields>
+    <fields>
+        <help>Champ de l&apos;objet de référence correspondant au message de règle produit. Le champ doit être de type texte.</help>
+        <label><!-- Lookup Message Field --></label>
+        <name>SBQQ__LookupMessageField__c</name>
+        <picklistValues>
+            <masterLabel>SBQQ__Message__c</masterLabel>
+            <translation>SBQQ__Message__c</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Nom d&apos;API de l&apos;objet personnalisé qui stocke les données de référence.</help>
+        <label><!-- Lookup Object --></label>
+        <name>SBQQ__LookupObject__c</name>
+        <picklistValues>
+            <masterLabel>SBQQ__LookupData__c</masterLabel>
+            <translation>SBQQ__LookupData__c</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Champ de l&apos;objet de référence correspondant à la référence produit Action produit. Le champ doit être une référence à l&apos;objet produit.</help>
+        <label><!-- Lookup Product Field --></label>
+        <name>SBQQ__LookupProductField__c</name>
+        <picklistValues>
+            <masterLabel>SBQQ__Product__c</masterLabel>
+            <translation>SBQQ__Product__c</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Champ de l&apos;objet de référence correspondant à la case Action produit requise. Le champ doit être de type case à cocher.</help>
+        <label><!-- Lookup Required Field --></label>
+        <name>SBQQ__LookupRequiredField__c</name>
+        <picklistValues>
+            <masterLabel>SBQQ__Required__c</masterLabel>
+            <translation>SBQQ__Required__c</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Champ de l&apos;objet de référence correspondant à la liste associée Type d&apos;action produit. Le champ doit être de type liste de sélection ou texte.</help>
+        <label><!-- Lookup Type Field --></label>
+        <name>SBQQ__LookupTypeField__c</name>
+        <picklistValues>
+            <masterLabel>SBQQ__Type__c</masterLabel>
+            <translation>SBQQ__Type__c</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Applique la règle au devis complet ou à un produit spécifique.</help>
+        <label><!-- Scope --></label>
+        <name>SBQQ__Scope__c</name>
+        <picklistValues>
+            <masterLabel>Product</masterLabel>
+            <translation>Produit</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quote</masterLabel>
+            <translation>Devis</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Type de règle. « Validation » affiche des messages d&apos;erreur. « Sélection » entraîne l&apos;ajout ou la suggestion de produits. « Alerte » affiche un avertissement, mais ne demande aucune rectification. « Filtre » affine les résultats de référence d&apos;option pour les offres produits dynamiques.</help>
+        <label><!-- Type --></label>
+        <name>SBQQ__Type__c</name>
+        <picklistValues>
+            <masterLabel>Alert</masterLabel>
+            <translation>Alerte</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Filter</masterLabel>
+            <translation>Filtre</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Selection</masterLabel>
+            <translation>Sélection</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Validation</masterLabel>
+            <translation>Validation</translation>
+        </picklistValues>
+    </fields>
+    <gender>Feminine</gender>
+    <layouts>
+        <layout>Product Rule Layout</layout>
+        <sections>
+            <label>Liens personnalisés</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>Informations sur la requête de référence</label>
+            <section>Lookup Query Information</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Nom de la règle produit</nameFieldLabel>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- The Scope field must point to &apos;Product&apos; for Filter type Product Rules. --></errorMessage>
+        <name>SBQQ__FilterTypeScope</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Only rules with Scope &apos;Product&apos; can have Evaluation Events of type &apos;Edit&apos; or &apos;Load&apos; --></errorMessage>
+        <name>SBQQ__ProductEvaluationEventValidation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The Evaluation Event field must be populated with a value. --></errorMessage>
+        <name>SBQQ__RequiredEvaluationEvent</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- CloneWithRelated --></label>
+        <name>SBQQ__CloneWithRelated</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- CloneWithRelatedClassic --></label>
+        <name>SBQQ__CloneWithRelatedClassic</name>
+    </webLinks>
+</CustomObjectTranslation>

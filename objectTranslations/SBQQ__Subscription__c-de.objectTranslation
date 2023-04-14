@@ -1,0 +1,490 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Abonnement</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Abonnements</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value><!-- Abonnement --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+        <value><!-- Abonnements --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value><!-- Abonnement --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>true</plural>
+        <value><!-- Abonnements --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value><!-- Abonnement --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value><!-- Abonnements --></value>
+    </caseValues>
+    <fieldSets>
+        <label><!-- Subscription Search Filters --></label>
+        <name>SBQQ__SubscriptionSearchFilters</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Subscription Search Results --></label>
+        <name>SBQQ__SubscriptionSearchResults</name>
+    </fieldSets>
+    <fields>
+        <help>Account, der Inhaber dieses Abonnements ist. Diese Beziehung wird zur Berechnung von Mengenrabatten herangezogen.</help>
+        <label><!-- Account --></label>
+        <name>SBQQ__Account__c</name>
+        <relationshipLabel><!-- Subscriptions --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Zusätzlicher Rabatt für dieses Abonnement, angegeben als Betrag.</help>
+        <label><!-- Additional Disc. (Amt) --></label>
+        <name>SBQQ__AdditionalDiscountAmount__c</name>
+    </fields>
+    <fields>
+        <help>Legt die Abrechnungshäufigkeit fest.</help>
+        <label><!-- Billing Frequency --></label>
+        <name>SBQQ__BillingFrequency__c</name>
+    </fields>
+    <fields>
+        <help>Die Abrechnungsart definiert, wann die Abrechnung erfolgt. Bei der Abrechnung im Voraus stellen Sie Kunden Produkte oder Services in Rechnung, bevor diese geliefert bzw. geleistet wurden. Bei der rückwirkenden Abrechnung stellen Sie Kunden eine Rechnung, nachdem die Produkte oder Services geliefert bzw. erbracht wurden.</help>
+        <label><!-- Billing Type --></label>
+        <name>SBQQ__BillingType__c</name>
+    </fields>
+    <fields>
+        <help>Gibt an, ob dieser Belegposten ein Paket darstellt, das heißt, ob er andere Belegposten in diesem Angebot beinhaltet.</help>
+        <label><!-- Package --></label>
+        <name>SBQQ__Bundle__c</name>
+    </fields>
+    <fields>
+        <help>Bei Posten mit berechneten Mengen enthält dieses Feld die ursprüngliche Menge, die der Benutzer eingegeben hat.</help>
+        <label><!-- Original Quantity --></label>
+        <name>SBQQ__BundledQuantity__c</name>
+    </fields>
+    <fields>
+        <help>Gibt an, dass das Produkt in diesem Belegposten mit einem anderen Produkt in diesem Angebot in einem Paket gebündelt ist. Bei in Paketen gebündelten Belegposten lautet der Preis Null und die Änderung von Preis oder Menge ist nicht möglich.</help>
+        <label><!-- Bundled --></label>
+        <name>SBQQ__Bundled__c</name>
+    </fields>
+    <fields>
+        <help>Die Art der Produktkosten. Dies ist ein Systemfeld, das vom zugeordneten Produkt abgeleitet wird.</help>
+        <label><!-- Charge Type --></label>
+        <name>SBQQ__ChargeType__c</name>
+    </fields>
+    <fields>
+        <help>Legt einen zusätzlichen Rabatt für diese Komponente fest, der zum Rabatt für das übergeordnete Paket hinzukommt.</help>
+        <label><!-- Component Discounted By Package --></label>
+        <name>SBQQ__ComponentDiscountedByPackage__c</name>
+    </fields>
+    <fields>
+        <help>Der auf der Komponentenebene festgelegte Prozentsatz vom Gesamtumfang. Dieses Feld überschreibt den aus der Produktoption übernommenen Abonnementumfang.</help>
+        <label><!-- Component Percent of Total Scope --></label>
+        <name>SBQQ__ComponentSubscriptionScope__c</name>
+        <picklistValues>
+            <masterLabel>Both</masterLabel>
+            <translation>Beide</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Components</masterLabel>
+            <translation>Komponenten</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Package</masterLabel>
+            <translation>Paket</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Nummer des zugehörigen Vertrags.</help>
+        <label><!-- Contract # --></label>
+        <name>SBQQ__ContractNumber__c</name>
+    </fields>
+    <fields>
+        <help>Vertrag, der dieses Abonnement regelt.</help>
+        <label><!-- Contract --></label>
+        <name>SBQQ__Contract__c</name>
+        <relationshipLabel><!-- Subscriptions --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>ID des Upgrade-Kreditprodukts für dieses Abonnement.</help>
+        <label><!-- Credit Product Id --></label>
+        <name>SBQQ__CreditProductId__c</name>
+    </fields>
+    <fields>
+        <help>Preis, der für dieses Abonnement bezahlt wird.</help>
+        <label><!-- Customer Price --></label>
+        <name>SBQQ__CustomerPrice__c</name>
+    </fields>
+    <fields>
+        <label><!-- Dimension Type --></label>
+        <name>SBQQ__DimensionType__c</name>
+    </fields>
+    <fields>
+        <help>Die Preisdimension, die mit diesem Abonnement verknüpft ist</help>
+        <label><!-- Price Dimension --></label>
+        <name>SBQQ__Dimension__c</name>
+        <relationshipLabel><!-- Subscriptions --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Art der Rabattregelung. Wird aus dem Feld &quot;Typ&quot; in der verknüpften Rabattregelung kopiert.</help>
+        <label><!-- Discount Schedule Type --></label>
+        <name>SBQQ__DiscountScheduleType__c</name>
+        <picklistValues>
+            <masterLabel>Range</masterLabel>
+            <translation>Bereich</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Slab</masterLabel>
+            <translation>Durchschnitt</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Geben Sie Rabatte als Prozentwert oder Betrag an, der auf der Grundlage von gekaufter Menge oder Laufzeit vom Produktpreis abgezogen wird. Legen Sie Mengen-/Laufzeitbereiche in Klassen unterschiedlicher Rabattsätze fest. Der Rabatt wird auf den Listenpreis gewährt und der sich daraus ergebende Gesamtwert wird als &quot;Regulärer Preis&quot; gespeichert.</help>
+        <label><!-- Discount Schedule --></label>
+        <name>SBQQ__DiscountSchedule__c</name>
+        <relationshipLabel><!-- Subscriptions --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Zusätzlicher Rabatt für dieses Abonnement, angegeben als Prozentsatz.</help>
+        <label><!-- Additional Disc. (%) --></label>
+        <name>SBQQ__Discount__c</name>
+    </fields>
+    <fields>
+        <help>Rabatt, der zusätzlich zum Partnerrabatt abgezogen werden soll.</help>
+        <label><!-- Distributor Discount --></label>
+        <name>SBQQ__DistributorDiscount__c</name>
+    </fields>
+    <fields>
+        <help>Bezeichnet Funktions- und dynamische Optionen für diesen Belegposten.</help>
+        <label><!-- Dynamic Option ID --></label>
+        <name>SBQQ__DynamicOptionId__c</name>
+    </fields>
+    <fields>
+        <help>Datum des letzten Tags, an dem dieser Vertrag noch gültig ist.</help>
+        <label><!-- End Date --></label>
+        <name>SBQQ__EndDate__c</name>
+    </fields>
+    <fields>
+        <help>Listenpreis für dieses Abonnementprodukt.</help>
+        <label><!-- List Price --></label>
+        <name>SBQQ__ListPrice__c</name>
+    </fields>
+    <fields>
+        <help>Aufschlag für dieses Abonnement, angegeben als Betrag.</help>
+        <label><!-- Markup (Amt) --></label>
+        <name>SBQQ__MarkupAmount__c</name>
+    </fields>
+    <fields>
+        <help>Aufschlag für dieses Abonnement, angegeben als Prozentsatz.</help>
+        <label><!-- Markup (%) --></label>
+        <name>SBQQ__MarkupRate__c</name>
+    </fields>
+    <fields>
+        <help>Nettopreis für dieses Abonnement.</help>
+        <label><!-- Net Price --></label>
+        <name>SBQQ__NetPrice__c</name>
+    </fields>
+    <fields>
+        <help>Nummer, die die Position dieses Belegpostens innerhalb seiner Gruppe oder seines Angebots angibt.</help>
+        <label><!-- Number --></label>
+        <name>SBQQ__Number__c</name>
+    </fields>
+    <fields>
+        <help>Rabatt, der für dieses Produkt gewährt wird, da es Teil eines Pakets ist.</help>
+        <label><!-- Option Discount (Amt) --></label>
+        <name>SBQQ__OptionDiscountAmount__c</name>
+    </fields>
+    <fields>
+        <help>Wenn dieser Belegposten für eine optionale SKU gilt, spiegelt dieses Feld den Rabatt wider, der möglicherweise für das Paket gewährt und auf die Option ausgeweitet wurde.</help>
+        <label><!-- Option Discount (%) --></label>
+        <name>SBQQ__OptionDiscount__c</name>
+    </fields>
+    <fields>
+        <help>Gibt die Verschachtelungsebene dieser Option an (gilt nur für Belegposten, die aus Optionen erstellt werden).</help>
+        <label><!-- Option Level --></label>
+        <name>SBQQ__OptionLevel__c</name>
+    </fields>
+    <fields>
+        <help>Gibt den Optionstyp an, der aus der zugehörigen Produktoption kopiert wurde. Bestimmt, wie die Menge berechnet wird.</help>
+        <label><!-- Option Type --></label>
+        <name>SBQQ__OptionType__c</name>
+        <picklistValues>
+            <masterLabel>Accessory</masterLabel>
+            <translation>Zubehör</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Component</masterLabel>
+            <translation>Komponente</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Related Product</masterLabel>
+            <translation>Zugehöriges Produkt</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Das Auftragsprodukt, anhand dessen dieses Abonnement generiert wird.</help>
+        <label><!-- Order Product --></label>
+        <name>SBQQ__OrderProduct__c</name>
+        <relationshipLabel><!-- Subscriptions --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Ursprünglicher Angebotsbelegposten des Abonnements.</help>
+        <label><!-- Original Quote Line --></label>
+        <name>SBQQ__OriginalQuoteLine__c</name>
+        <relationshipLabel><!-- Quote Lines (Derived) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Ursprüngliche Stückkosten des Abonnements zum Zeitpunkt des Kaufs, bevor Kostenregelungen angewandt wurden.</help>
+        <label><!-- Original Unit Cost --></label>
+        <name>SBQQ__OriginalUnitCost__c</name>
+    </fields>
+    <fields>
+        <help>Partnerrabatte werden angewandt, nachdem alle automatischen und nach Ermessen gewährten Rabatte angewandt wurden. Der Partnerrabatt ist beim Partnerpreis bereits berücksichtigt.</help>
+        <label><!-- Partner Discount --></label>
+        <name>SBQQ__PartnerDiscount__c</name>
+    </fields>
+    <fields>
+        <help>Gibt an, wie der Preis für diesen Belegposten berechnet wird: Bei &quot;Liste&quot; wird der Rabatt vom Listenpreis abgezogen, bei &quot;Kosten&quot; wird ein Aufschlag zu den Kosten addiert.</help>
+        <label><!-- Pricing Method --></label>
+        <name>SBQQ__PricingMethod__c</name>
+        <picklistValues>
+            <masterLabel>Block</masterLabel>
+            <translation>Zone</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cost</masterLabel>
+            <translation>Kosten</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Custom</masterLabel>
+            <translation>Benutzerdefiniert</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>List</masterLabel>
+            <translation>Liste</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Percent Of Total</masterLabel>
+            <translation>Prozent vom Gesamtwert</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Feld zur Verbesserung der Benutzerfreundlichkeit durch Unterstützung der Integration mit Service Cloud.</help>
+        <label><!-- Product Id --></label>
+        <name>SBQQ__ProductId__c</name>
+    </fields>
+    <fields>
+        <help>Ruft den Produktnamen ab</help>
+        <label><!-- Product Name --></label>
+        <name>SBQQ__ProductName__c</name>
+    </fields>
+    <fields>
+        <help>Die Produktoption, die diesen Belegposten erzeugt hat (sofern vorhanden).</help>
+        <label><!-- Product Option --></label>
+        <name>SBQQ__ProductOption__c</name>
+        <relationshipLabel><!-- Subscriptions --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Produkt für den Verkauf dieses Abonnements.</help>
+        <label><!-- Product --></label>
+        <name>SBQQ__Product__c</name>
+        <relationshipLabel><!-- Subscriptions --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Berechnetes Verhältnis, das zum Berechnen des Zuteilungspreises verwendet wird.</help>
+        <label><!-- Prorate Multiplier --></label>
+        <name>SBQQ__ProrateMultiplier__c</name>
+    </fields>
+    <fields>
+        <help>Menge dieses Abonnementprodukts, die der Kunde gekauft hat.</help>
+        <label><!-- Quantity --></label>
+        <name>SBQQ__Quantity__c</name>
+    </fields>
+    <fields>
+        <help>Angebotsbelegposten, der dieses Abonnement generiert hat.</help>
+        <label><!-- Quote Line --></label>
+        <name>SBQQ__QuoteLine__c</name>
+        <relationshipLabel><!-- Subscriptions --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Regulärer Preis für dieses Abonnement.</help>
+        <label><!-- Regular Price --></label>
+        <name>SBQQ__RegularPrice__c</name>
+    </fields>
+    <fields>
+        <help>Geben Sie den Verlängerungspreis ein, um die Standardberechnung zu überschreiben. Überschreibt die standmäßige Berechnung des Verlängerungspreises auf der Grundlage des Felds &quot;Verlängerungspreis&quot; des Accounts.</help>
+        <label><!-- Renewal Price --></label>
+        <name>SBQQ__RenewalPrice__c</name>
+    </fields>
+    <fields>
+        <help>Produkt-ID für das Verlängerungsabonnement.</help>
+        <label><!-- Renewal Product Id --></label>
+        <name>SBQQ__RenewalProductId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Renewal Product Option ID --></label>
+        <name>SBQQ__RenewalProductOptionId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Renewal Product Option Product ID --></label>
+        <name>SBQQ__RenewalProductOptionProductId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Renewal Product Option Sub Pricing --></label>
+        <name>SBQQ__RenewalProductOptionSubscriptionPricing__c</name>
+    </fields>
+    <fields>
+        <help>Menge dieses Abonnementprodukts, das verlängert wird.</help>
+        <label><!-- Renewal Quantity --></label>
+        <name>SBQQ__RenewalQuantity__c</name>
+    </fields>
+    <fields>
+        <help>Rate, um die der Verlängerungspreis steigt.</help>
+        <label><!-- Renewal Uplift (%) --></label>
+        <name>SBQQ__RenewalUpliftRate__c</name>
+    </fields>
+    <fields>
+        <help>Datum, an dem dieses Abonnement verlängert wurde. Ist dieses Feld leer, wurde es nicht verlängert.</help>
+        <label><!-- Renewed Date --></label>
+        <name>SBQQ__RenewedDate__c</name>
+    </fields>
+    <fields>
+        <help>Gibt an, welche ID dieses Feld erfordert.</help>
+        <label><!-- Required By Id --></label>
+        <name>SBQQ__RequiredById__c</name>
+    </fields>
+    <fields>
+        <help>Übergeordnetes Produkt dieses Abonnements.</help>
+        <label><!-- Parent Product --></label>
+        <name>SBQQ__RequiredByProduct__c</name>
+        <relationshipLabel><!-- Child Subscriptions --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Schlagen Sie das geändertes Abonnement für dieses Feld nach.</help>
+        <label><!-- Revised Subscription --></label>
+        <name>SBQQ__RevisedSubscription__c</name>
+        <relationshipLabel><!-- Subscriptions --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Die ID des Abonnements oder Vermögenswerts, das oder der dem Paket mit diesem Abonnement zugrunde liegt.</help>
+        <label><!-- Root Id --></label>
+        <name>SBQQ__RootId__c</name>
+    </fields>
+    <fields>
+        <help>Bei Produkten, bei denen Angebote für mehrere Dimensionen gelten, ist dies das Enddatum aus dem ursprünglichen Belegposten des Segments.</help>
+        <label><!-- Segment End Date --></label>
+        <name>SBQQ__SegmentEndDate__c</name>
+    </fields>
+    <fields>
+        <help>Bei Produkten mit mehreren Segmenten ist dies der Index, der die Position dieses Angebotsbelegpostens in der Segmenttabelle angibt.</help>
+        <label><!-- Segment Index --></label>
+        <name>SBQQ__SegmentIndex__c</name>
+    </fields>
+    <fields>
+        <label><!-- Segment Key --></label>
+        <name>SBQQ__SegmentKey__c</name>
+    </fields>
+    <fields>
+        <help>Bei Produkten mit mehreren Segmenten ist dies die Bezeichnung der Spaltenüberschrift (z. B. &quot;Jahr 1&quot;), die mit diesem Posten verknüpft ist.</help>
+        <label><!-- Segment Label --></label>
+        <name>SBQQ__SegmentLabel__c</name>
+    </fields>
+    <fields>
+        <help>Bei Produkten, bei denen Angebote für mehrere Dimensionen gelten, ist dies die Menge, die dem ursprünglichen Belegposten des Segments entspricht.</help>
+        <label><!-- Segment Quantity --></label>
+        <name>SBQQ__SegmentQuantity__c</name>
+    </fields>
+    <fields>
+        <help>Bei Produkten, bei denen Angebote für mehrere Dimensionen gelten, ist dies das Startdatum aus dem ursprünglichen Belegposten des Segments.</help>
+        <label><!-- Segment Start Date --></label>
+        <name>SBQQ__SegmentStartDate__c</name>
+    </fields>
+    <fields>
+        <help>Bei Produkten, bei denen Angebote für mehrere Dimensionen gelten, ist dies der Aufschlagbetrag aus dem ursprünglichen Belegposten des Segments.</help>
+        <label><!-- Segment Uplift (Amt) --></label>
+        <name>SBQQ__SegmentUpliftAmount__c</name>
+    </fields>
+    <fields>
+        <help>Bei Produkten, bei denen Angebote für mehrere Dimensionen gelten, ist dies der Aufschlag aus dem ursprünglichen Belegposten des Segments.</help>
+        <label><!-- Segment Uplift --></label>
+        <name>SBQQ__SegmentUplift__c</name>
+    </fields>
+    <fields>
+        <help>Sonderpreis für dieses Abonnement.</help>
+        <label><!-- Special Price --></label>
+        <name>SBQQ__SpecialPrice__c</name>
+    </fields>
+    <fields>
+        <help>Das Datum des ersten Tags, an dem dieses Abonnement gültig ist.</help>
+        <label><!-- Start Date --></label>
+        <name>SBQQ__StartDate__c</name>
+    </fields>
+    <fields>
+        <help>Entspricht standardmäßig dem Enddatum des Angebotbelegpostens. Ist das Feld leer, wird das Enddatum des Vertrags verwendet.</help>
+        <label><!-- Subscription End Date --></label>
+        <name>SBQQ__SubscriptionEndDate__c</name>
+    </fields>
+    <fields>
+        <help>Entspricht standardmäßig dem Startdatum des Angebotbelegpostens. Ist das Feld leer, wird das Startdatum des Vertrags verwendet.</help>
+        <label><!-- Subscription Start Date --></label>
+        <name>SBQQ__SubscriptionStartDate__c</name>
+    </fields>
+    <fields>
+        <help>Regelung für Rabatte, die auf der Abonnementlaufzeit basieren. Bei der Einstellung &quot;Gruppe&quot; gilt der Rabattsatz für die Gruppenlaufzeit, während bei &quot;Angebot&quot; der Rabattsatz für die gesamte Angebotslaufzeit gilt, unabhängig von den unterschiedlichen Laufzeiten Ihrer Gruppen.</help>
+        <label><!-- Term Discount Schedule --></label>
+        <name>SBQQ__TermDiscountSchedule__c</name>
+        <relationshipLabel><!-- Subscriptions (Term Discouned) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Datum, an dem das Abonnement endet. Wird bei einem Upgrade des zugehörigen Vermögenswerts automatisch ausgefüllt.</help>
+        <label><!-- Terminated Date --></label>
+        <name>SBQQ__TerminatedDate__c</name>
+    </fields>
+    <fields>
+        <help>Stückkosten für dieses Abonnement.</help>
+        <label><!-- Unit Cost --></label>
+        <name>SBQQ__UnitCost__c</name>
+    </fields>
+    <gender>Neuter</gender>
+    <layouts>
+        <layout>Subscription Layout</layout>
+        <sections>
+            <label>Benutzerdefinierte Links</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>Preisinformationen</label>
+            <section>Pricing Info</section>
+        </sections>
+        <sections>
+            <label>Verlängerungsinformationen</label>
+            <section>Renewal Info</section>
+        </sections>
+        <sections>
+            <label>Segmentinformationen</label>
+            <section>Segment Info</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Abonnementnummer</nameFieldLabel>
+    <validationRules>
+        <errorMessage><!-- Preserve Bundle Structure is checked on Contract, Renewal Quantity cannot be different from Quantity. --></errorMessage>
+        <name>SBQQ__Renewal_Quantity_cannot_be_editable</name>
+    </validationRules>
+</CustomObjectTranslation>

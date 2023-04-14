@@ -1,0 +1,547 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <customHelpPage>SBQQ__SearchFilterHelp</customHelpPage>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <description>Search filter definition.</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>false</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>Private</externalSharingModel>
+    <fields>
+        <fullName>SBQQ__Action__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>Action to which this filter applies. Blank value means the filter is global.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Action to which this filter applies. Blank value means the filter is global.</inlineHelpText>
+        <label>Action</label>
+        <referenceTo>SBQQ__CustomAction__c</referenceTo>
+        <relationshipLabel>Search Filters</relationshipLabel>
+        <relationshipName>SearchFilters</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__DisplayOrder__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Order in which this filter is displayed in the UI.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Order in which this filter is displayed in the UI.</inlineHelpText>
+        <label>Display Order</label>
+        <precision>4</precision>
+        <required>true</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SBQQ__FilterSourceField__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Field that sources value for use in filtering.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Field that sources value for use in filtering.</inlineHelpText>
+        <label>Filter Source Field</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>SBQQ__FilterSourceObject__c</controllingField>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Type</fullName>
+                    <default>false</default>
+                    <label>Type</label>
+                </value>
+                <value>
+                    <fullName>Status</fullName>
+                    <default>false</default>
+                    <label>Status</label>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>Quote</controllingFieldValue>
+                <valueName>Type</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Quote</controllingFieldValue>
+                <valueName>Status</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SBQQ__FilterSourceObject__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Object that sources value for use in filtering.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Object that sources value for use in filtering.</inlineHelpText>
+        <label>Filter Source Object</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Quote</fullName>
+                    <default>false</default>
+                    <label>Quote</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SBQQ__FilterValue__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Static value used in filtering.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Static value used in filtering.</inlineHelpText>
+        <label>Filter Value</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SBQQ__HiddenSourceField__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Field that sources value for use in determining whether the filter is hidden.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Specify the field that sources value for use in determining whether the filter is hidden.</inlineHelpText>
+        <label>Hidden Source Field</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>SBQQ__HiddenSourceObject__c</controllingField>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Primary</fullName>
+                    <default>false</default>
+                    <label>Primary</label>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>Quote</controllingFieldValue>
+                <valueName>Primary</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SBQQ__HiddenSourceObject__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Object that sources value for use in determining whether the filter is hidden.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Specify object that sources value for use in determining whether the filter is hidden.</inlineHelpText>
+        <label>Hidden Source Object</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Quote</fullName>
+                    <default>false</default>
+                    <label>Quote</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SBQQ__Hidden__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Flag that marks this filter as hidden. Hidden filters do not display in the UI but contribute to search queries.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select the checkbox to mark this filter as hidden. Hidden filters do not display in the UI but contribute to search queries.</inlineHelpText>
+        <label>Hidden</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__Operator__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Operator used by this filter to determine whether filter value is matched.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Specify the operator to use with this filter.</inlineHelpText>
+        <label>Operator</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>equals</fullName>
+                    <default>false</default>
+                    <label>equals</label>
+                </value>
+                <value>
+                    <fullName>not equals</fullName>
+                    <default>false</default>
+                    <label>not equals</label>
+                </value>
+                <value>
+                    <fullName>less than</fullName>
+                    <default>false</default>
+                    <label>less than</label>
+                </value>
+                <value>
+                    <fullName>less or equals</fullName>
+                    <default>false</default>
+                    <label>less or equals</label>
+                </value>
+                <value>
+                    <fullName>greater than</fullName>
+                    <default>false</default>
+                    <label>greater than</label>
+                </value>
+                <value>
+                    <fullName>greater or equals</fullName>
+                    <default>false</default>
+                    <label>greater or equals</label>
+                </value>
+                <value>
+                    <fullName>starts with</fullName>
+                    <default>false</default>
+                    <label>starts with</label>
+                </value>
+                <value>
+                    <fullName>ends with</fullName>
+                    <default>false</default>
+                    <label>ends with</label>
+                </value>
+                <value>
+                    <fullName>contains</fullName>
+                    <default>false</default>
+                    <label>contains</label>
+                </value>
+                <value>
+                    <fullName>between</fullName>
+                    <default>false</default>
+                    <label>between</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SBQQ__TargetField__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Field searched by this filter.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Specify the field to search.</inlineHelpText>
+        <label>Target Field</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>SBQQ__TargetObject__c</controllingField>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Name</fullName>
+                    <default>false</default>
+                    <label>Name</label>
+                </value>
+                <value>
+                    <fullName>Product Code</fullName>
+                    <default>false</default>
+                    <label>Product Code</label>
+                </value>
+                <value>
+                    <fullName>Product Family</fullName>
+                    <default>false</default>
+                    <label>Product Family</label>
+                </value>
+                <value>
+                    <fullName>Product Description</fullName>
+                    <default>false</default>
+                    <label>Product Description</label>
+                </value>
+                <value>
+                    <fullName>Quantity</fullName>
+                    <default>false</default>
+                    <label>Quantity</label>
+                </value>
+                <value>
+                    <fullName>Status</fullName>
+                    <default>false</default>
+                    <label>Status</label>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>Product</controllingFieldValue>
+                <controllingFieldValue>Asset</controllingFieldValue>
+                <valueName>Name</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Product</controllingFieldValue>
+                <controllingFieldValue>Asset</controllingFieldValue>
+                <controllingFieldValue>Subscription</controllingFieldValue>
+                <valueName>Product Code</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Product</controllingFieldValue>
+                <controllingFieldValue>Asset</controllingFieldValue>
+                <valueName>Product Family</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Product</controllingFieldValue>
+                <controllingFieldValue>Asset</controllingFieldValue>
+                <valueName>Product Description</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Asset</controllingFieldValue>
+                <controllingFieldValue>Subscription</controllingFieldValue>
+                <valueName>Quantity</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Asset</controllingFieldValue>
+                <valueName>Status</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SBQQ__TargetObject__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Object searched by this filter.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Specify object to search.</inlineHelpText>
+        <label>Target Object</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Product</fullName>
+                    <default>false</default>
+                    <label>Product</label>
+                </value>
+                <value>
+                    <fullName>Asset</fullName>
+                    <default>false</default>
+                    <label>Asset</label>
+                </value>
+                <value>
+                    <fullName>Subscription</fullName>
+                    <default>false</default>
+                    <label>Subscription</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <label>Search Filter</label>
+    <listViews>
+        <fullName>SBQQ__All</fullName>
+        <columns>NAME</columns>
+        <columns>SBQQ__DisplayOrder__c</columns>
+        <columns>SBQQ__TargetObject__c</columns>
+        <columns>SBQQ__TargetField__c</columns>
+        <columns>SBQQ__Operator__c</columns>
+        <columns>SBQQ__FilterValue__c</columns>
+        <columns>SBQQ__Hidden__c</columns>
+        <columns>SBQQ__HiddenSourceField__c</columns>
+        <columns>SBQQ__FilterSourceField__c</columns>
+        <columns>SBQQ__Action__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+        <language>en_US</language>
+    </listViews>
+    <nameField>
+        <label>Filter Name</label>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Search Filters</pluralLabel>
+    <searchLayouts>
+        <customTabListAdditionalFields>SBQQ__DisplayOrder__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>SBQQ__TargetObject__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>SBQQ__TargetField__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>SBQQ__Operator__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>SBQQ__FilterValue__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>SBQQ__Hidden__c</customTabListAdditionalFields>
+        <lookupDialogsAdditionalFields>SBQQ__DisplayOrder__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>SBQQ__TargetObject__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>SBQQ__TargetField__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>SBQQ__Operator__c</lookupDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>SBQQ__TargetObject__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>SBQQ__TargetField__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>SBQQ__Operator__c</lookupPhoneDialogsAdditionalFields>
+        <searchResultsAdditionalFields>SBQQ__TargetObject__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>SBQQ__TargetField__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>SBQQ__Operator__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>SBQQ__FilterValue__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>SBQQ__Hidden__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+    <validationRules>
+        <fullName>SBQQ__Require_filter_object_for_filter_field</fullName>
+        <active>true</active>
+        <description>Require filter source object is selected when filter source field is not blank.</description>
+        <errorConditionFormula>AND(ISPICKVAL(SBQQ__FilterSourceObject__c, &apos;&apos;),NOT(ISPICKVAL(SBQQ__FilterSourceField__c, &apos;&apos;)))</errorConditionFormula>
+        <errorMessage>You must select Filter Source Object when Filter Source Field is selected.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>SBQQ__Require_hidden_object_for_hidden_field</fullName>
+        <active>true</active>
+        <description>Require hidden source object is selected when hidden source field is not blank.</description>
+        <errorConditionFormula>AND(ISPICKVAL(SBQQ__HiddenSourceObject__c, &apos;&apos;),NOT(ISPICKVAL(SBQQ__HiddenSourceField__c, &apos;&apos;)))</errorConditionFormula>
+        <errorMessage>You must select Hidden Source Object when Hidden Source Field is selected.</errorMessage>
+    </validationRules>
+    <visibility>Public</visibility>
+</CustomObject>

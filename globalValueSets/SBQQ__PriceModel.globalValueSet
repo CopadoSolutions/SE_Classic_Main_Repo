@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Flat Fee</fullName>
+        <default>false</default>
+        <label>Flat Fee</label>
+    </customValue>
+    <customValue>
+        <fullName>Per Unit</fullName>
+        <default>false</default>
+        <label>Per Unit</label>
+    </customValue>
+    <description>The price model that determines how prices are calculated.</description>
+    <masterLabel>Price Model</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

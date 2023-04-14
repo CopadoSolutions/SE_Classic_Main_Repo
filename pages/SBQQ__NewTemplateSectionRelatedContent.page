@@ -1,0 +1,62 @@
+<apex:page standardController="SBQQ__TemplateSection__c" extensions="SBQQ.UploadRelatedContentController" docType="html-5.0" standardStylesheets="false" title="{!$Label.sbqq__lbl_related_content}">
+<apex:stylesheet value="{!IF(formfactor == 'desktop', $Resource['sb'], $Resource['MobileCSS'])}"/>
+<c:theme formFactor="{!formFactor}"/>
+<div id="sbNewRelatedContent" class="sb">
+  <apex:form id="form">
+  <apex:outputPanel rendered="{!formFactor == 'desktop'}">
+  <c:pageHeader subtitle="{!SBQQ__TemplateSection__c.Name}" title="{!$Label.sbqq__lbl_related_content}" iconName="sf-icon-document" formFactor="{!formFactor}">
+  <div class="sbButtons">
+    <apex:commandButton styleClass="sbBtn" value="Save" action="{!onSave}"/>
+    <apex:commandButton styleClass="sbBtn" value="Cancel" action="{!cancel}"/>
+  </div>
+</c:pageHeader>
+</apex:outputPanel>
+<apex:outputPanel rendered="{!formFactor != 'desktop'}">
+<c:pageHeader title="{!$Label.sbqq__lbl_related_content}" formFactor="{!formFactor}" customTheme="18">
+<div class="buttonContainer">
+  <div class="sbPageButtons">
+    <div class="center">
+      <apex:commandButton styleClass="sbBtn" value="Save" action="{!onSave}"/>
+      <apex:commandButton styleClass="sbBtn" value="Cancel" action="{!cancel}"/>
+    </div>
+  </div>
+</div>
+</c:pageHeader>
+</apex:outputPanel>
+<apex:pageMessages id="messages"/>
+<div class="sbBody">
+  <div class="sbPageBlockSection">
+    <div id="sbNewRelatedContentOptions">
+      <c:pageBlockSection >
+      <table id="sbDocGenOptions">
+        <tbody>
+          <tr>
+            <apex:outputLabel >
+            <td>
+              <label> {!$Label.sbqq__lbl_quote_related_content_upload} </label>
+            </td>
+            <td>
+              <apex:inputFile value="{!UploadFile.Body}" contentType="{!UploadFile.ContentType}" fileName="{!UploadFile.Name}" fileSize="{!UploadFile.BodyLength}" accept="application/pdf" id="UploadFile"/>
+            </td>
+          </apex:outputLabel>
+        </tr>
+        <tr>
+          <apex:outputLabel >
+          <td>
+            <label> {!$Label.sbqq__lbl_display_order} </label>
+            <i class="sb-icon-help-circled" ng-show="{!formFactor == 'desktop'}" title="{!$Label.sbqq__msg_quote_related_content_display_order}"/>
+          </td>
+        </apex:outputLabel>
+        <td>
+          <apex:inputText value="{!displayOrder}"  id="displayOrder"/>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</c:pageBlockSection>
+</div>
+</div>
+</div>
+</apex:form>
+</div>
+</apex:page>

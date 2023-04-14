@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomPermission xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Hide the global header and navigation when viewing Salesforce CPQ pages</description>
+    <isLicensed>false</isLicensed>
+    <label>Hide Global Header</label>
+</CustomPermission>

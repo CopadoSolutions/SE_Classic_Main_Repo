@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- API Name of the custom field used in the query. --></help>
+        <label><!-- Lookup Field --></label>
+        <name>SBQQ__LookupField__c</name>
+        <picklistValues>
+            <masterLabel>SBQQ__Category__c</masterLabel>
+            <translation><!-- SBQQ__Category__c --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- If Match Type = Field Value, select a Tested Object and Tested Field. If Match Type = Static Value, enter the value into Tested Value. If Match Type = Configuration Attribute, specify a Configuration Attribute. --></help>
+        <label><!-- Match Type --></label>
+        <name>SBQQ__MatchType__c</name>
+        <picklistValues>
+            <masterLabel>Configuration Attribute Value</masterLabel>
+            <translation><!-- Configuration Attribute Value --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Field Value</masterLabel>
+            <translation><!-- Field Value --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Static Value</masterLabel>
+            <translation><!-- Static Value --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- The operator that is applied when comparing the Field with the Value. --></help>
+        <label><!-- Operator --></label>
+        <name>SBQQ__Operator__c</name>
+        <picklistValues>
+            <masterLabel>equals</masterLabel>
+            <translation><!-- equals --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>greater or equals</masterLabel>
+            <translation><!-- greater or equals --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>greater than</masterLabel>
+            <translation><!-- greater than --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>less or equals</masterLabel>
+            <translation><!-- less or equals --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>less than</masterLabel>
+            <translation><!-- less than --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>not equals</masterLabel>
+            <translation><!-- not equals --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- ParentRuleIsActive --></label>
+        <name>SBQQ__ParentRuleIsActive__c</name>
+    </fields>
+    <fields>
+        <help><!-- Price Rule associated with this Lookup Query. Replaces the legacy master-detail field. --></help>
+        <label><!-- Price Rule --></label>
+        <name>SBQQ__PriceRule2__c</name>
+        <relationshipLabel><!-- Lookup Queries (Price Rule) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Product Rule associated with this Lookup Query --></help>
+        <label><!-- Product Rule --></label>
+        <name>SBQQ__ProductRule__c</name>
+        <relationshipLabel><!-- Lookup Queries (Product Rule) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Parent Rule Lookup Object --></label>
+        <name>SBQQ__RuleLookupObject__c</name>
+    </fields>
+    <fields>
+        <label><!-- RuleTargetsCalculator --></label>
+        <name>SBQQ__RuleTargetsCalculator__c</name>
+    </fields>
+    <fields>
+        <help><!-- Configuration Attribute that is evaluated by this query. Required if Match Type = Configuration Attribute and only if this Query is associated with a Product Rule. --></help>
+        <label><!-- Tested Configuration Attribute --></label>
+        <name>SBQQ__TestedConfigurationAttribute__c</name>
+        <relationshipLabel><!-- Lookup Queries --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Field on Quote, Quote Line or Product Option object that is evaluated by this query. Required if Match Type = Field Value. --></help>
+        <label><!-- Tested Field --></label>
+        <name>SBQQ__TestedField__c</name>
+        <picklistValues>
+            <masterLabel>Product Code</masterLabel>
+            <translation><!-- Product Code --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Object against which the query is evaluated. Required if Match Type = Field Value. --></help>
+        <label><!-- Tested Object --></label>
+        <name>SBQQ__TestedObject__c</name>
+        <picklistValues>
+            <masterLabel>Product Option</masterLabel>
+            <translation><!-- Product Option --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quote</masterLabel>
+            <translation><!-- Quote --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quote Line</masterLabel>
+            <translation><!-- Quote Line --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- The value you want to match in the field you selected using the operator chosen. Required if Match Type = Static Value. --></help>
+        <label><!-- Tested Value --></label>
+        <name>SBQQ__TestedValue__c</name>
+    </fields>
+    <layouts>
+        <layout>Lookup Query Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Lookup Information --></label>
+            <section>Lookup Information</section>
+        </sections>
+    </layouts>
+    <validationRules>
+        <errorMessage><!-- Testing Configuration Attributes is only supported for Lookup Queries associated with Product Rules. --></errorMessage>
+        <name>SBQQ__Configuration_Attribute_Validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Associate a lookup object on the product rule before creating a Lookup Query. --></errorMessage>
+        <name>SBQQ__LookupObjectMustExist</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Tested Value is required if Match Type = Static Value. Tested Object and Tested Field are required if Match Type = Field Value. Tested Configuration Attribute is required if Match Type = Configuration Attribute. --></errorMessage>
+        <name>SBQQ__Match_Type_Validation</name>
+    </validationRules>
+</CustomObjectTranslation>

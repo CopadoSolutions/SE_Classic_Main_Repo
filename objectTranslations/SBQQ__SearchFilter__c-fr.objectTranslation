@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Filtre de recherche</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Filtres de recherche</value>
+    </caseValues>
+    <fields>
+        <help>Action à laquelle ce filtre s&apos;applique. Une valeur vide signifie que le filtre est global.</help>
+        <label><!-- Action --></label>
+        <name>SBQQ__Action__c</name>
+        <relationshipLabel><!-- Search Filters --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Ordre d&apos;affichage de ce filtre dans l&apos;interface utilisateur.</help>
+        <label><!-- Display Order --></label>
+        <name>SBQQ__DisplayOrder__c</name>
+    </fields>
+    <fields>
+        <help>Champ source de la valeur à utiliser dans le filtrage.</help>
+        <label><!-- Filter Source Field --></label>
+        <name>SBQQ__FilterSourceField__c</name>
+        <picklistValues>
+            <masterLabel>Status</masterLabel>
+            <translation>Statut</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Type</masterLabel>
+            <translation>Type</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Objet source de la valeur à utiliser dans le filtrage.</help>
+        <label><!-- Filter Source Object --></label>
+        <name>SBQQ__FilterSourceObject__c</name>
+        <picklistValues>
+            <masterLabel>Quote</masterLabel>
+            <translation>Devis</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Valeur statique utilisée dans le filtrage.</help>
+        <label><!-- Filter Value --></label>
+        <name>SBQQ__FilterValue__c</name>
+    </fields>
+    <fields>
+        <help>Spécifiez le champ de la valeur source à utiliser pour déterminer si le filtre très masqué.</help>
+        <label><!-- Hidden Source Field --></label>
+        <name>SBQQ__HiddenSourceField__c</name>
+        <picklistValues>
+            <masterLabel>Primary</masterLabel>
+            <translation>Principal</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Spécifiez l&apos;objet source de la valeur à utiliser pour déterminer si le filtre est masqué.</help>
+        <label><!-- Hidden Source Object --></label>
+        <name>SBQQ__HiddenSourceObject__c</name>
+        <picklistValues>
+            <masterLabel>Quote</masterLabel>
+            <translation>Devis</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Sélectionnez cette case pour marquer ce filtre comme masqué. Les filtres masqués ne sont pas affichés dans l&apos;interface utilisateur, mais contribuent aux requêtes de recherche.</help>
+        <label><!-- Hidden --></label>
+        <name>SBQQ__Hidden__c</name>
+    </fields>
+    <fields>
+        <help>Spécifiez l&apos;opérateur à utiliser avec ce filtre.</help>
+        <label><!-- Operator --></label>
+        <name>SBQQ__Operator__c</name>
+        <picklistValues>
+            <masterLabel>between</masterLabel>
+            <translation>entre</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>contains</masterLabel>
+            <translation>contient</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ends with</masterLabel>
+            <translation>se termine par</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>equals</masterLabel>
+            <translation>égal à</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>greater or equals</masterLabel>
+            <translation>supérieur ou égal à</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>greater than</masterLabel>
+            <translation>supérieur à</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>less or equals</masterLabel>
+            <translation>inférieur ou égal à</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>less than</masterLabel>
+            <translation>inférieur à</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>not equals</masterLabel>
+            <translation>différent de</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>starts with</masterLabel>
+            <translation>commence par</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Spécifiez le champ à rechercher.</help>
+        <label><!-- Target Field --></label>
+        <name>SBQQ__TargetField__c</name>
+        <picklistValues>
+            <masterLabel>Name</masterLabel>
+            <translation>Nom</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product Code</masterLabel>
+            <translation>Code produit</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product Description</masterLabel>
+            <translation>Description du produit</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product Family</masterLabel>
+            <translation>Famille de produits</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quantity</masterLabel>
+            <translation>Quantité</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Status</masterLabel>
+            <translation>Statut</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Spécifiez l&apos;objet à rechercher.</help>
+        <label><!-- Target Object --></label>
+        <name>SBQQ__TargetObject__c</name>
+        <picklistValues>
+            <masterLabel>Asset</masterLabel>
+            <translation>Ressource</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product</masterLabel>
+            <translation>Produit</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Subscription</masterLabel>
+            <translation>Abonnement</translation>
+        </picklistValues>
+    </fields>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Search Filter Layout</layout>
+        <sections>
+            <label>Informations avancées</label>
+            <section>Advanced Information</section>
+        </sections>
+        <sections>
+            <label>Liens personnalisés</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Nom du filtre</nameFieldLabel>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- You must select Filter Source Object when Filter Source Field is selected. --></errorMessage>
+        <name>SBQQ__Require_filter_object_for_filter_field</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You must select Hidden Source Object when Hidden Source Field is selected. --></errorMessage>
+        <name>SBQQ__Require_hidden_object_for_hidden_field</name>
+    </validationRules>
+</CustomObjectTranslation>

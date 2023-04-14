@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>インポート列</value>
+    </caseValues>
+    <fields>
+        <help>列の位置を表す数値のインデックス値を入力します。列インデックスは 1 から開始する必要があります。</help>
+        <label><!-- Column Index --></label>
+        <name>SBQQ__ColumnIndex__c</name>
+    </fields>
+    <fields>
+        <help>API 参照名を入力します。</help>
+        <label><!-- Field Name --></label>
+        <name>SBQQ__FieldName__c</name>
+        <picklistValues>
+            <masterLabel>Discount (%)</masterLabel>
+            <translation>割引 (%)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Discount (Amt)</masterLabel>
+            <translation>割引 (金額)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>List Price</masterLabel>
+            <translation>リスト価格</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Partner Discount</masterLabel>
+            <translation>パートナー割引</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product Code</masterLabel>
+            <translation>商品コード</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quantity</masterLabel>
+            <translation>数量</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>レコードをインポートする形式を選択します。</help>
+        <label><!-- Import Format --></label>
+        <name>SBQQ__ImportFormat__c</name>
+        <relationshipLabel><!-- Import Columns --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>この列が一意のキー列である場合はオンにします。</help>
+        <label><!-- Key --></label>
+        <name>SBQQ__Key__c</name>
+    </fields>
+    <layouts>
+        <layout>Import Column Layout</layout>
+        <sections>
+            <label>カスタムリンク</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>列の名前</nameFieldLabel>
+    <validationRules>
+        <errorMessage><!-- Column Index must start from 1. --></errorMessage>
+        <name>SBQQ__Column_index_must_start_from_1</name>
+    </validationRules>
+</CustomObjectTranslation>

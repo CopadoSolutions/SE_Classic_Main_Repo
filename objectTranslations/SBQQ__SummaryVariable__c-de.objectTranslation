@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Zusammenfassungsvariable</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Zusammenfassungsvariablen</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value><!-- Zusammenfassungsvariable --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+        <value><!-- Zusammenfassungsvariablen --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value><!-- Zusammenfassungsvariable --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>true</plural>
+        <value><!-- Zusammenfassungsvariablen --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value><!-- Zusammenfassungsvariable --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value><!-- Zusammenfassungsvariablen --></value>
+    </caseValues>
+    <fields>
+        <help>Feld eines Angebotsbelegpostens, für das die Aggregatfunktion ausgeführt wird.</help>
+        <label><!-- Aggregate Field --></label>
+        <name>SBQQ__AggregateField__c</name>
+        <picklistValues>
+            <masterLabel>Quantity</masterLabel>
+            <translation>Menge</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Aggregatfunktion, die zum Berechnen dieser Variable verwendet wird.</help>
+        <label><!-- Aggregate Function --></label>
+        <name>SBQQ__AggregateFunction__c</name>
+        <picklistValues>
+            <masterLabel>Average</masterLabel>
+            <translation>Durchschnitt</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Count</masterLabel>
+            <translation>Anzahl</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Max</masterLabel>
+            <translation>Maximum</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Min</masterLabel>
+            <translation>Minimum</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sum</masterLabel>
+            <translation>Summe</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Eine weitere Zusammenfassungsvariable, die mit dieser Zusammenfassungsvariablen zusammengesetzt werden soll, wenn Ihre Bedingung auf beiden Ergebnissen basiert.</help>
+        <label><!-- Variable Element --></label>
+        <name>SBQQ__CombineWith__c</name>
+        <relationshipLabel><!-- Composed By --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Geben Sie an, wie diese Variable mit &quot;Variablenelement&quot; oder &quot;Wertelement&quot; zusammengesetzt werden soll.</help>
+        <label><!-- Composite Operator --></label>
+        <name>SBQQ__CompositeOperator__c</name>
+        <picklistValues>
+            <masterLabel>Add</masterLabel>
+            <translation>Addieren</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Divide</masterLabel>
+            <translation>Dividieren</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Multiply</masterLabel>
+            <translation>Multiplizieren</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Subtract</masterLabel>
+            <translation>Subtrahieren</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Wenn Sie Datensätze auf der Grundlage eines Angebotsfelds weiter eingrenzen möchten, wählen Sie das Feld aus, das mit dem gleichen Feld im Angebot verglichen werden soll.</help>
+        <label><!-- Constraint Field --></label>
+        <name>SBQQ__ConstraintField__c</name>
+        <picklistValues>
+            <masterLabel>Status</masterLabel>
+            <translation>Status</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Type</masterLabel>
+            <translation>Typ</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Wählen Sie das Feld aus, das beim Filtern von Elementen verwendet werden soll, die in diese Zusammenfassungsvariable einbezogen werden sollen.</help>
+        <label><!-- Filter Field --></label>
+        <name>SBQQ__FilterField__c</name>
+        <picklistValues>
+            <masterLabel>Product Code</masterLabel>
+            <translation>Produktcode</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product Family</masterLabel>
+            <translation>Produktfamilie</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Geben Sie den Wert ein, dem bei diesem Filter entsprochen werden muss.</help>
+        <label><!-- Filter Value --></label>
+        <name>SBQQ__FilterValue__c</name>
+    </fields>
+    <fields>
+        <help>Wählen Sie den Operator aus, den Sie in Ihrem Filter verwenden möchten.</help>
+        <label><!-- Operator --></label>
+        <name>SBQQ__Operator__c</name>
+        <picklistValues>
+            <masterLabel>contains</masterLabel>
+            <translation>enthält</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ends with</masterLabel>
+            <translation>endet auf</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>equals</masterLabel>
+            <translation>gleich</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>greater or equals</masterLabel>
+            <translation>größer oder gleich</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>greater than</masterLabel>
+            <translation>größer als</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>less or equals</masterLabel>
+            <translation>kleiner oder gleich</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>less than</masterLabel>
+            <translation>kleiner als</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>not equals</masterLabel>
+            <translation>ungleich</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>starts with</masterLabel>
+            <translation>beginnt mit</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Geben Sie den Umfang Ihrer Zusammenfassungsvariablen ein.</help>
+        <label><!-- Scope --></label>
+        <name>SBQQ__Scope__c</name>
+        <picklistValues>
+            <masterLabel>Assets</masterLabel>
+            <translation>Vermögenswerte</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quote</masterLabel>
+            <translation>Angebot</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Wählen Sie das Objekt aus, das aggregiert werden soll.</help>
+        <label><!-- Target Object --></label>
+        <name>SBQQ__TargetObject__c</name>
+        <picklistValues>
+            <masterLabel>Asset</masterLabel>
+            <translation>Vermögenswert</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product Option</masterLabel>
+            <translation>Produktoption</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quote Line</masterLabel>
+            <translation>Angebotsbelegposten</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Subscription</masterLabel>
+            <translation>Abonnement</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Geben Sie den Wert ein, der beim Zusammensetzen verwendet werden soll.</help>
+        <label><!-- Value Element --></label>
+        <name>SBQQ__ValueElement__c</name>
+    </fields>
+    <gender>Feminine</gender>
+    <layouts>
+        <layout>Summary Variable Layout</layout>
+        <sections>
+            <label>Zusammengesetzte Informationen</label>
+            <section>Composite Information</section>
+        </sections>
+        <sections>
+            <label>Benutzerdefinierte Links</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>Filterinformationen</label>
+            <section>Filter Information</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Variablenname</nameFieldLabel>
+</CustomObjectTranslation>

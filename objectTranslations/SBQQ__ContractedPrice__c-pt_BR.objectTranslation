@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Preço contratado</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Preços contratados</value>
+    </caseValues>
+    <fields>
+        <help>Conta para a qual esse preço foi negociado.</help>
+        <label><!-- Account --></label>
+        <name>SBQQ__Account__c</name>
+        <relationshipLabel><!-- Contracted Prices --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Contrato de vendas que regula esse preço.</help>
+        <label><!-- Contract --></label>
+        <name>SBQQ__Contract__c</name>
+        <relationshipLabel><!-- Contracted Prices --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Descrição para esse preço contratado. Isso será copiado para a &quot;Descrição de preço especial&quot; dos itens de linha de cotação usando esse preço.</help>
+        <label><!-- Description --></label>
+        <name>SBQQ__Description__c</name>
+    </fields>
+    <fields>
+        <help>Cronograma de descontos por volume para usar para esse produto com esse cliente.</help>
+        <label><!-- Discount Schedule --></label>
+        <name>SBQQ__DiscountSchedule__c</name>
+        <relationshipLabel><!-- Contracted Prices --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Desconto do preço do Catálogo de preços (percentual) representado por esse Preço contratado. Esse campo ou Preço deve ser definido, mas não ambos.</help>
+        <label><!-- Discount --></label>
+        <name>SBQQ__Discount__c</name>
+    </fields>
+    <fields>
+        <help>Data em que esse preço contratado entra vigor.</help>
+        <label><!-- Effective Date --></label>
+        <name>SBQQ__EffectiveDate__c</name>
+    </fields>
+    <fields>
+        <help>Data em que esse preço contratado expira.</help>
+        <label><!-- Expiration Date --></label>
+        <name>SBQQ__ExpirationDate__c</name>
+    </fields>
+    <fields>
+        <help>Selecione um campo a ser usado em um filtro, como Família de produtos, se quiser aplicar esse preço a um conjunto de produtos. Se estiver usando um campo personalizado, adicione o nome da API ao Campo de filtro como um valor da lista de opções.</help>
+        <label><!-- Filter Field --></label>
+        <name>SBQQ__FilterField__c</name>
+        <picklistValues>
+            <masterLabel>Product</masterLabel>
+            <translation>Produto</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product Code</masterLabel>
+            <translation>Código do produto</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product Family</masterLabel>
+            <translation>Família de produtos</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Valor com relação ao qual o campo de filtro é testado para determinar se esse preço contratado deve se aplicar.</help>
+        <label><!-- Filter Value --></label>
+        <name>SBQQ__FilterValue__c</name>
+    </fields>
+    <fields>
+        <help>Selecione a caixa de seleção para proibir mais descontos nesse produto.</help>
+        <label><!-- Non Discountable --></label>
+        <name>SBQQ__NonDiscountable__c</name>
+    </fields>
+    <fields>
+        <help>Selecione a operação a ser usada ao combinar os conteúdos do Campo de filtro com o Valor do filtro.</help>
+        <label><!-- Operator --></label>
+        <name>SBQQ__Operator__c</name>
+        <picklistValues>
+            <masterLabel>contains</masterLabel>
+            <translation>contém</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ends with</masterLabel>
+            <translation>termina com</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>equals</masterLabel>
+            <translation>igual a</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>greater or equals</masterLabel>
+            <translation>maior ou igual a</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>greater than</masterLabel>
+            <translation>maior que</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>less or equals</masterLabel>
+            <translation>menor ou igual a</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>less than</masterLabel>
+            <translation>menor que</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>not equals</masterLabel>
+            <translation>não igual a</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>A Linha de cotação que originou esse preço contratado.</help>
+        <label><!-- Original Quote Line --></label>
+        <name>SBQQ__OriginalQuoteLine__c</name>
+        <relationshipLabel><!-- Contracted Prices --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Insira o preço que foi negociado com o cliente. Esse valor substituirá qualquer outro preço, como aquele de um catálogo de preços ou um preço de desconto por volume.</help>
+        <label><!-- Price --></label>
+        <name>SBQQ__Price__c</name>
+    </fields>
+    <fields>
+        <help>Selecione um produto de qualquer catálogo de preços que você queira aplicar a esse desconto.</help>
+        <label><!-- Product --></label>
+        <name>SBQQ__Product__c</name>
+        <relationshipLabel><!-- Contracted Prices --></relationshipLabel>
+    </fields>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Contracted Price Layout</layout>
+        <sections>
+            <label>Links personalizados</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>Descrição</label>
+            <section>Description</section>
+        </sections>
+        <sections>
+            <label>Informações do produto</label>
+            <section>Product Information</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Número do preço do contratado</nameFieldLabel>
+    <validationRules>
+        <errorMessage><!-- You must enter either Discount, Price, or Discount Schedule. --></errorMessage>
+        <name>SBQQ__Discount_or_price_required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You may not specify both product and filter. --></errorMessage>
+        <name>SBQQ__Either_product_or_filter</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Operator is required when Filter Field is specified. --></errorMessage>
+        <name>SBQQ__Filter_requires_operators</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You must specify either product or filter field --></errorMessage>
+        <name>SBQQ__Product_or_filter_required</name>
+    </validationRules>
+</CustomObjectTranslation>

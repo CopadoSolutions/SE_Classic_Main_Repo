@@ -1,0 +1,3 @@
+<apex:page id="QuoteSave" standardController="SBQQ__Quote__c" extensions="SBQQ.QueueableJobCheckerExt">
+    <c:standardRecalculating recordId="{!record.Id}" jobId="{!queueableJobId}" inProgressMessage="{!HTMLENCODE($Label.sbqq__msg_background_calculation_in_progress)}" invalidQuoteMessage="{!HTMLENCODE($Label.sbqq__msg_invalid_quote)}" jobStatus="{!jobStatus}" jobStatusChecker="{!$RemoteAction.QueueableJobCheckerExt.getJobStatus}" autoRefresh="{!autoRefresh}"/>
+</apex:page>

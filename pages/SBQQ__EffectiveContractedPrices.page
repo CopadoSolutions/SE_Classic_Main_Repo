@@ -1,0 +1,23 @@
+<apex:page standardController="Account" extensions="SBQQ.AccountExtController" showHeader="{!(!$Setup.SBQQ__GeneralSettings__c.SBQQ__GlobalHeaderPermUsed__c || !$Permission.SBQQ__HideGlobalHeader)}" action="{!onInit}" title="{!$Label.sbqq__lbl_effective_contracted_prices}">
+	<apex:pageBlock title="Product Prices" rendered="{!productPriceCount > 0}">
+		<apex:pageBlockSection columns="1">
+			<apex:pageBlockTable var="price" value="{!productPrices}">
+				<apex:column headerValue="{!$ObjectType.SBQQ__ContractedPrice__c.fields.Name.label}" value="{!price.Name}"/>
+				<apex:column headerValue="{!$ObjectType.SBQQ__ContractedPrice__c.fields.SBQQ__Product__c.label}" value="{!price.SBQQ__Product__c}"/>
+				<apex:column headerValue="{!$ObjectType.SBQQ__ContractedPrice__c.fields.SBQQ__Price__c.label}" value="{!price.SBQQ__Price__c}"/>
+				<apex:column headerValue="{!$ObjectType.SBQQ__ContractedPrice__c.fields.SBQQ__Discount__c.label}" value="{!price.SBQQ__Discount__c}"/>
+				<apex:column headerValue="{!$ObjectType.SBQQ__ContractedPrice__c.fields.SBQQ__DiscountSchedule__c.label}" value="{!price.SBQQ__DiscountSchedule__c}"/>
+			</apex:pageBlockTable>
+		</apex:pageBlockSection>
+	</apex:pageBlock>
+	<apex:pageBlock title="Filtered Prices" rendered="{!filteredPriceCount > 0}">
+		<apex:pageBlockSection columns="1">
+			<apex:pageBlockTable var="price" value="{!filteredPrices}">
+				<apex:column headerValue="{!$ObjectType.SBQQ__ContractedPrice__c.fields.SBQQ__FilterField__c.label}" value="{!price.SBQQ__FilterField__c}"/>
+				<apex:column headerValue="{!$ObjectType.SBQQ__ContractedPrice__c.fields.SBQQ__Operator__c.label}" value="{!price.SBQQ__Operator__c}"/>
+				<apex:column headerValue="{!$ObjectType.SBQQ__ContractedPrice__c.fields.SBQQ__FilterValue__c.label}" value="{!price.SBQQ__FilterValue__c}"/>
+				<apex:column headerValue="{!$ObjectType.SBQQ__ContractedPrice__c.fields.SBQQ__DiscountSchedule__c.label}" value="{!price.SBQQ__DiscountSchedule__c}"/>
+			</apex:pageBlockTable>
+		</apex:pageBlockSection>
+	</apex:pageBlock>
+</apex:page>
