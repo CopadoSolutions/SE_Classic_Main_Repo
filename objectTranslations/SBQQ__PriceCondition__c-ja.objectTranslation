@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>価格条件</value>
+    </caseValues>
+    <fields>
+        <help>[値] 項目に入力した値が含まれる項目を選択します。</help>
+        <label><!-- Field --></label>
+        <name>SBQQ__Field__c</name>
+        <picklistValues>
+            <masterLabel>Product Code</masterLabel>
+            <translation>商品コード</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>演算子、関数、および見積と対象オブジェクト上の使用可能な項目を使用して数式を入力します。従来の計算機能ではサポートされていません。</help>
+        <label><!-- Filter Formula --></label>
+        <name>SBQQ__FilterFormula__c</name>
+    </fields>
+    <fields>
+        <help>この条件をサマリー変数に対して評価する場合は [変数] を選択します。その他の場合は [値] を選択します。</help>
+        <label><!-- Filter Type --></label>
+        <name>SBQQ__FilterType__c</name>
+        <picklistValues>
+            <masterLabel>Formula</masterLabel>
+            <translation>数式</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Value</masterLabel>
+            <translation>値</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Variable</masterLabel>
+            <translation>変数</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>この条件で絞り込みに使用するサマリー変数を選択します。</help>
+        <label><!-- Filter Variable --></label>
+        <name>SBQQ__FilterVariable__c</name>
+        <relationshipLabel><!-- Filtered Price Conditions --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>価格ルールの詳細条件で参照するために、この条件に一意の番号を割り当てます。</help>
+        <label><!-- Index --></label>
+        <name>SBQQ__Index__c</name>
+    </fields>
+    <fields>
+        <help>条件の評価対象となるオブジェクト。</help>
+        <label><!-- Object --></label>
+        <name>SBQQ__Object__c</name>
+        <picklistValues>
+            <masterLabel>Product Option</masterLabel>
+            <translation>商品オプション</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quote</masterLabel>
+            <translation>見積</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quote Line</masterLabel>
+            <translation>見積品目</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Summary Variable</masterLabel>
+            <translation>サマリー変数</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>項目を値と比較するときに適用する演算子を選択します。</help>
+        <label><!-- Operator --></label>
+        <name>SBQQ__Operator__c</name>
+        <picklistValues>
+            <masterLabel>contains</masterLabel>
+            <translation>次の文字列を含む</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ends with</masterLabel>
+            <translation>次の文字列で終わる</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>equals</masterLabel>
+            <translation>次の文字列と一致する</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>greater or equals</masterLabel>
+            <translation>＞＝</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>greater than</masterLabel>
+            <translation>＞</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>less or equals</masterLabel>
+            <translation>＜＝</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>less than</masterLabel>
+            <translation>＜</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>not equals</masterLabel>
+            <translation>次の文字列と一致しない</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>starts with</masterLabel>
+            <translation>次の文字列で始まる</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- ParentRuleIsActive --></label>
+        <name>SBQQ__ParentRuleIsActive__c</name>
+    </fields>
+    <fields>
+        <label><!-- RuleTargetsCalculator --></label>
+        <name>SBQQ__RuleTargetsCalculator__c</name>
+    </fields>
+    <fields>
+        <help>この条件を実行する価格ルール。</help>
+        <label><!-- Price Rule --></label>
+        <name>SBQQ__Rule__c</name>
+        <relationshipLabel><!-- Price Conditions --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>演算子、関数、および見積と対象オブジェクト上の使用可能な項目を使用して数式を入力します。従来の計算機能ではサポートされていません。</help>
+        <label><!-- Tested Formula --></label>
+        <name>SBQQ__TestedFormula__c</name>
+    </fields>
+    <fields>
+        <help>この価格条件によってテストされるサマリー変数。</help>
+        <label><!-- Tested Variable --></label>
+        <name>SBQQ__TestedVariable__c</name>
+        <relationshipLabel><!-- Price Conditions (Tested Variable) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>選択した演算子を使用して選択した項目で照合する値を入力します。</help>
+        <label><!-- Filter Value --></label>
+        <name>SBQQ__Value__c</name>
+    </fields>
+    <layouts>
+        <layout>Price Condition Layout</layout>
+        <sections>
+            <label>カスタムリンク</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>条件情報</label>
+            <section>Filter Information</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>条件番号</nameFieldLabel>
+    <validationRules>
+        <errorMessage><!-- If Filter Type is Formula, then Filter Formula cannot be empty. --></errorMessage>
+        <name>SBQQ__Filter_formula_field_null</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You must specify either field or tested variable. --></errorMessage>
+        <name>SBQQ__Tested_field_or_variable</name>
+    </validationRules>
+</CustomObjectTranslation>

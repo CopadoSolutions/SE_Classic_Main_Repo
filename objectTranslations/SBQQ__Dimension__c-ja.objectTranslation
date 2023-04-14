@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>価格ディメンション</value>
+    </caseValues>
+    <fields>
+        <help>この商品のコストを個々の見積で変更可能かどうかを制御します。</help>
+        <label><!-- Cost Editable --></label>
+        <name>SBQQ__CostEditable__c</name>
+        <picklistValues>
+            <masterLabel>Inherit</masterLabel>
+            <translation>継承</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation>いいえ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation>はい</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>追加時の商品の開始数量を指定します。</help>
+        <label><!-- Default Quantity --></label>
+        <name>SBQQ__DefaultQuantity__c</name>
+    </fields>
+    <fields>
+        <help>このディメンションで使用する割引率表</help>
+        <label><!-- Discount Schedule --></label>
+        <name>SBQQ__DiscountSchedule__c</name>
+        <relationshipLabel><!-- Price Dimensions --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>このディメンションを割引不可としてマークします。</help>
+        <label><!-- Non Discountable --></label>
+        <name>SBQQ__NonDiscountable__c</name>
+        <picklistValues>
+            <masterLabel>Inherit</masterLabel>
+            <translation>継承</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation>いいえ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation>はい</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>このディメンションをパートナーに対する割引不可としてマークします。</help>
+        <label><!-- Non Partner Discountable --></label>
+        <name>SBQQ__NonPartnerDiscountable__c</name>
+        <picklistValues>
+            <masterLabel>Inherit</masterLabel>
+            <translation>継承</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation>いいえ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation>はい</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>このディメンションを特定の価格表に関連付けます</help>
+        <label><!-- Price Book --></label>
+        <name>SBQQ__PriceBook__c</name>
+        <relationshipLabel><!-- Price Dimensions --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>見積作成時にこのディメンションでは価格を自由に編集可能であることを示します。</help>
+        <label><!-- Price Editable --></label>
+        <name>SBQQ__PriceEditable__c</name>
+        <picklistValues>
+            <masterLabel>Inherit</masterLabel>
+            <translation>継承</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation>いいえ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation>はい</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>この価格ディメンションを関連付ける商品を選択してください。</help>
+        <label><!-- Product --></label>
+        <name>SBQQ__Product__c</name>
+        <relationshipLabel><!-- Price Dimensions --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>このディメンションの数量変更を許可または禁止します。</help>
+        <label><!-- Quantity Editable --></label>
+        <name>SBQQ__QuantityEditable__c</name>
+        <picklistValues>
+            <masterLabel>Inherit</masterLabel>
+            <translation>継承</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation>いいえ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation>はい</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>数量項目で使用される小数位の桁数を指定します。</help>
+        <label><!-- Quantity Scale --></label>
+        <name>SBQQ__QuantityScale__c</name>
+    </fields>
+    <fields>
+        <help>この商品が課税対象かどうかを示します。</help>
+        <label><!-- Taxable --></label>
+        <name>SBQQ__Taxable__c</name>
+        <picklistValues>
+            <masterLabel>Inherit</masterLabel>
+            <translation>継承</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation>いいえ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation>はい</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>これは、サブスクリプション期間に基づいた割引率の表です。これらの項目に入力された値で、商品レベルで入力された値が上書きされます。</help>
+        <label><!-- Term Discount Schedule --></label>
+        <name>SBQQ__TermDiscountSchedule__c</name>
+        <relationshipLabel><!-- Price Dimensions (Term Discount Schedule) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>価格ディメンションの種別を [1 回] または [年] から選択してください。年ディメンションは常にサブスクリプションとして処理されます。</help>
+        <label><!-- Type --></label>
+        <name>SBQQ__Type__c</name>
+        <picklistValues>
+            <masterLabel>Custom</masterLabel>
+            <translation>カスタム</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Month</masterLabel>
+            <translation>月</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>One-time</masterLabel>
+            <translation>1 回</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quarter</masterLabel>
+            <translation>四半期</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Year</masterLabel>
+            <translation>年</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>このディメンションの単価。これによって価格表からの値が上書きされます。</help>
+        <label><!-- Unit Price --></label>
+        <name>SBQQ__UnitPrice__c</name>
+    </fields>
+    <layouts>
+        <layout>Price Dimension Layout</layout>
+        <sections>
+            <label>カスタムリンク</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>価格設定</label>
+            <section>Pricing</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>ディメンション名</nameFieldLabel>
+    <webLinks>
+        <label><!-- Translate --></label>
+        <name>SBQQ__Translate</name>
+    </webLinks>
+</CustomObjectTranslation>

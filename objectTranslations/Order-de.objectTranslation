@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help>Gibt an, ob für den Auftrag ein Vertrag erstellt wurde.</help>
+        <label><!-- Contracted --></label>
+        <name>SBQQ__Contracted__c</name>
+    </fields>
+    <fields>
+        <help>Mit &quot;Nach Abonnement-Enddatum&quot; wird ein separater Vertrag für jedes eindeutige Abonnement-Enddatum erstellt, der nur diese Abonnements enthält. Mit &quot;Einzelner Vertrag&quot; wird ein Vertrag erstellt, der alle Abonnements unabhängig von ihren jeweiligen Enddaten enthält.</help>
+        <label><!-- Contracting Method --></label>
+        <name>SBQQ__ContractingMethod__c</name>
+    </fields>
+    <fields>
+        <help>Gesamtbetrag aller Auftragsproduktbuchungen.</help>
+        <label><!-- Order Bookings --></label>
+        <name>SBQQ__OrderBookings__c</name>
+    </fields>
+    <fields>
+        <help>Die Zahlungsbedingungen für diesen Auftrag.</help>
+        <label><!-- Payment Term --></label>
+        <name>SBQQ__PaymentTerm__c</name>
+    </fields>
+    <fields>
+        <help>Die Statusmeldung für die Preisberechnung</help>
+        <label><!-- Price Calculation Status Message --></label>
+        <name>SBQQ__PriceCalcStatusMessage__c</name>
+    </fields>
+    <fields>
+        <help>Gibt den Status zur Preisberechnung des Auftrags an. Der Wert wird vom System festgelegt.</help>
+        <label><!-- Price Calculation Status --></label>
+        <name>SBQQ__PriceCalcStatus__c</name>
+    </fields>
+    <fields>
+        <help>Das Angebot, anhand dessen der Auftrag erstellt wird.</help>
+        <label><!-- Quote --></label>
+        <name>SBQQ__Quote__c</name>
+        <relationshipLabel><!-- Orders --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Geben Sie die Laufzeit der Verlängerung an. Standardmäßig entspricht sie der ursprünglichen Vertragslaufzeit.</help>
+        <label><!-- Renewal Term --></label>
+        <name>SBQQ__RenewalTerm__c</name>
+    </fields>
+    <fields>
+        <help>Rate, um die der Verlängerungspreis steigt.</help>
+        <label><!-- Renewal Uplift (%) --></label>
+        <name>SBQQ__RenewalUpliftRate__c</name>
+    </fields>
+    <fields>
+        <help>Der geschätzte Steuerbetrag</help>
+        <label><!-- Estimated Tax --></label>
+        <name>SBQQ__TaxAmount__c</name>
+    </fields>
+    <layouts>
+        <layout>CPQ Order Layout</layout>
+        <sections>
+            <label><!-- Contract Information --></label>
+            <section>Contract Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- OrderContracting --></label>
+            <section>OrderContracting</section>
+        </sections>
+        <sections>
+            <label><!-- Quote and Opportunity --></label>
+            <section>Quote and Opportunity</section>
+        </sections>
+        <sections>
+            <label><!-- Shipping and Billing Information --></label>
+            <section>Shipping and Billing Information</section>
+        </sections>
+    </layouts>
+    <validationRules>
+        <errorMessage><!-- Can&apos;t contract the order. Activate the order and try again. --></errorMessage>
+        <name>SBQQ__Cannot_Contract_New_Order</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- EditOrderProducts --></label>
+        <name>SBQQ__EditOrderProducts</name>
+    </webLinks>
+</CustomObjectTranslation>

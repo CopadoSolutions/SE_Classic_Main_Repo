@@ -1,0 +1,44 @@
+<apex:page standardController="SBQQ__TemplateContent__c" title="{!$Label.sbqq__lbl_edit_template_content}">
+    <style>
+    .cke_top { display: none; }
+	</style>
+    <apex:includeScript value="{!URLFOR($Resource.SBQQ__CKEditor, '/ckeditor/ckeditor.js')}"/>
+    <apex:includeScript value="{!$Resource.SBQQ__WebUI}"/>
+    <apex:includeScript value="{!$Resource.SBQQ__jQuery}"/>
+
+    <apex:sectionHeader title="{!$Label.sbqq__lbl_template_content_view}" subtitle="{!IF(ISBLANK(SBQQ__TemplateContent__c.Id),'New Template Content',SBQQ__TemplateContent__c.Name)}"/>
+
+    <apex:form >
+        <apex:pageBlock title="{!$Label.sbqq__lbl_template_content_detail}">
+            <apex:pageBlockSection columns="2" collapsible="false">
+                <apex:outputField value="{!SBQQ__TemplateContent__c.Name}" id="name"/>
+                <apex:outputField value="{!SBQQ__TemplateContent__c.SBQQ__Type__c}" id="type"/>
+                <apex:outputField value="{!SBQQ__TemplateContent__c.SBQQ__FontFamily__c}" id="fontFamily"/>
+                <apex:outputField value="{!SBQQ__TemplateContent__c.SBQQ__FontSize__c}" id="fontSize"/>
+                <apex:outputField value="{!SBQQ__TemplateContent__c.SBQQ__TextColor__c}" id="textColor"/>
+                <apex:outputField value="{!SBQQ__TemplateContent__c.SBQQ__CustomSource__c}" id="customSource" rendered="{!(SBQQ__TemplateContent__c.SBQQ__Type__c == 'Custom')}"/>
+                <apex:outputField value="{!SBQQ__TemplateContent__c.SBQQ__TableStyle__c}" id="tableStyle" rendered="{!SBQQ__TemplateContent__c.SBQQ__Type__c == 'Line Items'}"/>
+            </apex:pageBlockSection>
+           	<apex:pageBlockSection columns="1" rendered="{!(SBQQ__TemplateContent__c.SBQQ__Type__c == 'HTML')}">
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="{!$Label.sbqq__lbl_markup}" for="markup"/>
+                    <apex:inputTextArea rows="25" value="{!SBQQ__TemplateContent__c.SBQQ__RawMarkup__c}" id="markup" styleClass="markupSize"/>
+                </apex:pageBlockSectionItem>
+            </apex:pageBlockSection>
+            <apex:pageBlockButtons >
+                <apex:commandButton value="{!SUBSTITUTE($Label.sbqq__lbl_edit, '{0}', '')}" action="{!edit}"/>
+                <apex:commandButton value="{!$Label.sbqq__lbl_delete}" action="{!delete}"/>
+                <apex:commandButton value="{!$Label.sbqq__lbl_clone}" action="{!URLFOR($Action.TemplateContent__c.Clone,TemplateContent__c.Id)}"/>
+                <apex:commandButton rendered="{!(SBQQ__TemplateContent__c.SBQQ__Type__c == 'HTML')}" value="{!$Label.sbqq__lbl_translate}" action="{!URLFOR('/apex/SBQQ__Translations?supportUserDefined=true&supportStandard=false&targetObject=TemplateContent&targetId=' + TemplateContent__c.Id)}"/>
+            </apex:pageBlockButtons>
+
+        </apex:pageBlock>
+    </apex:form>
+
+    <script language="javascript" type="text/javascript">
+    var ta = document.querySelector( 'textarea' );
+    if( ta )
+      CKEDITOR.replace( ta, $.extend( { height: 600, readOnly: true }, SB.ckeditorConfig ) );
+	</script>
+
+</apex:page>

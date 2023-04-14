@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomSite xmlns="http://soap.sforce.com/2006/04/metadata">
     <active>true</active>
+    <allowGuestPaymentsApi>false</allowGuestPaymentsApi>
     <allowHomePage>false</allowHomePage>
     <allowStandardAnswersPages>false</allowStandardAnswersPages>
     <allowStandardIdeasPages>false</allowStandardIdeasPages>
@@ -22,8 +23,8 @@
     <redirectToCustomDomain>false</redirectToCustomDomain>
     <referrerPolicyOriginWhenCrossOrigin>true</referrerPolicyOriginWhenCrossOrigin>
     <selfRegPage>CommunitiesSelfReg</selfRegPage>
-    <siteAdmin>cwallach.sedemo@copado.com</siteAdmin>
-    <siteGuestRecordDefaultOwner>cwallach.sedemo@copado.com</siteGuestRecordDefaultOwner>
+    <siteAdmin>gposey+copado-se-demo@copado.com</siteAdmin>
+    <siteGuestRecordDefaultOwner>gposey+copado-se-demo@copado.com</siteGuestRecordDefaultOwner>
     <siteType>ChatterNetwork</siteType>
     <subdomain>se-demo-experience-cloud</subdomain>
     <urlPathPrefix>customerportal</urlPathPrefix>

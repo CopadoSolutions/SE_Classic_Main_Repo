@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label><!-- Search Filters --></label>
+        <name>SBQQ__SearchFilters</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Search Results --></label>
+        <name>SBQQ__SearchResults</name>
+    </fieldSets>
+    <fields>
+        <help>Zusätzlicher Rabatt für diesen Vermögenswert, angegeben als Betrag.</help>
+        <label><!-- Additional Disc. (Amt) --></label>
+        <name>SBQQ__AdditionalDiscountAmount__c</name>
+    </fields>
+    <fields>
+        <help>Legt die Abrechnungshäufigkeit fest.</help>
+        <label><!-- Billing Frequency --></label>
+        <name>SBQQ__BillingFrequency__c</name>
+    </fields>
+    <fields>
+        <help>Die Abrechnungsart definiert, wann die Abrechnung erfolgt. Bei der Abrechnung im Voraus stellen Sie Kunden Produkte oder Services in Rechnung, bevor diese geliefert bzw. geleistet wurden. Bei der rückwirkenden Abrechnung stellen Sie Kunden eine Rechnung, nachdem die Produkte oder Services geliefert bzw. erbracht wurden.</help>
+        <label><!-- Billing Type --></label>
+        <name>SBQQ__BillingType__c</name>
+    </fields>
+    <fields>
+        <help>Gibt an, ob dieser Belegposten ein Paket darstellt, das heißt, ob er andere Belegposten in diesem Angebot beinhaltet.</help>
+        <label><!-- Package --></label>
+        <name>SBQQ__Bundle__c</name>
+    </fields>
+    <fields>
+        <help>Bei Posten mit berechneten Mengen enthält dieses Feld die ursprüngliche Menge, die der Benutzer eingegeben hat.</help>
+        <label><!-- Original Quantity --></label>
+        <name>SBQQ__BundledQuantity__c</name>
+    </fields>
+    <fields>
+        <help>Gibt an, dass das Produkt in diesem Belegposten mit einem anderen Produkt in diesem Angebot in einem Paket gebündelt ist. Bei in Paketen gebündelten Belegposten lautet der Preis Null und die Änderung von Preis oder Menge ist nicht möglich.</help>
+        <label><!-- Bundled --></label>
+        <name>SBQQ__Bundled__c</name>
+    </fields>
+    <fields>
+        <help>Die Art der Produktkosten. Dies ist ein Systemfeld, das vom zugeordneten Produkt abgeleitet wird.</help>
+        <label><!-- Charge Type --></label>
+        <name>SBQQ__ChargeType__c</name>
+    </fields>
+    <fields>
+        <label><!-- Combine Key --></label>
+        <name>SBQQ__CombineKey__c</name>
+    </fields>
+    <fields>
+        <help>Legt einen zusätzlichen Rabatt für diese Komponente fest, der zum Rabatt für das übergeordnete Paket hinzukommt.</help>
+        <label><!-- Component Discounted By Package --></label>
+        <name>SBQQ__ComponentDiscountedByPackage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Credit Product Id --></label>
+        <name>SBQQ__CreditProductId__c</name>
+    </fields>
+    <fields>
+        <help>Abonnement, das diesen Vermögenswert derzeit abdeckt. Wird automatisch eingetragen, wenn nur ein einziges Abonnement diesen Vermögenswert abdeckt. Verlängerungen werden mit neuem Abonnement überschrieben.</help>
+        <label><!-- Current Subscription --></label>
+        <name>SBQQ__CurrentSubscription__c</name>
+        <relationshipLabel><!-- Covered Assets --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Name der Preisdimension, aus der dieser Vermögenswert stammt</help>
+        <label><!-- Price Dimension --></label>
+        <name>SBQQ__Dimension__c</name>
+    </fields>
+    <fields>
+        <help>Art der Rabattregelung. Wird aus dem Feld &quot;Typ&quot; in der verknüpften Rabattregelung kopiert.</help>
+        <label><!-- Discount Schedule Type --></label>
+        <name>SBQQ__DiscountScheduleType__c</name>
+        <picklistValues>
+            <masterLabel>Range</masterLabel>
+            <translation>Bereich</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Slab</masterLabel>
+            <translation>Durchschnitt</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Geben Sie Rabatte als Prozentwert oder Betrag an, der auf der Grundlage von gekaufter Menge oder Laufzeit vom Produktpreis abgezogen wird. Legen Sie Mengen-/Laufzeitbereiche in Klassen unterschiedlicher Rabattsätze fest. Der Rabatt wird auf den Listenpreis gewährt und der sich daraus ergebende Gesamtwert wird als &quot;Regulärer Preis&quot; gespeichert.</help>
+        <label><!-- Discount Schedule --></label>
+        <name>SBQQ__DiscountSchedule__c</name>
+        <relationshipLabel><!-- Assets --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Zusätzlicher Rabatt für diesen Vermögenswert, angegeben als Prozentsatz.</help>
+        <label><!-- Additional Disc. (%) --></label>
+        <name>SBQQ__Discount__c</name>
+    </fields>
+    <fields>
+        <help>Rabatt, der zusätzlich zum Partnerrabatt abgezogen werden soll.</help>
+        <label><!-- Distributor Discount --></label>
+        <name>SBQQ__DistributorDiscount__c</name>
+    </fields>
+    <fields>
+        <help>Bezeichnet Funktions- und dynamische Optionen für diesen Belegposten.</help>
+        <label><!-- Dynamic Option ID --></label>
+        <name>SBQQ__DynamicOptionId__c</name>
+    </fields>
+    <fields>
+        <help>Gibt an, ob Service Cloud beim Erstellen dieses Vermögenswerts aktiviert war.</help>
+        <label><!-- From Service Cloud --></label>
+        <name>SBQQ__FromServiceCloud__c</name>
+    </fields>
+    <fields>
+        <label><!-- Latest Quote Line --></label>
+        <name>SBQQ__LatestQuoteLine__c</name>
+        <relationshipLabel><!-- Assets (Latest Quote Line) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Listenpreis für dieses Vermögenswertprodukt.</help>
+        <label><!-- List Price --></label>
+        <name>SBQQ__ListPrice__c</name>
+    </fields>
+    <fields>
+        <help>Aufschlag für diesen Vermögenswert, angegeben als Betrag.</help>
+        <label><!-- Markup (Amt) --></label>
+        <name>SBQQ__MarkupAmount__c</name>
+    </fields>
+    <fields>
+        <help>Aufschlag für diesen Vermögenswert, angegeben als Prozentsatz.</help>
+        <label><!-- Markup (%) --></label>
+        <name>SBQQ__MarkupRate__c</name>
+    </fields>
+    <fields>
+        <help>Nummer, die die Position dieses Belegpostens innerhalb seiner Gruppe oder seines Angebots angibt.</help>
+        <label><!-- Number --></label>
+        <name>SBQQ__Number__c</name>
+    </fields>
+    <fields>
+        <help>Rabatt, der für dieses Produkt gewährt wird, da es Teil eines Pakets ist.</help>
+        <label><!-- Option Discount (Amt) --></label>
+        <name>SBQQ__OptionDiscountAmount__c</name>
+    </fields>
+    <fields>
+        <help>Wenn dieser Belegposten für eine optionale SKU gilt, spiegelt dieses Feld den Rabatt wider, der möglicherweise für das Paket gewährt und auf die Option ausgeweitet wurde.</help>
+        <label><!-- Option Discount (%) --></label>
+        <name>SBQQ__OptionDiscount__c</name>
+    </fields>
+    <fields>
+        <help>Gibt die Verschachtelungsebene dieser Option an (gilt nur für Belegposten, die aus Optionen erstellt werden).</help>
+        <label><!-- Option Level --></label>
+        <name>SBQQ__OptionLevel__c</name>
+    </fields>
+    <fields>
+        <help>Gibt den Optionstyp an, der aus der zugehörigen Produktoption kopiert wurde. Bestimmt, wie die Menge berechnet wird.</help>
+        <label><!-- Option Type --></label>
+        <name>SBQQ__OptionType__c</name>
+        <picklistValues>
+            <masterLabel>Accessory</masterLabel>
+            <translation>Zubehör</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Component</masterLabel>
+            <translation>Komponente</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Related Product</masterLabel>
+            <translation>Zugehöriges Produkt</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Order Product --></label>
+        <name>SBQQ__OrderProduct__c</name>
+        <relationshipLabel><!-- Assets --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Ursprüngliche Stückkosten des Vermögenswerts zum Zeitpunkt des Kaufs, bevor Kostenregelungen angewandt wurden.</help>
+        <label><!-- Original Unit Cost --></label>
+        <name>SBQQ__OriginalUnitCost__c</name>
+    </fields>
+    <fields>
+        <help>Partnerrabatte werden angewandt, nachdem alle automatischen und nach Ermessen gewährten Rabatte angewandt wurden. Der Partnerrabatt ist beim Partnerpreis bereits berücksichtigt.</help>
+        <label><!-- Partner Discount --></label>
+        <name>SBQQ__PartnerDiscount__c</name>
+    </fields>
+    <fields>
+        <help>Gibt an, wie der Preis für diesen Belegposten berechnet wird: Bei &quot;Liste&quot; wird der Rabatt vom Listenpreis abgezogen, bei &quot;Kosten&quot; wird ein Aufschlag zu den Kosten addiert.</help>
+        <label><!-- Pricing Method --></label>
+        <name>SBQQ__PricingMethod__c</name>
+        <picklistValues>
+            <masterLabel>Block</masterLabel>
+            <translation>Zone</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cost</masterLabel>
+            <translation>Kosten</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Custom</masterLabel>
+            <translation>Benutzerdefiniert</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>List</masterLabel>
+            <translation>Liste</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Percent Of Total</masterLabel>
+            <translation>Prozent vom Gesamtwert</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Die Produktoption, die diesen Belegposten erzeugt hat (sofern vorhanden).</help>
+        <label><!-- Product Option --></label>
+        <name>SBQQ__ProductOption__c</name>
+        <relationshipLabel><!-- Assets --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Quote Line --></label>
+        <name>SBQQ__QuoteLine__c</name>
+        <relationshipLabel><!-- Assets --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Regulärer Preis für diesen Vermögenswert.</help>
+        <label><!-- Regular Price --></label>
+        <name>SBQQ__RegularPrice__c</name>
+    </fields>
+    <fields>
+        <label><!-- Renewal Uplift (%) --></label>
+        <name>SBQQ__RenewalUpliftRate__c</name>
+    </fields>
+    <fields>
+        <help>Der übergeordnete Vermögenswert. Wenn hier ein Eintrag vorhanden ist, handelt es sich bei diesem Vermögenswert um ein untergeordnetes Element in einem Bündel.</help>
+        <label><!-- Required By Asset --></label>
+        <name>SBQQ__RequiredByAsset__c</name>
+        <relationshipLabel><!-- Assets (Required By Asset) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Die ID des übergeordneten Datensatzes, der diesen Datensatz erfordert.</help>
+        <label><!-- Required By Id --></label>
+        <name>SBQQ__RequiredById__c</name>
+    </fields>
+    <fields>
+        <help>Übergeordnetes Produkt dieses Vermögenswerts.</help>
+        <label><!-- Parent Product --></label>
+        <name>SBQQ__RequiredByProduct__c</name>
+        <relationshipLabel><!-- Child Assets --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Das übergeordnete Abonnement. Wenn hier ein Eintrag vorhanden ist, handelt es sich bei diesem Vermögenswert um ein untergeordnetes Element in einem Bündel.</help>
+        <label><!-- Required By Subscription --></label>
+        <name>SBQQ__RequiredBySubscription__c</name>
+        <relationshipLabel><!-- Assets (Required By Subscription) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Revised Asset --></label>
+        <name>SBQQ__RevisedAsset__c</name>
+        <relationshipLabel><!-- Revised Assets --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Oberstes, diesem Vermögenswert übergeordnetes Bündel.</help>
+        <label><!-- Root Asset (CPQ) --></label>
+        <name>SBQQ__RootAsset__c</name>
+        <relationshipLabel><!-- Assets (RootAsset) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Die ID des Abonnements oder Vermögenswerts, das oder der dem Paket mit diesem Vermögenswert zugrunde liegt.</help>
+        <label><!-- Root Id --></label>
+        <name>SBQQ__RootId__c</name>
+    </fields>
+    <fields>
+        <help>Bei Produkten mit mehreren Segmenten ist dies der Index, der die Position dieses Angebotsbelegpostens in der Segmenttabelle angibt.</help>
+        <label><!-- Segment Index --></label>
+        <name>SBQQ__SegmentIndex__c</name>
+    </fields>
+    <fields>
+        <label><!-- Segment Key --></label>
+        <name>SBQQ__SegmentKey__c</name>
+    </fields>
+    <fields>
+        <help>Bei Produkten mit mehreren Segmenten ist dies die Bezeichnung der Spaltenüberschrift (z. B. &quot;Jahr 1&quot;), die mit diesem Posten verknüpft ist.</help>
+        <label><!-- Segment Label --></label>
+        <name>SBQQ__SegmentLabel__c</name>
+    </fields>
+    <fields>
+        <label><!-- Subscription End Date --></label>
+        <name>SBQQ__SubscriptionEndDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Subscription Quote Line --></label>
+        <name>SBQQ__SubscriptionQuoteLine__c</name>
+        <relationshipLabel><!-- Assets (Quote Line) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Subscription Start Date --></label>
+        <name>SBQQ__SubscriptionStartDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Subscribed Product --></label>
+        <name>SBQQ__Subscription__c</name>
+        <relationshipLabel><!-- Assets --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Regelung für Rabatte, die auf der Abonnementlaufzeit basieren. Bei der Einstellung &quot;Gruppe&quot; gilt der Rabattsatz für die Gruppenlaufzeit, während bei &quot;Angebot&quot; der Rabattsatz für die gesamte Angebotslaufzeit gilt, unabhängig von den unterschiedlichen Laufzeiten Ihrer Gruppen.</help>
+        <label><!-- Term Discount Schedule --></label>
+        <name>SBQQ__TermDiscountSchedule__c</name>
+        <relationshipLabel><!-- Assets (Term Discouned) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Stückkosten für diesen Vermögenswert.</help>
+        <label><!-- Unit Cost --></label>
+        <name>SBQQ__UnitCost__c</name>
+    </fields>
+    <fields>
+        <label><!-- Virtual Asset --></label>
+        <name>SBQQ__VirtualAsset__c</name>
+        <relationshipLabel><!-- Assets (Virtual Asset) --></relationshipLabel>
+    </fields>
+</CustomObjectTranslation>

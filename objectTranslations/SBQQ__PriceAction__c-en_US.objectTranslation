@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- Select the field you want updated when the conditions are met. --></help>
+        <label><!-- Target Field --></label>
+        <name>SBQQ__Field__c</name>
+        <picklistValues>
+            <masterLabel>Discount (%)</masterLabel>
+            <translation><!-- Discount (%) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Discount (Amt)</masterLabel>
+            <translation><!-- Discount (Amt) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Markup (%)</masterLabel>
+            <translation><!-- Markup (%) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Markup (Amt)</masterLabel>
+            <translation><!-- Markup (Amt) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unit Price</masterLabel>
+            <translation><!-- Unit Price --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Enter a formula with operators, functions, and available fields on quote and target object. Not supported on legacy calculator. --></help>
+        <label><!-- Formula --></label>
+        <name>SBQQ__Formula__c</name>
+    </fields>
+    <fields>
+        <help><!-- Number which determines the order in which multiple actions on a rule are executed. --></help>
+        <label><!-- Order --></label>
+        <name>SBQQ__Order__c</name>
+    </fields>
+    <fields>
+        <label><!-- ParentRuleIsActive --></label>
+        <name>SBQQ__ParentRuleIsActive__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rule Lookup Object --></label>
+        <name>SBQQ__RuleLookupObject__c</name>
+    </fields>
+    <fields>
+        <label><!-- RuleTargetsCalculator --></label>
+        <name>SBQQ__RuleTargetsCalculator__c</name>
+    </fields>
+    <fields>
+        <help><!-- Price rule running this action. --></help>
+        <label><!-- Rule --></label>
+        <name>SBQQ__Rule__c</name>
+        <relationshipLabel><!-- Price Actions --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- API Name of the field to return from the row matching the condition. --></help>
+        <label><!-- Source Lookup Field --></label>
+        <name>SBQQ__SourceLookupField__c</name>
+        <picklistValues>
+            <masterLabel>SBQQ__Value__c</masterLabel>
+            <translation><!-- SBQQ__Value__c --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Summary variable that sources value for this action. --></help>
+        <label><!-- Source Variable --></label>
+        <name>SBQQ__SourceVariable__c</name>
+        <relationshipLabel><!-- Price Actions (Source) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Use Quote or Quote Line where Price Rule Evaluation Scope = Calculation, Use Product Option where Price Rule Evaluation Scope = Configuration --></help>
+        <label><!-- Target Object --></label>
+        <name>SBQQ__TargetObject__c</name>
+        <picklistValues>
+            <masterLabel>Product Option</masterLabel>
+            <translation><!-- Product Option --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quote</masterLabel>
+            <translation><!-- Quote --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quote Line</masterLabel>
+            <translation><!-- Quote Line --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- If the value you want inserted is calculated in another Quote Line field, select the field here. --></help>
+        <label><!-- Source Field --></label>
+        <name>SBQQ__ValueField__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the value you want inserted into the Target Field when conditions are met. --></help>
+        <label><!-- Value --></label>
+        <name>SBQQ__Value__c</name>
+    </fields>
+    <layouts>
+        <layout>Price Action Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Price Action Sources --></label>
+            <section>Price Action Sources</section>
+        </sections>
+    </layouts>
+    <validationRules>
+        <errorMessage><!-- Price Action Target Object does not match Evaluation Scope --></errorMessage>
+        <name>SBQQ__Target_Object_Validation</name>
+    </validationRules>
+</CustomObjectTranslation>

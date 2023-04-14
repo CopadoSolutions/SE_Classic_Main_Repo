@@ -1,0 +1,661 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>見積</value>
+    </caseValues>
+    <fieldSets>
+        <label><!-- Calculating Fields --></label>
+        <name>SBQQ__CalculatingFields</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Line Editor --></label>
+        <name>SBQQ__LineEditor</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Non-Current Quote Locked Fields --></label>
+        <name>SBQQ__NonCurrentQuoteLockedFields</name>
+    </fieldSets>
+    <fields>
+        <help>この見積のカスタマー取引先。デフォルトは見積作成時の商談の取引先です。</help>
+        <label><!-- Account --></label>
+        <name>SBQQ__Account__c</name>
+        <relationshipLabel><!-- Quotes --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>この見積でさらに割引される金額を入力します。</help>
+        <label><!-- Addl. Disc. Amount --></label>
+        <name>SBQQ__AdditionalDiscountAmount__c</name>
+    </fields>
+    <fields>
+        <help>この見積の平均顧客割引 (パーセント)。</help>
+        <label><!-- Avg. Customer Disc. (%) --></label>
+        <name>SBQQ__AverageCustomerDiscount__c</name>
+    </fields>
+    <fields>
+        <help>この見積の平均パートナー割引 (%)。</help>
+        <label><!-- Avg. Partner Disc. (%) --></label>
+        <name>SBQQ__AveragePartnerDiscount__c</name>
+    </fields>
+    <fields>
+        <help>この見積の請求先住所の市区群。</help>
+        <label><!-- Bill To City --></label>
+        <name>SBQQ__BillingCity__c</name>
+    </fields>
+    <fields>
+        <help>この見積の請求先住所の国。</help>
+        <label><!-- Bill To Country --></label>
+        <name>SBQQ__BillingCountry__c</name>
+    </fields>
+    <fields>
+        <help>請求サイクルを定義します。</help>
+        <label><!-- Billing Frequency --></label>
+        <name>SBQQ__BillingFrequency__c</name>
+    </fields>
+    <fields>
+        <help>請求先住所の名前。</help>
+        <label><!-- Bill To Name --></label>
+        <name>SBQQ__BillingName__c</name>
+    </fields>
+    <fields>
+        <help>この見積の請求先住所の郵便番号。</help>
+        <label><!-- Bill To Postal Code --></label>
+        <name>SBQQ__BillingPostalCode__c</name>
+    </fields>
+    <fields>
+        <help>この見積の請求先住所の都道府県。</help>
+        <label><!-- Bill To State --></label>
+        <name>SBQQ__BillingState__c</name>
+    </fields>
+    <fields>
+        <help>この見積の請求先住所の町名・番地。</help>
+        <label><!-- Bill To Street --></label>
+        <name>SBQQ__BillingStreet__c</name>
+    </fields>
+    <fields>
+        <help>「サブスクリプション終了日別」を選択すると、一意の各サブスクリプション終了日別に該当するサブスクリプションのみが含まれる別個の契約が作成されます。「単一契約」を選択すると、終了日に関係なく、すべてのサブスクリプションが含まれる 1 つの契約が作成されます。</help>
+        <label><!-- Contracting Method --></label>
+        <name>SBQQ__ContractingMethod__c</name>
+        <picklistValues>
+            <masterLabel>By Subscription End Date</masterLabel>
+            <translation>サブスクリプション終了日別</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Single Contract</masterLabel>
+            <translation>単一契約</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>この項目は積み上げ集計項目です。</help>
+        <label><!-- Customer Amount --></label>
+        <name>SBQQ__CustomerAmount__c</name>
+    </fields>
+    <fields>
+        <help>この見積の顧客に適用される追加割引。個々の品目レベルでこの値を上書きできます。明示的に追加割引が指定されていない品目のデフォルトはこの値になります。</help>
+        <label><!-- Additional Disc. (%) --></label>
+        <name>SBQQ__CustomerDiscount__c</name>
+    </fields>
+    <fields>
+        <help>見積がオープンされている日数。</help>
+        <label><!-- Days Quote Open --></label>
+        <name>SBQQ__DaysQuoteOpen__c</name>
+    </fields>
+    <fields>
+        <help>この見積に使用するテンプレート。[ドキュメントを作成] をクリックするとここで指定したテンプレートが自動的に選択されます。</help>
+        <label><!-- Default Template --></label>
+        <name>SBQQ__DefaultTemplate__c</name>
+        <relationshipLabel><!-- Quotes --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>この見積の商品を納入する方法。</help>
+        <label><!-- Delivery Method --></label>
+        <name>SBQQ__DeliveryMethod__c</name>
+        <picklistValues>
+            <masterLabel>Download</masterLabel>
+            <translation>ダウンロード</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ship</masterLabel>
+            <translation>配送</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>この見積に適用される流通業者割引。ただし、品目レベルでこの値を上書きできます。</help>
+        <label><!-- Distributor Discount --></label>
+        <name>SBQQ__DistributorDiscount__c</name>
+    </fields>
+    <fields>
+        <help>この見積の流通業者。デフォルトでは、ロールが「流通業者」になっている商談のパートナーです。</help>
+        <label><!-- Distributor --></label>
+        <name>SBQQ__Distributor__c</name>
+        <relationshipLabel><!-- Distributor Quotes --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>ドキュメントの状況を示します: 待機中、送信済み、失敗。</help>
+        <label><!-- Document Status --></label>
+        <name>SBQQ__DocumentStatus__c</name>
+        <picklistValues>
+            <masterLabel>Failed</masterLabel>
+            <translation>失敗</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending</masterLabel>
+            <translation>待機中</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sent</masterLabel>
+            <translation>送信済み</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>この見積から生成してメール送信するドキュメントに使用する特定のメールテンプレートがある場合は、メールテンプレート ID をここに入力します。</help>
+        <label><!-- Email Template Id --></label>
+        <name>SBQQ__EmailTemplateId__c</name>
+    </fields>
+    <fields>
+        <help>このグループのサブスクリプションの終了日。</help>
+        <label><!-- End Date --></label>
+        <name>SBQQ__EndDate__c</name>
+    </fields>
+    <fields>
+        <help>この翌日以降は見積が無効になります。</help>
+        <label><!-- Expires On --></label>
+        <name>SBQQ__ExpirationDate__c</name>
+    </fields>
+    <fields>
+        <help>複数セグメント商品の場合、最初のセグメントを按分するための終了日を入力します。</help>
+        <label><!-- First Segment Term End Date --></label>
+        <name>SBQQ__FirstSegmentTermEndDate__c</name>
+    </fields>
+    <fields>
+        <help>フラグが付いている場合、見積のすべての調整済み見積品目に基づいて契約価格を生成します。</help>
+        <label><!-- Generate Contracted Price --></label>
+        <name>SBQQ__GenerateContractedPrice__c</name>
+        <picklistValues>
+            <masterLabel>Discount Schedule</masterLabel>
+            <translation>割引率表</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Do Not Generate</masterLabel>
+            <translation>生成しない</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Price</masterLabel>
+            <translation>価格</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>生成される PDF ドキュメントに出力できる導入部分。</help>
+        <label><!-- Introduction --></label>
+        <name>SBQQ__Introduction__c</name>
+    </fields>
+    <fields>
+        <help>内部 ID に依存せずに「ショッピングカート」見積を識別するために使用する一意の内部キー</help>
+        <label><!-- Key --></label>
+        <name>SBQQ__Key__c</name>
+    </fields>
+    <fields>
+        <help>この見積の品目数。</help>
+        <label><!-- Line Item Count --></label>
+        <name>SBQQ__LineItemCount__c</name>
+    </fields>
+    <fields>
+        <help>SolutionGroups(TM) を使用するか [品目の編集] ページで独自のグループを追加して、見積品目を分類して小計を出す場合は、このオプションを選択します。</help>
+        <label><!-- Group Line Items --></label>
+        <name>SBQQ__LineItemsGrouped__c</name>
+    </fields>
+    <fields>
+        <help>生成されるグループ見積の PDF 見積ドキュメントで個別品目を出力する場合は、チェックボックスをオンにします。</help>
+        <label><!-- Print Line Items --></label>
+        <name>SBQQ__LineItemsPrinted__c</name>
+    </fields>
+    <fields>
+        <help>この見積の非オプション品目のリスト金額の総額。</help>
+        <label><!-- List Amount --></label>
+        <name>SBQQ__ListAmount__c</name>
+    </fields>
+    <fields>
+        <help>この見積の品目に適用されるデフォルトのマークアップ率。グループレベルおよび品目レベルで、この値を上書きできます。</help>
+        <label><!-- Markup (%) --></label>
+        <name>SBQQ__MarkupRate__c</name>
+    </fields>
+    <fields>
+        <help>この見積内のサブスクリプション商品を期間調整する主契約。</help>
+        <label><!-- Master Contract --></label>
+        <name>SBQQ__MasterContract__c</name>
+        <relationshipLabel><!-- Co-Terminated Quotes --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>この見積の非オプション品目の正味金額の合計。</help>
+        <label><!-- Net Amount --></label>
+        <name>SBQQ__NetAmount__c</name>
+    </fields>
+    <fields>
+        <help>生成される PDF ドキュメントに出力されるメモ。</help>
+        <label><!-- Notes --></label>
+        <name>SBQQ__Notes__c</name>
+    </fields>
+    <fields>
+        <help>この見積に関連付けられている商談。</help>
+        <label><!-- Opportunity --></label>
+        <name>SBQQ__Opportunity2__c</name>
+        <relationshipLabel><!-- Quotes --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>見積を「注文済み」に設定するときにフラグ設定すると、注文は見積品目グループごとに作成され、見積品目が関連付けられます。</help>
+        <label><!-- Order By Quote Line Group --></label>
+        <name>SBQQ__OrderByQuoteLineGroup__c</name>
+    </fields>
+    <fields>
+        <help>注文のグループ化を判断するために使用する見積品目項目。</help>
+        <label><!-- Order By --></label>
+        <name>SBQQ__OrderBy__c</name>
+        <picklistValues>
+            <masterLabel>ProductFamily__c</masterLabel>
+            <translation>ProductFamily__c</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>QuantityBasedFormulaField__c</masterLabel>
+            <translation>QuantityBasedFormulaField__c</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>修正: 再見積トランザクションの一意の ID であり、元の主見積の ID です。</help>
+        <label><!-- Order Group ID --></label>
+        <name>SBQQ__OrderGroupID__c</name>
+    </fields>
+    <fields>
+        <help>この見積が主見積である場合、そこから注文を自動的に作成するには、このチェックボックスをオンにします。</help>
+        <label><!-- Ordered --></label>
+        <name>SBQQ__Ordered__c</name>
+    </fields>
+    <fields>
+        <help>この見積レコードが修正: 再見積を表す場合、この項目を使用して元の見積にリンクします。</help>
+        <label><!-- Original Quote --></label>
+        <name>SBQQ__OriginalQuote__c</name>
+        <relationshipLabel><!-- Amend: Re-Quotes --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>このドキュメントの用紙サイズを選択します。</help>
+        <label><!-- Paper Size --></label>
+        <name>SBQQ__PaperSize__c</name>
+    </fields>
+    <fields>
+        <help>この商談のパートナーに適用される割引。</help>
+        <label><!-- Partner Discount --></label>
+        <name>SBQQ__PartnerDiscount__c</name>
+    </fields>
+    <fields>
+        <help>この案件の主パートナー (存在する場合)。この項目のデフォルトは、商談の [パートナー] 関連リストで主パートナーとしてマークされているパートナーです。</help>
+        <label><!-- Partner --></label>
+        <name>SBQQ__Partner__c</name>
+        <relationshipLabel><!-- Partner Quotes --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>この見積の品目の支払いに適用される条件。</help>
+        <label><!-- Payment Terms --></label>
+        <name>SBQQ__PaymentTerms__c</name>
+        <picklistValues>
+            <masterLabel>Due on receipt</masterLabel>
+            <translation>受領時</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Net 15</masterLabel>
+            <translation>請求日から 15 日以内</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Net 30</masterLabel>
+            <translation>請求日から 30 日以内</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Net 45</masterLabel>
+            <translation>請求日から 45 日以内</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Net 60</masterLabel>
+            <translation>請求日から 60 日以内</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Net 90</masterLabel>
+            <translation>請求日から 90 日以内</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>この見積に関連付けられている価格表。</help>
+        <label><!-- Price Book --></label>
+        <name>SBQQ__PriceBook__c</name>
+        <relationshipLabel><!-- Quotes --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>この見積に使用される価格表の ID。</help>
+        <label><!-- Pricebook ID --></label>
+        <name>SBQQ__PricebookId__c</name>
+    </fields>
+    <fields>
+        <help>見積の主取引先責任者。この取引責任者の名前が、生成される見積ドキュメントに表示されます。</help>
+        <label><!-- Primary Contact --></label>
+        <name>SBQQ__PrimaryContact__c</name>
+        <relationshipLabel><!-- Quotes --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>この見積を商談の主見積として指定し、見積品目を商談品目と同期する場合は、このチェックボックスをオンにします。</help>
+        <label><!-- Primary --></label>
+        <name>SBQQ__Primary__c</name>
+    </fields>
+    <fields>
+        <help>見積ドキュメントを一括生成するとき、この見積に使用する言語</help>
+        <label><!-- Quote Language --></label>
+        <name>SBQQ__QuoteLanguage__c</name>
+        <picklistValues>
+            <masterLabel>Chinese (Simplified)</masterLabel>
+            <translation>中国語 (簡体字)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chinese (Traditional)</masterLabel>
+            <translation>中国語 (繁体字)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Danish</masterLabel>
+            <translation>デンマーク語</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dutch</masterLabel>
+            <translation>オランダ語</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>English</masterLabel>
+            <translation>英語</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Finnish</masterLabel>
+            <translation>フィンランド語</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>French</masterLabel>
+            <translation>フランス語</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>German</masterLabel>
+            <translation>ドイツ語</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Italian</masterLabel>
+            <translation>イタリア語</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Japanese</masterLabel>
+            <translation>日本語</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Korean</masterLabel>
+            <translation>韓国語</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Norwegian</masterLabel>
+            <translation>ノルウェー語</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Portuguese (Brazilian)</masterLabel>
+            <translation>ポルトガル語 (ブラジル)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Russian</masterLabel>
+            <translation>ロシア語</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Spanish</masterLabel>
+            <translation>スペイン語</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Spanish (Mexican)</masterLabel>
+            <translation>スペイン語 (メキシコ)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Swedish</masterLabel>
+            <translation>スウェーデン語</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Thai</masterLabel>
+            <translation>タイ語</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>この見積と共に使用するガイド付き販売プロセス ID (存在する場合)。</help>
+        <label><!-- Quote Process Id --></label>
+        <name>SBQQ__QuoteProcessId__c</name>
+    </fields>
+    <fields>
+        <help>見積 PDF ドキュメントを生成するときに見積テンプレートを使用することが指定されている場合は、見積テンプレート ID を保存します。</help>
+        <label><!-- Quote Template Id --></label>
+        <name>SBQQ__QuoteTemplateId__c</name>
+    </fields>
+    <fields>
+        <help>追加割引を適用する前の非オプション品目の総額。</help>
+        <label><!-- Regular Amount --></label>
+        <name>SBQQ__RegularAmount__c</name>
+    </fields>
+    <fields>
+        <help>更新の期間を指定します。デフォルトでは、元の契約期間と同じになります。</help>
+        <label><!-- Renewal Term --></label>
+        <name>SBQQ__RenewalTerm__c</name>
+    </fields>
+    <fields>
+        <help>更新価格の増加率。</help>
+        <label><!-- Renewal Uplift (%) --></label>
+        <name>SBQQ__RenewalUpliftRate__c</name>
+    </fields>
+    <fields>
+        <help>この見積を担当する営業担当 (見積レコードを所有するユーザと異なる場合)。</help>
+        <label><!-- Sales Rep --></label>
+        <name>SBQQ__SalesRep__c</name>
+        <relationshipLabel><!-- Quotes --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>この見積の納入先住所の市区群。</help>
+        <label><!-- Ship To City --></label>
+        <name>SBQQ__ShippingCity__c</name>
+    </fields>
+    <fields>
+        <help>この見積の納入先住所の国。</help>
+        <label><!-- Ship To Country --></label>
+        <name>SBQQ__ShippingCountry__c</name>
+    </fields>
+    <fields>
+        <help>この見積の納入先住所の名前。</help>
+        <label><!-- Ship To Name --></label>
+        <name>SBQQ__ShippingName__c</name>
+    </fields>
+    <fields>
+        <help>この見積の納入先住所の郵便番号。</help>
+        <label><!-- Ship To Postal Code --></label>
+        <name>SBQQ__ShippingPostalCode__c</name>
+    </fields>
+    <fields>
+        <help>この見積の納入先住所の都道府県。</help>
+        <label><!-- Ship To State --></label>
+        <name>SBQQ__ShippingState__c</name>
+    </fields>
+    <fields>
+        <help>この見積の納入先住所の町名・番地。</help>
+        <label><!-- Ship To Street --></label>
+        <name>SBQQ__ShippingStreet__c</name>
+    </fields>
+    <fields>
+        <help>コピーされた見積のソース。コピーされている場合、これはコピー元の見積を参照します。</help>
+        <label><!-- Source --></label>
+        <name>SBQQ__Source__c</name>
+        <relationshipLabel><!-- Quotes (Source) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>この見積内のサブスクリプションの開始日。</help>
+        <label><!-- Start Date --></label>
+        <name>SBQQ__StartDate__c</name>
+    </fields>
+    <fields>
+        <help>見積がライフサイクル内のどのフェーズにあるかを示す状況。</help>
+        <label><!-- Status --></label>
+        <name>SBQQ__Status__c</name>
+        <picklistValues>
+            <masterLabel>Accepted</masterLabel>
+            <translation>承諾済み</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Approved</masterLabel>
+            <translation>承認済み</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Denied</masterLabel>
+            <translation>拒否済み</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Draft</masterLabel>
+            <translation>ドラフト</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Review</masterLabel>
+            <translation>レビュー中</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Presented</masterLabel>
+            <translation>提出済み</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rejected</masterLabel>
+            <translation>却下済み</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>日割りまたは月割りによって按分できる商品に使用するサブスクリプション期間。これはシステム管理者によって設定されています。</help>
+        <label><!-- Subscription Term --></label>
+        <name>SBQQ__SubscriptionTerm__c</name>
+    </fields>
+    <fields>
+        <help>望ましい顧客金額を入力し、割引可能品目で自動的に追加割引を計算します。</help>
+        <label><!-- Target Customer Amount --></label>
+        <name>SBQQ__TargetCustomerAmount__c</name>
+    </fields>
+    <fields>
+        <help>顧客割引の総額。契約割引、ボリューム割引、複利割引、および追加割引をすべて含みます。</help>
+        <label><!-- Total Customer Disc. Amount --></label>
+        <name>SBQQ__TotalCustomerDiscountAmount__c</name>
+    </fields>
+    <fields>
+        <help>見積の種類を示します。</help>
+        <label><!-- Type --></label>
+        <name>SBQQ__Type__c</name>
+        <picklistValues>
+            <masterLabel>Amendment</masterLabel>
+            <translation>修正</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quote</masterLabel>
+            <translation>見積</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Re-Quote</masterLabel>
+            <translation>再見積</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Renewal</masterLabel>
+            <translation>更新</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>見積がオープンされたかどうかを示します。これにより、見積が新規見積かどうかがわかります。</help>
+        <label><!-- Unopened --></label>
+        <name>SBQQ__Unopened__c</name>
+    </fields>
+    <fields>
+        <help>見積ドキュメントに透かしを表示する場合は、チェックボックスをオンにします。</help>
+        <label><!-- Watermark Shown --></label>
+        <name>SBQQ__WatermarkShown__c</name>
+    </fields>
+    <layouts>
+        <layout>Quote Layout</layout>
+        <sections>
+            <label>追加テキスト</label>
+            <section>Additional Text</section>
+        </sections>
+        <sections>
+            <label>住所情報</label>
+            <section>Address Information</section>
+        </sections>
+        <sections>
+            <label>契約情報</label>
+            <section>Contract Information</section>
+        </sections>
+        <sections>
+            <label>カスタムリンク</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>割引情報</label>
+            <section>Discount Information</section>
+        </sections>
+        <sections>
+            <label>パートナー情報</label>
+            <section>Partner Information</section>
+        </sections>
+        <sections>
+            <label>見積オプション</label>
+            <section>Quote Options</section>
+        </sections>
+        <sections>
+            <label>再計算</label>
+            <section>Recalculating</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>見積番号</nameFieldLabel>
+    <validationRules>
+        <errorMessage><!-- The End Date must come after the Start Date. --></errorMessage>
+        <name>SBQQ__End_Date_Before_Start_Date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- First Segment Term End Date must fall between Quote Start Date and Quote End Date --></errorMessage>
+        <name>SBQQ__Invalid_First_Segment_Term_End_Date</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- CloneWithRelated --></label>
+        <name>SBQQ__CloneWithRelated</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- CloneWithRelatedClassic --></label>
+        <name>SBQQ__CloneWithRelatedClassic</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- CreateOrderFromQuote --></label>
+        <name>SBQQ__CreateOrderFromQuote</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- EditLines --></label>
+        <name>SBQQ__EditLines</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GenerateDocument --></label>
+        <name>SBQQ__GenerateDocument</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- ImportLines --></label>
+        <name>SBQQ__ImportLines</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- IncludeDocument --></label>
+        <name>SBQQ__IncludeDocument</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- ModifyQuoteTerms --></label>
+        <name>SBQQ__ModifyQuoteTerms</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- PreviewDocument --></label>
+        <name>SBQQ__PreviewDocument</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- RefreshMultiplePrices --></label>
+        <name>SBQQ__RefreshMultiplePrices</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- RefreshPrices --></label>
+        <name>SBQQ__RefreshPrices</name>
+    </webLinks>
+</CustomObjectTranslation>

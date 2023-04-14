@@ -1,0 +1,8 @@
+<apex:page controller="SBQQ.QuoteExtSitesController" cache="false" showHeader="false" sidebar="false" standardStylesheets="false">
+	<!-- DEPRECATED: call controller methods via Ajax Toolkit Javascript API instead to secure against CSRF
+	<!--<apex:composition template="{!$Site.Template}">
+    	<apex:define name="body">
+    		<apex:messages />
+		</apex:define>
+	</apex:composition>-->
+</apex:page>

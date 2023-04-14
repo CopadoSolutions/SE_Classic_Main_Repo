@@ -1,0 +1,114 @@
+<apex:page standardController="SBQQ__Quote__c" extensions="SBQQ.QuoteLineEditorController,SBQQ.QueueableJobCheckerExt,SBQQ.ServiceRouter" docType="html-5.0" showHeader="{!(!$Setup.SBQQ__GeneralSettings__c.SBQQ__GlobalHeaderPermUsed__c || !$Permission.SBQQ__HideGlobalHeader) && formFactor == 'desktop'}" standardStylesheets="false" title="{!$Label.sbqq__lbl_edit_quote_lines}">
+  <script>
+    !function(global){
+      var webComponentsSupported = ('registerElement' in document
+        && 'import' in document.createElement('link')
+        && 'content' in document.createElement('template'));
+
+      if (!webComponentsSupported) {
+        var wcPoly = document.createElement('script');
+        wcPoly.src = '{!$Resource.SBQQ__webcomponents_lite}';
+        document.head.appendChild(wcPoly);
+      }
+    }(this)
+  </script>
+  <apex:variable var="stylesheet" value="{!IF(formFactor == 'desktop', 'sb', 'MobileCSS')}" />
+	<apex:stylesheet value="{!$Resource[stylesheet]}"/>
+	<c:theme formFactor="{!formFactor}"/>
+	<apex:includeScript value="/soap/ajax/36.0/connection.js"/>
+	<apex:includeScript value="{!$Resource.SBQQ__sb_app_3rd_js}"/>
+	<apex:includeScript value="{!$Resource.SBQQ__jQuery}"/>
+	<apex:includeScript value="{!$Resource.SBQQ__jQueryUI}"/>
+	<apex:includeScript value="{!URLFOR($Resource.SBQQ__AngularJS,'angular.min.js')}"/>
+	<apex:includeScript value="{!URLFOR($Resource.SBQQ__AngularJS,'angular-sanitize.min.js')}"/>
+	<apex:includeScript value="{!URLFOR($Resource.SBQQ__AngularJS,'/i18n/angular-locale_' + angularLocale + '.js')}"/>
+	<apex:includeScript value="{!$Resource.SBQQ__AngularDnD}"/>
+	<apex:includeScript value="{!$Resource.SBQQ__Directives}"/>
+	<apex:includeScript value="{!$Resource.SBQQ__UI}"/>
+	<apex:includeScript value="{!$Resource.SBQQ__WebUI}"/>
+    <apex:includeScript value="{!$Resource.SBQQ__ResponsiveRendering}"/>
+	<apex:includeScript value="{!$Resource.SBQQ__HtmlSanitizer}"/>
+	<apex:includeScript value="{!$Resource.SBQQ__RemotingServiceProxies}"/>
+	<apex:includeScript value="{!URLFOR($Resource.SBQQ__CKEditor, '/ckeditor/ckeditor.js')}"/>
+	<apex:includeScript value="{!$Resource.SBQQ__InfiniteScroll}"/>
+	<apex:includeScript value="{!$Resource.SBQQ__easyXDM}"/>
+	<apex:includeScript value="{!$Resource.SBQQ__UIBootstrap}"/>
+	<apex:includeScript value="{!$Resource.SBQQ__QueueableJobChecker}"/>
+
+	<script type="text/javascript">
+		var sfSessionId = '{!$API.Session_Id}';
+		$(document).ready(function() {
+			var quoteName = '{!$ObjectType.Quote__c.Name}';
+			var decimalSymbol = '{!JSENCODE(decimalSymbol)}';
+			var namespace = (quoteName.toLowerCase().substring(0,4) == 'sbqq') ? 'SBQQ' : '';
+			var cmdString = '{!JSENCODE($CurrentPage.parameters.cmd)}';
+
+            // Encode and inject Apex variables into angular controllers
+            var quoteId = '{!JSENCODE($CurrentPage.parameters.id)}' == '' ? '{!JSENCODE($CurrentPage.parameters.newid)}' : '{!JSENCODE($CurrentPage.parameters.id)}';
+            var urlParams = {
+                quoteId: quoteId,
+				cmdString: cmdString,
+                returnURL:'{!JSENCODE($CurrentPage.parameters.retURL)}',
+                saveURL: '{!JSENCODE($CurrentPage.parameters.saveURL)}'
+            };
+
+			qqBootstrapWeb({namespace:namespace,decimalSymbol:decimalSymbol,sessionId:'{!JSENCODE($API.Session_ID)}',urlParams:urlParams,sitePrefix:'{!$Site.Prefix}'});
+			document.getElementById('qq').style.display = 'block';
+
+			//Dynamically add jQuery Datepicker src file
+			var locale = DynamicFieldController.prototype.getUserLocale();
+			if (locale != '') {
+				var jScript = document.createElement('script');
+				jScript.setAttribute("type", "text/javascript");
+				jScript.setAttribute("src", "{!URLFOR($Resource.DatepickerLocales)}" + "/DatepickerLocales/datepicker-" + locale + ".js");
+				$('head').append(jScript);
+			};
+
+			// Timeout error handling
+			var originalOnError = Visualforce.remoting.Util.error;
+			Visualforce.remoting.Util.error = function(a, b){
+				// When the user has been logged out,
+				// send to the login page
+ 				if (b && b.message && b.message.indexOf('Logged in?')!==-1) {
+      				window.location = 'https://login.salesforce.com';
+   				} else {
+     				// Perform the normal behavior
+            originalOnError && originalOnError(a, b);
+   				}
+			};
+		});
+	</script>
+	<div id="qq" style="display: none">
+		<div id="mainContent">
+			<form id="mainForm" name="mainForm">
+			<c:quoteLineEditor headerTitle="{!$Label.sbqq__lbl_edit_quote_lines}" headerSubtitle="{!SBQQ__Quote__c.Name}"
+				objectNames="{!$ObjectType.SBQQ__Quote__c.name},{!$ObjectType.SBQQ__QuoteLine__c.name},{!$ObjectType.SBQQ__QuoteLineGroup__c.name},{!$ObjectType.SBQQ__DiscountSchedule__c.name},{!$ObjectType.SBQQ__DiscountTier__c.name}"/>
+			<c:productLookup headerTitle="{!$Label.sbqq__lbl_product_selection}" headerSubtitle="{!SBQQ__Quote__c.Name}"/>
+			<c:productConfigurator headerTitle="{!$Label.sbqq__lbl_configure_products}" headerSubtitle="{!SBQQ__Quote__c.Name}"/>
+			<c:productUpgrader headerTitle="{!$Label.sbqq__lbl_asset_selection}" headerSubtitle="{!SBQQ__Quote__c.Name}"/>
+			<c:subscriptionLookup headerTitle="{!$Label.sbqq__lbl_subscription_selection}" headerSubtitle="{!SBQQ__Quote__c.Name}"/>
+			<c:assetLookup headerTitle="{!$Label.sbqq__lbl_asset_selection}" headerSubtitle="{!SBQQ__Quote__c.Name}" assetFromAccount="false"/>
+			<c:favoritesManager headerTitle="{!$Label.sbqq__lbl_favorites_manager}" headerSubtitle="{!SBQQ__Quote__c.Name}" />
+			<div id="sbCustomActionContainer" class="sbModalDialog modalDialogWrapper" style="display:none">
+				<i class="sf-icon-cancel-circled" onclick="hideCustomActionDialog()"/>
+			</div>
+			<div id="sbModalMask" class="sbModalMask modalDialogBackground" style="display:none">
+            </div>
+			</form>
+		</div>
+    </div>
+    <script>
+        /* Salesforce-prescribed workaround for platform defect where scrolling on ios 8 causes blank screen */
+        (function () {
+            try {
+                var a = navigator.userAgent;
+                if (a.indexOf('Salesforce') != -1 && (a.indexOf('iPhone') != -1 || a.indexOf('iPad') != -1) && a.indexOf('OS/7') == -1 && a.indexOf('OS 7') == -1 && a.indexOf('Safari') == -1) {
+                    var s = document.createElement('style');
+                    s.innerHTML = 'html,html body{overflow: auto;-webkit-overflow-scrolling:touch;}body{position:absolute;left:0;right:0;top:0;bottom:0;}';
+                    document.getElementsByTagName('head')[0].appendChild(s);
+                }} catch (e) {}})();
+
+      handleFixedPageHeader();
+      handleSearchTableResize();
+    </script>
+</apex:page>

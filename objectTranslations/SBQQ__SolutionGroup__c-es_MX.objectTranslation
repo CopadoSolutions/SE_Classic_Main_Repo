@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Grupo de soluciones</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Grupos de soluciones</value>
+    </caseValues>
+    <fields>
+        <help>Ingrese una descripción para este SolutionGroup.</help>
+        <label><!-- Description --></label>
+        <name>SBQQ__Description__c</name>
+    </fields>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>SolutionGroup Layout</layout>
+        <sections>
+            <label>Vínculos personalizados</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Nombre del grupo</nameFieldLabel>
+</CustomObjectTranslation>

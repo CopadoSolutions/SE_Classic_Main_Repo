@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label><!-- PersonalInfo_EPIM --></label>
+        <name>PersonalInfo_EPIM</name>
+    </fieldSets>
+    <fields>
+        <help>Personaliza la ficha predeterminada en la página Búsqueda de productos.</help>
+        <label><!-- Default Product Lookup Tab --></label>
+        <name>SBQQ__DefaultProductLookupTab__c</name>
+        <picklistValues>
+            <masterLabel>Guided Selling</masterLabel>
+            <translation>Venta guiada</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Search Filters</masterLabel>
+            <translation>Filtros de búsqueda</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Marque esta opción para permitir que este usuario cambie el formato de salida de los documentos de presupuesto.</help>
+        <label><!-- Allow Output Format Change --></label>
+        <name>SBQQ__OutputFormatChangeAllowed__c</name>
+    </fields>
+    <fields>
+        <help>Seleccione &quot;Seguidos&quot; para mostrar productos que sigue en Chatter antes de otros al agregarlos al presupuesto.</help>
+        <label><!-- Product Sort Preference --></label>
+        <name>SBQQ__ProductSortPreference__c</name>
+        <picklistValues>
+            <masterLabel>Followed</masterLabel>
+            <translation>Seguidos</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Marque esta opción para borrar los filtros de búsqueda y los resultados cada vez que agrega productos a sus presupuestos. En caso contrario, se mantienen sus selecciones anteriores.</help>
+        <label><!-- Reset Product Lookup --></label>
+        <name>SBQQ__ResetProductLookup__c</name>
+    </fields>
+    <fields>
+        <label><!-- Theme --></label>
+        <name>SBQQ__Theme__c</name>
+    </fields>
+    <layouts>
+        <layout>Community Member Layout</layout>
+        <layoutType>CommunityMemberLayout</layoutType>
+        <sections>
+            <label><!-- Basic Information --></label>
+            <section>Basic Information</section>
+        </sections>
+        <sections>
+            <label><!-- Chatter Settings --></label>
+            <section>Chatter Settings</section>
+        </sections>
+        <sections>
+            <label><!-- Language And Locale Settings --></label>
+            <section>Language And Locale Settings</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Formato Perfil de usuario</layout>
+        <layoutType>UserAlt</layoutType>
+        <sections>
+            <label><!-- Acerca de --></label>
+            <section>Acerca de</section>
+        </sections>
+        <sections>
+            <label><!-- Contacto --></label>
+            <section>Contacto</section>
+        </sections>
+        <sections>
+            <label><!-- Fondo --></label>
+            <section>Fondo</section>
+        </sections>
+    </layouts>
+    <webLinks>
+        <label><!-- Select_Theme --></label>
+        <name>SBQQ__Select_Theme</name>
+    </webLinks>
+</CustomObjectTranslation>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Custo</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Custos</value>
+    </caseValues>
+    <fields>
+        <help>Selecione a caixa de seleção para ativar o custo.</help>
+        <label><!-- Active --></label>
+        <name>SBQQ__Active__c</name>
+    </fields>
+    <fields>
+        <help>Produto associado a esse custo.</help>
+        <label><!-- Product --></label>
+        <name>SBQQ__Product__c</name>
+        <relationshipLabel><!-- Costs --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Insira o custo unitário.</help>
+        <label><!-- Unit Cost --></label>
+        <name>SBQQ__UnitCost__c</name>
+    </fields>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Cost Layout</layout>
+        <sections>
+            <label>Links personalizados</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Nº do custo</nameFieldLabel>
+</CustomObjectTranslation>

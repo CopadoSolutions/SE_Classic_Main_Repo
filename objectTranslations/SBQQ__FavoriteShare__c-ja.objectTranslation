@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>お気に入り共有</value>
+    </caseValues>
+    <fields>
+        <label><!-- Favorite --></label>
+        <name>SBQQ__Favorite__c</name>
+        <relationshipLabel><!-- Favorite Shares --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- User --></label>
+        <name>SBQQ__User__c</name>
+        <relationshipLabel><!-- Favorite Shares --></relationshipLabel>
+    </fields>
+    <layouts>
+        <layout>Favorite Share Layout</layout>
+        <sections>
+            <label>カスタムリンク</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>お気に入りの共有名</nameFieldLabel>
+</CustomObjectTranslation>

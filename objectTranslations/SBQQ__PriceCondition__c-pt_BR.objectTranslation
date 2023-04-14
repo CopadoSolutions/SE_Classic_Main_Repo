@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Condição de preço</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Condições de preços</value>
+    </caseValues>
+    <fields>
+        <help>Escolha o campo que deve conter o valor inserido no campo Valor.</help>
+        <label><!-- Field --></label>
+        <name>SBQQ__Field__c</name>
+        <picklistValues>
+            <masterLabel>Product Code</masterLabel>
+            <translation>Código do produto</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Insira uma fórmula com operadores, funções e campos disponíveis na cotação e no objeto de destino. Não é compatível com a calculadora legada.</help>
+        <label><!-- Filter Formula --></label>
+        <name>SBQQ__FilterFormula__c</name>
+    </fields>
+    <fields>
+        <help>Escolha a Variável para avaliar essa condição com relação a uma Variável de resumo, caso contrário, escolha o Valor.</help>
+        <label><!-- Filter Type --></label>
+        <name>SBQQ__FilterType__c</name>
+        <picklistValues>
+            <masterLabel>Formula</masterLabel>
+            <translation>Formula</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Value</masterLabel>
+            <translation>Valor</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Variable</masterLabel>
+            <translation>Variável</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Selecione a Variável de resumo que você deseja que essa condição use como filtro.</help>
+        <label><!-- Filter Variable --></label>
+        <name>SBQQ__FilterVariable__c</name>
+        <relationshipLabel><!-- Filtered Price Conditions --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Atribua um número exclusivo a essa Condição para mencioná-la na Condição avançada da Regra de preço.</help>
+        <label><!-- Index --></label>
+        <name>SBQQ__Index__c</name>
+    </fields>
+    <fields>
+        <help>Objeto com relação ao qual a condição é avaliada.</help>
+        <label><!-- Object --></label>
+        <name>SBQQ__Object__c</name>
+        <picklistValues>
+            <masterLabel>Product Option</masterLabel>
+            <translation>Opção de produto</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quote</masterLabel>
+            <translation>Cotação</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quote Line</masterLabel>
+            <translation>Linha de cotação</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Summary Variable</masterLabel>
+            <translation>Variável de resumo</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Selecione o operador a ser aplicado ao comparar o Campo ao Valor.</help>
+        <label><!-- Operator --></label>
+        <name>SBQQ__Operator__c</name>
+        <picklistValues>
+            <masterLabel>contains</masterLabel>
+            <translation>contém</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ends with</masterLabel>
+            <translation>termina com</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>equals</masterLabel>
+            <translation>igual a</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>greater or equals</masterLabel>
+            <translation>maior ou igual a</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>greater than</masterLabel>
+            <translation>maior que</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>less or equals</masterLabel>
+            <translation>menor ou igual a</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>less than</masterLabel>
+            <translation>menor que</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>not equals</masterLabel>
+            <translation>não igual a</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>starts with</masterLabel>
+            <translation>começa com</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- ParentRuleIsActive --></label>
+        <name>SBQQ__ParentRuleIsActive__c</name>
+    </fields>
+    <fields>
+        <label><!-- RuleTargetsCalculator --></label>
+        <name>SBQQ__RuleTargetsCalculator__c</name>
+    </fields>
+    <fields>
+        <help>Regra de preço executando essa condição.</help>
+        <label><!-- Price Rule --></label>
+        <name>SBQQ__Rule__c</name>
+        <relationshipLabel><!-- Price Conditions --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Insira uma fórmula com operadores, funções e campos disponíveis na cotação e no objeto de destino. Não é compatível com a calculadora legada.</help>
+        <label><!-- Tested Formula --></label>
+        <name>SBQQ__TestedFormula__c</name>
+    </fields>
+    <fields>
+        <help>Variável de resumo testada por essa condição de preço.</help>
+        <label><!-- Tested Variable --></label>
+        <name>SBQQ__TestedVariable__c</name>
+        <relationshipLabel><!-- Price Conditions (Tested Variable) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Insira o valor que você deseja combinar no campo selecionado usando o operador escolhido.</help>
+        <label><!-- Filter Value --></label>
+        <name>SBQQ__Value__c</name>
+    </fields>
+    <gender>Feminine</gender>
+    <layouts>
+        <layout>Price Condition Layout</layout>
+        <sections>
+            <label>Links personalizados</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>Informações do filtro</label>
+            <section>Filter Information</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Nº da condição</nameFieldLabel>
+    <validationRules>
+        <errorMessage><!-- If Filter Type is Formula, then Filter Formula cannot be empty. --></errorMessage>
+        <name>SBQQ__Filter_formula_field_null</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You must specify either field or tested variable. --></errorMessage>
+        <name>SBQQ__Tested_field_or_variable</name>
+    </validationRules>
+</CustomObjectTranslation>

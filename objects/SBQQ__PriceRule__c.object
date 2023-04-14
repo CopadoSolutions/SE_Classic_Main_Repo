@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <customHelpPage>SBQQ__PriceRuleHelp</customHelpPage>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <description>Rule that affects pricing for an option or quote line</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableEnhancedLookup>false</enableEnhancedLookup>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>false</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>Private</externalSharingModel>
+    <fields>
+        <fullName>SBQQ__Active__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Indicates whether this rule is active or not.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Indicates whether this rule is active or not.</inlineHelpText>
+        <label>Active</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__AdvancedCondition__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Can only be entered if the Conditions Met is Custom. Enter a combination of the Price Condition Index #s, AND, OR, and parenthesis (e.g. (123 AND 124) AND 125).</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Can only be entered if the Conditions Met is Custom. Enter a combination of the Price Condition Index #s, AND, OR, and parenthesis (e.g. (123 AND 124) AND 125).</inlineHelpText>
+        <label>Advanced Condition</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__ConditionsMet__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Choose the behavior for your conditions: All is AND, Any is OR, Custom is a combination of AND/OR.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Choose the behavior for your conditions: All is AND, Any is OR, Custom is a combination of AND/OR.</inlineHelpText>
+        <label>Conditions Met</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>All</fullName>
+                    <default>true</default>
+                    <label>All</label>
+                </value>
+                <value>
+                    <fullName>Any</fullName>
+                    <default>false</default>
+                    <label>Any</label>
+                </value>
+                <value>
+                    <fullName>Custom</fullName>
+                    <default>false</default>
+                    <label>Custom</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SBQQ__ConfiguratorEvaluationEvent__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Event that specifies when Price Rules should be fired.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>When None or Save is selected, the Configurator scoped price rules will fire on save.  When Edit is selected, the Configurator scoped price rules will fire on edit and save.</inlineHelpText>
+        <label>Configurator Evaluation Event</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Save</fullName>
+                    <default>false</default>
+                    <label>Save</label>
+                </value>
+                <value>
+                    <fullName>Edit</fullName>
+                    <default>false</default>
+                    <label>Edit</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SBQQ__EvaluationEvent__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Event that causes this rule to be evaluated.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Specify when this rule should be evaluated. Only to be used when targeting Quote Line and not supported on legacy calculator.</inlineHelpText>
+        <label>Calculator Evaluation Event</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>On Initialization</fullName>
+                    <default>false</default>
+                    <label>On Initialization</label>
+                </value>
+                <value>
+                    <fullName>Before Calculate</fullName>
+                    <default>false</default>
+                    <label>Before Calculate</label>
+                </value>
+                <value>
+                    <fullName>On Calculate</fullName>
+                    <default>true</default>
+                    <label>On Calculate</label>
+                </value>
+                <value>
+                    <fullName>After Calculate</fullName>
+                    <default>false</default>
+                    <label>After Calculate</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>SBQQ__EvaluationOrder__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Order in which this price rule is evaluated.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Specify the order of evaluation for this price rule. Higher ordered rules are evaluated last which means they &quot;win&quot; in case of conflict.</inlineHelpText>
+        <label>Evaluation Order</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SBQQ__LookupObject__c</fullName>
+        <deprecated>false</deprecated>
+        <description>API Name of the Custom Object that stores the lookup data.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>API Name of the Custom Object that stores the lookup data.</inlineHelpText>
+        <label>Lookup Object</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>SBQQ__LookupData__c</fullName>
+                    <default>false</default>
+                    <label>SBQQ__LookupData__c</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SBQQ__Product__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>Optional field that makes this rule specific to the product.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Choose a product to associate to this rule.</inlineHelpText>
+        <label>Product</label>
+        <referenceTo>Product2</referenceTo>
+        <relationshipLabel>Price Rules</relationshipLabel>
+        <relationshipName>PriceRules</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__TargetObject__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Object that’s the target of the field update.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Event during which this rule is evaluated.</inlineHelpText>
+        <label>Evaluation Scope</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Configurator</fullName>
+                    <default>false</default>
+                    <label>Configurator</label>
+                </value>
+                <value>
+                    <fullName>Calculator</fullName>
+                    <default>false</default>
+                    <label>Calculator</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <label>Price Rule</label>
+    <listViews>
+        <fullName>SBQQ__All</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <label>Price Rule Name</label>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Price Rules</pluralLabel>
+    <searchLayouts>
+        <lookupDialogsAdditionalFields>SBQQ__Active__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>SBQQ__TargetObject__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>SBQQ__Product__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>UPDATEDBY_USER</lookupDialogsAdditionalFields>
+        <searchFilterFields>NAME</searchFilterFields>
+        <searchFilterFields>SBQQ__Active__c</searchFilterFields>
+        <searchFilterFields>SBQQ__Product__c</searchFilterFields>
+        <searchFilterFields>SBQQ__TargetObject__c</searchFilterFields>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
+    <webLinks>
+        <fullName>SBQQ__CloneWithRelated</fullName>
+        <availability>online</availability>
+        <description>Launches the Price Rules preview page that allows users to clone the price rule and its conditions, actions, and queries or cancel the process.</description>
+        <displayType>button</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <linkType>url</linkType>
+        <masterLabel>Clone with Related</masterLabel>
+        <openType>replace</openType>
+        <protected>false</protected>
+        <url>/apex/SBQQ__ClonePriceRule?id={!SBQQ__PriceRule__c.Id}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>SBQQ__CloneWithRelatedClassic</fullName>
+        <availability>online</availability>
+        <description>Clones this price rule with related child records.</description>
+        <displayType>button</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <linkType>url</linkType>
+        <masterLabel>Clone with Related</masterLabel>
+        <openType>replace</openType>
+        <protected>false</protected>
+        <url>{!URLFOR($Action.SBQQ__PriceRule__c.Clone, SBQQ__PriceRule__c.Id, [retURL=$Site.Prefix &amp; &apos;/&apos; &amp; SBQQ__PriceRule__c.Id,saveURL=$Site.Prefix &amp; &apos;/apex/SBQQ__ClonePriceRule?id=&apos; &amp; SBQQ__PriceRule__c.Id])}</url>
+    </webLinks>
+</CustomObject>

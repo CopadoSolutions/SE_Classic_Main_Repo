@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>プロセス入力値</value>
+    </caseValues>
+    <fields>
+        <help>オブジェクトが属するプロセス入力を選択します。</help>
+        <label><!-- Process Input ID --></label>
+        <name>SBQQ__ProcessInputID__c</name>
+        <relationshipLabel><!-- Process Input Values --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>このプロセス入力値が属する見積の ID。</help>
+        <label><!-- Quote ID --></label>
+        <name>SBQQ__QuoteId__c</name>
+        <relationshipLabel><!-- Process Input Values --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>ユーザに属するプロセス入力値。</help>
+        <label><!-- UserID --></label>
+        <name>SBQQ__UserID__c</name>
+        <relationshipLabel><!-- Process Input Values --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>これは入力プロセス値への回答です。</help>
+        <label><!-- Value --></label>
+        <name>SBQQ__Value__c</name>
+    </fields>
+    <layouts>
+        <layout>Process Input Values Layout</layout>
+        <sections>
+            <label>カスタムリンク</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>見積プロセス値名</nameFieldLabel>
+</CustomObjectTranslation>

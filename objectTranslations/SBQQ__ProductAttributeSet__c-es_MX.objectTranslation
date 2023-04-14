@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Conjunto de atributos de producto</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Conjuntos de atributos de productos</value>
+    </caseValues>
+    <fields>
+        <label><!-- Attribute Sets --></label>
+        <name>SBQQ__AttributeSet__c</name>
+        <relationshipLabel><!-- Product Attribute Sets --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Configured SKU --></label>
+        <name>SBQQ__ConfiguredSKU__c</name>
+    </fields>
+    <fields>
+        <label><!-- Parent Product Name --></label>
+        <name>SBQQ__ProductName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Option Name --></label>
+        <name>SBQQ__ProductOptionName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Option --></label>
+        <name>SBQQ__ProductOption__c</name>
+        <relationshipLabel><!-- Product Attribute Sets --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Sequence --></label>
+        <name>SBQQ__Sequence__c</name>
+    </fields>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Product Attribute Set Layout</layout>
+        <sections>
+            <label>Vínculos personalizados</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Conjunto de atributos de producto</nameFieldLabel>
+</CustomObjectTranslation>

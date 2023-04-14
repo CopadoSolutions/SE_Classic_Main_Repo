@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Preisregelung</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Preisregelungen</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value><!-- Preisregelung --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+        <value><!-- Preisregelungen --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value><!-- Preisregelung --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>true</plural>
+        <value><!-- Preisregelungen --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value><!-- Preisregelung --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value><!-- Preisregelungen --></value>
+    </caseValues>
+    <fields>
+        <help>Account, für den diese Preisregelung gilt. Wird nur in Verbindung mit &quot;Preisregelung überschreiben&quot; in der Benutzeroberfläche des Angebotsbelegposten-Editors verwendet.</help>
+        <label><!-- Account --></label>
+        <name>SBQQ__Account__c</name>
+        <relationshipLabel><!-- Price Schedules --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Geben Sie an, wie Mengen von Belegposten für Produkte mit dieser Regelung aggregiert werden sollen. Standardmäßig wird die Menge für jeden Belegposten (selbst für dasselbe Produkt) separat berücksichtigt.</help>
+        <label><!-- Aggregation Scope --></label>
+        <name>SBQQ__AggregationScope__c</name>
+        <picklistValues>
+            <masterLabel>Group</masterLabel>
+            <translation>Gruppe</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quote</masterLabel>
+            <translation>Angebot</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Wählen Sie das Feld aus, das Sie mit dem gleichen Feld auf dem Angebot vergleichen möchten.</help>
+        <label><!-- Constraint Field --></label>
+        <name>SBQQ__ConstraintField__c</name>
+        <picklistValues>
+            <masterLabel>Account__c</masterLabel>
+            <translation>Account__c</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Aktivieren Sie dieses Kontrollkästchen, wenn bei Mengenrabatten die Gesamtmenge für einen Kunden berücksichtigt werden soll (also Menge aus dem Angebot plus vorherige Einkäufe).</help>
+        <label><!-- Cross Orders --></label>
+        <name>SBQQ__CrossOrders__c</name>
+    </fields>
+    <fields>
+        <help>Aktivieren Sie dieses Kontrollkästchen, um die Mengen aller Produkte mit dieser Rabattregelung zu aggregieren, damit der Mengenrabatt berechnet werden kann. Durchschnittsrabatte können für produktübergreifende Rabatte nicht verwendet werden.</help>
+        <label><!-- Cross Products --></label>
+        <name>SBQQ__CrossProducts__c</name>
+    </fields>
+    <fields>
+        <help>Beschreibung für diese Preisregelung.</help>
+        <label><!-- Description --></label>
+        <name>SBQQ__Description__c</name>
+    </fields>
+    <fields>
+        <help>Geben Sie die Einheit für Rabatte an: Betrag oder Prozent.</help>
+        <label><!-- Discount Unit --></label>
+        <name>SBQQ__DiscountUnit__c</name>
+        <picklistValues>
+            <masterLabel>Amount</masterLabel>
+            <translation>Betrag</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Percent</masterLabel>
+            <translation>Prozent</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Price</masterLabel>
+            <translation>Preis</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Geben Sie eine durch Kommas getrennte Liste mit Preisbuch-IDs ein, auf die diese Preisregelung nicht angewandt werden soll.</help>
+        <label><!-- Excluded Pricebook IDs --></label>
+        <name>SBQQ__ExcludedPricebookIds__c</name>
+    </fields>
+    <fields>
+        <help>Bei aktiviertem Kontrollkästchen werden die Mengen von &quot;Produktoptionen im Paket&quot; in den Aggregierungsumfang einbezogen</help>
+        <label><!-- Include Bundled Quantities --></label>
+        <name>SBQQ__IncludeBundledProducts__c</name>
+    </fields>
+    <fields>
+        <help>Auftragsprodukt, für das diese Preisregelung gilt.</help>
+        <label><!-- Order Product --></label>
+        <lookupFilter>
+            <errorMessage><!-- Please select Order Products of the associated order. --></errorMessage>
+        </lookupFilter>
+        <name>SBQQ__OrderProduct__c</name>
+        <relationshipLabel><!-- Price Schedules --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Auftrag, für dne diese Preisregelung gilt.</help>
+        <label><!-- Order --></label>
+        <name>SBQQ__Order__c</name>
+        <relationshipLabel><!-- Price Schedules --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Die Rabattregelung, aus der diese Preisregelung stammt.</help>
+        <label><!-- Original Discount Schedule --></label>
+        <name>SBQQ__OriginalDiscountSchedule__c</name>
+        <relationshipLabel><!-- Price Schedules --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Bestimmt, ob die aktuelle Rabattklasse, in die das Produkt fällt, bzw. alle Rabattklassen oder aber keine Rabattklasse bearbeitet werden können.</help>
+        <label><!-- Override Behavior --></label>
+        <name>SBQQ__OverrideBehavior__c</name>
+        <picklistValues>
+            <masterLabel>All</masterLabel>
+            <translation>Alle</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Current Tier Only</masterLabel>
+            <translation>Nur aktuelle Klasse</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Dezimalstellen für Preise, die aus dieser Preisregelung entstehen.</help>
+        <label><!-- Price Scale --></label>
+        <name>SBQQ__PriceScale__c</name>
+    </fields>
+    <fields>
+        <help>Der Preistyp, der bestimmt, wie die Preise oder Rabatte berechnet werden.</help>
+        <label><!-- Type --></label>
+        <name>SBQQ__PriceType__c</name>
+    </fields>
+    <fields>
+        <help>Preisbuch, für das diese as Preisregelung gilt. Wird nur in Verbindung mit &quot;Produkt nachschlagen&quot; verwendet, um eine produkt- bzw. preisbuchspezifische Regelung zuzuweisen.</help>
+        <label><!-- Price Book --></label>
+        <name>SBQQ__Pricebook__c</name>
+        <relationshipLabel><!-- Price Schedules --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Produkt, für das diese Preisregelung gilt. Wird nur in Verbindung mit &quot;Preisbuch nachschlagen&quot; verwendet, um eine produkt- bzw. preisbuchspezifische Regelung zuzuweisen.</help>
+        <label><!-- Product --></label>
+        <name>SBQQ__Product__c</name>
+        <relationshipLabel><!-- Price Schedules --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Feld, das zum Berechnen der Preise gemäß der Preisregelung verwendet wird.</help>
+        <label><!-- Quote Line Quantity Field --></label>
+        <name>SBQQ__QuoteLineQuantityField__c</name>
+        <picklistValues>
+            <masterLabel>Quantity</masterLabel>
+            <translation>Menge</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Angebotsbelegposten, für den diese Preisregelung gilt. Wird nur in Verbindung mit &quot;Preisregelung überschreiben&quot; in der Benutzeroberfläche des Angebotsbelegposten-Editors verwendet.</help>
+        <label><!-- Quote Line --></label>
+        <name>SBQQ__QuoteLine__c</name>
+        <relationshipLabel><!-- Price Schedules --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Angebot, für das diese Preisregelung gilt. Wird nur in Verbindung mit &quot;Preisregelung überschreiben&quot; in der Benutzeroberfläche des Angebotsbelegposten-Editors verwendet.</help>
+        <label><!-- Quote --></label>
+        <name>SBQQ__Quote__c</name>
+        <relationshipLabel><!-- Price Schedules --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Gesamter Laufzeitrabatt, der auf diese Preisregelung angewandt wurde. Der Wert steht nur für in Preisklassen gestaffelte Preise zur Verfügung.  Bei mengenbezogenen Preisen steht der Laufzeitrabatt für jede Preisklasse zur Verfügung.</help>
+        <label><!-- Term Discount --></label>
+        <name>SBQQ__TermDiscount__c</name>
+    </fields>
+    <fields>
+        <help>Bei aktiviertem Kontrollkästchen wird die vom Benutzer definierte &quot;Einheit für Rabatte&quot; der Preisregelung auf &quot;Preis&quot; eingestellt.</help>
+        <label><!-- Use Price For Amount --></label>
+        <name>SBQQ__UsePriceForAmount__c</name>
+    </fields>
+    <fields>
+        <help>Gibt an, ob diese Regelung von einem Endbenutzer oder einem Administrator erstellt wurde.</help>
+        <label><!-- User Defined --></label>
+        <name>SBQQ__UserDefined__c</name>
+    </fields>
+    <gender>Feminine</gender>
+    <layouts>
+        <layout>Price Schedule Layout</layout>
+        <sections>
+            <label>Benutzerdefinierte Links</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>Snapshot-Informationen</label>
+            <section>Snapshot Information</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Name der Regelung</nameFieldLabel>
+    <webLinks>
+        <label><!-- EditTiers --></label>
+        <name>SBQQ__EditTiers</name>
+    </webLinks>
+</CustomObjectTranslation>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- Indicates that this quote term is available for use. --></help>
+        <label><!-- Active --></label>
+        <name>SBQQ__Active__c</name>
+    </fields>
+    <fields>
+        <help><!-- Can only be entered if the Conditions Met is Custom. Enter a combination of the Term Condition Index #s, AND, OR, and parenthesis (e.g. (123 AND 124) AND 125). --></help>
+        <label><!-- Advanced Condition --></label>
+        <name>SBQQ__AdvancedCondition__c</name>
+    </fields>
+    <fields>
+        <help><!-- Text content of this term. --></help>
+        <label><!-- Body --></label>
+        <name>SBQQ__Body__c</name>
+    </fields>
+    <fields>
+        <help><!-- Choose the behavior for your conditions: All is AND, Any is OR, Custom is a combination of AND/OR. --></help>
+        <label><!-- Conditions Met --></label>
+        <name>SBQQ__ConditionsMet__c</name>
+        <picklistValues>
+            <masterLabel>All</masterLabel>
+            <translation><!-- All --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Any</masterLabel>
+            <translation><!-- Any --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Custom</masterLabel>
+            <translation><!-- Custom --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Controls a Quote Term being editable by a user. --></help>
+        <label><!-- Locked --></label>
+        <name>SBQQ__Locked__c</name>
+    </fields>
+    <fields>
+        <help><!-- Parent term for this term. --></help>
+        <label><!-- Parent Term --></label>
+        <name>SBQQ__ParentTerm__c</name>
+        <relationshipLabel><!-- Sub Terms --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Specifies the order in which the terms are printed on quote document. --></help>
+        <label><!-- Print Order --></label>
+        <name>SBQQ__PrintOrder__c</name>
+    </fields>
+    <fields>
+        <help><!-- Quote to which this term applies. Left blank if this is a standard term. --></help>
+        <label><!-- Quote --></label>
+        <name>SBQQ__Quote__c</name>
+        <relationshipLabel><!-- Quote Terms --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Specifies the standard term that is being modified. --></help>
+        <label><!-- Standard Term --></label>
+        <name>SBQQ__StandardTerm__c</name>
+        <relationshipLabel><!-- Modified Terms --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Status of this quote term. --></help>
+        <label><!-- Status --></label>
+        <name>SBQQ__Status__c</name>
+        <picklistValues>
+            <masterLabel>Approved</masterLabel>
+            <translation><!-- Approved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Draft</masterLabel>
+            <translation><!-- Draft --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Review</masterLabel>
+            <translation><!-- In Review --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rejected</masterLabel>
+            <translation><!-- Rejected --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Template Content to which this term is applied. --></help>
+        <label><!-- Template Content --></label>
+        <name>SBQQ__TemplateContent__c</name>
+        <relationshipLabel><!-- Quote Terms --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Indicates if the term is standard, custom, or modified. --></help>
+        <label><!-- Type --></label>
+        <name>SBQQ__Type__c</name>
+    </fields>
+    <layouts>
+        <layout>Quote Term Layout</layout>
+        <sections>
+            <label><!-- Body --></label>
+            <section>Body</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <webLinks>
+        <label><!-- Translate --></label>
+        <name>SBQQ__Translate</name>
+    </webLinks>
+</CustomObjectTranslation>

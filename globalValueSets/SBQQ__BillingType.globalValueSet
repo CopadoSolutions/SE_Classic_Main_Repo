@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Advance</fullName>
+        <default>false</default>
+        <label>Advance</label>
+    </customValue>
+    <customValue>
+        <fullName>Arrears</fullName>
+        <default>false</default>
+        <label>Arrears</label>
+    </customValue>
+    <description>Billing type</description>
+    <masterLabel>Billing Type</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

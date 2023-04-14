@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>見積規約</value>
+    </caseValues>
+    <fields>
+        <help>この見積規約が使用できることを示します。</help>
+        <label><!-- Active --></label>
+        <name>SBQQ__Active__c</name>
+    </fields>
+    <fields>
+        <help>[一致した条件] が [カスタム] の場合にのみ入力できます。契約条件インデックス番号、AND、OR、括弧の組み合わせを入力します (例: (123 AND 124) AND 125)。</help>
+        <label><!-- Advanced Condition --></label>
+        <name>SBQQ__AdvancedCondition__c</name>
+    </fields>
+    <fields>
+        <help>この規約のテキストコンテンツ。</help>
+        <label><!-- Body --></label>
+        <name>SBQQ__Body__c</name>
+    </fields>
+    <fields>
+        <help>条件の動作を選択します。[すべて] は AND、[いずれか] は OR、[カスタム] は AND と OR の組み合わせです。</help>
+        <label><!-- Conditions Met --></label>
+        <name>SBQQ__ConditionsMet__c</name>
+        <picklistValues>
+            <masterLabel>All</masterLabel>
+            <translation>すべて</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Any</masterLabel>
+            <translation>いずれか</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Custom</masterLabel>
+            <translation>カスタム</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>ユーザが編集できる見積規約を制御します。</help>
+        <label><!-- Locked --></label>
+        <name>SBQQ__Locked__c</name>
+    </fields>
+    <fields>
+        <help>この規約の親規約。</help>
+        <label><!-- Parent Term --></label>
+        <name>SBQQ__ParentTerm__c</name>
+        <relationshipLabel><!-- Sub Terms --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>規約を見積ドキュメントに出力する順序を指定します。</help>
+        <label><!-- Print Order --></label>
+        <name>SBQQ__PrintOrder__c</name>
+    </fields>
+    <fields>
+        <help>この規約を適用する見積。これが標準規約である場合は、空白のままにします。</help>
+        <label><!-- Quote --></label>
+        <name>SBQQ__Quote__c</name>
+        <relationshipLabel><!-- Quote Terms --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>変更される標準規約を指定します。</help>
+        <label><!-- Standard Term --></label>
+        <name>SBQQ__StandardTerm__c</name>
+        <relationshipLabel><!-- Modified Terms --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>この見積規約の状況。</help>
+        <label><!-- Status --></label>
+        <name>SBQQ__Status__c</name>
+        <picklistValues>
+            <masterLabel>Approved</masterLabel>
+            <translation>承認済み</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Draft</masterLabel>
+            <translation>ドラフト</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Review</masterLabel>
+            <translation>レビュー中</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rejected</masterLabel>
+            <translation>却下済み</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>この規約が適用されるテンプレートコンテンツ。</help>
+        <label><!-- Template Content --></label>
+        <name>SBQQ__TemplateContent__c</name>
+        <relationshipLabel><!-- Quote Terms --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>規約の種別 (標準規約、カスタム規約、変更対象規約) を示します。</help>
+        <label><!-- Type --></label>
+        <name>SBQQ__Type__c</name>
+    </fields>
+    <layouts>
+        <layout>Quote Term Layout</layout>
+        <sections>
+            <label>本文</label>
+            <section>Body</section>
+        </sections>
+        <sections>
+            <label>カスタムリンク</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>規約番号</nameFieldLabel>
+    <webLinks>
+        <label><!-- Translate --></label>
+        <name>SBQQ__Translate</name>
+    </webLinks>
+</CustomObjectTranslation>

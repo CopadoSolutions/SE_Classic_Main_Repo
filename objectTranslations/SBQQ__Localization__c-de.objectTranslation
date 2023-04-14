@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Lokalisierung</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Lokalisierungen</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value><!-- Lokalisierung --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+        <value><!-- Lokalisierungen --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value><!-- Lokalisierung --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>true</plural>
+        <value><!-- Lokalisierungen --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value><!-- Lokalisierung --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value><!-- Lokalisierungen --></value>
+    </caseValues>
+    <fields>
+        <help>Der API-Name dieses Inhalts.</help>
+        <label><!-- API Name --></label>
+        <name>SBQQ__APIName__c</name>
+    </fields>
+    <fields>
+        <help>Beschreibt, wo sich der Text befindet</help>
+        <label><!-- Description --></label>
+        <name>SBQQ__Description__c</name>
+    </fields>
+    <fields>
+        <help>Die Bezeichnung dieser Aktion in der Benutzeroberfläche.</help>
+        <label><!-- Label --></label>
+        <name>SBQQ__Label__c</name>
+    </fields>
+    <fields>
+        <help>Der Sprachencode für diese Übersetzung.</help>
+        <label><!-- Language --></label>
+        <name>SBQQ__Language__c</name>
+    </fields>
+    <fields>
+        <help>Die Belegpostenspalte, die diesem Inhalt zugeordnet ist.</help>
+        <label><!-- Line Column --></label>
+        <name>SBQQ__LineColumn__c</name>
+        <relationshipLabel><!-- Localizations --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Dieses Feld speichert Übersetzungen für Felder vom Typ &quot;Langer Text&quot;.</help>
+        <label><!-- Long Text Area --></label>
+        <name>SBQQ__LongTextArea__c</name>
+    </fields>
+    <fields>
+        <help>Die Dimension, die diesem Inhalt zugeordnet ist.</help>
+        <label><!-- Price Dimension --></label>
+        <name>SBQQ__PriceDimension__c</name>
+        <relationshipLabel><!-- Localizations --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Die Produktfunktion, die diesem Inhalt zugeordnet ist.</help>
+        <label><!-- Product Feature --></label>
+        <name>SBQQ__ProductFeature__c</name>
+        <relationshipLabel><!-- Localizations --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Die Produktoption, die diesen Belegposten erzeugt hat.</help>
+        <label><!-- Product Option --></label>
+        <name>SBQQ__ProductOption__c</name>
+        <relationshipLabel><!-- Localizations --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Das Produkt, das diesem Inhalt zugeordnet ist.</help>
+        <label><!-- Product --></label>
+        <name>SBQQ__Product__c</name>
+        <relationshipLabel><!-- Localizations --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Die Vorlage, die für diesen Inhalt verwendet werden soll.</help>
+        <label><!-- Quote Template --></label>
+        <name>SBQQ__QuoteTemplate__c</name>
+        <relationshipLabel><!-- Localizations --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Die übergeordnete Klausel für diese Klausel.</help>
+        <label><!-- Quote Term --></label>
+        <name>SBQQ__QuoteTerm__c</name>
+        <relationshipLabel><!-- Localizations --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Dieses Feld speichert Übersetzungen für Felder vom Typ &quot;Rich Text&quot;.</help>
+        <label><!-- Rich Text Area --></label>
+        <name>SBQQ__RichTextArea__c</name>
+    </fields>
+    <fields>
+        <help>Der Vorlageninhalt, der für diesen Inhalt verwendet werden soll.</help>
+        <label><!-- Template Content --></label>
+        <name>SBQQ__TemplateContent__c</name>
+        <relationshipLabel><!-- Localizations --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Dieses Feld speichert Übersetzungen für Felder vom Typ &quot;Textbereich&quot;.</help>
+        <label><!-- Text Area --></label>
+        <name>SBQQ__TextArea__c</name>
+    </fields>
+    <fields>
+        <help>Dieses Feld speichert Übersetzungen für Felder vom Typ &quot;Text&quot;.</help>
+        <label><!-- Text --></label>
+        <name>SBQQ__Text__c</name>
+    </fields>
+    <fields>
+        <help>Gibt an, ob dieses Feld benutzerdefiniert ist.</help>
+        <label><!-- User Defined --></label>
+        <name>SBQQ__UserDefined__c</name>
+    </fields>
+    <gender>Feminine</gender>
+    <layouts>
+        <layout>Localization Layout</layout>
+        <sections>
+            <label>Benutzerdefinierte Links</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>Unterstützte Objekte</label>
+            <section>Supported Objects</section>
+        </sections>
+        <sections>
+            <label>Werte</label>
+            <section>Values</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Lokalisierungsnummer</nameFieldLabel>
+</CustomObjectTranslation>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- Enter a numeric index value that represents the location of the column. Column index must start from 1. --></help>
+        <label><!-- Column Index --></label>
+        <name>SBQQ__ColumnIndex__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the API Name. --></help>
+        <label><!-- Field Name --></label>
+        <name>SBQQ__FieldName__c</name>
+        <picklistValues>
+            <masterLabel>Discount (%)</masterLabel>
+            <translation><!-- Discount (%) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Discount (Amt)</masterLabel>
+            <translation><!-- Discount (Amt) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>List Price</masterLabel>
+            <translation><!-- List Price --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Partner Discount</masterLabel>
+            <translation><!-- Partner Discount --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product Code</masterLabel>
+            <translation><!-- Product Code --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quantity</masterLabel>
+            <translation><!-- Quantity --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Select the format in which your records will be imported. --></help>
+        <label><!-- Import Format --></label>
+        <name>SBQQ__ImportFormat__c</name>
+        <relationshipLabel><!-- Import Columns --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Select if this column should be a unique key column. --></help>
+        <label><!-- Key --></label>
+        <name>SBQQ__Key__c</name>
+    </fields>
+    <layouts>
+        <layout>Import Column Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <validationRules>
+        <errorMessage><!-- Column Index must start from 1. --></errorMessage>
+        <name>SBQQ__Column_index_must_start_from_1</name>
+    </validationRules>
+</CustomObjectTranslation>
