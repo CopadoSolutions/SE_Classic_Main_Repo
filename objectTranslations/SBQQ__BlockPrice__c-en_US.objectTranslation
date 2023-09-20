@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- The date when this block price is effective.  The value is taken when a block price snapshot is taken at order creation time. --></help>
+        <label><!-- Effective Date --></label>
+        <name>SBQQ__EffectiveDate__c</name>
+    </fields>
+    <fields>
+        <help><!-- Lower bound of the quantity range for this block price. --></help>
+        <label><!-- Lower Bound --></label>
+        <name>SBQQ__LowerBound__c</name>
+    </fields>
+    <fields>
+        <help><!-- The order product this Block Price applies to when the order product is created. --></help>
+        <label><!-- Order Product --></label>
+        <name>SBQQ__OrderProduct__c</name>
+        <relationshipLabel><!-- Block Price Snapshots --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- The original product block price where this block price is snapshotted from. --></help>
+        <label><!-- Original Block Price --></label>
+        <name>SBQQ__OriginalBlockPrice__c</name>
+        <relationshipLabel><!-- Block Prices --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Select the Price Book that should receive block pricing when applicable. --></help>
+        <label><!-- Price Book --></label>
+        <name>SBQQ__PriceBook2__c</name>
+        <relationshipLabel><!-- Block Prices --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Price for the parent product in specified quantity range. --></help>
+        <label><!-- Price --></label>
+        <name>SBQQ__Price__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select the product that should receive block pricing when applicable. --></help>
+        <label><!-- Product --></label>
+        <name>SBQQ__Product__c</name>
+        <relationshipLabel><!-- Block Prices --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- The quote line where this block price applies to when an order product is created. --></help>
+        <label><!-- Quote Line --></label>
+        <name>SBQQ__QuoteLine__c</name>
+        <relationshipLabel><!-- Block Prices --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Upper bound of the quantity range for this block price. --></help>
+        <label><!-- Upper Bound --></label>
+        <name>SBQQ__UpperBound__c</name>
+    </fields>
+    <layouts>
+        <layout>Block Price Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Snapshot Information --></label>
+            <section>Snapshot Information</section>
+        </sections>
+    </layouts>
+    <webLinks>
+        <label><!-- EditAll --></label>
+        <name>SBQQ__EditAll</name>
+    </webLinks>
+</CustomObjectTranslation>

@@ -1,0 +1,103 @@
+<apex:page standardController="SBQQ__WebQuote__c" extensions="SBQQ.QuoteDocumentController" docType="html-5.0" showHeader="{!(!$Setup.SBQQ__GeneralSettings__c.SBQQ__GlobalHeaderPermUsed__c || !$Permission.SBQQ__HideGlobalHeader) && formFactor == 'desktop'}" standardStylesheets="false">
+	<apex:variable var="stylesheet" value="{!IF(formFactor == 'desktop', 'sb', 'MobileCSS')}" />
+	<apex:stylesheet value="{!$Resource[stylesheet]}"/>
+	<c:theme formFactor="{!formFactor}"/>
+	<apex:includeScript value="/soap/ajax/28.0/connection.js" />
+	<apex:includeScript value="{!$Resource.SBQQ__jQuery}"/>
+	<apex:includeScript value="{!$Resource.SBQQ__jQueryUI}"/>
+	<apex:includeScript value="{!URLFOR($Resource.SBQQ__AngularJS,'angular.min.js')}"/>
+	<apex:includeScript value="{!URLFOR($Resource.SBQQ__AngularJS,'angular-sanitize.min.js')}"/>
+	<apex:includeScript value="{!URLFOR($Resource.SBQQ__AngularJS,'/i18n/angular-locale_en-us.js')}"/>
+	<apex:includeScript value="{!$Resource.SBQQ__AngularDnD}"/>
+	<apex:includeScript value="{!$Resource.SBQQ__Directives}"/>
+	<apex:includeScript value="{!$Resource.SBQQ__UIBootstrap}"/>
+	<apex:includeScript value="{!$Resource.SBQQ__UI}"/>
+	<apex:includeScript value="{!$Resource.SBQQ__WebUI}"/>
+	<apex:includeScript value="{!$Resource.SBQQ__HtmlSanitizer}"/>
+	<apex:includeScript value="{!$Resource.SBQQ__RemotingServiceProxies}"/>
+	<apex:includeScript value="{!$Resource.SBQQ__DocumentGeneratorUI}"/>
+	<apex:includeScript value="{!$Resource.SBQQ__InfiniteScroll}"/>
+    <script type="text/javascript">
+    	$(document).ready(function() {
+    		var quoteName = '{!$ObjectType.WebQuote__c.Name}';
+    		var namespace = (quoteName.toLowerCase().substring(0,4) == 'sbqq') ? 'SBQQ' : '';
+    		qqBootstrapWeb({namespace:namespace,sessionId:'{!JSENCODE($API.Session_ID)}',sitePrefix:'{!$Site.Prefix}'});
+    		document.getElementById('qq').style.display = 'block';
+    	});
+    </script>
+
+    <div id="qq" style="display: none" class="sb">
+		<div id="sbDocGenPreview" ng-controller="QuoteDocumentGeneratorCtrl" ng-init="onLoad('{!WebQuote__c.Id}')">
+			<c:pageHeader title="{!$Label.sbqq__lbl_generate_document}" subtitle="{!SBQQ__WebQuote__c.Name}" formFactor="{!formFactor}" customTheme="18">
+        <div class="sbButtons">
+          <button ng-click="onPreview()" class="sbBtn">{!$Label.lbl_preview}</button>
+          <button ng-click="onEmailMe()" class="sbBtn">{!$Label.lbl_email_me}</button>
+          <button ng-click="onCancel()" class="sbBtn">{!$Label.lbl_cancel}</button>
+        </div>
+      </c:pageHeader>
+
+			<c:messages messagesExpr="messages" formFactor="{!formFactor}"/>
+		   	<c:status displayExpr="blockingOperationInProgress" formFactor="{!formFactor}"/>
+
+			<div ng-show="documentModel != null && !mobilePreview">
+				<div class="sbPageBlock">
+		            <c:pageBlockHeader formFactor="{!formFactor}">
+		            	<apex:outputPanel layout="none" rendered="{!formfactor == 'tablet'}">
+			            	<button ng-click="onPreview()" class="btn">
+			            		<span>{!$Label.lbl_preview}</span>
+			            	</button>
+			            	<button ng-click="onEmailMe()" class="btn">
+			            		<span>{!$Label.lbl_email_me}</span>
+			            	</button>
+			            	<button ng-click="onCancel()" class="btn">
+			            		<span>{!$Label.lbl_cancel}</span>
+			            	</button>
+		            	</apex:outputPanel>
+		            	<apex:outputPanel layout="none" rendered="{!formfactor == 'phone'}">
+			            	<button ng-click="onPreview()" class="btn">
+			            		<span>{!$Label.lbl_preview}</span>
+			            	</button>
+			            	<button ng-click="documentActionsShown = true" class="btn phone" title="">
+					    		<span class="icon-utility-down"></span>
+					  		</button>
+					  		<c:modalDialog showExpr="documentActionsShown" closeExpr="documentActionsShown = false">
+					  			<button ng-click="onEmailMe()" class="btn">
+				            		<span>{!$Label.lbl_email_me}</span>
+				            	</button>
+				            	<button ng-click="onCancel()" class="btn">
+				            		<span>{!$Label.lbl_cancel}</span>
+				            	</button>
+			            	</c:modalDialog>
+		            	</apex:outputPanel>
+		            </c:pageBlockHeader>
+
+		            <div class="sbBody">
+		            	<c:quoteDocumentOptions formFactor="{!formFactor}"/>
+		            	<c:quoteDocumentContentSelector formFactor="{!formFactor}" rendered="{!formFactor == 'desktop'}"/>
+		            </div>
+
+		            <apex:outputPanel layout="none" rendered="{!formfactor == 'tablet'}">
+		            	<div class="sbPageButtons">
+		              		<div class="center">
+		                		<button ng-click="onPreview()" class="btn">{!$Label.lbl_preview}</button>
+		                		<button ng-click="onEmailMe()" class="btn">{!$Label.lbl_email_me}</button>
+		                		<button ng-click="onCancel()" class="btn">{!$Label.lbl_cancel}</button>
+		              		</div>
+		            	</div>
+		          	</apex:outputPanel>
+				</div>
+			</div>
+
+			<div ng-show="mobilePreview">
+				<div class="buttonContainer">
+		        	<button ng-click="mobilePreview = false" class="btn single">
+			    		<span>{!$Label.lbl_close}</span>
+			  		</button>
+		  		</div>
+				<div class="documentPreviewContainer">
+					<iframe frameborder="0" id="mobilePreviewFrame" class="documentPreviewFrame" scrolling="no" />
+				</div>
+			</div>
+		</div>
+    </div>
+</apex:page>

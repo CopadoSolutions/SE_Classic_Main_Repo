@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>インポート形式</value>
+    </caseValues>
+    <fields>
+        <help>入力形式を使用できるようにするにはチェックボックスをオンにします。</help>
+        <label><!-- Active --></label>
+        <name>SBQQ__Active__c</name>
+    </fields>
+    <fields>
+        <help>入力形式を説明するわかりやすい名前を入力します。</help>
+        <label><!-- Import Format Name --></label>
+        <name>SBQQ__ImportFormatName__c</name>
+    </fields>
+    <fields>
+        <help>インポートする対象オブジェクト。</help>
+        <label><!-- Target Object --></label>
+        <name>SBQQ__TargetObject__c</name>
+        <picklistValues>
+            <masterLabel>Quote Line</masterLabel>
+            <translation>見積品目</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>インポート形式内の一意のキーの件数。</help>
+        <label><!-- # Unique Key --></label>
+        <name>SBQQ__UniqueKeyCount__c</name>
+    </fields>
+    <layouts>
+        <layout>Import Format Layout</layout>
+        <sections>
+            <label>カスタムリンク</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>インポート形式番号</nameFieldLabel>
+    <validationRules>
+        <errorMessage><!-- More than 1 unique key defined in Import Column. --></errorMessage>
+        <name>SBQQ__Num_Unique_Key_is_not_one</name>
+    </validationRules>
+</CustomObjectTranslation>

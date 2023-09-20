@@ -1,0 +1,2089 @@
+<apex:page standardController="SBQQ__Theme__c" extensions="SBQQ.ThemeSettingsController" standardStylesheets="false">
+	<apex:includeScript value="{!$Resource.SBQQ__WebUI}"/>
+	<apex:includeScript value="{!$Resource.SBQQ__jQuery}"/>
+	<apex:includeScript value="{!$Resource.SBQQ__jQueryUI}"/>
+	<apex:includeScript value="{!$Resource.SBQQ__Spectrum}"/>
+	<apex:includeScript value="{!$Resource.SBQQ__Less}"/>
+	<apex:includeScript value="{!$Resource.SBQQ__ThemeEditorUI}"/>
+	<apex:stylesheet value="{!$Resource['sb']}"/>
+	<link rel="stylesheet" type="text/css" href="{!$Resource.SpectrumStyle}"></link>
+
+	<div id="qq" class="sb">
+		<div id="mainContent">
+			<apex:form >
+				<div class="themePage">
+					<c:pageHeader subtitle="{!SBQQ__Theme__c.Name}" title="{!$Label.sbqq__lbl_steelbrick_cpq} {!$ObjectType.SBQQ__Theme__c.Label}">
+
+						<apex:outputPanel id="toastPanel">
+						<div id="toast" class="{!toastVisibility}">
+							<div id="alert" class="{!vfToast['type']}">
+								<div class="notify">
+									<div class="content">
+										<i class="sf-icon-{!vfToast['icon']}"></i>
+										<h2>{!vfToast['message']}</h2>
+									</div>
+
+								</div>
+
+								<button type="button" class="btn close" onclick="toastListener()"><i class="sf-icon-close"></i></button>
+							</div>
+						</div>
+						</apex:outputPanel>
+
+						<div class="sbButtons">
+
+							<apex:commandButton styleClass="sbBtn previewButton" value="{!$Label.sbqq__lbl_preview}" onclick="compileLess('preview')" disabled="{! disablePreviewButton }" title="If disabled, you must first create a quote"/>
+							<input type="button" class="sbBtn" value="{!$Label.lbl_publish}" onclick="compileLess('publish')"/>
+						</div>
+						<div class="sbButtons">
+							<apex:commandButton styleClass="sbBtn" action="{!list}" value="{!$Label.sbqq__lbl_cancel}"/>
+							<input type="button" class="sbBtn" value="{!$Label.lbl_revert}" onclick="revert()"/>
+						</div>
+					</c:pageHeader>
+
+
+
+					<div class="content">
+						<apex:pageMessages />
+
+
+						<div id="row1">
+							<header><h1>{!$Label.lbl_theme_page_header}</h1></header>
+							<div>
+
+								<!-- Category: General (1 of 22)-->
+								<fieldset>
+									<legend class="expandable-parent">
+										<div class="category-header expandable-child">
+											<h2>{!$Label.lbl_general}</h2>
+											<p>1/22</p>
+										</div>
+										<p>{!$Label.lbl_theme_general_description}</p></legend>
+
+									<div class="fieldset-body">
+										<div>
+											<p><label> {!$ObjectType.Theme__c.fields.GeneralColor__c.Label}
+												<i class="tooltip sf-icon-info">
+													<span class="tooltipText">{!$ObjectType.Theme__c.fields.GeneralColor__c.inlineHelpText}</span>
+												</i>
+											</label>
+												<apex:inputField styleClass="color generalColor" value="{!SBQQ__Theme__c.SBQQ__GeneralColor__c}"/></p>
+
+											<p><label>{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__GeneralFontColor__c.Label}
+												<i class="tooltip sf-icon-info">
+													<span class="tooltipText">{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__GeneralFontColor__c.inlineHelpText}</span>
+												</i>
+											</label>
+												<apex:inputField styleClass="color generalFontColor" value="{!SBQQ__Theme__c.SBQQ__GeneralFontColor__c}"/></p>
+
+											<p><label>{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__GeneralBorderColor__c.Label}
+												<i class="tooltip sf-icon-info">
+													<span class="tooltipText">{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__GeneralBorderColor__c.inlineHelpText}</span>
+												</i>
+											</label>
+												<apex:inputField styleClass="color generalBorderColor" value="{!SBQQ__Theme__c.SBQQ__GeneralBorderColor__c}"/></p>
+
+											<p><label>{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__GeneralFontFamily__c.Label}
+												<i class="tooltip sf-icon-info">
+													<span class="tooltipText">{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__GeneralFontFamily__c.inlineHelpText}</span>
+												</i>
+											</label>
+												<apex:inputField styleClass="input generalFontFamily" value="{!SBQQ__Theme__c.SBQQ__GeneralFontFamily__c}"/></p>
+
+											<p><label>{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__TabSelectedColor__c.Label}
+												<i class="tooltip sf-icon-info">
+													<span class="tooltipText">{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__TabSelectedColor__c.inlineHelpText}</span>
+												</i>
+											</label>
+												<apex:inputField styleClass="color tabSelectedColor" value="{!SBQQ__Theme__c.SBQQ__TabSelectedColor__c}"/></p>
+										</div>
+									</div><!-- .fieldset-body -->
+
+									<footer class="expandable-parent"><i class="sf-icon-chevronup expandable-child"></i><span>{!$Label.lbl_show}</span> 5 properties</footer>
+								</fieldset><!-- Category: General (1 of 22)-->
+
+                                <!-- Category: Tabs (2 of 22)-->
+                                <fieldset>
+                                    <legend class="expandable-parent">
+                                        <div class="category-header expandable-child">
+                                            <h2>{!$Label.lbl_theme_tab}</h2>
+                                            <p>2/22</p>
+                                        </div>
+                                        <p>{!$Label.lbl_theme_tab_description}</p></legend>
+
+                                    <div class="fieldset-body">
+                                        <div>
+                                            <p><label>{!$ObjectType.Theme__c.fields.TabColor__c.Label}
+                                                <i class="tooltip sf-icon-info">
+                                                    <span class="tooltipText">{!$ObjectType.Theme__c.fields.TabColor__c.inlineHelpText}</span>
+                                                </i>
+                                            </label>
+                                                <apex:inputField styleClass="color tabColor" value="{!SBQQ__Theme__c.SBQQ__TabColor__c}"/></p>
+
+                                            <p><label>{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__TabSelectedColor__c.Label}
+                                                <i class="tooltip sf-icon-info">
+                                                    <span class="tooltipText">{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__TabSelectedColor__c.inlineHelpText}</span>
+                                                </i>
+                                            </label>
+                                                <apex:inputField styleClass="color tabSelectedColor" value="{!SBQQ__Theme__c.SBQQ__TabSelectedColor__c}"/></p>
+
+                                            <p><label>{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__TabHoverColor__c.Label}
+                                                <i class="tooltip sf-icon-info">
+                                                    <span class="tooltipText">{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__TabHoverColor__c.inlineHelpText}</span>
+                                                </i>
+                                            </label>
+                                                <apex:inputField styleClass="color tabHoverColor" value="{!SBQQ__Theme__c.SBQQ__TabHoverColor__c}"/></p>
+
+                                            <p><label>{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__TabFontFamily__c.Label}
+                                                <i class="tooltip sf-icon-info">
+                                                    <span class="tooltipText">{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__TabFontFamily__c.inlineHelpText}</span>
+                                                </i>
+                                            </label>
+                                                <apex:inputField styleClass="input tabFontFamily" value="{!SBQQ__Theme__c.SBQQ__TabFontFamily__c}"/></p>
+                                        </div>
+                                    </div><!-- .fieldset-body -->
+
+                                    <footer class="expandable-parent"><i class="sf-icon-chevronup expandable-child"></i><span>{!$Label.lbl_show}</span> 4 properties</footer>
+                                </fieldset>
+
+                                <!-- Category: Drawer (3 of 22)-->
+                                <fieldset>
+                                    <legend class="expandable-parent">
+                                        <div class="category-header expandable-child">
+                                            <h2>{!$Label.lbl_theme_drawer}</h2>
+                                            <p>3/22</p>
+                                        </div>
+                                        <p>{!$Label.lbl_theme_drawer_description}</p></legend>
+
+                                    <div class="fieldset-body">
+                                        <div>
+                                            <p><label>{!$ObjectType.Theme__c.fields.NavigationDrawerColor__c.Label}
+                                                <i class="tooltip sf-icon-info">
+                                                    <span class="tooltipText">{!$ObjectType.Theme__c.fields.NavigationDrawerColor__c.inlineHelpText}</span>
+                                                </i>
+                                            </label>
+                                                <apex:inputField styleClass="color navigationDrawerColor" value="{!SBQQ__Theme__c.SBQQ__NavigationDrawerColor__c}"/></p>
+
+                                            <p><label>{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__NavigationDrawerHeaderColor__c.Label}
+                                                <i class="tooltip sf-icon-info">
+                                                    <span class="tooltipText">{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__NavigationDrawerHeaderColor__c.inlineHelpText}</span>
+                                                </i>
+                                            </label>
+                                                <apex:inputField styleClass="color navigationDrawerHeaderColor" value="{!SBQQ__Theme__c.SBQQ__NavigationDrawerHeaderColor__c}"/></p>
+
+                                            <p><label>{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__NavigationDrawerHeaderFontColor__c.Label}
+                                                <i class="tooltip sf-icon-info">
+                                                    <span class="tooltipText">{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__NavigationDrawerHeaderFontColor__c.inlineHelpText}</span>
+                                                </i>
+                                            </label>
+                                                <apex:inputField styleClass="color navigationDrawerHeaderFontColor" value="{!SBQQ__Theme__c.SBQQ__NavigationDrawerHeaderFontColor__c}"/></p>
+
+                                            <p><label>{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__NavigationDrawerFontColor__c.Label}
+                                                <i class="tooltip sf-icon-info">
+                                                    <span class="tooltipText">{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__NavigationDrawerFontColor__c.inlineHelpText}</span>
+                                                </i>
+                                            </label>
+                                                <apex:inputField styleClass="color navigationDrawerFontColor" value="{!SBQQ__Theme__c.SBQQ__NavigationDrawerFontColor__c}"/></p>
+
+                                            <p><label>{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__NavigationDrawerRowColor__c.Label}
+                                                <i class="tooltip sf-icon-info">
+                                                    <span class="tooltipText">{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__NavigationDrawerRowColor__c.inlineHelpText}</span>
+                                                </i>
+                                            </label>
+                                                <apex:inputField styleClass="color navigationDrawerRowColor" value="{!SBQQ__Theme__c.SBQQ__NavigationDrawerRowColor__c}"/></p>
+
+                                            <p><label>{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__NavigationDrawerRowSelectedColor__c.Label}
+                                                <i class="tooltip sf-icon-info">
+                                                    <span class="tooltipText">{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__NavigationDrawerRowSelectedColor__c.inlineHelpText}</span>
+                                                </i>
+                                            </label>
+                                                <apex:inputField styleClass="color navigationDrawerRowSelectedColor" value="{!SBQQ__Theme__c.SBQQ__NavigationDrawerRowSelectedColor__c}"/></p>
+
+                                            <p><label>{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__NavigationDrawerRowHoverColor__c.Label}
+                                                <i class="tooltip sf-icon-info">
+                                                    <span class="tooltipText">{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__NavigationDrawerRowHoverColor__c.inlineHelpText}</span>
+                                                </i>
+                                            </label>
+                                                <apex:inputField styleClass="color navigationDrawerRowHoverColor" value="{!SBQQ__Theme__c.SBQQ__NavigationDrawerRowHoverColor__c}"/></p>
+
+                                            <p><label>{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__DetailColor__c.Label}
+                                                <i class="tooltip sf-icon-info">
+                                                    <span class="tooltipText">{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__DetailColor__c.inlineHelpText}</span>
+                                                </i>
+                                            </label>
+                                                <apex:inputField styleClass="color detailColor" value="{!SBQQ__Theme__c.SBQQ__DetailColor__c}"/></p>
+
+                                            <p><label>{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__FilterDrawerFontColor__c.Label}
+                                                <i class="tooltip sf-icon-info">
+                                                    <span class="tooltipText">{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__FilterDrawerFontColor__c.inlineHelpText}</span>
+                                                </i>
+                                            </label>
+                                                <apex:inputField styleClass="color filterDrawerFontColor" value="{!SBQQ__Theme__c.SBQQ__FilterDrawerFontColor__c}"/></p>
+
+										</div>
+                                    </div><!-- .fieldset-body -->
+
+                                    <footer class="expandable-parent"><i class="sf-icon-chevronup expandable-child"></i><span>{!$Label.lbl_show}</span> 9 properties</footer>
+                                </fieldset><!-- Category: Drawer (3 of 22)-->
+
+								<!-- Category: Loading Mask (4 of 22)-->
+								<fieldset>
+									<legend class="expandable-parent">
+										<div class="category-header expandable-child">
+											<h2>{!$Label.lbl_loading_mask}</h2>
+											<p>4/22</p>
+										</div>
+										<p>{!$Label.lbl_theme_loading_mask_description}</p></legend>
+
+									<div class="fieldset-body">
+										<div>
+											<p><label> {!$ObjectType.Theme__c.fields.LoadingMaskColor__c.Label}
+												<i class="tooltip sf-icon-info">
+													<span class="tooltipText">{!$ObjectType.Theme__c.fields.LoadingMaskColor__c.inlineHelpText}</span>
+												</i>
+											</label>
+												<apex:inputField styleClass="color loadingMaskColor" value="{!SBQQ__Theme__c.SBQQ__LoadingMaskColor__c}"/></p>
+
+										</div>
+									</div><!-- .fieldset-body -->
+
+									<footer class="expandable-parent"><i class="sf-icon-chevronup expandable-child"></i><span>{!$Label.lbl_show}</span> 1 property</footer>
+								</fieldset><!-- Category: Loading Mask (4 of 22)-->
+
+								<!-- Category: Dialogs (5 of 22)-->
+								<fieldset>
+									<legend class="expandable-parent">
+										<div class="category-header expandable-child">
+											<h2>{!$Label.lbl_dialogs}</h2>
+											<p>5/22</p>
+										</div>
+
+										<p>{!$Label.lbl_theme_dialogs_description}</p></legend>
+
+									<div class="fieldset-body">
+										<div>
+											<p><label> {!$ObjectType.Theme__c.fields.DialogBackgroundColor__c.Label}
+												<i class="tooltip sf-icon-info">
+													<span class="tooltipText">{!$ObjectType.Theme__c.fields.DialogBackgroundColor__c.inlineHelpText}</span>
+												</i>
+											</label>
+												<apex:inputField styleClass="color dialogBackgroundColor" value="{!SBQQ__Theme__c.SBQQ__DialogBackgroundColor__c}"/></p>
+
+											<p><label>{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__DialogMaskColor__c.Label}
+												<i class="tooltip sf-icon-info">
+													<span class="tooltipText">{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__DialogMaskColor__c.inlineHelpText}</span>
+												</i>
+											</label>
+												<apex:inputField styleClass="color dialogMaskColor" value="{!SBQQ__Theme__c.SBQQ__DialogMaskColor__c}"/></p>
+
+											<p><label>{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__DialogCloseColor__c.Label}
+												<i class="tooltip sf-icon-info">
+													<span class="tooltipText">{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__DialogCloseColor__c.inlineHelpText}</span>
+												</i>
+											</label>
+												<apex:inputField styleClass="color dialogCloseColor" value="{!SBQQ__Theme__c.SBQQ__DialogCloseColor__c}"/></p>
+
+											<p><label>{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__DialogFooterColor__c.Label}
+												<i class="tooltip sf-icon-info">
+													<span class="tooltipText">{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__DialogFooterColor__c.inlineHelpText}</span>
+												</i>
+											</label>
+												<apex:inputField styleClass="color dialogFooterColor" value="{!SBQQ__Theme__c.SBQQ__DialogFooterColor__c}"/></p>
+
+                                            <p><label>{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__DialogFontFamily__c.Label}
+                                                <i class="tooltip sf-icon-info">
+                                                    <span class="tooltipText">{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__DialogFontFamily__c.inlineHelpText}</span>
+                                                </i>
+                                            </label>
+                                                <apex:inputField styleClass="input dialogFontFamily" value="{!SBQQ__Theme__c.SBQQ__DialogFontFamily__c}"/></p>
+
+											<p><label>{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__DialogHeaderBorderStyle__c.Label}
+												<i class="tooltip sf-icon-info">
+													<span class="tooltipText">{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__DialogHeaderBorderStyle__c.inlineHelpText}</span>
+												</i>
+											</label>
+												<apex:inputField styleClass="input dialogHeaderBorderStyle" value="{!SBQQ__Theme__c.SBQQ__DialogHeaderBorderStyle__c}"/></p>
+
+											<p><label>{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__DialogHeaderBorderColor__c.Label}
+												<i class="tooltip sf-icon-info">
+													<span class="tooltipText">{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__DialogHeaderBorderColor__c.inlineHelpText}</span>
+												</i>
+											</label>
+												<apex:inputField styleClass="color dialogHeaderBorderColor" value="{!SBQQ__Theme__c.SBQQ__DialogHeaderBorderColor__c}"/></p>
+
+											<p><label>{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__DialogHeaderBorderWidth__c.Label}
+												<i class="tooltip sf-icon-info">
+													<span class="tooltipText">{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__DialogHeaderBorderWidth__c.inlineHelpText}</span>
+												</i>
+											</label>
+												<apex:inputField styleClass="input dialogHeaderBorderWidth" value="{!SBQQ__Theme__c.SBQQ__DialogHeaderBorderWidth__c}"/></p>
+
+											<p><label>{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__DialogHeaderPaddingTop__c.Label}
+												<i class="tooltip sf-icon-info">
+													<span class="tooltipText">{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__DialogHeaderPaddingTop__c.inlineHelpText}</span>
+												</i>
+											</label>
+												<apex:inputField styleClass="input dialogHeaderPaddingTop" value="{!SBQQ__Theme__c.SBQQ__DialogHeaderPaddingTop__c}"/></p>
+
+											<p><label>{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__DialogHeaderPaddingRight__c.Label}
+												<i class="tooltip sf-icon-info">
+													<span class="tooltipText">{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__DialogHeaderPaddingRight__c.inlineHelpText}</span>
+												</i>
+											</label>
+												<apex:inputField styleClass="input dialogHeaderPaddingRight" value="{!SBQQ__Theme__c.SBQQ__DialogHeaderPaddingRight__c}"/></p>
+
+											<p><label>{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__DialogHeaderPaddingBottom__c.Label}
+												<i class="tooltip sf-icon-info">
+													<span class="tooltipText">{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__DialogHeaderPaddingBottom__c.inlineHelpText}</span>
+												</i>
+											</label>
+												<apex:inputField styleClass="input dialogHeaderPaddingBottom" value="{!SBQQ__Theme__c.SBQQ__DialogHeaderPaddingBottom__c}"/></p>
+
+											<p><label>{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__DialogHeaderPaddingLeft__c.Label}
+												<i class="tooltip sf-icon-info">
+													<span class="tooltipText">{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__DialogHeaderPaddingLeft__c.inlineHelpText}</span>
+												</i>
+											</label>
+												<apex:inputField styleClass="input dialogHeaderPaddingLeft" value="{!SBQQ__Theme__c.SBQQ__DialogHeaderPaddingLeft__c}"/></p>
+
+											<p><label>{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__DialogFooterBorderStyle__c.Label}
+												<i class="tooltip sf-icon-info">
+													<span class="tooltipText">{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__DialogFooterBorderStyle__c.inlineHelpText}</span>
+												</i>
+											</label>
+												<apex:inputField styleClass="input dialogFooterBorderStyle" value="{!SBQQ__Theme__c.SBQQ__DialogFooterBorderStyle__c}"/></p>
+
+											<p><label>{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__DialogFooterBorderColor__c.Label}
+												<i class="tooltip sf-icon-info">
+													<span class="tooltipText">{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__DialogFooterBorderColor__c.inlineHelpText}</span>
+												</i>
+											</label>
+												<apex:inputField styleClass="color dialogFooterBorderColor" value="{!SBQQ__Theme__c.SBQQ__DialogFooterBorderColor__c}"/></p>
+
+											<p><label>{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__DialogFooterBorderWidth__c.Label}
+												<i class="tooltip sf-icon-info">
+													<span class="tooltipText">{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__DialogFooterBorderWidth__c.inlineHelpText}</span>
+												</i>
+											</label>
+												<apex:inputField styleClass="input dialogFooterBorderWidth" value="{!SBQQ__Theme__c.SBQQ__DialogFooterBorderWidth__c}"/></p>
+
+											<p><label>{!$ObjectType.Theme__c.fields.DialogBorderRadius__c.Label}
+												<a href="http://www.w3schools.com/cssref/css3_pr_border-radius.asp" target='_blank' class="tooltip"><i class="tooltip sf-icon-info">
+													<span class="tooltipText">{!$ObjectType.Theme__c.fields.DialogBorderRadius__c.inlineHelpText}</span>
+												</i></a>
+											</label>
+												<apex:inputField styleClass="input dialogBorderRadius" value="{!SBQQ__Theme__c.SBQQ__DialogBorderRadius__c}"/></p>
+										</div>
+									</div><!-- .fieldset-body -->
+
+									<footer class="expandable-parent"><i class="sf-icon-chevronup expandable-child"></i><span>{!$Label.lbl_show}</span> 16 properties</footer>
+								</fieldset><!-- Category: Dialogs (5 of 22)-->
+
+								<!-- Category: Header (6 of 22)-->
+								<fieldset>
+									<legend class="expandable-parent">
+										<div class="category-header expandable-child">
+											<h2>{!$Label.lbl_header}</h2>
+											<p>6/22</p>
+										</div>
+
+										<p>{!$Label.lbl_theme_header_description}</p></legend>
+
+
+									<div class="fieldset-body">
+										<div>
+											<p><label> {!$ObjectType.Theme__c.fields.HeaderColor__c.Label}
+												<i class="tooltip sf-icon-info">
+													<span class="tooltipText">{!$ObjectType.Theme__c.fields.HeaderColor__c.inlineHelpText}</span>
+												</i>
+											</label>
+												<apex:inputField styleClass="color headerColor" value="{!SBQQ__Theme__c.SBQQ__HeaderColor__c}"/></p>
+
+											<p><label>{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__HeaderFontColor__c.Label}
+												<i class="tooltip sf-icon-info">
+													<span class="tooltipText">{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__HeaderFontColor__c.inlineHelpText}</span>
+												</i>
+											</label>
+												<apex:inputField styleClass="color headerFontColor" value="{!SBQQ__Theme__c.SBQQ__HeaderFontColor__c}"/></p>
+
+											<p><label>{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__HeaderFontSize__c.Label}
+												<i class="tooltip sf-icon-info">
+													<span class="tooltipText">{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__HeaderFontSize__c.inlineHelpText}</span>
+												</i>
+											</label>
+												<apex:inputField styleClass="input headerFontSize" value="{!SBQQ__Theme__c.SBQQ__HeaderFontSize__c}"/></p>
+
+											<p><label>{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__HeaderFontFamily__c.Label}
+												<i class="tooltip sf-icon-info">
+													<span class="tooltipText">{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__HeaderFontFamily__c.inlineHelpText}</span>
+												</i>
+											</label>
+												<apex:inputField styleClass="input headerFontFamily" value="{!SBQQ__Theme__c.SBQQ__HeaderFontFamily__c}"/></p>
+
+											<p><label>{!$ObjectType.Theme__c.fields.HeaderFontStyle__c.Label}
+												<a href="http://www.w3schools.com/css/css_font.asp" target='_blank' class="tooltip"><i class="tooltip sf-icon-info">
+													<span class="tooltipText">{!$ObjectType.Theme__c.fields.HeaderFontStyle__c.inlineHelpText}</span>
+												</i></a>
+											</label>
+												<apex:inputField styleClass="input headerFontStyle" value="{!SBQQ__Theme__c.SBQQ__HeaderFontStyle__c}"/></p>
+
+											<p><label>{!$ObjectType.Theme__c.fields.HeaderFontWeight__c.Label}
+												<a href="http://www.w3schools.com/css/css_font.asp" target='_blank' class="tooltip"><i class="tooltip sf-icon-info">
+													<span class="tooltipText">{!$ObjectType.Theme__c.fields.HeaderFontWeight__c.inlineHelpText}</span>
+												</i></a>
+											</label>
+												<apex:inputField styleClass="input headerFontWeight" value="{!SBQQ__Theme__c.SBQQ__HeaderFontWeight__c}"/></p>
+
+											<p><label>{!$ObjectType.Theme__c.fields.HeaderTextDecoration__c.Label}
+												<a href="http://www.w3schools.com/cssref/pr_text_text-decoration.asp" target='_blank' class="tooltip"><i class="tooltip sf-icon-info">
+													<span class="tooltipText">{!$ObjectType.Theme__c.fields.HeaderTextDecoration__c.inlineHelpText}</span>
+												</i></a>
+											</label>
+												<apex:inputField styleClass="input headerTextDecoration" value="{!SBQQ__Theme__c.SBQQ__HeaderTextDecoration__c}"/></p>
+
+											<p><label>{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__HeaderSecondaryFontColor__c.Label}
+												<i class="tooltip sf-icon-info">
+													<span class="tooltipText">{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__HeaderSecondaryFontColor__c.inlineHelpText}</span>
+												</i>
+											</label>
+												<apex:inputField styleClass="color headerSecondaryFontColor" value="{!SBQQ__Theme__c.SBQQ__HeaderSecondaryFontColor__c}"/></p>
+
+											<p><label>{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__HeaderSecondaryFontSize__c.Label}
+												<i class="tooltip sf-icon-info">
+													<span class="tooltipText">{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__HeaderSecondaryFontSize__c.inlineHelpText}</span>
+												</i>
+											</label>
+												<apex:inputField styleClass="input headerSecondaryFontSize" value="{!SBQQ__Theme__c.SBQQ__HeaderSecondaryFontSize__c}"/></p>
+
+											<p><label>{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__HeaderSecondaryFontFamily__c.Label}
+												<i class="tooltip sf-icon-info">
+													<span class="tooltipText">{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__HeaderSecondaryFontFamily__c.inlineHelpText}</span>
+												</i>
+											</label>
+												<apex:inputField styleClass="input headerSecondaryFontFamily" value="{!SBQQ__Theme__c.SBQQ__HeaderSecondaryFontFamily__c}"/></p>
+
+											<p><label>{!$ObjectType.Theme__c.fields.HeaderSecondaryFontStyle__c.Label}
+												<a href="http://www.w3schools.com/css/css_font.asp" target='_blank' class="tooltip"><i class="tooltip sf-icon-info">
+													<span class="tooltipText">{!$ObjectType.Theme__c.fields.HeaderSecondaryFontStyle__c.inlineHelpText}</span>
+												</i></a>
+											</label>
+												<apex:inputField styleClass="input headerSecondaryFontStyle" value="{!SBQQ__Theme__c.SBQQ__HeaderSecondaryFontStyle__c}"/></p>
+
+											<p><label>{!$ObjectType.Theme__c.fields.HeaderSecondaryFontWeight__c.Label}
+												<a href="http://www.w3schools.com/css/css_font.asp" target='_blank' class="tooltip"><i class="tooltip sf-icon-info">
+													<span class="tooltipText">{!$ObjectType.Theme__c.fields.HeaderSecondaryFontWeight__c.inlineHelpText}</span>
+												</i></a>
+											</label>
+												<apex:inputField styleClass="input headerSecondaryFontWeight" value="{!SBQQ__Theme__c.SBQQ__HeaderSecondaryFontWeight__c}"/></p>
+
+											<p><label>{!$ObjectType.Theme__c.fields.HeaderSecondaryTextDecoration__c.Label}
+												<a href="http://www.w3schools.com/cssref/pr_text_text-decoration.asp" target='_blank' class="tooltip"><i class="tooltip sf-icon-info">
+													<span class="tooltipText">{!$ObjectType.Theme__c.fields.HeaderSecondaryTextDecoration__c.inlineHelpText}</span>
+												</i></a>
+											</label>
+												<apex:inputField styleClass="input headerSecondaryTextDecoration" value="{!SBQQ__Theme__c.SBQQ__HeaderSecondaryTextDecoration__c}"/></p>
+
+											<p><label>{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__HeaderBorderColor__c.Label}
+												<i class="tooltip sf-icon-info">
+													<span class="tooltipText">{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__HeaderBorderColor__c.inlineHelpText}</span>
+												</i>
+											</label>
+												<apex:inputField styleClass="color headerBorderColor" value="{!SBQQ__Theme__c.SBQQ__HeaderBorderColor__c}"/></p>
+
+											<p><label>{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__HeaderBorderWidth__c.Label}
+												<i class="tooltip sf-icon-info">
+													<span class="tooltipText">{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__HeaderBorderWidth__c.inlineHelpText}</span>
+												</i>
+											</label>
+												<apex:inputField styleClass="input headerBorderWidth" value="{!SBQQ__Theme__c.SBQQ__HeaderBorderWidth__c}"/></p>
+
+											<p><label>{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__HeaderBorderStyle__c.Label}
+												<i class="tooltip sf-icon-info">
+													<span class="tooltipText">{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__HeaderBorderStyle__c.inlineHelpText}</span>
+												</i>
+											</label>
+												<apex:inputField styleClass="input headerBorderStyle" value="{!SBQQ__Theme__c.SBQQ__HeaderBorderStyle__c}"/></p>
+
+											<p><label>{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__HeaderMinHeight__c.Label}
+												<i class="tooltip sf-icon-info">
+													<span class="tooltipText">{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__HeaderMinHeight__c.inlineHelpText}</span>
+												</i>
+											</label>
+												<apex:inputField styleClass="input headerMinHeight" value="{!SBQQ__Theme__c.SBQQ__HeaderMinHeight__c}"/></p>
+
+											<p><label>{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__HeaderPaddingTop__c.Label}
+												<i class="tooltip sf-icon-info">
+													<span class="tooltipText">{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__HeaderPaddingTop__c.inlineHelpText}</span>
+												</i>
+											</label>
+												<apex:inputField styleClass="input headerPaddingTop" value="{!SBQQ__Theme__c.SBQQ__HeaderPaddingTop__c}"/></p>
+
+											<p><label>{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__HeaderPaddingRight__c.Label}
+												<i class="tooltip sf-icon-info">
+													<span class="tooltipText">{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__HeaderPaddingRight__c.inlineHelpText}</span>
+												</i>
+											</label>
+												<apex:inputField styleClass="input headerPaddingRight" value="{!SBQQ__Theme__c.SBQQ__HeaderPaddingRight__c}"/></p>
+
+											<p><label>{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__HeaderPaddingBottom__c.Label}
+												<i class="tooltip sf-icon-info">
+													<span class="tooltipText">{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__HeaderPaddingBottom__c.inlineHelpText}</span>
+												</i>
+											</label>
+												<apex:inputField styleClass="input headerPaddingBottom" value="{!SBQQ__Theme__c.SBQQ__HeaderPaddingBottom__c}"/></p>
+
+											<p><label>{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__HeaderPaddingLeft__c.Label}
+												<i class="tooltip sf-icon-info">
+													<span class="tooltipText">{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__HeaderPaddingLeft__c.inlineHelpText}</span>
+												</i>
+											</label>
+												<apex:inputField styleClass="input headerPaddingLeft" value="{!SBQQ__Theme__c.SBQQ__HeaderPaddingLeft__c}"/></p>
+
+											<p><label>{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__HeaderIconColor__c.Label}
+												<i class="tooltip sf-icon-info">
+													<span class="tooltipText">{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__HeaderIconColor__c.inlineHelpText}</span>
+												</i>
+											</label>
+												<apex:inputField styleClass="color headerIconColor" value="{!SBQQ__Theme__c.SBQQ__HeaderIconColor__c}"/></p>
+
+											<p><label>{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__HeaderIconFontSize__c.Label}
+												<i class="tooltip sf-icon-info">
+													<span class="tooltipText">{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__HeaderIconFontSize__c.inlineHelpText}</span>
+												</i>
+											</label>
+												<apex:inputField styleClass="input headerIconFontSize" value="{!SBQQ__Theme__c.SBQQ__HeaderIconFontSize__c}"/></p>
+
+											<p><label>{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__HideIcons__c.Label}
+												<i class="tooltip sf-icon-info">
+													<span class="tooltipText">{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__HideIcons__c.inlineHelpText}</span>
+												</i>
+											</label>
+												<apex:inputField styleClass="input hideIcons headerHideIcons" value="{!SBQQ__Theme__c.SBQQ__HideIcons__c}"/></p>
+										</div>
+									</div><!-- .fieldset-body -->
+
+									<footer class="expandable-parent"><i class="sf-icon-chevronup expandable-child"></i><span>{!$Label.lbl_show}</span> 24 properties</footer>
+								</fieldset><!-- Category: Header (6 of 22)-->
+
+								<!-- Category: Standard Buttons (7 of 22)-->
+								<fieldset>
+									<legend class="expandable-parent">
+										<div class="category-header expandable-child">
+											<h2>{!$Label.lbl_group_buttons}</h2>
+											<p>7/22</p>
+										</div>
+
+										<p>{!$Label.lbl_theme_standard_buttons_description}</p></legend>
+
+									<div class="fieldset-body">
+										<div>
+											<p><label> {!$ObjectType.Theme__c.fields.GroupButtonColor__c.Label}
+												<i class="tooltip sf-icon-info">
+													<span class="tooltipText">{!$ObjectType.Theme__c.fields.GroupButtonColor__c.inlineHelpText}</span>
+												</i>
+											</label>
+												<apex:inputField styleClass="color groupButtonColor" value="{!SBQQ__Theme__c.SBQQ__GroupButtonColor__c}"/></p>
+
+											<p><label>{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__GroupButtonFontColor__c.Label}
+												<i class="tooltip sf-icon-info">
+													<span class="tooltipText">{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__GroupButtonFontColor__c.inlineHelpText}</span>
+												</i>
+											</label>
+												<apex:inputField styleClass="color groupButtonFontColor" value="{!SBQQ__Theme__c.SBQQ__GroupButtonFontColor__c}"/></p>
+
+											<p><label>{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__GroupButtonBorderColor__c.Label}
+												<i class="tooltip sf-icon-info">
+													<span class="tooltipText">{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__GroupButtonBorderColor__c.inlineHelpText}</span>
+												</i>
+											</label>
+												<apex:inputField styleClass="color groupButtonBorderColor" value="{!SBQQ__Theme__c.SBQQ__GroupButtonBorderColor__c}"/></p>
+
+											<p><label>{!$ObjectType.Theme__c.fields.StandardButtonBorderRadius__c.Label}
+												<a href="http://www.w3schools.com/cssref/css3_pr_border-radius.asp" target='_blank' class="tooltip"><i class="tooltip sf-icon-info">
+													<span class="tooltipText">{!$ObjectType.Theme__c.fields.StandardButtonBorderRadius__c.inlineHelpText}</span>
+												</i></a>
+											</label>
+												<apex:inputField styleClass="input headerFontFamily" value="{!SBQQ__Theme__c.SBQQ__StandardButtonBorderRadius__c}"/></p>
+
+											<p><label>{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__GroupButtonHoverColor__c.Label}
+												<i class="tooltip sf-icon-info">
+													<span class="tooltipText">{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__GroupButtonHoverColor__c.inlineHelpText}</span>
+												</i>
+											</label>
+												<apex:inputField styleClass="color groupButtonHoverColor" value="{!SBQQ__Theme__c.SBQQ__GroupButtonHoverColor__c}"/></p>
+
+											<p><label>{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__StandardButtonDisabledBackgroundColor__c.Label}
+												<i class="tooltip sf-icon-info">
+													<span class="tooltipText">{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__StandardButtonDisabledBackgroundColor__c.inlineHelpText}</span>
+												</i>
+											</label>
+												<apex:inputField styleClass="color standardButtonDisabledBackgroundColor" value="{!SBQQ__Theme__c.SBQQ__StandardButtonDisabledBackgroundColor__c}"/></p>
+
+											<p><label>{!$ObjectType.Theme__c.fields.GroupButtonHoverFontColor__c.Label}
+												<a href="http://www.w3schools.com/cssref/pr_text_text-decoration.asp" target='_blank' class="tooltip"><i class="tooltip sf-icon-info">
+													<span class="tooltipText">{!$ObjectType.Theme__c.fields.GroupButtonHoverFontColor__c.inlineHelpText}</span>
+												</i></a>
+											</label>
+												<apex:inputField styleClass="color groupButtonHoverFontColor" value="{!SBQQ__Theme__c.SBQQ__GroupButtonHoverFontColor__c}"/></p>
+
+											<p><label>{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__StandardButtonPaddingTop__c.Label}
+												<i class="tooltip sf-icon-info">
+													<span class="tooltipText">{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__StandardButtonPaddingTop__c.inlineHelpText}</span>
+												</i>
+											</label>
+												<apex:inputField styleClass="input standardButtonPaddingTop" value="{!SBQQ__Theme__c.SBQQ__StandardButtonPaddingTop__c}"/></p>
+
+											<p><label>{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__StandardButtonPaddingRight__c.Label}
+												<i class="tooltip sf-icon-info">
+													<span class="tooltipText">{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__StandardButtonPaddingRight__c.inlineHelpText}</span>
+												</i>
+											</label>
+												<apex:inputField styleClass="input standardButtonPaddingRight" value="{!SBQQ__Theme__c.SBQQ__StandardButtonPaddingRight__c}"/></p>
+
+											<p><label>{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__StandardButtonPaddingBottom__c.Label}
+												<i class="tooltip sf-icon-info">
+													<span class="tooltipText">{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__StandardButtonPaddingBottom__c.inlineHelpText}</span>
+												</i>
+											</label>
+												<apex:inputField styleClass="input standardButtonPaddingBottom" value="{!SBQQ__Theme__c.SBQQ__StandardButtonPaddingBottom__c}"/></p>
+
+											<p><label>{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__StandardButtonPaddingLeft__c.Label}
+												<i class="tooltip sf-icon-info">
+													<span class="tooltipText">{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__StandardButtonPaddingLeft__c.inlineHelpText}</span>
+												</i>
+											</label>
+												<apex:inputField styleClass="input standardButtonPaddingLeft" value="{!SBQQ__Theme__c.SBQQ__StandardButtonPaddingLeft__c}"/></p>
+
+											<p><label>{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__StandardButtonFontSize__c.Label}
+												<i class="tooltip sf-icon-info">
+													<span class="tooltipText">{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__StandardButtonFontSize__c.inlineHelpText}</span>
+												</i>
+											</label>
+												<apex:inputField styleClass="input standardButtonFontSize" value="{!SBQQ__Theme__c.SBQQ__StandardButtonFontSize__c}"/></p>
+
+											<p><label>{!$ObjectType.Theme__c.fields.StandardButtonFontWeight__c.Label}
+												<a href="http://www.w3schools.com/css/css_font.asp" target='_blank' class="tooltip"><i class="tooltip sf-icon-info">
+													<span class="tooltipText">{!$ObjectType.Theme__c.fields.StandardButtonFontWeight__c.inlineHelpText}</span>
+												</i></a>
+											</label>
+												<apex:inputField styleClass="input standardButtonFontWeight" value="{!SBQQ__Theme__c.SBQQ__StandardButtonFontWeight__c}"/></p>
+
+											<p><label>{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__GroupButtonDisabledFontColor__c.Label}
+												<i class="tooltip sf-icon-info">
+													<span class="tooltipText">{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__GroupButtonDisabledFontColor__c.inlineHelpText}</span>
+												</i>
+											</label>
+												<apex:inputField styleClass="color groupButtonDisabledFontColor" value="{!SBQQ__Theme__c.SBQQ__GroupButtonDisabledFontColor__c}"/></p>
+
+                                            <p><label>{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__StandardButtonFontFamily__c.Label}
+                                                <i class="tooltip sf-icon-info">
+                                                    <span class="tooltipText">{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__StandardButtonFontFamily__c.inlineHelpText}</span>
+                                                </i>
+                                            </label>
+                                                <apex:inputField styleClass="input standardButtonFontFamily" value="{!SBQQ__Theme__c.SBQQ__StandardButtonFontFamily__c}"/></p>
+										</div>
+									</div><!-- .fieldset-body -->
+									<footer class="expandable-parent"><i class="sf-icon-chevronup expandable-child"></i><span>{!$Label.lbl_show}</span> 15 properties</footer>
+								</fieldset><!-- Category: Standard Buttons (7 of 22)-->
+
+                                <!-- Category: Branded Buttons (8 of 22)-->
+                                <fieldset>
+                                    <legend class="expandable-parent">
+                                        <div class="category-header expandable-child">
+                                            <h2>{!$Label.lbl_primary_buttons}</h2>
+                                            <p>8/22</p>
+                                        </div>
+
+                                        <p>{!$Label.lbl_theme_group_buttons_description}</p></legend>
+
+                                    <div class="fieldset-body">
+                                        <div>
+                                            <p><label> {!$ObjectType.Theme__c.fields.PrimaryButtonColor__c.Label}
+                                                <i class="tooltip sf-icon-info">
+                                                    <span class="tooltipText">{!$ObjectType.Theme__c.fields.PrimaryButtonColor__c.inlineHelpText}</span>
+                                                </i>
+                                            </label>
+                                                <apex:inputField styleClass="color primaryButtonColor" value="{!SBQQ__Theme__c.SBQQ__PrimaryButtonColor__c}"/></p>
+
+                                            <p><label>{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__PrimaryButtonFontColor__c.Label}
+                                                <i class="tooltip sf-icon-info">
+                                                    <span class="tooltipText">{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__PrimaryButtonFontColor__c.inlineHelpText}</span>
+                                                </i>
+                                            </label>
+                                                <apex:inputField styleClass="color primaryButtonFontColor" value="{!SBQQ__Theme__c.SBQQ__PrimaryButtonFontColor__c}"/></p>
+
+                                            <p><label>{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__PrimaryButtonHoverColor__c.Label}
+                                                <i class="tooltip sf-icon-info">
+                                                    <span class="tooltipText">{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__PrimaryButtonHoverColor__c.inlineHelpText}</span>
+                                                </i>
+                                            </label>
+                                                <apex:inputField styleClass="color primaryButtonHoverColor" value="{!SBQQ__Theme__c.SBQQ__PrimaryButtonHoverColor__c}"/></p>
+
+                                            <p><label>{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__BrandButtonHoverFontColor__c.Label}
+                                                <i class="tooltip sf-icon-info">
+                                                    <span class="tooltipText">{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__BrandButtonHoverFontColor__c.inlineHelpText}</span>
+                                                </i>
+                                            </label>
+                                                <apex:inputField styleClass="color brandButtonHoverFontColor" value="{!SBQQ__Theme__c.SBQQ__BrandButtonHoverFontColor__c}"/></p>
+
+                                            <p><label>{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__BrandButtonBorderColor__c.Label}
+                                                <i class="tooltip sf-icon-info">
+                                                    <span class="tooltipText">{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__BrandButtonBorderColor__c.inlineHelpText}</span>
+                                                </i>
+                                            </label>
+                                                <apex:inputField styleClass="color brandButtonBorderColor" value="{!SBQQ__Theme__c.SBQQ__BrandButtonBorderColor__c}"/></p>
+
+											<p><label>{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__BrandButtonDisabledFontColor__c.Label}
+												<i class="tooltip sf-icon-info">
+													<span class="tooltipText">{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__BrandButtonDisabledFontColor__c.inlineHelpText}</span>
+												</i>
+											</label>
+												<apex:inputField styleClass="color brandButtonDisabledFontColor" value="{!SBQQ__Theme__c.SBQQ__BrandButtonDisabledFontColor__c}"/></p>
+
+                                            <p><label>{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__BrandButtonFontFamily__c.Label}
+                                                <i class="tooltip sf-icon-info">
+                                                    <span class="tooltipText">{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__BrandButtonFontFamily__c.inlineHelpText}</span>
+                                                </i>
+                                            </label>
+                                                <apex:inputField styleClass="input brandButtonFontFamily" value="{!SBQQ__Theme__c.SBQQ__BrandButtonFontFamily__c}"/></p>
+										</div>
+									</div><!-- .fieldset-body -->
+
+                                    <footer class="expandable-parent"><i class="sf-icon-chevronup expandable-child"></i><span>{!$Label.lbl_show}</span> 7 properties</footer>
+                                </fieldset><!-- Category: Branded Buttons (8 of 22)-->
+
+								<!-- Category: Configurator Custom Actions (9 of 22)-->
+								<fieldset>
+									<legend class="expandable-parent">
+										<div class="category-header expandable-child">
+											<h2>{!$Label.lbl_theme_configurator_custom_action}</h2>
+											<p>9/22</p>
+										</div>
+
+										<p>{!$Label.lbl_theme_configurator_custom_action_description}</p></legend>
+
+									<div class="fieldset-body">
+										<div>
+											<p><label> {!$ObjectType.Theme__c.fields.ConfiguratorCustomActionColor__c.Label}
+												<i class="tooltip sf-icon-info">
+													<span class="tooltipText">{!$ObjectType.Theme__c.fields.ConfiguratorCustomActionColor__c.inlineHelpText}</span>
+												</i>
+											</label>
+												<apex:inputField styleClass="color configuratorCustomActionColor__c" value="{!SBQQ__Theme__c.SBQQ__ConfiguratorCustomActionColor__c}"/></p>
+
+											<p><label>{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__ConfiguratorCustomActionFontColor__c.Label}
+												<i class="tooltip sf-icon-info">
+													<span class="tooltipText">{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__ConfiguratorCustomActionFontColor__c.inlineHelpText}</span>
+												</i>
+											</label>
+												<apex:inputField styleClass="color configuratorCustomActionFontColor__c" value="{!SBQQ__Theme__c.SBQQ__ConfiguratorCustomActionFontColor__c}"/></p>
+
+											<p><label>{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__ConfiguratorCustomActionHoverColor__c.Label}
+												<i class="tooltip sf-icon-info">
+													<span class="tooltipText">{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__ConfiguratorCustomActionHoverColor__c.inlineHelpText}</span>
+												</i>
+											</label>
+												<apex:inputField styleClass="color configuratorCustomActionHoverColor__c" value="{!SBQQ__Theme__c.SBQQ__ConfiguratorCustomActionHoverColor__c}"/></p>
+
+											<p><label>{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__ConfiguratorCustomActionHoverFontColor__c.Label}
+												<i class="tooltip sf-icon-info">
+													<span class="tooltipText">{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__ConfiguratorCustomActionHoverFontColor__c.inlineHelpText}</span>
+												</i>
+											</label>
+												<apex:inputField styleClass="color configuratorCustomActionHoverFontColor__c" value="{!SBQQ__Theme__c.SBQQ__ConfiguratorCustomActionHoverFontColor__c}"/></p>
+
+											<p><label>{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__ConfiguratorCustomActionBorderColor__c.Label}
+												<i class="tooltip sf-icon-info">
+													<span class="tooltipText">{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__ConfiguratorCustomActionBorderColor__c.inlineHelpText}</span>
+												</i>
+											</label>
+												<apex:inputField styleClass="color configuratorCustomActionBorderColor__c" value="{!SBQQ__Theme__c.SBQQ__ConfiguratorCustomActionBorderColor__c}"/></p>
+										</div>
+									</div><!-- .fieldset-body -->
+
+									<footer class="expandable-parent"><i class="sf-icon-chevronup expandable-child"></i><span>{!$Label.lbl_show}</span> 5 properties</footer>
+								</fieldset><!-- Category: Configurator Custom Actions (9 of 22)-->
+
+								<!-- Category: Badge (10 of 22)-->
+								<fieldset>
+									<legend class="expandable-parent">
+										<div class="category-header expandable-child">
+											<h2>{!$Label.lbl_badge}</h2>
+											<p>10/22</p>
+										</div>
+										<p>{!$Label.lbl_theme_badge_description}</p></legend>
+
+									<div class="fieldset-body">
+										<div>
+											<p><label> {!$ObjectType.Theme__c.fields.BadgeBackgroundColor__c.Label}
+												<i class="tooltip sf-icon-info">
+													<span class="tooltipText">{!$ObjectType.Theme__c.fields.BadgeBackgroundColor__c.inlineHelpText}</span>
+												</i>
+											</label>
+												<apex:inputField styleClass="color badgeBackgroundColor" value="{!SBQQ__Theme__c.SBQQ__BadgeBackgroundColor__c}"/></p>
+
+											<p><label>{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__BadgeFontColor__c.Label}
+												<i class="tooltip sf-icon-info">
+													<span class="tooltipText">{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__BadgeFontColor__c.inlineHelpText}</span>
+												</i>
+											</label>
+												<apex:inputField styleClass="color badgeFontColor" value="{!SBQQ__Theme__c.SBQQ__BadgeFontColor__c}"/></p>
+
+											<p><label>{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__BadgeFontFamily__c.Label}
+												<i class="tooltip sf-icon-info">
+													<span class="tooltipText">{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__BadgeFontFamily__c.inlineHelpText}</span>
+												</i>
+											</label>
+												<apex:inputField styleClass="input badgeFontFamily" value="{!SBQQ__Theme__c.SBQQ__BadgeFontFamily__c}"/></p>
+
+											<p><label>{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__BadgeFontSize__c.Label}
+												<i class="tooltip sf-icon-info">
+													<span class="tooltipText">{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__BadgeFontSize__c.inlineHelpText}</span>
+												</i>
+											</label>
+												<apex:inputField styleClass="input badgeFontSize" value="{!SBQQ__Theme__c.SBQQ__BadgeFontSize__c}"/></p>
+
+											<p><label>{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__BadgeBorderColor__c.Label}
+												<i class="tooltip sf-icon-info">
+													<span class="tooltipText">{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__BadgeBorderColor__c.inlineHelpText}</span>
+												</i>
+											</label>
+												<apex:inputField styleClass="color badgeBorderColor" value="{!SBQQ__Theme__c.SBQQ__BadgeBorderColor__c}"/></p>
+
+											<p><label>{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__BadgeBorderWidth__c.Label}
+												<i class="tooltip sf-icon-info">
+													<span class="tooltipText">{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__BadgeBorderWidth__c.inlineHelpText}</span>
+												</i>
+											</label>
+												<apex:inputField styleClass="input badgeBorderWidth" value="{!SBQQ__Theme__c.SBQQ__BadgeBorderWidth__c}"/></p>
+
+											<p><label>{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__BadgeBorderStyle__c.Label}
+												<i class="tooltip sf-icon-info">
+													<span class="tooltipText">{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__BadgeBorderStyle__c.inlineHelpText}</span>
+												</i>
+											</label>
+												<apex:inputField styleClass="input badgeBorderStyle" value="{!SBQQ__Theme__c.SBQQ__BadgeBorderStyle__c}"/></p>
+										</div>
+									</div><!-- .fieldset-body -->
+
+									<footer class="expandable-parent"><i class="sf-icon-chevronup expandable-child"></i><span>{!$Label.lbl_show}</span> 7 properties</footer>
+								</fieldset><!-- Category: Badge (10 of 22)-->
+
+								<!-- Category: Table (11 of 22)-->
+								<fieldset>
+									<legend class="expandable-parent">
+										<div class="category-header expandable-child">
+											<h2>{!$Label.lbl_table}</h2>
+											<p>11/22</p>
+										</div>
+
+										<p>{!$Label.lbl_theme_table_description}</p></legend>
+
+									<div class="fieldset-body">
+										<div>
+											<p><label> {!$ObjectType.Theme__c.fields.TableCellPaddingTop__c.Label}
+												<i class="tooltip sf-icon-info">
+													<span class="tooltipText">{!$ObjectType.Theme__c.fields.TableCellPaddingTop__c.inlineHelpText}</span>
+												</i>
+											</label>
+												<apex:inputField styleClass="input tableCellPaddingTop" value="{!SBQQ__Theme__c.SBQQ__TableCellPaddingTop__c}"/></p>
+
+											<p><label>{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__TableCellPaddingRight__c.Label}
+												<i class="tooltip sf-icon-info">
+													<span class="tooltipText">{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__TableCellPaddingRight__c.inlineHelpText}</span>
+												</i>
+											</label>
+												<apex:inputField styleClass="input tableCellPaddingRight" value="{!SBQQ__Theme__c.SBQQ__TableCellPaddingRight__c}"/></p>
+
+											<p><label>{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__TableCellPaddingBottom__c.Label}
+												<i class="tooltip sf-icon-info">
+													<span class="tooltipText">{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__TableCellPaddingBottom__c.inlineHelpText}</span>
+												</i>
+											</label>
+												<apex:inputField styleClass="input tableCellPaddingBottom" value="{!SBQQ__Theme__c.SBQQ__TableCellPaddingBottom__c}"/></p>
+
+											<p><label>{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__TableCellPaddingLeft__c.Label}
+												<i class="tooltip sf-icon-info">
+													<span class="tooltipText">{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__TableCellPaddingLeft__c.inlineHelpText}</span>
+												</i>
+											</label>
+												<apex:inputField styleClass="input tableCellPaddingLeft" value="{!SBQQ__Theme__c.SBQQ__TableCellPaddingLeft__c}"/></p>
+										</div>
+									</div><!-- .fieldset-body -->
+
+									<footer class="expandable-parent"><i class="sf-icon-chevronup expandable-child"></i><span>{!$Label.lbl_show}</span> 4 properties</footer>
+								</fieldset><!-- Category: Table (11 of 22)-->
+
+								<!-- Category: Table Header (12 of 22)-->
+								<fieldset>
+									<legend class="expandable-parent">
+										<div class="category-header expandable-child">
+											<h2>{!$Label.lbl_table_header}</h2>
+											<p>12/22</p>
+										</div>
+										<p>{!$Label.lbl_theme_table_header_description}</p></legend>
+
+									<div class="fieldset-body">
+										<div>
+											<p><label> {!$ObjectType.Theme__c.fields.TableHeaderBackgroundColor__c.Label}
+												<i class="tooltip sf-icon-info">
+													<span class="tooltipText">{!$ObjectType.Theme__c.fields.TableHeaderBackgroundColor__c.inlineHelpText}</span>
+												</i>
+											</label>
+												<apex:inputField styleClass="color tableHeaderBackgroundColor" value="{!SBQQ__Theme__c.SBQQ__TableHeaderBackgroundColor__c}"/></p>
+
+											<p><label>{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__TableHeaderFontColor__c.Label}
+												<i class="tooltip sf-icon-info">
+													<span class="tooltipText">{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__TableHeaderFontColor__c.inlineHelpText}</span>
+												</i>
+											</label>
+												<apex:inputField styleClass="color tableHeaderFontColor" value="{!SBQQ__Theme__c.SBQQ__TableHeaderFontColor__c}"/></p>
+
+											<p><label>{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__TableHeaderBorderBottomColor__c.Label}
+												<i class="tooltip sf-icon-info">
+													<span class="tooltipText">{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__TableHeaderBorderBottomColor__c.inlineHelpText}</span>
+												</i>
+											</label>
+												<apex:inputField styleClass="color tableHeaderBorderBottomColor" value="{!SBQQ__Theme__c.SBQQ__TableHeaderBorderBottomColor__c}"/></p>
+
+											<p><label>{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__TableHeaderBorderBottomWidth__c.Label}
+												<i class="tooltip sf-icon-info">
+													<span class="tooltipText">{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__TableHeaderBorderBottomWidth__c.inlineHelpText}</span>
+												</i>
+											</label>
+												<apex:inputField styleClass="input tableHeaderBorderBottomWidth" value="{!SBQQ__Theme__c.SBQQ__TableHeaderBorderBottomWidth__c}"/></p>
+
+											<p><label>{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__TableHeaderBorderBottomStyle__c.Label}
+												<i class="tooltip sf-icon-info">
+													<span class="tooltipText">{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__TableHeaderBorderBottomStyle__c.inlineHelpText}</span>
+												</i>
+											</label>
+												<apex:inputField styleClass="input tableHeaderBorderBottomStyle" value="{!SBQQ__Theme__c.SBQQ__TableHeaderBorderBottomStyle__c}"/></p>
+
+											<p><label>{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__TableHeaderFontFamily__c.Label}
+												<i class="tooltip sf-icon-info">
+													<span class="tooltipText">{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__TableHeaderFontFamily__c.inlineHelpText}</span>
+												</i>
+											</label>
+												<apex:inputField styleClass="input tableHeaderFontFamily" value="{!SBQQ__Theme__c.SBQQ__TableHeaderFontFamily__c}"/></p>
+
+											<p><label>{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__TableHeaderFontSize__c.Label}
+												<i class="tooltip sf-icon-info">
+													<span class="tooltipText">{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__TableHeaderFontSize__c.inlineHelpText}</span>
+												</i>
+											</label>
+												<apex:inputField styleClass="input tableHeaderFontSize" value="{!SBQQ__Theme__c.SBQQ__TableHeaderFontSize__c}"/></p>
+
+											<p><label>{!$ObjectType.Theme__c.fields.TableHeaderFontWeight__c.Label}
+												<a href="http://www.w3schools.com/css/css_font.asp" target='_blank' class="tooltip"><i class="tooltip sf-icon-info">
+													<span class="tooltipText">{!$ObjectType.Theme__c.fields.TableHeaderFontWeight__c.inlineHelpText}</span>
+												</i></a>
+											</label>
+												<apex:inputField styleClass="input tableHeaderFontWeight" value="{!SBQQ__Theme__c.SBQQ__TableHeaderFontWeight__c}"/></p>
+
+											<p><label>{!$ObjectType.Theme__c.fields.TableHeaderFontStyle__c.Label}
+												<a href="http://www.w3schools.com/css/css_font.asp" target='_blank' class="tooltip"><i class="tooltip sf-icon-info">
+													<span class="tooltipText">{!$ObjectType.Theme__c.fields.TableHeaderFontStyle__c.inlineHelpText}</span>
+												</i></a>
+											</label>
+												<apex:inputField styleClass="input tableHeaderFontStyle" value="{!SBQQ__Theme__c.SBQQ__TableHeaderFontStyle__c}"/></p>
+
+											<p><label>{!$ObjectType.Theme__c.fields.TableHeaderTextDecoration__c.Label}
+												<a href="http://www.w3schools.com/cssref/pr_text_text-decoration.asp" target='_blank' class="tooltip"><i class="tooltip sf-icon-info">
+													<span class="tooltipText">{!$ObjectType.Theme__c.fields.TableHeaderTextDecoration__c.inlineHelpText}</span>
+												</i></a>
+											</label>
+												<apex:inputField styleClass="input tableHeaderTextDecoration" value="{!SBQQ__Theme__c.SBQQ__TableHeaderTextDecoration__c}"/></p>
+
+											<p><label>{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__TableHeaderCellHeight__c.Label}
+												<i class="tooltip sf-icon-info">
+													<span class="tooltipText">{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__TableHeaderCellHeight__c.inlineHelpText}</span>
+												</i>
+											</label>
+												<apex:inputField styleClass="input tableHeaderCellHeight" value="{!SBQQ__Theme__c.SBQQ__TableHeaderCellHeight__c}"/></p>
+										</div>
+									</div><!-- .fieldset-body -->
+
+									<footer class="expandable-parent"><i class="sf-icon-chevronup expandable-child"></i><span>{!$Label.lbl_show}</span> 11 properties</footer>
+								</fieldset><!-- Category: Table Header (12 of 22)-->
+
+								<!-- Category: Table Row (13 of 22)-->
+								<fieldset>
+									<legend class="expandable-parent">
+										<div class="category-header expandable-child">
+											<h2>{!$Label.lbl_table_row}</h2>
+											<p>13/22</p>
+										</div>
+
+										<p>{!$Label.lbl_theme_table_rows_description}</p></legend>
+
+									<div class="fieldset-body">
+										<div>
+											<p><label> {!$ObjectType.Theme__c.fields.TableRowBackgroundColor__c.Label}
+												<i class="tooltip sf-icon-info">
+													<span class="tooltipText">{!$ObjectType.Theme__c.fields.TableRowBackgroundColor__c.inlineHelpText}</span>
+												</i>
+											</label>
+												<apex:inputField styleClass="color tableRowBackgroundColor" value="{!SBQQ__Theme__c.SBQQ__TableRowBackgroundColor__c}"/></p>
+
+											<p><label>{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__TableRowFontColor__c.Label}
+												<i class="tooltip sf-icon-info">
+													<span class="tooltipText">{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__TableRowFontColor__c.inlineHelpText}</span>
+												</i>
+											</label>
+												<apex:inputField styleClass="color tableRowFontColor" value="{!SBQQ__Theme__c.SBQQ__TableRowFontColor__c}"/></p>
+
+											<p><label>{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__TableRowHoverColor__c.Label}
+												<i class="tooltip sf-icon-info">
+													<span class="tooltipText">{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__TableRowHoverColor__c.inlineHelpText}</span>
+												</i>
+											</label>
+												<apex:inputField styleClass="color tableRowHoverColor" value="{!SBQQ__Theme__c.SBQQ__TableRowHoverColor__c}"/></p>
+
+											<p><label>{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__TableRowFontFamily__c.Label}
+												<i class="tooltip sf-icon-info">
+													<span class="tooltipText">{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__TableRowFontFamily__c.inlineHelpText}</span>
+												</i>
+											</label>
+												<apex:inputField styleClass="input tableRowFontFamily" value="{!SBQQ__Theme__c.SBQQ__TableRowFontFamily__c}"/></p>
+
+											<p><label>{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__TableRowFontSize__c.Label}
+												<i class="tooltip sf-icon-info">
+													<span class="tooltipText">{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__TableRowFontSize__c.inlineHelpText}</span>
+												</i>
+											</label>
+												<apex:inputField styleClass="input tableRowFontSize" value="{!SBQQ__Theme__c.SBQQ__TableRowFontSize__c}"/></p>
+
+											<p><label>{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__TableRowFontWeight__c.Label}
+												<i class="tooltip sf-icon-info">
+													<span class="tooltipText">{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__TableRowFontWeight__c.inlineHelpText}</span>
+												</i>
+											</label>
+												<apex:inputField styleClass="input tableRowFontWeight" value="{!SBQQ__Theme__c.SBQQ__TableRowFontWeight__c}"/></p>
+
+											<p><label>{!$ObjectType.Theme__c.fields.TableRowFontStyle__c.Label}
+												<a href="http://www.w3schools.com/css/css_font.asp" target='_blank' class="tooltip"><i class="tooltip sf-icon-info">
+													<span class="tooltipText">{!$ObjectType.Theme__c.fields.TableRowFontStyle__c.inlineHelpText}</span>
+												</i></a>
+											</label>
+												<apex:inputField styleClass="input tableRowFontStyle" value="{!SBQQ__Theme__c.SBQQ__TableRowFontStyle__c}"/></p>
+
+											<p><label>{!$ObjectType.Theme__c.fields.TableRowTextDecoration__c.Label}
+												<a href="http://www.w3schools.com/cssref/pr_text_text-decoration.asp" target='_blank' class="tooltip"><i class="tooltip sf-icon-info">
+													<span class="tooltipText">{!$ObjectType.Theme__c.fields.TableRowTextDecoration__c.inlineHelpText}</span>
+												</i></a>
+											</label>
+												<apex:inputField styleClass="input tableRowTextDecoration" value="{!SBQQ__Theme__c.SBQQ__TableRowTextDecoration__c}"/></p>
+
+											<p><label>{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__TableRowBorderBottomStyle__c.Label}
+												<i class="tooltip sf-icon-info">
+													<span class="tooltipText">{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__TableRowBorderBottomStyle__c.inlineHelpText}</span>
+												</i>
+											</label>
+												<apex:inputField styleClass="input tableRowBorderBottomStyle" value="{!SBQQ__Theme__c.SBQQ__TableRowBorderBottomStyle__c}"/></p>
+
+											<p><label>{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__TableRowBorderBottomColor__c.Label}
+												<i class="tooltip sf-icon-info">
+													<span class="tooltipText">{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__TableRowBorderBottomColor__c.inlineHelpText}</span>
+												</i>
+											</label>
+												<apex:inputField styleClass="color tableRowBorderBottomColor" value="{!SBQQ__Theme__c.SBQQ__TableRowBorderBottomColor__c}"/></p>
+
+											<p><label>{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__TableRowBorderBottomWidth__c.Label}
+												<i class="tooltip sf-icon-info">
+													<span class="tooltipText">{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__TableRowBorderBottomWidth__c.inlineHelpText}</span>
+												</i>
+											</label>
+												<apex:inputField styleClass="input tableRowBorderBottomWidth" value="{!SBQQ__Theme__c.SBQQ__TableRowBorderBottomWidth__c}"/></p>
+
+											<p><label>{!$ObjectType.Theme__c.fields.TableRowLineHeight__c.Label}
+												<a href="http://www.w3schools.com/cssref/pr_dim_line-height.asp" target='_blank' class="tooltip"><i class="tooltip sf-icon-info">
+													<span class="tooltipText">{!$ObjectType.Theme__c.fields.TableRowLineHeight__c.inlineHelpText}</span>
+												</i></a>
+											</label>
+												<apex:inputField styleClass="input tableRowLineHeight" value="{!SBQQ__Theme__c.SBQQ__TableRowLineHeight__c}"/></p>
+
+											<p><label>{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__TableRowPaddingTop__c.Label}
+												<i class="tooltip sf-icon-info">
+													<span class="tooltipText">{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__TableRowPaddingTop__c.inlineHelpText}</span>
+												</i>
+											</label>
+												<apex:inputField styleClass="input tableRowPaddingTop" value="{!SBQQ__Theme__c.SBQQ__TableRowPaddingTop__c}"/></p>
+
+											<p><label>{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__TableRowPaddingBottom__c.Label}
+												<i class="tooltip sf-icon-info">
+													<span class="tooltipText">{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__TableRowPaddingBottom__c.inlineHelpText}</span>
+												</i>
+											</label>
+												<apex:inputField styleClass="input tableRowPaddingBottom" value="{!SBQQ__Theme__c.SBQQ__TableRowPaddingBottom__c}"/></p>
+										</div>
+									</div><!-- .fieldset-body -->
+
+									<footer class="expandable-parent"><i class="sf-icon-chevronup expandable-child"></i><span>{!$Label.lbl_show}</span>  14 properties</footer>
+								</fieldset><!-- Category: Table Row (13 of 22)-->
+
+								<!-- Category: QLE Row (14 of 22)-->
+								<fieldset>
+									<legend class="expandable-parent">
+										<div class="category-header expandable-child">
+											<h2>{!$Label.lbl_qle_row}</h2>
+											<p>14/22</p>
+										</div>
+
+										<p>{!$Label.lbl_theme_qle_rows_description}</p></legend>
+
+									<div class="fieldset-body">
+										<div>
+											<p><label> {!$ObjectType.Theme__c.fields.ParentLineRowFontColor__c.Label}
+												<i class="tooltip sf-icon-info">
+													<span class="tooltipText">{!$ObjectType.Theme__c.fields.ParentLineRowFontColor__c.inlineHelpText}</span>
+												</i>
+											</label>
+												<apex:inputField styleClass="color parentLineRowFontColor" value="{!SBQQ__Theme__c.SBQQ__ParentLineRowFontColor__c}"/></p>
+
+											<p><label>{!$ObjectType.Theme__c.fields.ParentLineRowFontStyle__c.Label}
+												<a href="http://www.w3schools.com/css/css_font.asp" target='_blank' class="tooltip"><i class="tooltip sf-icon-info">
+													<span class="tooltipText">{!$ObjectType.Theme__c.fields.ParentLineRowFontStyle__c.inlineHelpText}</span>
+												</i></a>
+											</label>
+												<apex:inputField styleClass="input parentLineRowFontStyle" value="{!SBQQ__Theme__c.SBQQ__ParentLineRowFontStyle__c}"/></p>
+
+											<p><label>{!$ObjectType.Theme__c.fields.ParentLineRowFontWeight__c.Label}
+												<a href="http://www.w3schools.com/css/css_font.asp" target='_blank' class="tooltip"><i class="tooltip sf-icon-info">
+													<span class="tooltipText">{!$ObjectType.Theme__c.fields.ParentLineRowFontWeight__c.inlineHelpText}</span>
+												</i></a>
+											</label>
+												<apex:inputField styleClass="input parentLineRowFontWeight" value="{!SBQQ__Theme__c.SBQQ__ParentLineRowFontWeight__c}"/></p>
+
+											<p><label>{!$ObjectType.Theme__c.fields.ParentLineRowTextDecoration__c.Label}
+												<a href="http://www.w3schools.com/cssref/pr_text_text-decoration.asp" target='_blank' class="tooltip"><i class="tooltip sf-icon-info">
+													<span class="tooltipText">{!$ObjectType.Theme__c.fields.ParentLineRowTextDecoration__c.inlineHelpText}</span>
+												</i></a>
+											</label>
+												<apex:inputField styleClass="input parentLineRowTextDecoration" value="{!SBQQ__Theme__c.SBQQ__ParentLineRowTextDecoration__c}"/></p>
+
+											<p><label>{!$ObjectType.Theme__c.fields.ParentLineRowFontWeight__c.Label}
+												<a href="http://www.w3schools.com/css/css_font.asp" target='_blank' class="tooltip"><i class="tooltip sf-icon-info">
+													<span class="tooltipText">{!$ObjectType.Theme__c.fields.ParentLineRowFontWeight__c.inlineHelpText}</span>
+												</i></a>
+											</label>
+												<apex:inputField styleClass="input parentLineRowFontWeight" value="{!SBQQ__Theme__c.SBQQ__ParentLineRowFontWeight__c}"/></p>
+
+											<p><label>{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__ComponentRowFontColor__c.Label}
+												<i class="tooltip sf-icon-info">
+													<span class="tooltipText">{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__ComponentRowFontColor__c.inlineHelpText}</span>
+												</i>
+											</label>
+												<apex:inputField styleClass="color componentRowFontColor" value="{!SBQQ__Theme__c.SBQQ__ComponentRowFontColor__c}"/></p>
+
+											<p><label>{!$ObjectType.Theme__c.fields.ComponentRowFontStyle__c.Label}
+												<a href="http://www.w3schools.com/css/css_font.asp" target='_blank' class="tooltip"><i class="tooltip sf-icon-info">
+													<span class="tooltipText">{!$ObjectType.Theme__c.fields.ComponentRowFontStyle__c.inlineHelpText}</span>
+												</i></a>
+											</label>
+												<apex:inputField styleClass="input componentRowFontStyle" value="{!SBQQ__Theme__c.SBQQ__ComponentRowFontStyle__c}"/></p>
+
+											<p><label>{!$ObjectType.Theme__c.fields.ComponentRowFontWeight__c.Label}
+												<a href="http://www.w3schools.com/css/css_font.asp" target='_blank' class="tooltip"><i class="tooltip sf-icon-info">
+													<span class="tooltipText">{!$ObjectType.Theme__c.fields.ComponentRowFontWeight__c.inlineHelpText}</span>
+												</i></a>
+											</label>
+												<apex:inputField styleClass="input componentRowFontWeight" value="{!SBQQ__Theme__c.SBQQ__ComponentRowFontWeight__c}"/></p>
+
+											<p><label>{!$ObjectType.Theme__c.fields.ComponentRowTextDecoration__c.Label}
+												<a href="http://www.w3schools.com/css/css_font.asp" target='_blank' class="tooltip"><i class="tooltip sf-icon-info">
+													<span class="tooltipText">{!$ObjectType.Theme__c.fields.ComponentRowTextDecoration__c.inlineHelpText}</span>
+												</i></a>
+											</label>
+												<apex:inputField styleClass="input componentRowTextDecoration" value="{!SBQQ__Theme__c.SBQQ__ComponentRowTextDecoration__c}"/></p>
+
+											<p><label>{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__StandaloneProductRowFontColor__c.Label}
+												<i class="tooltip sf-icon-info">
+													<span class="tooltipText">{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__StandaloneProductRowFontColor__c.inlineHelpText}</span>
+												</i>
+											</label>
+												<apex:inputField styleClass="color standaloneProductRowFontColor" value="{!SBQQ__Theme__c.SBQQ__StandaloneProductRowFontColor__c}"/></p>
+
+											<p><label>{!$ObjectType.Theme__c.fields.StandaloneProductRowFontStyle__c.Label}
+												<a href="http://www.w3schools.com/css/css_font.asp" target='_blank' class="tooltip"><i class="tooltip sf-icon-info">
+													<span class="tooltipText">{!$ObjectType.Theme__c.fields.StandaloneProductRowFontStyle__c.inlineHelpText}</span>
+												</i></a>
+											</label>
+												<apex:inputField styleClass="input standaloneProductRowFontStyle" value="{!SBQQ__Theme__c.SBQQ__StandaloneProductRowFontStyle__c}"/></p>
+
+											<p><label>{!$ObjectType.Theme__c.fields.StandaloneProductRowFontWeight__c.Label}
+												<a href="http://www.w3schools.com/css/css_font.asp" target='_blank' class="tooltip"><i class="tooltip sf-icon-info">
+													<span class="tooltipText">{!$ObjectType.Theme__c.fields.StandaloneProductRowFontWeight__c.inlineHelpText}</span>
+												</i></a>
+											</label>
+												<apex:inputField styleClass="input standaloneProductRowFontWeight" value="{!SBQQ__Theme__c.SBQQ__StandaloneProductRowFontWeight__c}"/></p>
+
+											<p><label>{!$ObjectType.Theme__c.fields.StandaloneProductRowTextDecoration__c.Label}
+												<a href="http://www.w3schools.com/cssref/pr_text_text-decoration.asp" target='_blank' class="tooltip"><i class="tooltip sf-icon-info">
+													<span class="tooltipText">{!$ObjectType.Theme__c.fields.StandaloneProductRowTextDecoration__c.inlineHelpText}</span>
+												</i></a>
+											</label>
+												<apex:inputField styleClass="input standaloneProductRowTextDecoration" value="{!SBQQ__Theme__c.SBQQ__StandaloneProductRowTextDecoration__c}"/></p>
+										</div>
+									</div><!-- .fieldset-body -->
+
+									<footer class="expandable-parent"><i class="sf-icon-chevronup expandable-child"></i><span>{!$Label.lbl_show}</span> 13 properties</footer>
+								</fieldset><!-- Category: QLE Row (14 of 22)-->
+
+								<!-- Category: Groups (15 of 22)-->
+								<fieldset>
+									<legend class="expandable-parent">
+										<div class="category-header expandable-child">
+											<h2>{!$Label.lbl_groups}</h2>
+											<p>15/22</p>
+										</div>
+
+										<p>{!$Label.lbl_theme_groups_description}</p></legend>
+
+									<div class="fieldset-body">
+										<div>
+											<p><label> {!$ObjectType.Theme__c.fields.GroupBorderColor__c.Label}
+												<i class="tooltip sf-icon-info">
+													<span class="tooltipText">{!$ObjectType.Theme__c.fields.GroupBorderColor__c.inlineHelpText}</span>
+												</i>
+											</label>
+												<apex:inputField styleClass="color groupBorderColor" value="{!SBQQ__Theme__c.SBQQ__GroupBorderColor__c}"/></p>
+
+											<p><label>{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__GroupBorderWidth__c.Label}
+												<i class="tooltip sf-icon-info">
+													<span class="tooltipText">{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__GroupBorderWidth__c.inlineHelpText}</span>
+												</i>
+											</label>
+												<apex:inputField styleClass="input groupBorderWidth" value="{!SBQQ__Theme__c.SBQQ__GroupBorderWidth__c}"/></p>
+
+											<p><label>{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__GroupHeaderBackgroundColor__c.Label}
+												<i class="tooltip sf-icon-info">
+													<span class="tooltipText">{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__GroupHeaderBackgroundColor__c.inlineHelpText}</span>
+												</i>
+											</label>
+												<apex:inputField styleClass="color groupHeaderBackgroundColor" value="{!SBQQ__Theme__c.SBQQ__GroupHeaderBackgroundColor__c}"/></p>
+
+											<p><label>{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__GroupHeaderBorderBottomColor__c.Label}
+												<i class="tooltip sf-icon-info">
+													<span class="tooltipText">{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__GroupHeaderBorderBottomColor__c.inlineHelpText}</span>
+												</i>
+											</label>
+												<apex:inputField styleClass="color groupHeaderBorderBottomColor" value="{!SBQQ__Theme__c.SBQQ__GroupHeaderBorderBottomColor__c}"/></p>
+
+											<p><label>{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__GroupHeaderBorderBottomWidth__c.Label}
+												<i class="tooltip sf-icon-info">
+													<span class="tooltipText">{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__GroupHeaderBorderBottomWidth__c.inlineHelpText}</span>
+												</i>
+											</label>
+												<apex:inputField styleClass="input groupHeaderBorderBottomWidth" value="{!SBQQ__Theme__c.SBQQ__GroupHeaderBorderBottomWidth__c}"/></p>
+
+											<p><label>{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__GroupHeaderFontColor__c.Label}
+												<i class="tooltip sf-icon-info">
+													<span class="tooltipText">{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__GroupHeaderFontColor__c.inlineHelpText}</span>
+												</i>
+											</label>
+												<apex:inputField styleClass="color groupHeaderFontColor" value="{!SBQQ__Theme__c.SBQQ__GroupHeaderFontColor__c}"/></p>
+
+											<p><label>{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__GroupHeaderFontFamily__c.Label}
+												<i class="tooltip sf-icon-info">
+													<span class="tooltipText">{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__GroupHeaderFontFamily__c.inlineHelpText}</span>
+												</i>
+											</label>
+												<apex:inputField styleClass="input groupHeaderFontFamily" value="{!SBQQ__Theme__c.SBQQ__GroupHeaderFontFamily__c}"/></p>
+
+											<p><label>{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__GroupHeaderFontSize__c.Label}
+												<i class="tooltip sf-icon-info">
+													<span class="tooltipText">{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__GroupHeaderFontSize__c.inlineHelpText}</span>
+												</i>
+											</label>
+												<apex:inputField styleClass="input groupHeaderFontSize" value="{!SBQQ__Theme__c.SBQQ__GroupHeaderFontSize__c}"/></p>
+
+											<p><label>{!$ObjectType.Theme__c.fields.GroupHeaderFontWeight__c.Label}
+												<a href="http://www.w3schools.com/css/css_font.asp" target='_blank' class="tooltip"><i class="tooltip sf-icon-info">
+													<span class="tooltipText">{!$ObjectType.Theme__c.fields.GroupHeaderFontWeight__c.inlineHelpText}</span>
+												</i></a>
+											</label>
+												<apex:inputField styleClass="input groupHeaderFontWeight" value="{!SBQQ__Theme__c.SBQQ__GroupHeaderFontWeight__c}"/></p>
+
+											<p><label>{!$ObjectType.Theme__c.fields.GroupHeaderFontStyle__c.Label}
+												<a href="http://www.w3schools.com/css/css_font.asp" target='_blank' class="tooltip"><i class="sf-icon-info">
+													<span class="tooltipText">{!$ObjectType.Theme__c.fields.GroupHeaderFontStyle__c.inlineHelpText}</span>
+												</i></a>
+											</label>
+												<apex:inputField styleClass="input groupHeaderFontStyle" value="{!SBQQ__Theme__c.SBQQ__GroupHeaderFontStyle__c}"/></p>
+
+											<p><label>{!$ObjectType.Theme__c.fields.GroupHeaderTextDecoration__c.Label}
+												<a href="http://www.w3schools.com/cssref/pr_text_text-decoration.asp" target='_blank' class="tooltip"><i class="tooltip sf-icon-info">
+													<span class="tooltipText">{!$ObjectType.Theme__c.fields.GroupHeaderTextDecoration__c.inlineHelpText}</span>
+												</i></a>
+											</label>
+												<apex:inputField styleClass="input groupHeaderTextDecoration" value="{!SBQQ__Theme__c.SBQQ__GroupHeaderTextDecoration__c}"/></p>
+										</div>
+									</div><!-- .fieldset-body -->
+
+									<footer class="expandable-parent"><i class="sf-icon-chevronup expandable-child"></i><span>{!$Label.lbl_show}</span> 11 properties</footer>
+								</fieldset><!-- Category: Groups (15 of 22)-->
+
+								<!-- Category: Table Grouped Row (16 of 22)-->
+								<fieldset>
+									<legend class="expandable-parent">
+										<div class="category-header expandable-child">
+											<h2>{!$Label.lbl_table_grouped_rows}</h2>
+											<p>16/22</p>
+										</div>
+
+										<p>{!$Label.lbl_theme_table_grouped_rows_description}</p></legend>
+
+									<div class="fieldset-body">
+										<div>
+											<p><label> {!$ObjectType.Theme__c.fields.TableGroupedRowBackgroundColor__c.Label}
+												<i class="tooltip sf-icon-info">
+													<span class="tooltipText">{!$ObjectType.Theme__c.fields.TableGroupedRowBackgroundColor__c.inlineHelpText}</span>
+												</i>
+											</label>
+												<apex:inputField styleClass="color tableGroupedRowBackgroundColor" value="{!SBQQ__Theme__c.SBQQ__TableGroupedRowBackgroundColor__c}"/></p>
+
+											<p><label>{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__TableGroupedRowLineHeight__c.Label}
+												<i class="tooltip sf-icon-info">
+													<span class="tooltipText">{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__TableGroupedRowLineHeight__c.inlineHelpText}</span>
+												</i>
+											</label>
+												<apex:inputField styleClass="input tableGroupedRowLineHeight" value="{!SBQQ__Theme__c.SBQQ__TableGroupedRowLineHeight__c}"/></p>
+
+											<p><label>{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__TableGroupedRowPaddingTop__c.Label}
+												<i class="tooltip sf-icon-info">
+													<span class="tooltipText">{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__TableGroupedRowPaddingTop__c.inlineHelpText}</span>
+												</i>
+											</label>
+												<apex:inputField styleClass="input tableGroupedRowPaddingTop" value="{!SBQQ__Theme__c.SBQQ__TableGroupedRowPaddingTop__c}"/></p>
+
+											<p><label>{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__TableGroupedRowPaddingBottom__c.Label}
+												<i class="tooltip sf-icon-info">
+													<span class="tooltipText">{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__TableGroupedRowPaddingBottom__c.inlineHelpText}</span>
+												</i>
+											</label>
+												<apex:inputField styleClass="input tableGroupedRowPaddingBottom" value="{!SBQQ__Theme__c.SBQQ__TableGroupedRowPaddingBottom__c}"/></p>
+
+											<p><label>{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__TableGroupedRowBorderBottomColor__c.Label}
+												<i class="tooltip sf-icon-info">
+													<span class="tooltipText">{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__TableGroupedRowBorderBottomColor__c.inlineHelpText}</span>
+												</i>
+											</label>
+												<apex:inputField styleClass="color tableGroupedRowBorderBottomColor" value="{!SBQQ__Theme__c.SBQQ__TableGroupedRowBorderBottomColor__c}"/></p>
+
+											<p><label>{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__TableGroupedRowBorderBottomWidth__c.Label}
+												<i class="tooltip sf-icon-info">
+													<span class="tooltipText">{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__TableGroupedRowBorderBottomWidth__c.inlineHelpText}</span>
+												</i>
+											</label>
+												<apex:inputField styleClass="input tableGroupedRowBorderBottomWidth" value="{!SBQQ__Theme__c.SBQQ__TableGroupedRowBorderBottomWidth__c}"/></p>
+
+											<p><label>{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__TableGroupedRowBorderBottomStyle__c.Label}
+												<i class="tooltip sf-icon-info">
+													<span class="tooltipText">{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__TableGroupedRowBorderBottomStyle__c.inlineHelpText}</span>
+												</i>
+											</label>
+												<apex:inputField styleClass="input tableGroupedRowBorderBottomStyle" value="{!SBQQ__Theme__c.SBQQ__TableGroupedRowBorderBottomStyle__c}"/></p>
+										</div>
+									</div><!-- .fieldset-body -->
+
+									<footer class="expandable-parent"><i class="sf-icon-chevronup expandable-child"></i><span>{!$Label.lbl_show}</span> 7 properties</footer>
+								</fieldset><!-- Category: Table Grouped Row (16 of 22)-->
+
+								<!-- Category: Feature Header Instructions (17 of 22)-->
+								<fieldset>
+									<legend class="expandable-parent">
+										<div class="category-header expandable-child">
+											<h2>{!$Label.lbl_feature_header_instructions}</h2>
+											<p>17/22</p>
+										</div>
+
+										<p>{!$Label.lbl_theme_feature_header_instructions_description}</p></legend>
+
+									<div class="fieldset-body">
+										<div>
+											<p><label> {!$ObjectType.Theme__c.fields.FeatureInstructionsColor__c.Label}
+												<i class="tooltip sf-icon-info">
+													<span class="tooltipText">{!$ObjectType.Theme__c.fields.FeatureInstructionsColor__c.inlineHelpText}</span>
+												</i>
+											</label>
+												<apex:inputField styleClass="color featureInstructionsColor" value="{!SBQQ__Theme__c.SBQQ__FeatureInstructionsColor__c}"/></p>
+
+											<p><label>{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__FeatureInstructionsFontFamily__c.Label}
+												<i class="tooltip sf-icon-info">
+													<span class="tooltipText">{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__FeatureInstructionsFontFamily__c.inlineHelpText}</span>
+												</i>
+											</label>
+												<apex:inputField styleClass="input featureInstructionsFontFamily" value="{!SBQQ__Theme__c.SBQQ__FeatureInstructionsFontFamily__c}"/></p>
+
+											<p><label>{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__FeatureInstructionsFontSize__c.Label}
+												<i class="tooltip sf-icon-info">
+													<span class="tooltipText">{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__FeatureInstructionsFontSize__c.inlineHelpText}</span>
+												</i>
+											</label>
+												<apex:inputField styleClass="input featureInstructionsFontSize" value="{!SBQQ__Theme__c.SBQQ__FeatureInstructionsFontSize__c}"/></p>
+
+											<p><label>{!$ObjectType.Theme__c.fields.FeatureInstructionsFontWeight__c.Label}
+												<a href="http://www.w3schools.com/css/css_font.asp" target='_blank' class="tooltip"><i class="tooltip sf-icon-info">
+													<span class="tooltipText">{!$ObjectType.Theme__c.fields.FeatureInstructionsFontWeight__c.inlineHelpText}</span>
+												</i></a>
+											</label>
+												<apex:inputField styleClass="input featureInstructionsFontWeight" value="{!SBQQ__Theme__c.SBQQ__FeatureInstructionsFontWeight__c}"/></p>
+
+											<p><label>{!$ObjectType.Theme__c.fields.FeatureInstructionsFontWeight__c.Label}
+												<a href="http://www.w3schools.com/css/css_font.asp" target='_blank' class="tooltip"><i class="tooltip sf-icon-info">
+													<span class="tooltipText">{!$ObjectType.Theme__c.fields.FeatureInstructionsFontWeight__c.inlineHelpText}</span>
+												</i></a>
+											</label>
+												<apex:inputField styleClass="input featureInstructionsFontWeight" value="{!SBQQ__Theme__c.SBQQ__FeatureInstructionsFontWeight__c}"/></p>
+
+											<p><label>{!$ObjectType.Theme__c.fields.FeatureInstructionsFontStyle__c.Label}
+												<a href="http://www.w3schools.com/css/css_font.asp" target='_blank' class="tooltip"><i class="tooltip sf-icon-info">
+													<span class="tooltipText">{!$ObjectType.Theme__c.fields.FeatureInstructionsFontStyle__c.inlineHelpText}</span>
+												</i></a>
+											</label>
+												<apex:inputField styleClass="input featureInstructionsFontStyle" value="{!SBQQ__Theme__c.SBQQ__FeatureInstructionsFontStyle__c}"/></p>
+
+											<p><label>{!$ObjectType.Theme__c.fields.FeatureInstructionsTextDecoration__c.Label}
+												<a href="http://www.w3schools.com/cssref/pr_text_text-decoration.asp" target='_blank' class="tooltip"><i class="tooltip sf-icon-info">
+													<span class="tooltipText">{!$ObjectType.Theme__c.fields.FeatureInstructionsTextDecoration__c.inlineHelpText}</span>
+												</i></a>
+											</label>
+												<apex:inputField styleClass="input featureInstructionsTextDecoration" value="{!SBQQ__Theme__c.SBQQ__FeatureInstructionsTextDecoration__c}"/></p>
+
+											<p><label>{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__FeatureInstructionsPaddingTop__c.Label}
+												<i class="tooltip sf-icon-info">
+													<span class="tooltipText">{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__FeatureInstructionsPaddingTop__c.inlineHelpText}</span>
+												</i>
+											</label>
+												<apex:inputField styleClass="input featureInstructionsPaddingTop" value="{!SBQQ__Theme__c.SBQQ__FeatureInstructionsPaddingTop__c}"/></p>
+
+											<p><label>{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__FeatureInstructionsPaddingRight__c.Label}
+												<i class="tooltip sf-icon-info">
+													<span class="tooltipText">{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__FeatureInstructionsPaddingRight__c.inlineHelpText}</span>
+												</i>
+											</label>
+												<apex:inputField styleClass="input featureInstructionsPaddingRight" value="{!SBQQ__Theme__c.SBQQ__FeatureInstructionsPaddingRight__c}"/></p>
+
+											<p><label>{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__FeatureInstructionsPaddingBottom__c.Label}
+												<i class="tooltip sf-icon-info">
+													<span class="tooltipText">{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__FeatureInstructionsPaddingBottom__c.inlineHelpText}</span>
+												</i>
+											</label>
+												<apex:inputField styleClass="input featureInstructionsPaddingBottom" value="{!SBQQ__Theme__c.SBQQ__FeatureInstructionsPaddingBottom__c}"/></p>
+
+											<p><label>{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__FeatureInstructionsPaddingLeft__c.Label}
+												<i class="tooltip sf-icon-info">
+													<span class="tooltipText">{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__FeatureInstructionsPaddingLeft__c.inlineHelpText}</span>
+												</i>
+											</label>
+												<apex:inputField styleClass="input featureInstructionsPaddingLeft" value="{!SBQQ__Theme__c.SBQQ__FeatureInstructionsPaddingLeft__c}"/></p>
+
+											<p><label> {!$ObjectType.SBQQ__Theme__c.fields.SBQQ__ConfigurationAttributeLabelColor__c.Label}
+												<i class="tooltip sf-icon-info">
+													<span class="tooltipText">{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__ConfigurationAttributeLabelColor__c.inlineHelpText}</span>
+												</i>
+											</label>
+												<apex:inputField styleClass="color configurationAttributeLabelColor" value="{!SBQQ__Theme__c.SBQQ__ConfigurationAttributeLabelColor__c}"/></p>
+										</div>
+									</div><!-- .fieldset-body -->
+
+									<footer class="expandable-parent"><i class="sf-icon-chevronup expandable-child"></i><span>{!$Label.lbl_show}</span> 12 properties</footer>
+								</fieldset><!-- Category: Feature Header Instructions (17 of 22)-->
+
+								<!-- Category: Bundle Layout Header (18 of 22)-->
+								<fieldset>
+									<legend class="expandable-parent">
+										<div class="category-header expandable-child">
+											<h2>{!$Label.lbl_bundle_layout_header}</h2>
+											<p>18/22</p>
+										</div>
+
+										<p>{!$Label.lbl_theme_bundle_layout_header_description}</p></legend>
+
+									<div class="fieldset-body">
+										<div>
+											<p><label> {!$ObjectType.Theme__c.fields.BundleLayoutHeaderBgColor__c.Label}
+												<i class="tooltip sf-icon-info">
+													<span class="tooltipText">{!$ObjectType.Theme__c.fields.BundleLayoutHeaderBgColor__c.inlineHelpText}</span>
+												</i>
+											</label>
+												<apex:inputField styleClass="color bundleLayoutHeaderBgColor" value="{!SBQQ__Theme__c.SBQQ__BundleLayoutHeaderBgColor__c}"/></p>
+
+											<p><label>{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__BundleLayoutHeaderColor__c.Label}
+												<i class="tooltip sf-icon-info">
+													<span class="tooltipText">{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__BundleLayoutHeaderColor__c.inlineHelpText}</span>
+												</i>
+											</label>
+												<apex:inputField styleClass="color bundleLayoutHeaderColor" value="{!SBQQ__Theme__c.SBQQ__BundleLayoutHeaderColor__c}"/></p>
+
+											<p><label>{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__BundleLayoutHeaderFontFamily__c.Label}
+												<i class="tooltip sf-icon-info">
+													<span class="tooltipText">{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__BundleLayoutHeaderFontFamily__c.inlineHelpText}</span>
+												</i>
+											</label>
+												<apex:inputField styleClass="input bundleLayoutHeaderFontFamily" value="{!SBQQ__Theme__c.SBQQ__BundleLayoutHeaderFontFamily__c}"/></p>
+
+											<p><label>{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__BundleLayoutHeaderFontSize__c.Label}
+												<i class="tooltip sf-icon-info">
+													<span class="tooltipText">{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__BundleLayoutHeaderFontSize__c.inlineHelpText}</span>
+												</i>
+											</label>
+												<apex:inputField styleClass="input bundleLayoutHeaderFontSize" value="{!SBQQ__Theme__c.SBQQ__BundleLayoutHeaderFontSize__c}"/></p>
+
+											<p><label>{!$ObjectType.Theme__c.fields.BundleLayoutHeaderFontWeight__c.Label}
+												<a href="http://www.w3schools.com/css/css_font.asp" target='_blank' class="tooltip"><i class="tooltip sf-icon-info">
+													<span class="tooltipText">{!$ObjectType.Theme__c.fields.BundleLayoutHeaderFontWeight__c.inlineHelpText}</span>
+												</i></a>
+											</label>
+												<apex:inputField styleClass="input bundleLayoutHeaderFontWeight" value="{!SBQQ__Theme__c.SBQQ__BundleLayoutHeaderFontWeight__c}"/></p>
+
+											<p><label>{!$ObjectType.Theme__c.fields.BundleLayoutHeaderFontStyle__c.Label}
+												<a href="http://www.w3schools.com/css/css_font.asp" target='_blank' class="tooltip"><i class="tooltip sf-icon-info">
+													<span class="tooltipText">{!$ObjectType.Theme__c.fields.BundleLayoutHeaderFontStyle__c.inlineHelpText}</span>
+												</i></a>
+											</label>
+												<apex:inputField styleClass="input bundleLayoutHeaderFontStyle" value="{!SBQQ__Theme__c.SBQQ__BundleLayoutHeaderFontStyle__c}"/></p>
+
+											<p><label>{!$ObjectType.Theme__c.fields.BundleLayoutHeaderTextDecoration__c.Label}
+												<a href="http://www.w3schools.com/cssref/pr_text_text-decoration.asp" target='_blank' class="tooltip"><i class="tooltip sf-icon-info">
+													<span class="tooltipText">{!$ObjectType.Theme__c.fields.BundleLayoutHeaderTextDecoration__c.inlineHelpText}</span>
+												</i></a>
+											</label>
+												<apex:inputField styleClass="input bundleLayoutHeaderTextDecoration" value="{!SBQQ__Theme__c.SBQQ__BundleLayoutHeaderTextDecoration__c}"/></p>
+										</div>
+									</div><!-- .fieldset-body -->
+
+									<footer class="expandable-parent"><i class="sf-icon-chevronup expandable-child"></i><span>{!$Label.lbl_show}</span> 7 properties</footer>
+								</fieldset><!-- Category: Bundle Layout Header (18 of 22)-->
+
+								<!-- Category: Form (19 of 22)-->
+								<fieldset>
+									<legend class="expandable-parent">
+										<div class="category-header expandable-child">
+											<h2>{!$Label.lbl_forms}</h2>
+											<p>19/22</p>
+										</div>
+
+										<p>{!$Label.lbl_theme_forms_description}</p></legend>
+
+									<div class="fieldset-body">
+										<div>
+											<p><label> {!$ObjectType.Theme__c.fields.TextboxBackgroundColor__c.Label}
+												<i class="tooltip sf-icon-info">
+													<span class="tooltipText">{!$ObjectType.Theme__c.fields.TextboxBackgroundColor__c.inlineHelpText}</span>
+												</i>
+											</label>
+												<apex:inputField styleClass="color textboxBackgroundColor" value="{!SBQQ__Theme__c.SBQQ__TextboxBackgroundColor__c}"/></p>
+
+											<p><label>{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__TextboxBorderColor__c.Label}
+												<i class="tooltip sf-icon-info">
+													<span class="tooltipText">{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__TextboxBorderColor__c.inlineHelpText}</span>
+												</i>
+											</label>
+												<apex:inputField styleClass="color textboxBorderColor" value="{!SBQQ__Theme__c.SBQQ__TextboxBorderColor__c}"/></p>
+
+											<p><label>{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__TextboxBorderStyle__c.Label}
+												<i class="tooltip sf-icon-info">
+													<span class="tooltipText">{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__TextboxBorderStyle__c.inlineHelpText}</span>
+												</i>
+											</label>
+												<apex:inputField styleClass="input textboxBorderStyle" value="{!SBQQ__Theme__c.SBQQ__TextboxBorderStyle__c}"/></p>
+
+											<p><label>{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__TextboxBorderWidth__c.Label}
+												<i class="tooltip sf-icon-info">
+													<span class="tooltipText">{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__TextboxBorderWidth__c.inlineHelpText}</span>
+												</i>
+											</label>
+												<apex:inputField styleClass="input textboxBorderWidth" value="{!SBQQ__Theme__c.SBQQ__TextboxBorderWidth__c}"/></p>
+
+											<p><label>{!$ObjectType.Theme__c.fields.TextboxBorderRadius__c.Label}
+												<a href="http://www.w3schools.com/cssref/css3_pr_border-radius.asp" target='_blank' class="tooltip"><i class="tooltip sf-icon-info">
+													<span class="tooltipText">{!$ObjectType.Theme__c.fields.TextboxBorderRadius__c.inlineHelpText}</span>
+												</i></a>
+											</label>
+												<apex:inputField styleClass="input textboxBorderRadius" value="{!SBQQ__Theme__c.SBQQ__TextboxBorderRadius__c}"/></p>
+
+											<p><label>{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__TextboxHeight__c.Label}
+												<i class="tooltip sf-icon-info">
+													<span class="tooltipText">{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__TextboxHeight__c.inlineHelpText}</span>
+												</i>
+											</label>
+												<apex:inputField styleClass="input textboxHeight" value="{!SBQQ__Theme__c.SBQQ__TextboxHeight__c}"/></p>
+
+											<p><label>{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__TextboxPaddingTop__c.Label}
+												<i class="tooltip sf-icon-info">
+													<span class="tooltipText">{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__TextboxPaddingTop__c.inlineHelpText}</span>
+												</i>
+											</label>
+												<apex:inputField styleClass="input textboxPaddingTop" value="{!SBQQ__Theme__c.SBQQ__TextboxPaddingTop__c}"/></p>
+
+											<p><label>{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__TextboxPaddingRight__c.Label}
+												<i class="tooltip sf-icon-info">
+													<span class="tooltipText">{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__TextboxPaddingRight__c.inlineHelpText}</span>
+												</i>
+											</label>
+												<apex:inputField styleClass="input textboxPaddingRight" value="{!SBQQ__Theme__c.SBQQ__TextboxPaddingRight__c}"/></p>
+
+											<p><label>{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__TextboxPaddingBottom__c.Label}
+												<i class="tooltip sf-icon-info">
+													<span class="tooltipText">{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__TextboxPaddingBottom__c.inlineHelpText}</span>
+												</i>
+											</label>
+												<apex:inputField styleClass="input textboxPaddingBottom" value="{!SBQQ__Theme__c.SBQQ__TextboxPaddingBottom__c}"/></p>
+
+											<p><label>{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__TextboxPaddingLeft__c.Label}
+												<i class="tooltip sf-icon-info">
+													<span class="tooltipText">{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__TextboxPaddingLeft__c.inlineHelpText}</span>
+												</i>
+											</label>
+												<apex:inputField styleClass="input textboxPaddingLeft" value="{!SBQQ__Theme__c.SBQQ__TextboxPaddingLeft__c}"/></p>
+
+											<p><label>{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__SelectBackgroundColor__c.Label}
+												<i class="tooltip sf-icon-info">
+													<span class="tooltipText">{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__SelectBackgroundColor__c.inlineHelpText}</span>
+												</i>
+											</label>
+												<apex:inputField styleClass="color selectBackgroundColor" value="{!SBQQ__Theme__c.SBQQ__SelectBackgroundColor__c}"/></p>
+
+											<p><label>{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__SelectBorderColor__c.Label}
+												<i class="tooltip sf-icon-info">
+													<span class="tooltipText">{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__SelectBorderColor__c.inlineHelpText}</span>
+												</i>
+											</label>
+												<apex:inputField styleClass="color selectBorderColor" value="{!SBQQ__Theme__c.SBQQ__SelectBorderColor__c}"/></p>
+
+											<p><label>{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__SelectBorderStyle__c.Label}
+												<i class="tooltip sf-icon-info">
+													<span class="tooltipText">{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__SelectBorderStyle__c.inlineHelpText}</span>
+												</i>
+											</label>
+												<apex:inputField styleClass="input selectBorderStyle" value="{!SBQQ__Theme__c.SBQQ__SelectBorderStyle__c}"/></p>
+
+											<p><label>{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__SelectBorderWidth__c.Label}
+												<i class="tooltip sf-icon-info">
+													<span class="tooltipText">{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__SelectBorderWidth__c.inlineHelpText}</span>
+												</i>
+											</label>
+												<apex:inputField styleClass="input selectBorderWidth" value="{!SBQQ__Theme__c.SBQQ__SelectBorderWidth__c}"/></p>
+
+											<p><label>{!$ObjectType.Theme__c.fields.SelectBorderRadius__c.Label}
+												<a href="http://www.w3schools.com/cssref/css3_pr_border-radius.asp" target='_blank' class="tooltip"><i class="tooltip sf-icon-info">
+													<span class="tooltipText">{!$ObjectType.Theme__c.fields.SelectBorderRadius__c.inlineHelpText}</span>
+												</i></a>
+											</label>
+												<apex:inputField styleClass="input selectBorderRadius" value="{!SBQQ__Theme__c.SBQQ__SelectBorderRadius__c}"/></p>
+
+											<p><label>{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__SelectHeight__c.Label}
+												<i class="tooltip sf-icon-info">
+													<span class="tooltipText">{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__SelectHeight__c.inlineHelpText}</span>
+												</i>
+											</label>
+												<apex:inputField styleClass="input selectHeight" value="{!SBQQ__Theme__c.SBQQ__SelectHeight__c}"/></p>
+
+											<p><label>{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__SelectPaddingTop__c.Label}
+												<i class="tooltip sf-icon-info">
+													<span class="tooltipText">{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__SelectPaddingTop__c.inlineHelpText}</span>
+												</i>
+											</label>
+												<apex:inputField styleClass="input selectPaddingTop" value="{!SBQQ__Theme__c.SBQQ__SelectPaddingTop__c}"/></p>
+
+											<p><label>{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__SelectPaddingRight__c.Label}
+												<i class="tooltip sf-icon-info">
+													<span class="tooltipText">{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__SelectPaddingRight__c.inlineHelpText}</span>
+												</i>
+											</label>
+												<apex:inputField styleClass="input selectPaddingRight" value="{!SBQQ__Theme__c.SBQQ__SelectPaddingRight__c}"/></p>
+
+											<p><label>{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__SelectPaddingBottom__c.Label}
+												<i class="tooltip sf-icon-info">
+													<span class="tooltipText">{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__SelectPaddingBottom__c.inlineHelpText}</span>
+												</i>
+											</label>
+												<apex:inputField styleClass="input selectPaddingBottom" value="{!SBQQ__Theme__c.SBQQ__SelectPaddingBottom__c}"/></p>
+
+											<p><label>{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__SelectPaddingLeft__c.Label}
+												<i class="tooltip sf-icon-info">
+													<span class="tooltipText">{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__SelectPaddingLeft__c.inlineHelpText}</span>
+												</i>
+											</label>
+												<apex:inputField styleClass="input selectPaddingLeft" value="{!SBQQ__Theme__c.SBQQ__SelectPaddingLeft__c}"/></p>
+
+											<p><label>{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__CheckboxCheckMarkColor__c.Label}
+												<i class="tooltip sf-icon-info">
+													<span class="tooltipText">{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__CheckboxCheckMarkColor__c.inlineHelpText}</span>
+												</i>
+											</label>
+												<apex:inputField styleClass="color checkboxCheckMarkColor" value="{!SBQQ__Theme__c.SBQQ__CheckboxCheckMarkColor__c}"/></p>
+
+											<p><label>{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__CheckboxBackgroundColorChecked__c.Label}
+												<i class="tooltip sf-icon-info">
+													<span class="tooltipText">{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__CheckboxBackgroundColorChecked__c.inlineHelpText}</span>
+												</i>
+											</label>
+												<apex:inputField styleClass="color checkboxBackgroundColorChecked" value="{!SBQQ__Theme__c.SBQQ__CheckboxBackgroundColorChecked__c}"/></p>
+
+											<p><label>{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__CheckboxBackgroundColorUnchecked__c.Label}
+												<i class="tooltip sf-icon-info">
+													<span class="tooltipText">{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__CheckboxBackgroundColorUnchecked__c.inlineHelpText}</span>
+												</i>
+											</label>
+												<apex:inputField styleClass="color checkboxBackgroundColorUnchecked" value="{!SBQQ__Theme__c.SBQQ__CheckboxBackgroundColorUnchecked__c}"/></p>
+
+											<p><label>{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__CheckboxSize__c.Label}
+												<i class="tooltip sf-icon-info">
+													<span class="tooltipText">{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__CheckboxSize__c.inlineHelpText}</span>
+												</i>
+											</label>
+												<apex:inputField styleClass="input checkboxSize" value="{!SBQQ__Theme__c.SBQQ__CheckboxSize__c}"/></p>
+
+											<p><label>{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__CheckboxBorderColor__c.Label}
+												<i class="tooltip sf-icon-info">
+													<span class="tooltipText">{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__CheckboxBorderColor__c.inlineHelpText}</span>
+												</i>
+											</label>
+												<apex:inputField styleClass="color checkboxBorderColor" value="{!SBQQ__Theme__c.SBQQ__CheckboxBorderColor__c}"/></p>
+
+											<p><label>{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__CheckboxBorderStyle__c.Label}
+												<i class="tooltip sf-icon-info">
+													<span class="tooltipText">{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__CheckboxBorderStyle__c.inlineHelpText}</span>
+												</i>
+											</label>
+												<apex:inputField styleClass="input checkboxBorderStyle" value="{!SBQQ__Theme__c.SBQQ__CheckboxBorderStyle__c}"/></p>
+
+											<p><label>{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__CheckboxBorderWidth__c.Label}
+												<i class="tooltip sf-icon-info">
+													<span class="tooltipText">{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__CheckboxBorderWidth__c.inlineHelpText}</span>
+												</i>
+											</label>
+												<apex:inputField styleClass="input checkboxBorderWidth" value="{!SBQQ__Theme__c.SBQQ__CheckboxBorderWidth__c}"/></p>
+
+											<p><label>{!$ObjectType.Theme__c.fields.CheckboxBorderRadius__c.Label}
+												<a href="http://www.w3schools.com/cssref/css3_pr_border-radius.asp" target='_blank' class="tooltip"><i class="tooltip sf-icon-info">
+													<span class="tooltipText">{!$ObjectType.Theme__c.fields.CheckboxBorderRadius__c.inlineHelpText}</span>
+												</i></a>
+											</label>
+												<apex:inputField styleClass="input checkboxBorderRadius" value="{!SBQQ__Theme__c.SBQQ__CheckboxBorderRadius__c}"/></p>
+
+											<p><label>{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__RadioButtonColorChecked__c.Label}
+												<i class="tooltip sf-icon-info">
+													<span class="tooltipText">{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__RadioButtonColorChecked__c.inlineHelpText}</span>
+												</i>
+											</label>
+												<apex:inputField styleClass="color radioButtonColorChecked" value="{!SBQQ__Theme__c.SBQQ__RadioButtonColorChecked__c}"/></p>
+
+											<p><label>{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__RadioButtonColorUnchecked__c.Label}
+												<i class="tooltip sf-icon-info">
+													<span class="tooltipText">{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__RadioButtonColorUnchecked__c.inlineHelpText}</span>
+												</i>
+											</label>
+												<apex:inputField styleClass="color radioButtonColorUnchecked" value="{!SBQQ__Theme__c.SBQQ__RadioButtonColorUnchecked__c}"/></p>
+
+                                            <p><label>{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__InputOutlineColor__c.Label}
+                                                <i class="tooltip sf-icon-info">
+                                                    <span class="tooltipText">{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__InputOutlineColor__c.inlineHelpText}</span>
+                                                </i>
+                                            </label>
+                                                <apex:inputField styleClass="color inputOutlineColor" value="{!SBQQ__Theme__c.SBQQ__InputOutlineColor__c}"/></p>
+
+                                            <p><label>{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__InputOutlineWidth__c.Label}
+                                                <i class="tooltip sf-icon-info">
+                                                    <span class="tooltipText">{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__InputOutlineWidth__c.inlineHelpText}</span>
+                                                </i>
+                                            </label>
+                                                <apex:inputField styleClass="input inputOutlineWidth" value="{!SBQQ__Theme__c.SBQQ__InputOutlineWidth__c}"/></p>
+										</div>
+									</div><!-- .fieldset-body -->
+
+									<footer class="expandable-parent"><i class="sf-icon-chevronup expandable-child"></i><span>{!$Label.lbl_show}</span> 32 properties</footer>
+								</fieldset><!-- Category: Form (19 of 22)-->
+
+								<!-- Category: Icons (20 of 22)-->
+								<fieldset>
+									<legend class="expandable-parent">
+										<div class="category-header expandable-child">
+											<h2>{!$Label.lbl_icons}</h2>
+											<p>20/22</p>
+										</div>
+
+										<p>{!$Label.lbl_theme_icons_description}</p></legend>
+
+									<div class="fieldset-body">
+										<div>
+											<p><label> {!$ObjectType.Theme__c.fields.IconFontColor__c.Label}
+												<i class="tooltip sf-icon-info">
+													<span class="tooltipText">{!$ObjectType.Theme__c.fields.IconFontColor__c.inlineHelpText}</span>
+												</i>
+											</label>
+												<apex:inputField styleClass="color iconFontColor" value="{!SBQQ__Theme__c.SBQQ__IconFontColor__c}"/></p>
+
+											<p><label>{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__IconHoverColor__c.Label}
+												<i class="tooltip sf-icon-info">
+													<span class="tooltipText">{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__IconHoverColor__c.inlineHelpText}</span>
+												</i>
+											</label>
+												<apex:inputField styleClass="color iconHoverColor" value="{!SBQQ__Theme__c.SBQQ__IconHoverColor__c}"/></p>
+
+											<p><label>{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__IconDisabledColor__c.Label}
+												<i class="tooltip sf-icon-info">
+													<span class="tooltipText">{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__IconDisabledColor__c.inlineHelpText}</span>
+												</i>
+											</label>
+												<apex:inputField styleClass="color iconDisabledColor" value="{!SBQQ__Theme__c.SBQQ__IconDisabledColor__c}"/></p>
+
+											<p><label>{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__IconPageLoadingColor__c.Label}
+												<i class="tooltip sf-icon-info">
+													<span class="tooltipText">{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__IconPageLoadingColor__c.inlineHelpText}</span>
+												</i>
+											</label>
+												<apex:inputField styleClass="color iconPageLoadingColor" value="{!SBQQ__Theme__c.SBQQ__IconPageLoadingColor__c}"/></p>
+
+                                            <p><label>{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__FieldEditableIconColor__c.Label}
+                                                <i class="tooltip sf-icon-info">
+                                                    <span class="tooltipText">{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__FieldEditableIconColor__c.inlineHelpText}</span>
+                                                </i>
+                                            </label>
+                                                <apex:inputField styleClass="color fieldEditableIconColor" value="{!SBQQ__Theme__c.SBQQ__FieldEditableIconColor__c}"/></p>
+
+                                            <p><label>{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__FieldEditedColor__c.Label}
+                                                <i class="tooltip sf-icon-info">
+                                                    <span class="tooltipText">{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__FieldEditedColor__c.inlineHelpText}</span>
+                                                </i>
+                                            </label>
+                                                <apex:inputField styleClass="color fieldEditedColor" value="{!SBQQ__Theme__c.SBQQ__FieldEditedColor__c}"/></p>
+										</div>
+									</div><!-- .fieldset-body -->
+									<footer class="expandable-parent"><i class="sf-icon-chevronup expandable-child"></i><span>{!$Label.lbl_show}</span> 6 properties</footer>
+								</fieldset><!-- Category: Icons (20 of 22)-->
+
+								<!-- Category: Hyperlinks (21 of 22)-->
+								<fieldset>
+									<legend class="expandable-parent">
+										<div class="category-header expandable-child">
+											<h2>{!$Label.lbl_hyperlinks}</h2>
+											<p>21/22</p>
+										</div>
+
+										<p>{!$Label.lbl_theme_hyperlinks_description}</p></legend>
+
+									<div class="fieldset-body">
+										<div>
+											<p><label> {!$ObjectType.Theme__c.fields.HyperlinkColor__c.Label}
+												<i class="tooltip sf-icon-info">
+													<span class="tooltipText">{!$ObjectType.Theme__c.fields.HyperlinkColor__c.inlineHelpText}</span>
+												</i>
+											</label>
+												<apex:inputField styleClass="color hyperlinkColor" value="{!SBQQ__Theme__c.SBQQ__HyperlinkColor__c}"/></p>
+
+											<p><label>{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__HyperlinkActiveColor__c.Label}
+												<i class="tooltip sf-icon-info">
+													<span class="tooltipText">{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__HyperlinkActiveColor__c.inlineHelpText}</span>
+												</i>
+											</label>
+												<apex:inputField styleClass="color hyperlinkActiveColor" value="{!SBQQ__Theme__c.SBQQ__HyperlinkActiveColor__c}"/></p>
+
+											<p><label>{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__HyperlinkDisabledColor__c.Label}
+												<i class="tooltip sf-icon-info">
+													<span class="tooltipText">{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__HyperlinkDisabledColor__c.inlineHelpText}</span>
+												</i>
+											</label>
+												<apex:inputField styleClass="color hyperlinkDisabledColor" value="{!SBQQ__Theme__c.SBQQ__HyperlinkDisabledColor__c}"/></p>
+
+											<p><label>{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__HyperlinkHoverColor__c.Label}
+												<i class="tooltip sf-icon-info">
+													<span class="tooltipText">{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__HyperlinkHoverColor__c.inlineHelpText}</span>
+												</i>
+											</label>
+												<apex:inputField styleClass="color hyperlinkHoverColor" value="{!SBQQ__Theme__c.SBQQ__HyperlinkHoverColor__c}"/></p>
+										</div>
+									</div><!-- .fieldset-body -->
+
+									<footer class="expandable-parent"><i class="sf-icon-chevronup expandable-child"></i><span>{!$Label.lbl_show}</span> 4 properties</footer>
+								</fieldset><!-- Category: Hyperlinks (21 of 22)-->
+
+								<!-- Category: Contract Selector (22 of 22)-->
+								<fieldset>
+									<legend class="expandable-parent">
+										<div class="category-header expandable-child">
+											<h2>{!$Label.lbl_contract_selector}</h2>
+											<p>22/22</p>
+										</div>
+
+										<p>{!$Label.lbl_theme_contract_selector_description}</p></legend>
+
+									<div class="fieldset-body">
+										<div>
+											<p><label> {!$ObjectType.Theme__c.fields.SelectContractHideSkipActionOnAddOn__c.Label}
+												<i class="tooltip sf-icon-info">
+													<span class="tooltipText">{!$ObjectType.Theme__c.fields.SelectContractHideSkipActionOnAddOn__c.inlineHelpText}</span>
+												</i>
+											</label>
+												<apex:inputField styleClass="input hideIcons selectContractHideSkipActionOnAddOn" value="{!SBQQ__Theme__c.SBQQ__SelectContractHideSkipActionOnAddOn__c}"/></p>
+
+											<p><label>{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__SelectContractHideSkipActionOnAmend__c.Label}
+												<i class="tooltip sf-icon-info">
+													<span class="tooltipText">{!$ObjectType.SBQQ__Theme__c.fields.SBQQ__SelectContractHideSkipActionOnAmend__c.inlineHelpText}</span>
+												</i>
+											</label>
+												<apex:inputField styleClass="input hideIcons selectContractHideSkipActionOnAmend" value="{!SBQQ__Theme__c.SBQQ__SelectContractHideSkipActionOnAmend__c}"/></p>
+
+										</div>
+									</div><!-- .fieldset-body -->
+
+									<footer class="expandable-parent"><i class="sf-icon-chevronup expandable-child"></i><span>{!$Label.lbl_show}</span> 2 properties</footer>
+								</fieldset><!-- Category: Contract Selector (22 of 22)-->
+
+							</div>
+
+						</div><!-- #row1 -->
+
+						<!--Element to hold LessTheme.Resource for ease of use when compiling-->
+						<div id="themeLess" style="display:none;">
+							{!themeLess}
+						</div>
+
+						<!--Hidden Form Inputs-->
+						<apex:inputText styleClass="backgroundHide compiledCSS" value="{!SBQQ__Theme__c.SBQQ__CompiledCSS__c}"></apex:inputText>
+						<!--bottom padding-->
+							<div class="bottomPadding">
+						</div>
+					</div>
+				</div>
+				<apex:actionFunction name="invokePreview" rerender="toastPanel" action="{!preview}" onComplete="navigateToLineEditor('{!previewThemeURL}');"/>
+				<apex:actionFunction name="invokePublish" rerender="toastPanel" action="{!publish}"/>
+			</apex:form>
+		</div> <!-- #mainContent -->
+	</div> <!-- #qq -->
+
+	<script>
+		handleFixedPageHeader();
+
+		function toastListener() {
+			var toast = document.querySelector('#toast');
+			toast.addEventListener('click', function(e) {
+				var close = e.currentTarget;
+				close.parentElement.querySelector("#toast").classList.remove('visible');
+			});
+		}
+
+		$(window).load( function() {
+			$(window).scrollTop(0);
+			// Logic for closing toasts
+			toastListener();
+
+			document.querySelector('.previewButton').setAttribute('type', 'button');
+
+
+			// Logic for expanding fieldSetBody and fieldSetFooter
+			var row1 = document.getElementById('row1');
+
+			row1.addEventListener('click', function(e) {
+				var fieldSet = getFieldSetIfInLegendOrFooter(e.target);
+				if (!fieldSet ) {
+					return;
+				} else {
+					var expanded = fieldSet.classList.contains('expanded');
+					expandOrCollapseFieldSetBody(fieldSet, expanded);
+					updateFieldSetFooter(fieldSet, expanded);
+					fieldSet.classList.toggle('expanded');
+					return;
+				}
+			});
+
+			// Logic for tooltip of fieldSetBody
+			row1.addEventListener('mouseover', function(e) {
+				var toolTip = (e.target.nodeName == 'I') ? e.target : null;
+
+				if (!toolTip) {
+					return;
+				}
+
+				setToolTipPosition(e.target);
+
+				return;
+			});
+
+			row1.addEventListener('mouseout', function(e) {
+				var toolTip = (e.target.nodeName == 'I') ? e.target : null;
+
+				if (!toolTip) {
+					return;
+				}
+
+				var toolTipText = e.target.children[0];
+				toolTipText.style.left = '';
+				toolTipText.style.top = '';
+				toolTipText.style.display = 'none';
+
+				return;
+			});
+
+		}); // window.load();
+		function expandOrCollapseFieldSetBody(fieldSet, expanded) {
+			var fieldSetBody = fieldSet.querySelector('.fieldset-body');
+			fieldSetBody.style.maxHeight = expanded ? "0px": "1500px";
+			return;
+		}
+
+		function updateFieldSetFooter(fieldSet, expanded) {
+			var fieldSetFooter = fieldSet.querySelector('footer');
+
+			var chevron = fieldSetFooter.getElementsByTagName('i')[0],
+				span    = fieldSetFooter.getElementsByTagName('span')[0];
+
+			 chevron.style.transform = expanded ? "rotate(0deg)" : "rotate(180deg)";
+			 span.textContent = expanded ? "{!JSENCODE($Label.lbl_show)}" : "{!JSENCODE($Label.lbl_hide)}";
+
+		   return;
+		}
+
+		function getFieldSetIfInLegendOrFooter(target) {
+			var targetParent      = target.parentElement,
+				targetGrandparent = targetParent.parentElement;
+
+			if (target.nodeName == 'FIELDSET') {
+				return target;
+			}
+
+			if (targetParent.nodeName == 'FIELDSET') {
+				return targetParent;
+			}
+
+			if (targetParent.classList.contains('expandable-parent')) {
+				return targetParent.parentElement;
+			}
+
+			if (targetParent.classList.contains('expandable-child')) {
+				return targetParent.parentElement.parentElement;
+			}
+
+			if (targetGrandparent.classList.contains('expandable-child')) {
+				return targetGrandparent.parentElement.parentElement;
+			}
+
+			return null;
+		}
+
+		function setToolTipPosition(toolTip) {
+			var currentNode = toolTip;
+			var toolTipText          = toolTip.children[0];
+			var toolTipPosition     = toolTip.getBoundingClientRect();
+			var offsetParentPosition = null;
+
+			while (currentNode.nodeName != 'FIELDSET') {
+				currentNode = currentNode.parentElement;
+			}
+
+			currentNode.children[1].style.position;
+			offsetParentPosition = currentNode.getBoundingClientRect();
+
+			toolTipText.style.display = 'block';
+			toolTipText.style.left = toolTipPosition.right - 15 + 'px';
+			toolTipText.style.bottom =  offsetParentPosition.bottom - toolTipPosition.bottom - toolTipText.offsetHeight + 20 + 'px';
+		}
+
+		$("select option[value='']").remove()
+
+
+	</script>
+</apex:page>

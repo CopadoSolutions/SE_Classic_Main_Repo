@@ -1,0 +1,183 @@
+<apex:page standardController="SBQQ__QuoteTemplate__c" extensions="SBQQ.QuoteTemplateExtController" showHeader="{!(!$Setup.SBQQ__GeneralSettings__c.SBQQ__GlobalHeaderPermUsed__c || !$Permission.SBQQ__HideGlobalHeader)}" standardStylesheets="false" title="{!$Label.sbqq__lbl_clone_quote_template_related}">
+    <apex:stylesheet value="{!$Resource['sb']}"/>
+    <c:theme />
+    <div id="sbCloneRelated" class="sb">
+        <div class="sbForm"><apex:form >
+            <c:pageHeader title="{!$Label.sbqq__lbl_related_items_preview}" subtitle="{!SBQQ__QuoteTemplate__c.Name}" iconName="sf-icon-copy resize">
+                <div class="sbBtns">
+                    <apex:commandButton styleClass="sbBtn" action="{!onClone}" value="{!onCloneLabel}" />
+                    <apex:commandButton styleClass="sbBtn" action="{!onCancel}" value="{!onCancelLabel}" />
+                </div>
+            </c:pageHeader>
+            <apex:pageMessages />   
+            <apex:outputPanel rendered="{!additionalDocs.size!=0}"><div class="sbGroup">
+                <header class="sbPageBlockSection">
+                    <h3>
+                        <apex:outputText value="{!$ObjectType.SBQQ__RelatedContent__c.label}"/>&nbsp;
+                        <apex:outputText value="({!additionalDocs.size})"/>
+                    </h3>
+                    <div class="sbTool toggleButton"><i class="sf-icon-down" /></div>
+                </header>
+                <div class="tableContainer standard">
+                    <table class="sbTable">
+                        <thead>
+                            <tr>
+                                <th><apex:outputText value="{!$ObjectType.SBQQ__RelatedContent__c.fields.Name.label}"/></th>
+                                <th><apex:outputText value="{!$ObjectType.SBQQ__RelatedContent__c.fields.SBQQ__DisplayOrder__c.label}"/></th>
+                                <th><apex:outputText value="{!$ObjectType.SBQQ__RelatedContent__c.fields.SBQQ__ExternalId__c.label}"/></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <apex:repeat var="ad" value="{!additionalDocs}" rows="5">
+                            <tr> 
+                                <td><apex:outputField value="{!ad.Name}"/></td>
+                                <td><apex:outputField value="{!ad.SBQQ__DisplayOrder__c}"/></td>
+                                <td><apex:outputField value="{!ad.SBQQ__ExternalId__c}"/></td>
+                            </tr>
+                            </apex:repeat>
+                            <apex:outputPanel rendered="{!additionalDocs.size>5}">
+                                <tr><td colspan="42">
+                                    <apex:outputText value="{!$Label.sbqq__lbl_additional_cloned_items}">
+                                        <apex:param value="{!additionalDocs.size-5}"></apex:param>
+                                    </apex:outputText>
+                                </td></tr>
+                            </apex:outputPanel>
+                        </tbody>
+                    </table>
+                </div>
+            </div></apex:outputPanel>
+            <apex:outputPanel rendered="{!sections.size!=0}"><div class="sbGroup">
+                <header class="sbPageBlockSection">
+                    <h3>
+                        <apex:outputText value="{!$ObjectType.SBQQ__TemplateSection__c.label}"/>&nbsp;
+                        <apex:outputText value="({!sections.size})"/>
+                    </h3>
+                    <div class="sbTool toggleButton"><i class="sf-icon-down" /></div>
+                </header>
+                <div class="tableContainer standard">
+                    <table class="sbTable">
+                        <thead>
+                            <tr>
+                                <th><apex:outputText value="{!$ObjectType.SBQQ__TemplateSection__c.fields.Name.label}"/></th>
+                                <th><apex:outputText value="{!$ObjectType.SBQQ__TemplateSection__c.fields.SBQQ__Content__c.label}"/></th>
+                                <th><apex:outputText value="{!$ObjectType.SBQQ__TemplateSection__c.fields.SBQQ__TopMargin__c.label}"/></th>
+                                <th><apex:outputText value="{!$ObjectType.SBQQ__TemplateSection__c.fields.SBQQ__BottomMargin__c.label}"/></th>
+                                <th><apex:outputText value="{!$ObjectType.SBQQ__TemplateSection__c.fields.SBQQ__DisplayOrder__c.label}"/></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <apex:repeat var="sc" value="{!sections}" rows="5">
+                            <tr>
+                                <td><apex:outputField value="{!sc.Name}"/></td>
+                                <td><apex:outputField value="{!sc.SBQQ__Content__c}"/></td>
+                                <td><apex:outputField value="{!sc.SBQQ__TopMargin__c}"/></td>
+                                <td><apex:outputField value="{!sc.SBQQ__BottomMargin__c}"/></td>
+                                <td><apex:outputField value="{!sc.SBQQ__DisplayOrder__c}"/></td>
+                            </tr>
+                            </apex:repeat>
+                            <apex:outputPanel rendered="{!sections.size>5}">
+                                <tr><td colspan="42">
+                                    <apex:outputText value="{!$Label.sbqq__lbl_additional_cloned_items}">
+                                        <apex:param value="{!sections.size-5}"></apex:param>
+                                    </apex:outputText>
+                                </td></tr>
+                            </apex:outputPanel>
+                        </tbody>
+                    </table>
+                </div>
+            </div></apex:outputPanel>
+            <apex:outputPanel rendered="{!lineColumns.size!=0}"><div class="sbGroup">
+                <header class="sbPageBlockSection">
+                    <h3>
+                        <apex:outputText value="{!$ObjectType.SBQQ__LineColumn__c.label}"/>&nbsp;
+                        <apex:outputText value="({!lineColumns.size})"/>
+                    </h3>
+                    <div class="sbTool toggleButton"><i class="sf-icon-down" /></div>
+                </header>
+                <div class="tableContainer standard">
+                    <table class="sbTable">
+                        <thead>
+                            <tr>
+                                <th><apex:outputText value="{!$ObjectType.SBQQ__LineColumn__c.fields.Name.label}"/></th>
+                                <th><apex:outputText value="{!$ObjectType.SBQQ__LineColumn__c.fields.SBQQ__DisplayOrder__c.label}"/></th>
+                                <th><apex:outputText value="{!$ObjectType.SBQQ__LineColumn__c.fields.SBQQ__Width__c.label}"/></th>
+                                <th><apex:outputText value="{!$ObjectType.SBQQ__LineColumn__c.fields.SBQQ__FieldName__c.label}"/></th>
+                                <th><apex:outputText value="{!$ObjectType.SBQQ__LineColumn__c.fields.SBQQ__Alignment__c.label}"/></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <apex:repeat var="lc" value="{!lineColumns}" rows="5">
+                            <tr> 
+                                <td><apex:outputField value="{!lc.Name}"/></td>
+                                <td><apex:outputField value="{!lc.SBQQ__DisplayOrder__c}"/></td>
+                                <td><apex:outputField value="{!lc.SBQQ__Width__c}"/></td>
+                                <td><apex:outputField value="{!lc.SBQQ__FieldName__c}"/></td>
+                                <td><apex:outputField value="{!lc.SBQQ__Alignment__c}"/></td>
+                            </tr>
+                            </apex:repeat>
+                            <apex:outputPanel rendered="{!lineColumns.size>5}">
+                                <tr><td colspan="42">
+                                    <apex:outputText value="{!$Label.sbqq__lbl_additional_cloned_items}">
+                                        <apex:param value="{!lineColumns.size-5}"></apex:param>
+                                    </apex:outputText>
+                                </td></tr>
+                            </apex:outputPanel>
+                        </tbody>
+                    </table>
+                </div>
+            </div></apex:outputPanel>
+            <apex:outPutPanel rendered="{!translations.size!=0}"><div class="sbGroup">
+                <header class="sbPageBlockSection">
+                    <h3>
+                        <apex:outputText value="{!$ObjectType.SBQQ__Localization__c.label}"/>&nbsp;
+                        <apex:outputText value="({!translations.size})"/>
+                    </h3>
+                    <div class="sbTool toggleButton"><i class="sf-icon-down" /></div>
+                </header>
+                <div class="tableContainer standard">
+                    <table class="sbTable">
+                        <thead>
+                            <tr>
+                                <th><apex:outputText value="{!$ObjectType.SBQQ__Localization__c.fields.SBQQ__Label__c.label}"/></th>
+                                <th><apex:outputText value="{!$ObjectType.SBQQ__Localization__c.fields.SBQQ__APIName__c.label}"/></th>
+                                <th><apex:outputText value="{!$ObjectType.SBQQ__Localization__c.fields.SBQQ__Language__c.label}"/></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <apex:repeat var="loc" value="{!translations}" rows="5">
+                            <tr> 
+                                <td><apex:outputField value="{!loc.SBQQ__Label__c}"/></td>
+                                <td><apex:outputField value="{!loc.SBQQ__APIName__c}"/></td>
+                                <td><apex:outputField value="{!loc.SBQQ__Language__c}"/></td>
+                            </tr>
+                            </apex:repeat>
+                            <apex:outputPanel rendered="{!translations.size>5}">
+                                <tr><td colspan="42">
+                                    <apex:outputText value="{!$Label.sbqq__lbl_additional_cloned_items}">
+                                        <apex:param value="{!translations.size-5}"></apex:param>
+                                    </apex:outputText>
+                                </td></tr>
+                            </apex:outputPanel>
+                        </tbody>
+                    </table>
+                </div>
+            </div></apex:outPutPanel>
+        </apex:form></div>
+    </div>
+    <script>
+
+        var buttons = document.getElementsByClassName('toggleButton');
+        var tables = document.getElementsByClassName('tableContainer');
+
+        for (var i=0; i<buttons.length;i++) (function(i) {
+            buttons[i].onclick = function(){
+                if (tables[i].style.display=='block') {
+                    tables[i].style.display='none';
+                } else {
+                    tables[i].style.display = 'block';
+                }
+            }
+        })(i);
+
+    </script>
+</apex:page>

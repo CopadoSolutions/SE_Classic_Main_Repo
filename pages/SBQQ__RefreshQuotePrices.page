@@ -1,0 +1,73 @@
+<apex:page standardController="SBQQ__Quote__c" extensions="SBQQ.RefreshQuotePricesController" showHeader="{!(!$Setup.SBQQ__GeneralSettings__c.SBQQ__GlobalHeaderPermUsed__c || !$Permission.SBQQ__HideGlobalHeader)}" recordSetVar="quotes" standardStylesheets="false" title="{!$Label.sbqq__lbl_refresh_quote_prices}">
+	<apex:stylesheet value="{!$Resource['sb']}"/>
+	<c:theme />
+	<div id="sbRefreshPrices" class="sb">
+		<div class="sbForm"><apex:form >
+			<c:pageHeader title="{!$Label.sbqq__lbl_refresh_quote_prices}" subtitle="" iconName="sf-icon-refresh resize">
+				<div class="sbButtons">
+					<apex:commandButton styleClass="sbBtn" rendered="{!hasNewPrices || hasNewPricebook}" action="{!refreshPrices}" value="{!$Label.sbqq__lbl_refresh}" />
+					<apex:commandButton styleClass="sbBtn" action="{!cancel}" value="{!$Label.sbqq__lbl_cancel}" />
+				</div>
+			</c:pageHeader>
+			<apex:pageMessages />
+			<apex:outputPanel rendered="{!hasNewPricebook}">
+				<div class="sbGroup">
+					<div class="standard">
+						<table class="sbTable">
+							<thead class="rfHead">
+								<tr>
+									<th><apex:outputText value="{!$ObjectType.SBQQ__Quote__c.fields.Name.label}"/></th>
+									<th><apex:outputText value="{!$ObjectType.SBQQ__Quote__c.label + ' ' + $ObjectType.SBQQ__Quote__c.fields.SBQQ__PriceBook__c.label}"/></th>
+									<th><apex:outputText value="{!$ObjectType.Opportunity.label + ' ' + $ObjectType.Pricebook2.label}"/></th>
+								</tr>
+							</thead>
+							<tbody>
+								<apex:repeat var="quoteId" value="{!quoteIdToPricebookName}">
+								<tr>
+									<td><apex:outputText value="{!quoteIdToQuoteName[quoteId]}"/></td>
+									<td><apex:outputText value="{!quoteIdToPricebookName[quoteId]}"/></td>
+									<td><apex:outputText value="{!quoteIdToOpptyPricebookName[quoteId]}"/></td>
+								</tr>
+								</apex:repeat>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</apex:outputPanel>
+			<apex:outputPanel rendered="{!hasNewPrices}"><div class="sbGroup">
+				<div class="standard">
+					<table class="sbTable">
+						<thead class="rfHead">
+							<tr>
+								<th><apex:outputText value="{!$ObjectType.SBQQ__Quote__c.fields.Name.label}"/></th>
+								<th><apex:outputText value="{!$ObjectType.SBQQ__QuoteLine__c.fields.Name.label}"/></th>
+								<th><apex:outputText value="{!$ObjectType.SBQQ__QuoteLine__c.fields.SBQQ__ProductName__c.label}"/></th>
+								<th><apex:outputText value="{!$Label.sbqq__lbl_original_price}"/></th>
+								<th><apex:outputText value="{!$Label.sbqq__lbl_updated_price}"/></th>
+							</tr>
+						</thead>
+						<apex:repeat var="quoteId" value="{!mapQuoteIdQuoteLineList}">
+							<apex:repeat var="ql" value="{!mapQuoteIdQuoteLineList[quoteId]}">
+								<tbody>
+									<tr>
+										<td><apex:outputField value="{!ql['Quote__c']}"/></td>
+										<td><apex:outputField value="{!ql['Name']}"/></td>
+										<td><apex:outputField value="{!ql['ProductName__c']}"/></td>
+										<td><apex:outputField value="{!ql['ListPrice__c']}"/></td>
+										<td>
+											<apex:outputField rendered="{!isMultiCurrencyOrg}" value="{!ql['CurrencyIsoCode']}" />
+											<apex:outputText rendered="{!!isMultiCurrencyOrg}" value="{!currencySymbol}" />
+											<apex:outputText value="{0, number, #,###,###.00}">
+												<apex:param value="{!mapQuoteLineIdNewPrice[ql.Id]}" />
+											</apex:outputText>
+										</td>
+									</tr>
+								</tbody>
+							</apex:repeat>
+						</apex:repeat>
+					</table>
+				</div>
+			</div></apex:outputPanel>
+		</apex:form></div>
+	</div>
+</apex:page>

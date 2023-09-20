@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Niveau de prix</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Niveaux de prix</value>
+    </caseValues>
+    <fields>
+        <help>Montant de remise appliqué lorsque la quantité correspond à ce niveau.</help>
+        <label><!-- Discount ({0}) --></label>
+        <name>SBQQ__DiscountAmount__c</name>
+    </fields>
+    <fields>
+        <help>Pourcentage de remise appliqué lorsque la quantité correspond à ce niveau.</help>
+        <label><!-- Discount (%) --></label>
+        <name>SBQQ__DiscountPercentage__c</name>
+    </fields>
+    <fields>
+        <help>Limite inférieure de la plage de quantités de ce niveau.</help>
+        <label><!-- Lower Bound --></label>
+        <name>SBQQ__LowerBound__c</name>
+    </fields>
+    <fields>
+        <help>Chiffre qui indique la position de ce niveau dans le barème.</help>
+        <label><!-- Number --></label>
+        <name>SBQQ__Number__c</name>
+    </fields>
+    <fields>
+        <help>Prix par bloc d&apos;où ce niveau de prix est issu.</help>
+        <label><!-- Original Block Price --></label>
+        <name>SBQQ__OriginalBlockPrice__c</name>
+        <relationshipLabel><!-- Price Tiers --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Niveau de remise d&apos;où ce niveau de prix est issu.</help>
+        <label><!-- Original Discount Tier --></label>
+        <name>SBQQ__OriginalDiscountTier__c</name>
+        <relationshipLabel><!-- Price Tiers --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Modèle de prix d&apos;où ce niveau de prix est issu.</help>
+        <label><!-- Price Model --></label>
+        <name>SBQQ__PriceModel__c</name>
+    </fields>
+    <fields>
+        <help>Barème de prix auquel ce niveau appartient.</help>
+        <label><!-- Schedule --></label>
+        <name>SBQQ__PriceSchedule__c</name>
+        <relationshipLabel><!-- Price Tiers --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Prix actuel de ce niveau de prix. Ce champ est renseigné lors de la création d&apos;un ensemble de barèmes de remise pour un nouvel enregistrement de commande.</help>
+        <label><!-- Price --></label>
+        <name>SBQQ__Price__c</name>
+    </fields>
+    <fields>
+        <help>Remise totale sur la durée appliquée à ce niveau.</help>
+        <label><!-- Term Discount --></label>
+        <name>SBQQ__TermDiscount__c</name>
+    </fields>
+    <fields>
+        <help>Limite supérieure de la plage de quantités de ce niveau.</help>
+        <label><!-- Upper Bound --></label>
+        <name>SBQQ__UpperBound__c</name>
+    </fields>
+    <fields>
+        <help>Remise totale sur volume appliquée à ce niveau.</help>
+        <label><!-- Volume Discount --></label>
+        <name>SBQQ__VolumnDiscount__c</name>
+    </fields>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Price Tier Layout</layout>
+        <sections>
+            <label>Liens personnalisés</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>Informations sur les prix</label>
+            <section>Price Information</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Nom du niveau</nameFieldLabel>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

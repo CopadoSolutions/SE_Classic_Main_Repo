@@ -1,0 +1,34 @@
+<apex:page action="{!checkLicense}" standardController="Account" extensions="SBQQ.LicenseCheckerExt" docType="html-5.0" showheader="{!(!$Setup.SBQQ__GeneralSettings__c.SBQQ__GlobalHeaderPermUsed__c || !$Permission.SBQQ__HideGlobalHeader)}" standardStylesheets="false" title="{!$Label.sbqq__lbl_asset_selection}">
+	<apex:includeScript value="/soap/ajax/31.0/connection.js"/>
+	<apex:includeScript value="/soap/ajax/31.0/apex.js"/>
+	<apex:includeScript value="{!$Resource.SBQQ__jQuery}"/>
+	<apex:includeScript value="{!$Resource.SBQQ__jQueryUI}"/>
+	<apex:includeScript value="{!URLFOR($Resource.SBQQ__AngularJS,'angular.min.js')}"/>
+	<apex:includeScript value="{!URLFOR($Resource.SBQQ__AngularJS,'angular-sanitize.min.js')}"/>
+	<apex:includeScript value="{!URLFOR($Resource.SBQQ__AngularJS,'/i18n/angular-locale_en-us.js')}"/>
+	<apex:includeScript value="{!$Resource.SBQQ__AngularDnD}"/>
+	<apex:includeScript value="{!$Resource.SBQQ__UIBootstrap}"/>
+	<apex:includeScript value="{!$Resource.SBQQ__Directives}"/>
+	<apex:includeScript value="{!$Resource.SBQQ__UI}"/>
+	<apex:includeScript value="{!$Resource.SBQQ__WebUI}"/>
+	<apex:includeScript value="{!$Resource.SBQQ__HtmlSanitizer}"/>
+	<apex:includeScript value="{!$Resource.SBQQ__RemotingServiceProxies}"/>
+	<apex:includeScript value="{!$Resource.SBQQ__InfiniteScroll}"/>
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+			var quoteName = '{!JSENCODE($CurrentPage.name)}';
+			var namespace = (quoteName.toLowerCase().substring(0,4) == 'sbqq') ? 'SBQQ' : '';
+			qqBootstrapWeb({namespace:namespace,sessionId:'{!JSENCODE($API.Session_ID)}',sitePrefix:'{!$Site.Prefix}'});
+			document.getElementById('qq').style.display = 'block';
+		});
+	</script>
+
+	<div id="qq" style="display: none">
+		<div id="mainContent" rendered="">
+			<form id="mainForm" name="mainForm">
+				<c:assetLookup headerTitle="{!$Label.sbqq__lbl_asset_selection}" headerSubtitle="{!Account.Name}" accountId="{!Account.Id}" assetFromAccount="true" assetAmend="true"/>
+			</form>
+		</div>
+	</div>
+</apex:page>

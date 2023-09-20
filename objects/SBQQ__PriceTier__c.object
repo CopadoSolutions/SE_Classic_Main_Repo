@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <customHelpPage>SBQQ__PriceScheduleHelp</customHelpPage>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <description>Price Tier that specifies discount for a given quantity range.</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableEnhancedLookup>false</enableEnhancedLookup>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>false</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ControlledByParent</externalSharingModel>
+    <fields>
+        <fullName>SBQQ__DiscountAmount__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Discount amount applied when quantity falls in this tier.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Discount amount applied when quantity falls in this tier.</inlineHelpText>
+        <label>Discount ({0})</label>
+        <precision>14</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__DiscountPercentage__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Discount percentage applied when quantity falls in this tier.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Discount percentage applied when quantity falls in this tier.</inlineHelpText>
+        <label>Discount (%)</label>
+        <precision>14</precision>
+        <required>false</required>
+        <scale>10</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__LowerBound__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Lower bound of the quantity range for this tier</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Lower bound of the quantity range for this tier.</inlineHelpText>
+        <label>Lower Bound</label>
+        <precision>12</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SBQQ__Number__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Number indicating this tier&apos;s position within the schedule.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Number indicating this tier&apos;s position within the schedule.</inlineHelpText>
+        <label>Number</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SBQQ__OriginalBlockPrice__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>The block price where this price tier is originated from.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The block price where this price tier is originated from.</inlineHelpText>
+        <label>Original Block Price</label>
+        <referenceTo>SBQQ__BlockPrice__c</referenceTo>
+        <relationshipLabel>Price Tiers</relationshipLabel>
+        <relationshipName>PriceTiers</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__OriginalDiscountTier__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>The discount tier where this price tier is originated from.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The discount tier where this price tier is originated from.</inlineHelpText>
+        <label>Original Discount Tier</label>
+        <referenceTo>SBQQ__DiscountTier__c</referenceTo>
+        <relationshipLabel>Price Tiers</relationshipLabel>
+        <relationshipName>PriceTiers</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__PriceModel__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The price model that determines how the prices are calculated.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The price model that determines how the prices are calculated.</inlineHelpText>
+        <label>Price Model</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>SBQQ__PriceModel</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SBQQ__PriceSchedule__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Price Schedule to which this tier belongs.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Price Schedule to which this tier belongs.</inlineHelpText>
+        <label>Schedule</label>
+        <referenceTo>SBQQ__PriceSchedule__c</referenceTo>
+        <relationshipLabel>Price Tiers</relationshipLabel>
+        <relationshipName>PriceTiers</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>SBQQ__Price__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The actual price of this Price Tier. This field will be populated when a new set of Price Schedules are created for a new Order record.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The actual price of this Price Tier. This field will be populated when a new set of Price Schedules are created for a new Order record.</inlineHelpText>
+        <label>Price</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>7</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__TermDiscount__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The total term discount taken for this tier.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The total term discount taken for this tier.</inlineHelpText>
+        <label>Term Discount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__UpperBound__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Upper bound of the quantity range for this tier.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Upper bound of the quantity range for this tier.</inlineHelpText>
+        <label>Upper Bound</label>
+        <precision>12</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SBQQ__VolumnDiscount__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The total volume discount taken for this tier.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The total volume discount taken for this tier.</inlineHelpText>
+        <label>Volume Discount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <label>Price Tier</label>
+    <nameField>
+        <label>Tier Name</label>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Price Tiers</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

@@ -151,5 +151,15 @@
         <fullName>Status</fullName>
         <trackHistory>false</trackHistory>
     </fields>
+    <searchLayouts>
+        <customTabListAdditionalFields>AdvAccountForecastSet</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Account</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Status</customTabListAdditionalFields>
+        <customTabListAdditionalFields>LastCalculationDate</customTabListAdditionalFields>
+        <searchResultsAdditionalFields>AdvAccountForecastSet</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Account</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Status</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>LastCalculationDate</searchResultsAdditionalFields>
+    </searchLayouts>
     <sharingModel>Private</sharingModel>
 </CustomObject>

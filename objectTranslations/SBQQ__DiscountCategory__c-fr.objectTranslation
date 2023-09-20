@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Catégorie de remise</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Catégories de remise</value>
+    </caseValues>
+    <fields>
+        <help>Saisissez la remise maximale autorisée pour cette catégorie de produits.</help>
+        <label><!-- Max Discount (%) --></label>
+        <name>SBQQ__MaxDiscountRate__c</name>
+    </fields>
+    <gender>Feminine</gender>
+    <layouts>
+        <layout>Discount Category Layout</layout>
+        <sections>
+            <label>Liens personnalisés</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Nom de la catégorie</nameFieldLabel>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

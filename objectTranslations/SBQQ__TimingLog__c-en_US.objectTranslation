@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Element --></label>
+        <name>SBQQ__Element__c</name>
+    </fields>
+    <fields>
+        <label><!-- Finish --></label>
+        <name>SBQQ__Finish__c</name>
+    </fields>
+    <fields>
+        <help><!-- Log entry --></help>
+        <label><!-- Log --></label>
+        <name>SBQQ__Log__c</name>
+    </fields>
+    <fields>
+        <help><!-- Starting CPU time --></help>
+        <label><!-- Start --></label>
+        <name>SBQQ__Start__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total CPU Time --></label>
+        <name>SBQQ__Total__c</name>
+    </fields>
+    <fields>
+        <label><!-- URL --></label>
+        <name>SBQQ__URL__c</name>
+    </fields>
+</CustomObjectTranslation>

@@ -131,25 +131,32 @@
     <externalSharingModel>Private</externalSharingModel>
     <fields>
         <fullName>ActiveFromDate</fullName>
+        <trackHistory>false</trackHistory>
     </fields>
     <fields>
         <fullName>ActiveToDate</fullName>
+        <trackHistory>false</trackHistory>
     </fields>
     <fields>
         <fullName>Name</fullName>
+        <trackHistory>false</trackHistory>
     </fields>
     <fields>
         <fullName>PartyId</fullName>
+        <trackHistory>false</trackHistory>
         <type>Lookup</type>
     </fields>
     <fields>
         <fullName>SalesAmount</fullName>
+        <trackHistory>false</trackHistory>
     </fields>
     <fields>
         <fullName>SellerTier</fullName>
+        <trackHistory>false</trackHistory>
     </fields>
     <fields>
         <fullName>SellerType</fullName>
+        <trackHistory>false</trackHistory>
     </fields>
     <listViews>
         <fullName>All_Sellers</fullName>

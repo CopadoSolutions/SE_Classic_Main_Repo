@@ -171,8 +171,8 @@
         <label>AccountListUpdater Name</label>
         <type>Text</type>
     </nameField>
-    <pluralLabel>AccountListUpdaters</pluralLabel>
-    <searchLayouts />
+    <pluralLabel>RollbackFeatureTest</pluralLabel>
+    <searchLayouts/>
     <sharingModel>ReadWrite</sharingModel>
     <visibility>Public</visibility>
 </CustomObject>

@@ -3,6 +3,7 @@
   "currentThemeId" : "3cbc8261-de8d-42b4-ac1b-194881cb54bd",
   "headMarkup" : null,
   "id" : "7f1e9589-70ef-4b09-980c-437b12f567f8",
+  "isLockerServiceEnabled" : true,
   "isRelaxedCSPLevel" : false,
   "label" : "main",
   "templateName" : "CPT Community Template",

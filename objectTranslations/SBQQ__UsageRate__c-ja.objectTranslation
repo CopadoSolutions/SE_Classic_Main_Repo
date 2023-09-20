@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>利用レート (予約済み)</value>
+    </caseValues>
+    <fields>
+        <label><!-- Description --></label>
+        <name>SBQQ__Description__c</name>
+    </fields>
+    <fields>
+        <help>この利用レートの利用範囲の下限</help>
+        <label><!-- Lower Bound --></label>
+        <name>SBQQ__LowerBound__c</name>
+    </fields>
+    <fields>
+        <help>この利用レートで参照する価格表を選択します</help>
+        <label><!-- Price Book --></label>
+        <name>SBQQ__PriceBook__c</name>
+        <relationshipLabel><!-- Usage Rates --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Price Type --></label>
+        <name>SBQQ__PriceType__c</name>
+        <picklistValues>
+            <masterLabel>Flat Fee</masterLabel>
+            <translation>定額</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Per Unit</masterLabel>
+            <translation>単位ごと</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>有効な通貨の価格。マルチ通貨組織ではこの項目を使用します。</help>
+        <label><!-- Price --></label>
+        <name>SBQQ__Price__c</name>
+    </fields>
+    <fields>
+        <help>この利用レートの利用範囲の上限</help>
+        <label><!-- Upper Bound --></label>
+        <name>SBQQ__UpperBound__c</name>
+    </fields>
+    <fields>
+        <label><!-- Usage Price Method --></label>
+        <name>SBQQ__UsagePriceMethod__c</name>
+        <picklistValues>
+            <masterLabel>Included Quantity</masterLabel>
+            <translation>含める数量</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Overage (per unit)</masterLabel>
+            <translation>超過 (単位ごと)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Per Unit</masterLabel>
+            <translation>単位ごと</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Period High Water Mark</masterLabel>
+            <translation>期間のハイウォーターマーク</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Usage Ceiling Quantity (Maximum)</masterLabel>
+            <translation>利用数量の上限 (最大)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Usage Floor Quantity (Minimum)</masterLabel>
+            <translation>利用数量の下限 (最小)</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>利用レートの処理順序を決定するときに Salesforce Billing で使用される数値を定義します</help>
+        <label><!-- Usage Processing Order --></label>
+        <name>SBQQ__UsageProcessingOrder__c</name>
+    </fields>
+    <fields>
+        <help>この利用レートの親利用レートカード</help>
+        <label><!-- Usage Rate Card --></label>
+        <name>SBQQ__UsageRateCard__c</name>
+        <relationshipLabel><!-- Usage Rates --></relationshipLabel>
+    </fields>
+    <layouts>
+        <layout>Usage Rate Layout</layout>
+        <sections>
+            <label>カスタムリンク</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>階層情報</label>
+            <section>Tier Information</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>利用レート</nameFieldLabel>
+</CustomObjectTranslation>

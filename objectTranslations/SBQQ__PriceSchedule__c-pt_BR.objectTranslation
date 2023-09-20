@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Programação de preços</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Programações de preços</value>
+    </caseValues>
+    <fields>
+        <help>Conta a qual esse Cronograma de preços se aplica. Usada apenas em combinação com a opção de Substituição do cronograma de preços na UI do Editor de linha de cotação.</help>
+        <label><!-- Account --></label>
+        <name>SBQQ__Account__c</name>
+        <relationshipLabel><!-- Price Schedules --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Especifique como agregar quantidades de linhas de cotação para produtos usando esse cronograma. Por padrão, a quantidade de cada linha (inclusive para o mesmo produto) é considerada de modo independente.</help>
+        <label><!-- Aggregation Scope --></label>
+        <name>SBQQ__AggregationScope__c</name>
+        <picklistValues>
+            <masterLabel>Group</masterLabel>
+            <translation>Grupo</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quote</masterLabel>
+            <translation>Cotação</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Selecione o campo que você deseja combinar com o mesmo campo na cotação.</help>
+        <label><!-- Constraint Field --></label>
+        <name>SBQQ__ConstraintField__c</name>
+        <picklistValues>
+            <masterLabel>Account__c</masterLabel>
+            <translation>Account__c</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Selecione a caixa de seleção se deseja estender os descontos por volume sobre o volume total que o cliente possui (ou seja, a quantidade cotada mais compras anteriores).</help>
+        <label><!-- Cross Orders --></label>
+        <name>SBQQ__CrossOrders__c</name>
+    </fields>
+    <fields>
+        <help>Selecione a caixa de seleção para agregar as quantidades de todos os produtos usando esse cronograma com o propósito de cálculo de desconto por volume. Os Descontos em placas não podem ser usados para descontos de Produto cruzado.</help>
+        <label><!-- Cross Products --></label>
+        <name>SBQQ__CrossProducts__c</name>
+    </fields>
+    <fields>
+        <help>Descrição para esse Cronograma de preço.</help>
+        <label><!-- Description --></label>
+        <name>SBQQ__Description__c</name>
+    </fields>
+    <fields>
+        <help>Especifique a unidade do desconto: valor ou percentual.</help>
+        <label><!-- Discount Unit --></label>
+        <name>SBQQ__DiscountUnit__c</name>
+        <picklistValues>
+            <masterLabel>Amount</masterLabel>
+            <translation>Valor</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Percent</masterLabel>
+            <translation>Percentual</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Price</masterLabel>
+            <translation>Preço</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Insira uma lista de IDs do catálogo de preços separado por vírgulas que não devem ser aplicados a esse Cronograma de preço.</help>
+        <label><!-- Excluded Pricebook IDs --></label>
+        <name>SBQQ__ExcludedPricebookIds__c</name>
+    </fields>
+    <fields>
+        <help>Se marcada, as Quantidades de opções de produto empacotado serão incluídas no Escopo de agregação</help>
+        <label><!-- Include Bundled Quantities --></label>
+        <name>SBQQ__IncludeBundledProducts__c</name>
+    </fields>
+    <fields>
+        <help>Produto do pedido ao qual esse Cronograma de preços se aplica.</help>
+        <label><!-- Order Product --></label>
+        <lookupFilter>
+            <errorMessage><!-- Please select Order Products of the associated order. --></errorMessage>
+        </lookupFilter>
+        <name>SBQQ__OrderProduct__c</name>
+        <relationshipLabel><!-- Price Schedules --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Pedido ao qual esse Cronograma de preços se aplica.</help>
+        <label><!-- Order --></label>
+        <name>SBQQ__Order__c</name>
+        <relationshipLabel><!-- Price Schedules --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>O cronograma de descontos do qual esse cronograma de preços é originado.</help>
+        <label><!-- Original Discount Schedule --></label>
+        <name>SBQQ__OriginalDiscountSchedule__c</name>
+        <relationshipLabel><!-- Price Schedules --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Determina se o Nível de desconto atual em que o produto se enquadra é editável, se todos os Níveis são editáveis ou se nenhum é editável.</help>
+        <label><!-- Override Behavior --></label>
+        <name>SBQQ__OverrideBehavior__c</name>
+        <picklistValues>
+            <masterLabel>All</masterLabel>
+            <translation>Todos</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Current Tier Only</masterLabel>
+            <translation>Apenas nível atual</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Casas decimais para preços produzidos por esse Cronograma de preços.</help>
+        <label><!-- Price Scale --></label>
+        <name>SBQQ__PriceScale__c</name>
+    </fields>
+    <fields>
+        <help>O tipo de preço que determina como os preços ou os descontos são calculados.</help>
+        <label><!-- Type --></label>
+        <name>SBQQ__PriceType__c</name>
+    </fields>
+    <fields>
+        <help>Catálogo de preços ao qual esse Cronograma de preços se aplica. Usado apenas em combinação com a pesquisa do produto para atribuir o cronograma específico do produto/catálogo de preços.</help>
+        <label><!-- Price Book --></label>
+        <name>SBQQ__Pricebook__c</name>
+        <relationshipLabel><!-- Price Schedules --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Produto ao qual esse Cronograma de preços se aplica. Usado apenas em combinação com a pesquisa do Catálogo de preços para atribuir cronograma específico do produto/catálogo de preços.</help>
+        <label><!-- Product --></label>
+        <name>SBQQ__Product__c</name>
+        <relationshipLabel><!-- Price Schedules --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Campo usado para calcular a precificação dos Cronogramas de preços.</help>
+        <label><!-- Quote Line Quantity Field --></label>
+        <name>SBQQ__QuoteLineQuantityField__c</name>
+        <picklistValues>
+            <masterLabel>Quantity</masterLabel>
+            <translation>Quantidade</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Linha de cotação a qual esse Cronograma de preços se aplica. Usada apenas em combinação com a Substituição do cronograma de preços na UI do Editor de linha de cotação.</help>
+        <label><!-- Quote Line --></label>
+        <name>SBQQ__QuoteLine__c</name>
+        <relationshipLabel><!-- Price Schedules --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Cotação a qual esse Cronograma de preços se aplica. Usada apenas em combinação com a Substituição do cronograma de preços na UI do Editor de linha de cotação.</help>
+        <label><!-- Quote --></label>
+        <name>SBQQ__Quote__c</name>
+        <relationshipLabel><!-- Price Schedules --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Desconto do termo no total aplicado a esse cronograma de preços. O valor está disponível apenas para o Tipo de preço por nível. Para o Tipo de preço por volume, o desconto do termo está disponível para cada nível de preço.</help>
+        <label><!-- Term Discount --></label>
+        <name>SBQQ__TermDiscount__c</name>
+    </fields>
+    <fields>
+        <help>Se marcada, a Unidade do desconto do Cronograma de preços definida pelo usuário será definida como Preço.</help>
+        <label><!-- Use Price For Amount --></label>
+        <name>SBQQ__UsePriceForAmount__c</name>
+    </fields>
+    <fields>
+        <help>Identifica se esse cronograma foi criado por um usuário final ou um administrador.</help>
+        <label><!-- User Defined --></label>
+        <name>SBQQ__UserDefined__c</name>
+    </fields>
+    <gender>Feminine</gender>
+    <layouts>
+        <layout>Price Schedule Layout</layout>
+        <sections>
+            <label>Links personalizados</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>Informações do instantâneo</label>
+            <section>Snapshot Information</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Nome do cronograma</nameFieldLabel>
+    <webLinks>
+        <label><!-- EditTiers --></label>
+        <name>SBQQ__EditTiers</name>
+    </webLinks>
+</CustomObjectTranslation>

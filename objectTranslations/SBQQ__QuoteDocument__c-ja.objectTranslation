@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>見積ドキュメント</value>
+    </caseValues>
+    <fields>
+        <help>このドキュメントで生成される添付レコードの ID。</help>
+        <label><!-- Attachment Id --></label>
+        <name>SBQQ__AttachmentId__c</name>
+    </fields>
+    <fields>
+        <help>このドキュメントが生成されたときの見積の顧客金額。</help>
+        <label><!-- Customer Amount --></label>
+        <name>SBQQ__CustomerAmount__c</name>
+    </fields>
+    <fields>
+        <help>生成される PDF を格納するドキュメントレコードの ID。</help>
+        <label><!-- Document Id --></label>
+        <name>SBQQ__DocumentId__c</name>
+    </fields>
+    <fields>
+        <help>電子署名するドキュメントの項目。</help>
+        <label><!-- Electronic Signature --></label>
+        <name>SBQQ__ElectronicSignature__c</name>
+    </fields>
+    <fields>
+        <help>見積 ID とバージョン番号の組み合わせが一意になるようにするために使用されるキー。</help>
+        <label><!-- Key --></label>
+        <name>SBQQ__Key__c</name>
+    </fields>
+    <fields>
+        <help>このドキュメントが生成されたときの見積のリスト金額。</help>
+        <label><!-- List Amount --></label>
+        <name>SBQQ__ListAmount__c</name>
+    </fields>
+    <fields>
+        <help>このドキュメントが生成されたときの見積の正味金額。</help>
+        <label><!-- Net Amount --></label>
+        <name>SBQQ__NetAmount__c</name>
+    </fields>
+    <fields>
+        <help>このドキュメントの見積の親となる商談を選択します。</help>
+        <label><!-- Opportunity --></label>
+        <name>SBQQ__Opportunity__c</name>
+        <relationshipLabel><!-- Quote Documents --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>このドキュメントの出力形式を選択します。</help>
+        <label><!-- Output Format --></label>
+        <name>SBQQ__OutputFormat__c</name>
+        <picklistValues>
+            <masterLabel>MS Word</masterLabel>
+            <translation>MS Word</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PDF</masterLabel>
+            <translation>PDF</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>このドキュメントの用紙サイズを選択します。</help>
+        <label><!-- Paper Size --></label>
+        <name>SBQQ__PaperSize__c</name>
+    </fields>
+    <fields>
+        <help>[メール] ボタン (デフォルトでは [宛先] 項目) で使用される見積の主取引先責任者を参照します。</help>
+        <label><!-- Primary Contact Id --></label>
+        <name>SBQQ__PrimaryContactId__c</name>
+    </fields>
+    <fields>
+        <help>このドキュメントを生成した見積テンプレート。</help>
+        <label><!-- Quote Template --></label>
+        <name>SBQQ__QuoteTemplate__c</name>
+        <relationshipLabel><!-- Quote Documents --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>この見積ドキュメントが属する見積。</help>
+        <label><!-- Quote --></label>
+        <name>SBQQ__Quote__c</name>
+        <relationshipLabel><!-- Quote Documents --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>電子署名の状況。</help>
+        <label><!-- Signature Status --></label>
+        <name>SBQQ__SignatureStatus__c</name>
+        <picklistValues>
+            <masterLabel>Expired</masterLabel>
+            <translation>終了</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending</masterLabel>
+            <translation>待機中</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Revoked</masterLabel>
+            <translation>取り消し済み</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sent</masterLabel>
+            <translation>送信済み</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Signed</masterLabel>
+            <translation>署名済み</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>このドキュメントを生成するために使用されるテンプレートの名前。</help>
+        <label><!-- Template --></label>
+        <name>SBQQ__Template__c</name>
+    </fields>
+    <fields>
+        <help>順次増加するバージョン番号。</help>
+        <label><!-- Version --></label>
+        <name>SBQQ__Version__c</name>
+    </fields>
+    <fields>
+        <help>ユーザは見積ドキュメントのレコード ID を表示できます。</help>
+        <label><!-- View Record Id --></label>
+        <name>SBQQ__ViewRecordId__c</name>
+    </fields>
+    <layouts>
+        <layout>Quote Document Layout</layout>
+        <sections>
+            <label>カスタムリンク</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>ドキュメント名</nameFieldLabel>
+    <webLinks>
+        <label><!-- Email --></label>
+        <name>SBQQ__Email</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- View --></label>
+        <name>SBQQ__View</name>
+    </webLinks>
+</CustomObjectTranslation>

@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Fehlerbedingung</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Fehlerbedingungen</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value><!-- Fehlerbedingung --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+        <value><!-- Fehlerbedingungen --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value><!-- Fehlerbedingung --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>true</plural>
+        <value><!-- Fehlerbedingungen --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value><!-- Fehlerbedingung --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value><!-- Fehlerbedingungen --></value>
+    </caseValues>
+    <fields>
+        <help>Wählen Sie &quot;Variable&quot; aus, um diese Regel für eine Zusammenfassungsvariable auszuwerten. Andernfalls wählen Sie &quot;Wert&quot;.</help>
+        <label><!-- Filter Type --></label>
+        <name>SBQQ__FilterType__c</name>
+        <picklistValues>
+            <masterLabel>Value</masterLabel>
+            <translation>Wert</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Variable</masterLabel>
+            <translation>Variable</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Geben Sie den Wert zur Auswertung der getesteten Variablen an. Der Datumswert muss in diesem Format vorliegen: JJJJ-MM-TT 00:00:00</help>
+        <label><!-- Filter Value --></label>
+        <name>SBQQ__FilterValue__c</name>
+    </fields>
+    <fields>
+        <help>Wählen Sie die Zusammenfassungsvariable aus, die von dieser Regel ausgewertet werden soll.</help>
+        <label><!-- Filter Variable --></label>
+        <name>SBQQ__FilterVariable__c</name>
+        <relationshipLabel><!-- Error Conditions (Filter Variable) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Weisen Sie dieser Bedingung eine eindeutige Nummer zu, um sie unter &quot;Erweiterte Bedingung&quot; der Produktregel zu referenzieren.</help>
+        <label><!-- Index --></label>
+        <name>SBQQ__Index__c</name>
+    </fields>
+    <fields>
+        <help>Wählen Sie den Operator aus, der beim Auswerten Ihrer getesteten Auswahl verwendet werden soll.</help>
+        <label><!-- Operator --></label>
+        <name>SBQQ__Operator__c</name>
+        <picklistValues>
+            <masterLabel>contains</masterLabel>
+            <translation>enthält</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ends with</masterLabel>
+            <translation>endet auf</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>equals</masterLabel>
+            <translation>gleich</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>greater or equals</masterLabel>
+            <translation>größer oder gleich</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>greater than</masterLabel>
+            <translation>größer als</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>less or equals</masterLabel>
+            <translation>kleiner oder gleich</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>less than</masterLabel>
+            <translation>kleiner als</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>not equals</masterLabel>
+            <translation>ungleich</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>starts with</masterLabel>
+            <translation>beginnt mit</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- ParentRuleIsActive --></label>
+        <name>SBQQ__ParentRuleIsActive__c</name>
+    </fields>
+    <fields>
+        <label><!-- RuleTargetsQuote --></label>
+        <name>SBQQ__RuleTargetsQuote__c</name>
+    </fields>
+    <fields>
+        <help>Übergeordnete Regel für die Bedingung (die diese Bedingung ausführt).</help>
+        <label><!-- Rule --></label>
+        <name>SBQQ__Rule__c</name>
+        <relationshipLabel><!-- Error Conditions --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Wird verwendet, um das spezifische Attribut anzugeben, wenn &quot;Getestetes Feld&quot; ein globales Konfigurationsattributfeld ist.</help>
+        <label><!-- Tested Attribute --></label>
+        <name>SBQQ__TestedAttribute__c</name>
+        <relationshipLabel><!-- Error Conditions --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Feld im Objekt &quot;Angebot&quot;, das beim Testen dieser Bedingung verwendet werden soll.</help>
+        <label><!-- Tested Field --></label>
+        <name>SBQQ__TestedField__c</name>
+        <picklistValues>
+            <masterLabel>Group Line Items</masterLabel>
+            <translation>Belegposten gruppieren</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unit Price</masterLabel>
+            <translation>Stückpreis</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Geben Sie das Objekt an, das das getestete Feld enthält.</help>
+        <label><!-- Tested Object --></label>
+        <name>SBQQ__TestedObject__c</name>
+        <picklistValues>
+            <masterLabel>Configuration Attributes</masterLabel>
+            <translation>Konfigurationsattribute</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product Option</masterLabel>
+            <translation>Produktoption</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quote</masterLabel>
+            <translation>Angebot</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quote Line</masterLabel>
+            <translation>Angebotsbelegposten</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quote Line Group</masterLabel>
+            <translation>Gruppe von Angebotsbelegposten</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Upgraded Asset</masterLabel>
+            <translation>Aktualisierter Vermögenswert</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Wählen Sie die Zusammenfassungsvariable aus, die von dieser Regel ausgewertet werden soll.</help>
+        <label><!-- Tested Variable --></label>
+        <name>SBQQ__TestedVariable__c</name>
+        <relationshipLabel><!-- Error Conditions (Tested Variable) --></relationshipLabel>
+    </fields>
+    <gender>Feminine</gender>
+    <layouts>
+        <layout>Error Condition Layout</layout>
+        <sections>
+            <label>Benutzerdefinierte Links</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>Filterinformationen</label>
+            <section>Filter Information</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Bedingungsnummer</nameFieldLabel>
+    <validationRules>
+        <errorMessage><!-- A Filter Type of &apos;Variable&apos; must have a Filter Variable. --></errorMessage>
+        <name>SBQQ__FilterCombinationValidation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- This combination of ProductRule.Scope and ErrorCondition.TestedObject is not valid. --></errorMessage>
+        <name>SBQQ__ScopeAndErrorConditionTestedObject</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Tested Attribute required since the Tested Field is a global Configuration Attribute field. --></errorMessage>
+        <name>SBQQ__Tested_attr_required_if_global_field</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You must specify either Tested Field or Tested Variable. --></errorMessage>
+        <name>SBQQ__Tested_field_or_variable_required</name>
+    </validationRules>
+</CustomObjectTranslation>

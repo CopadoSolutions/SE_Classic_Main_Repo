@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ApexComponent xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>34.0</apiVersion>
+    <description>Generates layout-master-set XSL-FO element.</description>
+    <label>Layout Master Set</label>
+</ApexComponent>
