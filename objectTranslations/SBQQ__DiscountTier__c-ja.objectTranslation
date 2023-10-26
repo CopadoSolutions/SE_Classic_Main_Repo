@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>割引層</value>
+    </caseValues>
+    <fieldSets>
+        <label><!-- Discount Schedule Modal --></label>
+        <name>SBQQ__DiscountScheduleModal</name>
+    </fieldSets>
+    <fields>
+        <help>数量がこの階層であった場合に適用される割引額。</help>
+        <label><!-- Discount ({0}) --></label>
+        <name>SBQQ__DiscountAmount__c</name>
+    </fields>
+    <fields>
+        <help>数量がこの階層であった場合に適用される割引率。</help>
+        <label><!-- Discount (%) --></label>
+        <name>SBQQ__Discount__c</name>
+    </fields>
+    <fields>
+        <help>この階層の数量範囲の下限。</help>
+        <label><!-- Lower Bound --></label>
+        <name>SBQQ__LowerBound__c</name>
+    </fields>
+    <fields>
+        <help>表内でのこの階層の位置を示す番号。</help>
+        <label><!-- Number --></label>
+        <name>SBQQ__Number__c</name>
+    </fields>
+    <fields>
+        <help>この割引層の実際の価格。新しい注文レコードに新しい一連の割引率表が作成されると、この項目に入力されます。</help>
+        <label><!-- Price --></label>
+        <name>SBQQ__Price__c</name>
+    </fields>
+    <fields>
+        <help>この階層が属する割引率表。</help>
+        <label><!-- Schedule --></label>
+        <name>SBQQ__Schedule__c</name>
+        <relationshipLabel><!-- Discount Tiers --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>この階層の数量範囲の上限。</help>
+        <label><!-- Upper Bound --></label>
+        <name>SBQQ__UpperBound__c</name>
+    </fields>
+    <nameFieldLabel>階層名</nameFieldLabel>
+</CustomObjectTranslation>

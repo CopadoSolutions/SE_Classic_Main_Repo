@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- URL to a VisualForce page that generates content when type is set to &quot;Custom&quot;. --></help>
+        <label><!-- Custom Source --></label>
+        <name>SBQQ__CustomSource__c</name>
+    </fields>
+    <fields>
+        <help><!-- Font family to use when rendering this content in the generated PDF quote document. --></help>
+        <label><!-- Font Family --></label>
+        <name>SBQQ__FontFamily__c</name>
+        <picklistValues>
+            <masterLabel>Courier</masterLabel>
+            <translation><!-- Courier --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dosis</masterLabel>
+            <translation><!-- Dosis --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Droid Sans</masterLabel>
+            <translation><!-- Droid Sans --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Droid Serif</masterLabel>
+            <translation><!-- Droid Serif --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Helvetica</masterLabel>
+            <translation><!-- Helvetica --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Merriweather</masterLabel>
+            <translation><!-- Merriweather --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Montserrat</masterLabel>
+            <translation><!-- Montserrat --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Noto Sans JP</masterLabel>
+            <translation><!-- Noto Sans JP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Noto Sans KR</masterLabel>
+            <translation><!-- Noto Sans KR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Noto Sans SC</masterLabel>
+            <translation><!-- Noto Sans SC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Noto Sans TC</masterLabel>
+            <translation><!-- Noto Sans TC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Open Sans</masterLabel>
+            <translation><!-- Open Sans --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PT Sans</masterLabel>
+            <translation><!-- PT Sans --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PT Serif</masterLabel>
+            <translation><!-- PT Serif --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Play</masterLabel>
+            <translation><!-- Play --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Roboto</masterLabel>
+            <translation><!-- Roboto --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Roboto Light</masterLabel>
+            <translation><!-- Roboto Light --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Times</masterLabel>
+            <translation><!-- Times --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Titillium Web</masterLabel>
+            <translation><!-- Titillium Web --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ubuntu</masterLabel>
+            <translation><!-- Ubuntu --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Font size to use when rendering this content on the generated PDF quote document. --></help>
+        <label><!-- Font Size --></label>
+        <name>SBQQ__FontSize__c</name>
+    </fields>
+    <fields>
+        <help><!-- Contains the markup if this content is of type &quot;Markup&quot;. --></help>
+        <label><!-- Markup --></label>
+        <name>SBQQ__Markup__c</name>
+    </fields>
+    <fields>
+        <help><!-- Original HTML version of the content in the Markup field. --></help>
+        <label><!-- Raw Markup --></label>
+        <name>SBQQ__RawMarkup__c</name>
+    </fields>
+    <fields>
+        <help><!-- Style of the table used for line items. Standard (default) = user-defined fields as columns with line items listed vertically. --></help>
+        <label><!-- Table Style --></label>
+        <name>SBQQ__TableStyle__c</name>
+        <picklistValues>
+            <masterLabel>Price Dimensions as Columns</masterLabel>
+            <translation><!-- Price Dimensions as Columns --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Price Dimensions as Rows with Summary</masterLabel>
+            <translation><!-- Price Dimensions as Rows with Summary --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Standard</masterLabel>
+            <translation><!-- Standard --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Default color (in HEX) applied to text rendered by this content. --></help>
+        <label><!-- Text Color --></label>
+        <name>SBQQ__TextColor__c</name>
+    </fields>
+    <fields>
+        <help><!-- Type of this content. --></help>
+        <label><!-- Type --></label>
+        <name>SBQQ__Type__c</name>
+        <picklistValues>
+            <masterLabel>Custom</masterLabel>
+            <translation><!-- Custom --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HTML</masterLabel>
+            <translation><!-- HTML --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Line Items</masterLabel>
+            <translation><!-- Line Items --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quote Terms</masterLabel>
+            <translation><!-- Quote Terms --></translation>
+        </picklistValues>
+    </fields>
+    <layouts>
+        <layout>Template Content Layout</layout>
+        <sections>
+            <label><!-- Body --></label>
+            <section>Body</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <webLinks>
+        <label><!-- Translate --></label>
+        <name>SBQQ__Translate</name>
+    </webLinks>
+</CustomObjectTranslation>

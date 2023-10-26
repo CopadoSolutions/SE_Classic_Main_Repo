@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Document de devis</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Documents de devis</value>
+    </caseValues>
+    <fields>
+        <help>ID de l&apos;enregistrement de pièce jointe généré pour ce document.</help>
+        <label><!-- Attachment Id --></label>
+        <name>SBQQ__AttachmentId__c</name>
+    </fields>
+    <fields>
+        <help>Montant client dans le devis au moment de la génération de ce document.</help>
+        <label><!-- Customer Amount --></label>
+        <name>SBQQ__CustomerAmount__c</name>
+    </fields>
+    <fields>
+        <help>ID d&apos;enregistrement du Document qui contient son PDF généré.</help>
+        <label><!-- Document Id --></label>
+        <name>SBQQ__DocumentId__c</name>
+    </fields>
+    <fields>
+        <help>Champ du document à signer électroniquement.</help>
+        <label><!-- Electronic Signature --></label>
+        <name>SBQQ__ElectronicSignature__c</name>
+    </fields>
+    <fields>
+        <help>Clé utilisée pour vérifier la combinaison unique d&apos;ID et de numéro de version du devis.</help>
+        <label><!-- Key --></label>
+        <name>SBQQ__Key__c</name>
+    </fields>
+    <fields>
+        <help>Montant catalogue du devis au moment de la génération de ce document.</help>
+        <label><!-- List Amount --></label>
+        <name>SBQQ__ListAmount__c</name>
+    </fields>
+    <fields>
+        <help>Montant net du devis au moment de la génération de ce document.</help>
+        <label><!-- Net Amount --></label>
+        <name>SBQQ__NetAmount__c</name>
+    </fields>
+    <fields>
+        <help>Sélectionnez l&apos;opportunité parente du devis pour ce document.</help>
+        <label><!-- Opportunity --></label>
+        <name>SBQQ__Opportunity__c</name>
+        <relationshipLabel><!-- Quote Documents --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Sélectionnez le format de sortie de ce document.</help>
+        <label><!-- Output Format --></label>
+        <name>SBQQ__OutputFormat__c</name>
+        <picklistValues>
+            <masterLabel>MS Word</masterLabel>
+            <translation>MS Word</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PDF</masterLabel>
+            <translation>PDF</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Choisissez le format de papier de ce document.</help>
+        <label><!-- Paper Size --></label>
+        <name>SBQQ__PaperSize__c</name>
+    </fields>
+    <fields>
+        <help>Référence le contact principal du devis à utiliser avec le bouton Envoyer par e-mail, qui utilise par défaut le champ À.</help>
+        <label><!-- Primary Contact Id --></label>
+        <name>SBQQ__PrimaryContactId__c</name>
+    </fields>
+    <fields>
+        <help>Modèle de devis qui a généré ce document.</help>
+        <label><!-- Quote Template --></label>
+        <name>SBQQ__QuoteTemplate__c</name>
+        <relationshipLabel><!-- Quote Documents --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Devis auquel ce document de devis appartient.</help>
+        <label><!-- Quote --></label>
+        <name>SBQQ__Quote__c</name>
+        <relationshipLabel><!-- Quote Documents --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Statut de la signature électronique.</help>
+        <label><!-- Signature Status --></label>
+        <name>SBQQ__SignatureStatus__c</name>
+        <picklistValues>
+            <masterLabel>Expired</masterLabel>
+            <translation>Expiré</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending</masterLabel>
+            <translation>En attente</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Revoked</masterLabel>
+            <translation>Révoqué</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sent</masterLabel>
+            <translation>Envoyé</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Signed</masterLabel>
+            <translation>Signé</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Nom du modèle utilisé pour générer ce document.</help>
+        <label><!-- Template --></label>
+        <name>SBQQ__Template__c</name>
+    </fields>
+    <fields>
+        <help>Numéro de version augmenté de façon séquentielle.</help>
+        <label><!-- Version --></label>
+        <name>SBQQ__Version__c</name>
+    </fields>
+    <fields>
+        <help>Autoriser l&apos;utilisateur à afficher l&apos;ID de l&apos;enregistrement du document du devis.</help>
+        <label><!-- View Record Id --></label>
+        <name>SBQQ__ViewRecordId__c</name>
+    </fields>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Quote Document Layout</layout>
+        <sections>
+            <label>Liens personnalisés</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Nom du document</nameFieldLabel>
+    <startsWith>Consonant</startsWith>
+    <webLinks>
+        <label><!-- Email --></label>
+        <name>SBQQ__Email</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- View --></label>
+        <name>SBQQ__View</name>
+    </webLinks>
+</CustomObjectTranslation>

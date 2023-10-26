@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Barème de remise</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Barèmes de remise</value>
+    </caseValues>
+    <fields>
+        <help>Compte auquel ce barème de remise s&apos;applique. Utilisé uniquement avec Remplacement du barème de remise dans l&apos;interface utilisateur de l&apos;éditeur de ligne de devis.</help>
+        <label><!-- Account --></label>
+        <name>SBQQ__Account__c</name>
+        <relationshipLabel><!-- Discount Schedules --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Spécifiez le mode d&apos;agrégation des quantités de ligne de devis pour les produits qui utilisent ce barème. Par défaut, la quantité de chaque ligne est considérée de façon indépendante (même pour un produit identique).</help>
+        <label><!-- Aggregation Scope --></label>
+        <name>SBQQ__AggregationScope__c</name>
+        <picklistValues>
+            <masterLabel>Group</masterLabel>
+            <translation>Groupe</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quote</masterLabel>
+            <translation>Devis</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Sélectionnez le champ que vous souhaitez comparer avec le même champ de devis.</help>
+        <label><!-- Constraint Field --></label>
+        <name>SBQQ__ConstraintField__c</name>
+        <picklistValues>
+            <masterLabel>Account__c</masterLabel>
+            <translation>Account__c</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Sélectionnez la case si vous souhaitez étendre les remises sur volume au volume total appartenant à ce client (c.-à-d. la quantité du devis plus les achats antérieurs).</help>
+        <label><!-- Cross Orders --></label>
+        <name>SBQQ__CrossOrders__c</name>
+    </fields>
+    <fields>
+        <help>Sélectionnez la case pour agréger les quantités de tous les produits utilisant ce barème pour le calcul de remise sur volume. Les remises par palier ne peuvent être utilisées pour les remises sur les produits croisés.</help>
+        <label><!-- Cross Products --></label>
+        <name>SBQQ__CrossProducts__c</name>
+    </fields>
+    <fields>
+        <help>Description de ce barème de remise.</help>
+        <label><!-- Description --></label>
+        <name>SBQQ__Description__c</name>
+    </fields>
+    <fields>
+        <help>Spécifier l&apos;unité de remise : Montant ou Pourcentage.</help>
+        <label><!-- Discount Unit --></label>
+        <name>SBQQ__DiscountUnit__c</name>
+        <picklistValues>
+            <masterLabel>Amount</masterLabel>
+            <translation>Montant</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Percent</masterLabel>
+            <translation>Pourcentage</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Price</masterLabel>
+            <translation>Prix</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Saisissez la liste des ID de catalogue de prix, séparés par une virgule, qui ne doivent pas s&apos;appliquer à ce barème de remise.</help>
+        <label><!-- Excluded Pricebook IDs --></label>
+        <name>SBQQ__ExcludedPricebookIds__c</name>
+    </fields>
+    <fields>
+        <help>Si cette option est sélectionnée, les quantités des options de produits d&apos;offres groupées sont incluses dans l&apos;étendue d&apos;agrégation.</help>
+        <label><!-- Include Bundled Quantities --></label>
+        <name>SBQQ__IncludeBundledProducts__c</name>
+    </fields>
+    <fields>
+        <help>Produit commandé auquel ce barème de remise s&apos;applique.</help>
+        <label><!-- Order Product --></label>
+        <lookupFilter>
+            <errorMessage><!-- Please select Order Products of the associated order. --></errorMessage>
+        </lookupFilter>
+        <name>SBQQ__OrderProduct__c</name>
+        <relationshipLabel><!-- Discount Schedules --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Commande à laquelle ce barème de remise s&apos;applique.</help>
+        <label><!-- Order --></label>
+        <name>SBQQ__Order__c</name>
+        <relationshipLabel><!-- Discount Schedules --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Le barème de remise d&apos;origine qui a été remplacé pour créer ce barème de remise.</help>
+        <label><!-- Original Discount Schedule --></label>
+        <name>SBQQ__OriginalDiscountSchedule__c</name>
+        <relationshipLabel><!-- Discount Schedules --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Détermine si le niveau de remise actuel auquel correspond le produit peut être modifié, si tous les niveaux de remise peuvent être modifiés ou si aucun niveau ne peut être modifié.</help>
+        <label><!-- Override Behavior --></label>
+        <name>SBQQ__OverrideBehavior__c</name>
+        <picklistValues>
+            <masterLabel>All</masterLabel>
+            <translation>Tous</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Current Tier Only</masterLabel>
+            <translation>Niveau actuel uniquement</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Décimales des prix générés par ce barème de remise.</help>
+        <label><!-- Price Scale --></label>
+        <name>SBQQ__PriceScale__c</name>
+    </fields>
+    <fields>
+        <help>Catalogue de prix auquel ce barème de remise s&apos;applique. Utilisé uniquement en combinaison d&apos;une référence Produit pour attribuer un barème spécifique au produit/catalogue de prix.</help>
+        <label><!-- Price Book --></label>
+        <name>SBQQ__Pricebook__c</name>
+        <relationshipLabel><!-- Discount Schedules --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Produit auquel ce barème de remise s&apos;applique. Utilisé uniquement en combinaison d&apos;une référence Catalogue de prix pour attribuer un barème spécifique au produit/catalogue de prix.</help>
+        <label><!-- Product --></label>
+        <name>SBQQ__Product__c</name>
+        <relationshipLabel><!-- Discount Schedules --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Champ utilisé pour calculer la tarification du barème de remise.</help>
+        <label><!-- Quote Line Quantity Field --></label>
+        <name>SBQQ__QuoteLineQuantityField__c</name>
+        <picklistValues>
+            <masterLabel>Quantity</masterLabel>
+            <translation>Quantité</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Ligne de devis à laquelle ce barème de remise s&apos;applique. Utilisée uniquement en combinaison de Remplacement du barème de remise dans l&apos;interface utilisateur de l&apos;éditeur de ligne de devis.</help>
+        <label><!-- Quote Line --></label>
+        <name>SBQQ__QuoteLine__c</name>
+        <relationshipLabel><!-- Discount Schedules --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Le devis auquel ce barème de remise s&apos;applique. Utilisé uniquement en combinaison de Remplacement du barème de remise dans l&apos;interface utilisateur de l&apos;éditeur de ligne de devis.</help>
+        <label><!-- Quote --></label>
+        <name>SBQQ__Quote__c</name>
+        <relationshipLabel><!-- Discount Schedules --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Sélectionnez le type de remise qui détermine la soustraction du montant ou des pourcentages du prix.</help>
+        <label><!-- Type --></label>
+        <name>SBQQ__Type__c</name>
+        <picklistValues>
+            <masterLabel>Range</masterLabel>
+            <translation>Plage</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Slab</masterLabel>
+            <translation>Par palier</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Si cette case est cochée, l&apos;unité de remise du barème défini par l&apos;utilisateur est définie sur le prix.</help>
+        <label><!-- Use Price For Amount --></label>
+        <name>SBQQ__UsePriceForAmount__c</name>
+    </fields>
+    <fields>
+        <help>Identifie si ce barème a été créé par un utilisateur ou un administrateur.</help>
+        <label><!-- User Defined --></label>
+        <name>SBQQ__UserDefined__c</name>
+    </fields>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Discount Schedule Layout</layout>
+        <sections>
+            <label>Paramètres avancés</label>
+            <section>Advanced Settings</section>
+        </sections>
+        <sections>
+            <label>Liens personnalisés</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>Informations de description</label>
+            <section>Description Information</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Nom du barème</nameFieldLabel>
+    <startsWith>Consonant</startsWith>
+    <webLinks>
+        <label><!-- EditTiers --></label>
+        <name>SBQQ__EditTiers</name>
+    </webLinks>
+</CustomObjectTranslation>

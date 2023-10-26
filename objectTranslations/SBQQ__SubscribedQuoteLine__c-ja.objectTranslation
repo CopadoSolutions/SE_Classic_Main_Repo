@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>サブスクリプション対象見積品目</value>
+    </caseValues>
+    <fields>
+        <help>サブスクリプション対象納入商品レコードが有効であるかどうかを示します。</help>
+        <label><!-- Active --></label>
+        <name>SBQQ__Active__c</name>
+    </fields>
+    <fields>
+        <help>納入商品見積品目の見積数量。</help>
+        <label><!-- Asset Quote Line Quantity --></label>
+        <name>SBQQ__AssetQuoteLineQuantity__c</name>
+    </fields>
+    <fields>
+        <help>サブスクリプション見積品目でカバーされている納入商品見積品目。</help>
+        <label><!-- Asset Quote Line --></label>
+        <name>SBQQ__AssetQuoteLine__c</name>
+        <relationshipLabel><!-- Asset Quote Lines --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>quoteLines の見積を示します。</help>
+        <label><!-- Quote --></label>
+        <name>SBQQ__Quote__c</name>
+        <relationshipLabel><!-- Quote --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>全体に対する割合の計算で使用される単価。</help>
+        <label><!-- Subscription Base Price --></label>
+        <name>SBQQ__SubscriptionBasePrice__c</name>
+    </fields>
+    <fields>
+        <help>サブスクリプション見積品目の正味合計。</help>
+        <label><!-- Subscription Net Total --></label>
+        <name>SBQQ__SubscriptionNetTotal__c</name>
+    </fields>
+    <fields>
+        <help>納入商品見積品目をカバーするサブスクリプション見積品目。</help>
+        <label><!-- Subscription Quote Line --></label>
+        <name>SBQQ__SubscriptionQuoteLine__c</name>
+        <relationshipLabel><!-- Subscribed Quote Lines (Subscription Quote Line) --></relationshipLabel>
+    </fields>
+    <nameFieldLabel>サブスクリプション対象見積品目番号</nameFieldLabel>
+</CustomObjectTranslation>

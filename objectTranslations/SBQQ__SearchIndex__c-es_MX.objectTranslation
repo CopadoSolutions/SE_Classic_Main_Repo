@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Índice de búsqueda</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Índice de búsqueda</value>
+    </caseValues>
+    <fields>
+        <label><!-- Localization --></label>
+        <name>SBQQ__Localization__c</name>
+        <relationshipLabel><!-- Search Index --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Value --></label>
+        <name>SBQQ__Value__c</name>
+    </fields>
+    <gender>Masculine</gender>
+    <nameFieldLabel>Nombre</nameFieldLabel>
+</CustomObjectTranslation>

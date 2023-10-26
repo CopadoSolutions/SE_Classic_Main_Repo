@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Programación de precios</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Programaciones de precios</value>
+    </caseValues>
+    <fields>
+        <help>Cuenta a la que se aplica esta programación de precios. Solo se utiliza en combinación con Invalidación de programación de precios en el Editor de partidas de presupuesto de la interfaz de usuario.</help>
+        <label><!-- Account --></label>
+        <name>SBQQ__Account__c</name>
+        <relationshipLabel><!-- Price Schedules --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Especifique el modo de agregar cantidades de partidas de presupuesto para productos empleando esta programación. La cantidad de cada partida (incluso para el mismo producto) se considera de forma independiente de forma predeterminada.</help>
+        <label><!-- Aggregation Scope --></label>
+        <name>SBQQ__AggregationScope__c</name>
+        <picklistValues>
+            <masterLabel>Group</masterLabel>
+            <translation>Grupo</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quote</masterLabel>
+            <translation>Presupuesto</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Seleccione el campo con el que desea hacer coincidir el mismo campo en el presupuesto.</help>
+        <label><!-- Constraint Field --></label>
+        <name>SBQQ__ConstraintField__c</name>
+        <picklistValues>
+            <masterLabel>Account__c</masterLabel>
+            <translation>Account__c</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Seleccione la casilla de verificación si desea ampliar los descuentos por volumen sobre el volumen total propiedad del cliente (por ej. la cantidad presupuestada más compras anteriores).</help>
+        <label><!-- Cross Orders --></label>
+        <name>SBQQ__CrossOrders__c</name>
+    </fields>
+    <fields>
+        <help>Seleccione la casilla de verificación para agregar cantidades de todos los productos empleando esta programación para el cálculo del descuento por volumen. Los descuentos de porciones no pueden utilizarse para descuentos de productos cruzados.</help>
+        <label><!-- Cross Products --></label>
+        <name>SBQQ__CrossProducts__c</name>
+    </fields>
+    <fields>
+        <help>Descripción para esta programación de precios.</help>
+        <label><!-- Description --></label>
+        <name>SBQQ__Description__c</name>
+    </fields>
+    <fields>
+        <help>Especifique la unidad de descuento: Importe o Porcentaje.</help>
+        <label><!-- Discount Unit --></label>
+        <name>SBQQ__DiscountUnit__c</name>
+        <picklistValues>
+            <masterLabel>Amount</masterLabel>
+            <translation>Importe</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Percent</masterLabel>
+            <translation>Porcentaje</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Price</masterLabel>
+            <translation>Precio</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Ingrese los Id. de listas de precios separadas por comas que no deben aplicarse a esta programación de precios.</help>
+        <label><!-- Excluded Pricebook IDs --></label>
+        <name>SBQQ__ExcludedPricebookIds__c</name>
+    </fields>
+    <fields>
+        <help>Si está marcada, las cantidades de las opciones de productos en paquetes se incluirán en el Ámbito de agregación.</help>
+        <label><!-- Include Bundled Quantities --></label>
+        <name>SBQQ__IncludeBundledProducts__c</name>
+    </fields>
+    <fields>
+        <help>Producto de pedido al que se aplica esta programación de precios.</help>
+        <label><!-- Order Product --></label>
+        <lookupFilter>
+            <errorMessage><!-- Please select Order Products of the associated order. --></errorMessage>
+        </lookupFilter>
+        <name>SBQQ__OrderProduct__c</name>
+        <relationshipLabel><!-- Price Schedules --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Pedido al que se aplica esta programación de precios.</help>
+        <label><!-- Order --></label>
+        <name>SBQQ__Order__c</name>
+        <relationshipLabel><!-- Price Schedules --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>La programación de descuentos desde la que se origina esta programación de precios.</help>
+        <label><!-- Original Discount Schedule --></label>
+        <name>SBQQ__OriginalDiscountSchedule__c</name>
+        <relationshipLabel><!-- Price Schedules --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Determina si el nivel de descuento actual en el que entra el producto es modificable, si todos los niveles de descuento son modificables o ninguno.</help>
+        <label><!-- Override Behavior --></label>
+        <name>SBQQ__OverrideBehavior__c</name>
+        <picklistValues>
+            <masterLabel>All</masterLabel>
+            <translation>Todo</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Current Tier Only</masterLabel>
+            <translation>Solo nivel actual</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Lugares decimales para precios producidos por esta programación de precios.</help>
+        <label><!-- Price Scale --></label>
+        <name>SBQQ__PriceScale__c</name>
+    </fields>
+    <fields>
+        <help>El tipo de precios que determina el modo en que se calculan los precios o los descuentos.</help>
+        <label><!-- Type --></label>
+        <name>SBQQ__PriceType__c</name>
+    </fields>
+    <fields>
+        <help>Lista de precios al que se aplica esta programación de precios. Solo se utiliza con la búsqueda de consulta de productos para asignar una programación específica de productos/listas de precios.</help>
+        <label><!-- Price Book --></label>
+        <name>SBQQ__Pricebook__c</name>
+        <relationshipLabel><!-- Price Schedules --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Producto al que se aplica esta programación de precios. Solo se utiliza con la búsqueda de consulta de listas de precios para asignar una programación específica de productos/listas de precios.</help>
+        <label><!-- Product --></label>
+        <name>SBQQ__Product__c</name>
+        <relationshipLabel><!-- Price Schedules --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Campo empleado para calcular los precios de la programación de precios.</help>
+        <label><!-- Quote Line Quantity Field --></label>
+        <name>SBQQ__QuoteLineQuantityField__c</name>
+        <picklistValues>
+            <masterLabel>Quantity</masterLabel>
+            <translation>Cantidad</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Partida de presupuesto a la que se aplica esta programación de precios. Solo se utiliza en combinación con Invalidación de programación de precios en el Editor de partidas de presupuesto de la interfaz de usuario.</help>
+        <label><!-- Quote Line --></label>
+        <name>SBQQ__QuoteLine__c</name>
+        <relationshipLabel><!-- Price Schedules --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Presupuesto al que se aplica esta programación de precios. Solo se utiliza en combinación con Invalidación de programación de precios en el Editor de partidas de presupuesto de la interfaz de usuario.</help>
+        <label><!-- Quote --></label>
+        <name>SBQQ__Quote__c</name>
+        <relationshipLabel><!-- Price Schedules --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Descuento por plazo en total que se aplica a esta programación de precios. El valor solo está disponible para el tipo de precios Por niveles. Para el tipo de precios Por volumen, el descuento por plazo está disponible para cada nivel de precios.</help>
+        <label><!-- Term Discount --></label>
+        <name>SBQQ__TermDiscount__c</name>
+    </fields>
+    <fields>
+        <help>Si está marcada, la Unidad de descuento de la programación de precios definida por el usuario se establecerá en Precio.</help>
+        <label><!-- Use Price For Amount --></label>
+        <name>SBQQ__UsePriceForAmount__c</name>
+    </fields>
+    <fields>
+        <help>Identifica si esta programación fue creada por un usuario final o un administrador.</help>
+        <label><!-- User Defined --></label>
+        <name>SBQQ__UserDefined__c</name>
+    </fields>
+    <gender>Feminine</gender>
+    <layouts>
+        <layout>Price Schedule Layout</layout>
+        <sections>
+            <label>Vínculos personalizados</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>Información de instantánea</label>
+            <section>Snapshot Information</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Nombre de programación</nameFieldLabel>
+    <webLinks>
+        <label><!-- EditTiers --></label>
+        <name>SBQQ__EditTiers</name>
+    </webLinks>
+</CustomObjectTranslation>

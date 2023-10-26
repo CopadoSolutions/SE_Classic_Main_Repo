@@ -4,5 +4,6 @@
     <enableIndustriesMfgAccountForecast>false</enableIndustriesMfgAccountForecast>
     <enableIndustriesMfgAdvForecast>false</enableIndustriesMfgAdvForecast>
     <enableIndustriesMfgIAS>false</enableIndustriesMfgIAS>
+    <enableIndustriesMfgProgram>false</enableIndustriesMfgProgram>
     <enableIndustriesMfgTargets>false</enableIndustriesMfgTargets>
 </IndustriesManufacturingSettings>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Importspalte</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Importspalten</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value><!-- Importspalte --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+        <value><!-- Importspalten --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value><!-- Importspalte --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>true</plural>
+        <value><!-- Importspalten --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value><!-- Importspalte --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value><!-- Importspalten --></value>
+    </caseValues>
+    <fields>
+        <help>Geben Sie einen numerischen Indexwert ein, der die Position der Spalte darstellt. Der Spaltenindex muss mit 1 beginnen.</help>
+        <label><!-- Column Index --></label>
+        <name>SBQQ__ColumnIndex__c</name>
+    </fields>
+    <fields>
+        <help>Geben Sie den API-Namen ein.</help>
+        <label><!-- Field Name --></label>
+        <name>SBQQ__FieldName__c</name>
+        <picklistValues>
+            <masterLabel>Discount (%)</masterLabel>
+            <translation>Rabatt (%)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Discount (Amt)</masterLabel>
+            <translation>Rabatt (Betrag)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>List Price</masterLabel>
+            <translation>Listenpreis</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Partner Discount</masterLabel>
+            <translation>Partnerrabatt</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product Code</masterLabel>
+            <translation>Produktcode</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quantity</masterLabel>
+            <translation>Menge</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Wählen Sie das Format aus, in dem Ihre Datensätze importiert werden.</help>
+        <label><!-- Import Format --></label>
+        <name>SBQQ__ImportFormat__c</name>
+        <relationshipLabel><!-- Import Columns --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Legen Sie fest, ob diese Spalte eine eindeutige Schlüsselspalte sein soll.</help>
+        <label><!-- Key --></label>
+        <name>SBQQ__Key__c</name>
+    </fields>
+    <gender>Feminine</gender>
+    <layouts>
+        <layout>Import Column Layout</layout>
+        <sections>
+            <label>Benutzerdefinierte Links</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Spaltenname</nameFieldLabel>
+    <validationRules>
+        <errorMessage><!-- Column Index must start from 1. --></errorMessage>
+        <name>SBQQ__Column_index_must_start_from_1</name>
+    </validationRules>
+</CustomObjectTranslation>

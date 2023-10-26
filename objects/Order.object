@@ -305,6 +305,143 @@
         <type>Lookup</type>
     </fields>
     <fields>
+        <fullName>SBQQ__Contracted__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Indicates if the order is contracted.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Indicates if the order is contracted.</inlineHelpText>
+        <label>Contracted</label>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__ContractingMethod__c</fullName>
+        <deprecated>false</deprecated>
+        <description>&quot;By Subscription End Date&quot; creates a separate Contract for each unique Subscription End Date, containing only those Subscriptions. &quot;Single Contract&quot; creates one Contract containing all Subscriptions, regardless of their End Dates.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>&quot;By Subscription End Date&quot; creates a separate Contract for each unique Subscription End Date, containing only those Subscriptions. &quot;Single Contract&quot; creates one Contract containing all Subscriptions, regardless of their End Dates.</inlineHelpText>
+        <label>Contracting Method</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>SBQQ__ContractingMethod</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SBQQ__OrderBookings__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Total amount of all order product bookings.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Total amount of all order product bookings.</inlineHelpText>
+        <label>Order Bookings</label>
+        <summarizedField>OrderItem.SBQQ__OrderProductBookings__c</summarizedField>
+        <summaryForeignKey>OrderItem.OrderId</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__PaymentTerm__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The payment term for this order.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The payment term for this order.</inlineHelpText>
+        <label>Payment Term</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>SBQQ__PaymentTerm</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SBQQ__PriceCalcStatusMessage__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The price calculation status message.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The price calculation status message</inlineHelpText>
+        <label>Price Calculation Status Message</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SBQQ__PriceCalcStatus__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The order price calculation  job status.  It is set by the system.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Indicates the order price calculation job status.  It is set by the system.</inlineHelpText>
+        <label>Price Calculation Status</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>SBQQ__JobStatus</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SBQQ__Quote__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>The quote where the order is created from.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The quote where the order is created from.</inlineHelpText>
+        <label>Quote</label>
+        <referenceTo>SBQQ__Quote__c</referenceTo>
+        <relationshipLabel>Orders</relationshipLabel>
+        <relationshipName>Orders</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__RenewalTerm__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Specify the term of the renewal. By default, it matches the original contract term.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Specify the term of the renewal. By default, it matches the original contract term.</inlineHelpText>
+        <label>Renewal Term</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SBQQ__RenewalUpliftRate__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Rate of renewal price increases.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Rate of renewal price increases.</inlineHelpText>
+        <label>Renewal Uplift (%)</label>
+        <precision>11</precision>
+        <required>false</required>
+        <scale>3</scale>
+        <trackHistory>false</trackHistory>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__TaxAmount__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The estimated tax amount</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The estimated tax amount</inlineHelpText>
+        <label>Estimated Tax</label>
+        <summarizedField>OrderItem.SBQQ__TaxAmount__c</summarizedField>
+        <summaryForeignKey>OrderItem.OrderId</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <type>Summary</type>
+    </fields>
+    <fields>
         <fullName>ShipToContactId</fullName>
         <trackHistory>true</trackHistory>
         <type>Lookup</type>
@@ -369,4 +506,22 @@
         <searchResultsAdditionalFields>CONTRACT.CONTRACT_NUMBER</searchResultsAdditionalFields>
     </searchLayouts>
     <sharingModel>ControlledByParent</sharingModel>
+    <validationRules>
+        <fullName>SBQQ__Cannot_Contract_New_Order</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(ISNEW(), SBQQ__Contracted__c)</errorConditionFormula>
+        <errorDisplayField>SBQQ__Contracted__c</errorDisplayField>
+        <errorMessage>Can&apos;t contract the order. Activate the order and try again.</errorMessage>
+    </validationRules>
+    <webLinks>
+        <fullName>SBQQ__EditOrderProducts</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <height>600</height>
+        <linkType>page</linkType>
+        <masterLabel>Edit Order Products</masterLabel>
+        <openType>noSidebar</openType>
+        <page>SBQQ__OrderLineSelector</page>
+        <protected>false</protected>
+    </webLinks>
 </CustomObject>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ApexComponent xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>34.0</apiVersion>
+    <description>Converts specified text into an XSL-FO tree that preserves format, paragraph and line breaks.</description>
+    <label>Rich Text</label>
+</ApexComponent>

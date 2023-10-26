@@ -1,0 +1,96 @@
+<apex:page action="{!checkLicense}" standardController="Contract" extensions="SBQQ.AmendContractController,SBQQ.QueueableJobCheckerExt,SBQQ.LicenseCheckerExt" showHeader="{!(!$Setup.SBQQ__GeneralSettings__c.SBQQ__GlobalHeaderPermUsed__c || !$Permission.SBQQ__HideGlobalHeader)}" standardStylesheets="false" title="{!$Label.sbqq__lbl_amend_contract}">
+	<apex:stylesheet value="{!$Resource['sb']}"/>
+	<apex:includeScript value="{!$Resource.SBQQ__QueueableJobChecker}"/>
+
+	<c:theme />
+	<apex:pageMessages />
+	<div id="sbAmendContract" class="sb">
+	    <apex:form >
+	    	<c:pageHeader title="{!$Label.sbqq__lbl_amend_contract}" subtitle="{!contractNumber}" subtitleMessage="{!displayedSubscriptionsMsg}" formFactor="desktop" iconName="sf-icon-contract-1">
+		    	<div class="sbButtons">
+	                <apex:commandButton styleClass="sbBtn" value="{!$Label.sbqq__lbl_amend}" action="{!onAmend}" onclick="toggleLoadingMask(true)"/>
+	                <apex:commandButton styleClass="sbBtn" action="{!returnToContract}" value="{!$Label.sbqq__lbl_cancel}" />
+	            </div>
+			</c:pageHeader>
+		</apex:form>
+		<div class="sbBody">
+			<div class="sbPageBlockSection">
+				<table class="sbTable" width="100%" border="0" cellspacing="0" cellpadding="0">
+					<thead>
+						<tr>
+							<th></th>
+							<th>{!$ObjectType.Subscription__c.fields.Name.label}</th>
+							<th>{!$ObjectType.Subscription__c.fields.Product__c.label}</th>
+							<th>{!$ObjectType.Subscription__c.fields.Quantity__c.label}</th>
+						</tr>
+					</thead>
+					<tbody>
+						<apex:repeat var="id" value="{!aggregatedSubs}" rows="200">
+							<tr>
+								<td></td>
+								<td>{!aggregatedSubs[id].subName}</td>
+								<td>{!aggregatedSubs[id].productName}</td>
+								<td>{!aggregatedSubs[id].quantity}</td>
+							</tr>
+						</apex:repeat>
+		            </tbody>
+		        </table>
+	        </div>
+		</div>
+	</div>
+	<div class="sbLoadingMask" style="visibility: hidden">
+		<div class="sbLoading sb-icon-loading">
+			<div class="sb-icon-bounce1"></div>
+			<div class="sb-icon-bounce2"></div>
+			<div class="sb-icon-bounce3"></div>
+		</div>
+	</div>
+	<script type="application/javascript">
+		function toggleLoadingMask(show) {
+			document.getElementsByClassName('sbLoadingMask')[0].style.visibility = (show ? "visible" : "hidden");
+		}
+	</script>
+	<apex:outputPanel layout="none" rendered="{!jobId != null}">
+		<script type="application/javascript">
+			var s1 = new Date();
+			var classPrefix = '{!JSENCODE(classPrefix)}';
+			var recordId = '{!JSENCODE(id)}';
+			var jobId = '{!JSENCODE(jobId)}';
+
+			// Background job.  So spin
+			function start() {
+				toggleLoadingMask(true);
+			}
+
+			function changed(results) {
+				console.log('Amend contract - ' + results.job.Status + ' - ' + ((new Date().getTime() - s1.getTime())/1000) + ' seconds');
+			}
+
+			function finish(success, results) {
+				toggleLoadingMask(false);
+				if (!success) {
+					window.alert(results.job.ExtendedStatus);
+				} else {
+					if (results.redirectUrl) {
+						if (typeof sforce != 'undefined' && sforce && sforce.one) {
+							sforce.one.navigateToURL(results.redirectUrl);
+						} else {
+							document.location.href = results.redirectUrl;
+						}
+					}
+				}
+			}
+			var remote = classPrefix + 'QueueableJobCheckerExt.getJobStatus';
+			var jobType = 'AmendContract';
+			var startingStatus;
+			Visualforce.remoting.Manager.invokeAction(remote, recordId, jobType, jobId, function(results, event) {
+				if (!event.status) {
+					startingStatus = 'Completed';
+				} else {
+					startingStatus = results.job.Status;
+				}
+				QueuableJobChecker(remote, recordId, jobType, jobId, start, finish, changed, startingStatus);
+			}, {escape: false});
+		</script>
+		</apex:outputPanel>
+</apex:page>

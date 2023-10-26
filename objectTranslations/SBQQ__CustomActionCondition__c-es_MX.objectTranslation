@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Condición de acción personalizada</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Condiciones de acción personalizada</value>
+    </caseValues>
+    <fields>
+        <help>Acción personalizada que está ejecutando esta condición.</help>
+        <label><!-- Custom Action --></label>
+        <name>SBQQ__CustomAction__c</name>
+        <relationshipLabel><!-- Custom Action Conditions --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Seleccione el campo que debe contener el valor que ingrese en el campo Valor.</help>
+        <label><!-- Field --></label>
+        <name>SBQQ__Field__c</name>
+        <picklistValues>
+            <masterLabel>Product Code</masterLabel>
+            <translation>Código del producto</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Ingrese el valor que desea que coincida en el campo que seleccionó utilizando el operador elegido.</help>
+        <label><!-- Filter Value --></label>
+        <name>SBQQ__FilterValue__c</name>
+    </fields>
+    <fields>
+        <help>Seleccione el operador que hay que aplicar cuando se compara el campo con el valor.</help>
+        <label><!-- Operator --></label>
+        <name>SBQQ__Operator__c</name>
+        <picklistValues>
+            <masterLabel>contains</masterLabel>
+            <translation>contiene</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ends with</masterLabel>
+            <translation>termina por</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>equals</masterLabel>
+            <translation>igual a</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>greater or equals</masterLabel>
+            <translation>mayor o igual</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>greater than</masterLabel>
+            <translation>mayor que</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>less or equals</masterLabel>
+            <translation>menor o igual</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>less than</masterLabel>
+            <translation>menor que</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>not equals</masterLabel>
+            <translation>no igual a</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>starts with</masterLabel>
+            <translation>comienza por</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- ParentConditionIsActive --></label>
+        <name>SBQQ__ParentActionIsActive__c</name>
+    </fields>
+    <fields>
+        <help>Objeto en el que se evalúa la condición.</help>
+        <label><!-- Target Object --></label>
+        <name>SBQQ__TargetObject__c</name>
+        <picklistValues>
+            <masterLabel>Product</masterLabel>
+            <translation>Producto</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quote</masterLabel>
+            <translation>Presupuesto</translation>
+        </picklistValues>
+    </fields>
+    <gender>Feminine</gender>
+    <nameFieldLabel>Nombre de condición de acción personaliz</nameFieldLabel>
+</CustomObjectTranslation>

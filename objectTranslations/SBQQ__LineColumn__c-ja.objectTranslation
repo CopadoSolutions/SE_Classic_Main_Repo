@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>品目列</value>
+    </caseValues>
+    <fields>
+        <help>列の表示ラベルと値の位置揃えを決定します。</help>
+        <label><!-- Alignment --></label>
+        <name>SBQQ__Alignment__c</name>
+        <picklistValues>
+            <masterLabel>Center</masterLabel>
+            <translation>中央揃え</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Left</masterLabel>
+            <translation>左</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Right</masterLabel>
+            <translation>右</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>下境界と内容の間のスペース (ピクセル単位)。</help>
+        <label><!-- Bottom Margin (px) --></label>
+        <name>SBQQ__BottomMargin__c</name>
+    </fields>
+    <fields>
+        <help>この列の動的ヘッダーを取得する項目。</help>
+        <label><!-- Column Heading Field --></label>
+        <name>SBQQ__ColumnHeadingField__c</name>
+        <picklistValues>
+            <masterLabel>Type</masterLabel>
+            <translation>種別</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>生成される PDF ドキュメントにこの列が出力されるかどうかを制御する見積オブジェクトの項目。</help>
+        <label><!-- Conditional Print Field --></label>
+        <name>SBQQ__ConditionalPrintField__c</name>
+        <picklistValues>
+            <masterLabel>Group Line Items</masterLabel>
+            <translation>グループ品目</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>この項目が含まれる列が表示される順序。</help>
+        <label><!-- Display Order --></label>
+        <name>SBQQ__DisplayOrder__c</name>
+    </fields>
+    <fields>
+        <help>列の数値の小数部桁数は、列内の最大精度に基づいて設定されます。</help>
+        <label><!-- Dynamic Number Scale --></label>
+        <name>SBQQ__DynamicNumberScale__c</name>
+    </fields>
+    <fields>
+        <help>この列に表示する見積品目オブジェクトの項目の API 参照名。</help>
+        <label><!-- Field Name --></label>
+        <name>SBQQ__FieldName__c</name>
+    </fields>
+    <fields>
+        <help>この列に適用するフォントファミリを選択します。空白のままにすると、テンプレートから継承されます。</help>
+        <label><!-- Font Family --></label>
+        <name>SBQQ__FontFamily__c</name>
+        <picklistValues>
+            <masterLabel>Courier</masterLabel>
+            <translation>Courier</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dosis</masterLabel>
+            <translation>Dosis</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Droid Sans</masterLabel>
+            <translation>Droid Sans</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Droid Serif</masterLabel>
+            <translation>Droid Serif</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Helvetica</masterLabel>
+            <translation>Helvetica</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Merriweather</masterLabel>
+            <translation>Merriweather</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Montserrat</masterLabel>
+            <translation>Montserrat</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Noto Sans JP</masterLabel>
+            <translation>Noto Sans JP</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Noto Sans KR</masterLabel>
+            <translation>Noto Sans KR</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Noto Sans SC</masterLabel>
+            <translation>Noto Sans SC</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Noto Sans TC</masterLabel>
+            <translation>Noto Sans TC</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Open Sans</masterLabel>
+            <translation>Open Sans</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PT Sans</masterLabel>
+            <translation>PT Sans</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PT Serif</masterLabel>
+            <translation>PT Serif</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Play</masterLabel>
+            <translation>再生</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Roboto</masterLabel>
+            <translation>Roboto</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Roboto Light</masterLabel>
+            <translation>Roboto Light</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Times</masterLabel>
+            <translation>Times</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Titillium Web</masterLabel>
+            <translation>Titillium Web</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ubuntu</masterLabel>
+            <translation>Ubuntu</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>この列のテキストのフォントサイズを指定します (ポイント単位)。空白のままにすると、テンプレートから継承されます。</help>
+        <label><!-- Font Size (pt) --></label>
+        <name>SBQQ__FontSize__c</name>
+    </fields>
+    <fields>
+        <help>この列のテキストのフォントの太さを指定します。空白のままにするとデフォルトで [普通] になります。</help>
+        <label><!-- Font Weight --></label>
+        <name>SBQQ__FontWeight__c</name>
+        <picklistValues>
+            <masterLabel>Bold</masterLabel>
+            <translation>太字</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Normal</masterLabel>
+            <translation>標準</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>この列のヘッダーテキスト色を指定します (16 進数)。空白のままにすると、この列のテキスト色から継承されます。</help>
+        <label><!-- Heading Text Color --></label>
+        <name>SBQQ__HeadingTextColor__c</name>
+    </fields>
+    <fields>
+        <help>項目が商品オプションの場合はこの列の値を非表示にします。</help>
+        <label><!-- Hide On Product Options --></label>
+        <name>SBQQ__HideOnComponents__c</name>
+    </fields>
+    <fields>
+        <help>左境界と内容の間のスペース (ピクセル単位)。</help>
+        <label><!-- Left Margin (px) --></label>
+        <name>SBQQ__LeftMargin__c</name>
+    </fields>
+    <fields>
+        <help>右境界と内容の間のスペース (ピクセル単位)。</help>
+        <label><!-- Right Margin (px) --></label>
+        <name>SBQQ__RightMargin__c</name>
+    </fields>
+    <fields>
+        <help>この項目を主品目に積み上げ集計するかどうかを示します。テンプレートに積み上げ項目が指定されている場合にのみ適用されます。</help>
+        <label><!-- Roll Up --></label>
+        <name>SBQQ__RollUp__c</name>
+    </fields>
+    <fields>
+        <help>この品目列が適用されるセクション。セクションがない場合は、列がすべてのセクションに適用されることを意味します。</help>
+        <label><!-- Section --></label>
+        <name>SBQQ__Section__c</name>
+        <relationshipLabel><!-- Line Columns --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>この項目を独自の行に出力するには、チェックボックスをオンにします。商品の説明など、ロングテキスト項目に使用します。</help>
+        <label><!-- Separate Line --></label>
+        <name>SBQQ__SeparateLine__c</name>
+    </fields>
+    <fields>
+        <help>サブグループレベルの集計の表示ラベル</help>
+        <label><!-- Sub Group Summary Label --></label>
+        <name>SBQQ__SubGroupSummaryLabel__c</name>
+    </fields>
+    <fields>
+        <help>この列の集計行のテキストフォントの太さを指定します。空白のままにすると、デフォルトで列全体のフォントの太さになります。</help>
+        <label><!-- Summary Font Weight --></label>
+        <name>SBQQ__SummaryFontWeight__c</name>
+        <picklistValues>
+            <masterLabel>Bold</masterLabel>
+            <translation>太字</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Normal</masterLabel>
+            <translation>標準</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>この列の値を集計するために使用する関数。</help>
+        <label><!-- Summary Function --></label>
+        <name>SBQQ__SummaryFunction__c</name>
+        <picklistValues>
+            <masterLabel>SUM</masterLabel>
+            <translation>合計</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>集計行のこの列の表示ラベル出力。</help>
+        <label><!-- Summary Label --></label>
+        <name>SBQQ__SummaryLabel__c</name>
+    </fields>
+    <fields>
+        <help>この列を集計するレベルを設定します。</help>
+        <label><!-- Summary Level --></label>
+        <name>SBQQ__SummaryLevel__c</name>
+        <picklistValues>
+            <masterLabel>All</masterLabel>
+            <translation>すべて</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sub Group</masterLabel>
+            <translation>サブグループ</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>この列の集計行のセルの背景色を指定します (16 進数)。空白のままにするとテンプレートの影の色が継承されます。</help>
+        <label><!-- Summary Shading Color --></label>
+        <name>SBQQ__SummaryShadingColor__c</name>
+    </fields>
+    <fields>
+        <help>この列の集計行のテキスト色を指定します (16 進数)。空白のままにすると、この列のテキスト色から継承されます。</help>
+        <label><!-- Summary Text Color --></label>
+        <name>SBQQ__SummaryTextColor__c</name>
+    </fields>
+    <fields>
+        <help>この項目が表示されるテンプレート。</help>
+        <label><!-- Template --></label>
+        <name>SBQQ__Template__c</name>
+        <relationshipLabel><!-- Line Columns --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>この列のテキスト色を指定します (16 進数)。空白のままにすると、テンプレートから継承されます。</help>
+        <label><!-- Text Color --></label>
+        <name>SBQQ__TextColor__c</name>
+    </fields>
+    <fields>
+        <help>上境界と内容の間のスペース (ピクセル単位)。</help>
+        <label><!-- Top Margin (px) --></label>
+        <name>SBQQ__TopMargin__c</name>
+    </fields>
+    <fields>
+        <help>条件付きで表示される列で別の列を置き換えるには、チェックボックスをオンにします。このボックスをオフのままにした場合、この列が非表示になるとその幅が別の列に再割り当てされるため、テーブル幅が変更されません。</help>
+        <label><!-- Discard Width When Hidden --></label>
+        <name>SBQQ__WidthDiscardedWhenHidden__c</name>
+    </fields>
+    <fields>
+        <help>この項目が占める列の幅 (パーセント)。</help>
+        <label><!-- Width --></label>
+        <name>SBQQ__Width__c</name>
+    </fields>
+    <layouts>
+        <layout>Line Column Layout</layout>
+        <sections>
+            <label>列オプション</label>
+            <section>Column Options</section>
+        </sections>
+        <sections>
+            <label>カスタムリンク</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>スタイル情報</label>
+            <section>Style Information</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>列ヘッダー</nameFieldLabel>
+    <webLinks>
+        <label><!-- Translate --></label>
+        <name>SBQQ__Translate</name>
+    </webLinks>
+</CustomObjectTranslation>

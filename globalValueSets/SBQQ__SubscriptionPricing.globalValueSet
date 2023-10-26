@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Fixed Price</fullName>
+        <default>false</default>
+        <label>Fixed Price</label>
+    </customValue>
+    <customValue>
+        <fullName>Percent Of Total</fullName>
+        <default>false</default>
+        <label>Percent Of Total</label>
+    </customValue>
+    <description>Subscription pricing options</description>
+    <masterLabel>Subscription Pricing</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

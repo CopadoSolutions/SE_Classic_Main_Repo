@@ -1,0 +1,5 @@
+<apex:page standardController="SBQQ__DiscountSchedule__c" extensions="SBQQ.DiscountScheduleExtController" action="{!onOverrideNew}">
+    <apex:sectionHeader title="New Discount Schedule"/>
+    
+    <apex:pageMessages />
+</apex:page>

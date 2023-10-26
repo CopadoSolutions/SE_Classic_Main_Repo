@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>見積品目グループ</value>
+    </caseValues>
+    <fieldSets>
+        <label><!-- Line Editor --></label>
+        <name>SBQQ__LineEditor</name>
+    </fieldSets>
+    <fields>
+        <help>この見積品目グループが参照する取引先。</help>
+        <label><!-- Account --></label>
+        <name>SBQQ__Account__c</name>
+        <relationshipLabel><!-- Quote Line Groups --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>このグループの品目に適用されるデフォルトの追加割引率。</help>
+        <label><!-- Additional  Disc. (%) --></label>
+        <name>SBQQ__AdditionalDiscountRate__c</name>
+    </fields>
+    <fields>
+        <help>請求サイクルを定義します。</help>
+        <label><!-- Billing Frequency --></label>
+        <name>SBQQ__BillingFrequency__c</name>
+    </fields>
+    <fields>
+        <help>パートナー割引が適用される前のこのグループの品目の合計。</help>
+        <label><!-- Customer Total --></label>
+        <name>SBQQ__CustomerTotal__c</name>
+    </fields>
+    <fields>
+        <help>このグループの説明。</help>
+        <label><!-- Description --></label>
+        <name>SBQQ__Description__c</name>
+    </fields>
+    <fields>
+        <help>このグループのサブスクリプションの終了日。</help>
+        <label><!-- End Date --></label>
+        <name>SBQQ__EndDate__c</name>
+    </fields>
+    <fields>
+        <help>この見積品目グループが属するお気に入り。</help>
+        <label><!-- Favorite --></label>
+        <name>SBQQ__Favorite__c</name>
+        <relationshipLabel><!-- Quote Line Groups --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>割引が適用される前のこのグループの品目の合計。</help>
+        <label><!-- List Total --></label>
+        <name>SBQQ__ListTotal__c</name>
+    </fields>
+    <fields>
+        <help>このグループの品目に適用されるデフォルトのマークアップ率。これは品目レベルよりも優先されます。</help>
+        <label><!-- Markup (%) --></label>
+        <name>SBQQ__MarkupRate__c</name>
+    </fields>
+    <fields>
+        <help>すべての割引が適用された後のこのグループの品目の合計。</help>
+        <label><!-- Net Total --></label>
+        <name>SBQQ__NetTotal__c</name>
+    </fields>
+    <fields>
+        <help>その見積内でのこのグループの並び替え順。</help>
+        <label><!-- Number --></label>
+        <name>SBQQ__Number__c</name>
+    </fields>
+    <fields>
+        <help>グループ全体をオプションとしてマークします。</help>
+        <label><!-- Optional --></label>
+        <name>SBQQ__Optional__c</name>
+    </fields>
+    <fields>
+        <help>このグループで使用される見積プロセス。見積レベル項目よりも優先されます。</help>
+        <label><!-- Quote Process --></label>
+        <name>SBQQ__QuoteProcess__c</name>
+        <relationshipLabel><!-- Quote Line Groups --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>このグループが属する見積。</help>
+        <label><!-- Quote --></label>
+        <name>SBQQ__Quote__c</name>
+        <relationshipLabel><!-- Quote Line Groups --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>このグループのサブスクリプションの別の契約を生成する場合は、チェックボックスをオンにします。</help>
+        <label><!-- Separate Contract --></label>
+        <name>SBQQ__SeparateContract__c</name>
+    </fields>
+    <fields>
+        <help>見積グループの生成元のソリューショングループ (存在する場合)。</help>
+        <label><!-- Solution Group --></label>
+        <name>SBQQ__SolutionGroup__c</name>
+        <relationshipLabel><!-- Quote Line Groups --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>コピーされた見積品目グループのソース。</help>
+        <label><!-- Source --></label>
+        <name>SBQQ__Source__c</name>
+        <relationshipLabel><!-- Quote Line Groups --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>このグループのサブスクリプションの開始日。</help>
+        <label><!-- Start Date --></label>
+        <name>SBQQ__StartDate__c</name>
+    </fields>
+    <fields>
+        <help>このグループの対象商品を按分するために使用されるサブスクリプション期間。</help>
+        <label><!-- Subscription Term --></label>
+        <name>SBQQ__SubscriptionTerm__c</name>
+    </fields>
+    <fields>
+        <help>望ましい顧客金額を入力し、割引可能品目で自動的に追加割引を計算します。</help>
+        <label><!-- Target Customer Amount --></label>
+        <name>SBQQ__TargetCustomerAmount__c</name>
+    </fields>
+    <layouts>
+        <layout>Quote Line Group Layout</layout>
+        <sections>
+            <label>カスタムリンク</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>説明</label>
+            <section>Description</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>グループ名</nameFieldLabel>
+</CustomObjectTranslation>

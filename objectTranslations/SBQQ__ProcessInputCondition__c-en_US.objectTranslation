@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- Flag that indicates whether this rule is active or inactive. --></help>
+        <label><!-- Active --></label>
+        <name>SBQQ__Active__c</name>
+    </fields>
+    <fields>
+        <help><!-- Values of this process input will determine the visibility of the current input. --></help>
+        <label><!-- Master Process Input --></label>
+        <name>SBQQ__MasterProcessInput__c</name>
+        <relationshipLabel><!-- Process Inputs Regulated --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Select the operator to use when comparing process input values. --></help>
+        <label><!-- Operator --></label>
+        <name>SBQQ__Operator__c</name>
+        <picklistValues>
+            <masterLabel>contains</masterLabel>
+            <translation><!-- contains --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ends with</masterLabel>
+            <translation><!-- ends with --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>equals</masterLabel>
+            <translation><!-- equals --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>greater or equals</masterLabel>
+            <translation><!-- greater or equals --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>greater than</masterLabel>
+            <translation><!-- greater than --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>less or equals</masterLabel>
+            <translation><!-- less or equals --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>less than</masterLabel>
+            <translation><!-- less than --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>not equals</masterLabel>
+            <translation><!-- not equals --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>starts with</masterLabel>
+            <translation><!-- starts with --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Process input that owns the condition. --></help>
+        <label><!-- Process Input --></label>
+        <name>SBQQ__ProcessInput__c</name>
+        <relationshipLabel><!-- Process Input Conditions --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- The value used to compare to the controlling process input. --></help>
+        <label><!-- Value --></label>
+        <name>SBQQ__Value__c</name>
+    </fields>
+    <layouts>
+        <layout>Process Input Condition Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Filter Information --></label>
+            <section>Filter Information</section>
+        </sections>
+    </layouts>
+</CustomObjectTranslation>

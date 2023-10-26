@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label><!-- Active Contract Lookup --></label>
+        <name>SBQQ__ActiveContractLookup</name>
+    </fieldSets>
+    <fields>
+        <help>Determina si un contrato está vigente.</help>
+        <label><!-- Active Contract --></label>
+        <name>SBQQ__ActiveContract__c</name>
+    </fields>
+    <fields>
+        <help>Tipo de registro de la oportunidad de corrección, a no ser que es especifique lo contrario.</help>
+        <label><!-- Amendment Opportunity Record Type Id --></label>
+        <name>SBQQ__AmendmentOpportunityRecordTypeId__c</name>
+    </fields>
+    <fields>
+        <help>La etapa actual de la Oportunidad de corrección.</help>
+        <label><!-- Amendment Opportunity Stage --></label>
+        <name>SBQQ__AmendmentOpportunityStage__c</name>
+    </fields>
+    <fields>
+        <help>Propietario de la oportunidad original.</help>
+        <label><!-- Amendment Owner --></label>
+        <name>SBQQ__AmendmentOwner__c</name>
+        <relationshipLabel><!-- Contracts (Amendment Owner) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Id. de la lista de precios de su corrección.</help>
+        <label><!-- Amendment Pricebook Id --></label>
+        <name>SBQQ__AmendmentPricebookId__c</name>
+    </fields>
+    <fields>
+        <help>La base con la que se calculan Fecha de inicio de renovación y Fecha de finalización de corrección.</help>
+        <label><!-- Amendment &amp; Renewal Behavior --></label>
+        <name>SBQQ__AmendmentRenewalBehavior__c</name>
+        <picklistValues>
+            <masterLabel>Earliest End Date</masterLabel>
+            <translation>Fecha de finalización más temprana</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Latest End Date</masterLabel>
+            <translation>Fecha de finalización más tardía</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Fecha de inicio de su corrección. Si está en blanco, la corrección comenzará en la fecha de hoy.</help>
+        <label><!-- Amendment Start Date --></label>
+        <name>SBQQ__AmendmentStartDate__c</name>
+    </fields>
+    <fields>
+        <help>Seleccione para incluir funciones de contacto procedentes de la oportunidad original en la oportunidad de renovación.</help>
+        <label><!-- Default Renewal Contact Roles --></label>
+        <name>SBQQ__DefaultRenewalContactRoles__c</name>
+    </fields>
+    <fields>
+        <help>Seleccione para incluir los socios de la oportunidad original en la oportunidad de renovación.</help>
+        <label><!-- Default Renewal Partners --></label>
+        <name>SBQQ__DefaultRenewalPartners__c</name>
+    </fields>
+    <fields>
+        <help>Si no está marcada, la fecha de finalización del presupuesto de corrección se establecerá según el parámetro Comportamiento de corrección/renovación. Si está marcada, no se establecerá ninguna fecha de finalización.</help>
+        <label><!-- Disable Amendment Co-Term --></label>
+        <name>SBQQ__DisableAmendmentCoTerm__c</name>
+    </fields>
+    <fields>
+        <help>Fecha de finalización del contrato para utilizar en flujos de trabajo basados en tiempo.</help>
+        <label><!-- Expiration Date --></label>
+        <name>SBQQ__ExpirationDate__c</name>
+    </fields>
+    <fields>
+        <help>Define el modo en que los productos de suscripción segmentados aparecerán en presupuestos de renovación. Sin segmentos renovará como una partida estándar con los datos del último segmento.</help>
+        <label><!-- MDQ Renewal Behavior --></label>
+        <name>SBQQ__MDQRenewalBehavior__c</name>
+        <picklistValues>
+            <masterLabel>De-segmented</masterLabel>
+            <translation>Sin segmentos</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Seleccione para designar este contrato como el contrato principal para esta cuenta. En la renovación, todos los contratos se desglosarán en este.</help>
+        <label><!-- Master Contract --></label>
+        <name>SBQQ__MasterContract__c</name>
+    </fields>
+    <fields>
+        <help>Id. de la lista de precios empleada desde la oportunidad original.</help>
+        <label><!-- Opportunity Pricebook Id --></label>
+        <name>SBQQ__OpportunityPricebookId__c</name>
+    </fields>
+    <fields>
+        <help>La oportunidad desde la que se creó este contrato.</help>
+        <label><!-- Opportunity --></label>
+        <name>SBQQ__Opportunity__c</name>
+        <relationshipLabel><!-- Contracts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Order --></label>
+        <name>SBQQ__Order__c</name>
+        <relationshipLabel><!-- Contracts --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Seleccione la casilla de verificación para mantener la jerarquía del paquete en presupuestos de renovación.</help>
+        <label><!-- Preserve Bundle Structure --></label>
+        <name>SBQQ__PreserveBundleStructureUponRenewals__c</name>
+    </fields>
+    <fields>
+        <help>El presupuesto desde el que se creó este contrato.</help>
+        <label><!-- Quote --></label>
+        <name>SBQQ__Quote__c</name>
+        <relationshipLabel><!-- Contracts --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Seleccione para desencadenar la generación de una oportunidad de renovación para fines de pronóstico. No genera automáticamente un presupuesto de renovación.</help>
+        <label><!-- Renewal Forecast --></label>
+        <name>SBQQ__RenewalForecast__c</name>
+    </fields>
+    <fields>
+        <help>Tipo de registro de la oportunidad de renovación si es diferente del predeterminado.</help>
+        <label><!-- Renewal Opportunity Record Type Id --></label>
+        <name>SBQQ__RenewalOpportunityRecordTypeId__c</name>
+    </fields>
+    <fields>
+        <help>Invalida la etapa de la oportunidad predeterminada para esta renovación. Debe hacerse antes de seleccionar Pronóstico de renovación para que entre en vigor en la oportunidad de renovación.</help>
+        <label><!-- Renewal Opportunity Stage --></label>
+        <name>SBQQ__RenewalOpportunityStage__c</name>
+    </fields>
+    <fields>
+        <help>Oportunidad de renovación generada para realizar un seguimiento de la renovación de este contrato.</help>
+        <label><!-- Renewal Opportunity --></label>
+        <name>SBQQ__RenewalOpportunity__c</name>
+        <relationshipLabel><!-- Renewal Contracts --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Propietario de la oportunidad original.</help>
+        <label><!-- Renewal Owner --></label>
+        <name>SBQQ__RenewalOwner__c</name>
+        <relationshipLabel><!-- Contracts (Renewal Owner) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Especifique un Id. de lista de precios para utilizar en Oportunidades de renovación si no desea utilizar el Id. de la lista de precios de la oportunidad original.</help>
+        <label><!-- Renewal Pricebook Id --></label>
+        <name>SBQQ__RenewalPricebookId__c</name>
+    </fields>
+    <fields>
+        <help>Seleccione esta opción para generar automáticamente un presupuesto de renovación en las oportunidades de renovación.</help>
+        <label><!-- Renewal Quoted --></label>
+        <name>SBQQ__RenewalQuoted__c</name>
+    </fields>
+    <fields>
+        <help>Especifique el plazo de la renovación. Coincide de forma predeterminada con el plazo original del contrato.</help>
+        <label><!-- Renewal Term --></label>
+        <name>SBQQ__RenewalTerm__c</name>
+    </fields>
+    <fields>
+        <help>Índice de los aumentos del precio de renovación.</help>
+        <label><!-- Renewal Uplift (%) --></label>
+        <name>SBQQ__RenewalUpliftRate__c</name>
+    </fields>
+    <fields>
+        <help>Seleccione para combinar las cantidades de suscripciones para el mismo producto en una partida en Presupuestos y Correcciones de renovación.</help>
+        <label><!-- Combine Subscription Quantities --></label>
+        <name>SBQQ__SubscriptionQuantitiesCombined__c</name>
+    </fields>
+    <layouts>
+        <layout>CPQ Contract Layout</layout>
+        <sections>
+            <label><!-- Amendments --></label>
+            <section>Amendments</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Recalculating --></label>
+            <section>Recalculating</section>
+        </sections>
+        <sections>
+            <label><!-- Salesforce CPQ Information --></label>
+            <section>Salesforce CPQ Information</section>
+        </sections>
+        <sections>
+            <label><!-- System Info --></label>
+            <section>System Info</section>
+        </sections>
+    </layouts>
+    <webLinks>
+        <label><!-- Amend --></label>
+        <name>SBQQ__Amend</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- RenewContracts --></label>
+        <name>SBQQ__RenewContracts</name>
+    </webLinks>
+</CustomObjectTranslation>

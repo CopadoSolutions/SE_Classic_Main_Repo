@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Benutzerdefinierte Aktionsbedingung</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Benutzerdefinierte Aktionsbedingungen</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value><!-- Benutzerdefinierte Aktionsbedingung --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+        <value><!-- Benutzerdefinierte Aktionsbedingungen --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value><!-- Benutzerdefinierte Aktionsbedingung --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>true</plural>
+        <value><!-- Benutzerdefinierte Aktionsbedingungen --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value><!-- Benutzerdefinierte Aktionsbedingung --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value><!-- Benutzerdefinierte Aktionsbedingungen --></value>
+    </caseValues>
+    <fields>
+        <help>Benutzerdefinierte Aktion, die diese Bedingung ausführt.</help>
+        <label><!-- Custom Action --></label>
+        <name>SBQQ__CustomAction__c</name>
+        <relationshipLabel><!-- Custom Action Conditions --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Wählen Sie das Feld, das den Wert enthalten soll, den Sie im Feld &quot;Wert&quot; eingeben.</help>
+        <label><!-- Field --></label>
+        <name>SBQQ__Field__c</name>
+        <picklistValues>
+            <masterLabel>Product Code</masterLabel>
+            <translation>Produktcode</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Geben Sie den Wert ein, mit dem das ausgewählte Feld unter Verwendung des festgelegten Operators verglichen werden soll.</help>
+        <label><!-- Filter Value --></label>
+        <name>SBQQ__FilterValue__c</name>
+    </fields>
+    <fields>
+        <help>Wählen Sie den Operator aus, der beim Vergleich von &quot;Feld&quot; mit &quot;Wert&quot; verwendet werden soll.</help>
+        <label><!-- Operator --></label>
+        <name>SBQQ__Operator__c</name>
+        <picklistValues>
+            <masterLabel>contains</masterLabel>
+            <translation>enthält</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ends with</masterLabel>
+            <translation>endet auf</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>equals</masterLabel>
+            <translation>gleich</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>greater or equals</masterLabel>
+            <translation>größer oder gleich</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>greater than</masterLabel>
+            <translation>größer als</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>less or equals</masterLabel>
+            <translation>kleiner oder gleich</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>less than</masterLabel>
+            <translation>kleiner als</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>not equals</masterLabel>
+            <translation>ungleich</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>starts with</masterLabel>
+            <translation>beginnt mit</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- ParentConditionIsActive --></label>
+        <name>SBQQ__ParentActionIsActive__c</name>
+    </fields>
+    <fields>
+        <help>Objekt, für das die Bedingung ausgewertet wird.</help>
+        <label><!-- Target Object --></label>
+        <name>SBQQ__TargetObject__c</name>
+        <picklistValues>
+            <masterLabel>Product</masterLabel>
+            <translation>Produkt</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quote</masterLabel>
+            <translation>Angebot</translation>
+        </picklistValues>
+    </fields>
+    <gender>Feminine</gender>
+    <nameFieldLabel>Name der benutzerdefinierten Aktionsbedi</nameFieldLabel>
+</CustomObjectTranslation>

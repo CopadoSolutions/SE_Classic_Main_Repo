@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Datos de búsqueda de consulta</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Datos de búsqueda de consulta</value>
+    </caseValues>
+    <fields>
+        <label><!-- Category --></label>
+        <name>SBQQ__Category__c</name>
+    </fields>
+    <fields>
+        <label><!-- Message --></label>
+        <name>SBQQ__Message__c</name>
+    </fields>
+    <fields>
+        <help>Representa el producto al que se aplica la acción de producto con las reglas de selección de productos.</help>
+        <label><!-- Product --></label>
+        <name>SBQQ__Product__c</name>
+        <relationshipLabel><!-- Lookup Data --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Indica que la acción es obligatoria para las reglas de selección de productos.</help>
+        <label><!-- Required --></label>
+        <name>SBQQ__Required__c</name>
+    </fields>
+    <fields>
+        <help>Especifica el tipo de acción que hay que realizar sobre el producto en las reglas de selección de productos.</help>
+        <label><!-- Type --></label>
+        <name>SBQQ__Type__c</name>
+        <picklistValues>
+            <masterLabel>Add</masterLabel>
+            <translation>Agregar</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Default Filter</masterLabel>
+            <translation>Filtro predeterminado</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Disable</masterLabel>
+            <translation>Desactivar</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Disable &amp; Remove</masterLabel>
+            <translation>Desactivar y Eliminar</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Enable</masterLabel>
+            <translation>Activar</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Enable &amp; Add</masterLabel>
+            <translation>Activar y Agregar</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hide</masterLabel>
+            <translation>Ocultar</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hide &amp; Remove</masterLabel>
+            <translation>Ocultar y Eliminar</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Optional Filter</masterLabel>
+            <translation>Filtro opcional</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Remove</masterLabel>
+            <translation>Eliminar</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Show</masterLabel>
+            <translation>Mostrar</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Show &amp; Add</masterLabel>
+            <translation>Mostrar y Agregar</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Value --></label>
+        <name>SBQQ__Value__c</name>
+    </fields>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Lookup Data Layout</layout>
+        <sections>
+            <label>Vínculos personalizados</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Datos de búsqueda de consulta</nameFieldLabel>
+</CustomObjectTranslation>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Condición de presupuesto</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Condiciones de presupuesto</value>
+    </caseValues>
+    <fields>
+        <help>Indica que este plazo de presupuesto está disponible para su uso.</help>
+        <label><!-- Active --></label>
+        <name>SBQQ__Active__c</name>
+    </fields>
+    <fields>
+        <help>Solo se puede ingresar si Condiciones cumplidas es Personalizado. Ingrese una combinación de los números de índice de condición de plazo, AND, OR y paréntesis (por ej. (123 AND 124) AND 125).</help>
+        <label><!-- Advanced Condition --></label>
+        <name>SBQQ__AdvancedCondition__c</name>
+    </fields>
+    <fields>
+        <help>Contenido del texto de este plazo.</help>
+        <label><!-- Body --></label>
+        <name>SBQQ__Body__c</name>
+    </fields>
+    <fields>
+        <help>Seleccione el comportamiento para sus condiciones: todo es AND, cualquiera es OR, Personalizado es una combinación de AND/OR.</help>
+        <label><!-- Conditions Met --></label>
+        <name>SBQQ__ConditionsMet__c</name>
+        <picklistValues>
+            <masterLabel>All</masterLabel>
+            <translation>Todo</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Any</masterLabel>
+            <translation>Cualquiera</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Custom</masterLabel>
+            <translation>Personalizado</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Controla si un usuario puede modificar un plazo de presupuesto.</help>
+        <label><!-- Locked --></label>
+        <name>SBQQ__Locked__c</name>
+    </fields>
+    <fields>
+        <help>El plazo principal para este plazo.</help>
+        <label><!-- Parent Term --></label>
+        <name>SBQQ__ParentTerm__c</name>
+        <relationshipLabel><!-- Sub Terms --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Especifica el orden en el que los plazos se imprimen en un documento de presupuesto.</help>
+        <label><!-- Print Order --></label>
+        <name>SBQQ__PrintOrder__c</name>
+    </fields>
+    <fields>
+        <help>Presupuesto al que se aplica este plazo. Deje esta opción en blanco si es un plazo estándar.</help>
+        <label><!-- Quote --></label>
+        <name>SBQQ__Quote__c</name>
+        <relationshipLabel><!-- Quote Terms --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Especifica el plazo estándar que se está modificando.</help>
+        <label><!-- Standard Term --></label>
+        <name>SBQQ__StandardTerm__c</name>
+        <relationshipLabel><!-- Modified Terms --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Estado del plazo de este presupuesto.</help>
+        <label><!-- Status --></label>
+        <name>SBQQ__Status__c</name>
+        <picklistValues>
+            <masterLabel>Approved</masterLabel>
+            <translation>Aprobado</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Draft</masterLabel>
+            <translation>Borrador</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Review</masterLabel>
+            <translation>En revisión</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rejected</masterLabel>
+            <translation>Rechazado</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Contenido de plantilla al que se aplica este plazo.</help>
+        <label><!-- Template Content --></label>
+        <name>SBQQ__TemplateContent__c</name>
+        <relationshipLabel><!-- Quote Terms --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Indica si el plazo es estándar, personalizado o modificado.</help>
+        <label><!-- Type --></label>
+        <name>SBQQ__Type__c</name>
+    </fields>
+    <gender>Feminine</gender>
+    <layouts>
+        <layout>Quote Term Layout</layout>
+        <sections>
+            <label>Cuerpo</label>
+            <section>Body</section>
+        </sections>
+        <sections>
+            <label>Vínculos personalizados</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Nº de plazo</nameFieldLabel>
+    <webLinks>
+        <label><!-- Translate --></label>
+        <name>SBQQ__Translate</name>
+    </webLinks>
+</CustomObjectTranslation>

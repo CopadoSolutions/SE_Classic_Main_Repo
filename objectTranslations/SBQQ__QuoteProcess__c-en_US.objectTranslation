@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- Select the checkbox to default the quote process selector to this process in Line Editor. This only applies when quote process selector is rendered as a picklist. --></help>
+        <label><!-- Default --></label>
+        <name>SBQQ__Default__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select the checkbox if you want quotes covered by this process forced into guided product selection; otherwise, this defaults to ad-hoc filtering. --></help>
+        <label><!-- Guided Only --></label>
+        <name>SBQQ__GuidedOnly__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select the checkbox to determine whether the product is auto selected if it&apos;s the only one returned by a search. --></help>
+        <label><!-- Auto Select Product? --></label>
+        <name>SBQQ__ProductAutoSelected__c</name>
+    </fields>
+    <fields>
+        <help><!-- Custom Visualforce page that will be invoked on every configurable product to initialize the options. --></help>
+        <label><!-- Product Configuration Initializer --></label>
+        <name>SBQQ__ProductConfigurationInitializer__c</name>
+    </fields>
+    <fields>
+        <help><!-- VisualForce page that performs custom product search. --></help>
+        <label><!-- Product Search Executor --></label>
+        <name>SBQQ__ProductSearchExecutor__c</name>
+    </fields>
+    <fields>
+        <help><!-- Specify the sequential number that determines the quote process&apos;s display order. --></help>
+        <label><!-- Sort Order --></label>
+        <name>SBQQ__SortOrder__c</name>
+    </fields>
+    <layouts>
+        <layout>Quote Process Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+</CustomObjectTranslation>

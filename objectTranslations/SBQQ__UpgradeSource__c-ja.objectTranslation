@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>アップグレードソース</value>
+    </caseValues>
+    <fields>
+        <help>アップグレード元の商品を指定します。</help>
+        <label><!-- Source Product --></label>
+        <name>SBQQ__SourceProduct__c</name>
+        <relationshipLabel><!-- Available Upgrade Sources --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>アップグレード元からアップグレード商品への数量変換の比率を指定します。たとえば、「5.1」は、アップグレード元の 5 単位がアップグレード商品の 1 単位に変換されることを意味します。空白にすると、アップグレード換算レートは適用されません。</help>
+        <label><!-- Upgrade Conversion Rate --></label>
+        <name>SBQQ__UpgradeConversionRate__c</name>
+    </fields>
+    <fields>
+        <help>アップグレード先の商品を指定します。</help>
+        <label><!-- Upgrade Product --></label>
+        <name>SBQQ__UpgradeProduct__c</name>
+        <relationshipLabel><!-- Upgrade Sources --></relationshipLabel>
+    </fields>
+    <layouts>
+        <layout>Upgrade Source Layout</layout>
+        <sections>
+            <label>カスタムリンク</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>ソース名</nameFieldLabel>
+    <validationRules>
+        <errorMessage><!-- Conversion Rate must be represented as a ratio of the format &quot;Upgrade Source:Upgrade Product&quot;. --></errorMessage>
+        <name>SBQQ__Conversion_Rate_Must_Fit_Ratio_Format</name>
+    </validationRules>
+</CustomObjectTranslation>

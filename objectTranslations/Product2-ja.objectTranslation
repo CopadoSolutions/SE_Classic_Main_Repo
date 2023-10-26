@@ -1,0 +1,597 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label><!-- Configurator Filters --></label>
+        <name>SBQQ__ConfiguratorFilter</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Configurator Lookup --></label>
+        <name>SBQQ__ConfiguratorLookup</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Search Filters --></label>
+        <name>SBQQ__SearchFilters</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Search Results --></label>
+        <name>SBQQ__SearchResults</name>
+    </fieldSets>
+    <fields>
+        <help>この商品を表す納入商品を修正する場合の動作を選択してください。デフォルトでは、アップグレードが追加されない限り、納入商品の数量を減らすことはできず、返金は適用されません。</help>
+        <label><!-- Asset Amendment Behavior --></label>
+        <name>SBQQ__AssetAmendmentBehavior__c</name>
+        <picklistValues>
+            <masterLabel>Allow Refund</masterLabel>
+            <translation>返金を許可</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Default</masterLabel>
+            <translation>デフォルト</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>この商品を納入商品に変換する方法を示します。</help>
+        <label><!-- Asset Conversion --></label>
+        <name>SBQQ__AssetConversion__c</name>
+        <picklistValues>
+            <masterLabel>One per quote line</masterLabel>
+            <translation>見積品目ごとに 1 つ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>One per unit</masterLabel>
+            <translation>単位ごとに 1 つ</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>空白以外の値を設定すると、この商品がバッチで販売されることを指定します。各バッチに含める数量を入力します。見積に入力された数量は、この値で割って最も近い整数に切り上げられます。</help>
+        <label><!-- Batch Quantity --></label>
+        <name>SBQQ__BatchQuantity__c</name>
+    </fields>
+    <fields>
+        <help>この商品の請求頻度を決定します。</help>
+        <label><!-- Billing Frequency --></label>
+        <name>SBQQ__BillingFrequency__c</name>
+    </fields>
+    <fields>
+        <help>請求の発生タイミングを定義する請求種別。[前払い請求] の場合は、商品またはサービスを提供する前に顧客に請求でき、[後払い請求] の場合は、商品またはサービスの提供後に顧客に請求することができます。</help>
+        <label><!-- Billing Type --></label>
+        <name>SBQQ__BillingType__c</name>
+    </fields>
+    <fields>
+        <help>ブロック価格設定の計算に使用する項目。</help>
+        <label><!-- Block Pricing Field --></label>
+        <name>SBQQ__BlockPricingField__c</name>
+        <picklistValues>
+            <masterLabel>Quantity</masterLabel>
+            <translation>数量</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>商品の課金の種別。</help>
+        <label><!-- Charge Type --></label>
+        <name>SBQQ__ChargeType__c</name>
+    </fields>
+    <fields>
+        <help>この商品をコンポーネントとしてマークし、商品ルックアップの選択から除外します。</help>
+        <label><!-- Component --></label>
+        <name>SBQQ__Component__c</name>
+    </fields>
+    <fields>
+        <help>数量に従って大きくなる割引率。</help>
+        <label><!-- Compound Discount (%) --></label>
+        <name>SBQQ__CompoundDiscountRate__c</name>
+    </fields>
+    <fields>
+        <help>これは、この商品の [商品の設定] 画面が表示された場合の制御に使用します。初期設定に限定する場合は [追加] を選択します。その後の設定を行う場合は [編集] を選択します。</help>
+        <label><!-- Configuration Event --></label>
+        <name>SBQQ__ConfigurationEvent__c</name>
+        <picklistValues>
+            <masterLabel>Add</masterLabel>
+            <translation>加算</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Always</masterLabel>
+            <translation>常に</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Edit</masterLabel>
+            <translation>編集</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>設定時にこの商品に使用される項目セットの API 参照名。</help>
+        <label><!-- Configuration Field Set --></label>
+        <name>SBQQ__ConfigurationFieldSet__c</name>
+        <picklistValues>
+            <masterLabel>OptionConfiguration</masterLabel>
+            <translation>OptionConfiguration</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Configuration Fields --></label>
+        <name>SBQQ__ConfigurationFields__c</name>
+    </fields>
+    <fields>
+        <help>指定された設定項目を基に表示される設定フォームのタイトル。</help>
+        <label><!-- Configuration Form Title --></label>
+        <name>SBQQ__ConfigurationFormTitle__c</name>
+    </fields>
+    <fields>
+        <help>この商品の設定種別。ユーザが商品/バンドルの設定を許可されているが必須ではない場合は [許可] を、バンドルのオプションが自動的に選択される場合は [無効] を、商品/バンドルの設定が必須の場合は [必須] を選択します。</help>
+        <label><!-- Configuration Type --></label>
+        <name>SBQQ__ConfigurationType__c</name>
+        <picklistValues>
+            <masterLabel>Allowed</masterLabel>
+            <translation>許可</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Disabled</masterLabel>
+            <translation>無効</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Required</masterLabel>
+            <translation>必須</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>この商品の設定の検証に使用される JavaScript 関数。</help>
+        <label><!-- Configuration Validator --></label>
+        <name>SBQQ__ConfigurationValidator__c</name>
+    </fields>
+    <fields>
+        <help>設定対象の商品の商品コード (SKU) を生成するために使用されるパターン。</help>
+        <label><!-- Configured Code Pattern --></label>
+        <name>SBQQ__ConfiguredCodePattern__c</name>
+    </fields>
+    <fields>
+        <help>設定対象の商品の動的な商品説明を生成するために使用されるパターン。</help>
+        <label><!-- Configured Description Pattern --></label>
+        <name>SBQQ__ConfiguredDescriptionPattern__c</name>
+    </fields>
+    <fields>
+        <help>この商品のコストを個々の見積で変更可能かどうかを制御します。</help>
+        <label><!-- Cost Editable --></label>
+        <name>SBQQ__CostEditable__c</name>
+    </fields>
+    <fields>
+        <help>この商品のコスト表として使用される割引率表。</help>
+        <label><!-- Cost Schedule --></label>
+        <name>SBQQ__CostSchedule__c</name>
+        <relationshipLabel><!-- Products (Cost Schedule) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Custom Configuration Page --></label>
+        <name>SBQQ__CustomConfigurationPage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Custom Configuration Required --></label>
+        <name>SBQQ__CustomConfigurationRequired__c</name>
+    </fields>
+    <fields>
+        <help>カスタマーコミュニティでこの商品を使用可能にする方法を選択します。</help>
+        <label><!-- Customer Community Availability --></label>
+        <name>SBQQ__CustomerCommunityAvailability__c</name>
+        <picklistValues>
+            <masterLabel>Always</masterLabel>
+            <translation>常に</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Never</masterLabel>
+            <translation>表示しない</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Only when already owned</masterLabel>
+            <translation>すでに所有されている場合のみ</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Default Pricing Table --></label>
+        <name>SBQQ__DefaultPricingTable__c</name>
+        <picklistValues>
+            <masterLabel>Segmented</masterLabel>
+            <translation>分割</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Standard</masterLabel>
+            <translation>標準</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>追加時の商品の開始数量を指定します。</help>
+        <label><!-- Default Quantity --></label>
+        <name>SBQQ__DefaultQuantity__c</name>
+    </fields>
+    <fields>
+        <help>この商品の説明がロックされている (見積上で編集できない) ことを示すフラグ。</help>
+        <label><!-- Lock Description --></label>
+        <name>SBQQ__DescriptionLocked__c</name>
+    </fields>
+    <fields>
+        <help>この商品の割引カテゴリを指定します。</help>
+        <label><!-- Discount Category --></label>
+        <name>SBQQ__DiscountCategory__c</name>
+        <relationshipLabel><!-- Products --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>この商品に使用する割引率表</help>
+        <label><!-- Discount Schedule --></label>
+        <name>SBQQ__DiscountSchedule__c</name>
+        <relationshipLabel><!-- Quantity Discounted Products --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>動的に計算される価格に対して制約を適用するために使用します。</help>
+        <label><!-- Percent Of Total Constraint --></label>
+        <name>SBQQ__DynamicPricingConstraint__c</name>
+        <picklistValues>
+            <masterLabel>List price is maximum</masterLabel>
+            <translation>リスト価格が最高</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>List price is minimum</masterLabel>
+            <translation>リスト価格が最低</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>この商品を全体に対する割合の計算から常に除外する場合は、オンにします (通常、非サブスクリプション商品は全体に対する割合の計算に含まれます)。</help>
+        <label><!-- Exclude From Percent Of Total --></label>
+        <name>SBQQ__ExcludeFromMaintenance__c</name>
+    </fields>
+    <fields>
+        <help>この商品を商談に移行できないことを示します。</help>
+        <label><!-- Exclude From Opportunity --></label>
+        <name>SBQQ__ExcludeFromOpportunity__c</name>
+    </fields>
+    <fields>
+        <help>オンの場合、この商品を設定すると自動的に、Salesforce CPQ 設定に定義された外部設定 URL が起動することを示します。</help>
+        <label><!-- Externally Configurable --></label>
+        <name>SBQQ__ExternallyConfigurable__c</name>
+    </fields>
+    <fields>
+        <help>フラグが付いている場合、調整済み見積品目に基づいて契約価格を生成します。</help>
+        <label><!-- Generate Contracted Price --></label>
+        <name>SBQQ__GenerateContractedPrice__c</name>
+        <picklistValues>
+            <masterLabel>Discount Schedule</masterLabel>
+            <translation>割引率表</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Do Not Generate</masterLabel>
+            <translation>生成しない</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Price</masterLabel>
+            <translation>価格</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Has Configuration Attributes --></label>
+        <name>SBQQ__HasConfigurationAttributes__c</name>
+    </fields>
+    <fields>
+        <help>この商品を見積 PDF への表示から除外します。</help>
+        <label><!-- Hidden --></label>
+        <name>SBQQ__Hidden__c</name>
+    </fields>
+    <fields>
+        <help>商品検索結果でこの商品の価格を非表示にする場合は、チェックボックスをオンにします。</help>
+        <label><!-- Hide Price in Search Results --></label>
+        <name>SBQQ__HidePriceInSearchResults__c</name>
+    </fields>
+    <fields>
+        <help>この商品を全体に対する割合の計算に常に含める場合は、オンにします (通常、サブスクリプション商品は全体に対する割合の計算から除外されます)。</help>
+        <label><!-- Include In Percent Of Total --></label>
+        <name>SBQQ__IncludeInMaintenance__c</name>
+    </fields>
+    <fields>
+        <help>この商品が追加されたときに新しい見積グループを作成する (現在のグループが空の場合を除く) 場合は、オンにします。</help>
+        <label><!-- New Quote Group --></label>
+        <name>SBQQ__NewQuoteGroup__c</name>
+    </fields>
+    <fields>
+        <help>この商品を割引不可能とマークします。</help>
+        <label><!-- Non Discountable --></label>
+        <name>SBQQ__NonDiscountable__c</name>
+    </fields>
+    <fields>
+        <help>この商品をパートナーが割引できないようにする場合は、オンにします。</help>
+        <label><!-- Non Partner Discountable --></label>
+        <name>SBQQ__NonPartnerDiscountable__c</name>
+    </fields>
+    <fields>
+        <help>オプションをユーザに表示する方法を決定します。</help>
+        <label><!-- Option Layout --></label>
+        <name>SBQQ__OptionLayout__c</name>
+        <picklistValues>
+            <masterLabel>Sections</masterLabel>
+            <translation>セクション</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tabs</masterLabel>
+            <translation>タブ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wizard</masterLabel>
+            <translation>ウィザード</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>ユーザがこの商品に付随するオプションを選択する方法を決定します。[クリック] の場合は、オプションの横にチェックボックスが表示されます。[追加] の場合は、使用可能なオプションを表示するダイアログボックスを開くボタンが表示されます。</help>
+        <label><!-- Option Selection Method --></label>
+        <name>SBQQ__OptionSelectionMethod__c</name>
+        <picklistValues>
+            <masterLabel>Add</masterLabel>
+            <translation>加算</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Click</masterLabel>
+            <translation>クリック</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>この商品がデフォルトでオプションの場合は選択します。オプション商品は、見積合計に加算されず、商談にも移行されません。</help>
+        <label><!-- Optional --></label>
+        <name>SBQQ__Optional__c</name>
+    </fields>
+    <fields>
+        <help>見積を作成するときに、この商品の価格を自由に編集できることを示します。</help>
+        <label><!-- Price Editable --></label>
+        <name>SBQQ__PriceEditable__c</name>
+    </fields>
+    <fields>
+        <help>この商品を見積に追加するときに価格方式を変更できる場合は選択します。</help>
+        <label><!-- Pricing Method Editable --></label>
+        <name>SBQQ__PricingMethodEditable__c</name>
+    </fields>
+    <fields>
+        <help>この商品に適用される価格方式。</help>
+        <label><!-- Pricing Method --></label>
+        <name>SBQQ__PricingMethod__c</name>
+        <picklistValues>
+            <masterLabel>Block</masterLabel>
+            <translation>ブロック</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cost</masterLabel>
+            <translation>コスト</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>List</masterLabel>
+            <translation>リスト</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Percent Of Total</masterLabel>
+            <translation>全体に対する割合</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>この商品の写真を保持するドキュメントまたはコンテンツレコードの ID。</help>
+        <label><!-- Product Picture Id --></label>
+        <name>SBQQ__ProductPictureID__c</name>
+    </fields>
+    <fields>
+        <help>この商品の数量の変更を許可または禁止します。</help>
+        <label><!-- Quantity Editable --></label>
+        <name>SBQQ__QuantityEditable__c</name>
+    </fields>
+    <fields>
+        <help>数量項目で使用される小数位の桁数を指定します。</help>
+        <label><!-- Quantity Scale --></label>
+        <name>SBQQ__QuantityScale__c</name>
+    </fields>
+    <fields>
+        <help>オンの場合、この商品は見積に最初に追加するときのみ設定できます。選択されている場合、ユーザは商品が追加された後に [品目の編集] ページの [設定] リンクにアクセスできなくなります。</help>
+        <label><!-- Disable Reconfiguration --></label>
+        <name>SBQQ__ReconfigurationDisabled__c</name>
+    </fields>
+    <fields>
+        <help>更新時にこの商品を置き換える商品。更新時に異なる SKU の見積を作成する場合はこれを使用します。</help>
+        <label><!-- Renewal Product --></label>
+        <name>SBQQ__RenewalProduct__c</name>
+        <relationshipLabel><!-- Original Products --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>[商品ルックアップ] ページでの商品のデフォルトの並び替え順を決定します。この順序で商品が見積に追加されます。</help>
+        <label><!-- Sort Order --></label>
+        <name>SBQQ__SortOrder__c</name>
+    </fields>
+    <fields>
+        <help>この商品の書式設定済みの仕様。見積テンプレートで仕様シートを生成するために使用されます。</help>
+        <label><!-- Specifications --></label>
+        <name>SBQQ__Specifications__c</name>
+    </fields>
+    <fields>
+        <help>全体に対する割合が商品のリスト価格と正価のどちらに基づいて計算されるかを決定します。</help>
+        <label><!-- Percent Of Total Base --></label>
+        <name>SBQQ__SubscriptionBase__c</name>
+        <picklistValues>
+            <masterLabel>Customer</masterLabel>
+            <translation>顧客</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>List</masterLabel>
+            <translation>リスト</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Net</masterLabel>
+            <translation>正価</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Regular</masterLabel>
+            <translation>通常</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>全体に対する割合の計算を特定の商品カテゴリに限定する場合にこれを使用します。たとえば、ソフトウェアメンテナンスでは、全体に対する割合のカテゴリがソフトウェアメンテナンスである商品の割合のみを計算します。</help>
+        <label><!-- Percent Of Total Category --></label>
+        <name>SBQQ__SubscriptionCategory__c</name>
+        <picklistValues>
+            <masterLabel>Hardware</masterLabel>
+            <translation>ハードウェア</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Software</masterLabel>
+            <translation>ソフトウェア</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>このサブスクリプションの価格として使用する非サブスクリプション全体に対する割合。</help>
+        <label><!-- Percent Of Total (%) --></label>
+        <name>SBQQ__SubscriptionPercent__c</name>
+    </fields>
+    <fields>
+        <help>このサブスクリプションに使用する価格設定の種類。[なし] は、この商品がサブスクリプションではないことを意味します。</help>
+        <label><!-- Subscription Pricing --></label>
+        <name>SBQQ__SubscriptionPricing__c</name>
+        <picklistValues>
+            <masterLabel>Fixed Price</masterLabel>
+            <translation>固定価格:</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Percent Of Total</masterLabel>
+            <translation>全体に対する割合</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>全体に対する割合の計算に含まれる商品を上書きする場合は、この項目を使用します。このルックアップが、現在の商品の全体に対する割合の計算で使用するリスト価格が設定されている商品を指し示すようにします。</help>
+        <label><!-- Percent Of Total Target --></label>
+        <name>SBQQ__SubscriptionTarget__c</name>
+        <relationshipLabel><!-- Subscription Targeting Products --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>このサブスクリプションの期間。商品がサブスクリプションの場合のみ適用されます。</help>
+        <label><!-- Subscription Term --></label>
+        <name>SBQQ__SubscriptionTerm__c</name>
+    </fields>
+    <fields>
+        <help>更新可能なサブスクリプションは更新見積に移行されます。1 回限りのサブスクリプションは移行されません。</help>
+        <label><!-- Subscription Type --></label>
+        <name>SBQQ__SubscriptionType__c</name>
+        <picklistValues>
+            <masterLabel>One-time</masterLabel>
+            <translation>1 回</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Renewable</masterLabel>
+            <translation>更新可能</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>課税規則の税コードを指定します。</help>
+        <label><!-- Tax code --></label>
+        <name>SBQQ__TaxCode__c</name>
+    </fields>
+    <fields>
+        <help>この商品が課税対象かどうかを示します。</help>
+        <label><!-- Taxable --></label>
+        <name>SBQQ__Taxable__c</name>
+    </fields>
+    <fields>
+        <help>期間割引の計算に使用するサブスクリプション期間レベルを指定します。デフォルトを示す場合は空白のままにします。</help>
+        <label><!-- Term Discount Level --></label>
+        <name>SBQQ__TermDiscountLevel__c</name>
+        <picklistValues>
+            <masterLabel>Group</masterLabel>
+            <translation>グループ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Line</masterLabel>
+            <translation>品目</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quote</masterLabel>
+            <translation>見積</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>サブスクリプション期間に基づく割引率表。</help>
+        <label><!-- Term Discount Schedule --></label>
+        <name>SBQQ__TermDiscountSchedule__c</name>
+        <relationshipLabel><!-- Term Discounted Products --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>この商品へのアップグレードの見積を作成するときにクレジットを指定する場合は使用します。</help>
+        <label><!-- Upgrade Credit --></label>
+        <name>SBQQ__UpgradeCredit__c</name>
+        <relationshipLabel><!-- Credited Products --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>この商品の数量とそのソース商品との間の換算レート。</help>
+        <label><!-- Upgrade Ratio --></label>
+        <name>SBQQ__UpgradeRatio__c</name>
+    </fields>
+    <fields>
+        <help>アップグレード対象商品。この項目に入力すると、この商品がアップグレードになります。</help>
+        <label><!-- Upgrade Source --></label>
+        <name>SBQQ__UpgradeSource__c</name>
+        <relationshipLabel><!-- Target Upgrades --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>アップグレード後の商品を指定します。[アップグレード元] 項目への入力または関連する [アップグレード元] レコードの存在によってこの商品がアップグレードであることが示されている場合のみ適用されます。</help>
+        <label><!-- Upgrade Target --></label>
+        <name>SBQQ__UpgradeTarget__c</name>
+        <relationshipLabel><!-- Source Upgrades --></relationshipLabel>
+    </fields>
+    <layouts>
+        <layout>CPQ Product Layout</layout>
+        <sections>
+            <label>カスタムリンク</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>項目</label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label>価格設定</label>
+            <section>Pricing</section>
+        </sections>
+        <sections>
+            <label>更新</label>
+            <section>Renewals</section>
+        </sections>
+        <sections>
+            <label>Salesforce CPQ 設定</label>
+            <section>Salesforce CPQ Configuration</section>
+        </sections>
+        <sections>
+            <label>サブスクリプション</label>
+            <section>Subscriptions</section>
+        </sections>
+        <sections>
+            <label>アップグレード</label>
+            <section>Upgrades</section>
+        </sections>
+    </layouts>
+    <validationRules>
+        <errorMessage><!-- You must check either Include In Maintenance or Exclude From Maintenance checkbox. --></errorMessage>
+        <name>SBQQ__Include_or_Exclude_Maintenance</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- When Charge Type is Recurring, a Billing Type must be selected. --></errorMessage>
+        <name>SBQQ__RecurringChargeTypeMustHaveBillingType</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Only subscription products may specify term discount schedule --></errorMessage>
+        <name>SBQQ__Term_schedule_requires_subscription</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- When Charge Type is One-Time, a Billing Frequency value cannot be selected. --></errorMessage>
+        <name>SBQQ__Validate_billing_frequency</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- When Charge Type is One-Time or Usage, a Billing Type value cannot be selected. --></errorMessage>
+        <name>SBQQ__Validate_billing_type</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- CloneWithRelated --></label>
+        <name>SBQQ__CloneWithRelated</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- CloneWithRelatedClassic --></label>
+        <name>SBQQ__CloneWithRelatedClassic</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Translate --></label>
+        <name>SBQQ__Translate</name>
+    </webLinks>
+</CustomObjectTranslation>

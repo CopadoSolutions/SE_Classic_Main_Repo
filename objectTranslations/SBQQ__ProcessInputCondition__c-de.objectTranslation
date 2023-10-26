@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Prozesseingabebedingung</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Prozesseingabebedingungen</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value><!-- Prozesseingabebedingung --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+        <value><!-- Prozesseingabebedingungen --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value><!-- Prozesseingabebedingung --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>true</plural>
+        <value><!-- Prozesseingabebedingungen --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value><!-- Prozesseingabebedingung --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value><!-- Prozesseingabebedingungen --></value>
+    </caseValues>
+    <fields>
+        <help>Kennzeichnung, die angibt, ob diese Regel aktiv oder inaktiv ist.</help>
+        <label><!-- Active --></label>
+        <name>SBQQ__Active__c</name>
+    </fields>
+    <fields>
+        <help>Werte dieser Prozesseingabe bestimmten die Sichtbarkeit der aktuellen Eingabe.</help>
+        <label><!-- Master Process Input --></label>
+        <name>SBQQ__MasterProcessInput__c</name>
+        <relationshipLabel><!-- Process Inputs Regulated --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Wählen Sie den Operator aus, der beim Vergleichen von Prozesseingabewerten verwendet werden soll.</help>
+        <label><!-- Operator --></label>
+        <name>SBQQ__Operator__c</name>
+        <picklistValues>
+            <masterLabel>contains</masterLabel>
+            <translation>enthält</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ends with</masterLabel>
+            <translation>endet auf</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>equals</masterLabel>
+            <translation>gleich</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>greater or equals</masterLabel>
+            <translation>größer oder gleich</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>greater than</masterLabel>
+            <translation>größer als</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>less or equals</masterLabel>
+            <translation>kleiner oder gleich</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>less than</masterLabel>
+            <translation>kleiner als</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>not equals</masterLabel>
+            <translation>ungleich</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>starts with</masterLabel>
+            <translation>beginnt mit</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Prozesseingabe, die Inhaber der Bedingung ist.</help>
+        <label><!-- Process Input --></label>
+        <name>SBQQ__ProcessInput__c</name>
+        <relationshipLabel><!-- Process Input Conditions --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Der Wert, der beim Vergleich mit der steuernden Prozesseingabe verwendet wird.</help>
+        <label><!-- Value --></label>
+        <name>SBQQ__Value__c</name>
+    </fields>
+    <gender>Feminine</gender>
+    <layouts>
+        <layout>Process Input Condition Layout</layout>
+        <sections>
+            <label>Benutzerdefinierte Links</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>Filterinformationen</label>
+            <section>Filter Information</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Name von Prozesseingabebedingungen</nameFieldLabel>
+</CustomObjectTranslation>

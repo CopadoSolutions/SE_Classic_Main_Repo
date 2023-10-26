@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Angebotsdokument</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Angebotsdokumente</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value><!-- Angebotsdokument --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+        <value><!-- Angebotsdokumente --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value><!-- Angebotsdokument --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>true</plural>
+        <value><!-- Angebotsdokumente --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value><!-- Angebotsdokument --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value><!-- Angebotsdokumente --></value>
+    </caseValues>
+    <fields>
+        <help>ID des Anhangdatensatzes, der für dieses Dokument erstellt wird.</help>
+        <label><!-- Attachment Id --></label>
+        <name>SBQQ__AttachmentId__c</name>
+    </fields>
+    <fields>
+        <help>Kundenbetrag des Angebots zu dem Zeitpunkt, als dieses Dokument erstellt wurde.</help>
+        <label><!-- Customer Amount --></label>
+        <name>SBQQ__CustomerAmount__c</name>
+    </fields>
+    <fields>
+        <help>ID des Dokumentdatensatzes, der das erstellte PDF-Dokument enthält.</help>
+        <label><!-- Document Id --></label>
+        <name>SBQQ__DocumentId__c</name>
+    </fields>
+    <fields>
+        <help>Feld, in dem das Dokument eine elektronische Signatur erhalten kann.</help>
+        <label><!-- Electronic Signature --></label>
+        <name>SBQQ__ElectronicSignature__c</name>
+    </fields>
+    <fields>
+        <help>Schlüssel, mit dem eine eindeutige Kombination aus Angebots-ID und Versionsnummer sichergestellt wird.</help>
+        <label><!-- Key --></label>
+        <name>SBQQ__Key__c</name>
+    </fields>
+    <fields>
+        <help>Listenbetrag des Angebots zu dem Zeitpunkt, als dieses Dokument erstellt wurde.</help>
+        <label><!-- List Amount --></label>
+        <name>SBQQ__ListAmount__c</name>
+    </fields>
+    <fields>
+        <help>Nettobetrag des Angebots zu dem Zeitpunkt, als dieses Dokument erstellt wurde.</help>
+        <label><!-- Net Amount --></label>
+        <name>SBQQ__NetAmount__c</name>
+    </fields>
+    <fields>
+        <help>Wählen Sie die Opportunity, die dem Angebot dieses Dokuments übergeordnet ist.</help>
+        <label><!-- Opportunity --></label>
+        <name>SBQQ__Opportunity__c</name>
+        <relationshipLabel><!-- Quote Documents --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Wählen Sie das Ausgabeformat für dieses Dokument.</help>
+        <label><!-- Output Format --></label>
+        <name>SBQQ__OutputFormat__c</name>
+        <picklistValues>
+            <masterLabel>MS Word</masterLabel>
+            <translation>Microsoft Word</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PDF</masterLabel>
+            <translation>PDF</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Wählen Sie die Papiergröße für dieses Dokument.</help>
+        <label><!-- Paper Size --></label>
+        <name>SBQQ__PaperSize__c</name>
+    </fields>
+    <fields>
+        <help>Referenziert den Hauptansprechpartner für das Angebot, der bei der Schaltfläche &quot;E-Mail&quot; verwendet werden soll, deren Standardfeld das Feld &quot;An:&quot; ist.</help>
+        <label><!-- Primary Contact Id --></label>
+        <name>SBQQ__PrimaryContactId__c</name>
+    </fields>
+    <fields>
+        <help>Angebotsvorlage, mit der dieses Dokument erstellt wurde.</help>
+        <label><!-- Quote Template --></label>
+        <name>SBQQ__QuoteTemplate__c</name>
+        <relationshipLabel><!-- Quote Documents --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Angebot, zu dem dieses Angebotsdokument gehört.</help>
+        <label><!-- Quote --></label>
+        <name>SBQQ__Quote__c</name>
+        <relationshipLabel><!-- Quote Documents --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Status der elektronischen Signatur.</help>
+        <label><!-- Signature Status --></label>
+        <name>SBQQ__SignatureStatus__c</name>
+        <picklistValues>
+            <masterLabel>Expired</masterLabel>
+            <translation>Abgelaufen</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending</masterLabel>
+            <translation>Ausstehend</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Revoked</masterLabel>
+            <translation>Widerrufen</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sent</masterLabel>
+            <translation>Gesendet</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Signed</masterLabel>
+            <translation>Unterschrieben</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Name der Vorlage, mit der dieses Dokument erstellt wurde.</help>
+        <label><!-- Template --></label>
+        <name>SBQQ__Template__c</name>
+    </fields>
+    <fields>
+        <help>Sequenziell erhöhte Versionsnummer.</help>
+        <label><!-- Version --></label>
+        <name>SBQQ__Version__c</name>
+    </fields>
+    <fields>
+        <help>Ermöglicht Benutzern, die Datensatz-ID des Angebotsdokuments anzuzeigen.</help>
+        <label><!-- View Record Id --></label>
+        <name>SBQQ__ViewRecordId__c</name>
+    </fields>
+    <gender>Neuter</gender>
+    <layouts>
+        <layout>Quote Document Layout</layout>
+        <sections>
+            <label>Benutzerdefinierte Links</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Dokumentname</nameFieldLabel>
+    <webLinks>
+        <label><!-- Email --></label>
+        <name>SBQQ__Email</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- View --></label>
+        <name>SBQQ__View</name>
+    </webLinks>
+</CustomObjectTranslation>

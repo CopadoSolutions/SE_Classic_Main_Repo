@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Acción de precios</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Acciones de precios</value>
+    </caseValues>
+    <fields>
+        <help>Seleccione el campo que desea actualizar cuando se cumplen las condiciones.</help>
+        <label><!-- Target Field --></label>
+        <name>SBQQ__Field__c</name>
+        <picklistValues>
+            <masterLabel>Discount (%)</masterLabel>
+            <translation>Descuento (%)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Discount (Amt)</masterLabel>
+            <translation>Descuento (importe)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Markup (%)</masterLabel>
+            <translation>Sobreprecio (%)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Markup (Amt)</masterLabel>
+            <translation>Sobreprecio (importe)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unit Price</masterLabel>
+            <translation>Precio unitario</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Ingrese una fórmula con operadores, funciones y campos disponibles en el objeto del presupuesto y de destino. No se admite en la calculadora heredada.</help>
+        <label><!-- Formula --></label>
+        <name>SBQQ__Formula__c</name>
+    </fields>
+    <fields>
+        <help>Número que determina el orden en el que se ejecutan acciones múltiples de una regla.</help>
+        <label><!-- Order --></label>
+        <name>SBQQ__Order__c</name>
+    </fields>
+    <fields>
+        <label><!-- ParentRuleIsActive --></label>
+        <name>SBQQ__ParentRuleIsActive__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rule Lookup Object --></label>
+        <name>SBQQ__RuleLookupObject__c</name>
+    </fields>
+    <fields>
+        <label><!-- RuleTargetsCalculator --></label>
+        <name>SBQQ__RuleTargetsCalculator__c</name>
+    </fields>
+    <fields>
+        <help>Regla de precios que ejecuta esta acción.</help>
+        <label><!-- Rule --></label>
+        <name>SBQQ__Rule__c</name>
+        <relationshipLabel><!-- Price Actions --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Nombre de API del campo para devolver desde la fila que coincide con la condición.</help>
+        <label><!-- Source Lookup Field --></label>
+        <name>SBQQ__SourceLookupField__c</name>
+        <picklistValues>
+            <masterLabel>SBQQ__Value__c</masterLabel>
+            <translation>SBQQ__Value__c</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Variable de resumen que envía el valor de esta acción.</help>
+        <label><!-- Source Variable --></label>
+        <name>SBQQ__SourceVariable__c</name>
+        <relationshipLabel><!-- Price Actions (Source) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Utilizar Presupuesto o Partida de presupuesto donde Ámbito de evaluación de regla de precios = Cálculo, utilizar Opción de producto donde Ámbito de evaluación de regla de precios = Configuración</help>
+        <label><!-- Target Object --></label>
+        <name>SBQQ__TargetObject__c</name>
+        <picklistValues>
+            <masterLabel>Product Option</masterLabel>
+            <translation>Opción de producto</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quote</masterLabel>
+            <translation>Presupuesto</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quote Line</masterLabel>
+            <translation>Partida de presupuesto</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Si el valor que desea insertar se calcula en otro campo Partida de presupuesto, seleccione el campo aquí.</help>
+        <label><!-- Source Field --></label>
+        <name>SBQQ__ValueField__c</name>
+    </fields>
+    <fields>
+        <help>Ingrese el valor que desea insertar en el Campo de destino cuando se cumplen las condiciones.</help>
+        <label><!-- Value --></label>
+        <name>SBQQ__Value__c</name>
+    </fields>
+    <gender>Feminine</gender>
+    <layouts>
+        <layout>Price Action Layout</layout>
+        <sections>
+            <label>Vínculos personalizados</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>Orígenes de acciones de precios</label>
+            <section>Price Action Sources</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Número de acción</nameFieldLabel>
+    <validationRules>
+        <errorMessage><!-- Price Action Target Object does not match Evaluation Scope --></errorMessage>
+        <name>SBQQ__Target_Object_Validation</name>
+    </validationRules>
+</CustomObjectTranslation>
