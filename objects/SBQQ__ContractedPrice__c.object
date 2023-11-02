@@ -1,0 +1,459 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <customHelpPage>SBQQ__ContractedPriceHelp</customHelpPage>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <description>Contracted (negotiated) price for a product for a given customer account.</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableEnhancedLookup>false</enableEnhancedLookup>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>false</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ControlledByParent</externalSharingModel>
+    <fields>
+        <fullName>SBQQ__Account__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Account for which this price was negotiated.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Account for which this price was negotiated.</inlineHelpText>
+        <label>Account</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Contracted Prices</relationshipLabel>
+        <relationshipName>R00N70000001olI5EAI</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>SBQQ__Contract__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>Sales contract that governs this price.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Sales contract that governs this price.</inlineHelpText>
+        <label>Contract</label>
+        <referenceTo>Contract</referenceTo>
+        <relationshipLabel>Contracted Prices</relationshipLabel>
+        <relationshipName>ContractedPrices</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__Description__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Description for the Contracted Price</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Description for this Contracted Price. This will be copied into &quot;Special Price Description&quot; of Quote line items using this price.</inlineHelpText>
+        <label>Description</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__DiscountSchedule__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>Volume discount schedule to use for this product with this customer.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Volume discount schedule to use for this product with this customer.</inlineHelpText>
+        <label>Discount Schedule</label>
+        <referenceTo>SBQQ__DiscountSchedule__c</referenceTo>
+        <relationshipLabel>Contracted Prices</relationshipLabel>
+        <relationshipName>ContractedPrices</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__Discount__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Discount off the list price (percent) represented by this Contracted Price. Either this field or Price should be set but not both.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Discount off the Price Book price (percent) represented by this Contracted Price. Either this field or Price should be set but not both.</inlineHelpText>
+        <label>Discount</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__EffectiveDate__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Effective date for this contracted price.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Date this contracted price becomes effective.</inlineHelpText>
+        <label>Effective Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__ExpirationDate__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Expiration date for this contracted price.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Date this contracted price expires.</inlineHelpText>
+        <label>Expiration Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__FilterField__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Quote line field that&apos;s evaluated to determine if this contracted price applies.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select a field to use in a filter, such as Product Family, if you want to apply this price to a set of products. If you are using a custom field, add the API name to the Filter Field as a picklist value.</inlineHelpText>
+        <label>Filter Field</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Product</fullName>
+                    <default>false</default>
+                    <label>Product</label>
+                </value>
+                <value>
+                    <fullName>Product Code</fullName>
+                    <default>false</default>
+                    <label>Product Code</label>
+                </value>
+                <value>
+                    <fullName>Product Family</fullName>
+                    <default>false</default>
+                    <label>Product Family</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SBQQ__FilterValue__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Value the filter field is tested against to determine if this contracted price should apply.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Value the filter field is tested against to determine if this contracted price should apply.</inlineHelpText>
+        <label>Filter Value</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SBQQ__NonDiscountable__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Flag that marks the line covered by this price as non-discountable. Overrides Non Discountable flag on the product.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select the checkbox to disallow further discounting of this product.</inlineHelpText>
+        <label>Non Discountable</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__Operator__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Operator used to evaluate Filter Field value against Filter Value.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select the operate to use when matching the contents of the Filter Field with the Filter Value.</inlineHelpText>
+        <label>Operator</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>equals</fullName>
+                    <default>false</default>
+                    <label>equals</label>
+                </value>
+                <value>
+                    <fullName>not equals</fullName>
+                    <default>false</default>
+                    <label>not equals</label>
+                </value>
+                <value>
+                    <fullName>less than</fullName>
+                    <default>false</default>
+                    <label>less than</label>
+                </value>
+                <value>
+                    <fullName>less or equals</fullName>
+                    <default>false</default>
+                    <label>less or equals</label>
+                </value>
+                <value>
+                    <fullName>greater than</fullName>
+                    <default>false</default>
+                    <label>greater than</label>
+                </value>
+                <value>
+                    <fullName>greater or equals</fullName>
+                    <default>false</default>
+                    <label>greater or equals</label>
+                </value>
+                <value>
+                    <fullName>ends with</fullName>
+                    <default>false</default>
+                    <label>ends with</label>
+                </value>
+                <value>
+                    <fullName>contains</fullName>
+                    <default>false</default>
+                    <label>contains</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SBQQ__OriginalQuoteLine__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>The Quote Line that originated this Contracted Price.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The Quote Line that originated this Contracted Price.</inlineHelpText>
+        <label>Original Quote Line</label>
+        <referenceTo>SBQQ__QuoteLine__c</referenceTo>
+        <relationshipLabel>Contracted Prices</relationshipLabel>
+        <relationshipName>ContractedPrices</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__Price__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Actual price that was negotiated. This value will override any other price such as the one from a price book or a volume-discounted price.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter the price that has been negotiated with the customer. This value will override any other price such as the one from a price book or a volume-discounted price.</inlineHelpText>
+        <label>Price</label>
+        <precision>12</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__Product__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>Product for which this price was negotiated.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select a product from any price book that you want to apply to this discount.</inlineHelpText>
+        <label>Product</label>
+        <referenceTo>Product2</referenceTo>
+        <relationshipLabel>Contracted Prices</relationshipLabel>
+        <relationshipName>ContractedPrices</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <label>Contracted Price</label>
+    <nameField>
+        <displayFormat>CP-{00000}</displayFormat>
+        <label>Contracted Price Number</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Contracted Prices</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+    <validationRules>
+        <fullName>SBQQ__Discount_or_price_required</fullName>
+        <active>true</active>
+        <description>Requires either Discount, Price, or Discount Schedule be entered.</description>
+        <errorConditionFormula>AND(ISBLANK(SBQQ__Discount__c),ISBLANK(SBQQ__Price__c), ISBLANK(SBQQ__DiscountSchedule__c))</errorConditionFormula>
+        <errorMessage>You must enter either Discount, Price, or Discount Schedule.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>SBQQ__Either_product_or_filter</fullName>
+        <active>true</active>
+        <description>Either product or filter must be specified; not both.</description>
+        <errorConditionFormula>AND(NOT(ISBLANK(SBQQ__Product__c)),NOT(ISPICKVAL(SBQQ__FilterField__c,&apos;&apos;)))</errorConditionFormula>
+        <errorMessage>You may not specify both product and filter.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>SBQQ__Filter_requires_operators</fullName>
+        <active>true</active>
+        <description>Operator must be entered when filter is specified.</description>
+        <errorConditionFormula>AND(ISPICKVAL(SBQQ__Operator__c,&apos;&apos;),NOT(ISPICKVAL(SBQQ__FilterField__c,&apos;&apos;)))</errorConditionFormula>
+        <errorMessage>Operator is required when Filter Field is specified.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>SBQQ__Product_or_filter_required</fullName>
+        <active>true</active>
+        <description>Requires that product or filter be specified.</description>
+        <errorConditionFormula>AND(ISBLANK(SBQQ__Product__c),ISPICKVAL(SBQQ__FilterField__c,&apos;&apos;))</errorConditionFormula>
+        <errorMessage>You must specify either product or filter field</errorMessage>
+    </validationRules>
+    <visibility>Public</visibility>
+</CustomObject>

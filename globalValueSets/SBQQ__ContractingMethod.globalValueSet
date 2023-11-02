@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>By Subscription End Date</fullName>
+        <default>false</default>
+        <label>By Subscription End Date</label>
+    </customValue>
+    <customValue>
+        <fullName>Single Contract</fullName>
+        <default>false</default>
+        <label>Single Contract</label>
+    </customValue>
+    <description>&quot;By Subscription End Date&quot; creates a separate Contract for each unique Subscription End Date, containing only those Subscriptions. &quot;Single Contract&quot; creates one Contract containing all Subscriptions, regardless of their End Dates</description>
+    <masterLabel>Contracting Method</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

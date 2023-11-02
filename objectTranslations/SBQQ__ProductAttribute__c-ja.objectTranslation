@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>属性項目</value>
+    </caseValues>
+    <fields>
+        <help>サポートされていない項目</help>
+        <label><!-- Apply Immediately --></label>
+        <name>SBQQ__AppliedImmediately__c</name>
+        <picklistValues>
+            <masterLabel>False</masterLabel>
+            <translation>False</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>True</masterLabel>
+            <translation>True</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>サポートされていない項目</help>
+        <label><!-- Apply To Product Options --></label>
+        <name>SBQQ__ApplyToProductOptions__c</name>
+        <picklistValues>
+            <masterLabel>False</masterLabel>
+            <translation>False</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>True</masterLabel>
+            <translation>True</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Attribute Set --></label>
+        <name>SBQQ__AttributeSet__c</name>
+        <relationshipLabel><!-- Attribute Items --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>この商品属性が継承する設定属性。</help>
+        <label><!-- Configuration Attribute --></label>
+        <lookupFilter>
+            <errorMessage><!-- The related configuration attribute must be global --></errorMessage>
+        </lookupFilter>
+        <name>SBQQ__Attribute__c</name>
+        <relationshipLabel><!-- Attribute Items --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>サポートされていない項目</help>
+        <label><!-- Auto-Select --></label>
+        <name>SBQQ__AutoSelect__c</name>
+        <picklistValues>
+            <masterLabel>False</masterLabel>
+            <translation>False</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>True</masterLabel>
+            <translation>True</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>サポートされていない項目</help>
+        <label><!-- Hidden Values --></label>
+        <name>SBQQ__HiddenValues__c</name>
+    </fields>
+    <fields>
+        <help>サポートされていない項目</help>
+        <label><!-- Hidden --></label>
+        <name>SBQQ__Hidden__c</name>
+        <picklistValues>
+            <masterLabel>False</masterLabel>
+            <translation>False</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>True</masterLabel>
+            <translation>True</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>サポートされていない項目</help>
+        <label><!-- Required --></label>
+        <name>SBQQ__Required__c</name>
+        <picklistValues>
+            <masterLabel>False</masterLabel>
+            <translation>False</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>True</masterLabel>
+            <translation>True</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Sequence --></label>
+        <name>SBQQ__Sequence__c</name>
+    </fields>
+    <fields>
+        <help>サポートされていない項目</help>
+        <label><!-- Shown Values --></label>
+        <name>SBQQ__ShownValues__c</name>
+    </fields>
+    <fields>
+        <label><!-- Target Field --></label>
+        <name>SBQQ__TargetField__c</name>
+    </fields>
+    <layouts>
+        <layout>Product Attribute Layout</layout>
+        <sections>
+            <label>カスタムリンク</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>項目番号</nameFieldLabel>
+</CustomObjectTranslation>

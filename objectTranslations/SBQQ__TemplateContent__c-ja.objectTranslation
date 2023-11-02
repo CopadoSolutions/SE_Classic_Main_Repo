@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>テンプレートコンテンツ</value>
+    </caseValues>
+    <fields>
+        <help>タイプが [カスタム] に設定されている場合にコンテンツを生成する VisualForce ページへの URL。</help>
+        <label><!-- Custom Source --></label>
+        <name>SBQQ__CustomSource__c</name>
+    </fields>
+    <fields>
+        <help>生成される PDF 見積ドキュメントにこのコンテンツを表示するときに使用するフォントファミリ。</help>
+        <label><!-- Font Family --></label>
+        <name>SBQQ__FontFamily__c</name>
+        <picklistValues>
+            <masterLabel>Courier</masterLabel>
+            <translation>Courier</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dosis</masterLabel>
+            <translation>Dosis</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Droid Sans</masterLabel>
+            <translation>Droid Sans</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Droid Serif</masterLabel>
+            <translation>Droid Serif</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Helvetica</masterLabel>
+            <translation>Helvetica</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Merriweather</masterLabel>
+            <translation>Merriweather</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Montserrat</masterLabel>
+            <translation>Montserrat</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Noto Sans JP</masterLabel>
+            <translation>Noto Sans JP</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Noto Sans KR</masterLabel>
+            <translation>Noto Sans KR</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Noto Sans SC</masterLabel>
+            <translation>Noto Sans SC</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Noto Sans TC</masterLabel>
+            <translation>Noto Sans TC</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Open Sans</masterLabel>
+            <translation>Open Sans</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PT Sans</masterLabel>
+            <translation>PT Sans</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PT Serif</masterLabel>
+            <translation>PT Serif</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Play</masterLabel>
+            <translation>再生</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Roboto</masterLabel>
+            <translation>Roboto</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Roboto Light</masterLabel>
+            <translation>Roboto Light</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Times</masterLabel>
+            <translation>Times</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Titillium Web</masterLabel>
+            <translation>Titillium Web</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ubuntu</masterLabel>
+            <translation>Ubuntu</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>生成される PDF 見積ドキュメントにこのコンテンツを表示するときに使用するフォントサイズ。</help>
+        <label><!-- Font Size --></label>
+        <name>SBQQ__FontSize__c</name>
+    </fields>
+    <fields>
+        <help>コンテンツのタイプが [マークアップ] の場合にマークアップが含まれます。</help>
+        <label><!-- Markup --></label>
+        <name>SBQQ__Markup__c</name>
+    </fields>
+    <fields>
+        <help>[マークアップ] 項目のコンテンツの元の HTML バージョン。</help>
+        <label><!-- Raw Markup --></label>
+        <name>SBQQ__RawMarkup__c</name>
+    </fields>
+    <fields>
+        <help>この品目で使用されるテーブルのスタイル。標準 (デフォルト) = ユーザ定義項目が列として表示され、品目が縦方向にリストされます。</help>
+        <label><!-- Table Style --></label>
+        <name>SBQQ__TableStyle__c</name>
+        <picklistValues>
+            <masterLabel>Price Dimensions as Columns</masterLabel>
+            <translation>価格ディメンションを列として表示</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Price Dimensions as Rows with Summary</masterLabel>
+            <translation>価格ディメンションを行として表示 (サマリーあり)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Standard</masterLabel>
+            <translation>標準</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>このコンテンツで表示されるテキストに適用されるデフォルトの色 (16 進数)。</help>
+        <label><!-- Text Color --></label>
+        <name>SBQQ__TextColor__c</name>
+    </fields>
+    <fields>
+        <help>このコンテンツのタイプ。</help>
+        <label><!-- Type --></label>
+        <name>SBQQ__Type__c</name>
+        <picklistValues>
+            <masterLabel>Custom</masterLabel>
+            <translation>カスタム</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HTML</masterLabel>
+            <translation>HTML</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Line Items</masterLabel>
+            <translation>品目名</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quote Terms</masterLabel>
+            <translation>見積規約</translation>
+        </picklistValues>
+    </fields>
+    <layouts>
+        <layout>Template Content Layout</layout>
+        <sections>
+            <label>本文</label>
+            <section>Body</section>
+        </sections>
+        <sections>
+            <label>カスタムリンク</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>コンテンツ名</nameFieldLabel>
+    <webLinks>
+        <label><!-- Translate --></label>
+        <name>SBQQ__Translate</name>
+    </webLinks>
+</CustomObjectTranslation>

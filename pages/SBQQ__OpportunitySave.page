@@ -1,0 +1,3 @@
+<apex:page id="OpportunitySave" standardController="Opportunity" extensions="SBQQ.QueueableJobCheckerExt">
+    <c:standardRecalculating recordId="{!record.Id}" jobId="{!queueableJobId}" calculatedRecordId="{!Opportunity.SBQQ__PrimaryQuote__c}" jobType="CreateContract" inProgressMessage="{!$Label.sbqq__msg_background_contracting_in_progress}" jobStatus="{!jobStatus}" jobStatusChecker="{!$RemoteAction.QueueableJobCheckerExt.getJobStatus}" autoRefresh="{!autoRefresh}" jobDetails="{!jobDetails}"/>
+</apex:page>

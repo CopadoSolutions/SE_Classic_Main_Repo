@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <customHelpPage>SBQQ__TemplateContentHelp</customHelpPage>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <description>Content for use on quote templates. Same content may be used on multiple templates.</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableEnhancedLookup>false</enableEnhancedLookup>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>false</enableReports>
+    <enableSearch>false</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>Private</externalSharingModel>
+    <fields>
+        <fullName>SBQQ__CustomSource__c</fullName>
+        <deprecated>false</deprecated>
+        <description>URL to a VisualForce page that generates content when type is set to &quot;Custom&quot;.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>URL to a VisualForce page that generates content when type is set to &quot;Custom&quot;.</inlineHelpText>
+        <label>Custom Source</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Url</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__FontFamily__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Font family to use when rendering this content in the generated PDF quote document.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Font family to use when rendering this content in the generated PDF quote document.</inlineHelpText>
+        <label>Font Family</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Courier</fullName>
+                    <default>false</default>
+                    <label>Courier</label>
+                </value>
+                <value>
+                    <fullName>Dosis</fullName>
+                    <default>false</default>
+                    <label>Dosis</label>
+                </value>
+                <value>
+                    <fullName>Droid Sans</fullName>
+                    <default>false</default>
+                    <label>Droid Sans</label>
+                </value>
+                <value>
+                    <fullName>Droid Serif</fullName>
+                    <default>false</default>
+                    <label>Droid Serif</label>
+                </value>
+                <value>
+                    <fullName>Helvetica</fullName>
+                    <default>false</default>
+                    <label>Helvetica</label>
+                </value>
+                <value>
+                    <fullName>Merriweather</fullName>
+                    <default>false</default>
+                    <label>Merriweather</label>
+                </value>
+                <value>
+                    <fullName>Montserrat</fullName>
+                    <default>false</default>
+                    <label>Montserrat</label>
+                </value>
+                <value>
+                    <fullName>Noto Sans JP</fullName>
+                    <default>false</default>
+                    <label>Noto Sans JP</label>
+                </value>
+                <value>
+                    <fullName>Noto Sans KR</fullName>
+                    <default>false</default>
+                    <label>Noto Sans KR</label>
+                </value>
+                <value>
+                    <fullName>Noto Sans SC</fullName>
+                    <default>false</default>
+                    <label>Noto Sans SC</label>
+                </value>
+                <value>
+                    <fullName>Noto Sans TC</fullName>
+                    <default>false</default>
+                    <label>Noto Sans TC</label>
+                </value>
+                <value>
+                    <fullName>Open Sans</fullName>
+                    <default>false</default>
+                    <label>Open Sans</label>
+                </value>
+                <value>
+                    <fullName>Play</fullName>
+                    <default>false</default>
+                    <label>Play</label>
+                </value>
+                <value>
+                    <fullName>PT Sans</fullName>
+                    <default>false</default>
+                    <label>PT Sans</label>
+                </value>
+                <value>
+                    <fullName>PT Serif</fullName>
+                    <default>false</default>
+                    <label>PT Serif</label>
+                </value>
+                <value>
+                    <fullName>Roboto</fullName>
+                    <default>false</default>
+                    <label>Roboto</label>
+                </value>
+                <value>
+                    <fullName>Roboto Light</fullName>
+                    <default>false</default>
+                    <label>Roboto Light</label>
+                </value>
+                <value>
+                    <fullName>Times</fullName>
+                    <default>false</default>
+                    <label>Times</label>
+                </value>
+                <value>
+                    <fullName>Titillium Web</fullName>
+                    <default>false</default>
+                    <label>Titillium Web</label>
+                </value>
+                <value>
+                    <fullName>Ubuntu</fullName>
+                    <default>false</default>
+                    <label>Ubuntu</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SBQQ__FontSize__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Font size to use when rendering this content on the generated PDF quote document.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Font size to use when rendering this content on the generated PDF quote document.</inlineHelpText>
+        <label>Font Size</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SBQQ__Markup__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Contains the markup if this content is of type &quot;Markup&quot;.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Contains the markup if this content is of type &quot;Markup&quot;.</inlineHelpText>
+        <label>Markup</label>
+        <length>32000</length>
+        <trackTrending>false</trackTrending>
+        <type>Html</type>
+        <visibleLines>25</visibleLines>
+    </fields>
+    <fields>
+        <fullName>SBQQ__RawMarkup__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Raw HTML markup. Rich Text field (Markup) strips out many HTML tags so this holds the original version as created by the editor.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Original HTML version of the content in the Markup field.</inlineHelpText>
+        <label>Raw Markup</label>
+        <length>32000</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>5</visibleLines>
+    </fields>
+    <fields>
+        <fullName>SBQQ__TableStyle__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Style of the table used for line items. Standard (default) = user-defined fields as columns with line items listed vertically.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Style of the table used for line items. Standard (default) = user-defined fields as columns with line items listed vertically.</inlineHelpText>
+        <label>Table Style</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Standard</fullName>
+                    <default>true</default>
+                    <label>Standard</label>
+                </value>
+                <value>
+                    <fullName>Price Dimensions as Columns</fullName>
+                    <default>false</default>
+                    <label>Price Dimensions as Columns</label>
+                </value>
+                <value>
+                    <fullName>Price Dimensions as Rows with Summary</fullName>
+                    <default>false</default>
+                    <label>Price Dimensions as Rows with Summary</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SBQQ__TextColor__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Default color (in HEX) applied to text rendered by this content.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Default color (in HEX) applied to text rendered by this content.</inlineHelpText>
+        <label>Text Color</label>
+        <length>6</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SBQQ__Type__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Type of this content.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Type of this content.</inlineHelpText>
+        <label>Type</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>HTML</fullName>
+                    <default>true</default>
+                    <label>HTML</label>
+                </value>
+                <value>
+                    <fullName>Line Items</fullName>
+                    <default>false</default>
+                    <label>Line Items</label>
+                </value>
+                <value>
+                    <fullName>Quote Terms</fullName>
+                    <default>false</default>
+                    <label>Quote Terms</label>
+                </value>
+                <value>
+                    <fullName>Custom</fullName>
+                    <default>false</default>
+                    <label>Custom</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <label>Template Content</label>
+    <listViews>
+        <fullName>SBQQ__All</fullName>
+        <columns>NAME</columns>
+        <columns>SBQQ__Type__c</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>LAST_UPDATE</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <label>Content Name</label>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Template Content</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
+    <webLinks>
+        <fullName>SBQQ__Translate</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <height>600</height>
+        <linkType>url</linkType>
+        <masterLabel>Translate</masterLabel>
+        <openType>noSidebar</openType>
+        <protected>false</protected>
+        <url>/apex/SBQQ__Translations?targetObject=TemplateContent&amp;targetId={!SBQQ__TemplateContent__c.Id}&amp;supportUserDefined=true&amp;supportStandard=false</url>
+    </webLinks>
+</CustomObject>

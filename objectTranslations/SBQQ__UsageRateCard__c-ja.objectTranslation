@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>利用レートカード (予約済み)</value>
+    </caseValues>
+    <fields>
+        <help>ドキュメントの出力および請求中に選択した項目によるグループ利用レート</help>
+        <label><!-- Attribute Field --></label>
+        <name>SBQQ__AttributeField__c</name>
+        <picklistValues>
+            <masterLabel>UsagePriceMethod__c</masterLabel>
+            <translation>UsagePriceMethod__c</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Billing Frequency --></label>
+        <name>SBQQ__BillingFrequency__c</name>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>SBQQ__Description__c</name>
+    </fields>
+    <fields>
+        <help>この利用レートカードを作成するためにコピーした利用レートカード</help>
+        <label><!-- Original Usage Rate Card --></label>
+        <name>SBQQ__OriginalUsageRateCard__c</name>
+        <relationshipLabel><!-- Usage Rate Cards (Original Usage Rate Card) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>この利用レートカードでカバーされる見積品目</help>
+        <label><!-- Quote Line --></label>
+        <name>SBQQ__QuoteLine__c</name>
+        <relationshipLabel><!-- Usage Rate Cards --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>この利用レートカードでカバーされるサブスクリプション</help>
+        <label><!-- Subscription --></label>
+        <name>SBQQ__Subscription__c</name>
+        <relationshipLabel><!-- Usage Rate Cards --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>元の見積に追加した利用レートカード</help>
+        <label><!-- Template Rate Card --></label>
+        <name>SBQQ__TemplateRateCard__c</name>
+        <relationshipLabel><!-- Quoted Rate Cards --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Salesforce Billing でこの利用レートカードの利用レートをどのように請求するのかを選択します。[範囲] は 1 つのレートを請求し、[スラブ] は該当するすべての利用レートを請求します。</help>
+        <label><!-- Type --></label>
+        <name>SBQQ__Type__c</name>
+        <picklistValues>
+            <masterLabel>Range</masterLabel>
+            <translation>範囲</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Slab</masterLabel>
+            <translation>スラブ</translation>
+        </picklistValues>
+    </fields>
+    <layouts>
+        <layout>Usage Rate Card Layout</layout>
+        <sections>
+            <label>関連付け</label>
+            <section>Associations</section>
+        </sections>
+        <sections>
+            <label>カスタムリンク</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>利用レートカード名</nameFieldLabel>
+    <webLinks>
+        <label><!-- CloneWithRelated --></label>
+        <name>SBQQ__CloneWithRelated</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- CloneWithRelatedClassic --></label>
+        <name>SBQQ__CloneWithRelatedClassic</name>
+    </webLinks>
+</CustomObjectTranslation>

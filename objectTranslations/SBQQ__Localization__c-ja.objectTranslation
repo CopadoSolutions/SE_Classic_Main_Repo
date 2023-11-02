@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>ローカライズ</value>
+    </caseValues>
+    <fields>
+        <help>このコンテンツの API 参照名。</help>
+        <label><!-- API Name --></label>
+        <name>SBQQ__APIName__c</name>
+    </fields>
+    <fields>
+        <help>テキストが配置される位置の説明。</help>
+        <label><!-- Description --></label>
+        <name>SBQQ__Description__c</name>
+    </fields>
+    <fields>
+        <help>UI でのこのアクションの表示ラベル。</help>
+        <label><!-- Label --></label>
+        <name>SBQQ__Label__c</name>
+    </fields>
+    <fields>
+        <help>この翻訳の言語コード。</help>
+        <label><!-- Language --></label>
+        <name>SBQQ__Language__c</name>
+    </fields>
+    <fields>
+        <help>このコンテンツに関連付けられた品目列。</help>
+        <label><!-- Line Column --></label>
+        <name>SBQQ__LineColumn__c</name>
+        <relationshipLabel><!-- Localizations --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>この項目には、[ロングテキスト] 項目の翻訳が保存されます。</help>
+        <label><!-- Long Text Area --></label>
+        <name>SBQQ__LongTextArea__c</name>
+    </fields>
+    <fields>
+        <help>このコンテンツに関連付けられたディメンション。</help>
+        <label><!-- Price Dimension --></label>
+        <name>SBQQ__PriceDimension__c</name>
+        <relationshipLabel><!-- Localizations --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>このコンテンツに関連付けられた商品機能。</help>
+        <label><!-- Product Feature --></label>
+        <name>SBQQ__ProductFeature__c</name>
+        <relationshipLabel><!-- Localizations --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>この品目を生成した商品オプション。</help>
+        <label><!-- Product Option --></label>
+        <name>SBQQ__ProductOption__c</name>
+        <relationshipLabel><!-- Localizations --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>このコンテンツに関連付けられた商品。</help>
+        <label><!-- Product --></label>
+        <name>SBQQ__Product__c</name>
+        <relationshipLabel><!-- Localizations --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>このコンテンツに使用するテンプレート。</help>
+        <label><!-- Quote Template --></label>
+        <name>SBQQ__QuoteTemplate__c</name>
+        <relationshipLabel><!-- Localizations --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>この規約の親規約。</help>
+        <label><!-- Quote Term --></label>
+        <name>SBQQ__QuoteTerm__c</name>
+        <relationshipLabel><!-- Localizations --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>この項目には、リッチテキスト項目の翻訳が保存されます。</help>
+        <label><!-- Rich Text Area --></label>
+        <name>SBQQ__RichTextArea__c</name>
+    </fields>
+    <fields>
+        <help>このコンテンツに使用するテンプレートコンテンツ。</help>
+        <label><!-- Template Content --></label>
+        <name>SBQQ__TemplateContent__c</name>
+        <relationshipLabel><!-- Localizations --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>この項目には、テキストエリア項目の翻訳が保存されます。</help>
+        <label><!-- Text Area --></label>
+        <name>SBQQ__TextArea__c</name>
+    </fields>
+    <fields>
+        <help>この項目には、テキスト項目の翻訳が保存されます。</help>
+        <label><!-- Text --></label>
+        <name>SBQQ__Text__c</name>
+    </fields>
+    <fields>
+        <help>この項目がユーザ定義かどうかを示します。</help>
+        <label><!-- User Defined --></label>
+        <name>SBQQ__UserDefined__c</name>
+    </fields>
+    <layouts>
+        <layout>Localization Layout</layout>
+        <sections>
+            <label>カスタムリンク</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>サポートされるオブジェクト</label>
+            <section>Supported Objects</section>
+        </sections>
+        <sections>
+            <label>値</label>
+            <section>Values</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>ローカライズ番号</nameFieldLabel>
+</CustomObjectTranslation>

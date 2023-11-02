@@ -147,6 +147,9 @@
         <fullName>IpAddress</fullName>
     </fields>
     <fields>
+        <fullName>IsAutoPayEnabled</fullName>
+    </fields>
+    <fields>
         <fullName>MacAddress</fullName>
     </fields>
     <fields>
@@ -155,6 +158,15 @@
     <fields>
         <fullName>PaymentGatewayId</fullName>
         <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>PaymentMethodDetails</fullName>
+    </fields>
+    <fields>
+        <fullName>PaymentMethodSubType</fullName>
+    </fields>
+    <fields>
+        <fullName>PaymentMethodType</fullName>
     </fields>
     <fields>
         <fullName>Phone</fullName>

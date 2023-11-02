@@ -1,0 +1,281 @@
+<apex:page standardController="Order" docType="html-5.0" extensions="SBQQ.OrderController" action="{!onInitLines}"
+           standardStylesheets="false"
+           title="{!headerTitle}">
+    <apex:stylesheet value="{!IF(formFactor == 'desktop', $Resource['sb'], $Resource['MobileCSS'])}"/>
+    <c:theme formFactor="{!formFactor}"/>
+    <style>
+        .sbGroup {
+          height: 50px;
+          float: left;
+          padding: 10px;
+        }
+
+        .sbTable td {
+          vertical-align: middle;
+        }
+
+        .sbPageBlockSection {
+            padding: 0px;
+        }
+
+    </style>
+    <script>
+        function enableCheckbox(checkboxElement, quantityElement, availableQuantityElement, quantity, selectedQuantity, availableQuantity, quantityScale, isPercentOfTotal) {
+            if (isPercentOfTotal) {
+                var formattedQuantity = setScale(quantity, quantityScale);
+                document.getElementById(quantityElement).value = formattedQuantity;
+            } else {
+                var quantity = document.getElementById(quantityElement).value;
+                if (quantity == 0) {
+                    document.getElementById(checkboxElement).checked = false;
+                }
+                else {
+                    document.getElementById(checkboxElement).checked = true;
+                }
+                var formattedQuantity = setScale(quantity, quantityScale);
+                var formattedAvailableQuantity = setScale(availableQuantity - quantity + selectedQuantity, quantityScale);
+                document.getElementById(quantityElement).value = formattedQuantity;
+                document.getElementById(availableQuantityElement).textContent = formattedAvailableQuantity;
+            }
+        }
+
+        function selectCheckbox(checkboxElement, quantityElement, availableQuantityElement, selectedQuantity, availableQuantity, quantityScale, isPercentOfTotal) {
+            selectChildLines(document.getElementById(checkboxElement));
+
+            if ( availableQuantityElement != null && !isPercentOfTotal ) {
+                var checkboxChecked = document.getElementById(checkboxElement).checked;
+                var quantity = document.getElementById(quantityElement).value;
+                var formattedQuantity = setScale(quantity, quantityScale);
+
+                if ( checkboxChecked ) {
+                    document.getElementById(availableQuantityElement).textContent = setScale(availableQuantity - (quantity - selectedQuantity), quantityScale);
+                }
+                else {
+                    document.getElementById(availableQuantityElement).textContent = setScale(availableQuantity + selectedQuantity, quantityScale);
+                }
+            }
+        }
+
+        function selectChildLines(checkboxElement) {
+            var quoteLineId = checkboxElement.getAttribute("quote-line-id");
+
+            var container = checkboxElement;
+            while (container.tagName != "TABLE") {
+                container = container.parentNode;
+            }
+
+            var inputs = container.getElementsByTagName("input");
+            var checked = checkboxElement.checked;
+            for (var i = 0; i < inputs.length; i++) {
+                var input = inputs.item(i);
+                if (input.type == "checkbox") {
+                    var requiredByQuoteLineId = input.getAttribute("required-by-quote-line-id");
+                    if (input != checkboxElement && requiredByQuoteLineId != null && requiredByQuoteLineId == quoteLineId) {
+                        input.checked = checked;
+                        selectChildLines(input);
+                    }
+                }
+            }
+        }
+
+        function selectAll(allOrNoneCheckbox) {
+            // Find parent table
+            var container = allOrNoneCheckbox;
+            while (container.tagName != "TABLE") {
+                container = container.parentNode;
+            }
+            // Switch all checkboxes
+            var inputs = container.getElementsByTagName("input");
+            var checked = allOrNoneCheckbox.checked;
+            for (var i = 0; i < inputs.length; i++) {
+                var input = inputs.item(i);
+                if (input.type == "checkbox") {
+                    if (input != allOrNoneCheckbox) {
+                        input.checked = checked;
+                    }
+                }
+            }
+        }
+
+        function setScale(num, scale) {
+            return parseInt(num).toFixed(scale);
+        }
+
+        function disableOnClick(input) {
+            var btn = input;
+            setTimeout(function(){
+                btn.disabled = 'disabled';
+            }, 50);
+        }
+
+
+    </script>
+
+    <apex:stylesheet value="{!$Resource['sb']}"/>
+    <c:theme />
+    <div id="sbSelectOrderProducts" class="sb">
+        <apex:form >
+
+            <c:pageHeader title="{!headerTitle}" subtitle="{!headerSubtitle}" formFactor="{!formFactor}" customTheme="18" iconName="sf-icon-product">
+                <div class="sbButtons">
+                    <apex:commandButton action="{!addOrderProducts}" value="{!$Label.sbqq__lbl_save}"
+                                        styleClass="sbBtn"
+                                        rendered="{!totalNumberOfProducts > 0 && editable == TRUE}"
+                                        onclick="disableOnClick(this);"/>
+                    <apex:commandButton action="{!quickSave}" value="{!$Label.sbqq__lbl_quick_save}"
+                                        styleClass="sbBtn"
+                                        rendered="{!totalNumberOfProducts > 0 && editable == TRUE}"
+                                        onclick="disableOnClick(this);"/>
+                    <apex:commandButton action="{!onCancel}" value="{!$Label.sbqq__lbl_cancel}"
+                                        styleClass="sbBtn"/>
+                </div>
+            </c:pageHeader>
+
+            <div class="sbBody">
+                <apex:pageMessages />
+                <apex:outputPanel rendered="{!renderGroup == FALSE && totalNumberOfProducts > 0}">
+                    <table class="sbTable" border="0" cellspacing="0" cellpadding="0" width="100%">
+                        <thead class="dr-table-thead">
+                        <tr class="headerRow">
+                            <th class="headerRow">
+                                <apex:inputCheckbox onclick="selectAll(this)" rendered="{!editable == TRUE}"
+                                                    title="Toggle All Rows"/>
+                            </th>
+                            <apex:repeat var="fieldLabelKey" value="{!fieldLabelKeys}">
+                                <th class="headerRow" style="text-align: {!fieldAlignment[fieldLabelKey]}">
+                                    <apex:outputText value="{!fieldLabels[fieldLabelKey]}" rendered="{!fieldAccessibilityMap[fieldLabelKey]}"/>
+                                </th>
+                            </apex:repeat>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <apex:repeat id="orderLines" var="row" value="{!productsByGroup['Default']}">
+                            <tr class="dataRow">
+                                <td class="dataCell">
+                                    <apex:inputCheckbox value="{!row.isSelected}" id="selectCheckbox"
+                                                        rendered="{!editable == TRUE}"
+                                                        html-quote-line-id="{!row.quoteLineId}"
+                                                        html-required-by-quote-line-id="{!row.requiredByQuoteLineId}"
+                                                        onclick="selectCheckbox('{!$Component.selectCheckbox}',
+                                                                                '{!$Component.quantity}',
+                                                                                '{!$Component.availableQuantity}',
+                                                                                {!row.selectedQuantity},
+                                                                                {!row.availableQuantity},
+                                                                                {!row.quantityScale},
+                                                                                {!row.isPercentOfTotal});"
+                                                        disabled="{! row.isDisabled}"/>
+                                </td>
+                                <apex:outputPanel rendered="{!editMode}">
+                                    <td class="dataCell" align="{!fieldAlignment['itemNumber']}">
+                                        <apex:outputText value="{!row.orderItemNumber}" rendered="{!fieldAccessibilityMap['itemNumber']}"/>
+                                    </td>
+                                </apex:outputPanel>
+                                <td class="dataCell" align="{!fieldAlignment['quantity']}">
+                                    <apex:inputText value="{!row.Quantity}" required="true" id="quantity"
+                                    style="text-align: {!fieldAlignment['quantity']}; margin-top:6px;"
+                                    rendered="{! row.quantityEditable}"
+                                                    onChange="enableCheckbox('{!$Component.selectCheckbox}',
+                                                                               '{!$Component.quantity}',
+                                                                               '{!$Component.availableQuantity}',
+                                                                               this.value,
+                                                                               {!row.selectedQuantity},
+                                                                               {!row.availableQuantity},
+                                                                               {!row.quantityScale},
+                                                                               {!row.isPercentOfTotal});"/>
+                                    <apex:outputText value="{!row.Quantity}"
+                                                     rendered="{! !row.quantityEditable}"/>
+                                </td>
+                                <apex:outputPanel rendered="{!editMode && multipleOrdersAllowed}">
+                                    <td class="dataCell" align="{!fieldAlignment['displayAvailableQuantity']}">
+                                        <apex:outputText value="{!row.displayAvailableQuantity}" id="availableQuantity"/>
+                                    </td>
+                                </apex:outputPanel>
+                                <apex:repeat var="fieldKey" value="{!fieldKeys}">
+                                    <td class="dataCell" align="{!fieldAlignment[fieldKey]}">
+                                        <apex:outputText value="{!row[fieldKey]}" rendered="{!fieldAccessibilityMap[fieldKey]}"/>
+                                    </td>
+                                </apex:repeat>
+                            </tr>
+                        </apex:repeat>
+                        </tbody>
+                    </table>
+                </apex:outputPanel>
+
+                <apex:outputPanel rendered="{!renderGroup == TRUE && totalNumberOfProducts > 0}">
+                    <apex:repeat var="group" value="{!groups}">
+                        <div class="sbPageBlockSection">
+                            <c:pageBlockSection title="{!group.Name}" headerClass="sbGroup">
+                                <table class="sbTable" border="0" cellspacing="0" cellpadding="0" width="100%">
+                                    <thead class="dr-table-thead">
+                                    <tr class="headerRow">
+                                        <th class="headerRow">
+                                            <apex:inputCheckbox onclick="selectAll(this)"
+                                                                rendered="{!editable == TRUE}"/>
+                                        </th>
+                                        <apex:repeat var="fieldLabelKey" value="{!fieldLabelKeys}">
+                                            <th class="headerRow" style="text-align: {!fieldAlignment[fieldLabelKey]}">
+                                                <apex:outputText value="{!fieldLabels[fieldLabelKey]}" rendered="{!fieldAccessibilityMap[fieldLabelKey]}"/>
+                                            </th>
+                                        </apex:repeat>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <apex:repeat id="orderLines" var="row" value="{!productsByGroup[group.Id]}">
+                                        <tr class="dataRow">
+                                            <td class="dataCell">
+                                                <apex:inputCheckbox value="{!row.isSelected}" id="selectCheckbox"
+                                                                    rendered="{!editable == TRUE}"
+                                                                    onclick="selectCheckbox('{!$Component.selectCheckbox}',
+                                                                                '{!$Component.quantity}',
+                                                                                '{!$Component.availableQuantity}',
+                                                                                {!row.selectedQuantity},
+                                                                                {!row.availableQuantity},
+                                                                                {!row.quantityScale},
+                                                                                {!row.isPercentOfTotal});"
+                                                                    disabled="{!row.isDisabled}"/>
+                                            </td>
+                                            <apex:outputPanel rendered="{!editMode}">
+                                                <td class="dataCell" align="{!fieldAlignment['itemNumber']}">
+                                                    <apex:outputText value="{!row.orderItemNumber}"  rendered="{!fieldAccessibilityMap['itemNumber']}"/>
+                                                </td>
+                                            </apex:outputPanel>
+                                            <td class="dataCell" align="{!fieldAlignment['quantity']}">
+                                                <apex:inputText value="{!row.Quantity}" required="true"
+                                                                style="text-align: {!fieldAlignment['quantity']}; margin-top:6px;"
+                                                                rendered="{! row.quantityEditable}"
+                                                                id="quantity"
+                                                                onChange="enableCheckbox('{!$Component.selectCheckbox}',
+                                                                               '{!$Component.quantity}',
+                                                                               '{!$Component.availableQuantity}',
+                                                                                this.value,
+                                                                                {!row.selectedQuantity},
+                                                                                {!row.availableQuantity},
+                                                                                {!row.quantityScale},
+                                                                                {!row.isPercentOfTotal});"/>
+                                                <apex:outputText value="{!row.Quantity}"
+                                                                 rendered="{! !row.quantityEditable}"/>
+
+                                            </td>
+                                            <apex:outputPanel rendered="{!editMode && multipleOrdersAllowed}">
+                                                <td class="dataCell" align="{!fieldAlignment['displayAvailableQuantity']}">
+                                                    <apex:outputText value="{!row.displayAvailableQuantity}"
+                                                                     id="availableQuantity"/>
+                                                </td>
+                                            </apex:outputPanel>
+                                            <apex:repeat var="fieldKey" value="{!fieldKeys}">
+                                                <td class="dataCell" align="{!fieldAlignment[fieldKey]}">
+                                                    <apex:outputText value="{!row[fieldKey]}" rendered="{!fieldAccessibilityMap[fieldKey]}"/>
+                                                </td>
+                                            </apex:repeat>
+                                        </tr>
+                                    </apex:repeat>
+                                    </tbody>
+                                </table>
+                            </c:pageBlockSection>
+                        </div>
+                    </apex:repeat>
+                </apex:outputPanel>
+            </div>
+        </apex:form>
+    </div>
+</apex:page>

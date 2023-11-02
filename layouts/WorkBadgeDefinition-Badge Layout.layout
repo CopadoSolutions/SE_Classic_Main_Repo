@@ -18,10 +18,6 @@
                 <behavior>Edit</behavior>
                 <field>IsActive</field>
             </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>RewardFundId</field>
-            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>

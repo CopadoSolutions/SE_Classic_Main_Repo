@@ -1,0 +1,3 @@
+<apex:page id="OrderSave" standardController="Order" extensions="SBQQ.QueueableJobCheckerExt">
+    <c:standardRecalculating recordId="{!record.Id}" jobId="{!queueableJobId}" jobStatus="{!jobStatus}" jobType="{!jobType}" jobStatusChecker="{!$RemoteAction.QueueableJobCheckerExt.getJobStatus}" autoRefresh="{!autoRefresh}"/>
+</apex:page>

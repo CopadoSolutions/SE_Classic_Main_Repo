@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Zusätzliches Dokument</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Zusätzliche Dokumente</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value><!-- Zusätzliches Dokument --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+        <value><!-- Zusätzliche Dokumente --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value><!-- Zusätzliches Dokument --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>true</plural>
+        <value><!-- Zusätzliche Dokumente --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value><!-- Zusätzliches Dokument --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value><!-- Zusätzliche Dokumente --></value>
+    </caseValues>
+    <fields>
+        <help>Legen Sie die Reihenfolge fest, in der dieses Element einem Vertriebsbenutzer im Menü &quot;Zugehöriger Inhalt&quot; angezeigt wird. Wird kein Wert eingegeben, wird der Inhalt an der letzten Stelle platziert.</help>
+        <label><!-- Display Order --></label>
+        <name>SBQQ__DisplayOrder__c</name>
+    </fields>
+    <fields>
+        <help>Geben Sie einen Dateinamen für den zugehörigen Inhalt ein.</help>
+        <label><!-- Document Name --></label>
+        <name>SBQQ__DocumentName__c</name>
+    </fields>
+    <fields>
+        <help>Datensatz-ID, die den Inhalt enthält, z. B. ein Dokument oder Salesforce-Inhalt.</help>
+        <label><!-- External Id --></label>
+        <name>SBQQ__ExternalId__c</name>
+    </fields>
+    <fields>
+        <help>Opportunity, die diesem Inhalt zugeordnet ist.</help>
+        <label><!-- Opportunity --></label>
+        <name>SBQQ__Opportunity__c</name>
+        <relationshipLabel><!-- Additional Documents --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Produkt, das diesem Inhalt zugeordnet ist.</help>
+        <label><!-- Product --></label>
+        <name>SBQQ__Product__c</name>
+        <relationshipLabel><!-- Additional Documents --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Vorlage, die diesem Inhalt zugeordnet ist.</help>
+        <label><!-- Quote Template --></label>
+        <name>SBQQ__QuoteTemplate__c</name>
+        <relationshipLabel><!-- Additional Documents --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Angebot, das diesem Inhalt zugeordnet ist.</help>
+        <label><!-- Quote --></label>
+        <name>SBQQ__Quote__c</name>
+        <relationshipLabel><!-- Additional Documents --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Aktivieren Sie dieses Kontrollkästchen, wenn dieser Inhalt für das Produkt erforderlich ist. Benutzer müssen ihn dann beim Erstellen eines Angebotdokuments einbeziehen.</help>
+        <label><!-- Required --></label>
+        <name>SBQQ__Required__c</name>
+    </fields>
+    <fields>
+        <help>Vorlageninhalt, der diesem Inhalt zugeordnet ist.</help>
+        <label><!-- Template Section --></label>
+        <name>SBQQ__TemplateSection__c</name>
+        <relationshipLabel><!-- Additional Documents --></relationshipLabel>
+    </fields>
+    <gender>Neuter</gender>
+    <layouts>
+        <layout>Related Content Layout</layout>
+        <sections>
+            <label>Benutzerdefinierte Links</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Zusätzliches Dokument</nameFieldLabel>
+    <webLinks>
+        <label><!-- NewQuoteRelatedContent --></label>
+        <name>SBQQ__NewQuoteRelatedContent</name>
+    </webLinks>
+</CustomObjectTranslation>

@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>商品ルール</value>
+    </caseValues>
+    <fields>
+        <help>このルールが有効か無効かを示します。</help>
+        <label><!-- Active --></label>
+        <name>SBQQ__Active__c</name>
+    </fields>
+    <fields>
+        <help>[一致した条件] が [カスタム] の場合にのみ入力できます。エラー条件インデックス番号、AND、OR、およびかっこの組み合わせを入力します (例: 「(123 AND 124) AND 125」)。</help>
+        <label><!-- Advanced Condition --></label>
+        <name>SBQQ__AdvancedCondition__c</name>
+    </fields>
+    <fields>
+        <help>条件の動作を選択します。[すべて] は AND、[いずれか] は OR、[カスタム] は AND と OR の組み合わせです。</help>
+        <label><!-- Conditions Met --></label>
+        <name>SBQQ__ConditionsMet__c</name>
+        <picklistValues>
+            <masterLabel>All</masterLabel>
+            <translation>すべて</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Any</masterLabel>
+            <translation>いずれか</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Custom</masterLabel>
+            <translation>カスタム</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>ルールが有効化されたときに表示するメッセージを入力します。[入力規則] が起動されたときにエラーメッセージが表示されます。[アラート] が起動されたときに警告メッセージが表示されます。[条件] ルールには適用されません。</help>
+        <label><!-- Message --></label>
+        <name>SBQQ__ErrorMessage__c</name>
+    </fields>
+    <fields>
+        <help>いつこのルールを評価する必要があるかを指定します。</help>
+        <label><!-- Evaluation Event --></label>
+        <name>SBQQ__EvaluationEvent__c</name>
+        <picklistValues>
+            <masterLabel>Always</masterLabel>
+            <translation>常に</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Edit</masterLabel>
+            <translation>編集</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Load</masterLabel>
+            <translation>読み込み</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Save</masterLabel>
+            <translation>保存</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>この価格ルールの評価の順序を指定します。高い順序のルールは最後に評価され、矛盾があった場合に優先されます。</help>
+        <label><!-- Evaluation Order --></label>
+        <name>SBQQ__EvaluationOrder__c</name>
+    </fields>
+    <fields>
+        <help>商品ルールのメッセージに対応する参照オブジェクトの項目。この項目はテキストにする必要があります。</help>
+        <label><!-- Lookup Message Field --></label>
+        <name>SBQQ__LookupMessageField__c</name>
+        <picklistValues>
+            <masterLabel>SBQQ__Message__c</masterLabel>
+            <translation>SBQQ__Message__c</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>ルックアップデータを保存するカスタムオブジェクトの API 参照名。</help>
+        <label><!-- Lookup Object --></label>
+        <name>SBQQ__LookupObject__c</name>
+        <picklistValues>
+            <masterLabel>SBQQ__LookupData__c</masterLabel>
+            <translation>SBQQ__LookupData__c</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>商品アクションの商品ルックアップに対応する参照オブジェクトの項目。この項目は、商品オブジェクトのルックアップにする必要があります。</help>
+        <label><!-- Lookup Product Field --></label>
+        <name>SBQQ__LookupProductField__c</name>
+        <picklistValues>
+            <masterLabel>SBQQ__Product__c</masterLabel>
+            <translation>SBQQ__Product__c</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>商品アクションの必須チェックボックスに対応する参照オブジェクトの項目。この項目はチェックボックスにする必要があります。</help>
+        <label><!-- Lookup Required Field --></label>
+        <name>SBQQ__LookupRequiredField__c</name>
+        <picklistValues>
+            <masterLabel>SBQQ__Required__c</masterLabel>
+            <translation>SBQQ__Required__c</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>商品アクションのタイプ選択リストに対応する参照オブジェクトの項目。この項目は、選択リストまたはテキストにする必要があります。</help>
+        <label><!-- Lookup Type Field --></label>
+        <name>SBQQ__LookupTypeField__c</name>
+        <picklistValues>
+            <masterLabel>SBQQ__Type__c</masterLabel>
+            <translation>SBQQ__Type__c</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>ルールを見積全体または特定の商品に適用します。</help>
+        <label><!-- Scope --></label>
+        <name>SBQQ__Scope__c</name>
+        <picklistValues>
+            <masterLabel>Product</masterLabel>
+            <translation>商品</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quote</masterLabel>
+            <translation>見積</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>ルールの種別。[入力規則] の場合、エラーメッセージが表示されます。[選択] の場合、商品が追加または推奨されます。[アラート] の場合、警告が表示されますが修正は必要ありません。[条件] の場合、動的バンドルのオプションルックアップ検索結果が絞り込まれます。</help>
+        <label><!-- Type --></label>
+        <name>SBQQ__Type__c</name>
+        <picklistValues>
+            <masterLabel>Alert</masterLabel>
+            <translation>アラート</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Filter</masterLabel>
+            <translation>条件</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Selection</masterLabel>
+            <translation>選択</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Validation</masterLabel>
+            <translation>入力規則</translation>
+        </picklistValues>
+    </fields>
+    <layouts>
+        <layout>Product Rule Layout</layout>
+        <sections>
+            <label>カスタムリンク</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>ルックアップクエリ情報</label>
+            <section>Lookup Query Information</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>商品ルール名</nameFieldLabel>
+    <validationRules>
+        <errorMessage><!-- The Scope field must point to &apos;Product&apos; for Filter type Product Rules. --></errorMessage>
+        <name>SBQQ__FilterTypeScope</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Only rules with Scope &apos;Product&apos; can have Evaluation Events of type &apos;Edit&apos; or &apos;Load&apos; --></errorMessage>
+        <name>SBQQ__ProductEvaluationEventValidation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The Evaluation Event field must be populated with a value. --></errorMessage>
+        <name>SBQQ__RequiredEvaluationEvent</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- CloneWithRelated --></label>
+        <name>SBQQ__CloneWithRelated</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- CloneWithRelatedClassic --></label>
+        <name>SBQQ__CloneWithRelatedClassic</name>
+    </webLinks>
+</CustomObjectTranslation>

@@ -1,0 +1,1725 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>true</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <customHelpPage>SBQQ__QuoteTemplateHelp</customHelpPage>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <description>Template that controls formatting of generated PDF documents.</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableEnhancedLookup>false</enableEnhancedLookup>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>Private</externalSharingModel>
+    <fields>
+        <fullName>SBQQ__AllPackageProductsShown__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Flag that determines whether all package products are printed on quote documents or only ones that are non-zero.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select the checkbox if all package products should be printed on quote documents; otherwise, only ones that are non-zero are printed.</inlineHelpText>
+        <label>Show All Package Product</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__BillToTitle__c</fullName>
+        <defaultValue>&apos;Bill To&apos;</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Title used for Bill To section. Default value is &quot;Bill To&quot;.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Title used for Bill To section. Default value is &quot;Bill To&quot;.</inlineHelpText>
+        <label>Bill To Title</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SBQQ__BorderColor__c</fullName>
+        <defaultValue>&quot;000000&quot;</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Color of table borders expressed as a hexadecimal value.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Color of table borders expressed as a hexadecimal value.</inlineHelpText>
+        <label>Border Color</label>
+        <length>6</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SBQQ__BottomMargin__c</fullName>
+        <defaultValue>1</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Bottom margin on the page.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Bottom margin on the page.</inlineHelpText>
+        <label>Bottom Margin</label>
+        <precision>6</precision>
+        <required>true</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SBQQ__BundledProductsShown__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Determines if quote line items with the Bundled checkbox selected are displayed on quote documents generated from this template.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select the checkbox if quote line items with Bundled enabled are displayed on quote documents generated from this template.</inlineHelpText>
+        <label>Show Bundled Products</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__CompanyCity__c</fullName>
+        <deprecated>false</deprecated>
+        <description>City portion of company address displayed on quote documents.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>City portion of company address displayed on quote documents.</inlineHelpText>
+        <label>Company City</label>
+        <length>80</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SBQQ__CompanyCountry__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Country portion of company address displayed on quote documents.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Country portion of company address displayed on quote documents.</inlineHelpText>
+        <label>Company Country</label>
+        <length>30</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SBQQ__CompanyEmail__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Company email displayed on quote documents. Eg: sales@mycompany.com</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Company email displayed on quote documents. Eg: sales@mycompany.com</inlineHelpText>
+        <label>Company Email</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SBQQ__CompanyFax__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Company FAX displayed on quote documents.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Company FAX displayed on quote documents.</inlineHelpText>
+        <label>Company Fax</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Phone</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__CompanyName__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Name of the company as displayed on quote documents.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Name of the company as displayed on quote documents.</inlineHelpText>
+        <label>Company Name</label>
+        <length>80</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SBQQ__CompanyPhone__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Company phone displayed on quote documents.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Company phone displayed on quote documents.</inlineHelpText>
+        <label>Company Phone</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Phone</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__CompanyPostalCode__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Postal code portion of company address displayed on quote documents.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Postal code portion of company address displayed on quote documents.</inlineHelpText>
+        <label>Company Postal Code</label>
+        <length>20</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SBQQ__CompanySlogan__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Company slogan displayed on quote documents.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Company slogan displayed on quote documents.</inlineHelpText>
+        <label>Company Slogan</label>
+        <length>120</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SBQQ__CompanyState__c</fullName>
+        <deprecated>false</deprecated>
+        <description>State portion of company address displayed on quote documents.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>State portion of company address displayed on quote documents.</inlineHelpText>
+        <label>Company State</label>
+        <length>40</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SBQQ__CompanyStreet__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Street portion of company address displayed on quote documents.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Street portion of company address displayed on quote documents.</inlineHelpText>
+        <label>Company Street</label>
+        <length>120</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SBQQ__ComponentProductsHidden__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Flag that determines whether component products are printed on quote documents, as indicated by the Component checkbox on the product</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select the checkbox if component products with the Component enabled should not be printed on quote documents.</inlineHelpText>
+        <label>Hide Component Products</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__CustomerDiscountField__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Field on the Quote object that computes the customer discount.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Field on the Quote object that computes the customer discount.</inlineHelpText>
+        <label>Customer Discount Field</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Total Discount (Amt)</fullName>
+                    <default>false</default>
+                    <label>Total Discount (Amt)</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SBQQ__CustomerDiscountLabel__c</fullName>
+        <defaultValue>&quot;DISCOUNT&quot;</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Label used for customer discount in subtotals and totals sections.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Label used for customer discount in subtotals and totals sections.</inlineHelpText>
+        <label>Customer Discount Label</label>
+        <length>200</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SBQQ__CustomerDiscountShown__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Determines if quote-level customer discount is displayed in the quote totals.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select the checkbox if you want quote-level customer discount displayed in the quote totals.</inlineHelpText>
+        <label>Show Customer Discount</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__Default__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Checkbox that marks the template as default, when selected.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select this checkbox to mark this template as default.</inlineHelpText>
+        <label>Default</label>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__DeploymentStatus__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Deployment status of this template. &quot;In Development&quot; templates are only visible to users with Customize Application permission.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Deployment status of this template. Change to &quot;Deployed&quot; to make this template visible to non-admin users.</inlineHelpText>
+        <label>Deployment Status</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>In Development</fullName>
+                    <default>true</default>
+                    <label>In Development</label>
+                </value>
+                <value>
+                    <fullName>Deployed</fullName>
+                    <default>false</default>
+                    <label>Deployed</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SBQQ__DiscountScheduleShown__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Determines if product discount schedule is displayed under the quote-lines.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Choose how to display discount schedules on the quote document. Per Quote Line will show the discount schedule and Tiers right-aligned under each Quote Line.</inlineHelpText>
+        <label>Show Discount Schedule</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Per Quote Line</fullName>
+                    <default>false</default>
+                    <label>Per Quote Line</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SBQQ__ExcludeHeaderFooter__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Excludes template header and footer for First Page, Last Page, or both the First and Last Page.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Excludes template header and footer for First Page, Last Page, or both the First and Last Page.</inlineHelpText>
+        <label>Exclude Header &amp; Footer</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>First Page</fullName>
+                    <default>false</default>
+                    <label>First Page</label>
+                </value>
+                <value>
+                    <fullName>Last Page</fullName>
+                    <default>false</default>
+                    <label>Last Page</label>
+                </value>
+                <value>
+                    <fullName>First and Last</fullName>
+                    <default>false</default>
+                    <label>First and Last</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SBQQ__ExcludedPages__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Excludes page numbering for All Pages, First Page, Second Page, and/or both the First and Second Page.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Excludes page numbering for All Pages, First Page, Second Page, and/or both the First and Second Page.</inlineHelpText>
+        <label>Exclude Page Numbers</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>All Pages</fullName>
+                    <default>false</default>
+                    <label>All Pages</label>
+                </value>
+                <value>
+                    <fullName>First Page</fullName>
+                    <default>false</default>
+                    <label>First Page</label>
+                </value>
+                <value>
+                    <fullName>Last Page</fullName>
+                    <default>false</default>
+                    <label>Last Page</label>
+                </value>
+                <value>
+                    <fullName>First and Last</fullName>
+                    <default>false</default>
+                    <label>First and Last</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SBQQ__FontFamily__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Family of the font that should be applied to text in this template.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Family of the font that should be applied to text in this template.</inlineHelpText>
+        <label>Font Family</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Courier</fullName>
+                    <default>false</default>
+                    <label>Courier</label>
+                </value>
+                <value>
+                    <fullName>Dosis</fullName>
+                    <default>false</default>
+                    <label>Dosis</label>
+                </value>
+                <value>
+                    <fullName>Droid Sans</fullName>
+                    <default>false</default>
+                    <label>Droid Sans</label>
+                </value>
+                <value>
+                    <fullName>Droid Serif</fullName>
+                    <default>false</default>
+                    <label>Droid Serif</label>
+                </value>
+                <value>
+                    <fullName>Helvetica</fullName>
+                    <default>true</default>
+                    <label>Helvetica</label>
+                </value>
+                <value>
+                    <fullName>Merriweather</fullName>
+                    <default>false</default>
+                    <label>Merriweather</label>
+                </value>
+                <value>
+                    <fullName>Montserrat</fullName>
+                    <default>false</default>
+                    <label>Montserrat</label>
+                </value>
+                <value>
+                    <fullName>Noto Sans JP</fullName>
+                    <default>false</default>
+                    <label>Noto Sans JP</label>
+                </value>
+                <value>
+                    <fullName>Noto Sans KR</fullName>
+                    <default>false</default>
+                    <label>Noto Sans KR</label>
+                </value>
+                <value>
+                    <fullName>Noto Sans SC</fullName>
+                    <default>false</default>
+                    <label>Noto Sans SC</label>
+                </value>
+                <value>
+                    <fullName>Noto Sans TC</fullName>
+                    <default>false</default>
+                    <label>Noto Sans TC</label>
+                </value>
+                <value>
+                    <fullName>Open Sans</fullName>
+                    <default>false</default>
+                    <label>Open Sans</label>
+                </value>
+                <value>
+                    <fullName>Play</fullName>
+                    <default>false</default>
+                    <label>Play</label>
+                </value>
+                <value>
+                    <fullName>PT Sans</fullName>
+                    <default>false</default>
+                    <label>PT Sans</label>
+                </value>
+                <value>
+                    <fullName>PT Serif</fullName>
+                    <default>false</default>
+                    <label>PT Serif</label>
+                </value>
+                <value>
+                    <fullName>Roboto</fullName>
+                    <default>false</default>
+                    <label>Roboto</label>
+                </value>
+                <value>
+                    <fullName>Roboto Light</fullName>
+                    <default>false</default>
+                    <label>Roboto Light</label>
+                </value>
+                <value>
+                    <fullName>Times</fullName>
+                    <default>false</default>
+                    <label>Times</label>
+                </value>
+                <value>
+                    <fullName>Titillium Web</fullName>
+                    <default>false</default>
+                    <label>Titillium Web</label>
+                </value>
+                <value>
+                    <fullName>Ubuntu</fullName>
+                    <default>false</default>
+                    <label>Ubuntu</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SBQQ__FontSize__c</fullName>
+        <defaultValue>9</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Default font size for text in this quote document.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Default font size for text in this quote document.</inlineHelpText>
+        <label>Font Size</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>1</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SBQQ__FooterContent__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>Template content that should be rendered in the footer.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Template content that should be rendered in the footer.</inlineHelpText>
+        <label>Footer Content</label>
+        <referenceTo>SBQQ__TemplateContent__c</referenceTo>
+        <relationshipLabel>Quote Templates (Footer)</relationshipLabel>
+        <relationshipName>QuoteTemplatesFooter</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__FooterHeight__c</fullName>
+        <defaultValue>15</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Height of the footer on documents generated from this template.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Height of the footer on documents generated from this template.</inlineHelpText>
+        <label>Footer Height</label>
+        <precision>10</precision>
+        <required>false</required>
+        <scale>3</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SBQQ__GeneratorName__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Name of the Visualforce page that should be used by this template to generate XSL FO tree.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Name of the Visualforce page that should be used by this template to generate XSL FO tree.</inlineHelpText>
+        <label>Generator Name</label>
+        <length>150</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SBQQ__GrandTotalPrefix__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Prefix for subtotal and total labels in grand totals.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Prefix for subtotal and total labels in grand totals.</inlineHelpText>
+        <label>Grand Total Prefix</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SBQQ__GroupField__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Contains the values you want to use when grouping and subtotaling line items.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select the field that has the values you want to use when grouping and subtotaling line items.</inlineHelpText>
+        <label>Group Field</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Product Family</fullName>
+                    <default>false</default>
+                    <label>Product Family</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SBQQ__GroupFontFamily__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Family of the font that should be applied to Group title text in this template.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Family of the font that should be applied to Group title text in this template.</inlineHelpText>
+        <label>Group Font Family</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Courier</fullName>
+                    <default>false</default>
+                    <label>Courier</label>
+                </value>
+                <value>
+                    <fullName>Dosis</fullName>
+                    <default>false</default>
+                    <label>Dosis</label>
+                </value>
+                <value>
+                    <fullName>Droid Sans</fullName>
+                    <default>false</default>
+                    <label>Droid Sans</label>
+                </value>
+                <value>
+                    <fullName>Droid Serif</fullName>
+                    <default>false</default>
+                    <label>Droid Serif</label>
+                </value>
+                <value>
+                    <fullName>Helvetica</fullName>
+                    <default>true</default>
+                    <label>Helvetica</label>
+                </value>
+                <value>
+                    <fullName>Merriweather</fullName>
+                    <default>false</default>
+                    <label>Merriweather</label>
+                </value>
+                <value>
+                    <fullName>Montserrat</fullName>
+                    <default>false</default>
+                    <label>Montserrat</label>
+                </value>
+                <value>
+                    <fullName>Noto Sans JP</fullName>
+                    <default>false</default>
+                    <label>Noto Sans JP</label>
+                </value>
+                <value>
+                    <fullName>Noto Sans KR</fullName>
+                    <default>false</default>
+                    <label>Noto Sans KR</label>
+                </value>
+                <value>
+                    <fullName>Noto Sans SC</fullName>
+                    <default>false</default>
+                    <label>Noto Sans SC</label>
+                </value>
+                <value>
+                    <fullName>Noto Sans TC</fullName>
+                    <default>false</default>
+                    <label>Noto Sans TC</label>
+                </value>
+                <value>
+                    <fullName>Open Sans</fullName>
+                    <default>false</default>
+                    <label>Open Sans</label>
+                </value>
+                <value>
+                    <fullName>Play</fullName>
+                    <default>false</default>
+                    <label>Play</label>
+                </value>
+                <value>
+                    <fullName>PT Sans</fullName>
+                    <default>false</default>
+                    <label>PT Sans</label>
+                </value>
+                <value>
+                    <fullName>PT Serif</fullName>
+                    <default>false</default>
+                    <label>PT Serif</label>
+                </value>
+                <value>
+                    <fullName>Roboto</fullName>
+                    <default>false</default>
+                    <label>Roboto</label>
+                </value>
+                <value>
+                    <fullName>Roboto Light</fullName>
+                    <default>false</default>
+                    <label>Roboto Light</label>
+                </value>
+                <value>
+                    <fullName>Times</fullName>
+                    <default>false</default>
+                    <label>Times</label>
+                </value>
+                <value>
+                    <fullName>Titillium Web</fullName>
+                    <default>false</default>
+                    <label>Titillium Web</label>
+                </value>
+                <value>
+                    <fullName>Ubuntu</fullName>
+                    <default>false</default>
+                    <label>Ubuntu</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SBQQ__GroupFontSize__c</fullName>
+        <defaultValue>9.0</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Default font size for Group titles</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Default font size for Group titles</inlineHelpText>
+        <label>Group Font Size</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>1</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SBQQ__GroupFontStyle__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Font style for Group titles. Default is normal if left blank.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Font style for Group titles. Default is normal if left blank.</inlineHelpText>
+        <label>Group Font Style</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Normal</fullName>
+                    <default>true</default>
+                    <label>Normal</label>
+                </value>
+                <value>
+                    <fullName>Bold</fullName>
+                    <default>false</default>
+                    <label>Bold</label>
+                </value>
+                <value>
+                    <fullName>Italic</fullName>
+                    <default>false</default>
+                    <label>Italic</label>
+                </value>
+                <value>
+                    <fullName>Underline</fullName>
+                    <default>false</default>
+                    <label>Underline</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SBQQ__GroupGap__c</fullName>
+        <defaultValue>15</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Gap between groups in pixels.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Gap between groups in pixels.</inlineHelpText>
+        <label>Group Gap (px)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SBQQ__GroupShadingColor__c</fullName>
+        <defaultValue>&apos;FFFFFF&apos;</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Color of the shading for table cells that contain group title and description.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Color of the shading for table cells that contain group title and description.</inlineHelpText>
+        <label>Group Shading Color</label>
+        <length>6</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SBQQ__GroupTextAlignment__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Specifies the alignment of Group title and Group Description. Defaults to Left if left blank.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Specifies the alignment of Group title and Group Description. Defaults to Left if left blank.</inlineHelpText>
+        <label>Group Text Alignment</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Left</fullName>
+                    <default>true</default>
+                    <label>Left</label>
+                </value>
+                <value>
+                    <fullName>Center</fullName>
+                    <default>false</default>
+                    <label>Center</label>
+                </value>
+                <value>
+                    <fullName>Right</fullName>
+                    <default>false</default>
+                    <label>Right</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SBQQ__GroupTextColor__c</fullName>
+        <defaultValue>&apos;000000&apos;</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Color for the group title and description text.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Color for the group title and description text.</inlineHelpText>
+        <label>Group Text Color</label>
+        <length>6</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SBQQ__HeaderContent__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>References template content that should be rendered in the header.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>References template content that should be rendered in the header.</inlineHelpText>
+        <label>Header Content</label>
+        <referenceTo>SBQQ__TemplateContent__c</referenceTo>
+        <relationshipLabel>Quote Templates (Header)</relationshipLabel>
+        <relationshipName>QuoteTemplatesHeader</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__HeaderHeight__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Height of the header on documents generated from this template.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Height of the header on documents generated from this template.</inlineHelpText>
+        <label>Header Height</label>
+        <precision>10</precision>
+        <required>false</required>
+        <scale>3</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SBQQ__HideGroupSubtotals__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Hides group subtotals on documents generated from this template.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select the checkbox if you want to hide group subtotals on documents generated from this template.</inlineHelpText>
+        <label>Hide Group Subtotals</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__IntroductionTitle__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Title of the section displayed on the Introduction field.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Title of the section displayed on the Introduction field. To display no title, leave this field blank.</inlineHelpText>
+        <label>Introduction Title</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SBQQ__LeftMargin__c</fullName>
+        <defaultValue>0.5</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Left margin on the page.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Left margin on the page.</inlineHelpText>
+        <label>Left Margin</label>
+        <precision>6</precision>
+        <required>true</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SBQQ__LineNumbering__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Specifies how line items are numbered on generated document.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Specify how to number line items on generated documents. &quot;Start at quote&quot; numbers all lines sequentially across groups (if any). &quot;Start at group&quot; resets numbers within each group.</inlineHelpText>
+        <label>Line Numbering</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Start at quote</fullName>
+                    <default>true</default>
+                    <label>Start at quote</label>
+                </value>
+                <value>
+                    <fullName>Start at group</fullName>
+                    <default>false</default>
+                    <label>Start at group</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SBQQ__LineSortField__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Field on Quote Line used to sort line items on document generated by this template.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Specify the field used in sorting line items on the document.</inlineHelpText>
+        <label>Line Sort Field</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Number</fullName>
+                    <default>false</default>
+                    <label>Number</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SBQQ__LogoDocumentId__c</fullName>
+        <deprecated>false</deprecated>
+        <description>ID of the Document which conatins logo image for use in quote PDF.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Salesforce ID for the document containing the logo image used in the quote PDF.</inlineHelpText>
+        <label>Logo Document Id</label>
+        <length>18</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SBQQ__NotesTitle__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Title of the section that displays the Notes field.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Title of the section that displays the Notes field. To display no title, leave this field blank.</inlineHelpText>
+        <label>Notes Title</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SBQQ__PageHeight__c</fullName>
+        <defaultValue>11</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Page height in inches.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Page height in inches.</inlineHelpText>
+        <label>Page Height</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SBQQ__PageNumberAlignment__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Specifies the page number alignment for the document.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Specify the page number alignment for the document. Defaults to Center if the field is blank.</inlineHelpText>
+        <label>Page Number Alignment</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Center</fullName>
+                    <default>false</default>
+                    <label>Center</label>
+                </value>
+                <value>
+                    <fullName>Left</fullName>
+                    <default>false</default>
+                    <label>Left</label>
+                </value>
+                <value>
+                    <fullName>Right</fullName>
+                    <default>false</default>
+                    <label>Right</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SBQQ__PageNumberPosition__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Specifies where the page numbers are displayed in the document.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Specify where the page numbers are displayed in the document. Defaults to Footer if the field is blank.</inlineHelpText>
+        <label>Page Number Position</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Footer</fullName>
+                    <default>true</default>
+                    <label>Footer</label>
+                </value>
+                <value>
+                    <fullName>Header</fullName>
+                    <default>false</default>
+                    <label>Header</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SBQQ__PageNumberText__c</fullName>
+        <defaultValue>&quot;Page {0} of {1}&quot;</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Declares the text description of the page number.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Declare the text description of the page number. &quot;{0}&quot; independently represents the current page. &quot;{1}&quot; is dependent of &quot;{0}&quot; and it represents the total pages with page numbers. Defaults to &quot;Page {0} of {1}&quot; if the field is blank.</inlineHelpText>
+        <label>Page Number Text</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SBQQ__PageOrientation__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Page orientation of PDF documents generated with this template.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Page orientation of PDF documents generated with this template.</inlineHelpText>
+        <label>Page Orientation</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Portrait</fullName>
+                    <default>true</default>
+                    <label>Portrait</label>
+                </value>
+                <value>
+                    <fullName>Landscape</fullName>
+                    <default>false</default>
+                    <label>Landscape</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SBQQ__PageWidth__c</fullName>
+        <defaultValue>8.5</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Page width in inches.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Page width in inches.</inlineHelpText>
+        <label>Page Width</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SBQQ__PartnerDiscountLabel__c</fullName>
+        <defaultValue>&quot;PARTNER DISCOUNT&quot;</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Label used for partner discount in subtotals and totals sections.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Label used for partner discount in subtotals and totals sections.</inlineHelpText>
+        <label>Partner Discount Label</label>
+        <length>200</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SBQQ__PartnerDiscountShown__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Determines if the quote-level partner discount is displayed in the quote totals.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select the checkbox if you want quote-level partner discount displayed in the quote totals.</inlineHelpText>
+        <label>Show Partner Discount</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__RenewedProductsShown__c</fullName>
+        <defaultValue>true</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Determines if renewed products are shown on Renewal quotes generated from this template.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select the checkbox if renewed products should be shown on Renewal quotes generated from this template.</inlineHelpText>
+        <label>Show Renewed Products</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__RightMargin__c</fullName>
+        <defaultValue>0.5</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Right margin on the page.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Right margin setting on the page.</inlineHelpText>
+        <label>Right Margin</label>
+        <precision>6</precision>
+        <required>true</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SBQQ__RollUpField__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Field on quote line object that&apos;s used to rollup lines.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Quote line field used for roll-up. All lines where this field returns the same value will be rolled up into the first line where the value occurs.</inlineHelpText>
+        <label>Roll-Up Field</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Product</fullName>
+                    <default>false</default>
+                    <label>Product</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SBQQ__ShadingColor__c</fullName>
+        <defaultValue>&quot;FFFFFF&quot;</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Color of shading in column headers expressed as a hexadecimal.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Color of shading in column headers expressed as a hexadecimal.</inlineHelpText>
+        <label>Shading Color</label>
+        <length>6</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SBQQ__ShipToTitle__c</fullName>
+        <defaultValue>&apos;Ship To&apos;</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Label used for &quot;Ship To&quot; section. Default value is &quot;Ship To&quot;.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Label used for &quot;Ship To&quot; section. Default value is &quot;Ship To&quot;.</inlineHelpText>
+        <label>Ship To Title</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SBQQ__SubGroupField__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Field used to sub group line items.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Field used to sub group line items.</inlineHelpText>
+        <label>Sub Group Field</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Product Family</fullName>
+                    <default>false</default>
+                    <label>Product Family</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SBQQ__SubtotalField__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Field to sum and display as group/quote subtotal.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select a Field to sum and display as group/quote subtotal.</inlineHelpText>
+        <label>Subtotal Field</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>List Total</fullName>
+                    <default>false</default>
+                    <label>List Total</label>
+                </value>
+                <value>
+                    <fullName>Customer Total</fullName>
+                    <default>false</default>
+                    <label>Customer Total</label>
+                </value>
+                <value>
+                    <fullName>Net Total</fullName>
+                    <default>false</default>
+                    <label>Net Total</label>
+                </value>
+                <value>
+                    <fullName>Regular Total</fullName>
+                    <default>false</default>
+                    <label>Regular Total</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SBQQ__SubtotalLabel__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Label for subtotal field.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter a label for the subtotal field.</inlineHelpText>
+        <label>Subtotal Label</label>
+        <length>200</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SBQQ__TermBodyIndent__c</fullName>
+        <defaultValue>15</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Indent in pixels of quote term body relative to the term number.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Indent in pixels of quote term body relative to the term number.</inlineHelpText>
+        <label>Term Body Indent (px)</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SBQQ__TermsConditionsTitle__c</fullName>
+        <defaultValue>&quot;Terms &amp; Conditions&quot;</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Title of the section that displays Terms &amp; Conditions.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Title of the section that displays Terms &amp; Conditions.</inlineHelpText>
+        <label>Terms &amp; Conditions Title</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SBQQ__TermsConditions__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Terms &amp; Conditions printed on every document generated with this template.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Terms &amp; Conditions printed on every document generated with this template.</inlineHelpText>
+        <label>Terms &amp; Conditions</label>
+        <length>32000</length>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>SBQQ__TermsNumbered__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Determines whether quote terms rendered by this template are numbered.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select the checkbox if the quote terms rendered by this template should be numbered.</inlineHelpText>
+        <label>Number Terms</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__TextColor__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Default color (in HEX) applied to text in this template.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Default color (in HEX) applied to text in this template.</inlineHelpText>
+        <label>Text Color</label>
+        <length>6</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SBQQ__TopMargin__c</fullName>
+        <defaultValue>1</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Top margin on the page.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Top margin on the page.</inlineHelpText>
+        <label>Top Margin</label>
+        <precision>6</precision>
+        <required>true</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SBQQ__TotalField__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Field to sum and display as group/quote total.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select the Field to sum and display as group/quote total.</inlineHelpText>
+        <label>Total Field</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Net Total</fullName>
+                    <default>false</default>
+                    <label>Net Total</label>
+                </value>
+                <value>
+                    <fullName>List Total</fullName>
+                    <default>false</default>
+                    <label>List Total</label>
+                </value>
+                <value>
+                    <fullName>Customer Total</fullName>
+                    <default>false</default>
+                    <label>Customer Total</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SBQQ__TotalLabel__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Label for total field.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter the label for the field set in Total Field.</inlineHelpText>
+        <label>Total Label</label>
+        <length>200</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SBQQ__TotalsHidden__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Flag that indicates whether quote totals should be printed on the quote document.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select the checkbox to hide quote totals on the quote document.</inlineHelpText>
+        <label>Hide Totals</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__WatermarkId__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Salesforce ID for the document containing the watermark image used in the quote PDF.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Salesforce ID for the document containing the watermark image used in the quote PDF.</inlineHelpText>
+        <label>Watermark ID</label>
+        <length>18</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Quote Template</label>
+    <listViews>
+        <fullName>SBQQ__All</fullName>
+        <columns>NAME</columns>
+        <columns>SBQQ__Default__c</columns>
+        <columns>SBQQ__PageOrientation__c</columns>
+        <columns>CREATEDBY_USER</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <label>Template Name</label>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Quote Templates</pluralLabel>
+    <searchLayouts>
+        <customTabListAdditionalFields>SBQQ__Default__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>SBQQ__PageOrientation__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>CREATEDBY_USER</customTabListAdditionalFields>
+        <customTabListAdditionalFields>UPDATEDBY_USER</customTabListAdditionalFields>
+        <lookupDialogsAdditionalFields>CREATEDBY_USER</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>UPDATEDBY_USER</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>SBQQ__PageOrientation__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>SBQQ__Default__c</lookupDialogsAdditionalFields>
+        <searchFilterFields>NAME</searchFilterFields>
+        <searchResultsAdditionalFields>SBQQ__Default__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>SBQQ__PageOrientation__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CREATEDBY_USER</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>UPDATEDBY_USER</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+    <validationRules>
+        <fullName>SBQQ__Blank_Footer_Height</fullName>
+        <active>true</active>
+        <description>Checks if Footer Height is blank if Page Number Position is set to &apos;Footer&apos;.</description>
+        <errorConditionFormula>IF(AND(ISPICKVAL(SBQQ__PageNumberPosition__c, &quot;Footer&quot;),
+            ISBLANK(SBQQ__FooterHeight__c)), true, null)</errorConditionFormula>
+        <errorMessage>Footer Height can not be blank if Page Number Position is set to Footer.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>SBQQ__Blank_Header_Height</fullName>
+        <active>true</active>
+        <description>Checks if Header Height is blank if Page Number Position is set to &apos;Header&apos;.</description>
+        <errorConditionFormula>IF(AND(ISPICKVAL(SBQQ__PageNumberPosition__c, &quot;Header&quot;),
+            ISBLANK(SBQQ__HeaderHeight__c)), true, null)</errorConditionFormula>
+        <errorMessage>Header Height can not be blank if Page Number Position is set to Header.</errorMessage>
+    </validationRules>
+    <visibility>Public</visibility>
+    <webLinks>
+        <fullName>SBQQ__CloneWithRelated</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <linkType>url</linkType>
+        <masterLabel>Clone with Related</masterLabel>
+        <openType>replace</openType>
+        <protected>false</protected>
+        <url>{!$Site.Prefix}/apex/SBQQ__CloneQuoteTemplateRelated?id={!SBQQ__QuoteTemplate__c.Id}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>SBQQ__CloneWithRelatedClassic</fullName>
+        <availability>online</availability>
+        <description>Clones this template with related child records.</description>
+        <displayType>button</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <linkType>url</linkType>
+        <masterLabel>Clone with Related</masterLabel>
+        <openType>replace</openType>
+        <protected>false</protected>
+        <url>{!URLFOR($Action.SBQQ__QuoteTemplate__c.Clone, SBQQ__QuoteTemplate__c.Id, [retURL=$Site.Prefix &amp; &apos;/&apos; &amp; SBQQ__QuoteTemplate__c.Id,saveURL=$Site.Prefix &amp; &apos;/apex/SBQQ__CloneQuoteTemplateRelated?id=&apos; &amp; SBQQ__QuoteTemplate__c.Id])}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>SBQQ__Translate</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <linkType>url</linkType>
+        <masterLabel>Translate</masterLabel>
+        <openType>replace</openType>
+        <protected>false</protected>
+        <url>../apex/SBQQ__Translations?targetObject=QuoteTemplate&amp;targetId={!SBQQ__QuoteTemplate__c.Id}&amp;supportUserDefined=false&amp;supportStandard=true</url>
+    </webLinks>
+</CustomObject>

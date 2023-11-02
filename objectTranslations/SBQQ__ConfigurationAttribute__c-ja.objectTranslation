@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>設定属性</value>
+    </caseValues>
+    <fields>
+        <help>このオプションへの変更をすぐに適用する場合は、チェックボックスをオンにします。ユーザ操作のパフォーマンス低下を避けるために慎重に使用します。</help>
+        <label><!-- Apply Immediately --></label>
+        <name>SBQQ__AppliedImmediately__c</name>
+    </fields>
+    <fields>
+        <help>設定属性の選択内容を商品オプションに適用する場合はチェックボックスをオンにします。</help>
+        <label><!-- Apply To Product Options --></label>
+        <name>SBQQ__ApplyToProductOptions__c</name>
+    </fields>
+    <fields>
+        <help>追加された商品の一致項目の値を使用して動的機能から商品を追加する場合は、この属性の値を設定します。</help>
+        <label><!-- Auto-Select --></label>
+        <name>SBQQ__AutoSelect__c</name>
+    </fields>
+    <fields>
+        <help>列は、設定属性ごとに選択リスト (1、2、3 のいずれか) で構成されます。最大 3 列まで許容されます。</help>
+        <label><!-- Column Order --></label>
+        <name>SBQQ__ColumnOrder__c</name>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation>1</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation>2</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3</masterLabel>
+            <translation>3</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>属性のデフォルト値のデフォルトオブジェクトにある対象項目の API。</help>
+        <label><!-- Default Field --></label>
+        <name>SBQQ__DefaultField__c</name>
+    </fields>
+    <fields>
+        <help>属性のデフォルト値の対象オブジェクト。</help>
+        <label><!-- Default Object --></label>
+        <name>SBQQ__DefaultObject__c</name>
+        <picklistValues>
+            <masterLabel>Quote</masterLabel>
+            <translation>Quote__c</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quote Line Group</masterLabel>
+            <translation>QuoteLineGroup__c</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>設定属性に表示順序が関連付けられていない場合、順序は関連コンテンツ名によって決まります。</help>
+        <label><!-- Row Order --></label>
+        <name>SBQQ__DisplayOrder__c</name>
+    </fields>
+    <fields>
+        <help>この属性が入力される機能を指定します。</help>
+        <label><!-- Feature --></label>
+        <name>SBQQ__Feature__c</name>
+        <relationshipLabel><!-- Configuration Attributes --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>グローバルな対象項目がこの属性にあるかどうかを示します。</help>
+        <label><!-- Global --></label>
+        <name>SBQQ__Global__c</name>
+    </fields>
+    <fields>
+        <help>商品オプションオブジェクトの対応する選択リスト項目から、このバンドルで非表示にする値を入力します。</help>
+        <label><!-- Hidden Values --></label>
+        <name>SBQQ__HiddenValues__c</name>
+    </fields>
+    <fields>
+        <help>非表示とフラグ付けされている場合、設定属性は [商品コンフィグレータ] ページに表示されません。</help>
+        <label><!-- Hidden --></label>
+        <name>SBQQ__Hidden__c</name>
+    </fields>
+    <fields>
+        <help>この属性の位置を指定します。[最上位へ] の場合、オプションの上に表示されます。[最下位へ] の場合、下に表示されます。</help>
+        <label><!-- Position --></label>
+        <name>SBQQ__Position__c</name>
+        <picklistValues>
+            <masterLabel>Bottom</masterLabel>
+            <translation>最下位へ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Top</masterLabel>
+            <translation>最上位へ</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>属性を作成している商品を指定します。</help>
+        <label><!-- Product --></label>
+        <name>SBQQ__Product__c</name>
+        <relationshipLabel><!-- Configuration Attributes --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>この属性に値が必要かどうかを指定します。</help>
+        <label><!-- Required --></label>
+        <name>SBQQ__Required__c</name>
+    </fields>
+    <fields>
+        <help>商品オプションオブジェクトの対応する選択リスト項目から、このバンドルで表示する値を入力します。</help>
+        <label><!-- Shown Values --></label>
+        <name>SBQQ__ShownValues__c</name>
+    </fields>
+    <fields>
+        <help>この属性の値を保持する、商品オプション上の項目を指定します。</help>
+        <label><!-- Target Field --></label>
+        <name>SBQQ__TargetField__c</name>
+        <picklistValues>
+            <masterLabel>Discount (%)</masterLabel>
+            <translation>割引 (%)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Discount (Amt)</masterLabel>
+            <translation>割引 (金額)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unit Price</masterLabel>
+            <translation>単価</translation>
+        </picklistValues>
+    </fields>
+    <layouts>
+        <layout>Configuration Attribute Layout</layout>
+        <sections>
+            <label>カスタムリンク</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Global Attribute Layout</layout>
+        <sections>
+            <label>カスタムリンク</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>属性の名前</nameFieldLabel>
+    <recordTypes>
+        <description><!-- Configuration Attribute associated to a product --></description>
+        <label><!-- Configuration Attribute --></label>
+        <name>SBQQ__Configuration_Attribute</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Definition of an Attribute Item --></description>
+        <label><!-- Global Attribute --></label>
+        <name>SBQQ__Global_Attribute</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- Column Order is required. --></errorMessage>
+        <name>SBQQ__Column_Order_is_required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Product is required. --></errorMessage>
+        <name>SBQQ__Product_is_required_if_not_global</name>
+    </validationRules>
+</CustomObjectTranslation>

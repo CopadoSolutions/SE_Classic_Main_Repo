@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Regra de configuração</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Regras de configuração</value>
+    </caseValues>
+    <fields>
+        <help>Indica se essa regra deve ser usada para validar configurações.</help>
+        <label><!-- Active --></label>
+        <name>SBQQ__Active__c</name>
+    </fields>
+    <fields>
+        <help>Inclui a configuração do pacote pai com o nível especificado ao avaliar as condições desta regra no configurador para regras de alerta, validação e seleção.</help>
+        <label><!-- Parent Bundle Condition Level --></label>
+        <name>SBQQ__AscendingNestedLevel__c</name>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation>1</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Permita que as configurações de pacote filho até o nível especificado sejam almejadas pelas ações dessa regra ao executar no configurador.</help>
+        <label><!-- Child Bundle Action Level --></label>
+        <name>SBQQ__DescendingActionNesting__c</name>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation>1</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Inclui as configurações do pacote filho com o nível especificado ao avaliar as condições desta regra no configurador para regras de alerta, validação e seleção.</help>
+        <label><!-- Child Bundle Condition Level --></label>
+        <name>SBQQ__DescendingNestedLevel__c</name>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation>1</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Selecione o recurso do produto que deseja que essa regra valide.</help>
+        <label><!-- Product Feature --></label>
+        <name>SBQQ__ProductFeature__c</name>
+        <relationshipLabel><!-- Configuration Rules --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Selecione a regra do produto que contém a lógica para avaliar suas configurações do produto.</help>
+        <label><!-- Product Rule --></label>
+        <name>SBQQ__ProductRule__c</name>
+        <relationshipLabel><!-- Configuration Rules --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Selecione o produto configurado que deseja que essa regra valide.</help>
+        <label><!-- Product --></label>
+        <name>SBQQ__Product__c</name>
+        <relationshipLabel><!-- Configuration Rules --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Especifique quando essa regra deve ser avaliada.</help>
+        <label><!-- Rule Evaluation Event --></label>
+        <name>SBQQ__RuleEvaluationEvent__c</name>
+    </fields>
+    <fields>
+        <help>Tipo de regra do produto mencionado por essa regra de configuração.</help>
+        <label><!-- Rule Type --></label>
+        <name>SBQQ__RuleType__c</name>
+    </fields>
+    <gender>Feminine</gender>
+    <layouts>
+        <layout>Configuration Rule Layout</layout>
+        <sections>
+            <label>Links personalizados</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Nº da regra</nameFieldLabel>
+    <validationRules>
+        <errorMessage><!-- Condition Level only supported for Validation, Alert and Selection product rules. --></errorMessage>
+        <name>SBQQ__Ensure_rule_type_nested_level</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Action Level only supported for Selection product rules. --></errorMessage>
+        <name>SBQQ__Ensure_rule_type_nested_level_actions</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The maximum supported Bundle Level is 1. --></errorMessage>
+        <name>SBQQ__Ensure_supported_nested_level</name>
+    </validationRules>
+</CustomObjectTranslation>
