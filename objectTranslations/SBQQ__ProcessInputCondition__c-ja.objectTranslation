@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>プロセス入力条件</value>
+    </caseValues>
+    <fields>
+        <help>このルールが有効か無効かを示すフラグ。</help>
+        <label><!-- Active --></label>
+        <name>SBQQ__Active__c</name>
+    </fields>
+    <fields>
+        <help>このプロセス入力の値によって現在の入力が表示されるかどうかが決定されます。</help>
+        <label><!-- Master Process Input --></label>
+        <name>SBQQ__MasterProcessInput__c</name>
+        <relationshipLabel><!-- Process Inputs Regulated --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>プロセス入力値の比較に使用する演算子を選択します。</help>
+        <label><!-- Operator --></label>
+        <name>SBQQ__Operator__c</name>
+        <picklistValues>
+            <masterLabel>contains</masterLabel>
+            <translation>次の文字列を含む</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ends with</masterLabel>
+            <translation>次の文字列で終わる</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>equals</masterLabel>
+            <translation>次の文字列と一致する</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>greater or equals</masterLabel>
+            <translation>＞＝</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>greater than</masterLabel>
+            <translation>＞</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>less or equals</masterLabel>
+            <translation>＜＝</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>less than</masterLabel>
+            <translation>＜</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>not equals</masterLabel>
+            <translation>次の文字列と一致しない</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>starts with</masterLabel>
+            <translation>次の文字列で始まる</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>条件を所有するプロセス入力。</help>
+        <label><!-- Process Input --></label>
+        <name>SBQQ__ProcessInput__c</name>
+        <relationshipLabel><!-- Process Input Conditions --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>制御プロセス入力との比較に使用する値。</help>
+        <label><!-- Value --></label>
+        <name>SBQQ__Value__c</name>
+    </fields>
+    <layouts>
+        <layout>Process Input Condition Layout</layout>
+        <sections>
+            <label>カスタムリンク</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>条件情報</label>
+            <section>Filter Information</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>プロセス入力条件名</nameFieldLabel>
+</CustomObjectTranslation>

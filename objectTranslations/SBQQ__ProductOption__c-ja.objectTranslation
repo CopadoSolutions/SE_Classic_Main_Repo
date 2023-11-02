@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>商品オプション</value>
+    </caseValues>
+    <fieldSets>
+        <label><!-- OptionConfiguration --></label>
+        <name>SBQQ__OptionConfiguration</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- OptionLookup --></label>
+        <name>SBQQ__OptionLookup</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- SearchFilters --></label>
+        <name>SBQQ__SearchFilters</name>
+    </fieldSets>
+    <fields>
+        <help>[選択時] を選択すると、商品を選択したときに変更がすぐに適用されます。[数量変更時] を選択すると、数量を変更したときに変更がすぐに適用されます。[常に] を選択すると、商品の選択と数量の変更の両方の場合に変更が適用されます。</help>
+        <label><!-- Apply Immediately Context --></label>
+        <name>SBQQ__AppliedImmediatelyContext__c</name>
+        <picklistValues>
+            <masterLabel>Always</masterLabel>
+            <translation>常に</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>On Quantity Change</masterLabel>
+            <translation>数量変更時</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>On Selection</masterLabel>
+            <translation>選択時</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>このオプションへの変更をすぐに適用する場合は、チェックボックスをオンにします。ユーザ操作のパフォーマンス低下を避けるために慎重に使用します。</help>
+        <label><!-- Apply Immediately --></label>
+        <name>SBQQ__AppliedImmediately__c</name>
+    </fields>
+    <fields>
+        <help>関連商品が主商品にバンドルされていることを示す場合は、チェックボックスをオンにします。バンドルされているオプションは、数量が固定で価格は 0 です。これは、価格が主商品に含まれているためです。オプションに価格を追加する場合は、このチェックボックスをオフのままにします。</help>
+        <label><!-- Bundled --></label>
+        <name>SBQQ__Bundled__c</name>
+    </fields>
+    <fields>
+        <help>設定に対して生成される商品コード内のこのコンポーネントの位置。</help>
+        <label><!-- Component Code Position --></label>
+        <name>SBQQ__ComponentCodePosition__c</name>
+    </fields>
+    <fields>
+        <help>このオプションによって表されるコンポーネントのコード。</help>
+        <label><!-- Component Code --></label>
+        <name>SBQQ__ComponentCode__c</name>
+    </fields>
+    <fields>
+        <help>設定に対して生成される商品説明内のこのコンポーネントの位置。</help>
+        <label><!-- Component Description Position --></label>
+        <name>SBQQ__ComponentDescriptionPosition__c</name>
+    </fields>
+    <fields>
+        <help>このオプションによって表されるコンポーネントの説明。これは、商品オブジェクトの [設定対象の説明パターン] 項目と組み合わせて使用されます。</help>
+        <label><!-- Component Description --></label>
+        <name>SBQQ__ComponentDescription__c</name>
+    </fields>
+    <fields>
+        <help>このオプションを使用して設定されているバンドルの商品 SKU。商品の詳細ページからオプションを作成する場合は、これはすでに入力されています。</help>
+        <label><!-- Configured SKU --></label>
+        <name>SBQQ__ConfiguredSKU__c</name>
+        <relationshipLabel><!-- Options --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>価格ディメンションが定義されている場合に、この商品がデフォルトで表示される価格設定表を選択します。</help>
+        <label><!-- Default Pricing Table --></label>
+        <name>SBQQ__DefaultPricingTable__c</name>
+        <picklistValues>
+            <masterLabel>Segmented</masterLabel>
+            <translation>分割</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Standard</masterLabel>
+            <translation>標準</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>このオプションで参照されている商品がスタンドアロンで提供された場合の、項目に基づく割引 (金額)。ただし、この商品の一部をバンドルとして購入した場合、割引を適用する必要があります。</help>
+        <label><!-- Discount (Amt) --></label>
+        <name>SBQQ__DiscountAmount__c</name>
+    </fields>
+    <fields>
+        <help>このオプションによって選択される商品に適用される割引率表を参照します。この割引率表は、商品または機能で選択されている割引率表を上書きします。</help>
+        <label><!-- Discount Schedule --></label>
+        <name>SBQQ__DiscountSchedule__c</name>
+        <relationshipLabel><!-- Product Options --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>このオプションで参照されている商品がスタンドアロンで提供された場合の、項目に基づく割引 (%) を入力します。ただし、この商品の一部をバンドルとして購入した場合、割引を適用する必要があります。</help>
+        <label><!-- Discount (%) --></label>
+        <name>SBQQ__Discount__c</name>
+    </fields>
+    <fields>
+        <help>親パッケージからの追加割引をこのコンポーネントに自動的に適用する場合はオンにします。パーセントベースの割引のみ適用できます。</help>
+        <label><!-- Discounted By Package --></label>
+        <name>SBQQ__DiscountedByPackage__c</name>
+    </fields>
+    <fields>
+        <help>この商品の既存の数量。取引先に付随する納入商品を参照することによって計算されます。</help>
+        <label><!-- Existing Quantity --></label>
+        <name>SBQQ__ExistingQuantity__c</name>
+    </fields>
+    <fields>
+        <help>このオプションを含む機能を入力または参照します。これは、設定対象 SKU に連動します。</help>
+        <label><!-- Feature --></label>
+        <name>SBQQ__Feature__c</name>
+        <relationshipLabel><!-- Product Options --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>このオプションで許容される最大数量。</help>
+        <label><!-- Max Quantity --></label>
+        <name>SBQQ__MaxQuantity__c</name>
+    </fields>
+    <fields>
+        <help>このオプションで許容される最小数量。</help>
+        <label><!-- Min Quantity --></label>
+        <name>SBQQ__MinQuantity__c</name>
+    </fields>
+    <fields>
+        <help>このオプションが割り当てられている機能内でのこのオプションの表示順序を設定します。</help>
+        <label><!-- Number --></label>
+        <name>SBQQ__Number__c</name>
+    </fields>
+    <fields>
+        <help>この商品が選択されたときに追加する商品 SKU を入力または参照します。</help>
+        <label><!-- Optional SKU --></label>
+        <name>SBQQ__OptionalSKU__c</name>
+        <relationshipLabel><!-- Optional For --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>価格を編集可能とマークしてユーザがオプション価格を変更できるようにする場合はオンにします。</help>
+        <label><!-- Price Editable --></label>
+        <name>SBQQ__PriceEditable__c</name>
+    </fields>
+    <fields>
+        <help>オプション商品 SKU の商品コード。</help>
+        <label><!-- Product Code --></label>
+        <name>SBQQ__ProductCode__c</name>
+    </fields>
+    <fields>
+        <help>関連商品レコードを読み込むことを避けるために、商品オブジェクトの [設定種別] の値を取得します。</help>
+        <label><!-- Product Configuration Type --></label>
+        <name>SBQQ__ProductConfigurationType__c</name>
+    </fields>
+    <fields>
+        <help>オプション SKU の説明。</help>
+        <label><!-- Product Description --></label>
+        <name>SBQQ__ProductDescription__c</name>
+    </fields>
+    <fields>
+        <help>オプション商品 SKU の商品ファミリ。</help>
+        <label><!-- Product Family --></label>
+        <name>SBQQ__ProductFamily__c</name>
+    </fields>
+    <fields>
+        <help>オプション SKU の名前。</help>
+        <label><!-- Product Name --></label>
+        <name>SBQQ__ProductName__c</name>
+    </fields>
+    <fields>
+        <help>数量項目で使用される小数位の桁数を指定します。</help>
+        <label><!-- Product Quantity Scale --></label>
+        <name>SBQQ__ProductQuantityScale__c</name>
+    </fields>
+    <fields>
+        <help>このサブスクリプションに使用する価格設定の種類。[なし] は、この商品がサブスクリプションではないことを意味します。</help>
+        <label><!-- Product Subscription Pricing --></label>
+        <name>SBQQ__ProductSubscriptionPricing__c</name>
+    </fields>
+    <fields>
+        <help>オプションで数量が指定されている場合でも数量の編集を許可する場合はオンにします。</help>
+        <label><!-- Quantity Editable --></label>
+        <name>SBQQ__QuantityEditable__c</name>
+    </fields>
+    <fields>
+        <help>見積に追加する関連商品の数量。</help>
+        <label><!-- Quantity --></label>
+        <name>SBQQ__Quantity__c</name>
+    </fields>
+    <fields>
+        <help>このオプションによって生成される見積品目を表示するかどうかを設定します。</help>
+        <label><!-- Quote Line Visibility --></label>
+        <name>SBQQ__QuoteLineVisibility__c</name>
+        <picklistValues>
+            <masterLabel>Always</masterLabel>
+            <translation>常に</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Document Only</masterLabel>
+            <translation>ドキュメントのみ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Editor Only</masterLabel>
+            <translation>エディタのみ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Never</masterLabel>
+            <translation>表示しない</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>更新時にこの商品オプションを置き換える商品オプション。更新時に異なる SKU の見積を作成する場合はこれを使用します。</help>
+        <label><!-- Renewal Product Option --></label>
+        <name>SBQQ__RenewalProductOption__c</name>
+        <relationshipLabel><!-- Product Options --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>この商品がバンドルで必須の場合は、チェックボックスをオンにします。</help>
+        <label><!-- Required --></label>
+        <name>SBQQ__Required__c</name>
+    </fields>
+    <fields>
+        <help>この商品オプションをデフォルトで自動的に選択する場合は、チェックボックスをオンにします。</help>
+        <label><!-- Selected --></label>
+        <name>SBQQ__Selected__c</name>
+    </fields>
+    <fields>
+        <help>この全体に対する割合の商品オプションを計算する方法を選択します。パッケージが親商品に固有です。コンポーネントが同階層コンポーネントに固有です。両方が親コンポーネントおよび同階層コンポーネントに固有です。</help>
+        <label><!-- Percent of Total Scope --></label>
+        <name>SBQQ__SubscriptionScope__c</name>
+        <picklistValues>
+            <masterLabel>Both</masterLabel>
+            <translation>両方</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Components</masterLabel>
+            <translation>コンポーネント</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Package</masterLabel>
+            <translation>パッケージ</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>このオプションはシステムによって管理されており、ユーザが選択できないことを示す場合は、チェックボックスをオンにします。</help>
+        <label><!-- System --></label>
+        <name>SBQQ__System__c</name>
+    </fields>
+    <fields>
+        <help>このオプションが数量も含めて親に連動する場合は [コンポーネント] を使用します。このオプションが親に連動するけれども数量は連動しない場合は [アクセサリ] を使用します。関連しているけれどもまったく連動しない商品の場合は [関連商品] を選択します。</help>
+        <label><!-- Type --></label>
+        <name>SBQQ__Type__c</name>
+        <picklistValues>
+            <masterLabel>Accessory</masterLabel>
+            <translation>アクセサリ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Component</masterLabel>
+            <translation>コンポーネント</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Related Product</masterLabel>
+            <translation>関連商品</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>このオプションの単価。これは、価格表の値を上書きします。</help>
+        <label><!-- Unit Price --></label>
+        <name>SBQQ__UnitPrice__c</name>
+    </fields>
+    <fields>
+        <help>親パッケージからの上昇をこのコンポーネントに自動的に適用する場合はオンにします。複数セグメント商品であるコンポーネントにのみ適用されます。</help>
+        <label><!-- Uplifted By Package --></label>
+        <name>SBQQ__UpliftedByPackage__c</name>
+    </fields>
+    <layouts>
+        <layout>Product Option Layout</layout>
+        <sections>
+            <label>高度な設定</label>
+            <section>Advanced Settings</section>
+        </sections>
+        <sections>
+            <label>カスタムリンク</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>オプション SKU の情報</label>
+            <section>Optional SKU Information</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>オプション名</nameFieldLabel>
+    <validationRules>
+        <errorMessage><!-- The &apos;Apply Immediately&apos; field must be checked before providing an &apos;Apply Immediately Context&apos;. Otherwise, please change the &apos;Apply Immediately Context&apos; field to ‘None&apos;. --></errorMessage>
+        <name>SBQQ__Apply_Immediately_Context_Validation</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Translate --></label>
+        <name>SBQQ__Translate</name>
+    </webLinks>
+</CustomObjectTranslation>

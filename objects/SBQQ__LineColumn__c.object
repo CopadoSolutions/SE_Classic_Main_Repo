@@ -1,0 +1,762 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <customHelpPage>SBQQ__LineColumnHelp</customHelpPage>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <description>Definition of a column in line item table on quote document.</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableEnhancedLookup>false</enableEnhancedLookup>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>false</enableReports>
+    <enableSearch>false</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ControlledByParent</externalSharingModel>
+    <fields>
+        <fullName>SBQQ__Alignment__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Determines how the column label and values are aligned.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Determines how the column label and values are aligned.</inlineHelpText>
+        <label>Alignment</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Left</fullName>
+                    <default>true</default>
+                    <label>Left</label>
+                </value>
+                <value>
+                    <fullName>Center</fullName>
+                    <default>false</default>
+                    <label>Center</label>
+                </value>
+                <value>
+                    <fullName>Right</fullName>
+                    <default>false</default>
+                    <label>Right</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SBQQ__BottomMargin__c</fullName>
+        <defaultValue>3</defaultValue>
+        <deprecated>false</deprecated>
+        <description>This is the bottom margin in pixels.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The amount of space in pixels between bottom border and content.</inlineHelpText>
+        <label>Bottom Margin (px)</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SBQQ__ColumnHeadingField__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The API name of the field on quote object that sources value for this column&apos;s heading.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The field that sources the dynamic heading for this column.</inlineHelpText>
+        <label>Column Heading Field</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Type</fullName>
+                    <default>false</default>
+                    <label>Type</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SBQQ__ConditionalPrintField__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Field on quote object that controls whether this column prints on generated PDF document.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Field on quote object that controls whether this column prints on generated PDF document.</inlineHelpText>
+        <label>Conditional Print Field</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Group Line Items</fullName>
+                    <default>false</default>
+                    <label>Group Line Items</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SBQQ__DisplayOrder__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Order in which the column hosting this field is displayed.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Order in which the column hosting this field is displayed.</inlineHelpText>
+        <label>Display Order</label>
+        <precision>9</precision>
+        <required>true</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SBQQ__DynamicNumberScale__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>The decimal scale for numbers in the column are set based on the largest precision in the column.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The decimal scale for numbers in the column are set based on the largest precision in the column.</inlineHelpText>
+        <label>Dynamic Number Scale</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__FieldName__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Field name relative to the Quote Line object.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>API name for the field on the Quote Line object you want displayed in this column.</inlineHelpText>
+        <label>Field Name</label>
+        <length>255</length>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SBQQ__FontFamily__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Font family that should be applied to text in this column.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select font family to apply to this column. Leaving blank inherits form the template.</inlineHelpText>
+        <label>Font Family</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Courier</fullName>
+                    <default>false</default>
+                    <label>Courier</label>
+                </value>
+                <value>
+                    <fullName>Dosis</fullName>
+                    <default>false</default>
+                    <label>Dosis</label>
+                </value>
+                <value>
+                    <fullName>Droid Sans</fullName>
+                    <default>false</default>
+                    <label>Droid Sans</label>
+                </value>
+                <value>
+                    <fullName>Droid Serif</fullName>
+                    <default>false</default>
+                    <label>Droid Serif</label>
+                </value>
+                <value>
+                    <fullName>Helvetica</fullName>
+                    <default>false</default>
+                    <label>Helvetica</label>
+                </value>
+                <value>
+                    <fullName>Merriweather</fullName>
+                    <default>false</default>
+                    <label>Merriweather</label>
+                </value>
+                <value>
+                    <fullName>Montserrat</fullName>
+                    <default>false</default>
+                    <label>Montserrat</label>
+                </value>
+                <value>
+                    <fullName>Noto Sans JP</fullName>
+                    <default>false</default>
+                    <label>Noto Sans JP</label>
+                </value>
+                <value>
+                    <fullName>Noto Sans KR</fullName>
+                    <default>false</default>
+                    <label>Noto Sans KR</label>
+                </value>
+                <value>
+                    <fullName>Noto Sans SC</fullName>
+                    <default>false</default>
+                    <label>Noto Sans SC</label>
+                </value>
+                <value>
+                    <fullName>Noto Sans TC</fullName>
+                    <default>false</default>
+                    <label>Noto Sans TC</label>
+                </value>
+                <value>
+                    <fullName>Open Sans</fullName>
+                    <default>false</default>
+                    <label>Open Sans</label>
+                </value>
+                <value>
+                    <fullName>Play</fullName>
+                    <default>false</default>
+                    <label>Play</label>
+                </value>
+                <value>
+                    <fullName>PT Sans</fullName>
+                    <default>false</default>
+                    <label>PT Sans</label>
+                </value>
+                <value>
+                    <fullName>PT Serif</fullName>
+                    <default>false</default>
+                    <label>PT Serif</label>
+                </value>
+                <value>
+                    <fullName>Roboto</fullName>
+                    <default>false</default>
+                    <label>Roboto</label>
+                </value>
+                <value>
+                    <fullName>Roboto Light</fullName>
+                    <default>false</default>
+                    <label>Roboto Light</label>
+                </value>
+                <value>
+                    <fullName>Times</fullName>
+                    <default>false</default>
+                    <label>Times</label>
+                </value>
+                <value>
+                    <fullName>Titillium Web</fullName>
+                    <default>false</default>
+                    <label>Titillium Web</label>
+                </value>
+                <value>
+                    <fullName>Ubuntu</fullName>
+                    <default>false</default>
+                    <label>Ubuntu</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SBQQ__FontSize__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Size of font (in points) applied to this column.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Specify font size (in points) for text in this column. Leaving black inherits from the template.</inlineHelpText>
+        <label>Font Size (pt)</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>1</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SBQQ__FontWeight__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Weight of font applied to this column.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Specify font weight for text in this column. Leaving blank defaults to &quot;Normal&quot;.</inlineHelpText>
+        <label>Font Weight</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Normal</fullName>
+                    <default>true</default>
+                    <label>Normal</label>
+                </value>
+                <value>
+                    <fullName>Bold</fullName>
+                    <default>false</default>
+                    <label>Bold</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SBQQ__HeadingTextColor__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Color (in Hex) applied to text in the heading of this column.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Specify color (in Hex) for text in the heading of this column. Leaving blank inherits from text color for this column.</inlineHelpText>
+        <label>Heading Text Color</label>
+        <length>6</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SBQQ__HideOnComponents__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Hides value in this column if line item is a Product Option.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Hides value in this column if line item is a Product Option.</inlineHelpText>
+        <label>Hide On Product Options</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__LeftMargin__c</fullName>
+        <defaultValue>3</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Left margin in pixels.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Amount of space in pixels between left border and content.</inlineHelpText>
+        <label>Left Margin (px)</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SBQQ__RightMargin__c</fullName>
+        <defaultValue>3</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Right margin in pixels.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Amount of space in pixels between right border and content.</inlineHelpText>
+        <label>Right Margin (px)</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SBQQ__RollUp__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Indicates whether this field should be rolled up into master line. Only applicable if Roll-Up Field is specified on the template.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Indicates whether this field should be rolled up into master line. Only applicable if Roll-Up Field is specified on the template.</inlineHelpText>
+        <label>Roll Up</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__Section__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>Section to which this line column applies. No section means the column applies to all sections.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Section to which this line column applies. No section means the column applies to all sections.</inlineHelpText>
+        <label>Section</label>
+        <lookupFilter>
+            <active>true</active>
+            <filterItems>
+                <field>$Source.SBQQ__Template__c</field>
+                <operation>equals</operation>
+                <valueField>SBQQ__TemplateSection__c.SBQQ__Template__c</valueField>
+            </filterItems>
+            <filterItems>
+                <field>SBQQ__TemplateSection__c.SBQQ__Content__r.SBQQ__Type__c</field>
+                <operation>equals</operation>
+                <value>Line Items</value>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>SBQQ__TemplateSection__c</referenceTo>
+        <relationshipLabel>Line Columns</relationshipLabel>
+        <relationshipName>LineColumns</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__SeparateLine__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Flag that determines whether this field is printed on its own separate line.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select the checkbox in order for this field to be printed on its own line. Use for long text fields such as product description.</inlineHelpText>
+        <label>Separate Line</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__SubGroupSummaryLabel__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Summary label for sub Group level.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Summary label for sub Group level.</inlineHelpText>
+        <label>Sub Group Summary Label</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SBQQ__SummaryFontWeight__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Weight of font applied to text in the summary row.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Specify font weight for text in the summary row for this column Leaving blank defaults to font weight for the column overall.</inlineHelpText>
+        <label>Summary Font Weight</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Normal</fullName>
+                    <default>false</default>
+                    <label>Normal</label>
+                </value>
+                <value>
+                    <fullName>Bold</fullName>
+                    <default>false</default>
+                    <label>Bold</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SBQQ__SummaryFunction__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Function used to summarize values in this column.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Function used to summarize values in this column.</inlineHelpText>
+        <label>Summary Function</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>SUM</fullName>
+                    <default>false</default>
+                    <label>SUM</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SBQQ__SummaryLabel__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Label output for this column in the summary row.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Label output for this column in the summary row.</inlineHelpText>
+        <label>Summary Label</label>
+        <length>200</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SBQQ__SummaryLevel__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Level this column should be summarized at.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Set the level on which this column should be summarized.</inlineHelpText>
+        <label>Summary Level</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>All</fullName>
+                    <default>true</default>
+                    <label>All</label>
+                </value>
+                <value>
+                    <fullName>Sub Group</fullName>
+                    <default>false</default>
+                    <label>Sub Group</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SBQQ__SummaryShadingColor__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Color (in Hex) applied to cell background in the summary row for this column.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Specify color (in Hex) for cell background in the summary row for this column. Leaving blank inherits shading color for the template.</inlineHelpText>
+        <label>Summary Shading Color</label>
+        <length>6</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SBQQ__SummaryTextColor__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Color (in Hex) applied to text in the summary row for this column.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Specify color (in Hex) for text in the summary row for this column. Leaving blank inherits from text color for this column.</inlineHelpText>
+        <label>Summary Text Color</label>
+        <length>6</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SBQQ__Template__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Template on which this field is to be displayed.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Template on which this field is to be displayed.</inlineHelpText>
+        <label>Template</label>
+        <referenceTo>SBQQ__QuoteTemplate__c</referenceTo>
+        <relationshipLabel>Line Columns</relationshipLabel>
+        <relationshipName>LineColumns</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>SBQQ__TextColor__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Color (in Hex) applied to text in this column.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Specify color (in Hex) for text in this column. Leaving blank inherits from the template.</inlineHelpText>
+        <label>Text Color</label>
+        <length>6</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SBQQ__TopMargin__c</fullName>
+        <defaultValue>3</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Top margin in pixels.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Amount of space in pixels between top border and content.</inlineHelpText>
+        <label>Top Margin (px)</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SBQQ__WidthDiscardedWhenHidden__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Flag that determines whether width of this column is re-allocated to another column or discarded when the column is dynamically hidden.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select the checkbox for conditionally displayed column to replace another column(s). Leaving this box unselected will re-allocate width of this column when it&apos;s hidden to another column therefore keeping table width unchanged.</inlineHelpText>
+        <label>Discard Width When Hidden</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__Width__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Width of the column taken up by this field.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Width (percentage) of the column taken up by this field.</inlineHelpText>
+        <label>Width</label>
+        <precision>10</precision>
+        <required>true</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <label>Line Column</label>
+    <nameField>
+        <label>Column Heading</label>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Line Columns</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+    <visibility>Public</visibility>
+    <webLinks>
+        <fullName>SBQQ__Translate</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <height>600</height>
+        <linkType>url</linkType>
+        <masterLabel>Translate</masterLabel>
+        <openType>noSidebar</openType>
+        <protected>false</protected>
+        <url>/apex/SBQQ__Translations?targetObject=LineColumn&amp;targetId={!SBQQ__LineColumn__c.Id}&amp;supportUserDefined=false&amp;supportStandard=true</url>
+    </webLinks>
+</CustomObject>

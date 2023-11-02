@@ -91,10 +91,6 @@
         <type>Lookup</type>
     </fields>
     <fields>
-        <fullName>RewardId</fullName>
-        <type>Lookup</type>
-    </fields>
-    <fields>
         <fullName>SourceId</fullName>
         <type>MasterDetail</type>
     </fields>
@@ -104,21 +100,25 @@
         <customTabListAdditionalFields>Message</customTabListAdditionalFields>
         <customTabListAdditionalFields>Giver</customTabListAdditionalFields>
         <customTabListAdditionalFields>Recipient</customTabListAdditionalFields>
+        <customTabListAdditionalFields>BadgeType</customTabListAdditionalFields>
         <lookupDialogsAdditionalFields>ImageUrl</lookupDialogsAdditionalFields>
         <lookupDialogsAdditionalFields>Definition</lookupDialogsAdditionalFields>
         <lookupDialogsAdditionalFields>Message</lookupDialogsAdditionalFields>
         <lookupDialogsAdditionalFields>Giver</lookupDialogsAdditionalFields>
         <lookupDialogsAdditionalFields>Recipient</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>BadgeType</lookupDialogsAdditionalFields>
         <lookupPhoneDialogsAdditionalFields>ImageUrl</lookupPhoneDialogsAdditionalFields>
         <lookupPhoneDialogsAdditionalFields>Definition</lookupPhoneDialogsAdditionalFields>
         <lookupPhoneDialogsAdditionalFields>Message</lookupPhoneDialogsAdditionalFields>
         <lookupPhoneDialogsAdditionalFields>Giver</lookupPhoneDialogsAdditionalFields>
         <lookupPhoneDialogsAdditionalFields>Recipient</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>BadgeType</lookupPhoneDialogsAdditionalFields>
         <searchResultsAdditionalFields>ImageUrl</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>Definition</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>Message</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>Giver</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>Recipient</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>BadgeType</searchResultsAdditionalFields>
     </searchLayouts>
     <sharingModel>ControlledByParent</sharingModel>
 </CustomObject>

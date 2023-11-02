@@ -1,0 +1,11 @@
+<apex:page standardController="SBQQ__Quote__c" extensions="SBQQ.QuoteExtController" showHeader="{!(!$Setup.SBQQ__GeneralSettings__c.SBQQ__GlobalHeaderPermUsed__c || !$Permission.SBQQ__HideGlobalHeader)}" action="{!onOverrideNew}">
+    <apex:sectionHeader title="New Quote" rendered="{!formFactor == 'desktop'}"/>
+
+    <apex:pageMessages rendered="{!formFactor == 'desktop'}"/>  
+    
+    <apex:outputPanel layout="none" rendered="{!formFactor != 'desktop'}">
+    	<script type="text/javascript">
+    	sforce.one.createRecord('{!$ObjectType.Quote__c.Name}');
+    	</script>
+    </apex:outputPanel> 
+</apex:page>

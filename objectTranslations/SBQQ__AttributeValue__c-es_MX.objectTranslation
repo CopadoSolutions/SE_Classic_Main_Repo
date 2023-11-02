@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Valor de atributo</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Valores de atributo</value>
+    </caseValues>
+    <fields>
+        <label><!-- Asset --></label>
+        <name>SBQQ__Asset__c</name>
+        <relationshipLabel><!-- Attribute Values --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Attribute --></label>
+        <name>SBQQ__Attribute__c</name>
+        <relationshipLabel><!-- Attribute Values --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Favorite Product --></label>
+        <name>SBQQ__FavoriteProduct__c</name>
+        <relationshipLabel><!-- Attribute Values --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Order Product --></label>
+        <name>SBQQ__OrderItem__c</name>
+        <relationshipLabel><!-- Attribute Values --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Quote Line --></label>
+        <name>SBQQ__QuoteLine__c</name>
+        <relationshipLabel><!-- Attribute Values --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Subscription --></label>
+        <name>SBQQ__Subscription__c</name>
+        <relationshipLabel><!-- Attribute Values --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Value (Date Time) --></label>
+        <name>SBQQ__ValueDateTime__c</name>
+    </fields>
+    <fields>
+        <label><!-- Value (Date) --></label>
+        <name>SBQQ__ValueDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Value (Number) --></label>
+        <name>SBQQ__ValueNumber__c</name>
+    </fields>
+    <fields>
+        <label><!-- Value (Text) --></label>
+        <name>SBQQ__Value__c</name>
+    </fields>
+    <gender>Masculine</gender>
+    <nameFieldLabel>Nombre</nameFieldLabel>
+</CustomObjectTranslation>

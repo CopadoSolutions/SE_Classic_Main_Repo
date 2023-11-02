@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Restricción de opción</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Restricciones de opción</value>
+    </caseValues>
+    <fields>
+        <help>Marca esta restricción como activa o inactiva.</help>
+        <label><!-- Active --></label>
+        <name>SBQQ__Active__c</name>
+    </fields>
+    <fields>
+        <help>Marque esta opción si desea buscar compras anteriores con Opción de restricción dentro de la cuenta.</help>
+        <label><!-- Check Prior Purchases --></label>
+        <name>SBQQ__CheckPriorPurchases__c</name>
+    </fields>
+    <fields>
+        <help>SKU de producto que se está restringiendo.</help>
+        <label><!-- Configured SKU --></label>
+        <name>SBQQ__ConfiguredSKU__c</name>
+        <relationshipLabel><!-- Option Constraints --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Seleccione la opción en el paquete al que desea aplicar esta restricción.</help>
+        <label><!-- Constrained Option --></label>
+        <name>SBQQ__ConstrainedOption__c</name>
+        <relationshipLabel><!-- Constraints --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Seleccione una opción adicional si Opción restringida está restringiendo otra opción.</help>
+        <label><!-- Constraining Option --></label>
+        <name>SBQQ__ConstrainingOption__c</name>
+        <relationshipLabel><!-- Constraining --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Si se dirigen Restricciones de opción múltiples a la misma Opción restringida, al poner Restricciones de opción en el mismo grupo se requerirá que TODAS las opciones de restricción se seleccionen.</help>
+        <label><!-- Option Constraint Group --></label>
+        <name>SBQQ__OptionConstraintGroup__c</name>
+    </fields>
+    <fields>
+        <help>Seleccione el comportamiento de esta restricción: Dependencia significa que se requiere la inclusión mientras que Exclusión significa que la restricción de la opción no está seleccionada cuando sí lo está la opción de restricción o viceversa.</help>
+        <label><!-- Type --></label>
+        <name>SBQQ__Type__c</name>
+        <picklistValues>
+            <masterLabel>Dependency</masterLabel>
+            <translation>Dependencia</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Exclusion</masterLabel>
+            <translation>Exclusión</translation>
+        </picklistValues>
+    </fields>
+    <gender>Feminine</gender>
+    <layouts>
+        <layout>Option Constraint Layout</layout>
+        <sections>
+            <label>Vínculos personalizados</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Nombre de restricción</nameFieldLabel>
+</CustomObjectTranslation>

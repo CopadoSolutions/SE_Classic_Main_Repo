@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>利用レートカード割り当て (予約済み)</value>
+    </caseValues>
+    <fields>
+        <help>このレートカードの割り当てでカバーされる商品</help>
+        <label><!-- Product --></label>
+        <name>SBQQ__Product__c</name>
+        <relationshipLabel><!-- Usage Rate Card Assignments --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>この注文商品に関連付けられている利用レートカード</help>
+        <label><!-- Usage Rate Card --></label>
+        <name>SBQQ__UsageRateCard__c</name>
+        <relationshipLabel><!-- Usage Rate Card Assignments --></relationshipLabel>
+    </fields>
+    <layouts>
+        <layout>Usage Rate Card Assignment Layout</layout>
+        <sections>
+            <label>カスタムリンク</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>番号</nameFieldLabel>
+</CustomObjectTranslation>

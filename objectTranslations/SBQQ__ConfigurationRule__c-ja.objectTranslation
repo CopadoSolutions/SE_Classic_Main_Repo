@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>設定ルール</value>
+    </caseValues>
+    <fields>
+        <help>設定の検証でこのルールを使用する必要があるかどうかを示します。</help>
+        <label><!-- Active --></label>
+        <name>SBQQ__Active__c</name>
+    </fields>
+    <fields>
+        <help>アラートルール、入力規則、選択ルールのコンフィグレータでこのルールの条件を評価するときに、指定されたレベルの親バンドル設定を含めます。</help>
+        <label><!-- Parent Bundle Condition Level --></label>
+        <name>SBQQ__AscendingNestedLevel__c</name>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation>1</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>選択ルールのコンフィグレータで実行するときにのみ、指定されたレベルまでの子バンドル設定をこのルールのアクションで対象にできます。</help>
+        <label><!-- Child Bundle Action Level --></label>
+        <name>SBQQ__DescendingActionNesting__c</name>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation>1</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>アラートルール、入力規則、選択ルールのコンフィグレータでこのルールの条件を評価するときに、指定されたレベルの子バンドル設定を含めます。</help>
+        <label><!-- Child Bundle Condition Level --></label>
+        <name>SBQQ__DescendingNestedLevel__c</name>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation>1</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>このルールで検証する商品機能を選択します。</help>
+        <label><!-- Product Feature --></label>
+        <name>SBQQ__ProductFeature__c</name>
+        <relationshipLabel><!-- Configuration Rules --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>商品設定を検証するロジックが含まれる商品ルールを選択します。</help>
+        <label><!-- Product Rule --></label>
+        <name>SBQQ__ProductRule__c</name>
+        <relationshipLabel><!-- Configuration Rules --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>このルールで検証する、設定済み商品を選択します。</help>
+        <label><!-- Product --></label>
+        <name>SBQQ__Product__c</name>
+        <relationshipLabel><!-- Configuration Rules --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>いつこのルールを評価する必要があるかを指定します。</help>
+        <label><!-- Rule Evaluation Event --></label>
+        <name>SBQQ__RuleEvaluationEvent__c</name>
+    </fields>
+    <fields>
+        <help>この設定ルールで参照される商品ルールのタイプ。</help>
+        <label><!-- Rule Type --></label>
+        <name>SBQQ__RuleType__c</name>
+    </fields>
+    <layouts>
+        <layout>Configuration Rule Layout</layout>
+        <sections>
+            <label>カスタムリンク</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>ルール番号</nameFieldLabel>
+    <validationRules>
+        <errorMessage><!-- Condition Level only supported for Validation, Alert and Selection product rules. --></errorMessage>
+        <name>SBQQ__Ensure_rule_type_nested_level</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Action Level only supported for Selection product rules. --></errorMessage>
+        <name>SBQQ__Ensure_rule_type_nested_level_actions</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The maximum supported Bundle Level is 1. --></errorMessage>
+        <name>SBQQ__Ensure_supported_nested_level</name>
+    </validationRules>
+</CustomObjectTranslation>
