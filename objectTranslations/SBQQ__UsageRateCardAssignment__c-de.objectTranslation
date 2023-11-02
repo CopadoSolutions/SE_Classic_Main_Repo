@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Zuweisung der Nutzungsgebührenkarte (Reserviert)</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Zuweisungen der Nutzungsgebührenkarte (Reserviert)</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value><!-- Zuweisung der Nutzungsgebührenkarte (Reserviert) --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+        <value><!-- Zuweisungen der Nutzungsgebührenkarte (Reserviert) --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value><!-- Zuweisung der Nutzungsgebührenkarte (Reserviert) --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>true</plural>
+        <value><!-- Zuweisungen der Nutzungsgebührenkarte (Reserviert) --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value><!-- Zuweisung der Nutzungsgebührenkarte (Reserviert) --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value><!-- Zuweisungen der Nutzungsgebührenkarte (Reserviert) --></value>
+    </caseValues>
+    <fields>
+        <help>Das Produkt, das diese Ratenkartenzuweisung abdeckt.</help>
+        <label><!-- Product --></label>
+        <name>SBQQ__Product__c</name>
+        <relationshipLabel><!-- Usage Rate Card Assignments --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Die Nutzungsratenkarte, die diesem Auftragsprodukt zugeordnet ist.</help>
+        <label><!-- Usage Rate Card --></label>
+        <name>SBQQ__UsageRateCard__c</name>
+        <relationshipLabel><!-- Usage Rate Card Assignments --></relationshipLabel>
+    </fields>
+    <gender>Feminine</gender>
+    <layouts>
+        <layout>Usage Rate Card Assignment Layout</layout>
+        <sections>
+            <label>Benutzerdefinierte Links</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Nummer</nameFieldLabel>
+</CustomObjectTranslation>

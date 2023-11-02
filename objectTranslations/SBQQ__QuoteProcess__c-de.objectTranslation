@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Angebotsprozess</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Angebotsprozesse</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value><!-- Angebotsprozess --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+        <value><!-- Angebotsprozesse --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value><!-- Angebotsprozess --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>true</plural>
+        <value><!-- Angebotsprozesse --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value><!-- Angebotsprozess --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value><!-- Angebotsprozesse --></value>
+    </caseValues>
+    <fields>
+        <help>Aktivieren Sie dieses Kontrollkästchen, wenn dieser Prozess im Belegposten-Editor der Standardwert für die Angebotsprozessauswahl sein soll. Gilt nur, wenn die Angebotsprozessauswahl als Auswahlliste dargestellt wird.</help>
+        <label><!-- Default --></label>
+        <name>SBQQ__Default__c</name>
+    </fields>
+    <fields>
+        <help>Aktivieren Sie dieses Kontrollkästchen, wenn für Angebote, die zu diesem Prozess gehören, nur die geführte Produktauswahl möglich sein soll. Andernfalls ist standardmäßig die Ad-hoc-Filterung festgelegt.</help>
+        <label><!-- Guided Only --></label>
+        <name>SBQQ__GuidedOnly__c</name>
+    </fields>
+    <fields>
+        <help>Aktivieren Sie dieses Kontrollkästchen, um festzulegen, ob das Produkt automatisch ausgewählt werden soll, wenn es das einzige Suchergebnis ist.</help>
+        <label><!-- Auto Select Product? --></label>
+        <name>SBQQ__ProductAutoSelected__c</name>
+    </fields>
+    <fields>
+        <help>Benutzerdefinierte Visualforce-Seite, die bei jedem konfigurierbaren Produkt aufgerufen wird, um die Optionen zu initialisieren.</help>
+        <label><!-- Product Configuration Initializer --></label>
+        <name>SBQQ__ProductConfigurationInitializer__c</name>
+    </fields>
+    <fields>
+        <help>VisualForce-Seite, die die benutzerdefinierte Produktsuche ausführt.</help>
+        <label><!-- Product Search Executor --></label>
+        <name>SBQQ__ProductSearchExecutor__c</name>
+    </fields>
+    <fields>
+        <help>Geben Sie die laufende Nummer an, die die Anzeigereihenfolge des Angebotsprozesses bestimmt.</help>
+        <label><!-- Sort Order --></label>
+        <name>SBQQ__SortOrder__c</name>
+    </fields>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Quote Process Layout</layout>
+        <sections>
+            <label>Benutzerdefinierte Links</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Prozessname</nameFieldLabel>
+</CustomObjectTranslation>

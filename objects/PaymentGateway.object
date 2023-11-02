@@ -119,6 +119,9 @@
         <fullName>Comments</fullName>
     </fields>
     <fields>
+        <fullName>ExternalReference</fullName>
+    </fields>
+    <fields>
         <fullName>MerchantCredentialId</fullName>
         <type>Lookup</type>
     </fields>

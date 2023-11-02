@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- If checked the user has been alerted of the record job&apos;s finished status. --></help>
+        <label><!-- Is Read --></label>
+        <name>SBQQ__IsRead__c</name>
+    </fields>
+    <fields>
+        <help><!-- The details of the background job performed if no job id was specified. --></help>
+        <label><!-- Job Details --></label>
+        <name>SBQQ__JobDetails__c</name>
+    </fields>
+    <fields>
+        <label><!-- Job Id --></label>
+        <name>SBQQ__JobId__c</name>
+    </fields>
+    <fields>
+        <help><!-- The status of the background job performed if no job id was specified. --></help>
+        <label><!-- Job Status --></label>
+        <name>SBQQ__JobStatus__c</name>
+    </fields>
+    <fields>
+        <label><!-- Record Id --></label>
+        <name>SBQQ__RecordId__c</name>
+    </fields>
+    <fields>
+        <help><!-- Url to redirect to once the job finishes. --></help>
+        <label><!-- Redirect URL --></label>
+        <name>SBQQ__RedirectUrl__c</name>
+    </fields>
+    <fields>
+        <help><!-- The stacktrace of the background job performed if no job id was specified. --></help>
+        <label><!-- Stacktrace --></label>
+        <name>SBQQ__Stacktrace__c</name>
+    </fields>
+</CustomObjectTranslation>

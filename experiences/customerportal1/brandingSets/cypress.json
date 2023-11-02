@@ -7,7 +7,7 @@
     "ActionColor" : "rgb(0, 195, 239)",
     "BorderColor" : "rgb(212, 212, 212)",
     "CardBackgroundColor" : "rgba(255, 255, 255, 0)",
-    "CompanyLogo" : "/file-asset/CopadoLogoSymbol_Blue1?v=1&height=300&width=300",
+    "CompanyLogo" : "/file-asset/CopadoLogoSymbol_Blue1?v=1&amp;height=300&amp;width=300",
     "DetailTextColor" : "rgba(0, 0, 0, 0.6)",
     "ErrorFontColor" : "#ff9e9e",
     "HeaderFonts" : "Montserrat",

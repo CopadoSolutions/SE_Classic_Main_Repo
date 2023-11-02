@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Include</fullName>
+        <default>true</default>
+        <label>Include</label>
+    </customValue>
+    <customValue>
+        <fullName>Do Not Include</fullName>
+        <default>false</default>
+        <label>Do Not Include</label>
+    </customValue>
+    <description>Bookings Indicator.</description>
+    <masterLabel>Bookings Indicator</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

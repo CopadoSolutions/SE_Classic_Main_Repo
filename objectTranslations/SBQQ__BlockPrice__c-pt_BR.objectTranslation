@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Preço do bloco</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Preços dos blocos</value>
+    </caseValues>
+    <fields>
+        <help>A data em que esse preço de bloco é efetivo. O valor é obtido quando um instantâneo do preço de bloco é capturado no momento da criação do pedido.</help>
+        <label><!-- Effective Date --></label>
+        <name>SBQQ__EffectiveDate__c</name>
+    </fields>
+    <fields>
+        <help>Limite inferior do intervalo de quantidade para esse preço de bloco.</help>
+        <label><!-- Lower Bound --></label>
+        <name>SBQQ__LowerBound__c</name>
+    </fields>
+    <fields>
+        <help>O produto do pedido ao qual esse Preço de bloco se aplica quando o produto do pedido é criado.</help>
+        <label><!-- Order Product --></label>
+        <name>SBQQ__OrderProduct__c</name>
+        <relationshipLabel><!-- Block Price Snapshots --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>O preço de bloco do produto original do qual o instantâneo desse preço de bloco é capturado.</help>
+        <label><!-- Original Block Price --></label>
+        <name>SBQQ__OriginalBlockPrice__c</name>
+        <relationshipLabel><!-- Block Prices --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Selecione o Catálogo de preços que deve receber a precificação de bloco quando aplicável.</help>
+        <label><!-- Price Book --></label>
+        <name>SBQQ__PriceBook2__c</name>
+        <relationshipLabel><!-- Block Prices --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Preço para o produto pai no intervalo de quantidade especificado.</help>
+        <label><!-- Price --></label>
+        <name>SBQQ__Price__c</name>
+    </fields>
+    <fields>
+        <help>Selecione o produto que deve receber a precificação de bloco quando aplicável.</help>
+        <label><!-- Product --></label>
+        <name>SBQQ__Product__c</name>
+        <relationshipLabel><!-- Block Prices --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>A linha de cotação à qual esse preço de bloco se aplica quando um produto do pedido é criado.</help>
+        <label><!-- Quote Line --></label>
+        <name>SBQQ__QuoteLine__c</name>
+        <relationshipLabel><!-- Block Prices --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Limite superior do intervalo de quantidade para esse preço de bloco.</help>
+        <label><!-- Upper Bound --></label>
+        <name>SBQQ__UpperBound__c</name>
+    </fields>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Block Price Layout</layout>
+        <sections>
+            <label>Links personalizados</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>Informações do instantâneo</label>
+            <section>Snapshot Information</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Nome do preço</nameFieldLabel>
+    <webLinks>
+        <label><!-- EditAll --></label>
+        <name>SBQQ__EditAll</name>
+    </webLinks>
+</CustomObjectTranslation>

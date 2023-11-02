@@ -1,0 +1,8 @@
+<!--
+ - Created by jfeingold on 9/12/16.
+ -->
+
+<apex:page id="CustomScriptSave" standardController="SBQQ__CustomScript__c" extensions="SBQQ.QueueableJobCheckerExt">
+	<c:standardRecalculating recordId="{!record.Id}" jobId="{!queueableJobId}" jobType="CustomScriptTranspiler" inProgressMessage="{!$Label.sbqq__msg_background_transpilation_in_progress}"
+							 jobStatus="{!jobStatus}" jobStatusChecker="{!$RemoteAction.QueueableJobCheckerExt.getJobStatus}" autoRefresh="{!autoRefresh}" />
+</apex:page>

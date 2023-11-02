@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Ativo subscrito</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Ativos subscritos</value>
+    </caseValues>
+    <fields>
+        <help>Indica se o registro do ativo assinado está ativo.</help>
+        <label><!-- Active --></label>
+        <name>SBQQ__Active__c</name>
+    </fields>
+    <fields>
+        <help>Ativo coberto por uma assinatura.</help>
+        <label><!-- Asset --></label>
+        <name>SBQQ__Asset__c</name>
+        <relationshipLabel><!-- Subscriptions --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Identifica o contrato para a assinatura.</help>
+        <label><!-- Contract Id --></label>
+        <name>SBQQ__ContractId__c</name>
+    </fields>
+    <fields>
+        <help>Assinatura que cobre o ativo.</help>
+        <label><!-- Subscription --></label>
+        <name>SBQQ__Subscription__c</name>
+        <relationshipLabel><!-- Subscribed Assets --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Asset Usage End Date --></label>
+        <name>SBQQ__UsageEndDate__c</name>
+    </fields>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Subscribed Asset Layout</layout>
+        <sections>
+            <label>Links personalizados</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Nº do ativo assinado</nameFieldLabel>
+</CustomObjectTranslation>

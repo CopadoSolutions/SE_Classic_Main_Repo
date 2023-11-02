@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Prozesseingabewert</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Prozesseingabewerte</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value><!-- Prozesseingabewert --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+        <value><!-- Prozesseingabewerte --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value><!-- Prozesseingabewert --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>true</plural>
+        <value><!-- Prozesseingabewerte --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value><!-- Prozesseingabewert --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value><!-- Prozesseingabewerte --></value>
+    </caseValues>
+    <fields>
+        <help>Wählen Sie die Prozesseingabe, zu der das Objekt gehört.</help>
+        <label><!-- Process Input ID --></label>
+        <name>SBQQ__ProcessInputID__c</name>
+        <relationshipLabel><!-- Process Input Values --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Die ID des Angebots, zu der dieser Prozesseingabewert gehört.</help>
+        <label><!-- Quote ID --></label>
+        <name>SBQQ__QuoteId__c</name>
+        <relationshipLabel><!-- Process Input Values --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Dieser Prozesseingabewert gehört zum Benutzer.</help>
+        <label><!-- UserID --></label>
+        <name>SBQQ__UserID__c</name>
+        <relationshipLabel><!-- Process Input Values --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Dies ist die Antwort auf den Prozesseingabewert.</help>
+        <label><!-- Value --></label>
+        <name>SBQQ__Value__c</name>
+    </fields>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Process Input Values Layout</layout>
+        <sections>
+            <label>Benutzerdefinierte Links</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Name des Angebotsprozesswerts</nameFieldLabel>
+</CustomObjectTranslation>
