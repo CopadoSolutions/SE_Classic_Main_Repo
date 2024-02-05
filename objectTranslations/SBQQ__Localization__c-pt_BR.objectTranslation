@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Localização</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Localizações</value>
+    </caseValues>
+    <fields>
+        <help>O Nome da API desse conteúdo.</help>
+        <label><!-- API Name --></label>
+        <name>SBQQ__APIName__c</name>
+    </fields>
+    <fields>
+        <help>Descrever onde o texto está localizado</help>
+        <label><!-- Description --></label>
+        <name>SBQQ__Description__c</name>
+    </fields>
+    <fields>
+        <help>Esse rótulo de ação na UI.</help>
+        <label><!-- Label --></label>
+        <name>SBQQ__Label__c</name>
+    </fields>
+    <fields>
+        <help>O código de idioma para esta tradução.</help>
+        <label><!-- Language --></label>
+        <name>SBQQ__Language__c</name>
+    </fields>
+    <fields>
+        <help>A coluna da linha relacionada a esse conteúdo.</help>
+        <label><!-- Line Column --></label>
+        <name>SBQQ__LineColumn__c</name>
+        <relationshipLabel><!-- Localizations --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Esse campo armazena traduções para campos de Texto longo.</help>
+        <label><!-- Long Text Area --></label>
+        <name>SBQQ__LongTextArea__c</name>
+    </fields>
+    <fields>
+        <help>A Dimensão relacionada a esse conteúdo.</help>
+        <label><!-- Price Dimension --></label>
+        <name>SBQQ__PriceDimension__c</name>
+        <relationshipLabel><!-- Localizations --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>O recurso do produto relacionado a esse conteúdo.</help>
+        <label><!-- Product Feature --></label>
+        <name>SBQQ__ProductFeature__c</name>
+        <relationshipLabel><!-- Localizations --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>A opção de produto que gerou essa linha.</help>
+        <label><!-- Product Option --></label>
+        <name>SBQQ__ProductOption__c</name>
+        <relationshipLabel><!-- Localizations --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>O produto relacionado a esse conteúdo.</help>
+        <label><!-- Product --></label>
+        <name>SBQQ__Product__c</name>
+        <relationshipLabel><!-- Localizations --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>O modelo a ser usado para esse conteúdo.</help>
+        <label><!-- Quote Template --></label>
+        <name>SBQQ__QuoteTemplate__c</name>
+        <relationshipLabel><!-- Localizations --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>O termo pai para este termo.</help>
+        <label><!-- Quote Term --></label>
+        <name>SBQQ__QuoteTerm__c</name>
+        <relationshipLabel><!-- Localizations --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Esse campo armazena traduções para campos de Rich text.</help>
+        <label><!-- Rich Text Area --></label>
+        <name>SBQQ__RichTextArea__c</name>
+    </fields>
+    <fields>
+        <help>O conteúdo do modelo a ser usado para esse conteúdo.</help>
+        <label><!-- Template Content --></label>
+        <name>SBQQ__TemplateContent__c</name>
+        <relationshipLabel><!-- Localizations --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Esse campo armazena traduções para campos de Área de texto.</help>
+        <label><!-- Text Area --></label>
+        <name>SBQQ__TextArea__c</name>
+    </fields>
+    <fields>
+        <help>Esse campo armazena traduções para campos de Texto.</help>
+        <label><!-- Text --></label>
+        <name>SBQQ__Text__c</name>
+    </fields>
+    <fields>
+        <help>Indicar se esse campo é definido pelo usuário ou não.</help>
+        <label><!-- User Defined --></label>
+        <name>SBQQ__UserDefined__c</name>
+    </fields>
+    <gender>Feminine</gender>
+    <layouts>
+        <layout>Localization Layout</layout>
+        <sections>
+            <label>Links personalizados</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>Objetos com suporte</label>
+            <section>Supported Objects</section>
+        </sections>
+        <sections>
+            <label>Valores</label>
+            <section>Values</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Número de localização</nameFieldLabel>
+</CustomObjectTranslation>

@@ -1,0 +1,123 @@
+<apex:page action="{!checkLicense}" standardController="SBQQ__Quote__c" extensions="SBQQ.QuoteDocumentController,SBQQ.QueueableJobCheckerExt,SBQQ.LicenseCheckerExt" docType="html-5.0" showHeader="{!(!$Setup.SBQQ__GeneralSettings__c.SBQQ__GlobalHeaderPermUsed__c || !$Permission.SBQQ__HideGlobalHeader) && formFactor == 'desktop'}" standardStylesheets="false" title="{!$Label.sbqq__lbl_generate_document}">
+	<apex:variable var="stylesheet" value="{!IF(formFactor == 'desktop', 'sb', 'MobileCSS')}" />
+	<apex:stylesheet value="{!$Resource[stylesheet]}"/>
+	<c:theme formFactor="{!formFactor}"/>
+	<apex:includeScript value="/soap/ajax/28.0/connection.js"/>
+	<apex:includeScript value="{!$Resource.SBQQ__jQuery}"/>
+	<apex:includeScript value="{!$Resource.SBQQ__jQueryUI}"/>
+	<apex:includeScript value="{!URLFOR($Resource.SBQQ__AngularJS,'angular.min.js')}"/>
+	<apex:includeScript value="{!URLFOR($Resource.SBQQ__AngularJS,'angular-sanitize.min.js')}"/>
+	<apex:includeScript value="{!URLFOR($Resource.SBQQ__AngularJS,'/i18n/angular-locale_en-us.js')}"/>
+	<apex:includeScript value="{!$Resource.SBQQ__UIBootstrap}"/>
+	<apex:includeScript value="{!$Resource.SBQQ__AngularDnD}"/>
+	<apex:includeScript value="{!$Resource.SBQQ__Directives}"/>
+	<apex:includeScript value="{!$Resource.SBQQ__UI}"/>
+	<apex:includeScript value="{!$Resource.SBQQ__WebUI}"/>
+	<apex:includeScript value="{!$Resource.SBQQ__HtmlSanitizer}"/>
+	<apex:includeScript value="{!$Resource.SBQQ__RemotingServiceProxies}"/>
+	<apex:includeScript value="{!$Resource.SBQQ__DocumentGeneratorUI}"/>
+	<apex:includeScript value="{!$Resource.SBQQ__InfiniteScroll}"/>
+	<apex:includeScript value="{!URLFOR($Resource.SBQQ__pdfjs,'/generic/build/pdf.js')}"/>
+	<apex:includeScript value="{!URLFOR($Resource.SBQQ__pdfjs,'/generic/build/pdf.worker.js')}"/>
+	<apex:includeScript value="{!URLFOR($Resource.SBQQ__pdfjs,'/generic/web/compatibility.js')}"/>
+	<apex:includeScript value="{!$Resource.SBQQ__QueueableJobChecker}" />
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+			var quoteName = '{!$ObjectType.Quote__c.Name}';
+			var namespace = (quoteName.toLowerCase().substring(0,4) == 'sbqq') ? 'SBQQ' : '';
+			qqBootstrapWeb({namespace:namespace,sessionId:'{!JSENCODE($API.Session_ID)}',sitePrefix:'{!$Site.Prefix}'});
+			document.getElementById('qq').style.display = 'block';
+		});
+	</script>
+
+	<div id="qq" style="display: none" class="sb">
+		<div id="sbDocGenPreview" ng-controller="QuoteDocumentGeneratorCtrl" ng-init="onLoad('{!Quote__c.Id}', 'generate')">
+			<c:pageHeader title="{!$Label.sbqq__lbl_generate_document}" subtitle="{!SBQQ__Quote__c.Name}" formFactor="{!formFactor}" iconName="sf-icon-document" customTheme="18">
+				<apex:outputPanel layout="none" rendered="{!formfactor == 'desktop'}">
+					<div class="sbButtons">
+						<button ng-click="onPreview()" class="sbBtn" ng-disabled="!quoteIsValid">{!$Label.lbl_preview}</button>
+						<button ng-click="onSaveAndSendESignature()" ng-disabled="!quoteIsValid && !documentModel.esignatureButtonEnabled" ng-show="documentModel.esignatureEnabled" class="sbBtn">{{documentModel.esignatureButtonLabel}}</button>
+						<button ng-click="onSaveAndEmail()" class="sbBtn" ng-disabled="!quoteIsValid" ng-show="documentModel.emailingEnabled">{!$Label.lbl_save_and_email}</button>
+						<button ng-click="onSave()" class="sbBtn" ng-disabled="!quoteIsValid">{!$Label.lbl_save}</button>
+						<button ng-click="onCancel()" class="sbBtn">{!$Label.lbl_cancel}</button>
+					 </div>
+				</apex:outputPanel>
+				<apex:outputPanel layout="none" rendered="{!formfactor == 'tablet'}">
+					<div class="buttonContainer" ng-show="!mobilePreview">
+						<button ng-click="onPreview()" class="sbBtn" ng-disabled="!quoteIsValid">
+							<span>{!$Label.lbl_preview}</span>
+						</button>
+						<button ng-click="onSaveAndSendESignature()" class="sbBtn" ng-show="documentModel.esignatureEnabled" ng-disabled="!quoteIsValid && !documentModel.esignatureButtonEnabled">
+							<span>{{documentModel.esignatureButtonLabel}}</span>
+						</button>
+						<button ng-click="onSaveAndEmail()" class="sbBtn" ng-show="documentModel.emailingEnabled" ng-disabled="!quoteIsValid">{!$Label.lbl_save_and_email}</button>
+						<button ng-click="onSave()" class="sbBtn" ng-disabled="!quoteIsValid">
+							<span>{!$Label.lbl_save}</span>
+						</button>
+						<button ng-click="onCancel()" class="sbBtn">
+							<span>{!$Label.lbl_cancel}</span>
+						</button>
+					</div>
+				</apex:outputPanel>
+				<apex:outputPanel layout="none" rendered="{!formfactor == 'phone'}">
+					<div class="buttonContainer" ng-show="!mobilePreview">
+						<button ng-click="onPreview()" class="sbBtn" ng-disabled="!quoteIsValid">
+							<span>{!$Label.lbl_preview}</span>
+						</button>
+						<button ng-click="documentActionsShown = true" class="sbBtn phone" title="">
+							<span class="icon-utility-down"></span>
+						</button>
+						<c:modalDialog showExpr="documentActionsShown" closeExpr="documentActionsShown = false">
+							<button ng-click="onSaveAndSendESignature()" class="sbBtn" ng-show="documentModel.esignatureEnabled" ng-disabled="!quoteIsValid && !documentModel.esignatureButtonEnabled">
+								<span>{{documentModel.esignatureButtonLabel}}</span>
+							</button>
+							<button ng-click="onSaveAndEmail()" class="sbBtn" ng-show="documentModel.emailingEnabled" ng-disabled="!quoteIsValid">{!$Label.lbl_save_and_email}</button>
+							<button ng-click="onSave()" class="sbBtn" ng-disabled="!quoteIsValid">
+								<span>{!$Label.lbl_save}</span>
+							</button>
+							<button ng-click="onCancel()" class="sbBtn">
+								<span>{!$Label.lbl_cancel}</span>
+							</button>
+						</c:modalDialog>
+					</div>
+				</apex:outputPanel>
+			</c:pageHeader>
+		
+			<c:messages messagesExpr="messages" formFactor="{!formFactor}"/>
+			<c:status displayExpr="blockingOperationInProgress" formFactor="{!formFactor}"/>
+
+			<div class="sbDocOptionsContainer" ng-show="documentModel != null && !mobilePreview">
+				<div class="sbPageBlock">
+					<div class="sbBody">
+						<c:quoteDocumentOptions formFactor="{!formFactor}" isPreview="false" supportLanguage="{!SupportLanguage}"/>
+					  <c:quoteDocumentContentSelector formFactor="{!formFactor}"/>
+					</div>
+				</div>
+			</div>
+
+			<div class="sbPreview" ng-show="mobilePreview">
+				<div class="buttonContainer" id="mobilePreviewButtons">
+					<button ng-click="mobilePreview = false" class="sbBtn">
+						<span>{!$Label.lbl_close}</span>
+					</button>
+					<i class="sf-icon-zoomout" ng-click="zoomOut()" id="mobileZoomOut" ng-show="showZoom"/>
+					<i class="sf-icon-zoomin" ng-click="zoomIn()" id="mobileZoomIn" ng-show="showZoom"/>
+				</div>
+				<div class="documentPreviewContainer" id="previewContainer"></div>
+			</div>
+		</div>
+	</div>
+	<script>
+		/* Salesforce-prescribed workaround for platform defect where scrolling on ios 8 causes blank screen */
+		(function () {
+			try {
+				var a = navigator.userAgent;
+				if (a.indexOf('Salesforce') != -1 && (a.indexOf('iPhone') != -1 || a.indexOf('iPad') != -1) && a.indexOf('OS/7') == -1 && a.indexOf('OS 7') == -1 && a.indexOf('Safari') == -1) {
+					var s = document.createElement('style');
+					s.innerHTML = 'html,html body{overflow: auto;-webkit-overflow-scrolling:touch;}body{position:absolute;left:0;right:0;top:0;bottom:0;}';
+					document.getElementsByTagName('head')[0].appendChild(s);
+				}} catch (e) {}})();
+				
+	</script>
+</apex:page>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>オプション制約</value>
+    </caseValues>
+    <fields>
+        <help>この制約を有効または無効とマークします。</help>
+        <label><!-- Active --></label>
+        <name>SBQQ__Active__c</name>
+    </fields>
+    <fields>
+        <help>取引先内の制約オプションの以前の購入を検索する場合はオンにします。</help>
+        <label><!-- Check Prior Purchases --></label>
+        <name>SBQQ__CheckPriorPurchases__c</name>
+    </fields>
+    <fields>
+        <help>制約される商品 SKU。</help>
+        <label><!-- Configured SKU --></label>
+        <name>SBQQ__ConfiguredSKU__c</name>
+        <relationshipLabel><!-- Option Constraints --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>この制約を適用するバンドル内のオプションを選択します。</help>
+        <label><!-- Constrained Option --></label>
+        <name>SBQQ__ConstrainedOption__c</name>
+        <relationshipLabel><!-- Constraints --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>制約対象オプションが別のオプションを制約している場合は、追加のオプションを選択します。</help>
+        <label><!-- Constraining Option --></label>
+        <name>SBQQ__ConstrainingOption__c</name>
+        <relationshipLabel><!-- Constraining --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>複数のオプション制約が同じオプションを制約する場合、同じグループにオプション制約を入れるには、すべての制約オプションを選択する必要があります。</help>
+        <label><!-- Option Constraint Group --></label>
+        <name>SBQQ__OptionConstraintGroup__c</name>
+    </fields>
+    <fields>
+        <help>この制約の動作を選択します。連動関係とは包含が必須であることを意味し、除外とは制約オプションが選択されているときにオプション制約が選択されない、またはその逆を意味します。</help>
+        <label><!-- Type --></label>
+        <name>SBQQ__Type__c</name>
+        <picklistValues>
+            <masterLabel>Dependency</masterLabel>
+            <translation>連動関係</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Exclusion</masterLabel>
+            <translation>除外</translation>
+        </picklistValues>
+    </fields>
+    <layouts>
+        <layout>Option Constraint Layout</layout>
+        <sections>
+            <label>カスタムリンク</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>制約名</nameFieldLabel>
+</CustomObjectTranslation>

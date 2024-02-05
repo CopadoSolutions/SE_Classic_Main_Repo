@@ -18,10 +18,6 @@
                 <behavior>Required</behavior>
                 <field>GiverId</field>
             </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>RewardId</field>
-            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>

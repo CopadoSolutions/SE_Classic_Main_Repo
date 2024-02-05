@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Journal de programmation</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Journaux de programmation</value>
+    </caseValues>
+    <fields>
+        <label><!-- Element --></label>
+        <name>SBQQ__Element__c</name>
+    </fields>
+    <fields>
+        <label><!-- Finish --></label>
+        <name>SBQQ__Finish__c</name>
+    </fields>
+    <fields>
+        <help>Entrée au journal</help>
+        <label><!-- Log --></label>
+        <name>SBQQ__Log__c</name>
+    </fields>
+    <fields>
+        <help>Temps processeur de départ</help>
+        <label><!-- Start --></label>
+        <name>SBQQ__Start__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total CPU Time --></label>
+        <name>SBQQ__Total__c</name>
+    </fields>
+    <fields>
+        <label><!-- URL --></label>
+        <name>SBQQ__URL__c</name>
+    </fields>
+    <gender>Masculine</gender>
+    <nameFieldLabel>Nom</nameFieldLabel>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

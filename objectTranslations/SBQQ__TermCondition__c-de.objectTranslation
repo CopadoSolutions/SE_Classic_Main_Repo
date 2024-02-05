@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Klauselbedingung</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Klauselbedingungen</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value><!-- Klauselbedingung --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+        <value><!-- Klauselbedingungen --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value><!-- Klauselbedingung --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>true</plural>
+        <value><!-- Klauselbedingungen --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value><!-- Klauselbedingung --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value><!-- Klauselbedingungen --></value>
+    </caseValues>
+    <fields>
+        <help>Weisen Sie dieser Bedingung eine eindeutige Nummer zu, um sie in der erweiterten Bedingung der Angebotsklausel zu referenzieren.</help>
+        <label><!-- Index --></label>
+        <name>SBQQ__Index__c</name>
+    </fields>
+    <fields>
+        <help>Wählen Sie den Operator für das Feld.</help>
+        <label><!-- Operator --></label>
+        <name>SBQQ__Operator__c</name>
+        <picklistValues>
+            <masterLabel>contains</masterLabel>
+            <translation>enthält</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ends with</masterLabel>
+            <translation>endet auf</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>equals</masterLabel>
+            <translation>gleich</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>greater or equals</masterLabel>
+            <translation>größer oder gleich</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>greater than</masterLabel>
+            <translation>größer als</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>less or equals</masterLabel>
+            <translation>kleiner oder gleich</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>less than</masterLabel>
+            <translation>kleiner als</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>not equals</masterLabel>
+            <translation>ungleich</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>starts with</masterLabel>
+            <translation>beginnt mit</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Übergeordnete Klausel für diese Klausel.</help>
+        <label><!-- Quote Term --></label>
+        <name>SBQQ__QuoteTerm__c</name>
+        <relationshipLabel><!-- Term Conditions --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Feld im Angebotsobjekt, das zum Testen dieser Bedingung verwendet wird.</help>
+        <label><!-- Tested Field --></label>
+        <name>SBQQ__TestedField__c</name>
+        <picklistValues>
+            <masterLabel>Customer Amount</masterLabel>
+            <translation>Kundenbetrag</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>List Amount</masterLabel>
+            <translation>Listenbetrag</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Net Amount</masterLabel>
+            <translation>Nettobetrag</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Regular Amount</masterLabel>
+            <translation>Regulärer Betrag</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Zusammenfassungsvariable, die zum Testen dieser Bedingung verwendet wird.</help>
+        <label><!-- Tested Variable --></label>
+        <name>SBQQ__TestedVariable__c</name>
+        <relationshipLabel><!-- Term Conditions --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Wert, auf den getestet wird.</help>
+        <label><!-- Value --></label>
+        <name>SBQQ__Value__c</name>
+    </fields>
+    <gender>Feminine</gender>
+    <layouts>
+        <layout>Term Condition Layout</layout>
+        <sections>
+            <label>Benutzerdefinierte Links</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Bedingungsnummer</nameFieldLabel>
+    <validationRules>
+        <errorMessage><!-- You may not select both field and variable to test. Create separate conditions to test against field and variable. --></errorMessage>
+        <name>SBQQ__Field_and_Variable</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You must select either field or variable to test. --></errorMessage>
+        <name>SBQQ__Field_or_Variable</name>
+    </validationRules>
+</CustomObjectTranslation>

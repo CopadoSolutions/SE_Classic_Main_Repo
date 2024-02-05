@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- External Id --></label>
+        <name>External_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Region --></label>
+        <name>Region__c</name>
+        <picklistValues>
+            <masterLabel>Midwest</masterLabel>
+            <translation><!-- Midwest --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Northeast</masterLabel>
+            <translation><!-- Northeast --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>South</masterLabel>
+            <translation><!-- South --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Southeast</masterLabel>
+            <translation><!-- Southeast --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>West</masterLabel>
+            <translation><!-- West --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Opção para combinar as quantidades de vários ativos para o mesmo produto em uma linha quando a cotação de renovação é gerada.</help>
+        <label><!-- Combine Asset Quantities --></label>
+        <name>SBQQ__AssetQuantitiesCombined__c</name>
+    </fields>
+    <fields>
+        <help>Permita combinar ativos e assinaturas a partir de vários contratos com termo combinado. Por padrão, cada contrato com termo combinado gera um grupo separado na cotação de renovação.</help>
+        <label><!-- Combine Co-Termed Contracts --></label>
+        <name>SBQQ__CoTermedContractsCombined__c</name>
+    </fields>
+    <fields>
+        <help>Determina quando os contratos são encerrados de modo combinado.</help>
+        <label><!-- Co-Termination Event --></label>
+        <name>SBQQ__CoTerminationEvent__c</name>
+        <picklistValues>
+            <masterLabel>Add-on</masterLabel>
+            <translation>Complemento</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Renewal</masterLabel>
+            <translation>Renovação</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Determina como os contratos de serviço e as assinaturas para esse cliente são encerrados de modo combinado.</help>
+        <label><!-- Contract Co-Termination --></label>
+        <name>SBQQ__ContractCoTermination__c</name>
+        <picklistValues>
+            <masterLabel>Always</masterLabel>
+            <translation>Sempre</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Never</masterLabel>
+            <translation>Nunca</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Prompt</masterLabel>
+            <translation>Avisar</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Oportunidade padrão para essa conta usada por um módulo de comércio eletrônico para obter o catálogo de preços do cliente e associar a cotações do &quot;carrinho de compras&quot;.</help>
+        <label><!-- Default Opportunity --></label>
+        <name>SBQQ__DefaultOpportunity__c</name>
+        <relationshipLabel><!-- Accounts --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Selecione se os preços contratados não devam ser herdados da conta pai.</help>
+        <label><!-- Ignore Parent Contracted Prices --></label>
+        <name>SBQQ__IgnoreParentContractedPrices__c</name>
+    </fields>
+    <fields>
+        <help>Selecione a caixa de seleção para manter a hierarquia de pacotes em cotações de renovação e alterações.</help>
+        <label><!-- Preserve Bundle Structure --></label>
+        <name>SBQQ__PreserveBundle__c</name>
+    </fields>
+    <fields>
+        <help>Insira a data até a qual os preços devem ser retidos.</help>
+        <label><!-- Price Hold End --></label>
+        <name>SBQQ__PriceHoldEnd__c</name>
+    </fields>
+    <fields>
+        <help>Escolha Baseado em ativo para tornar as renovações baseadas nos Ativos da conta ou escolha Baseado em assinatura para tornar as renovações baseadas em assinaturas criadas a partir de uma cotação.</help>
+        <label><!-- Renewal Model --></label>
+        <name>SBQQ__RenewalModel__c</name>
+        <picklistValues>
+            <masterLabel>Asset Based</masterLabel>
+            <translation>Baseado em ativo</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contract Based</masterLabel>
+            <translation>Baseado em contrato</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Use &quot;Mesmo&quot; para manter o mesmo preço pago na última vez. Use &quot;Lista&quot; para usar o preço de lista atual. Use &quot;Aumento&quot; para usar o preço pago na última vez mais algum aumento.</help>
+        <label><!-- Renewal Pricing Method --></label>
+        <name>SBQQ__RenewalPricingMethod__c</name>
+        <picklistValues>
+            <masterLabel>List</masterLabel>
+            <translation>Lista</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Same</masterLabel>
+            <translation>Mesmo</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Uplift</masterLabel>
+            <translation>Aumento</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Selecione se essa conta tiver certificados ativos</help>
+        <label><!-- Tax-Exempt --></label>
+        <name>SBQQ__TaxExempt__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation>Não</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation>Sim</translation>
+        </picklistValues>
+    </fields>
+    <layouts>
+        <layout>CPQ Account Layout</layout>
+        <sections>
+            <label>Informações adicionais</label>
+            <section>Additional Information</section>
+        </sections>
+        <sections>
+            <label>Links personalizados</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>Informações de renovação/encerramento combinado</label>
+            <section>Renewal/Co-Term Information</section>
+        </sections>
+    </layouts>
+    <webLinks>
+        <label><!-- AltavistaNews --></label>
+        <name>AltavistaNews</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleMaps --></label>
+        <name>GoogleMaps</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleNews --></label>
+        <name>GoogleNews</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleSearch --></label>
+        <name>GoogleSearch</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- HooversProfile --></label>
+        <name>HooversProfile</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Amend_Assets --></label>
+        <name>SBQQ__Amend_Assets</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Renew_Assets --></label>
+        <name>SBQQ__Renew_Assets</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- YahooMaps --></label>
+        <name>YahooMaps</name>
+    </webLinks>
+</CustomObjectTranslation>

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Consulta de búsqueda</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Consultas de búsqueda</value>
+    </caseValues>
+    <fields>
+        <help>Nombre de API del campo personalizado empleado en la consulta.</help>
+        <label><!-- Lookup Field --></label>
+        <name>SBQQ__LookupField__c</name>
+        <picklistValues>
+            <masterLabel>SBQQ__Category__c</masterLabel>
+            <translation>SBQQ__Category__c</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Si Tipo de coincidencia = Valor de campo, seleccione un Objeto probado y un Campo probado. Si Tipo de coincidencia = Valor estático, ingrese el valor en Valor probado. Si Tipo de coincidencia = Atributo de configuración, especifique un Atributo de configuración.</help>
+        <label><!-- Match Type --></label>
+        <name>SBQQ__MatchType__c</name>
+        <picklistValues>
+            <masterLabel>Configuration Attribute Value</masterLabel>
+            <translation>Valor de atributo de configuración</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Field Value</masterLabel>
+            <translation>Valor de campo</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Static Value</masterLabel>
+            <translation>Valor estático</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>El operador que se aplica cuando se compara el campo con el valor.</help>
+        <label><!-- Operator --></label>
+        <name>SBQQ__Operator__c</name>
+        <picklistValues>
+            <masterLabel>equals</masterLabel>
+            <translation>igual a</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>greater or equals</masterLabel>
+            <translation>mayor o igual</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>greater than</masterLabel>
+            <translation>mayor que</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>less or equals</masterLabel>
+            <translation>menor o igual</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>less than</masterLabel>
+            <translation>menor que</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>not equals</masterLabel>
+            <translation>no igual a</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- ParentRuleIsActive --></label>
+        <name>SBQQ__ParentRuleIsActive__c</name>
+    </fields>
+    <fields>
+        <help>Regla de precios asociada con esta consulta de búsqueda. Sustituye el campo principal-detalle heredado.</help>
+        <label><!-- Price Rule --></label>
+        <name>SBQQ__PriceRule2__c</name>
+        <relationshipLabel><!-- Lookup Queries (Price Rule) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Regla de productos asociada con esta consulta de búsqueda.</help>
+        <label><!-- Product Rule --></label>
+        <name>SBQQ__ProductRule__c</name>
+        <relationshipLabel><!-- Lookup Queries (Product Rule) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Parent Rule Lookup Object --></label>
+        <name>SBQQ__RuleLookupObject__c</name>
+    </fields>
+    <fields>
+        <label><!-- RuleTargetsCalculator --></label>
+        <name>SBQQ__RuleTargetsCalculator__c</name>
+    </fields>
+    <fields>
+        <help>El atributo de configuración que evalúa esta consulta. Es obligatorio si Tipo de coincidencia = Atributo de configuración y solo si esta consulta está asociada con una Regla de productos.</help>
+        <label><!-- Tested Configuration Attribute --></label>
+        <name>SBQQ__TestedConfigurationAttribute__c</name>
+        <relationshipLabel><!-- Lookup Queries --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Campo en el objeto Presupuesto o Partida de presupuesto u Opción de producto que evalúa esta consulta. Se requiere si Tipo de coincidencia = Valor de campo.</help>
+        <label><!-- Tested Field --></label>
+        <name>SBQQ__TestedField__c</name>
+        <picklistValues>
+            <masterLabel>Product Code</masterLabel>
+            <translation>Código del producto</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Objeto sobre el que se evalúa la consulta. Se requiere si Tipo de coincidencia = Valor de campo.</help>
+        <label><!-- Tested Object --></label>
+        <name>SBQQ__TestedObject__c</name>
+        <picklistValues>
+            <masterLabel>Product Option</masterLabel>
+            <translation>Opción de producto</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quote</masterLabel>
+            <translation>Presupuesto</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quote Line</masterLabel>
+            <translation>Partida de presupuesto</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>El valor que desea que coincida en el campo que seleccionó utilizando el operador elegido. Se requiere si Tipo de coincidencia = Valor estático.</help>
+        <label><!-- Tested Value --></label>
+        <name>SBQQ__TestedValue__c</name>
+    </fields>
+    <gender>Feminine</gender>
+    <layouts>
+        <layout>Lookup Query Layout</layout>
+        <sections>
+            <label>Vínculos personalizados</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>Información de búsqueda de consulta</label>
+            <section>Lookup Information</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Nº de Consulta de búsqueda</nameFieldLabel>
+    <validationRules>
+        <errorMessage><!-- Testing Configuration Attributes is only supported for Lookup Queries associated with Product Rules. --></errorMessage>
+        <name>SBQQ__Configuration_Attribute_Validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Associate a lookup object on the product rule before creating a Lookup Query. --></errorMessage>
+        <name>SBQQ__LookupObjectMustExist</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Tested Value is required if Match Type = Static Value. Tested Object and Tested Field are required if Match Type = Field Value. Tested Configuration Attribute is required if Match Type = Configuration Attribute. --></errorMessage>
+        <name>SBQQ__Match_Type_Validation</name>
+    </validationRules>
+</CustomObjectTranslation>

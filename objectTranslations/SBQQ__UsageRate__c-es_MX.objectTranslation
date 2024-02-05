@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Intervalo de uso (Reservado)</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Intervalos de uso (Reservado)</value>
+    </caseValues>
+    <fields>
+        <label><!-- Description --></label>
+        <name>SBQQ__Description__c</name>
+    </fields>
+    <fields>
+        <help>Límite inferior del intervalo de uso de este intervalo de uso</help>
+        <label><!-- Lower Bound --></label>
+        <name>SBQQ__LowerBound__c</name>
+    </fields>
+    <fields>
+        <help>Seleccione una lista de precios al que haga referencia este intervalo de uso</help>
+        <label><!-- Price Book --></label>
+        <name>SBQQ__PriceBook__c</name>
+        <relationshipLabel><!-- Usage Rates --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Price Type --></label>
+        <name>SBQQ__PriceType__c</name>
+        <picklistValues>
+            <masterLabel>Flat Fee</masterLabel>
+            <translation>Tarifa plana</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Per Unit</masterLabel>
+            <translation>Por unidad</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Precio para la divisa activa. Utilice este campo en organizaciones multidivisa.</help>
+        <label><!-- Price --></label>
+        <name>SBQQ__Price__c</name>
+    </fields>
+    <fields>
+        <help>Límite superior del intervalo de uso de este intervalo de uso</help>
+        <label><!-- Upper Bound --></label>
+        <name>SBQQ__UpperBound__c</name>
+    </fields>
+    <fields>
+        <label><!-- Usage Price Method --></label>
+        <name>SBQQ__UsagePriceMethod__c</name>
+        <picklistValues>
+            <masterLabel>Included Quantity</masterLabel>
+            <translation>Cantidad incluida</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Overage (per unit)</masterLabel>
+            <translation>Sobrecargo (por unidad)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Per Unit</masterLabel>
+            <translation>Por unidad</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Period High Water Mark</masterLabel>
+            <translation>Marca de agua alta de periodo</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Usage Ceiling Quantity (Maximum)</masterLabel>
+            <translation>Cantidad de techo de uso (máximo)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Usage Floor Quantity (Minimum)</masterLabel>
+            <translation>Cantidad de suelo de uso (mínimo)</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Define un número para que Salesforce Billing lo utilice cuando se solicitan intervalos de uso para su procesamiento</help>
+        <label><!-- Usage Processing Order --></label>
+        <name>SBQQ__UsageProcessingOrder__c</name>
+    </fields>
+    <fields>
+        <help>Tarjeta de intervalo de uso principal para este intervalo de uso</help>
+        <label><!-- Usage Rate Card --></label>
+        <name>SBQQ__UsageRateCard__c</name>
+        <relationshipLabel><!-- Usage Rates --></relationshipLabel>
+    </fields>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Usage Rate Layout</layout>
+        <sections>
+            <label>Vínculos personalizados</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>Información de nivel</label>
+            <section>Tier Information</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Intervalo de uso</nameFieldLabel>
+</CustomObjectTranslation>

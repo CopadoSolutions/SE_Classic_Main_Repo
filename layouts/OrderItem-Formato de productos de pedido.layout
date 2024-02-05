@@ -80,12 +80,12 @@
         <layoutColumns/>
         <style>TwoColumnsLeftToRight</style>
     </layoutSections>
+    <multilineLayoutFields>OrderId</multilineLayoutFields>
     <multilineLayoutFields>Product2Id</multilineLayoutFields>
-    <multilineLayoutFields>Quantity</multilineLayoutFields>
     <multilineLayoutFields>UnitPrice</multilineLayoutFields>
+    <multilineLayoutFields>Quantity</multilineLayoutFields>
     <multilineLayoutFields>ListPrice</multilineLayoutFields>
     <multilineLayoutFields>Description</multilineLayoutFields>
-    <multilineLayoutFields>OrderId</multilineLayoutFields>
     <showEmailCheckbox>false</showEmailCheckbox>
     <showRunAssignmentRulesCheckbox>false</showRunAssignmentRulesCheckbox>
     <showSubmitAndAttachButton>false</showSubmitAndAttachButton>

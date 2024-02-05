@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- External Id --></label>
+        <name>External_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Region --></label>
+        <name>Region__c</name>
+        <picklistValues>
+            <masterLabel>Midwest</masterLabel>
+            <translation><!-- Midwest --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Northeast</masterLabel>
+            <translation><!-- Northeast --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>South</masterLabel>
+            <translation><!-- South --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Southeast</masterLabel>
+            <translation><!-- Southeast --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>West</masterLabel>
+            <translation><!-- West --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>更新見積の生成時、同じ商品の複数の納入商品の数量を 1 つの品目に統合するオプション。</help>
+        <label><!-- Combine Asset Quantities --></label>
+        <name>SBQQ__AssetQuantitiesCombined__c</name>
+    </fields>
+    <fields>
+        <help>複数の期間調整される契約から納入商品とサブスクリプションを統合できるようにします。デフォルトでは、期間調整される契約ごとに更新見積に別個のグループが生成されます。</help>
+        <label><!-- Combine Co-Termed Contracts --></label>
+        <name>SBQQ__CoTermedContractsCombined__c</name>
+    </fields>
+    <fields>
+        <help>契約がいつ期間調整されるかを決定します。</help>
+        <label><!-- Co-Termination Event --></label>
+        <name>SBQQ__CoTerminationEvent__c</name>
+        <picklistValues>
+            <masterLabel>Add-on</masterLabel>
+            <translation>アドオン</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Renewal</masterLabel>
+            <translation>更新</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>この顧客のサービスおよびサブスクリプション契約の期間調整方法を決定します。</help>
+        <label><!-- Contract Co-Termination --></label>
+        <name>SBQQ__ContractCoTermination__c</name>
+        <picklistValues>
+            <masterLabel>Always</masterLabel>
+            <translation>常に</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Never</masterLabel>
+            <translation>表示しない</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Prompt</masterLabel>
+            <translation>ユーザが選択</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>顧客の価格表を取得し、「ショッピングカート」見積に関連付けるために E コマースモジュールで使用されるこの取引先のデフォルトの商談。</help>
+        <label><!-- Default Opportunity --></label>
+        <name>SBQQ__DefaultOpportunity__c</name>
+        <relationshipLabel><!-- Accounts --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>契約価格を親取引先から継承しない場合に選択します。</help>
+        <label><!-- Ignore Parent Contracted Prices --></label>
+        <name>SBQQ__IgnoreParentContractedPrices__c</name>
+    </fields>
+    <fields>
+        <help>更新見積と修正のバンドル階層を保持するにはチェックボックスをオンにします。</help>
+        <label><!-- Preserve Bundle Structure --></label>
+        <name>SBQQ__PreserveBundle__c</name>
+    </fields>
+    <fields>
+        <help>価格を維持する期限の日付を入力します。</help>
+        <label><!-- Price Hold End --></label>
+        <name>SBQQ__PriceHoldEnd__c</name>
+    </fields>
+    <fields>
+        <help>取引先の納入商品に基づいて更新を行うには [納入商品ベース] を選択し、見積から作成されたサブスクリプションに基づいて更新を行うには [サブスクリプションベース] を選択します。</help>
+        <label><!-- Renewal Model --></label>
+        <name>SBQQ__RenewalModel__c</name>
+        <picklistValues>
+            <masterLabel>Asset Based</masterLabel>
+            <translation>納入商品ベース</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contract Based</masterLabel>
+            <translation>契約ベース</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>前回の支払価格と同じ価格を維持するには [同じ] を使用します。現在のリスト価格を使用するには [リスト] を使用します。前回の支払価格より引き上げた価格を使用するには [上昇] を使用します。</help>
+        <label><!-- Renewal Pricing Method --></label>
+        <name>SBQQ__RenewalPricingMethod__c</name>
+        <picklistValues>
+            <masterLabel>List</masterLabel>
+            <translation>リスト</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Same</masterLabel>
+            <translation>同じ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Uplift</masterLabel>
+            <translation>上昇</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>この取引先に有効な証明書がある場合に選択</help>
+        <label><!-- Tax-Exempt --></label>
+        <name>SBQQ__TaxExempt__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation>いいえ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation>はい</translation>
+        </picklistValues>
+    </fields>
+    <layouts>
+        <layout>CPQ Account Layout</layout>
+        <sections>
+            <label>追加情報</label>
+            <section>Additional Information</section>
+        </sections>
+        <sections>
+            <label>カスタムリンク</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>更新/期間調整情報</label>
+            <section>Renewal/Co-Term Information</section>
+        </sections>
+    </layouts>
+    <webLinks>
+        <label><!-- AltavistaNews --></label>
+        <name>AltavistaNews</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleMaps --></label>
+        <name>GoogleMaps</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleNews --></label>
+        <name>GoogleNews</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleSearch --></label>
+        <name>GoogleSearch</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- HooversProfile --></label>
+        <name>HooversProfile</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Amend_Assets --></label>
+        <name>SBQQ__Amend_Assets</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Renew_Assets --></label>
+        <name>SBQQ__Renew_Assets</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- YahooMaps --></label>
+        <name>YahooMaps</name>
+    </webLinks>
+</CustomObjectTranslation>

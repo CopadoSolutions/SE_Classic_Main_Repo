@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>価格層</value>
+    </caseValues>
+    <fields>
+        <help>数量がこの階層であった場合に適用される割引額。</help>
+        <label><!-- Discount ({0}) --></label>
+        <name>SBQQ__DiscountAmount__c</name>
+    </fields>
+    <fields>
+        <help>数量がこの階層であった場合に適用される割引率。</help>
+        <label><!-- Discount (%) --></label>
+        <name>SBQQ__DiscountPercentage__c</name>
+    </fields>
+    <fields>
+        <help>この階層の数量範囲の下限。</help>
+        <label><!-- Lower Bound --></label>
+        <name>SBQQ__LowerBound__c</name>
+    </fields>
+    <fields>
+        <help>表内でのこの階層の位置を示す番号。</help>
+        <label><!-- Number --></label>
+        <name>SBQQ__Number__c</name>
+    </fields>
+    <fields>
+        <help>この価格層の生成元であるブロック価格。</help>
+        <label><!-- Original Block Price --></label>
+        <name>SBQQ__OriginalBlockPrice__c</name>
+        <relationshipLabel><!-- Price Tiers --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>この価格層の生成元である割引層。</help>
+        <label><!-- Original Discount Tier --></label>
+        <name>SBQQ__OriginalDiscountTier__c</name>
+        <relationshipLabel><!-- Price Tiers --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>価格の計算方法が決定される価格モデル。</help>
+        <label><!-- Price Model --></label>
+        <name>SBQQ__PriceModel__c</name>
+    </fields>
+    <fields>
+        <help>この階層が属する価格一覧。</help>
+        <label><!-- Schedule --></label>
+        <name>SBQQ__PriceSchedule__c</name>
+        <relationshipLabel><!-- Price Tiers --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>この価格層の実際の価格。新しい注文レコードに新しい一連の価格一覧が作成されると、この項目に入力されます。</help>
+        <label><!-- Price --></label>
+        <name>SBQQ__Price__c</name>
+    </fields>
+    <fields>
+        <help>この階層に取得された期間割引の合計。</help>
+        <label><!-- Term Discount --></label>
+        <name>SBQQ__TermDiscount__c</name>
+    </fields>
+    <fields>
+        <help>この階層の数量範囲の上限。</help>
+        <label><!-- Upper Bound --></label>
+        <name>SBQQ__UpperBound__c</name>
+    </fields>
+    <fields>
+        <help>この階層に取得されたボリューム割引の合計。</help>
+        <label><!-- Volume Discount --></label>
+        <name>SBQQ__VolumnDiscount__c</name>
+    </fields>
+    <layouts>
+        <layout>Price Tier Layout</layout>
+        <sections>
+            <label>カスタムリンク</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>価格情報</label>
+            <section>Price Information</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>階層名</nameFieldLabel>
+</CustomObjectTranslation>

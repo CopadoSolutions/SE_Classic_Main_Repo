@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Condition de la durée</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Conditions de la durée</value>
+    </caseValues>
+    <fields>
+        <help>Attribuez une valeur unique à cette condition pour la référencer dans la Condition avancée de durée du devis.</help>
+        <label><!-- Index --></label>
+        <name>SBQQ__Index__c</name>
+    </fields>
+    <fields>
+        <help>Choisissez un opérateur pour ce champ.</help>
+        <label><!-- Operator --></label>
+        <name>SBQQ__Operator__c</name>
+        <picklistValues>
+            <masterLabel>contains</masterLabel>
+            <translation>contient</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ends with</masterLabel>
+            <translation>se termine par</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>equals</masterLabel>
+            <translation>égal à</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>greater or equals</masterLabel>
+            <translation>supérieur ou égal à</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>greater than</masterLabel>
+            <translation>supérieur à</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>less or equals</masterLabel>
+            <translation>inférieur ou égal à</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>less than</masterLabel>
+            <translation>inférieur à</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>not equals</masterLabel>
+            <translation>différent de</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>starts with</masterLabel>
+            <translation>commence par</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Durée parente de cette durée.</help>
+        <label><!-- Quote Term --></label>
+        <name>SBQQ__QuoteTerm__c</name>
+        <relationshipLabel><!-- Term Conditions --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Champ dans l&apos;objet de devis utilisé pour tester cette condition.</help>
+        <label><!-- Tested Field --></label>
+        <name>SBQQ__TestedField__c</name>
+        <picklistValues>
+            <masterLabel>Customer Amount</masterLabel>
+            <translation>Montant du client</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>List Amount</masterLabel>
+            <translation>Montant catalogue</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Net Amount</masterLabel>
+            <translation>Montant net</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Regular Amount</masterLabel>
+            <translation>Montant normal</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Variable de synthèse utilisée dans le test de cette condition.</help>
+        <label><!-- Tested Variable --></label>
+        <name>SBQQ__TestedVariable__c</name>
+        <relationshipLabel><!-- Term Conditions --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Valeur par rapport à laquelle le test est effectué.</help>
+        <label><!-- Value --></label>
+        <name>SBQQ__Value__c</name>
+    </fields>
+    <gender>Feminine</gender>
+    <layouts>
+        <layout>Term Condition Layout</layout>
+        <sections>
+            <label>Liens personnalisés</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>N° de condition</nameFieldLabel>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- You may not select both field and variable to test. Create separate conditions to test against field and variable. --></errorMessage>
+        <name>SBQQ__Field_and_Variable</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You must select either field or variable to test. --></errorMessage>
+        <name>SBQQ__Field_or_Variable</name>
+    </validationRules>
+</CustomObjectTranslation>

@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>true</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <customHelpPage>SBQQ__QuoteTermHelp</customHelpPage>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <description>Legal term printed on quote document.</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableEnhancedLookup>false</enableEnhancedLookup>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>Private</externalSharingModel>
+    <fields>
+        <fullName>SBQQ__Active__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Flag that indicates whether this quote term is available for use.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Indicates that this quote term is available for use.</inlineHelpText>
+        <label>Active</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__AdvancedCondition__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Can only be entered if the Conditions Met is Custom. Enter a combination of the Term Condition Index #s, AND, OR, and parenthesis (e.g. (123 AND 124) AND 125).</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Can only be entered if the Conditions Met is Custom. Enter a combination of the Term Condition Index #s, AND, OR, and parenthesis (e.g. (123 AND 124) AND 125).</inlineHelpText>
+        <label>Advanced Condition</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__Body__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Body containing text of the term.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Text content of this term.</inlineHelpText>
+        <label>Body</label>
+        <length>32768</length>
+        <trackTrending>false</trackTrending>
+        <type>Html</type>
+        <visibleLines>25</visibleLines>
+    </fields>
+    <fields>
+        <fullName>SBQQ__ConditionsMet__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Choose the behavior for your conditions: All is AND, Any is OR, Custom is a combination of AND/OR.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Choose the behavior for your conditions: All is AND, Any is OR, Custom is a combination of AND/OR.</inlineHelpText>
+        <label>Conditions Met</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>All</fullName>
+                    <default>true</default>
+                    <label>All</label>
+                </value>
+                <value>
+                    <fullName>Any</fullName>
+                    <default>false</default>
+                    <label>Any</label>
+                </value>
+                <value>
+                    <fullName>Custom</fullName>
+                    <default>false</default>
+                    <label>Custom</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SBQQ__Locked__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Controls a Quote Term being editable by a user.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Controls a Quote Term being editable by a user.</inlineHelpText>
+        <label>Locked</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__ParentTerm__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>Parent term for this term.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Parent term for this term.</inlineHelpText>
+        <label>Parent Term</label>
+        <referenceTo>SBQQ__QuoteTerm__c</referenceTo>
+        <relationshipLabel>Sub Terms</relationshipLabel>
+        <relationshipName>SubTerms</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__PrintOrder__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Order in which the terms are printed on quote document.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Specifies the order in which the terms are printed on quote document.</inlineHelpText>
+        <label>Print Order</label>
+        <precision>12</precision>
+        <required>true</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SBQQ__Quote__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>Quote to which this term applies.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Quote to which this term applies. Left blank if this is a standard term.</inlineHelpText>
+        <label>Quote</label>
+        <referenceTo>SBQQ__Quote__c</referenceTo>
+        <relationshipLabel>Quote Terms</relationshipLabel>
+        <relationshipName>QuoteTerms</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__StandardTerm__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>Specifies the standard term that is being modified.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Specifies the standard term that is being modified.</inlineHelpText>
+        <label>Standard Term</label>
+        <referenceTo>SBQQ__QuoteTerm__c</referenceTo>
+        <relationshipLabel>Modified Terms</relationshipLabel>
+        <relationshipName>ModifiedTerms</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__Status__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Status of this quote term.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Status of this quote term.</inlineHelpText>
+        <label>Status</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Draft</fullName>
+                    <default>true</default>
+                    <label>Draft</label>
+                </value>
+                <value>
+                    <fullName>In Review</fullName>
+                    <default>false</default>
+                    <label>In Review</label>
+                </value>
+                <value>
+                    <fullName>Approved</fullName>
+                    <default>false</default>
+                    <label>Approved</label>
+                </value>
+                <value>
+                    <fullName>Rejected</fullName>
+                    <default>false</default>
+                    <label>Rejected</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SBQQ__TemplateContent__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>Template Content to which this term is applied.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Template Content to which this term is applied.</inlineHelpText>
+        <label>Template Content</label>
+        <lookupFilter>
+            <active>true</active>
+            <filterItems>
+                <field>SBQQ__TemplateContent__c.SBQQ__Type__c</field>
+                <operation>equals</operation>
+                <value>Quote Terms</value>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>SBQQ__TemplateContent__c</referenceTo>
+        <relationshipLabel>Quote Terms</relationshipLabel>
+        <relationshipName>Quote_Terms</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__Type__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Indicates if the term is standard, custom, or modified.</description>
+        <externalId>false</externalId>
+        <formula>IF(AND(ISBLANK(SBQQ__Quote__c),ISBLANK(SBQQ__StandardTerm__c)), $Label.sbqq__lbl_standard,
+  IF(AND(NOT(ISBLANK(SBQQ__Quote__c)),ISBLANK(SBQQ__StandardTerm__c)), $Label.sbqq__lbl_custom, $Label.sbqq__lbl_modified))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Indicates if the term is standard, custom, or modified.</inlineHelpText>
+        <label>Type</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Quote Term</label>
+    <listViews>
+        <fullName>SBQQ__All</fullName>
+        <columns>NAME</columns>
+        <columns>SBQQ__PrintOrder__c</columns>
+        <columns>SBQQ__Active__c</columns>
+        <columns>SBQQ__Status__c</columns>
+        <columns>SBQQ__Type__c</columns>
+        <columns>SBQQ__Body__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <displayFormat>QT-{0000}</displayFormat>
+        <label>Term #</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Quote Terms</pluralLabel>
+    <searchLayouts>
+        <customTabListAdditionalFields>SBQQ__Status__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>SBQQ__PrintOrder__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>SBQQ__Type__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>SBQQ__Body__c</customTabListAdditionalFields>
+        <lookupDialogsAdditionalFields>SBQQ__PrintOrder__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>SBQQ__Type__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>SBQQ__Status__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>SBQQ__Body__c</lookupDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>SBQQ__Status__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>SBQQ__Type__c</lookupPhoneDialogsAdditionalFields>
+        <searchResultsAdditionalFields>SBQQ__Active__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>SBQQ__Status__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>SBQQ__Type__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>SBQQ__PrintOrder__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>SBQQ__ParentTerm__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>SBQQ__Body__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
+    <webLinks>
+        <fullName>SBQQ__Translate</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <height>600</height>
+        <linkType>url</linkType>
+        <masterLabel>Translate</masterLabel>
+        <openType>noSidebar</openType>
+        <protected>false</protected>
+        <url>/apex/SBQQ__Translations?targetObject=QuoteTerm&amp;targetId={!SBQQ__QuoteTerm__c.Id}&amp;supportUserDefined=false&amp;supportStandard=true</url>
+    </webLinks>
+</CustomObject>

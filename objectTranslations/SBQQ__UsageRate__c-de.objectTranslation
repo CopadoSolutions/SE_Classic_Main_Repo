@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Nutzungsgebühr (Reserviert)</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Nutzungsgebühren (Reserviert)</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value><!-- Nutzungsgebühr (Reserviert) --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+        <value><!-- Nutzungsgebühren (Reserviert) --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value><!-- Nutzungsgebühr (Reserviert) --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>true</plural>
+        <value><!-- Nutzungsgebühren (Reserviert) --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value><!-- Nutzungsgebühr (Reserviert) --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value><!-- Nutzungsgebühren (Reserviert) --></value>
+    </caseValues>
+    <fields>
+        <label><!-- Description --></label>
+        <name>SBQQ__Description__c</name>
+    </fields>
+    <fields>
+        <help>Untere Grenze des Nutzungsbereichs für diese Nutzungsrate.</help>
+        <label><!-- Lower Bound --></label>
+        <name>SBQQ__LowerBound__c</name>
+    </fields>
+    <fields>
+        <help>Wählen Sie ein Preisbuch als Referenz für diese Nutzungsrate aus.</help>
+        <label><!-- Price Book --></label>
+        <name>SBQQ__PriceBook__c</name>
+        <relationshipLabel><!-- Usage Rates --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Price Type --></label>
+        <name>SBQQ__PriceType__c</name>
+        <picklistValues>
+            <masterLabel>Flat Fee</masterLabel>
+            <translation>Pauschalpreis</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Per Unit</masterLabel>
+            <translation>Pro Einheit</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Preis für die aktive Währung. Verwenden Sie dieses Feld in Organisationen mit mehreren Währungen.</help>
+        <label><!-- Price --></label>
+        <name>SBQQ__Price__c</name>
+    </fields>
+    <fields>
+        <help>Obere Grenze des Nutzungsbereichs für diese Nutzungsrate.</help>
+        <label><!-- Upper Bound --></label>
+        <name>SBQQ__UpperBound__c</name>
+    </fields>
+    <fields>
+        <label><!-- Usage Price Method --></label>
+        <name>SBQQ__UsagePriceMethod__c</name>
+        <picklistValues>
+            <masterLabel>Included Quantity</masterLabel>
+            <translation>Enthaltene Menge</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Overage (per unit)</masterLabel>
+            <translation>Überschuss (pro Einheit)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Per Unit</masterLabel>
+            <translation>Pro Einheit</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Period High Water Mark</masterLabel>
+            <translation>Periodenhöchststand</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Usage Ceiling Quantity (Maximum)</masterLabel>
+            <translation>Nutzung – Höchste Menge (Maximum)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Usage Floor Quantity (Minimum)</masterLabel>
+            <translation>Nutzung – Niedrigste Menge (Minimum)</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Definieren Sie einen Wert, der von Salesforce Billing bei einem Auftrag zur Verarbeitung der Nutzungsraten verwendet wird.</help>
+        <label><!-- Usage Processing Order --></label>
+        <name>SBQQ__UsageProcessingOrder__c</name>
+    </fields>
+    <fields>
+        <help>Übergeordnete Nutzungsratenkarte für diese Nutzungsrate</help>
+        <label><!-- Usage Rate Card --></label>
+        <name>SBQQ__UsageRateCard__c</name>
+        <relationshipLabel><!-- Usage Rates --></relationshipLabel>
+    </fields>
+    <gender>Feminine</gender>
+    <layouts>
+        <layout>Usage Rate Layout</layout>
+        <sections>
+            <label>Benutzerdefinierte Links</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>Klasseninformationen</label>
+            <section>Tier Information</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Nutzungsrate</nameFieldLabel>
+</CustomObjectTranslation>

@@ -1,0 +1,666 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Presupuesto</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Presupuestos</value>
+    </caseValues>
+    <fieldSets>
+        <label><!-- Calculating Fields --></label>
+        <name>SBQQ__CalculatingFields</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Line Editor --></label>
+        <name>SBQQ__LineEditor</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Non-Current Quote Locked Fields --></label>
+        <name>SBQQ__NonCurrentQuoteLockedFields</name>
+    </fieldSets>
+    <fields>
+        <help>La cuenta del cliente para este presupuesto. Toma como valor predeterminado la cuenta para la oportunidad al crear un presupuesto.</help>
+        <label><!-- Account --></label>
+        <name>SBQQ__Account__c</name>
+        <relationshipLabel><!-- Quotes --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Ingrese el importe descontado adicionalmente en este presupuesto.</help>
+        <label><!-- Addl. Disc. Amount --></label>
+        <name>SBQQ__AdditionalDiscountAmount__c</name>
+    </fields>
+    <fields>
+        <help>Descuento de cliente medio (en porcentaje) para este presupuesto.</help>
+        <label><!-- Avg. Customer Disc. (%) --></label>
+        <name>SBQQ__AverageCustomerDiscount__c</name>
+    </fields>
+    <fields>
+        <help>Descuento de socio medio (en porcentaje) para este presupuesto.</help>
+        <label><!-- Avg. Partner Disc. (%) --></label>
+        <name>SBQQ__AveragePartnerDiscount__c</name>
+    </fields>
+    <fields>
+        <help>Ciudad de la dirección de Facturar a para este presupuesto.</help>
+        <label><!-- Bill To City --></label>
+        <name>SBQQ__BillingCity__c</name>
+    </fields>
+    <fields>
+        <help>País de la dirección de Facturar a para este presupuesto.</help>
+        <label><!-- Bill To Country --></label>
+        <name>SBQQ__BillingCountry__c</name>
+    </fields>
+    <fields>
+        <help>Define la frecuencia de la facturación.</help>
+        <label><!-- Billing Frequency --></label>
+        <name>SBQQ__BillingFrequency__c</name>
+    </fields>
+    <fields>
+        <help>Nombre de la dirección de Facturar a.</help>
+        <label><!-- Bill To Name --></label>
+        <name>SBQQ__BillingName__c</name>
+    </fields>
+    <fields>
+        <help>Código postal de la dirección de Facturar a para este presupuesto.</help>
+        <label><!-- Bill To Postal Code --></label>
+        <name>SBQQ__BillingPostalCode__c</name>
+    </fields>
+    <fields>
+        <help>Estado/provincia de la dirección de Facturar a para este presupuesto.</help>
+        <label><!-- Bill To State --></label>
+        <name>SBQQ__BillingState__c</name>
+    </fields>
+    <fields>
+        <help>Parte de la calle de la dirección de Facturar a para este presupuesto.</help>
+        <label><!-- Bill To Street --></label>
+        <name>SBQQ__BillingStreet__c</name>
+    </fields>
+    <fields>
+        <help>&quot;Por Fecha de finalización de suscripción&quot; crea un contrato separado para cada Fecha de finalización de suscripción única, que contiene únicamente esas suscripciones. &quot;Contrato único&quot; crea un contrato que contiene todas las suscripciones, sin que las fechas de finalización sean relevantes.</help>
+        <label><!-- Contracting Method --></label>
+        <name>SBQQ__ContractingMethod__c</name>
+        <picklistValues>
+            <masterLabel>By Subscription End Date</masterLabel>
+            <translation>Por Fecha de finalización de suscripción</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Single Contract</masterLabel>
+            <translation>Contrato único</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Este es un campo de resumen.</help>
+        <label><!-- Customer Amount --></label>
+        <name>SBQQ__CustomerAmount__c</name>
+    </fields>
+    <fields>
+        <help>Descuento de cliente adicional ampliado al cliente en este presupuesto. Este valor se puede invalidar en el nivel de partida individual. Cualquier partida que no tenga descuentos adicionales especificados explícitamente tomarán este valor como predeterminado.</help>
+        <label><!-- Additional Disc. (%) --></label>
+        <name>SBQQ__CustomerDiscount__c</name>
+    </fields>
+    <fields>
+        <help>Número de días que el presupuesto estuvo abierto.</help>
+        <label><!-- Days Quote Open --></label>
+        <name>SBQQ__DaysQuoteOpen__c</name>
+    </fields>
+    <fields>
+        <help>Plantilla que debe utilizarse con este presupuesto. Salesforce CPQ selecciona automáticamente la plantilla especificada aquí cuando hace clic en &quot;Generar documento&quot;.</help>
+        <label><!-- Default Template --></label>
+        <name>SBQQ__DefaultTemplate__c</name>
+        <relationshipLabel><!-- Quotes --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Método empleado para entregar productos de este presupuesto.</help>
+        <label><!-- Delivery Method --></label>
+        <name>SBQQ__DeliveryMethod__c</name>
+        <picklistValues>
+            <masterLabel>Download</masterLabel>
+            <translation>Descarga</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ship</masterLabel>
+            <translation>Envío</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Descuento de distribuidor que se aplica a este presupuesto a no ser que se invalide en el nivel de la partida.</help>
+        <label><!-- Distributor Discount --></label>
+        <name>SBQQ__DistributorDiscount__c</name>
+    </fields>
+    <fields>
+        <help>Distribuidor para este presupuesto. Toma como valor predeterminado el socio en la oportunidad con la función de &quot;Distribuidor&quot;.</help>
+        <label><!-- Distributor --></label>
+        <name>SBQQ__Distributor__c</name>
+        <relationshipLabel><!-- Distributor Quotes --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Indica el estado de su documento: Pendiente, Enviado, Error.</help>
+        <label><!-- Document Status --></label>
+        <name>SBQQ__DocumentStatus__c</name>
+        <picklistValues>
+            <masterLabel>Failed</masterLabel>
+            <translation>Error</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending</masterLabel>
+            <translation>Pendiente</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sent</masterLabel>
+            <translation>Enviada</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Si tiene una plantilla de email específica para utilizar con documentos generados y enviados por email desde este presupuesto, ingrese aquí el Id. de la plantilla de email.</help>
+        <label><!-- Email Template Id --></label>
+        <name>SBQQ__EmailTemplateId__c</name>
+    </fields>
+    <fields>
+        <help>Fecha de finalización de las suscripciones en este grupo.</help>
+        <label><!-- End Date --></label>
+        <name>SBQQ__EndDate__c</name>
+    </fields>
+    <fields>
+        <help>Fecha tras la que el presupuesto ya no es válido.</help>
+        <label><!-- Expires On --></label>
+        <name>SBQQ__ExpirationDate__c</name>
+    </fields>
+    <fields>
+        <help>Para productos con segmentos múltiples, ingrese la fecha de finalización para prorratear el primer segmento.</help>
+        <label><!-- First Segment Term End Date --></label>
+        <name>SBQQ__FirstSegmentTermEndDate__c</name>
+    </fields>
+    <fields>
+        <help>Generará un precio contratado en base a todas las partidas de presupuesto ajustadas en el presupuesto si está marcada.</help>
+        <label><!-- Generate Contracted Price --></label>
+        <name>SBQQ__GenerateContractedPrice__c</name>
+        <picklistValues>
+            <masterLabel>Discount Schedule</masterLabel>
+            <translation>Programación de descuentos</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Do Not Generate</masterLabel>
+            <translation>No generar</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Price</masterLabel>
+            <translation>Precio</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Introducción que puede imprimirse en el documento PDF generado.</help>
+        <label><!-- Introduction --></label>
+        <name>SBQQ__Introduction__c</name>
+    </fields>
+    <fields>
+        <help>Clave interna única que se utiliza para identificar presupuestos de &quot;carrito de la compra&quot; sin basarse en identificadores internos.</help>
+        <label><!-- Key --></label>
+        <name>SBQQ__Key__c</name>
+    </fields>
+    <fields>
+        <help>Número de partidas de este presupuesto.</help>
+        <label><!-- Line Item Count --></label>
+        <name>SBQQ__LineItemCount__c</name>
+    </fields>
+    <fields>
+        <help>Seleccione esta opción para utilizar SolutionGroups(TM) o agregar sus propios grupos en la página Modificar partidas para categorizar y subtotalizar partidas de presupuestos.</help>
+        <label><!-- Group Line Items --></label>
+        <name>SBQQ__LineItemsGrouped__c</name>
+    </fields>
+    <fields>
+        <help>Seleccione la casilla de verificación para imprimir partidas individuales en el documento de presupuesto PDF generado para presupuestos de grupos.</help>
+        <label><!-- Print Line Items --></label>
+        <name>SBQQ__LineItemsPrinted__c</name>
+    </fields>
+    <fields>
+        <help>Importe de lista total para cada partida no opcional de este presupuesto.</help>
+        <label><!-- List Amount --></label>
+        <name>SBQQ__ListAmount__c</name>
+    </fields>
+    <fields>
+        <help>Tasa de sobreprecio predeterminada aplicada a partidas de este presupuesto. Podrá invalidar este valor en el nivel de grupos y partidas.</help>
+        <label><!-- Markup (%) --></label>
+        <name>SBQQ__MarkupRate__c</name>
+    </fields>
+    <fields>
+        <help>Contrato principal con productos de suscripción de este presupuesto que tienen una terminación compartida.</help>
+        <label><!-- Master Contract --></label>
+        <name>SBQQ__MasterContract__c</name>
+        <relationshipLabel><!-- Co-Terminated Quotes --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Importe neto total para cada partida no opcional de este presupuesto.</help>
+        <label><!-- Net Amount --></label>
+        <name>SBQQ__NetAmount__c</name>
+    </fields>
+    <fields>
+        <help>Notas impresas en el documento PDF generado.</help>
+        <label><!-- Notes --></label>
+        <name>SBQQ__Notes__c</name>
+    </fields>
+    <fields>
+        <help>Oportunidad asociada con este presupuesto.</help>
+        <label><!-- Opportunity --></label>
+        <name>SBQQ__Opportunity2__c</name>
+        <relationshipLabel><!-- Quotes --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Si está marcada al establecer el presupuesto en &quot;Pedido&quot;, se creará un pedido para cada grupo de partidas de presupuesto con sus partidas de presupuesto asociadas.</help>
+        <label><!-- Order By Quote Line Group --></label>
+        <name>SBQQ__OrderByQuoteLineGroup__c</name>
+    </fields>
+    <fields>
+        <help>El campo Partida de presupuesto empleado para determinar la agrupación de los pedidos.</help>
+        <label><!-- Order By --></label>
+        <name>SBQQ__OrderBy__c</name>
+        <picklistValues>
+            <masterLabel>ProductFamily__c</masterLabel>
+            <translation>ProductFamily__c</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>QuantityBasedFormulaField__c</masterLabel>
+            <translation>QuantityBasedFormulaField__c</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>El identificador exclusivo para la transacción Corrección: Presupuesto repetido, que es el Id. del presupuesto principal original.</help>
+        <label><!-- Order Group ID --></label>
+        <name>SBQQ__OrderGroupID__c</name>
+    </fields>
+    <fields>
+        <help>Seleccione esta casilla de verificación para crear automáticamente un pedido a partir de este presupuesto, si es un presupuesto principal.</help>
+        <label><!-- Ordered --></label>
+        <name>SBQQ__Ordered__c</name>
+    </fields>
+    <fields>
+        <help>Si este registro Presupuesto representa una acción Corrección: Presupuesto repetido, utilice este campo para vincular con el presupuesto original.</help>
+        <label><!-- Original Quote --></label>
+        <name>SBQQ__OriginalQuote__c</name>
+        <relationshipLabel><!-- Amend: Re-Quotes --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Seleccione el tamaño del papel para este documento.</help>
+        <label><!-- Paper Size --></label>
+        <name>SBQQ__PaperSize__c</name>
+    </fields>
+    <fields>
+        <help>Descuento ampliado al socio en esta oportunidad.</help>
+        <label><!-- Partner Discount --></label>
+        <name>SBQQ__PartnerDiscount__c</name>
+    </fields>
+    <fields>
+        <help>Socio principal de este trato (si lo hubiera). Este campo toma como valor predeterminado el socio marcado como principal en la lista relacionada Socios de la oportunidad.</help>
+        <label><!-- Partner --></label>
+        <name>SBQQ__Partner__c</name>
+        <relationshipLabel><!-- Partner Quotes --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Condiciones que rigen el pago de las partidas de este presupuesto.</help>
+        <label><!-- Payment Terms --></label>
+        <name>SBQQ__PaymentTerms__c</name>
+        <picklistValues>
+            <masterLabel>Due on receipt</masterLabel>
+            <translation>Pagadero contra entrega</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Net 15</masterLabel>
+            <translation>Neto a 15</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Net 30</masterLabel>
+            <translation>Neto a 30</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Net 45</masterLabel>
+            <translation>Neto a 45</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Net 60</masterLabel>
+            <translation>Neto a 60</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Net 90</masterLabel>
+            <translation>Neto a 90</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Lista de precios asociada con este presupuesto.</help>
+        <label><!-- Price Book --></label>
+        <name>SBQQ__PriceBook__c</name>
+        <relationshipLabel><!-- Quotes --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Id. de la lista de precios empleada por este presupuesto.</help>
+        <label><!-- Pricebook ID --></label>
+        <name>SBQQ__PricebookId__c</name>
+    </fields>
+    <fields>
+        <help>Contacto principal para el presupuesto. El nombre de esta persona aparecerá en el documento de presupuesto generado.</help>
+        <label><!-- Primary Contact --></label>
+        <name>SBQQ__PrimaryContact__c</name>
+        <relationshipLabel><!-- Quotes --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Seleccione esta casilla de verificación para designar este presupuesto como el principal en la oportunidad y sincronizar partidas de presupuesto con partidas de oportunidad.</help>
+        <label><!-- Primary --></label>
+        <name>SBQQ__Primary__c</name>
+    </fields>
+    <fields>
+        <help>Idioma empleado para este presupuesto cuando se generan en masa documentos de presupuesto.</help>
+        <label><!-- Quote Language --></label>
+        <name>SBQQ__QuoteLanguage__c</name>
+        <picklistValues>
+            <masterLabel>Chinese (Simplified)</masterLabel>
+            <translation>Chino (Simplificado)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chinese (Traditional)</masterLabel>
+            <translation>Chino (Tradicional)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Danish</masterLabel>
+            <translation>Danés</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dutch</masterLabel>
+            <translation>Neerlandés</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>English</masterLabel>
+            <translation>Inglés</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Finnish</masterLabel>
+            <translation>Finés</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>French</masterLabel>
+            <translation>Francés</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>German</masterLabel>
+            <translation>Alemán</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Italian</masterLabel>
+            <translation>Italiano</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Japanese</masterLabel>
+            <translation>Japonés</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Korean</masterLabel>
+            <translation>Coreano</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Norwegian</masterLabel>
+            <translation>Noruego</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Portuguese (Brazilian)</masterLabel>
+            <translation>Portugués (Brasil)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Russian</masterLabel>
+            <translation>Ruso</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Spanish</masterLabel>
+            <translation>Español</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Spanish (Mexican)</masterLabel>
+            <translation>Español (México)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Swedish</masterLabel>
+            <translation>Sueco</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Thai</masterLabel>
+            <translation>Tailandés</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Id. del proceso de venta guiado para utilizar con este presupuesto, si lo hubiera.</help>
+        <label><!-- Quote Process Id --></label>
+        <name>SBQQ__QuoteProcessId__c</name>
+    </fields>
+    <fields>
+        <help>Almacena un Id. de plantilla de presupuesto si se especifica una para utilizar al generar los documentos PDF de presupuestos.</help>
+        <label><!-- Quote Template Id --></label>
+        <name>SBQQ__QuoteTemplateId__c</name>
+    </fields>
+    <fields>
+        <help>Importe total de partidas no opcionales antes de aplicar descuentos adicionales.</help>
+        <label><!-- Regular Amount --></label>
+        <name>SBQQ__RegularAmount__c</name>
+    </fields>
+    <fields>
+        <help>Especifique el plazo de la renovación. Coincide de forma predeterminada con el plazo original del contrato.</help>
+        <label><!-- Renewal Term --></label>
+        <name>SBQQ__RenewalTerm__c</name>
+    </fields>
+    <fields>
+        <help>Índice de los aumentos del precio de renovación.</help>
+        <label><!-- Renewal Uplift (%) --></label>
+        <name>SBQQ__RenewalUpliftRate__c</name>
+    </fields>
+    <fields>
+        <help>Representante de ventas responsable de este presupuesto si es diferente del usuario que es propietario del registro Presupuesto.</help>
+        <label><!-- Sales Rep --></label>
+        <name>SBQQ__SalesRep__c</name>
+        <relationshipLabel><!-- Quotes --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Ciudad de la dirección de Enviar a para este presupuesto.</help>
+        <label><!-- Ship To City --></label>
+        <name>SBQQ__ShippingCity__c</name>
+    </fields>
+    <fields>
+        <help>País de la dirección de Enviar a para este presupuesto.</help>
+        <label><!-- Ship To Country --></label>
+        <name>SBQQ__ShippingCountry__c</name>
+    </fields>
+    <fields>
+        <help>Nombre de la dirección de Enviar a para este presupuesto.</help>
+        <label><!-- Ship To Name --></label>
+        <name>SBQQ__ShippingName__c</name>
+    </fields>
+    <fields>
+        <help>Código postal de la dirección de Enviar a para este presupuesto.</help>
+        <label><!-- Ship To Postal Code --></label>
+        <name>SBQQ__ShippingPostalCode__c</name>
+    </fields>
+    <fields>
+        <help>Estado/provincia de la dirección de Enviar a para este presupuesto.</help>
+        <label><!-- Ship To State --></label>
+        <name>SBQQ__ShippingState__c</name>
+    </fields>
+    <fields>
+        <help>Calle de la dirección de Enviar a para este presupuesto.</help>
+        <label><!-- Ship To Street --></label>
+        <name>SBQQ__ShippingStreet__c</name>
+    </fields>
+    <fields>
+        <help>Origen del presupuesto duplicado. Si está duplicado, hace referencia al presupuesto original duplicado.</help>
+        <label><!-- Source --></label>
+        <name>SBQQ__Source__c</name>
+        <relationshipLabel><!-- Quotes (Source) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Fecha de inicio de la suscripción en este presupuesto.</help>
+        <label><!-- Start Date --></label>
+        <name>SBQQ__StartDate__c</name>
+    </fields>
+    <fields>
+        <help>Estado que indica el punto en el que se encuentra el presupuesto en su ciclo de vida.</help>
+        <label><!-- Status --></label>
+        <name>SBQQ__Status__c</name>
+        <picklistValues>
+            <masterLabel>Accepted</masterLabel>
+            <translation>Aceptado</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Approved</masterLabel>
+            <translation>Aprobado</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Denied</masterLabel>
+            <translation>Denegado</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Draft</masterLabel>
+            <translation>Borrador</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Review</masterLabel>
+            <translation>En revisión</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Presented</masterLabel>
+            <translation>Presentado</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rejected</masterLabel>
+            <translation>Rechazado</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Plazo de suscripción utilizado para prorratear productos aptos por día o mes. Se estableció por su administrador.</help>
+        <label><!-- Subscription Term --></label>
+        <name>SBQQ__SubscriptionTerm__c</name>
+    </fields>
+    <fields>
+        <help>Ingrese el importe de cliente que desee para calcular automáticamente descuentos adicionales en partidas aptas para recibir descuentos.</help>
+        <label><!-- Target Customer Amount --></label>
+        <name>SBQQ__TargetCustomerAmount__c</name>
+    </fields>
+    <fields>
+        <help>Importe total de descuentos de cliente. Incluye cualquier tasa contratada, por volumen o compuesta y descuentos adicionales.</help>
+        <label><!-- Total Customer Disc. Amount --></label>
+        <name>SBQQ__TotalCustomerDiscountAmount__c</name>
+    </fields>
+    <fields>
+        <help>Indica el tipo de presupuesto</help>
+        <label><!-- Type --></label>
+        <name>SBQQ__Type__c</name>
+        <picklistValues>
+            <masterLabel>Amendment</masterLabel>
+            <translation>Corrección</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quote</masterLabel>
+            <translation>Presupuesto</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Re-Quote</masterLabel>
+            <translation>Presupuesto repetido</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Renewal</masterLabel>
+            <translation>Renovación</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Indica si se abrió en algún momento el presupuesto para determinar si es un nuevo presupuesto.</help>
+        <label><!-- Unopened --></label>
+        <name>SBQQ__Unopened__c</name>
+    </fields>
+    <fields>
+        <help>Seleccione la casilla de verificación para mostrar la marca de agua en el documento del presupuesto.</help>
+        <label><!-- Watermark Shown --></label>
+        <name>SBQQ__WatermarkShown__c</name>
+    </fields>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Quote Layout</layout>
+        <sections>
+            <label>Texto adicional</label>
+            <section>Additional Text</section>
+        </sections>
+        <sections>
+            <label>Información de dirección</label>
+            <section>Address Information</section>
+        </sections>
+        <sections>
+            <label>Información de contrato</label>
+            <section>Contract Information</section>
+        </sections>
+        <sections>
+            <label>Vínculos personalizados</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>Información de descuento</label>
+            <section>Discount Information</section>
+        </sections>
+        <sections>
+            <label>Información de socio</label>
+            <section>Partner Information</section>
+        </sections>
+        <sections>
+            <label>Opciones de presupuesto</label>
+            <section>Quote Options</section>
+        </sections>
+        <sections>
+            <label>Volviendo a calcular</label>
+            <section>Recalculating</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Número de presupuesto</nameFieldLabel>
+    <validationRules>
+        <errorMessage><!-- The End Date must come after the Start Date. --></errorMessage>
+        <name>SBQQ__End_Date_Before_Start_Date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- First Segment Term End Date must fall between Quote Start Date and Quote End Date --></errorMessage>
+        <name>SBQQ__Invalid_First_Segment_Term_End_Date</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- CloneWithRelated --></label>
+        <name>SBQQ__CloneWithRelated</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- CloneWithRelatedClassic --></label>
+        <name>SBQQ__CloneWithRelatedClassic</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- CreateOrderFromQuote --></label>
+        <name>SBQQ__CreateOrderFromQuote</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- EditLines --></label>
+        <name>SBQQ__EditLines</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GenerateDocument --></label>
+        <name>SBQQ__GenerateDocument</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- ImportLines --></label>
+        <name>SBQQ__ImportLines</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- IncludeDocument --></label>
+        <name>SBQQ__IncludeDocument</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- ModifyQuoteTerms --></label>
+        <name>SBQQ__ModifyQuoteTerms</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- PreviewDocument --></label>
+        <name>SBQQ__PreviewDocument</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- RefreshMultiplePrices --></label>
+        <name>SBQQ__RefreshMultiplePrices</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- RefreshPrices --></label>
+        <name>SBQQ__RefreshPrices</name>
+    </webLinks>
+</CustomObjectTranslation>

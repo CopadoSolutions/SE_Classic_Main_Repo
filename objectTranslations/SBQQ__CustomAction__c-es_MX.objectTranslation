@@ -1,0 +1,1282 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Acción personalizada</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Acciones personalizadas</value>
+    </caseValues>
+    <fields>
+        <help>Acción que realiza esta acción personalizada.</help>
+        <label><!-- Action --></label>
+        <name>SBQQ__Action__c</name>
+        <picklistValues>
+            <masterLabel>Add Favorites</masterLabel>
+            <translation>Agregar Favoritos</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Add Group</masterLabel>
+            <translation>Agregar grupo</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Add Products</masterLabel>
+            <translation>Agregar productos</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Add Solution Group</masterLabel>
+            <translation>Agregar grupo de soluciones</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Add To Favorites</masterLabel>
+            <translation>Agregar a Favoritos</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Amend</masterLabel>
+            <translation>Corregir</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Amend Assets</masterLabel>
+            <translation>Corregir activos</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Amend Contract</masterLabel>
+            <translation>Corregir contrato</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Calculate</masterLabel>
+            <translation>Calcular</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cancel</masterLabel>
+            <translation>Cancelar</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Clone Group</masterLabel>
+            <translation>Duplicar grupo</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Clone Line</masterLabel>
+            <translation>Duplicar partida</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Clone with Related</masterLabel>
+            <translation>Duplicar con relacionada</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Create Order</masterLabel>
+            <translation>Crear pedido</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Delete Group</masterLabel>
+            <translation>Eliminar grupo</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Delete Line</masterLabel>
+            <translation>Eliminar partida</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Delete Lines</masterLabel>
+            <translation>Eliminar partidas</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Desegment Line</masterLabel>
+            <translation>Retirar segmentos de partida</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Edit Lines</masterLabel>
+            <translation>Modificar partidas</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Edit Order Products</masterLabel>
+            <translation>Modificar productos de pedido</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Email</masterLabel>
+            <translation>Email</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Generate Document</masterLabel>
+            <translation>Generar documento</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Import Lines</masterLabel>
+            <translation>Importar partidas</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Include Document</masterLabel>
+            <translation>Incluir documento</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Launch External</masterLabel>
+            <translation>Iniciar externa</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Modify Quote Terms</masterLabel>
+            <translation>Modificar condiciones de presupuesto</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Optional: All</masterLabel>
+            <translation>Opcional: Todos</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Optional: None</masterLabel>
+            <translation>Opcional: Ninguno</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Preview Document</masterLabel>
+            <translation>Vista previa de documento</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quick Save</masterLabel>
+            <translation>Guardado rápido</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reconfigure Line</masterLabel>
+            <translation>Volver a configurar partida</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Refresh Prices</masterLabel>
+            <translation>Actualizar precios</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Remove From Favorites</masterLabel>
+            <translation>Eliminar de Favoritos</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Renew Assets</masterLabel>
+            <translation>Renovar activos</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Renew Contracts</masterLabel>
+            <translation>Renovar contratos</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Renew Subscriptions</masterLabel>
+            <translation>Renovar suscripciones</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Resegment Line</masterLabel>
+            <translation>Volver a segmentar partida</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reset Discounts</masterLabel>
+            <translation>Restablecer descuentos</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Save</masterLabel>
+            <translation>Guardar</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Save and Navigate</masterLabel>
+            <translation>Guardar y navegar</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ungroup</masterLabel>
+            <translation>Desagrupar</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Upgrade Assets</masterLabel>
+            <translation>Mejorar activos</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>View</masterLabel>
+            <translation>Ver</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>View Discount Schedule</masterLabel>
+            <translation>Ver programación de descuentos</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Seleccione la casilla de verificación para hacer que esta acción esté disponible para su uso.</help>
+        <label><!-- Active --></label>
+        <name>SBQQ__Active__c</name>
+    </fields>
+    <fields>
+        <help>Indica que esta acción personalizada es un botón de marca. Afecta únicamente al estilo de las acciones no anidadas.</help>
+        <label><!-- Brand Button --></label>
+        <name>SBQQ__BrandButton__c</name>
+    </fields>
+    <fields>
+        <help>Clase CSS de la acción personalizada para una fácil identificación en HTML.</help>
+        <label><!-- Class --></label>
+        <name>SBQQ__Class__c</name>
+    </fields>
+    <fields>
+        <help>Seleccione el comportamiento para sus condiciones: todo es AND, cualquiera es OR.</help>
+        <label><!-- Conditions Met --></label>
+        <name>SBQQ__ConditionsMet__c</name>
+        <picklistValues>
+            <masterLabel>All</masterLabel>
+            <translation>Todo</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Any</masterLabel>
+            <translation>Cualquiera</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Seleccione la casilla de verificación para establecer la acción como la acción de invalidación predeterminada.</help>
+        <label><!-- Default --></label>
+        <name>SBQQ__Default__c</name>
+    </fields>
+    <fields>
+        <help>Ingrese el valor para lo que desea que aparezca cuando un usuario pase el ratón sobre el botón Acción personalizada.</help>
+        <label><!-- Description --></label>
+        <name>SBQQ__Description__c</name>
+    </fields>
+    <fields>
+        <help>El orden en el que esta acción se muestra en la interfaz de usuario.</help>
+        <label><!-- Display Order --></label>
+        <name>SBQQ__DisplayOrder__c</name>
+    </fields>
+    <fields>
+        <help>Nombre del método para el controlador de clics de esta acción personalizada.</help>
+        <label><!-- Event Handler Name --></label>
+        <name>SBQQ__EventHandlerName__c</name>
+    </fields>
+    <fields>
+        <help>Nombre de clase CSS para el icono de esta acción personalizada.</help>
+        <label><!-- Icon Class --></label>
+        <name>SBQQ__IconClass__c</name>
+    </fields>
+    <fields>
+        <help>Icono para esta acción personalizada</help>
+        <label><!-- Icon --></label>
+        <name>SBQQ__Icon__c</name>
+        <picklistValues>
+            <masterLabel>3dots</masterLabel>
+            <translation>3dots</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>add</masterLabel>
+            <translation>agregar</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>adduser</masterLabel>
+            <translation>agregar usuario</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>align-justify</masterLabel>
+            <translation>alinear-justificar</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>approval</masterLabel>
+            <translation>aprobación</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>apps</masterLabel>
+            <translation>aplicaciones</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>arrowdown</masterLabel>
+            <translation>flecha abajo</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>arrowup</masterLabel>
+            <translation>flecha arriba</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>attach</masterLabel>
+            <translation>adjuntar</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>attention</masterLabel>
+            <translation>atención</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>attention-circled</masterLabel>
+            <translation>atención en círculo</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>back</masterLabel>
+            <translation>atrás</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ban</masterLabel>
+            <translation>prohibir</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>bold</masterLabel>
+            <translation>negrita</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>builder</masterLabel>
+            <translation>generador</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>calendar</masterLabel>
+            <translation>calendario</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>cancel</masterLabel>
+            <translation>cancelar</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>cancel-circled</masterLabel>
+            <translation>cancelar en círculo</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ccw</masterLabel>
+            <translation>ccw</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>center_align_text</masterLabel>
+            <translation>alinear_texto_centro</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>chart</masterLabel>
+            <translation>gráfico</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>chat</masterLabel>
+            <translation>chat</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>check</masterLabel>
+            <translation>comprobar</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>chevrondown</masterLabel>
+            <translation>corchete abajo</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>chevronleft</masterLabel>
+            <translation>corchete izquierda</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>chevronright</masterLabel>
+            <translation>corchete derecha</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>chevronup</masterLabel>
+            <translation>corchete arriba</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>circle-empty</masterLabel>
+            <translation>círculo vacío</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>clear</masterLabel>
+            <translation>transparente</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>clock</masterLabel>
+            <translation>reloj</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>close</masterLabel>
+            <translation>cerrar</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>cog</masterLabel>
+            <translation>engranaje</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>comments</masterLabel>
+            <translation>comentarios</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>compass</masterLabel>
+            <translation>brújula</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>contact</masterLabel>
+            <translation>contacto</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>contract</masterLabel>
+            <translation>contrato</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>contract-1</masterLabel>
+            <translation>contrato-1</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>copy</masterLabel>
+            <translation>copiar</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>custom93</masterLabel>
+            <translation>custom93</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>custom_apps</masterLabel>
+            <translation>aplicaciones_personalizadas</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>cut</masterLabel>
+            <translation>cortar</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>cw</masterLabel>
+            <translation>cw</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>dashboard</masterLabel>
+            <translation>tablero</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>dayview</masterLabel>
+            <translation>vista de día</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>delete</masterLabel>
+            <translation>eliminar</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>discountscheduleicons-02</masterLabel>
+            <translation>discountscheduleicons-02</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>docs</masterLabel>
+            <translation>documentos</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>document</masterLabel>
+            <translation>documento</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>dot-circled</masterLabel>
+            <translation>punto en círculo</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>down</masterLabel>
+            <translation>abajo</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>down-dir</masterLabel>
+            <translation>abajo-dir</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>download</masterLabel>
+            <translation>descarga</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>drafts</masterLabel>
+            <translation>borradores</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>edit</masterLabel>
+            <translation>modificar</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>email</masterLabel>
+            <translation>email</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>email-1</masterLabel>
+            <translation>email-1</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>error</masterLabel>
+            <translation>error</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>event</masterLabel>
+            <translation>evento</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>event-1</masterLabel>
+            <translation>evento-1</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>exchange</masterLabel>
+            <translation>intercambio</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>expand</masterLabel>
+            <translation>ampliar</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>fast-backward</masterLabel>
+            <translation>retroceso rápido</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>fast-forward</masterLabel>
+            <translation>avance rápido</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>favorite</masterLabel>
+            <translation>favorito</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>feed</masterLabel>
+            <translation>noticias en tiempo real</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>feedback</masterLabel>
+            <translation>comentarios</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>file</masterLabel>
+            <translation>archivo</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>filter</masterLabel>
+            <translation>filtro</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>filterlist</masterLabel>
+            <translation>lista de filtros</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>forward</masterLabel>
+            <translation>avance</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>frozen</masterLabel>
+            <translation>inmovilizado</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>gdoc</masterLabel>
+            <translation>gdoc</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>groups</masterLabel>
+            <translation>grupos</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>help</masterLabel>
+            <translation>ayuda</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>help-circled</masterLabel>
+            <translation>ayuda en círculo</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>home</masterLabel>
+            <translation>inicio</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>image</masterLabel>
+            <translation>imagen</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>info</masterLabel>
+            <translation>información</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>info-circled</masterLabel>
+            <translation>información en círculo</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>insert_tag_field</masterLabel>
+            <translation>insertar_campo_etiqueta</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>insert_template</masterLabel>
+            <translation>insertar_plantilla</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>italic</masterLabel>
+            <translation>cursiva</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>justify_text</masterLabel>
+            <translation>justificar_texto</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>layout</masterLabel>
+            <translation>formato</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>left</masterLabel>
+            <translation>izquierda</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>left-dir</masterLabel>
+            <translation>izquierda-dir</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>left_align_text</masterLabel>
+            <translation>alinear_texto_izquierda</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>level-down</masterLabel>
+            <translation>nivel-abajo</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>like</masterLabel>
+            <translation>me gusta</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>link</masterLabel>
+            <translation>vínculo</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>list</masterLabel>
+            <translation>lista</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>lock</masterLabel>
+            <translation>candado</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>magicwand</masterLabel>
+            <translation>varita mágica</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>move</masterLabel>
+            <translation>mover</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>new</masterLabel>
+            <translation>nuevo</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>new_window</masterLabel>
+            <translation>nueva_ventana</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>notebook</masterLabel>
+            <translation>bloc de notas</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>notification</masterLabel>
+            <translation>notificación</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ok</masterLabel>
+            <translation>aceptar</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>open</masterLabel>
+            <translation>abrir</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>open_folder</masterLabel>
+            <translation>abrir_carpeta</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>opened_folder</masterLabel>
+            <translation>carpeta_abierta</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>opportunity</masterLabel>
+            <translation>oportunidad</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>page</masterLabel>
+            <translation>página</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>paste</masterLabel>
+            <translation>pegar</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>pdf</masterLabel>
+            <translation>pdf</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>pencil</masterLabel>
+            <translation>lápiz</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>people</masterLabel>
+            <translation>personas</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>photo</masterLabel>
+            <translation>foto</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>plus</masterLabel>
+            <translation>más</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>post</masterLabel>
+            <translation>publicación</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>preview</masterLabel>
+            <translation>vista previa</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>pricebook</masterLabel>
+            <translation>lista de precios</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>priority</masterLabel>
+            <translation>prioridad</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>product</masterLabel>
+            <translation>producto</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>question_feed</masterLabel>
+            <translation>noticias_pregunta</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>quotes</masterLabel>
+            <translation>presupuestos</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>recent</masterLabel>
+            <translation>reciente</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>record</masterLabel>
+            <translation>registro</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>refresh</masterLabel>
+            <translation>actualizar</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>related_list</masterLabel>
+            <translation>lista_relacionada</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>remove_link</masterLabel>
+            <translation>eliminar_vínculo</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>replace</masterLabel>
+            <translation>reemplazar</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>reply</masterLabel>
+            <translation>responder</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>report</masterLabel>
+            <translation>reporte</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>richtextbulletedlist</masterLabel>
+            <translation>listaviñetastextoenriquecido</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>richtextindent</masterLabel>
+            <translation>sangríatextoenriquecido</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>richtextnumberedlist</masterLabel>
+            <translation>listanumeradatextoenriquecido</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>richtextoutdent</masterLabel>
+            <translation>anularsangríatextoenriquecido</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>right</masterLabel>
+            <translation>derecha</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>right-dir</masterLabel>
+            <translation>derecha-dir</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>right_align_text</masterLabel>
+            <translation>alinear_texto_derecha</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>rows</masterLabel>
+            <translation>filas</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>search</masterLabel>
+            <translation>buscar</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>separator</masterLabel>
+            <translation>separador</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>settings</masterLabel>
+            <translation>configuración</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>share</masterLabel>
+            <translation>compartir</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>side_list</masterLabel>
+            <translation>lista_lateral</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>snippet</masterLabel>
+            <translation>miniprograma</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>socialshare</masterLabel>
+            <translation>compartirsocial</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>sort</masterLabel>
+            <translation>ordenar</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>sort-name-down</masterLabel>
+            <translation>ordenar-nombre-abajo</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>sort-name-up</masterLabel>
+            <translation>ordenar-nombre-arriba</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>spinner</masterLabel>
+            <translation>control de giro</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>standard_objects</masterLabel>
+            <translation>objetos_estándar</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>star</masterLabel>
+            <translation>estrella</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>star-empty</masterLabel>
+            <translation>estrella-vacía</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>success</masterLabel>
+            <translation>operación correcta</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>summary</masterLabel>
+            <translation>resumen</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>summarydetail</masterLabel>
+            <translation>detalleresumen</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>table</masterLabel>
+            <translation>tabla</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>task</masterLabel>
+            <translation>tarea</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>th</masterLabel>
+            <translation>to</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>th-large</masterLabel>
+            <translation>to-grande</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>th-list</masterLabel>
+            <translation>to-lista</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>thanks</masterLabel>
+            <translation>gracias</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>tile_card_list</masterLabel>
+            <translation>lista_tarjetas_mosaico</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>to-end</masterLabel>
+            <translation>hasta-final</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>to-start</masterLabel>
+            <translation>hasta-inicio</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>today</masterLabel>
+            <translation>hoy</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>underline</masterLabel>
+            <translation>subrayado</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>undo</masterLabel>
+            <translation>deshacer</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>unlock</masterLabel>
+            <translation>desbloquear</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>up</masterLabel>
+            <translation>arriba</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>up-dir</masterLabel>
+            <translation>arriba-dir</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>upload</masterLabel>
+            <translation>cargar</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>user</masterLabel>
+            <translation>usuario</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>warning</masterLabel>
+            <translation>advertencia</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>zoomin</masterLabel>
+            <translation>acercar</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>zoomout</masterLabel>
+            <translation>alejar</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Etiqueta mostrada para esta acción en la interfaz de usuario.</help>
+        <label><!-- Label --></label>
+        <name>SBQQ__Label__c</name>
+        <picklistValues>
+            <masterLabel>Add Favorites</masterLabel>
+            <translation>Agregar Favoritos</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Add Group</masterLabel>
+            <translation>Agregar grupo</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Add Products</masterLabel>
+            <translation>Agregar productos</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Add Solution Group</masterLabel>
+            <translation>Agregar grupo de soluciones</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Add To Favorites</masterLabel>
+            <translation>Agregar a Favoritos</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Amend</masterLabel>
+            <translation>Corregir</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Amend Assets</masterLabel>
+            <translation>Corregir activos</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Amend Contract</masterLabel>
+            <translation>Corregir contrato</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Calculate</masterLabel>
+            <translation>Calcular</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cancel</masterLabel>
+            <translation>Cancelar</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Clone Group</masterLabel>
+            <translation>Duplicar grupo</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Clone Line</masterLabel>
+            <translation>Duplicar partida</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Clone with Related</masterLabel>
+            <translation>Duplicar con relacionada</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Create Order</masterLabel>
+            <translation>Crear pedido</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Delete Group</masterLabel>
+            <translation>Eliminar grupo</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Delete Line</masterLabel>
+            <translation>Eliminar partida</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Delete Lines</masterLabel>
+            <translation>Eliminar partidas</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Desegment Line</masterLabel>
+            <translation>Retirar segmentos de partida</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Edit Lines</masterLabel>
+            <translation>Modificar partidas</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Edit Order Products</masterLabel>
+            <translation>Modificar productos de pedido</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Email</masterLabel>
+            <translation>Email</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Generate Document</masterLabel>
+            <translation>Generar documento</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Import Lines</masterLabel>
+            <translation>Importar partidas</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Include Document</masterLabel>
+            <translation>Incluir documento</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Launch External</masterLabel>
+            <translation>Iniciar externa</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Modify Quote Terms</masterLabel>
+            <translation>Modificar condiciones de presupuesto</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Optional: All</masterLabel>
+            <translation>Opcional: Todos</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Optional: None</masterLabel>
+            <translation>Opcional: Ninguno</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Preview Document</masterLabel>
+            <translation>Vista previa de documento</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quick Save</masterLabel>
+            <translation>Guardado rápido</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reconfigure Line</masterLabel>
+            <translation>Volver a configurar partida</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Refresh Prices</masterLabel>
+            <translation>Actualizar precios</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Remove From Favorites</masterLabel>
+            <translation>Eliminar de Favoritos</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Renew Contracts</masterLabel>
+            <translation>Renovar contratos</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Renew Subscriptions</masterLabel>
+            <translation>Renovar suscripciones</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Resegment Line</masterLabel>
+            <translation>Volver a segmentar partida</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reset Discounts</masterLabel>
+            <translation>Restablecer descuentos</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Save</masterLabel>
+            <translation>Guardar</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ungroup</masterLabel>
+            <translation>Desagrupar</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Upgrade Assets</masterLabel>
+            <translation>Mejorar activos</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>View</masterLabel>
+            <translation>Ver</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>View Discount Schedule</masterLabel>
+            <translation>Ver programación de descuentos</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Ubicación de esta acción en la página.</help>
+        <label><!-- Location --></label>
+        <name>SBQQ__Location__c</name>
+        <picklistValues>
+            <masterLabel>Account Panel</masterLabel>
+            <translation>Panel de cuentas</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Configurator</masterLabel>
+            <translation>Configurador</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contract Panel</masterLabel>
+            <translation>Panel de contratos</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Group</masterLabel>
+            <translation>Grupo</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Line</masterLabel>
+            <translation>Partida</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Opportunity Panel</masterLabel>
+            <translation>Panel de oportunidades</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Order Panel</masterLabel>
+            <translation>Panel de pedidos</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quote</masterLabel>
+            <translation>Presupuesto</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quote Document Panel</masterLabel>
+            <translation>Panel de documentos de presupuestos</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quote Panel</masterLabel>
+            <translation>Panel de presupuestos</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quote/Group</masterLabel>
+            <translation>Presupuesto/Grupo</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Nombre de la página de esta acción personalizada.</help>
+        <label><!-- Page Handler Name --></label>
+        <name>SBQQ__PageHandlerName__c</name>
+    </fields>
+    <fields>
+        <help>La página a la que agregar la acción personalizada.</help>
+        <label><!-- Page --></label>
+        <name>SBQQ__Page__c</name>
+        <picklistValues>
+            <masterLabel>Account Detail</masterLabel>
+            <translation>Detalle de cuenta</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contract Detail</masterLabel>
+            <translation>Detalle de contrato</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Opportunity Detail</masterLabel>
+            <translation>Detalle de oportunidad</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Order Detail</masterLabel>
+            <translation>Detalle de pedido</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product Configurator</masterLabel>
+            <translation>Configurador de productos</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quote Detail</masterLabel>
+            <translation>Detalle de presupuesto</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quote Document Detail</masterLabel>
+            <translation>Detalle de documento de presupuesto</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quote Line Editor</masterLabel>
+            <translation>Editor de partidas de presupuesto</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Referencia a la acción personalizada principal en la que está agrupada esta acción.</help>
+        <label><!-- Parent Custom Action --></label>
+        <name>SBQQ__ParentCustomAction__c</name>
+        <relationshipLabel><!-- Custom Actions --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>URL a la que volver tras una ejecución correcta. No se aplica a todas las acciones.</help>
+        <label><!-- Return URL --></label>
+        <name>SBQQ__ReturnURL__c</name>
+    </fields>
+    <fields>
+        <help>Objeto de destino de esta acción.</help>
+        <label><!-- Target Object --></label>
+        <name>SBQQ__TargetObject__c</name>
+        <picklistValues>
+            <masterLabel>Asset</masterLabel>
+            <translation>Activo</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Favorite</masterLabel>
+            <translation>Favorito</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product</masterLabel>
+            <translation>Producto</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Subscription</masterLabel>
+            <translation>Suscripción</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Elemento de la interfaz de usuario que representa esta acción personalizada</help>
+        <label><!-- Type --></label>
+        <name>SBQQ__Type__c</name>
+        <picklistValues>
+            <masterLabel>Button</masterLabel>
+            <translation>Botón</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Menu</masterLabel>
+            <translation>Menú</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Separator</masterLabel>
+            <translation>Separador</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Método de navegación hasta la URL.</help>
+        <label><!-- URL Target --></label>
+        <name>SBQQ__URLTarget__c</name>
+        <picklistValues>
+            <masterLabel>Popup</masterLabel>
+            <translation>Cuadro emergente</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Replace Page</masterLabel>
+            <translation>Sustituir página</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Especifique la URL a la que navegar. Tiene que tener acceso a los campos Partida, Grupo y Presupuesto del registro dependientes de la ubicación seleccionada. Ejemplos: http://www.salesforce.com, http://www.susitio.com/{!Id}, o /{!SBQQ__Quote__c.Name}/{!SBQQ__SuVarPersonalizada__c}</help>
+        <label><!-- URL --></label>
+        <name>SBQQ__URL__c</name>
+    </fields>
+    <gender>Feminine</gender>
+    <layouts>
+        <layout>Custom Action Layout</layout>
+        <sections>
+            <label>Vínculos personalizados</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>Formato</label>
+            <section>Layout</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Nombre</nameFieldLabel>
+    <validationRules>
+        <errorMessage><!-- URL can&apos;t be empty for Custom Action &quot;Save and Navigate&quot; --></errorMessage>
+        <name>SBQQ__Non_empty_URL_for_Save_and_Navigate</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- URL target needs to be Replace Page for Custom Action &quot;Save and Navigate&quot; --></errorMessage>
+        <name>SBQQ__URLTarget_for_Save_and_Navigate</name>
+    </validationRules>
+</CustomObjectTranslation>

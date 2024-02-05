@@ -1,0 +1,3 @@
+<apex:page id="CreateOrderFromQuote" standardController="SBQQ__Quote__c" extensions="SBQQ.OrderController" action="{!onNew}">
+    <apex:pageMessages />
+</apex:page>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Instalar registro do processador</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Instalar registros dos processadores</value>
+    </caseValues>
+    <fields>
+        <help>Nome do método executado no Script de instalação</help>
+        <label><!-- Method Name --></label>
+        <name>SBQQ__MethodName__c</name>
+    </fields>
+    <fields>
+        <help>Carimbo de horário para executar o método</help>
+        <label><!-- Time --></label>
+        <name>SBQQ__Time__c</name>
+    </fields>
+    <fields>
+        <help>Versão do pacote no momento da execução do método</help>
+        <label><!-- Version --></label>
+        <name>SBQQ__Version__c</name>
+    </fields>
+    <gender>Masculine</gender>
+    <nameFieldLabel>Nome do log do processador de instalação</nameFieldLabel>
+</CustomObjectTranslation>

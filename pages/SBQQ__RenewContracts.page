@@ -1,0 +1,30 @@
+<apex:page standardController="Contract" extensions="SBQQ.RenewContractsController" showHeader="{!(!$Setup.SBQQ__GeneralSettings__c.SBQQ__GlobalHeaderPermUsed__c || !$Permission.SBQQ__HideGlobalHeader)}" recordSetVar="contracts" action="{!onInit}" title="{!$Label.sbqq__lbl_renew_contracts}">
+	<!-- Gorniak was here  -->
+	<apex:sectionHeader title="{!$Label.sbqq__lbl_renew_contracts}"/>
+	<apex:pageMessages id="showmsg"></apex:pageMessages>
+	<apex:form >
+	<apex:pageBlock title="{!$Label.sbqq__lbl_select_contract}">
+		<apex:pageBlockButtons >
+			<apex:commandButton value="{!$Label.sbqq__lbl_renew}" action="{!onRenew}"/>
+		</apex:pageBlockButtons>
+		<apex:inputHidden id="masterContractId" value="{!masterContractId}"/>
+		<apex:pageBlockTable var="contract" value="{!selectedContracts}">
+			<apex:column headerValue="Master">
+				<input type="radio" name="masterSelector" onclick="selectMaster('{!contract.Id}')"/>
+			</apex:column>
+			<apex:column headerValue="{!$ObjectType.Contract.fields.ContractNumber.label}" value="{!contract.ContractNumber}"/>
+			<apex:column headerValue="{!$ObjectType.Contract.fields.StartDate.label}" value="{!contract.StartDate}"/>
+			<apex:column headerValue="{!$ObjectType.Contract.fields.EndDate.label}" value="{!contract.EndDate}"/>
+		</apex:pageBlockTable>
+		
+		<script type="text/javascript">
+			function selectMaster(contractId) {
+				var field = document.getElementById('{!JSENCODE($Component.masterContractId)}');
+				if (field != null) {
+					field.value = contractId;
+				}
+			}
+		</script>
+	</apex:pageBlock>
+	</apex:form>
+</apex:page>

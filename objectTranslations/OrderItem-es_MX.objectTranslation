@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help>Indica si el producto de pedido está activado.</help>
+        <label><!-- Activated --></label>
+        <name>SBQQ__Activated__c</name>
+    </fields>
+    <fields>
+        <help>Activo creado a partir de este producto de pedido</help>
+        <label><!-- Asset --></label>
+        <name>SBQQ__Asset__c</name>
+        <relationshipLabel><!-- Order Products --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Define la frecuencia de la facturación.</help>
+        <label><!-- Billing Frequency --></label>
+        <name>SBQQ__BillingFrequency__c</name>
+    </fields>
+    <fields>
+        <help>El tipo de facturación que define el momento en el que se produce la facturación.</help>
+        <label><!-- Billing Type --></label>
+        <name>SBQQ__BillingType__c</name>
+    </fields>
+    <fields>
+        <help>El precio de bloque que se aplica a este producto de pedido en el momento de la creación del pedido.</help>
+        <label><!-- Block Price --></label>
+        <name>SBQQ__BlockPrice__c</name>
+        <relationshipLabel><!-- Order Products --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Indica si se incluyen las reservas.</help>
+        <label><!-- Bookings Indicator --></label>
+        <name>SBQQ__BookingsIndicator__c</name>
+    </fields>
+    <fields>
+        <help>Un campo que se utiliza internamente que dirige a la raíz de su principal de paquete.</help>
+        <label><!-- Bundle Root --></label>
+        <name>SBQQ__BundleRoot__c</name>
+        <relationshipLabel><!-- Order Products (Bundle Root) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>El tipo del cargo de productos.</help>
+        <label><!-- Charge Type --></label>
+        <name>SBQQ__ChargeType__c</name>
+    </fields>
+    <fields>
+        <help>La acción de contratos desde la que se obtiene el resultado de este producto de pedido.</help>
+        <label><!-- Contract Action --></label>
+        <name>SBQQ__ContractAction__c</name>
+    </fields>
+    <fields>
+        <help>El contrato de la suscripción que se crea a partir de este producto de pedido.</help>
+        <label><!-- Contract --></label>
+        <name>SBQQ__Contract__c</name>
+        <relationshipLabel><!-- Order Products --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Indica si el producto de pedido está contratado.</help>
+        <label><!-- Contracted --></label>
+        <name>SBQQ__Contracted__c</name>
+    </fields>
+    <fields>
+        <help>Controla el comportamiento de contratación de un producto de pedido.</help>
+        <label><!-- Contracting Method --></label>
+        <name>SBQQ__ContractingMethod__c</name>
+        <picklistValues>
+            <masterLabel>Contract Separately</masterLabel>
+            <translation>Contratar por separado</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Do Not Contract</masterLabel>
+            <translation>No contratar</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Inherit</masterLabel>
+            <translation>Heredar</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Longitud del plazo de suscripción, que solo se aplica si el producto es una suscripción. Se copia desde el Plazo de suscripción del producto relacionado cuando la partida se genera por primera vez.</help>
+        <label><!-- Default Subscription Term --></label>
+        <name>SBQQ__DefaultSubscriptionTerm__c</name>
+    </fields>
+    <fields>
+        <help>Para productos con segmentos múltiples, es el tipo de la dimensión de precios (por ej. &quot;AÑO&quot;, &quot;MES&quot;, &quot;TRIMESTRE&quot;) del artículo del pedido.</help>
+        <label><!-- Segment Type --></label>
+        <name>SBQQ__DimensionType__c</name>
+    </fields>
+    <fields>
+        <help>La programación de descuentos aplicada a este producto de pedido.</help>
+        <label><!-- Discount Schedule --></label>
+        <name>SBQQ__DiscountSchedule__c</name>
+        <relationshipLabel><!-- Order Products --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Importe del precio total del producto de pedido.</help>
+        <label><!-- Order Product Bookings --></label>
+        <name>SBQQ__OrderProductBookings__c</name>
+    </fields>
+    <fields>
+        <help>La cantidad real del producto agregado al pedido.</help>
+        <label><!-- Ordered Quantity --></label>
+        <name>SBQQ__OrderedQuantity__c</name>
+    </fields>
+    <fields>
+        <help>Hace referencia a la dimensión de precios aplicada a este producto de pedido.</help>
+        <label><!-- Price Dimension --></label>
+        <name>SBQQ__PriceDimension__c</name>
+        <relationshipLabel><!-- Order Products --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>La programación de precios aplicada a este producto de pedido.</help>
+        <label><!-- Price Schedule --></label>
+        <name>SBQQ__PriceSchedule__c</name>
+        <relationshipLabel><!-- Order Products --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Índice calculado empleado para computar el precio prorrateado.</help>
+        <label><!-- Prorate Multiplier --></label>
+        <name>SBQQ__ProrateMultiplier__c</name>
+    </fields>
+    <fields>
+        <help>La partida de presupuesto desde la que se crea este producto de pedido.</help>
+        <label><!-- Quote Line --></label>
+        <name>SBQQ__QuoteLine__c</name>
+        <relationshipLabel><!-- Order Products --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Precio unitario de lista para el producto presupuestado por esta partida. El precio de lista se origina desde la lista de precios.</help>
+        <label><!-- Quoted List Price --></label>
+        <name>SBQQ__QuotedListPrice__c</name>
+    </fields>
+    <fields>
+        <help>La cantidad presupuestada.</help>
+        <label><!-- Quoted Quantity --></label>
+        <name>SBQQ__QuotedQuantity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Required By --></label>
+        <name>SBQQ__RequiredBy__c</name>
+        <relationshipLabel><!-- Order Products --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Hace referencia al producto de pedido que este producto de pedido revisa.</help>
+        <label><!-- Revised Order Product --></label>
+        <name>SBQQ__RevisedOrderProduct__c</name>
+        <relationshipLabel><!-- Order Products (Revised Order Product) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Para productos con múltiples segmentos, el índice que representa la posición del producto de pedido en la tabla de segmentos.</help>
+        <label><!-- Segment Index --></label>
+        <name>SBQQ__SegmentIndex__c</name>
+    </fields>
+    <fields>
+        <help>Para productos con segmentos múltiples, esta es una clave compartida empleada para agrupar entre sí partidas de presupuesto con dimensiones múltiples.</help>
+        <label><!-- Segment Key --></label>
+        <name>SBQQ__SegmentKey__c</name>
+    </fields>
+    <fields>
+        <label><!-- Shipping Account --></label>
+        <name>SBQQ__ShippingAccount__c</name>
+        <relationshipLabel><!-- Order Products --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Indica el estado actual del producto de pedido. Toma como valor predeterminado Borrador cuando se crea un pedido.</help>
+        <label><!-- Activation Status --></label>
+        <name>SBQQ__Status__c</name>
+    </fields>
+    <fields>
+        <help>Indica el método para calcular el precio de la suscripción. Si está en blanco, la partida no es un producto de suscripción.</help>
+        <label><!-- Subscription Pricing --></label>
+        <name>SBQQ__SubscriptionPricing__c</name>
+    </fields>
+    <fields>
+        <label><!-- Subscription Term --></label>
+        <name>SBQQ__SubscriptionTerm__c</name>
+    </fields>
+    <fields>
+        <help>Suscripción creada a partir de este producto de pedido</help>
+        <label><!-- Subscription --></label>
+        <name>SBQQ__Subscription__c</name>
+        <relationshipLabel><!-- Order Products --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Importe estimado de los impuestos</help>
+        <label><!-- Estimated Tax --></label>
+        <name>SBQQ__TaxAmount__c</name>
+    </fields>
+    <fields>
+        <help>Especifica el código impositivo para las reglas de impuestos.</help>
+        <label><!-- Tax code --></label>
+        <name>SBQQ__TaxCode__c</name>
+    </fields>
+    <fields>
+        <help>La programación de descuentos por plazo aplicada a este producto de pedido.</help>
+        <label><!-- Term Discount Schedule --></label>
+        <name>SBQQ__TermDiscountSchedule__c</name>
+        <relationshipLabel><!-- Order Products (Term Discount Schedule) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Fecha en la que la suscripción relacionada de este producto de pedido se terminó</help>
+        <label><!-- Terminated Date --></label>
+        <name>SBQQ__TerminatedDate__c</name>
+    </fields>
+    <fields>
+        <help>El precio neto del plazo completo para la partida individual.</help>
+        <label><!-- Full-Term Net Unit Price --></label>
+        <name>SBQQ__UnproratedNetPrice__c</name>
+    </fields>
+    <fields>
+        <help>La suscripción que está mejorando esta partida de presupuesto. Cuando el presupuesto se contrata, esta suscripción tendrá relleno su campo Fecha de terminación.</help>
+        <label><!-- Upgraded Subscription --></label>
+        <name>SBQQ__UpgradedSubscription__c</name>
+        <relationshipLabel><!-- Upgraded Order Products --></relationshipLabel>
+    </fields>
+    <layouts>
+        <layout>CPQ Order Product Layout</layout>
+        <sections>
+            <label>Información de facturación</label>
+            <section>Billing Information</section>
+        </sections>
+        <sections>
+            <label>Información de contratación</label>
+            <section>Contracting Information</section>
+        </sections>
+        <sections>
+            <label>Información de los precios</label>
+            <section>Price Information</section>
+        </sections>
+        <sections>
+            <label>Información de presupuesto y suscripción</label>
+            <section>Quote and Subscription Information</section>
+        </sections>
+    </layouts>
+    <validationRules>
+        <errorMessage><!-- Can’t edit the bookings status on an activated order product. --></errorMessage>
+        <name>SBQQ__CannotChangeBookingIndicatorOnActivation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- When Charge Type is Recurring, a Billing Type must be selected. --></errorMessage>
+        <name>SBQQ__RecurringChargeTypeMustHaveBillingType</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- When Charge Type is &apos;One-Time&apos;, a Billing Frequency value cannot be selected. --></errorMessage>
+        <name>SBQQ__Validate_billing_frequency</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- When Charge Type is One-Time or Usage, a Billing Type value cannot be selected. --></errorMessage>
+        <name>SBQQ__Validate_billing_type</name>
+    </validationRules>
+</CustomObjectTranslation>

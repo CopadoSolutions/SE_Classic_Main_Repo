@@ -130,6 +130,11 @@
     <enableFeeds>false</enableFeeds>
     <externalSharingModel>Private</externalSharingModel>
     <fields>
+        <fullName>AccountId</fullName>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
         <fullName>DocumentTypeId</fullName>
         <trackHistory>false</trackHistory>
         <type>Lookup</type>

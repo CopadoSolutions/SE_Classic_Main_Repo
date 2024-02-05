@@ -1,0 +1,848 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Ligne de devis</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Lignes de devis</value>
+    </caseValues>
+    <fieldSets>
+        <label><!-- Line Editor --></label>
+        <name>SBQQ__LineEditor</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Non-Current Quote Line Locked Fields --></label>
+        <name>SBQQ__NonCurrentQuoteLineLockedFields</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Segmented Line Editor --></label>
+        <name>SBQQ__SegmentedLineEditor</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Segmented Line Editor Summary --></label>
+        <name>SBQQ__SegmentedLineEditorSummary</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Standard Line Item Drawer --></label>
+        <name>SBQQ__StandardLineItemDrawer</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Summary Fields --></label>
+        <name>SBQQ__SummaryFields</name>
+    </fieldSets>
+    <fields>
+        <help>Remise client supplémentaire étendue dans cet élément de ligne sous la forme d&apos;un montant absolu.</help>
+        <label><!-- Additional Disc. (Amt) --></label>
+        <name>SBQQ__AdditionalDiscountAmount__c</name>
+    </fields>
+    <fields>
+        <help>Total des remises supplémentaires étendues à cet élément de ligne. Une remise supplémentaire est définie en tant que remise étendue en plus de la remise sur volume ou des prix négociés.</help>
+        <label><!-- Additional Disc. --></label>
+        <name>SBQQ__AdditionalDiscount__c</name>
+    </fields>
+    <fields>
+        <help>Quantité supplémentaire de ce produit qui contribue aux calculs de remise sur volume</help>
+        <label><!-- Additional Quantity --></label>
+        <name>SBQQ__AdditionalQuantity__c</name>
+    </fields>
+    <fields>
+        <help>Indique si la ressource représentée par cette ligne peut être remboursée.</help>
+        <label><!-- Allow Asset Refunds --></label>
+        <name>SBQQ__AllowAssetRefund__c</name>
+    </fields>
+    <fields>
+        <help>Si les produits sont vendus par lots, stocke la quantité de chaque lot, appliquée par défaut à partir du produit.</help>
+        <label><!-- Batch Quantity --></label>
+        <name>SBQQ__BatchQuantity__c</name>
+    </fields>
+    <fields>
+        <help>Définit la fréquence de facturation.</help>
+        <label><!-- Billing Frequency --></label>
+        <name>SBQQ__BillingFrequency__c</name>
+    </fields>
+    <fields>
+        <help>Type de facturation qui définit à quel moment la facturation doit avoir lieu. La facturation anticipée vous permet de facturer vos clients avant de livrer les produits ou services commandés ; la facturation différée vous permet de facturer vos clients après avoir livré les produits ou services.</help>
+        <label><!-- Billing Type --></label>
+        <name>SBQQ__BillingType__c</name>
+    </fields>
+    <fields>
+        <help>Attribuez un prix fixe à un produit en fonction de la quantité et de la plage de quantités. Il remplace le calcul automatique quantité x prix unitaire.</help>
+        <label><!-- Block Price --></label>
+        <name>SBQQ__BlockPrice__c</name>
+        <relationshipLabel><!-- Quote Lines --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Indique si cet élément de ligne représente un package, ce qui signifie qu&apos;il inclut d&apos;autres éléments de ligne dans ce devis.</help>
+        <label><!-- Package --></label>
+        <name>SBQQ__Bundle__c</name>
+    </fields>
+    <fields>
+        <help>Pour les éléments qui ont des quantités calculées, ce champ contient la quantité d&apos;origine saisie par l&apos;utilisateur.</help>
+        <label><!-- Original Quantity --></label>
+        <name>SBQQ__BundledQuantity__c</name>
+    </fields>
+    <fields>
+        <help>Indique que le produit de cet élément de ligne est groupé (inclus) à un autre produit de ce devis. Les éléments de ligne d&apos;offres groupées ont un prix nul et n&apos;autorisent pas la modification du prix ou de la quantité.</help>
+        <label><!-- Bundled --></label>
+        <name>SBQQ__Bundled__c</name>
+    </fields>
+    <fields>
+        <help>Indique que cette ligne est une option automatiquement sélectionnée pour une offre groupée de mise à niveau.</help>
+        <label><!-- Carry-Over Line --></label>
+        <name>SBQQ__CarryoverLine__c</name>
+    </fields>
+    <fields>
+        <help>Type de frais sur les produits. Il s&apos;agit d&apos;un champs du système provenant du produit associé.</help>
+        <label><!-- Charge Type --></label>
+        <name>SBQQ__ChargeType__c</name>
+    </fields>
+    <fields>
+        <help>Coût total des composants de ce package.</help>
+        <label><!-- Component Cost --></label>
+        <name>SBQQ__ComponentCost__c</name>
+    </fields>
+    <fields>
+        <help>Corrige la remise supplémentaire pour ce composant dans la remise du package parent.</help>
+        <label><!-- Component Discounted By Package --></label>
+        <name>SBQQ__ComponentDiscountedByPackage__c</name>
+    </fields>
+    <fields>
+        <help>Total catalogue des composants dans cette configuration. Ce champ est renseigné uniquement si l&apos;élément de ligne référence un produit configurable.</help>
+        <label><!-- Component List Total --></label>
+        <name>SBQQ__ComponentListTotal__c</name>
+    </fields>
+    <fields>
+        <help>Étendue Pourcentage du total définie au niveau du composant. Ce champ remplace l’Étendue Pourcentage du total copiée dans l&apos;option produit.</help>
+        <label><!-- Component Percent of Total Scope --></label>
+        <name>SBQQ__ComponentSubscriptionScope__c</name>
+        <picklistValues>
+            <masterLabel>Both</masterLabel>
+            <translation>Les deux</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Components</masterLabel>
+            <translation>Composants</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Package</masterLabel>
+            <translation>Package</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Total net des composants dans cette configuration. Ce champ est renseigné uniquement si l&apos;élément de ligne référence un produit configurable.</help>
+        <label><!-- Component Net Total --></label>
+        <name>SBQQ__ComponentTotal__c</name>
+    </fields>
+    <fields>
+        <help>Corrige l&apos;augmentation de ce composant avec l&apos;augmentation du package parent. L&apos;augmentation s&apos;applique uniquement à des produits à segments multiples.</help>
+        <label><!-- Component Uplifted By Package --></label>
+        <name>SBQQ__ComponentUpliftedByPackage__c</name>
+    </fields>
+    <fields>
+        <help>Indique la visibilité de l&apos;élément de ligne du composant.</help>
+        <label><!-- Component Visibility --></label>
+        <name>SBQQ__ComponentVisibility__c</name>
+    </fields>
+    <fields>
+        <help>Taux de remise calculé en fonction de la quantité (historique).</help>
+        <label><!-- Compound Discount (%) --></label>
+        <name>SBQQ__CompoundDiscountRate__c</name>
+    </fields>
+    <fields>
+        <help>Indicateur qui signifie que cette ligne de devis nécessite une configuration. Peut être utilisé par un code personnalisé pour demander la reconfiguration de ce produit.</help>
+        <label><!-- Configuration Required --></label>
+        <name>SBQQ__ConfigurationRequired__c</name>
+    </fields>
+    <fields>
+        <help>Prix contracté si le produit a une tarification négociée pour le compte de l&apos;opportunité. Les prix contractés sont disponibles dans le compte et peuvent être appliqués à n&apos;importe quel produit de n&apos;importe quel catalogue de prix.</help>
+        <label><!-- Contracted Price --></label>
+        <name>SBQQ__ContractedPrice__c</name>
+        <relationshipLabel><!-- Quote Lines --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Spécifie si le coût peut être modifié dans cet élément de ligne.</help>
+        <label><!-- Cost Editable --></label>
+        <name>SBQQ__CostEditable__c</name>
+    </fields>
+    <fields>
+        <help>Enregistrement du coût de cet élément de ligne.</help>
+        <label><!-- Cost --></label>
+        <name>SBQQ__Cost__c</name>
+        <relationshipLabel><!-- Quote Lines --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Le prix unitaire client du produit de cet élément de ligne dans le devis. Correspond au prix unitaire net sans aucune remise partenaire.</help>
+        <label><!-- Customer Unit Price --></label>
+        <name>SBQQ__CustomerPrice__c</name>
+    </fields>
+    <fields>
+        <help>Le prix total client de cet élément de ligne de devis. Correspond au prix total net sans aucune remise partenaire.</help>
+        <label><!-- Customer Total --></label>
+        <name>SBQQ__CustomerTotal__c</name>
+    </fields>
+    <fields>
+        <help>La longueur de la durée d&apos;abonnement, qui s&apos;applique uniquement si le produit est un abonnement. Elle est copiée depuis la Durée d&apos;abonnement du produit associé lors de la génération de l&apos;élément de ligne.</help>
+        <label><!-- Default Subscription Term --></label>
+        <name>SBQQ__DefaultSubscriptionTerm__c</name>
+    </fields>
+    <fields>
+        <help>Description de cet élément de ligne.</help>
+        <label><!-- Description --></label>
+        <name>SBQQ__Description__c</name>
+    </fields>
+    <fields>
+        <help>Dimensions avec un produit MDQ dont chaque segment doit être tarifé indépendamment. Chaque produit peut contenir plusieurs dimensions de prix. Les dimensions de prix annuelles sont traitées en tant qu&apos;abonnements.</help>
+        <label><!-- Price Dimension --></label>
+        <name>SBQQ__Dimension__c</name>
+        <relationshipLabel><!-- Quote Lines --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Type de barème de remise. Copié depuis le champ Type du barème de remise associé.</help>
+        <label><!-- Discount Schedule Type --></label>
+        <name>SBQQ__DiscountScheduleType__c</name>
+        <picklistValues>
+            <masterLabel>Range</masterLabel>
+            <translation>Plage</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Slab</masterLabel>
+            <translation>Par palier</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Spécifiez les remises en pourcentage ou en montant à déduire du prix du produit en utilisant la quantité ou la durée achetée. Définissez des plages de quantité/de durée sur des niveaux avec différents pourcentages de remise. La remise s&apos;applique au prix catalogue et le total qui en résulte est stocké dans le prix normal.</help>
+        <label><!-- Discount Schedule --></label>
+        <name>SBQQ__DiscountSchedule__c</name>
+        <relationshipLabel><!-- Quote Lines --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Niveau de remise utilisé par cet élément de ligne. Ce champ est renseigné uniquement si une remise sur volume a été appliquée et si le barème de remise est de type « Plage ».</help>
+        <label><!-- Discount Tier --></label>
+        <name>SBQQ__DiscountTier__c</name>
+        <relationshipLabel><!-- Quote Lines (Volume Discounted) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Remise client supplémentaire étendue dans cet élément de ligne exprimée en pourcentage.</help>
+        <label><!-- Additional Disc. (%) --></label>
+        <name>SBQQ__Discount__c</name>
+    </fields>
+    <fields>
+        <help>Correspond à une remise appliquée au prix partenaire et reflétée dans le prix net.</help>
+        <label><!-- Distributor Discount --></label>
+        <name>SBQQ__DistributorDiscount__c</name>
+    </fields>
+    <fields>
+        <help>Identifier la fonctionnalité et l&apos;option dynamique de cette ligne.</help>
+        <label><!-- Dynamic Option ID --></label>
+        <name>SBQQ__DynamicOptionId__c</name>
+    </fields>
+    <fields>
+        <help>Date de fin effective de cet abonnement.</help>
+        <label><!-- Effective End Date --></label>
+        <name>SBQQ__EffectiveEndDate__c</name>
+    </fields>
+    <fields>
+        <help>Quantité effective utilisée dans le calcul des totaux. Identique à la quantité, sauf si le produit a un prix par bloc, est couvert par un barème de remise « par palier » ou est un abonnement existant.</help>
+        <label><!-- Effective Quantity --></label>
+        <name>SBQQ__EffectiveQuantity__c</name>
+    </fields>
+    <fields>
+        <help>Date de début effective de cet abonnement.</help>
+        <label><!-- Effective Start Date --></label>
+        <name>SBQQ__EffectiveStartDate__c</name>
+    </fields>
+    <fields>
+        <help>Date à laquelle le service représenté par cet élément de ligne se termine (s&apos;applique uniquement sur le produit est un abonnement).</help>
+        <label><!-- End Date --></label>
+        <name>SBQQ__EndDate__c</name>
+    </fields>
+    <fields>
+        <help>Indique que le client détient déjà ce produit. Utilisé généralement pour les produits contenant des options lors de la génération d&apos;un devis complémentaire. Le produit figure sur le devis uniquement pour piloter le configurateur.</help>
+        <label><!-- Existing --></label>
+        <name>SBQQ__Existing__c</name>
+    </fields>
+    <fields>
+        <help>Favori auquel cette ligne de devis appartient.</help>
+        <label><!-- Favorite --></label>
+        <name>SBQQ__Favorite__c</name>
+        <relationshipLabel><!-- Quote Lines --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Génère un prix contracté basé sur la ligne de devis ajustée si indiqué.</help>
+        <label><!-- Generate Contracted Price --></label>
+        <name>SBQQ__GenerateContractedPrice__c</name>
+        <picklistValues>
+            <masterLabel>Discount Schedule</masterLabel>
+            <translation>Barème de remise</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Do Not Generate</masterLabel>
+            <translation>Ne pas générer</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Price</masterLabel>
+            <translation>Prix</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Montant de profit brut sur cet élément de ligne.</help>
+        <label><!-- Gross Profit --></label>
+        <name>SBQQ__GrossProfit__c</name>
+    </fields>
+    <fields>
+        <help>Groupe auquel cette ligne appartient, le cas échéant.</help>
+        <label><!-- Group --></label>
+        <name>SBQQ__Group__c</name>
+        <relationshipLabel><!-- Quote Lines --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Indique si cet élément de ligne est masqué dans les documents PDF générés.</help>
+        <label><!-- Hidden --></label>
+        <name>SBQQ__Hidden__c</name>
+    </fields>
+    <fields>
+        <help>Indicateur défini en interne par une logique d&apos;application lorsqu&apos;une ligne est enregistrée dans une base de données incomplète. Cela peut se produire lors de l&apos;évaluation de règles de prix. Testez ce champ dans des règles d&apos;évaluation afin d&apos;éviter leur déclenchement prématuré. Ne pas ajouter à une présentation de page ni mettre à jour.</help>
+        <label><!-- Incomplete --></label>
+        <name>SBQQ__Incomplete__c</name>
+    </fields>
+    <fields>
+        <help>Prix unitaire catalogue du produit généré dans le devis par cet élément de ligne. Le prix catalogue provient du catalogue de prix.</help>
+        <label><!-- List Unit Price --></label>
+        <name>SBQQ__ListPrice__c</name>
+    </fields>
+    <fields>
+        <help>Prix total catalogue de cet élément de ligne de devis.</help>
+        <label><!-- List Total --></label>
+        <name>SBQQ__ListTotal__c</name>
+    </fields>
+    <fields>
+        <help>Montant de marge sur cet élément de ligne.</help>
+        <label><!-- Markup (Amt) --></label>
+        <name>SBQQ__MarkupAmount__c</name>
+    </fields>
+    <fields>
+        <help>Marge sur cet élément de ligne exprimée en pourcentage.</help>
+        <label><!-- Markup (%) --></label>
+        <name>SBQQ__MarkupRate__c</name>
+    </fields>
+    <fields>
+        <help>Montant de marge sur cet élément. Cette valeur est automatiquement calculée en appliquant le taux de marge ou un montant absolu au coût du produit.</help>
+        <label><!-- Markup --></label>
+        <name>SBQQ__Markup__c</name>
+    </fields>
+    <fields>
+        <help>Prix unitaire catalogue maximum de ce produit. Utilisé pour appliquer un prix plafond aux produits avec des prix calculés dynamiquement.</help>
+        <label><!-- Maximum List Unit Price --></label>
+        <name>SBQQ__MaximumPrice__c</name>
+    </fields>
+    <fields>
+        <help>Prix unitaire catalogue minimum de ce produit. Utilisé pour appliquer un prix plancher aux produits avec des prix calculés dynamiquement.</help>
+        <label><!-- Minimum List Unit Price --></label>
+        <name>SBQQ__MinimumPrice__c</name>
+    </fields>
+    <fields>
+        <help>Le prix unitaire net du produit de cet élément de ligne dans le devis.</help>
+        <label><!-- Net Unit Price --></label>
+        <name>SBQQ__NetPrice__c</name>
+    </fields>
+    <fields>
+        <help>Prix total net de cet élément de ligne de devis.</help>
+        <label><!-- Net Total --></label>
+        <name>SBQQ__NetTotal__c</name>
+    </fields>
+    <fields>
+        <help>Marque cet élément de ligne comme sans remise possible.</help>
+        <label><!-- Non Discountable --></label>
+        <name>SBQQ__NonDiscountable__c</name>
+    </fields>
+    <fields>
+        <help>Sélectionnez la case pour rendre cet élément de ligne comme sans remise possible pour les partenaires.</help>
+        <label><!-- Non Partner Discountable --></label>
+        <name>SBQQ__NonPartnerDiscountable__c</name>
+    </fields>
+    <fields>
+        <help>Numéro qui indique la position de la ligne dans son groupe ou son devis.</help>
+        <label><!-- Number --></label>
+        <name>SBQQ__Number__c</name>
+    </fields>
+    <fields>
+        <help>Remise étendue à ce produit, car il fait partie d&apos;un package.</help>
+        <label><!-- Option Discount (Amt) --></label>
+        <name>SBQQ__OptionDiscountAmount__c</name>
+    </fields>
+    <fields>
+        <help>Si cette ligne correspond à une unité de gestion de stock facultative, ce champ capture toute remise accordée au package et étendue à l&apos;option.</help>
+        <label><!-- Option Discount (%) --></label>
+        <name>SBQQ__OptionDiscount__c</name>
+    </fields>
+    <fields>
+        <help>Indique le niveau d&apos;imbrication de cette option (s&apos;applique uniquement aux lignes générées à partir d&apos;options).</help>
+        <label><!-- Option Level --></label>
+        <name>SBQQ__OptionLevel__c</name>
+    </fields>
+    <fields>
+        <help>Indique le type d&apos;option, copié depuis l&apos;Option produit associée. Détermine le calcul de la quantité.</help>
+        <label><!-- Option Type --></label>
+        <name>SBQQ__OptionType__c</name>
+        <picklistValues>
+            <masterLabel>Accessory</masterLabel>
+            <translation>Accessoire</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Component</masterLabel>
+            <translation>Composant</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Related Product</masterLabel>
+            <translation>Produit associé</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Marque cette ligne comme facultative. Les produits facultatifs ne contribuent pas au total du devis et ne sont pas transférés vers l&apos;opportunité.</help>
+        <label><!-- Optional --></label>
+        <name>SBQQ__Optional__c</name>
+    </fields>
+    <fields>
+        <help>Le prix unitaire d&apos;origine du produit généré par cet élément de ligne. Ce prix d&apos;origine provient du catalogue de prix.</help>
+        <label><!-- Original Price --></label>
+        <name>SBQQ__OriginalPrice__c</name>
+    </fields>
+    <fields>
+        <help>L’ID de la ligne du devis d’origine à partir de laquelle cette ligne a été dérivée.</help>
+        <label><!-- Original Quote Line Id --></label>
+        <name>SBQQ__OriginalQuoteLineId__c</name>
+    </fields>
+    <fields>
+        <help>Coût d&apos;une unité de produit généré dans le devis par cet élément de ligne si les barèmes de coût n&apos;ont pas été appliqués.</help>
+        <label><!-- Original Unit Cost --></label>
+        <name>SBQQ__OriginalUnitCost__c</name>
+    </fields>
+    <fields>
+        <help>Coût total de ce package, qui inclut le coût des composants.</help>
+        <label><!-- Package Cost --></label>
+        <name>SBQQ__PackageCost__c</name>
+    </fields>
+    <fields>
+        <help>Prix catalogue total de ce package, qui inclut les composants.</help>
+        <label><!-- Package List Total --></label>
+        <name>SBQQ__PackageListTotal__c</name>
+    </fields>
+    <fields>
+        <help>Liste de codes produits générée automatiquement pour chaque composant de ce package.</help>
+        <label><!-- Package Product Code --></label>
+        <name>SBQQ__PackageProductCode__c</name>
+    </fields>
+    <fields>
+        <help>Descriptions produit dynamiques générées à partir des composants de ce package.</help>
+        <label><!-- Package Product Description --></label>
+        <name>SBQQ__PackageProductDescription__c</name>
+    </fields>
+    <fields>
+        <help>Prix total de ce package, qui inclut les composants.</help>
+        <label><!-- Package Total --></label>
+        <name>SBQQ__PackageTotal__c</name>
+    </fields>
+    <fields>
+        <help>Si votre organisation vend via un canal/VARI, une remise partenaire peut être accordée à un devis ou à un élément de ligne de produit individuelle. Les remises partenaires sont appliquées après toutes les remises automatiques et discrétionnaires.</help>
+        <label><!-- Partner Discount --></label>
+        <name>SBQQ__PartnerDiscount__c</name>
+    </fields>
+    <fields>
+        <help>Prix unitaire du partenaire, après l&apos;application de la remise partenaire, mais avant la remise distributeur.</help>
+        <label><!-- Partner Unit Price --></label>
+        <name>SBQQ__PartnerPrice__c</name>
+    </fields>
+    <fields>
+        <help>Total de la remise partenaire.</help>
+        <label><!-- Partner Total --></label>
+        <name>SBQQ__PartnerTotal__c</name>
+    </fields>
+    <fields>
+        <help>Lorsqu&apos;elle est définie, cette valeur remplace le prix normal du segment précédent en calculant son augmentation.</help>
+        <label><!-- Previous Segment Regular Price --></label>
+        <name>SBQQ__PreviousSegmentPrice__c</name>
+    </fields>
+    <fields>
+        <help>Lorsqu&apos;elle est définie, cette valeur remplace le montant d&apos;augmentation du segment précédent en calculant son augmentation.</help>
+        <label><!-- Previous Segment Uplift --></label>
+        <name>SBQQ__PreviousSegmentUplift__c</name>
+    </fields>
+    <fields>
+        <help>Indicateur qui montre si le prix de cet élément de ligne est modifiable.</help>
+        <label><!-- Price Editable --></label>
+        <name>SBQQ__PriceEditable__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pricebook Entry Id --></label>
+        <name>SBQQ__PricebookEntryId__c</name>
+    </fields>
+    <fields>
+        <help>Indicateur qui montre si la méthode de tarification de cet élément de ligne est modifiable.</help>
+        <label><!-- Pricing Method Editable --></label>
+        <name>SBQQ__PricingMethodEditable__c</name>
+    </fields>
+    <fields>
+        <help>Indique comment le prix de cet élément de ligne est calculé : « Catalogue » = prix catalogue moins la remise. « Coût » = ajout de la marge au coût.</help>
+        <label><!-- Pricing Method --></label>
+        <name>SBQQ__PricingMethod__c</name>
+        <picklistValues>
+            <masterLabel>Block</masterLabel>
+            <translation>Bloc</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cost</masterLabel>
+            <translation>Coût</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Custom</masterLabel>
+            <translation>Personnalisé</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>List</masterLabel>
+            <translation>Catalogue</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Percent Of Total</masterLabel>
+            <translation>Pourcentage du total</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Quantité combinée de ce produit avec les achats précédents.</help>
+        <label><!-- Prior Quantity --></label>
+        <name>SBQQ__PriorQuantity__c</name>
+    </fields>
+    <fields>
+        <help>Code du produit référencé par cette ligne.</help>
+        <label><!-- Product Code --></label>
+        <name>SBQQ__ProductCode__c</name>
+    </fields>
+    <fields>
+        <help>Méthode de classement/regroupement/organisation dans Salesforce (selon qu&apos;il s&apos;agit d&apos;une famille de produits nouvelle ou existante). De plus, ce champ peut être envoyé lors de la sélection des produits pour filtrer le produit ou l&apos;unité de gestion de stock produit approprié.</help>
+        <label><!-- Product Family --></label>
+        <name>SBQQ__ProductFamily__c</name>
+    </fields>
+    <fields>
+        <help>Nom du produit référencé par cet élément de ligne.</help>
+        <label><!-- Product Name --></label>
+        <name>SBQQ__ProductName__c</name>
+    </fields>
+    <fields>
+        <help>Option produit qui a généré cette ligne (le cas échéant).</help>
+        <label><!-- Product Option --></label>
+        <name>SBQQ__ProductOption__c</name>
+        <relationshipLabel><!-- Quote Lines --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Produit généré dans le devis par cet élément de ligne.</help>
+        <label><!-- Product --></label>
+        <name>SBQQ__Product__c</name>
+        <relationshipLabel><!-- Quote Lines --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Ratio utilisé pour calculer le prix au prorata.</help>
+        <label><!-- Prorate Multiplier --></label>
+        <name>SBQQ__ProrateMultiplier__c</name>
+    </fields>
+    <fields>
+        <help>Prix unitaire catalogue au prorata.</help>
+        <label><!-- Prorated List Price --></label>
+        <name>SBQQ__ProratedListPrice__c</name>
+    </fields>
+    <fields>
+        <help>Prix au prorata du produit généré dans le devis par cet élément de ligne. Ce prix diffère du prix spécial uniquement si le produit est un abonnement et si l&apos;élément de ligne est calculé au prorata.</help>
+        <label><!-- Prorated Unit Price --></label>
+        <name>SBQQ__ProratedPrice__c</name>
+    </fields>
+    <fields>
+        <help>Quantité calculée dans le devis.</help>
+        <label><!-- Quantity --></label>
+        <name>SBQQ__Quantity__c</name>
+    </fields>
+    <fields>
+        <help>Devis auquel cet élément de ligne appartient.</help>
+        <label><!-- Quote --></label>
+        <name>SBQQ__Quote__c</name>
+        <relationshipLabel><!-- Quote Lines --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Prix unitaire avant la remise supplémentaire.</help>
+        <label><!-- Regular Unit Price --></label>
+        <name>SBQQ__RegularPrice__c</name>
+    </fields>
+    <fields>
+        <help>Prix unitaire avant la remise supplémentaire multipliée par la quantité.</help>
+        <label><!-- Regular Total --></label>
+        <name>SBQQ__RegularTotal__c</name>
+    </fields>
+    <fields>
+        <help>Indique que cet élément de ligne représente un produit renouvelé. Ce champ ne doit pas être modifié.</help>
+        <label><!-- Renewal --></label>
+        <name>SBQQ__Renewal__c</name>
+    </fields>
+    <fields>
+        <help>Ressource renouvelée si cet élément de ligne représente un renouvellement de produit.</help>
+        <label><!-- Renewed Asset --></label>
+        <name>SBQQ__RenewedAsset__c</name>
+        <relationshipLabel><!-- Quote Lines --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Abonnement renouvelé par cette ligne de devis.</help>
+        <label><!-- Renewed Subscription --></label>
+        <name>SBQQ__RenewedSubscription__c</name>
+        <relationshipLabel><!-- Quote Lines --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Indique les autres produits de ce devis qui nécessitent un renouvellement d&apos;abonnement.</help>
+        <label><!-- Required By --></label>
+        <name>SBQQ__RequiredBy__c</name>
+        <relationshipLabel><!-- Quote Lines --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Pour les produits à segments multiples, l&apos;index qui représente la position de cette ligne de devis dans le tableau des segments.</help>
+        <label><!-- Segment Index --></label>
+        <name>SBQQ__SegmentIndex__c</name>
+    </fields>
+    <fields>
+        <help>Pour les produits à segments multiples, clé partagée utilisée pour regrouper les lignes de devis à dimensions multiples.</help>
+        <label><!-- Segment Key --></label>
+        <name>SBQQ__SegmentKey__c</name>
+    </fields>
+    <fields>
+        <help>Pour les produits à segments multiples, étiquette de l&apos;en-tête de colonne (par exemple « Année 1 ») associée à cette ligne.</help>
+        <label><!-- Segment Label --></label>
+        <name>SBQQ__SegmentLabel__c</name>
+    </fields>
+    <fields>
+        <help>Source de la ligne de devis clonée.</help>
+        <label><!-- Source --></label>
+        <name>SBQQ__Source__c</name>
+        <relationshipLabel><!-- Quote Lines (Source) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Nom du niveau de remise ou du prix contracté appliqué pour obtenir le prix spécial de cet élément de ligne.</help>
+        <label><!-- Special Price Description --></label>
+        <name>SBQQ__SpecialPriceDescription__c</name>
+    </fields>
+    <fields>
+        <help>Stocke le type de prix spécial offert dans cet élément de ligne. Une valeur nulle indique l&apos;absence de prix spécial.</help>
+        <label><!-- Special Price Type --></label>
+        <name>SBQQ__SpecialPriceType__c</name>
+        <picklistValues>
+            <masterLabel>Contracted Price</masterLabel>
+            <translation>Prix contracté</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Custom</masterLabel>
+            <translation>Personnalisé</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Renewal</masterLabel>
+            <translation>Renouvellement</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Prix unitaire spécial de cet élément de ligne, par exemple remise sur volume ou prix contracté.</help>
+        <label><!-- Special Price --></label>
+        <name>SBQQ__SpecialPrice__c</name>
+    </fields>
+    <fields>
+        <help>La date à laquelle l&apos;abonnement à ce produit commence.</help>
+        <label><!-- Start Date --></label>
+        <name>SBQQ__StartDate__c</name>
+    </fields>
+    <fields>
+        <help>Liste des ressources couvertes par cet élément de ligne d&apos;abonnement. Ne pas mettre à jour, sauf instruction spécifique.</help>
+        <label><!-- Subscribed Asset IDs --></label>
+        <name>SBQQ__SubscribedAssetIds__c</name>
+    </fields>
+    <fields>
+        <help>Détermine si le pourcentage du total est calculé à partir des prix de produits catalogue ou nets.</help>
+        <label><!-- Percent of Total Base --></label>
+        <name>SBQQ__SubscriptionBase__c</name>
+    </fields>
+    <fields>
+        <help>Catégorie définie dans le produit afin de limiter les calculs de pourcentage du total à certains produits. Copiée depuis l&apos;enregistrement du produit.</help>
+        <label><!-- Percent of Total Category --></label>
+        <name>SBQQ__SubscriptionCategory__c</name>
+        <picklistValues>
+            <masterLabel>Hardware</masterLabel>
+            <translation>Matériel</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Software</masterLabel>
+            <translation>Logiciel</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Pourcentage du total à utiliser lors du calcul du prix de l&apos;élément de ligne.</help>
+        <label><!-- Percent of Total (%) --></label>
+        <name>SBQQ__SubscriptionPercent__c</name>
+    </fields>
+    <fields>
+        <help>Indique comment le prix de l&apos;abonnement est calculé. Si ce champ est vide, les éléments de ligne ne correspondent pas à un produit d&apos;abonnement.</help>
+        <label><!-- Subscription Pricing --></label>
+        <name>SBQQ__SubscriptionPricing__c</name>
+        <picklistValues>
+            <masterLabel>Fixed Price</masterLabel>
+            <translation>Prix fixe</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Percent Of Total</masterLabel>
+            <translation>Pourcentage du total</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Indique la méthode de calcul du pourcentage du total des prix : « Devis » utilise tous les produits sans abonnement et Inclure dans le pourcentage total des produits dans le devis, alors que « Groupe » utilise uniquement les produits sans abonnement et Inclure dans le pourcentage total des produits dans le même groupe.</help>
+        <label><!-- Percent of Total Scope --></label>
+        <name>SBQQ__SubscriptionScope__c</name>
+        <picklistValues>
+            <masterLabel>Group</masterLabel>
+            <translation>Groupe</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quote</masterLabel>
+            <translation>Devis</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Prix du produit cible sur lequel le pourcentage du total doit être calculé.</help>
+        <label><!-- Percent of Total Target Price --></label>
+        <name>SBQQ__SubscriptionTargetPrice__c</name>
+    </fields>
+    <fields>
+        <help>Durée de cet abonnement. Si ce produit n&apos;est pas un abonnement, cette valeur est sans effet.</help>
+        <label><!-- Subscription Term --></label>
+        <name>SBQQ__SubscriptionTerm__c</name>
+    </fields>
+    <fields>
+        <help>Spécifie un code de taxe pour les règles fiscales.</help>
+        <label><!-- Tax code --></label>
+        <name>SBQQ__TaxCode__c</name>
+    </fields>
+    <fields>
+        <help>Indique si une taxe peut être appliquée à l&apos;élément de ligne</help>
+        <label><!-- Taxable --></label>
+        <name>SBQQ__Taxable__c</name>
+    </fields>
+    <fields>
+        <help>Barème des remises basées sur la durée de l&apos;abonnement. La valeur « Groupe » applique le taux de remise à la durée du groupe, alors que la valeur « Devis » applique le taux de remise à toute la durée du devis, quelles que soient les différences de durée dans vos groupes.</help>
+        <label><!-- Term Discount Schedule --></label>
+        <name>SBQQ__TermDiscountSchedule__c</name>
+        <relationshipLabel><!-- Quote Lines (Term Discouned) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Niveau du barème de remise sur la durée utilisé pour appliquer une remise à cet élément de ligne.</help>
+        <label><!-- Term Discount Tier --></label>
+        <name>SBQQ__TermDiscountTier__c</name>
+        <relationshipLabel><!-- Quote Lines (Term Discounted) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Remise calculée en appliquant la durée d&apos;abonnement au barème de remise sur la durée.</help>
+        <label><!-- Term Discount --></label>
+        <name>SBQQ__TermDiscount__c</name>
+    </fields>
+    <fields>
+        <help>Montant de remise total pour cet élément de ligne comprenant une remise sur volume, une remise contractée et une remise supplémentaire.</help>
+        <label><!-- Total Discount (Amt) --></label>
+        <name>SBQQ__TotalDiscountAmount__c</name>
+    </fields>
+    <fields>
+        <help>Remise totale pour cet élément de ligne comprenant une remise sur volume, une remise contractée et une remise supplémentaire.</help>
+        <label><!-- Total Discount (%) --></label>
+        <name>SBQQ__TotalDiscountRate__c</name>
+    </fields>
+    <fields>
+        <help>Coût d&apos;une unité de produit généré dans le devis sur cet élément de ligne.</help>
+        <label><!-- Unit Cost --></label>
+        <name>SBQQ__UnitCost__c</name>
+    </fields>
+    <fields>
+        <help>Le prix net sur toute la durée de cette ligne individuelle.</help>
+        <label><!-- Unprorated Net Price --></label>
+        <name>SBQQ__UnproratedNetPrice__c</name>
+    </fields>
+    <fields>
+        <help>Ressource mise à niveau par cette ligne de devis. Lorsque le devis est contracté, la Date de fin d&apos;utilisation de cette ressource est renseignée pour indiquer sa date de retrait.</help>
+        <label><!-- Upgraded Asset --></label>
+        <name>SBQQ__UpgradedAsset__c</name>
+        <relationshipLabel><!-- Quote Lines (Upgrade) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Partie de la Quantité précédente de cette ligne actuellement mise à niveau vers un autre produit.</help>
+        <label><!-- Upgraded Quantity --></label>
+        <name>SBQQ__UpgradedQuantity__c</name>
+    </fields>
+    <fields>
+        <help>Abonnement mis à niveau par cette ligne de devis. Lorsque le devis est contracté, la Date de résiliation de cet abonnement est renseignée.</help>
+        <label><!-- Upgraded Subscription --></label>
+        <name>SBQQ__UpgradedSubscription__c</name>
+        <relationshipLabel><!-- Quote Lines (Upgrade) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>L&apos;augmentation (montant) est mesurée en tant que montant en devise. Ce champ est calculé par le système, car l&apos;augmentation peut être appliquée uniquement à des segments MDQ en pourcentage.</help>
+        <label><!-- Uplift (Amt) --></label>
+        <name>SBQQ__UpliftAmount__c</name>
+    </fields>
+    <fields>
+        <help>L&apos;augmentation s&apos;applique en tant que pourcentage du prix de l&apos;année précédente. Le prix qui en résulte est saisi dans le champ Prix normal en plus des prix spéciaux ou contractés. Les augmentations s&apos;ajoutent année après année. Une augmentation ne peut pas s&apos;appliquer à la première année d&apos;un abonnement.</help>
+        <label><!-- Uplift --></label>
+        <name>SBQQ__Uplift__c</name>
+    </fields>
+    <fields>
+        <help>Spécifiez les remises sur volume en pourcentage du prix du produit à déduire en utilisant la quantité ou la durée achetée. Vous pouvez définir les plages de quantité ou de durée sur des niveaux avec différents pourcentages de remise. Vous pouvez également appliquer des barèmes de remise à la durée de l&apos;abonnement.</help>
+        <label><!-- Volume Discount --></label>
+        <name>SBQQ__VolumeDiscount__c</name>
+    </fields>
+    <gender>Feminine</gender>
+    <layouts>
+        <layout>Quote Line Layout</layout>
+        <sections>
+            <label>Liens personnalisés</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>Informations de description</label>
+            <section>Description Information</section>
+        </sections>
+        <sections>
+            <label>Informations sur la remise</label>
+            <section>Discount Information</section>
+        </sections>
+        <sections>
+            <label>Informations de tarification</label>
+            <section>Pricing Information</section>
+        </sections>
+        <sections>
+            <label>Recalcul</label>
+            <section>Recalculating</section>
+        </sections>
+        <sections>
+            <label>Informations sur l&apos;abonnement</label>
+            <section>Subscription Information</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Nom de la ligne</nameFieldLabel>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- You may not specify additional discount as both percentage and absolute amount. --></errorMessage>
+        <name>SBQQ__Additional_discount_percent_or_amount</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You may not specify markup as both percentage and absolute amount. --></errorMessage>
+        <name>SBQQ__Markup_percent_or_amount</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- When Charge Type is Recurring, a Billing Type must be selected. --></errorMessage>
+        <name>SBQQ__RecurringChargeTypeMustHaveBillingType</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- When Charge Type is One-Time, a Billing Frequency value cannot not be selected. --></errorMessage>
+        <name>SBQQ__Validate_billing_frequency</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- When Charge Type is One-Time or Usage, a Billing Type value cannot be selected. --></errorMessage>
+        <name>SBQQ__Validate_billing_type</name>
+    </validationRules>
+</CustomObjectTranslation>

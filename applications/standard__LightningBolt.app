@@ -3,6 +3,7 @@
     <formFactors>Large</formFactors>
     <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
     <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <isNavTabPersistenceDisabled>false</isNavTabPersistenceDisabled>
     <label>LightningBolt</label>
     <navType>Standard</navType>
     <tabs>standard-LightningBoltHome</tabs>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Función de producto</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Funciones de producto</value>
+    </caseValues>
+    <fieldSets>
+        <label><!-- Configurator --></label>
+        <name>SBQQ__Configurator</name>
+    </fieldSets>
+    <fields>
+        <help>Asigne esta función a una categoría de modo que se agrupen juntas múltiples funciones con opciones relacionadas.</help>
+        <label><!-- Category --></label>
+        <name>SBQQ__Category__c</name>
+        <picklistValues>
+            <masterLabel>Hardware</masterLabel>
+            <translation>Hardware</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Software</masterLabel>
+            <translation>Software</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>El nombre de API del conjunto de campos que se utilizará para esta función durante la configuración.</help>
+        <label><!-- Configuration Field Set --></label>
+        <name>SBQQ__ConfigurationFieldSet__c</name>
+        <picklistValues>
+            <masterLabel>OptionConfiguration</masterLabel>
+            <translation>OptionConfiguration</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>El paquete de producto que incluye esta función. Si creó la función desde la página de detalle del producto, esta opción debería estar rellena ya.</help>
+        <label><!-- Configured SKU --></label>
+        <name>SBQQ__ConfiguredSKU__c</name>
+        <relationshipLabel><!-- Features --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Programación de descuentos que se aplicará al producto seleccionado por todas las opciones de esta función. Invalida la programación de descuentos seleccionada en el producto.</help>
+        <label><!-- Discount Schedule --></label>
+        <name>SBQQ__DiscountSchedule__c</name>
+        <relationshipLabel><!-- Product Features --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>El nombre de API del conjunto de campos que se utilizará al filtrar opciones dinámicas para esta función durante la configuración.</help>
+        <label><!-- Dynamic Option Filter Field Set --></label>
+        <name>SBQQ__DynamicProductFilterFieldSet__c</name>
+        <picklistValues>
+            <masterLabel>ConfiguratorFilter</masterLabel>
+            <translation>ConfiguratorFilter</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>El nombre de API del conjunto de campos que se utilizará al ver opciones dinámicas para esta función durante la configuración.</help>
+        <label><!-- Dynamic Option Lookup Field Set --></label>
+        <name>SBQQ__DynamicProductLookupFieldSet__c</name>
+        <picklistValues>
+            <masterLabel>ConfiguratorLookup</masterLabel>
+            <translation>ConfiguratorLookup</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Número máximo de opciones para esta función que pueden seleccionarse como parte del paquete de productos.</help>
+        <label><!-- Max Options --></label>
+        <name>SBQQ__MaxOptionCount__c</name>
+    </fields>
+    <fields>
+        <help>Número mínimo de opciones para esta función que pueden formar parte del paquete de productos.</help>
+        <label><!-- Min Options --></label>
+        <name>SBQQ__MinOptionCount__c</name>
+    </fields>
+    <fields>
+        <help>Un número secuencial que determina el modo de clasificar las funciones en la lista relacionada del producto.</help>
+        <label><!-- Number --></label>
+        <name>SBQQ__Number__c</name>
+    </fields>
+    <fields>
+        <help>Determina el modo en el que el usuario selecciona opciones adjuntas a este producto. El método &quot;Clic&quot; presenta opciones con casillas de verificación junto a ellas. &quot;Agregar&quot; representa un botón que abre un opciones predefinidas. &quot;Dinámico&quot; representa un botón que abre todos los productos activos.</help>
+        <label><!-- Option Selection Method --></label>
+        <name>SBQQ__OptionSelectionMethod__c</name>
+        <picklistValues>
+            <masterLabel>Add</masterLabel>
+            <translation>Agregar</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Click</masterLabel>
+            <translation>Clic</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dynamic</masterLabel>
+            <translation>Dinámico</translation>
+        </picklistValues>
+    </fields>
+    <gender>Feminine</gender>
+    <layouts>
+        <layout>Product Feature Layout</layout>
+        <sections>
+            <label>Vínculos personalizados</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Nombre de función</nameFieldLabel>
+    <validationRules>
+        <errorMessage><!-- Min Options cannot be negative. --></errorMessage>
+        <name>SBQQ__MinOptionValidation</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Translate --></label>
+        <name>SBQQ__Translate</name>
+    </webLinks>
+</CustomObjectTranslation>

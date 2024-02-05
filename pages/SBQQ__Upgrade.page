@@ -1,0 +1,69 @@
+<apex:page controller="SBQQ.SettingsEditorController">
+	<apex:stylesheet value="{!$Resource['sb']}"/>
+	<div class="sb">
+		<div class="sbPageTitle">
+			<div class="sbPageTitleTable">
+				<div class="sbPageTitleLeft">
+					<div class="sbTitles">
+						<!--<h2>Stuff</h2>-->
+						<h1>Debug</h1>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div style="padding: 10px 10px;">
+			<div style="padding-top: 20px">
+				<h1>Installation Logs</h1>
+				<table class="sbTable" border="0" cellspacing="0" cellpadding="0">
+					<tr class="headerRow">
+						<th>Method Name</th>
+						<th>Time</th>
+						<th>Version</th>
+					</tr>
+					<apex:repeat value="{!installationLogs}" var="log">
+						<tr class="dataRow">
+							<td>{!log.SBQQ__MethodName__c}</td>
+							<td>{!log.SBQQ__Time__c}</td>
+							<td>{!log.SBQQ__Version__c}</td>
+						</tr>
+					</apex:repeat>
+				</table>
+			</div>
+			<div style="padding-top: 20px">
+				<h1>Referenced Fields</h1>
+				<table class="sbTable" border="0" cellspacing="0" cellpadding="0">
+					<tr class="headerRow">
+						<th>Field</th>
+						<th>Object</th>
+					</tr>
+					<apex:repeat value="{!referencedFields}" var="rf">
+						<tr class="dataRow">
+							<td>{!rf.SBQQ__FieldName__c}</td>
+							<td>{!rf.SBQQ__ObjectName__c}</td>
+						</tr>
+					</apex:repeat>
+				</table>
+			</div>
+			<div style="padding-top: 20px">
+				<h1>Calculator Referenced Fields</h1>
+				<table class="sbTable" border="0" cellspacing="0" cellpadding="0">
+					<tr class="headerRow">
+						<th>Field</th>
+						<th>Object</th>
+						<th>Lookup Name</th>
+						<th>Parent Object</th>
+					</tr>
+					<apex:repeat value="{!calculatorReferencedFields}" var="crf">
+						<tr class="dataRow">
+							<td>{!crf.SBQQ__FieldName__c}</td>
+							<td>{!crf.SBQQ__ObjectName__c}</td>
+							<td>{!crf.SBQQ__LookupName__c}</td>
+							<td>{!crf.SBQQ__ParentObjectName__c}</td>
+							<td>{!crf.SBQQ__UsageCount__c}</td>
+						</tr>
+					</apex:repeat>
+				</table>
+			</div>
+		</div>
+	</div>
+</apex:page>

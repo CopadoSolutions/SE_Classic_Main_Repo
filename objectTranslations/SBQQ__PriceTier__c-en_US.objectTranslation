@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- Discount amount applied when quantity falls in this tier. --></help>
+        <label><!-- Discount ({0}) --></label>
+        <name>SBQQ__DiscountAmount__c</name>
+    </fields>
+    <fields>
+        <help><!-- Discount percentage applied when quantity falls in this tier. --></help>
+        <label><!-- Discount (%) --></label>
+        <name>SBQQ__DiscountPercentage__c</name>
+    </fields>
+    <fields>
+        <help><!-- Lower bound of the quantity range for this tier. --></help>
+        <label><!-- Lower Bound --></label>
+        <name>SBQQ__LowerBound__c</name>
+    </fields>
+    <fields>
+        <help><!-- Number indicating this tier&apos;s position within the schedule. --></help>
+        <label><!-- Number --></label>
+        <name>SBQQ__Number__c</name>
+    </fields>
+    <fields>
+        <help><!-- The block price where this price tier is originated from. --></help>
+        <label><!-- Original Block Price --></label>
+        <name>SBQQ__OriginalBlockPrice__c</name>
+        <relationshipLabel><!-- Price Tiers --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- The discount tier where this price tier is originated from. --></help>
+        <label><!-- Original Discount Tier --></label>
+        <name>SBQQ__OriginalDiscountTier__c</name>
+        <relationshipLabel><!-- Price Tiers --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- The price model that determines how the prices are calculated. --></help>
+        <label><!-- Price Model --></label>
+        <name>SBQQ__PriceModel__c</name>
+    </fields>
+    <fields>
+        <help><!-- Price Schedule to which this tier belongs. --></help>
+        <label><!-- Schedule --></label>
+        <name>SBQQ__PriceSchedule__c</name>
+        <relationshipLabel><!-- Price Tiers --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- The actual price of this Price Tier. This field will be populated when a new set of Price Schedules are created for a new Order record. --></help>
+        <label><!-- Price --></label>
+        <name>SBQQ__Price__c</name>
+    </fields>
+    <fields>
+        <help><!-- The total term discount taken for this tier. --></help>
+        <label><!-- Term Discount --></label>
+        <name>SBQQ__TermDiscount__c</name>
+    </fields>
+    <fields>
+        <help><!-- Upper bound of the quantity range for this tier. --></help>
+        <label><!-- Upper Bound --></label>
+        <name>SBQQ__UpperBound__c</name>
+    </fields>
+    <fields>
+        <help><!-- The total volume discount taken for this tier. --></help>
+        <label><!-- Volume Discount --></label>
+        <name>SBQQ__VolumnDiscount__c</name>
+    </fields>
+    <layouts>
+        <layout>Price Tier Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Price Information --></label>
+            <section>Price Information</section>
+        </sections>
+    </layouts>
+</CustomObjectTranslation>
