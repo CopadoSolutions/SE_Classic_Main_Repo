@@ -3,7 +3,7 @@ public without sharing class AccountListUpdate {
     public static void applyDiscount( Account[] accounts ) {
         List<Account>accs = new List<Account>();
    		for ( Account ac : accounts ) {
-      		ac.name = 'First Account';
+      		ac.name = 'Account 1234';
             accs.add(ac);
    		}
         try {
@@ -19,8 +19,8 @@ public without sharing class AccountListUpdate {
 	}
     
     public static Account getAccount( Account[] accounts ) {
-        Account account1 = new Account(name = 'First Account');
-        Account account2 = new Account(name = 'Second Account');
+        Account account1 = new Account(name = 'First Test Account');
+        Account account2 = new Account(name = 'Second Test Account');
    		for (Account ac : accounts) {
             if ( ac.name == 'Parent Account' ) {
                 return account2; 

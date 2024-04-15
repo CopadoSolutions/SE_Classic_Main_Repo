@@ -5,8 +5,8 @@ private class AccountListUpdateTest {
     static void testApplyDiscount() {
         // Create test accounts
         Account[] accounts = new List<Account>{
-            new Account(Name='Account 1'),
-            new Account(Name='Account 2')
+            new Account(Name='Account 123'),
+            new Account(Name='Account 234')
         };
         
         // Call the applyDiscount method
@@ -21,9 +21,9 @@ private class AccountListUpdateTest {
     static void testGetAccount() {
         // Create test accounts
         Account[] accounts = new List<Account>{
-            new Account(Name='Account 1'),
+            new Account(Name='Account 123'),
             new Account(Name='Parent Account'),
-            new Account(Name='Account 2')
+            new Account(Name='Account 234')
         };
         
         // Call the getAccount method
@@ -34,8 +34,8 @@ private class AccountListUpdateTest {
         
         // Call the getAccount method again with different accounts
         Account[] newAccounts = new List<Account>{
-            new Account(Name='Account 1'),
-            new Account(Name='Account 2')
+            new Account(Name='Account 123'),
+            new Account(Name='Account 234')
         };
         
         // Call the getAccount method
