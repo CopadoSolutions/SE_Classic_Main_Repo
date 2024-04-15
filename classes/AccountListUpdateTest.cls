@@ -5,25 +5,25 @@ private class AccountListUpdateTest {
     static void testApplyDiscount() {
         // Create test accounts
         Account[] accounts = new List<Account>{
-            new Account(Name='Account 1'),
-            new Account(Name='Account 2')
+            new Account(Name='Account A'),
+            new Account(Name='Account B')
         };
         
         // Call the applyDiscount method
         AccountListUpdate.applyDiscount(accounts);
         
         // Verify that the account names have been updated
-        System.assertEquals('First Account', accounts[0].Name);
-        System.assertEquals('First Account', accounts[1].Name);
+        System.assertEquals('Second Account', accounts[0].Name);
+        System.assertEquals('Second Account', accounts[1].Name);
     }
     
     @isTest
     static void testGetAccount() {
         // Create test accounts
         Account[] accounts = new List<Account>{
-            new Account(Name='Account 1'),
+            new Account(Name='Account A'),
             new Account(Name='Parent Account'),
-            new Account(Name='Account 2')
+            new Account(Name='Account B')
         };
         
         // Call the getAccount method
