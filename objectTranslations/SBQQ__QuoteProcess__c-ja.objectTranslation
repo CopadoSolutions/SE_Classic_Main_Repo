@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>見積プロセス</value>
+    </caseValues>
+    <fields>
+        <help>このプロセスを品目エディタのデフォルトの見積プロセスセレクタとして設定する場合は、チェックボックスをオンにします。これは、見積プロセスセレクタが選択リストとして表示される場合にのみ適用されます。</help>
+        <label><!-- Default --></label>
+        <name>SBQQ__Default__c</name>
+    </fields>
+    <fields>
+        <help>このプロセスでカバーされる見積を強制的にガイド付き商品選択にする場合は、チェックボックスをオンにします。オフにすると、デフォルトの任意の絞り込みに設定されます。</help>
+        <label><!-- Guided Only --></label>
+        <name>SBQQ__GuidedOnly__c</name>
+    </fields>
+    <fields>
+        <help>検索で 1 つの商品のみが返される場合に商品を自動選択するかどうかを判断する場合は、チェックボックスをオンにします。</help>
+        <label><!-- Auto Select Product? --></label>
+        <name>SBQQ__ProductAutoSelected__c</name>
+    </fields>
+    <fields>
+        <help>設定可能なすべての商品でオプションを初期化するために呼び出されるカスタム Visualforce ページ。</help>
+        <label><!-- Product Configuration Initializer --></label>
+        <name>SBQQ__ProductConfigurationInitializer__c</name>
+    </fields>
+    <fields>
+        <help>カスタム商品検索を実行する VisualForce ページ。</help>
+        <label><!-- Product Search Executor --></label>
+        <name>SBQQ__ProductSearchExecutor__c</name>
+    </fields>
+    <fields>
+        <help>見積プロセスの表示順序を決定する連続番号を指定します。</help>
+        <label><!-- Sort Order --></label>
+        <name>SBQQ__SortOrder__c</name>
+    </fields>
+    <layouts>
+        <layout>Quote Process Layout</layout>
+        <sections>
+            <label>カスタムリンク</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>プロセス名</nameFieldLabel>
+</CustomObjectTranslation>

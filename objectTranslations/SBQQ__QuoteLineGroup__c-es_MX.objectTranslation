@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Grupo de partidas de presupuesto</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Grupos de partidas de presupuesto</value>
+    </caseValues>
+    <fieldSets>
+        <label><!-- Line Editor --></label>
+        <name>SBQQ__LineEditor</name>
+    </fieldSets>
+    <fields>
+        <help>Cuenta a la que hace referencia este grupo de partidas de presupuesto.</help>
+        <label><!-- Account --></label>
+        <name>SBQQ__Account__c</name>
+        <relationshipLabel><!-- Quote Line Groups --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Tasa de descuento adicional predeterminada aplicada a partidas de este grupo.</help>
+        <label><!-- Additional  Disc. (%) --></label>
+        <name>SBQQ__AdditionalDiscountRate__c</name>
+    </fields>
+    <fields>
+        <help>Define la frecuencia de la facturación.</help>
+        <label><!-- Billing Frequency --></label>
+        <name>SBQQ__BillingFrequency__c</name>
+    </fields>
+    <fields>
+        <help>Total de partidas de este grupo antes de aplicar cualquier descuento de socio.</help>
+        <label><!-- Customer Total --></label>
+        <name>SBQQ__CustomerTotal__c</name>
+    </fields>
+    <fields>
+        <help>Descripción para este grupo.</help>
+        <label><!-- Description --></label>
+        <name>SBQQ__Description__c</name>
+    </fields>
+    <fields>
+        <help>Fecha de finalización de las suscripciones en este grupo.</help>
+        <label><!-- End Date --></label>
+        <name>SBQQ__EndDate__c</name>
+    </fields>
+    <fields>
+        <help>Favorito al que pertenece este grupo de partidas de presupuesto.</help>
+        <label><!-- Favorite --></label>
+        <name>SBQQ__Favorite__c</name>
+        <relationshipLabel><!-- Quote Line Groups --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Total de partidas de este grupo antes de aplicar cualquier descuento.</help>
+        <label><!-- List Total --></label>
+        <name>SBQQ__ListTotal__c</name>
+    </fields>
+    <fields>
+        <help>Tasa de sobreprecio predeterminada aplicada a partidas de este grupo. Invalidará el nivel de partidas.</help>
+        <label><!-- Markup (%) --></label>
+        <name>SBQQ__MarkupRate__c</name>
+    </fields>
+    <fields>
+        <help>Total de partidas de este grupo después de aplicar todos los descuentos.</help>
+        <label><!-- Net Total --></label>
+        <name>SBQQ__NetTotal__c</name>
+    </fields>
+    <fields>
+        <help>Orden de clasificación de este grupo dentro de su presupuesto.</help>
+        <label><!-- Number --></label>
+        <name>SBQQ__Number__c</name>
+    </fields>
+    <fields>
+        <help>Marca todo el grupo como opcional.</help>
+        <label><!-- Optional --></label>
+        <name>SBQQ__Optional__c</name>
+    </fields>
+    <fields>
+        <help>Proceso de presupuesto empleado con este grupo. Invalida el campo de nivel de presupuesto.</help>
+        <label><!-- Quote Process --></label>
+        <name>SBQQ__QuoteProcess__c</name>
+        <relationshipLabel><!-- Quote Line Groups --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Presupuesto al que pertenece este grupo.</help>
+        <label><!-- Quote --></label>
+        <name>SBQQ__Quote__c</name>
+        <relationshipLabel><!-- Quote Line Groups --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Seleccione la casilla de verificación para generar un contrato separado para suscripciones de este grupo.</help>
+        <label><!-- Separate Contract --></label>
+        <name>SBQQ__SeparateContract__c</name>
+    </fields>
+    <fields>
+        <help>Grupo de soluciones desde el que se generó este grupo de presupuestos (si lo hubiera).</help>
+        <label><!-- Solution Group --></label>
+        <name>SBQQ__SolutionGroup__c</name>
+        <relationshipLabel><!-- Quote Line Groups --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Origen del grupo de partidas de presupuesto duplicado.</help>
+        <label><!-- Source --></label>
+        <name>SBQQ__Source__c</name>
+        <relationshipLabel><!-- Quote Line Groups --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Fecha de inicio de las suscripciones en este grupo.</help>
+        <label><!-- Start Date --></label>
+        <name>SBQQ__StartDate__c</name>
+    </fields>
+    <fields>
+        <help>Plazo de suscripción empleado para prorratear productos aptos de este grupo.</help>
+        <label><!-- Subscription Term --></label>
+        <name>SBQQ__SubscriptionTerm__c</name>
+    </fields>
+    <fields>
+        <help>Ingrese el importe de cliente que desee para calcular automáticamente descuentos adicionales en partidas aptas para recibir descuentos.</help>
+        <label><!-- Target Customer Amount --></label>
+        <name>SBQQ__TargetCustomerAmount__c</name>
+    </fields>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Quote Line Group Layout</layout>
+        <sections>
+            <label>Vínculos personalizados</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>Descripción</label>
+            <section>Description</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Nombre del grupo</nameFieldLabel>
+</CustomObjectTranslation>

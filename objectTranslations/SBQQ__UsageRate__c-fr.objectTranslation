@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Taux d&apos;utilisation (réservé)</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Taux d&apos;utilisation (réservé)</value>
+    </caseValues>
+    <fields>
+        <label><!-- Description --></label>
+        <name>SBQQ__Description__c</name>
+    </fields>
+    <fields>
+        <help>Limite inférieure de la plage d&apos;utilisation de ce taux d&apos;utilisation</help>
+        <label><!-- Lower Bound --></label>
+        <name>SBQQ__LowerBound__c</name>
+    </fields>
+    <fields>
+        <help>Choisissez un prix catalogue de référence pour ce taux d&apos;utilisation</help>
+        <label><!-- Price Book --></label>
+        <name>SBQQ__PriceBook__c</name>
+        <relationshipLabel><!-- Usage Rates --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Price Type --></label>
+        <name>SBQQ__PriceType__c</name>
+        <picklistValues>
+            <masterLabel>Flat Fee</masterLabel>
+            <translation>Prix fixe</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Per Unit</masterLabel>
+            <translation>Par unité</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Prix dans la devise active. Utilisez ce champ dans les organisations qui gèrent plusieurs devises.</help>
+        <label><!-- Price --></label>
+        <name>SBQQ__Price__c</name>
+    </fields>
+    <fields>
+        <help>Limite supérieure de la plage d&apos;utilisation de ce taux d&apos;utilisation</help>
+        <label><!-- Upper Bound --></label>
+        <name>SBQQ__UpperBound__c</name>
+    </fields>
+    <fields>
+        <label><!-- Usage Price Method --></label>
+        <name>SBQQ__UsagePriceMethod__c</name>
+        <picklistValues>
+            <masterLabel>Included Quantity</masterLabel>
+            <translation>Quantité incluse</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Overage (per unit)</masterLabel>
+            <translation>Dépassement (par unité)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Per Unit</masterLabel>
+            <translation>Par unité</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Period High Water Mark</masterLabel>
+            <translation>Marque limite de la période</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Usage Ceiling Quantity (Maximum)</masterLabel>
+            <translation>Quantité d&apos;utilisation plafond (maximum)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Usage Floor Quantity (Minimum)</masterLabel>
+            <translation>Quantité d&apos;utilisation plancher (minimum)</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Définissez un numéro de facturation Salesforce à utiliser lors de la commande de taux d&apos;utilisation pour traitement</help>
+        <label><!-- Usage Processing Order --></label>
+        <name>SBQQ__UsageProcessingOrder__c</name>
+    </fields>
+    <fields>
+        <help>Carte de taux d&apos;utilisation parente de ce taux</help>
+        <label><!-- Usage Rate Card --></label>
+        <name>SBQQ__UsageRateCard__c</name>
+        <relationshipLabel><!-- Usage Rates --></relationshipLabel>
+    </fields>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Usage Rate Layout</layout>
+        <sections>
+            <label>Liens personnalisés</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>Information sur le niveau</label>
+            <section>Tier Information</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Taux d&apos;utilisation</nameFieldLabel>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Nível de desconto</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Níveis de desconto</value>
+    </caseValues>
+    <fieldSets>
+        <label><!-- Discount Schedule Modal --></label>
+        <name>SBQQ__DiscountScheduleModal</name>
+    </fieldSets>
+    <fields>
+        <help>Valor de desconto aplicado quando a quantidade cai para esse nível.</help>
+        <label><!-- Discount ({0}) --></label>
+        <name>SBQQ__DiscountAmount__c</name>
+    </fields>
+    <fields>
+        <help>Percentual de desconto aplicado quando a quantidade cai para esse nível.</help>
+        <label><!-- Discount (%) --></label>
+        <name>SBQQ__Discount__c</name>
+    </fields>
+    <fields>
+        <help>Limite inferior do intervalo de quantidade para esse nível.</help>
+        <label><!-- Lower Bound --></label>
+        <name>SBQQ__LowerBound__c</name>
+    </fields>
+    <fields>
+        <help>Número que indica a posição desse nível dentro do cronograma.</help>
+        <label><!-- Number --></label>
+        <name>SBQQ__Number__c</name>
+    </fields>
+    <fields>
+        <help>O preço real desse nível de desconto. Esse campo será preenchido quando um novo conjunto de cronogramas de descontos for criado para um novo Registro de pedido.</help>
+        <label><!-- Price --></label>
+        <name>SBQQ__Price__c</name>
+    </fields>
+    <fields>
+        <help>Cronograma de descontos ao qual esse nível pertence.</help>
+        <label><!-- Schedule --></label>
+        <name>SBQQ__Schedule__c</name>
+        <relationshipLabel><!-- Discount Tiers --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Limite superior do intervalo de quantidade para esse nível.</help>
+        <label><!-- Upper Bound --></label>
+        <name>SBQQ__UpperBound__c</name>
+    </fields>
+    <gender>Masculine</gender>
+    <nameFieldLabel>Nome do nível</nameFieldLabel>
+</CustomObjectTranslation>

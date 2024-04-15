@@ -139,6 +139,10 @@
         <trackHistory>false</trackHistory>
     </fields>
     <fields>
+        <fullName>AdditionalDiscount</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
         <fullName>ApprovalStatus</fullName>
         <trackHistory>false</trackHistory>
         <type>Picklist</type>

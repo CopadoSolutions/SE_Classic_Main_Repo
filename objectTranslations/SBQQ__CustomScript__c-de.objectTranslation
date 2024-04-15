@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Benutzerdefiniertes Skript</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Benutzerdefinierte Skripts</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value><!-- Benutzerdefiniertes Skript --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+        <value><!-- Benutzerdefinierte Skripts --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value><!-- Benutzerdefiniertes Skript --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>true</plural>
+        <value><!-- Benutzerdefinierte Skripts --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value><!-- Benutzerdefiniertes Skript --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value><!-- Benutzerdefinierte Skripts --></value>
+    </caseValues>
+    <fields>
+        <help>Code, der von einer externen Ressource ausgeführt werden kann.</help>
+        <label><!-- Code --></label>
+        <name>SBQQ__Code__c</name>
+    </fields>
+    <fields>
+        <help>Geben Sie die API-Namen aller von diesem Plugin referenzierter Felder für Angebotsbelegposten-Gruppen an, und zwar einen pro Belegposten.</help>
+        <label><!-- Quote Line Group Fields --></label>
+        <name>SBQQ__GroupFields__c</name>
+    </fields>
+    <fields>
+        <help>Geben Sie die API-Namen aller von diesem Plugin referenzierter Angebotsfelder an, und zwar einen pro Belegposten.</help>
+        <label><!-- Quote Fields --></label>
+        <name>SBQQ__QuoteFields__c</name>
+    </fields>
+    <fields>
+        <help>Geben Sie die API-Namen aller von diesem Plugin referenzierter Felder für Angebotsbelegposten an, und zwar einen pro Belegposten.</help>
+        <label><!-- Quote Line Fields --></label>
+        <name>SBQQ__QuoteLineFields__c</name>
+    </fields>
+    <fields>
+        <label><!-- Transpiled Code --></label>
+        <name>SBQQ__TranspiledCode__c</name>
+    </fields>
+    <gender>Neuter</gender>
+    <layouts>
+        <layout>Custom Script Layout</layout>
+        <sections>
+            <label>Benutzerdefinierte Links</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>Code wird übersetzt</label>
+            <section>Transpiling</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Skriptname</nameFieldLabel>
+</CustomObjectTranslation>

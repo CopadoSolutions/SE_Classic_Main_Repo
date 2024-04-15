@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Élément d&apos;attribut</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Éléments d&apos;attribut</value>
+    </caseValues>
+    <fields>
+        <help>Champ non pris en charge</help>
+        <label><!-- Apply Immediately --></label>
+        <name>SBQQ__AppliedImmediately__c</name>
+        <picklistValues>
+            <masterLabel>False</masterLabel>
+            <translation>Faux</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>True</masterLabel>
+            <translation>Vrai</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Champ non pris en charge</help>
+        <label><!-- Apply To Product Options --></label>
+        <name>SBQQ__ApplyToProductOptions__c</name>
+        <picklistValues>
+            <masterLabel>False</masterLabel>
+            <translation>Faux</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>True</masterLabel>
+            <translation>Vrai</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Attribute Set --></label>
+        <name>SBQQ__AttributeSet__c</name>
+        <relationshipLabel><!-- Attribute Items --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Attribut de configuration dont cet attribut produit hérite.</help>
+        <label><!-- Configuration Attribute --></label>
+        <lookupFilter>
+            <errorMessage><!-- The related configuration attribute must be global --></errorMessage>
+        </lookupFilter>
+        <name>SBQQ__Attribute__c</name>
+        <relationshipLabel><!-- Attribute Items --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Champ non pris en charge</help>
+        <label><!-- Auto-Select --></label>
+        <name>SBQQ__AutoSelect__c</name>
+        <picklistValues>
+            <masterLabel>False</masterLabel>
+            <translation>Faux</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>True</masterLabel>
+            <translation>Vrai</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Champ non pris en charge</help>
+        <label><!-- Hidden Values --></label>
+        <name>SBQQ__HiddenValues__c</name>
+    </fields>
+    <fields>
+        <help>Champ non pris en charge</help>
+        <label><!-- Hidden --></label>
+        <name>SBQQ__Hidden__c</name>
+        <picklistValues>
+            <masterLabel>False</masterLabel>
+            <translation>Faux</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>True</masterLabel>
+            <translation>Vrai</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Champ non pris en charge</help>
+        <label><!-- Required --></label>
+        <name>SBQQ__Required__c</name>
+        <picklistValues>
+            <masterLabel>False</masterLabel>
+            <translation>Faux</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>True</masterLabel>
+            <translation>Vrai</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Sequence --></label>
+        <name>SBQQ__Sequence__c</name>
+    </fields>
+    <fields>
+        <help>Champ non pris en charge</help>
+        <label><!-- Shown Values --></label>
+        <name>SBQQ__ShownValues__c</name>
+    </fields>
+    <fields>
+        <label><!-- Target Field --></label>
+        <name>SBQQ__TargetField__c</name>
+    </fields>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Product Attribute Layout</layout>
+        <sections>
+            <label>Liens personnalisés</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Numéro d&apos;élément</nameFieldLabel>
+    <startsWith>Vowel</startsWith>
+</CustomObjectTranslation>

@@ -73,10 +73,6 @@
         <type>CustomApplication</type>
     </appMenuItems>
     <appMenuItems>
-        <name>standard__DataManager</name>
-        <type>CustomApplication</type>
-    </appMenuItems>
-    <appMenuItems>
         <name>standard__RetailOnBrowser</name>
         <type>CustomApplication</type>
     </appMenuItems>
@@ -87,5 +83,13 @@
     <appMenuItems>
         <name>DEVHUB_uptzuvxf48nbf5pdd9qe</name>
         <type>ConnectedApp</type>
+    </appMenuItems>
+    <appMenuItems>
+        <name>customerportal</name>
+        <type>Network</type>
+    </appMenuItems>
+    <appMenuItems>
+        <name>SBQQ__QuoteQuickly</name>
+        <type>CustomApplication</type>
     </appMenuItems>
 </AppMenu>

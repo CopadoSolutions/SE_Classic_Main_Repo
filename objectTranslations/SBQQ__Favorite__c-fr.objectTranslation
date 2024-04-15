@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Favori</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Favoris</value>
+    </caseValues>
+    <fieldSets>
+        <label><!-- FavoritesManager --></label>
+        <name>SBQQ__FavoritesManager</name>
+    </fieldSets>
+    <fields>
+        <label><!-- Description --></label>
+        <name>SBQQ__Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Owner Name --></label>
+        <name>SBQQ__OwnerName__c</name>
+    </fields>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Favorite Layout</layout>
+        <sections>
+            <label>Liens personnalisés</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Nom du favori</nameFieldLabel>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

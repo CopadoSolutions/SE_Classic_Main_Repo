@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Document supplémentaire</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Documents supplémentaires</value>
+    </caseValues>
+    <fields>
+        <help>Définissez l&apos;ordre d&apos;affichage de cet élément pour un utilisateur commercial dans le menu Contenu associé. Si ce champ est vide, le contenu est classé en dernier.</help>
+        <label><!-- Display Order --></label>
+        <name>SBQQ__DisplayOrder__c</name>
+    </fields>
+    <fields>
+        <help>Saisissez un nom de fichier pour le contenu associé.</help>
+        <label><!-- Document Name --></label>
+        <name>SBQQ__DocumentName__c</name>
+    </fields>
+    <fields>
+        <help>ID de l&apos;enregistrement qui inclut le contenu, tel qu&apos;un document ou un contenu Salesforce.</help>
+        <label><!-- External Id --></label>
+        <name>SBQQ__ExternalId__c</name>
+    </fields>
+    <fields>
+        <help>Opportunité associée à ce contenu.</help>
+        <label><!-- Opportunity --></label>
+        <name>SBQQ__Opportunity__c</name>
+        <relationshipLabel><!-- Additional Documents --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Produit associé à ce contenu.</help>
+        <label><!-- Product --></label>
+        <name>SBQQ__Product__c</name>
+        <relationshipLabel><!-- Additional Documents --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Modèle associé à ce contenu.</help>
+        <label><!-- Quote Template --></label>
+        <name>SBQQ__QuoteTemplate__c</name>
+        <relationshipLabel><!-- Additional Documents --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Devis associé à ce contenu.</help>
+        <label><!-- Quote --></label>
+        <name>SBQQ__Quote__c</name>
+        <relationshipLabel><!-- Additional Documents --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Sélectionnez la case si ce contenu est requis pour le produit. Les utilisateurs doivent l&apos;inclure lors de la génération d&apos;un document de devis.</help>
+        <label><!-- Required --></label>
+        <name>SBQQ__Required__c</name>
+    </fields>
+    <fields>
+        <help>Section du modèle associée à ce contenu.</help>
+        <label><!-- Template Section --></label>
+        <name>SBQQ__TemplateSection__c</name>
+        <relationshipLabel><!-- Additional Documents --></relationshipLabel>
+    </fields>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Related Content Layout</layout>
+        <sections>
+            <label>Liens personnalisés</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Document supplémentaire</nameFieldLabel>
+    <startsWith>Consonant</startsWith>
+    <webLinks>
+        <label><!-- NewQuoteRelatedContent --></label>
+        <name>SBQQ__NewQuoteRelatedContent</name>
+    </webLinks>
+</CustomObjectTranslation>

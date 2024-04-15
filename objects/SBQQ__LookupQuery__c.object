@@ -1,0 +1,427 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <customHelpPage>SBQQ__LookupQueryHelp</customHelpPage>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>false</enableReports>
+    <enableSearch>false</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>Private</externalSharingModel>
+    <fields>
+        <fullName>SBQQ__LookupField__c</fullName>
+        <deprecated>false</deprecated>
+        <description>API Name of the custom field used in the query.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>API Name of the custom field used in the query.</inlineHelpText>
+        <label>Lookup Field</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>SBQQ__Category__c</fullName>
+                    <default>false</default>
+                    <label>SBQQ__Category__c</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SBQQ__MatchType__c</fullName>
+        <deprecated>false</deprecated>
+        <description>If Match Type = Field Value, select a Tested Object and Tested Field. If Match Type = Static Value, enter the value into Tested Value. If Match Type = Configuration Attribute, specify a Configuration Attribute.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>If Match Type = Field Value, select a Tested Object and Tested Field. If Match Type = Static Value, enter the value into Tested Value. If Match Type = Configuration Attribute, specify a Configuration Attribute.</inlineHelpText>
+        <label>Match Type</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Field Value</fullName>
+                    <default>false</default>
+                    <label>Field Value</label>
+                </value>
+                <value>
+                    <fullName>Static Value</fullName>
+                    <default>false</default>
+                    <label>Static Value</label>
+                </value>
+                <value>
+                    <fullName>Configuration Attribute Value</fullName>
+                    <default>false</default>
+                    <label>Configuration Attribute Value</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SBQQ__Operator__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The operator that is applied when comparing the Field with the Value.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The operator that is applied when comparing the Field with the Value.</inlineHelpText>
+        <label>Operator</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>equals</fullName>
+                    <default>false</default>
+                    <label>equals</label>
+                </value>
+                <value>
+                    <fullName>not equals</fullName>
+                    <default>false</default>
+                    <label>not equals</label>
+                </value>
+                <value>
+                    <fullName>less than</fullName>
+                    <default>false</default>
+                    <label>less than</label>
+                </value>
+                <value>
+                    <fullName>less or equals</fullName>
+                    <default>false</default>
+                    <label>less or equals</label>
+                </value>
+                <value>
+                    <fullName>greater than</fullName>
+                    <default>false</default>
+                    <label>greater than</label>
+                </value>
+                <value>
+                    <fullName>greater or equals</fullName>
+                    <default>false</default>
+                    <label>greater or equals</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SBQQ__ParentRuleIsActive__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>SBQQ__PriceRule2__r.SBQQ__Active__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>ParentRuleIsActive</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__PriceRule2__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>Price Rule associated with this Lookup Query. Replaces the legacy master-detail field.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Price Rule associated with this Lookup Query. Replaces the legacy master-detail field.</inlineHelpText>
+        <label>Price Rule</label>
+        <referenceTo>SBQQ__PriceRule__c</referenceTo>
+        <relationshipLabel>Lookup Queries (Price Rule)</relationshipLabel>
+        <relationshipName>PriceRuleLookupQueries</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__ProductRule__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>Product Rule associated with this Lookup Query</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Product Rule associated with this Lookup Query</inlineHelpText>
+        <label>Product Rule</label>
+        <referenceTo>SBQQ__ProductRule__c</referenceTo>
+        <relationshipLabel>Lookup Queries (Product Rule)</relationshipLabel>
+        <relationshipName>ProductRuleLookupQueries</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__RuleLookupObject__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>TEXT(SBQQ__PriceRule2__r.SBQQ__LookupObject__c)</formula>
+        <label>Parent Rule Lookup Object</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SBQQ__RuleTargetsCalculator__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>ISPICKVAL(SBQQ__PriceRule2__r.SBQQ__TargetObject__c, &apos;Calculator&apos;) || ISPICKVAL(SBQQ__PriceRule2__r.SBQQ__TargetObject__c, &apos;Quote Line&apos;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>RuleTargetsCalculator</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__TestedConfigurationAttribute__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>Configuration Attribute that is evaluated by this query. Required if Match Type = Configuration Attribute and only if this Query is associated with a Product Rule.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Configuration Attribute that is evaluated by this query. Required if Match Type = Configuration Attribute and only if this Query is associated with a Product Rule.</inlineHelpText>
+        <label>Tested Configuration Attribute</label>
+        <referenceTo>SBQQ__ConfigurationAttribute__c</referenceTo>
+        <relationshipLabel>Lookup Queries</relationshipLabel>
+        <relationshipName>LookupQueries</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__TestedField__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Field on Quote, Quote Line or Product Option object that is evaluated by this query. Required if Match Type = Field Value.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Field on Quote, Quote Line or Product Option object that is evaluated by this query. Required if Match Type = Field Value.</inlineHelpText>
+        <label>Tested Field</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Product Code</fullName>
+                    <default>false</default>
+                    <label>Product Code</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SBQQ__TestedObject__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Object against which the query is evaluated. Required if Match Type = Field Value.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Object against which the query is evaluated. Required if Match Type = Field Value.</inlineHelpText>
+        <label>Tested Object</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Quote</fullName>
+                    <default>false</default>
+                    <label>Quote</label>
+                </value>
+                <value>
+                    <fullName>Quote Line</fullName>
+                    <default>false</default>
+                    <label>Quote Line</label>
+                </value>
+                <value>
+                    <fullName>Product Option</fullName>
+                    <default>false</default>
+                    <label>Product Option</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SBQQ__TestedValue__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The value you want to match in the field you selected using the operator chosen. Required if Match Type = Static Value.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The value you want to match in the field you selected using the operator chosen. Required if Match Type = Static Value.</inlineHelpText>
+        <label>Tested Value</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Lookup Query</label>
+    <nameField>
+        <displayFormat>{0}</displayFormat>
+        <label>Lookup Query #</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Lookup Queries</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ReadWrite</sharingModel>
+    <validationRules>
+        <fullName>SBQQ__Configuration_Attribute_Validation</fullName>
+        <active>true</active>
+        <errorConditionFormula>ISPICKVAL(SBQQ__MatchType__c, &apos;Configuration Attribute Value&apos;) &amp;&amp; ISBLANK(SBQQ__ProductRule__c)</errorConditionFormula>
+        <errorDisplayField>SBQQ__MatchType__c</errorDisplayField>
+        <errorMessage>Testing Configuration Attributes is only supported for Lookup Queries associated with Product Rules.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>SBQQ__LookupObjectMustExist</fullName>
+        <active>true</active>
+        <description>Validation ensuring that Lookup Queries can only be created if there is a Lookup Object.</description>
+        <errorConditionFormula>AND(NOT(ISBLANK(SBQQ__ProductRule__c)), ISBLANK(TEXT(SBQQ__ProductRule__r.SBQQ__LookupObject__c)))</errorConditionFormula>
+        <errorMessage>Associate a lookup object on the product rule before creating a Lookup Query.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>SBQQ__Match_Type_Validation</fullName>
+        <active>true</active>
+        <errorConditionFormula>(ISPICKVAL(SBQQ__MatchType__c, &apos;Configuration Attribute Value&apos;) &amp;&amp; ISBLANK(SBQQ__TestedConfigurationAttribute__c)) ||(ISPICKVAL(SBQQ__MatchType__c, &apos;Static Value&apos;) &amp;&amp; ISBLANK( SBQQ__TestedValue__c)) || (ISPICKVAL(SBQQ__MatchType__c, &apos;Field Value&apos;) &amp;&amp; (ISPICKVAL(SBQQ__TestedField__c, &apos;&apos;) || ISPICKVAL(SBQQ__TestedObject__c, &apos;&apos;)))</errorConditionFormula>
+        <errorMessage>Tested Value is required if Match Type = Static Value. Tested Object and Tested Field are required if Match Type = Field Value. Tested Configuration Attribute is required if Match Type = Configuration Attribute.</errorMessage>
+    </validationRules>
+    <visibility>Public</visibility>
+</CustomObject>

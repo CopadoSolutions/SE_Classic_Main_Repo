@@ -3,7 +3,6 @@
     <isVisibleByExternalUsers>false</isVisibleByExternalUsers>
     <language>en_US</language>
     <masterLabel>CopadoLogoSymbol_Blue1</masterLabel>
-    <originNetwork>customerportal</originNetwork>
     <relationships>
         <network>
             <access>VIEWER</access>

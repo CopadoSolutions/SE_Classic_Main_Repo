@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Proceso de presupuesto</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Procesos de presupuesto</value>
+    </caseValues>
+    <fields>
+        <help>Seleccione la casilla de verificación para tomar como predeterminado el selector de proceso de presupuesto en el Editor de partidas. Solo se aplica cuando el selector de proceso de presupuesto se representa como una lista de selección.</help>
+        <label><!-- Default --></label>
+        <name>SBQQ__Default__c</name>
+    </fields>
+    <fields>
+        <help>Seleccione la casilla de verificación si desea que los presupuestos cubiertos por este proceso queden forzados en la selección guiada de productos; en caso contrario, toma como valor predeterminado el filtrado ad hoc.</help>
+        <label><!-- Guided Only --></label>
+        <name>SBQQ__GuidedOnly__c</name>
+    </fields>
+    <fields>
+        <help>Seleccione la casilla de verificación para determinar si se selecciona automáticamente el producto si es el único devuelto por una búsqueda.</help>
+        <label><!-- Auto Select Product? --></label>
+        <name>SBQQ__ProductAutoSelected__c</name>
+    </fields>
+    <fields>
+        <help>Página de Visualforce personalizada que se invocará con cada producto configurable para inicializar las opciones.</help>
+        <label><!-- Product Configuration Initializer --></label>
+        <name>SBQQ__ProductConfigurationInitializer__c</name>
+    </fields>
+    <fields>
+        <help>Página de VisualForce que realiza una búsqueda de productos personalizados.</help>
+        <label><!-- Product Search Executor --></label>
+        <name>SBQQ__ProductSearchExecutor__c</name>
+    </fields>
+    <fields>
+        <help>Especifique el número secuencial que determina el orden de visualización del proceso de presupuesto.</help>
+        <label><!-- Sort Order --></label>
+        <name>SBQQ__SortOrder__c</name>
+    </fields>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Quote Process Layout</layout>
+        <sections>
+            <label>Vínculos personalizados</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Nombre del proceso</nameFieldLabel>
+</CustomObjectTranslation>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ApexComponent xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>34.0</apiVersion>
+    <description>Enables conditional rendering of XSL:FO tree. For some reason &lt;apex:outputPanel layout=&quot;none&quot;/&gt; produces &lt;span&gt; tag when &quot;rendered&quot; attribute is specified, which is illegal in XSL:FO.</description>
+    <label>Container</label>
+</ApexComponent>

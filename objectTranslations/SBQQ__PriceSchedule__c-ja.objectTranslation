@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>価格表</value>
+    </caseValues>
+    <fields>
+        <help>この価格一覧が適用される取引先。必ず見積品目エディタ UI の [価格一覧の上書き] と組み合わせて使用します。</help>
+        <label><!-- Account --></label>
+        <name>SBQQ__Account__c</name>
+        <relationshipLabel><!-- Price Schedules --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>この表を使用して商品の見積品目数量を集計する方法を指定します。デフォルトでは、各品目の数量 (同じ商品に使用される場合も含め) が別個に考慮されます。</help>
+        <label><!-- Aggregation Scope --></label>
+        <name>SBQQ__AggregationScope__c</name>
+        <picklistValues>
+            <masterLabel>Group</masterLabel>
+            <translation>グループ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quote</masterLabel>
+            <translation>見積</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>品目の同じ項目に対して照合する項目を選択します。</help>
+        <label><!-- Constraint Field --></label>
+        <name>SBQQ__ConstraintField__c</name>
+        <picklistValues>
+            <masterLabel>Account__c</masterLabel>
+            <translation>Account__c</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>顧客が所有する総ボリュームに対してボリューム割引を拡張する場合 (見積もられた数量 + 以前の購入数)、チェックボックスをオンにします。</help>
+        <label><!-- Cross Orders --></label>
+        <name>SBQQ__CrossOrders__c</name>
+    </fields>
+    <fields>
+        <help>ボリューム割引計算の目的でこの表を使用してすべての商品の数量を集計するには、チェックボックスをオンにします。クロス商品割引にはスラブ割引を使用できません。</help>
+        <label><!-- Cross Products --></label>
+        <name>SBQQ__CrossProducts__c</name>
+    </fields>
+    <fields>
+        <help>この価格一覧の説明。</help>
+        <label><!-- Description --></label>
+        <name>SBQQ__Description__c</name>
+    </fields>
+    <fields>
+        <help>割引単位 (金額またはパーセント) を指定します。</help>
+        <label><!-- Discount Unit --></label>
+        <name>SBQQ__DiscountUnit__c</name>
+        <picklistValues>
+            <masterLabel>Amount</masterLabel>
+            <translation>金額</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Percent</masterLabel>
+            <translation>パーセント</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Price</masterLabel>
+            <translation>価格</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>この価格表に適用されない価格表 ID のカンマ区切りリストを入力します。</help>
+        <label><!-- Excluded Pricebook IDs --></label>
+        <name>SBQQ__ExcludedPricebookIds__c</name>
+    </fields>
+    <fields>
+        <help>オンにすると、バンドル商品オプションの数量が集計範囲に含まれます</help>
+        <label><!-- Include Bundled Quantities --></label>
+        <name>SBQQ__IncludeBundledProducts__c</name>
+    </fields>
+    <fields>
+        <help>この価格一覧が適用される注文商品。</help>
+        <label><!-- Order Product --></label>
+        <lookupFilter>
+            <errorMessage><!-- Please select Order Products of the associated order. --></errorMessage>
+        </lookupFilter>
+        <name>SBQQ__OrderProduct__c</name>
+        <relationshipLabel><!-- Price Schedules --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>この価格一覧が適用される注文。</help>
+        <label><!-- Order --></label>
+        <name>SBQQ__Order__c</name>
+        <relationshipLabel><!-- Price Schedules --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>この価格表の作成元となった割引率表。</help>
+        <label><!-- Original Discount Schedule --></label>
+        <name>SBQQ__OriginalDiscountSchedule__c</name>
+        <relationshipLabel><!-- Price Schedules --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>商品が含まれる現在の割引層が編集可能か、すべての割引層が編集可能か、またはどちらも編集不可かを決定します。</help>
+        <label><!-- Override Behavior --></label>
+        <name>SBQQ__OverrideBehavior__c</name>
+        <picklistValues>
+            <masterLabel>All</masterLabel>
+            <translation>すべて</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Current Tier Only</masterLabel>
+            <translation>現在の階層のみ</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>この価格一覧で作成される価格の小数点の位置。</help>
+        <label><!-- Price Scale --></label>
+        <name>SBQQ__PriceScale__c</name>
+    </fields>
+    <fields>
+        <help>価格または割引の計算方法が決定される価格種別。</help>
+        <label><!-- Type --></label>
+        <name>SBQQ__PriceType__c</name>
+    </fields>
+    <fields>
+        <help>この価格一覧が適用される価格表。商品/価格表固有の表を割り当てるために、必ず商品ルックアップと組み合わせて使用します。</help>
+        <label><!-- Price Book --></label>
+        <name>SBQQ__Pricebook__c</name>
+        <relationshipLabel><!-- Price Schedules --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>この価格一覧が適用される商品。商品/価格表固有の表を割り当てるために、必ず価格表ルックアップと組み合わせて使用します。</help>
+        <label><!-- Product --></label>
+        <name>SBQQ__Product__c</name>
+        <relationshipLabel><!-- Price Schedules --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>価格一覧の価格設定を計算するために使用する項目。</help>
+        <label><!-- Quote Line Quantity Field --></label>
+        <name>SBQQ__QuoteLineQuantityField__c</name>
+        <picklistValues>
+            <masterLabel>Quantity</masterLabel>
+            <translation>数量</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>この価格一覧が適用される見積品目。必ず見積品目エディタ UI の [価格表の上書き] と組み合わせて使用します。</help>
+        <label><!-- Quote Line --></label>
+        <name>SBQQ__QuoteLine__c</name>
+        <relationshipLabel><!-- Price Schedules --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>この価格一覧が適用される見積。必ず見積品目エディタ UI の [価格一覧の上書き] と組み合わせて使用します。</help>
+        <label><!-- Quote --></label>
+        <name>SBQQ__Quote__c</name>
+        <relationshipLabel><!-- Price Schedules --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>この価格一覧に適用される期間割引。この値は積み上げ価格種別にのみ使用できます。ボリューム価格種別の場合、価格層ごとに期間割引が使用できます。</help>
+        <label><!-- Term Discount --></label>
+        <name>SBQQ__TermDiscount__c</name>
+    </fields>
+    <fields>
+        <help>オンの場合、ユーザが定義した価格一覧の割引単位が価格に設定されます。</help>
+        <label><!-- Use Price For Amount --></label>
+        <name>SBQQ__UsePriceForAmount__c</name>
+    </fields>
+    <fields>
+        <help>エンドユーザとシステム管理者のどちらがこの表を作成したかを示します。</help>
+        <label><!-- User Defined --></label>
+        <name>SBQQ__UserDefined__c</name>
+    </fields>
+    <layouts>
+        <layout>Price Schedule Layout</layout>
+        <sections>
+            <label>カスタムリンク</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>スナップショット情報</label>
+            <section>Snapshot Information</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>表名</nameFieldLabel>
+    <webLinks>
+        <label><!-- EditTiers --></label>
+        <name>SBQQ__EditTiers</name>
+    </webLinks>
+</CustomObjectTranslation>

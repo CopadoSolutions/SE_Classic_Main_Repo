@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Abonnierter Vermögenswert</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Abonnierte Vermögenswerte</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value><!-- Abonnierter Vermögenswert --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+        <value><!-- Abonnierte Vermögenswerte --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value><!-- Abonnierter Vermögenswert --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>true</plural>
+        <value><!-- Abonnierte Vermögenswerte --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value><!-- Abonnierter Vermögenswert --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value><!-- Abonnierte Vermögenswerte --></value>
+    </caseValues>
+    <fields>
+        <help>Gibt an, ob der abonnierte Vermögenswertdatensatz aktiv ist.</help>
+        <label><!-- Active --></label>
+        <name>SBQQ__Active__c</name>
+    </fields>
+    <fields>
+        <help>Vermögenswert, den ein Abonnement abdeckt.</help>
+        <label><!-- Asset --></label>
+        <name>SBQQ__Asset__c</name>
+        <relationshipLabel><!-- Subscriptions --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Bezeichnet den Vertrag für das Abonnement.</help>
+        <label><!-- Contract Id --></label>
+        <name>SBQQ__ContractId__c</name>
+    </fields>
+    <fields>
+        <help>Abonnement, das den Vermögenswert abdeckt.</help>
+        <label><!-- Subscription --></label>
+        <name>SBQQ__Subscription__c</name>
+        <relationshipLabel><!-- Subscribed Assets --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Asset Usage End Date --></label>
+        <name>SBQQ__UsageEndDate__c</name>
+    </fields>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Subscribed Asset Layout</layout>
+        <sections>
+            <label>Benutzerdefinierte Links</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Nummer des abonnierten Vermögenswerts</nameFieldLabel>
+</CustomObjectTranslation>

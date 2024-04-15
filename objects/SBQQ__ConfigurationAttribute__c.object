@@ -1,0 +1,613 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <customHelpPage>SBQQ__ConfigurationAttributeHelp</customHelpPage>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <description>Product configuration attribute.</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>false</enableReports>
+    <enableSearch>false</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>Private</externalSharingModel>
+    <fields>
+        <fullName>SBQQ__AppliedImmediately__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Flag that indicates changes to this configuration attribute should apply immediately.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select the checkbox to immediately apply changes to this option. Use sparingly to avoid slow user experience.</inlineHelpText>
+        <label>Apply Immediately</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__ApplyToProductOptions__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Apply configuration attribute selection to product options.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select the checkbox to apply configuration attribute selection to product options.</inlineHelpText>
+        <label>Apply To Product Options</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__AutoSelect__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Set the value of this attribute when adding a product from a Dynamic Feature using the value of the added product&apos;s matching field.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Set the value of this attribute when adding a product from a Dynamic Feature using the value of the added product&apos;s matching field.</inlineHelpText>
+        <label>Auto-Select</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__ColumnOrder__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Columns are comprised of a picklist (of 1, 2, or 3) for each Configuration Attribute. A maximum of 3 columns is allowed.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Columns are comprised of a picklist (of 1, 2, or 3) for each Configuration Attribute. A maximum of 3 columns is allowed.</inlineHelpText>
+        <label>Column Order</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>1</fullName>
+                    <default>true</default>
+                    <label>1</label>
+                </value>
+                <value>
+                    <fullName>2</fullName>
+                    <default>false</default>
+                    <label>2</label>
+                </value>
+                <value>
+                    <fullName>3</fullName>
+                    <default>false</default>
+                    <label>3</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SBQQ__DefaultField__c</fullName>
+        <deprecated>false</deprecated>
+        <description>API of the target field on the default object for the default value of the attribute.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>API of the target field on the default object for the default value of the attribute.</inlineHelpText>
+        <label>Default Field</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SBQQ__DefaultObject__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Target object for the default value of the attribute.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Target object for the default value of the attribute.</inlineHelpText>
+        <label>Default Object</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Quote__c</fullName>
+                    <default>false</default>
+                    <label>Quote</label>
+                </value>
+                <value>
+                    <fullName>QuoteLineGroup__c</fullName>
+                    <default>false</default>
+                    <label>Quote Line Group</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SBQQ__DisplayOrder__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This is the order in which the Configuration Attributes will be displayed.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>If there is no display order associated with a Configuration Attribute, order is determined by Related Content name.</inlineHelpText>
+        <label>Row Order</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SBQQ__Feature__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>Feature in which this attribute should be rendered.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Specify the feature in which this attribute should be entered.</inlineHelpText>
+        <label>Feature</label>
+        <lookupFilter>
+            <active>true</active>
+            <filterItems>
+                <field>$Source.SBQQ__Product__c</field>
+                <operation>equals</operation>
+                <valueField>SBQQ__ProductFeature__c.SBQQ__ConfiguredSKU__c</valueField>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>SBQQ__ProductFeature__c</referenceTo>
+        <relationshipLabel>Configuration Attributes</relationshipLabel>
+        <relationshipName>ConfigurationAttributes</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__Global__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Indicates if this attribute has a global target field.</description>
+        <externalId>false</externalId>
+        <formula>CONTAINS(TEXT(SBQQ__TargetField__c), &apos;.&apos;)</formula>
+        <inlineHelpText>Indicates if this attribute has a global target field.</inlineHelpText>
+        <label>Global</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__HiddenValues__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Values from the backing picklist field that should be hidden on this bundle.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter values from the corresponding picklist field on Product Option object that you want to be hidden on this bundle.</inlineHelpText>
+        <label>Hidden Values</label>
+        <length>5000</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>SBQQ__Hidden__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>If flagged as hidden, the Configuration Attribute will not appear on the Product Configurator Page.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>If flagged as hidden, the Configuration Attribute will not appear on the Product Configurator Page.</inlineHelpText>
+        <label>Hidden</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__Position__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Position of the attribute.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Specify position of this attribute. Top renders above the options. Bottom renders below.</inlineHelpText>
+        <label>Position</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Top</fullName>
+                    <default>true</default>
+                    <label>Top</label>
+                </value>
+                <value>
+                    <fullName>Bottom</fullName>
+                    <default>false</default>
+                    <label>Bottom</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SBQQ__Product__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>Product being configured.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Specify product on which you are creating the attribute.</inlineHelpText>
+        <label>Product</label>
+        <referenceTo>Product2</referenceTo>
+        <relationshipLabel>Configuration Attributes</relationshipLabel>
+        <relationshipName>ConfigurationAttributes</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__Required__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Indicates whether the attributes requires a value.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Specify whether this attribute requires a value.</inlineHelpText>
+        <label>Required</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__ShownValues__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Values from the backing picklist field that should be shown on this bundle.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter values from the corresponding picklist field on Product Option object that you want to be shown on this bundle.</inlineHelpText>
+        <label>Shown Values</label>
+        <length>5000</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>SBQQ__TargetField__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Field on the Product Option that sources remaining metadata and holds the value.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Specify field on Product Option that will hold this attribute&apos;s value.</inlineHelpText>
+        <label>Target Field</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Unit Price</fullName>
+                    <default>false</default>
+                    <label>Unit Price</label>
+                </value>
+                <value>
+                    <fullName>Discount (Amt)</fullName>
+                    <default>false</default>
+                    <label>Discount (Amt)</label>
+                </value>
+                <value>
+                    <fullName>Discount (%)</fullName>
+                    <default>false</default>
+                    <label>Discount (%)</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <label>Configuration Attribute</label>
+    <listViews>
+        <fullName>SBQQ__All</fullName>
+        <columns>NAME</columns>
+        <columns>SBQQ__TargetField__c</columns>
+        <columns>RECORDTYPE</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <listViews>
+        <fullName>SBQQ__ConfigurationAttributes</fullName>
+        <booleanFilter>1 OR 2</booleanFilter>
+        <columns>NAME</columns>
+        <columns>SBQQ__Product__c</columns>
+        <columns>SBQQ__TargetField__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>SBQQ__ConfigurationAttribute__c.SBQQ__Configuration_Attribute</value>
+        </filters>
+        <filters>
+            <field>RECORDTYPE</field>
+            <operation>equals</operation>
+        </filters>
+        <label>Configuration Attributes</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>SBQQ__GlobalAttributes</fullName>
+        <columns>NAME</columns>
+        <columns>SBQQ__TargetField__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>SBQQ__ConfigurationAttribute__c.SBQQ__Global_Attribute</value>
+        </filters>
+        <label>Global Attributes</label>
+        <language>en_US</language>
+    </listViews>
+    <nameField>
+        <label>Attribute Name</label>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Configuration Attributes</pluralLabel>
+    <recordTypes>
+        <fullName>SBQQ__Configuration_Attribute</fullName>
+        <active>true</active>
+        <description>Configuration Attribute associated to a product</description>
+        <label>Configuration Attribute</label>
+        <picklistValues>
+            <picklist>SBQQ__ColumnOrder__c</picklist>
+            <values>
+                <fullName>1</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>SBQQ__DefaultObject__c</picklist>
+            <values>
+                <fullName>Quote%5F%5Fc</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>QuoteLineGroup%5F%5Fc</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>SBQQ__Position__c</picklist>
+            <values>
+                <fullName>Bottom</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Top</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>SBQQ__TargetField__c</picklist>
+            <values>
+                <fullName>Discount %28%25%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Discount %28Amt%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Unit Price</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>SBQQ__Global_Attribute</fullName>
+        <active>true</active>
+        <description>Definition of an Attribute Item</description>
+        <label>Global Attribute</label>
+        <picklistValues>
+            <picklist>SBQQ__ColumnOrder__c</picklist>
+            <values>
+                <fullName>1</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>SBQQ__DefaultObject__c</picklist>
+            <values>
+                <fullName>Quote%5F%5Fc</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>QuoteLineGroup%5F%5Fc</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>SBQQ__Position__c</picklist>
+            <values>
+                <fullName>Bottom</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Top</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>SBQQ__TargetField__c</picklist>
+            <values>
+                <fullName>Discount %28%25%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Discount %28Amt%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Unit Price</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <searchLayouts>
+        <customTabListAdditionalFields>RECORDTYPE</customTabListAdditionalFields>
+        <customTabListAdditionalFields>SBQQ__Product__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>SBQQ__TargetField__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>SBQQ__Required__c</customTabListAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+    <validationRules>
+        <fullName>SBQQ__Column_Order_is_required</fullName>
+        <active>true</active>
+        <description>Column Order is required</description>
+        <errorConditionFormula>if (Text( SBQQ__ColumnOrder__c ) == &apos;&apos;, true, false)</errorConditionFormula>
+        <errorMessage>Column Order is required.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>SBQQ__Product_is_required_if_not_global</fullName>
+        <active>false</active>
+        <description>Product is required (not implemented; override existing validation rule behavior for existing orgs</description>
+        <errorConditionFormula>false</errorConditionFormula>
+        <errorMessage>Product is required.</errorMessage>
+    </validationRules>
+    <visibility>Public</visibility>
+</CustomObject>

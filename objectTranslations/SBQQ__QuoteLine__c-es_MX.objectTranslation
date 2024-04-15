@@ -1,0 +1,847 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Partida de presupuesto</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Partidas de presupuesto</value>
+    </caseValues>
+    <fieldSets>
+        <label><!-- Line Editor --></label>
+        <name>SBQQ__LineEditor</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Non-Current Quote Line Locked Fields --></label>
+        <name>SBQQ__NonCurrentQuoteLineLockedFields</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Segmented Line Editor --></label>
+        <name>SBQQ__SegmentedLineEditor</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Segmented Line Editor Summary --></label>
+        <name>SBQQ__SegmentedLineEditorSummary</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Standard Line Item Drawer --></label>
+        <name>SBQQ__StandardLineItemDrawer</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Summary Fields --></label>
+        <name>SBQQ__SummaryFields</name>
+    </fieldSets>
+    <fields>
+        <help>Descuento de cliente adicional ampliado en esta partida en forma de un importe absoluto.</help>
+        <label><!-- Additional Disc. (Amt) --></label>
+        <name>SBQQ__AdditionalDiscountAmount__c</name>
+    </fields>
+    <fields>
+        <help>Total de descuentos adicionales ampliados a esta partida. El descuento adicional se define como un descuento ampliado sobre el descuento por volumen o precios negociados.</help>
+        <label><!-- Additional Disc. --></label>
+        <name>SBQQ__AdditionalDiscount__c</name>
+    </fields>
+    <fields>
+        <help>Cantidad adicional para este producto que contribuye a los cálculos de descuentos por volumen.</help>
+        <label><!-- Additional Quantity --></label>
+        <name>SBQQ__AdditionalQuantity__c</name>
+    </fields>
+    <fields>
+        <help>Indica si el activo representado por esta partida se puede reembolsar.</help>
+        <label><!-- Allow Asset Refunds --></label>
+        <name>SBQQ__AllowAssetRefund__c</name>
+    </fields>
+    <fields>
+        <help>Si los productos se venden en lotes, esta opción almacena la cantidad de cada lote, que toma el valor predeterminado del producto.</help>
+        <label><!-- Batch Quantity --></label>
+        <name>SBQQ__BatchQuantity__c</name>
+    </fields>
+    <fields>
+        <help>Define la frecuencia de la facturación.</help>
+        <label><!-- Billing Frequency --></label>
+        <name>SBQQ__BillingFrequency__c</name>
+    </fields>
+    <fields>
+        <help>El tipo de facturación que define el momento en que se produce la facturación. La facturación por anticipado le permite facturar a sus clientes por productos o servicios antes de proporcionarlos; la facturación con retraso le permite facturar a sus clientes después de proporcionar los productos o servicios.</help>
+        <label><!-- Billing Type --></label>
+        <name>SBQQ__BillingType__c</name>
+    </fields>
+    <fields>
+        <help>Asigna un precio fijo a un producto basado en la cantidad y el intervalo de cantidades. Esta opción invalida el cálculo automático de cantidad * precio unitario.</help>
+        <label><!-- Block Price --></label>
+        <name>SBQQ__BlockPrice__c</name>
+        <relationshipLabel><!-- Quote Lines --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Indica si esta partida representa un paquete, que significa que incluye otras partidas en este presupuesto.</help>
+        <label><!-- Package --></label>
+        <name>SBQQ__Bundle__c</name>
+    </fields>
+    <fields>
+        <help>Para artículos con cantidades calculadas, este campo alberga la cantidad original ingresada por el usuario.</help>
+        <label><!-- Original Quantity --></label>
+        <name>SBQQ__BundledQuantity__c</name>
+    </fields>
+    <fields>
+        <help>Indica que el producto de esta partida está aparejado (incluido) por otro producto en este presupuesto. Las partidas aparejadas tienen un precio cero y no permiten que se modifique el precio o la cantidad.</help>
+        <label><!-- Bundled --></label>
+        <name>SBQQ__Bundled__c</name>
+    </fields>
+    <fields>
+        <help>Denota esta partida como una opción seleccionada automáticamente de un paquete de mejora.</help>
+        <label><!-- Carry-Over Line --></label>
+        <name>SBQQ__CarryoverLine__c</name>
+    </fields>
+    <fields>
+        <help>El tipo del cargo del producto. Este es un campo del sistema que viene derivado del producto asociado.</help>
+        <label><!-- Charge Type --></label>
+        <name>SBQQ__ChargeType__c</name>
+    </fields>
+    <fields>
+        <help>Costo total de los componentes de este paquete.</help>
+        <label><!-- Component Cost --></label>
+        <name>SBQQ__ComponentCost__c</name>
+    </fields>
+    <fields>
+        <help>Fija un descuento adicional para este componente con el descuento del paquete principal.</help>
+        <label><!-- Component Discounted By Package --></label>
+        <name>SBQQ__ComponentDiscountedByPackage__c</name>
+    </fields>
+    <fields>
+        <help>Total de la lista de componentes de esta configuración. Este campo solo se rellena si esta partida hace referencia a un producto configurable.</help>
+        <label><!-- Component List Total --></label>
+        <name>SBQQ__ComponentListTotal__c</name>
+    </fields>
+    <fields>
+        <help>Porcentaje del ámbito total establecido en el nivel de componentes. Este campo invalida el ámbito del porcentaje del total que se copia desde la opción de productos.</help>
+        <label><!-- Component Percent of Total Scope --></label>
+        <name>SBQQ__ComponentSubscriptionScope__c</name>
+        <picklistValues>
+            <masterLabel>Both</masterLabel>
+            <translation>Ambos</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Components</masterLabel>
+            <translation>Componentes</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Package</masterLabel>
+            <translation>Paquete</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Total de la suma de componentes de esta configuración. Este campo solo se rellena si esta partida hace referencia a un producto configurable.</help>
+        <label><!-- Component Net Total --></label>
+        <name>SBQQ__ComponentTotal__c</name>
+    </fields>
+    <fields>
+        <help>Fija el incremento de este componente con el incremento del paquete principal. El incremento solo se aplica a productos con segmentación múltiple</help>
+        <label><!-- Component Uplifted By Package --></label>
+        <name>SBQQ__ComponentUpliftedByPackage__c</name>
+    </fields>
+    <fields>
+        <help>Indica la visibilidad de la partida de componentes.</help>
+        <label><!-- Component Visibility --></label>
+        <name>SBQQ__ComponentVisibility__c</name>
+    </fields>
+    <fields>
+        <help>La tasa de descuento compuesta por cantidad (histórica).</help>
+        <label><!-- Compound Discount (%) --></label>
+        <name>SBQQ__CompoundDiscountRate__c</name>
+    </fields>
+    <fields>
+        <help>Etiqueta que marca esta partida de presupuesto como que requiere configuración. Puede utilizarse por el código personalizado para solicitar que se vuelva a configurar este producto.</help>
+        <label><!-- Configuration Required --></label>
+        <name>SBQQ__ConfigurationRequired__c</name>
+    </fields>
+    <fields>
+        <help>Precio contratado si el producto negoció precios para la cuenta de la oportunidad. Los precios contratados están disponibles en la cuenta y pueden aplicarse a cualquier producto en cualquier lista de precios.</help>
+        <label><!-- Contracted Price --></label>
+        <name>SBQQ__ContractedPrice__c</name>
+        <relationshipLabel><!-- Quote Lines --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Especifica si el costo puede modificarse en esta partida.</help>
+        <label><!-- Cost Editable --></label>
+        <name>SBQQ__CostEditable__c</name>
+    </fields>
+    <fields>
+        <help>Registro de costo para esta partida.</help>
+        <label><!-- Cost --></label>
+        <name>SBQQ__Cost__c</name>
+        <relationshipLabel><!-- Quote Lines --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Precio unitario de cliente para el producto presupuestado por esta partida. Esta opción es el Precio unitario neto excluyendo cualquier descuento de socios.</help>
+        <label><!-- Customer Unit Price --></label>
+        <name>SBQQ__CustomerPrice__c</name>
+    </fields>
+    <fields>
+        <help>Precio total del cliente para esta partida de presupuesto. Esta opción es el Total neto excluyendo cualquier descuento de socios.</help>
+        <label><!-- Customer Total --></label>
+        <name>SBQQ__CustomerTotal__c</name>
+    </fields>
+    <fields>
+        <help>Longitud del plazo de suscripción, que solo se aplica si el producto es una suscripción. Se copia desde el Plazo de suscripción del producto relacionado cuando la partida se genera por primera vez.</help>
+        <label><!-- Default Subscription Term --></label>
+        <name>SBQQ__DefaultSubscriptionTerm__c</name>
+    </fields>
+    <fields>
+        <help>Descripción de esta partida.</help>
+        <label><!-- Description --></label>
+        <name>SBQQ__Description__c</name>
+    </fields>
+    <fields>
+        <help>Dimensiones dentro de un producto MDQ en el que a cada segmento se asigna un precio de forma independiente. Cada producto puede contener varias dimensiones de precios. Las dimensiones de precios anuales se tratan como suscripciones.</help>
+        <label><!-- Price Dimension --></label>
+        <name>SBQQ__Dimension__c</name>
+        <relationshipLabel><!-- Quote Lines --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Tipo de programación de descuentos. Se copia desde el campo Tipo en una programación de descuentos asociada.</help>
+        <label><!-- Discount Schedule Type --></label>
+        <name>SBQQ__DiscountScheduleType__c</name>
+        <picklistValues>
+            <masterLabel>Range</masterLabel>
+            <translation>Intervalo</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Slab</masterLabel>
+            <translation>Porción</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Especifica descuentos en porcentajes o el importe que hay que descontar del precio del producto empleando la cantidad o el plazo adquiridos. Establece los intervalos de cantidad/plazo en niveles de porcentajes de descuento diferentes. El descuento se aplica a la lista de precios y el total resultante se almacena en el precio normal.</help>
+        <label><!-- Discount Schedule --></label>
+        <name>SBQQ__DiscountSchedule__c</name>
+        <relationshipLabel><!-- Quote Lines --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Nivel de descuentos empleado por esta partida. Este campo solo se rellena si se aplicó un descuento por volumen y la programación de descuentos es del tipo &quot;Intervalo&quot;.</help>
+        <label><!-- Discount Tier --></label>
+        <name>SBQQ__DiscountTier__c</name>
+        <relationshipLabel><!-- Quote Lines (Volume Discounted) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Descuento de cliente adicional ampliado a esta partida que se expresa en forma de un porcentaje.</help>
+        <label><!-- Additional Disc. (%) --></label>
+        <name>SBQQ__Discount__c</name>
+    </fields>
+    <fields>
+        <help>Este es un descuento que se aplica a un precio de socios y que se refleja en el precio neto.</help>
+        <label><!-- Distributor Discount --></label>
+        <name>SBQQ__DistributorDiscount__c</name>
+    </fields>
+    <fields>
+        <help>Identifica la función y la opción dinámica de esta partida.</help>
+        <label><!-- Dynamic Option ID --></label>
+        <name>SBQQ__DynamicOptionId__c</name>
+    </fields>
+    <fields>
+        <help>Fecha de finalización de vigencia para esta suscripción.</help>
+        <label><!-- Effective End Date --></label>
+        <name>SBQQ__EffectiveEndDate__c</name>
+    </fields>
+    <fields>
+        <help>Cantidad vigente empleada en el cálculo de los totales. Es igual que la cantidad a no ser que el producto tenga precios en bloque, esté cubierta por una programación de descuentos de tipo &quot;Porción&quot; o una suscripción existente.</help>
+        <label><!-- Effective Quantity --></label>
+        <name>SBQQ__EffectiveQuantity__c</name>
+    </fields>
+    <fields>
+        <help>Fecha de inicio de vigencia para esta suscripción.</help>
+        <label><!-- Effective Start Date --></label>
+        <name>SBQQ__EffectiveStartDate__c</name>
+    </fields>
+    <fields>
+        <help>Fecha en la que el servicio representado por esta partida finalizará (solo se aplica si el producto es una suscripción).</help>
+        <label><!-- End Date --></label>
+        <name>SBQQ__EndDate__c</name>
+    </fields>
+    <fields>
+        <help>Indica que el cliente ya es propietario de este producto. Se utiliza normalmente para productos con opciones durante la presupuestación de complementos. El producto está en el presupuesto únicamente para dirigir el configurador.</help>
+        <label><!-- Existing --></label>
+        <name>SBQQ__Existing__c</name>
+    </fields>
+    <fields>
+        <help>Favorito al que pertenece esta partida.</help>
+        <label><!-- Favorite --></label>
+        <name>SBQQ__Favorite__c</name>
+        <relationshipLabel><!-- Quote Lines --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Generará un precio contratado en base a la partida de presupuesto ajustada si está marcada.</help>
+        <label><!-- Generate Contracted Price --></label>
+        <name>SBQQ__GenerateContractedPrice__c</name>
+        <picklistValues>
+            <masterLabel>Discount Schedule</masterLabel>
+            <translation>Programación de descuentos</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Do Not Generate</masterLabel>
+            <translation>No generar</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Price</masterLabel>
+            <translation>Precio</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Importe del beneficio bruto en esta partida.</help>
+        <label><!-- Gross Profit --></label>
+        <name>SBQQ__GrossProfit__c</name>
+    </fields>
+    <fields>
+        <help>Grupo al que pertenece esta partida, si lo hubiera.</help>
+        <label><!-- Group --></label>
+        <name>SBQQ__Group__c</name>
+        <relationshipLabel><!-- Quote Lines --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Denota que esta partida está oculta en los documentos PDF generados.</help>
+        <label><!-- Hidden --></label>
+        <name>SBQQ__Hidden__c</name>
+    </fields>
+    <fields>
+        <help>Etiqueta establecida internamente por la lógica de la aplicación cuando se guarda una partida en una base de datos incompleta. Esto puede ocurrir cuando se evalúan las reglas de precios. Pruebe este campo en reglas de validación para evitar desencadenarlo de forma prematura. NO lo agregue a un formato de página ni lo actualice.</help>
+        <label><!-- Incomplete --></label>
+        <name>SBQQ__Incomplete__c</name>
+    </fields>
+    <fields>
+        <help>Precio unitario de lista para el producto presupuestado por esta partida. El precio de lista se origina desde la lista de precios.</help>
+        <label><!-- List Unit Price --></label>
+        <name>SBQQ__ListPrice__c</name>
+    </fields>
+    <fields>
+        <help>Precio total de lista para esta partida de presupuesto.</help>
+        <label><!-- List Total --></label>
+        <name>SBQQ__ListTotal__c</name>
+    </fields>
+    <fields>
+        <help>Importe del sobreprecio de esta partida.</help>
+        <label><!-- Markup (Amt) --></label>
+        <name>SBQQ__MarkupAmount__c</name>
+    </fields>
+    <fields>
+        <help>Sobreprecio sobre esta partida expresado como un porcentaje.</help>
+        <label><!-- Markup (%) --></label>
+        <name>SBQQ__MarkupRate__c</name>
+    </fields>
+    <fields>
+        <help>Importe del sobreprecio sobre este artículo. Este valor se calcula automáticamente aplicando una tasa de sobreprecio o un importe absoluto al costo del producto.</help>
+        <label><!-- Markup --></label>
+        <name>SBQQ__Markup__c</name>
+    </fields>
+    <fields>
+        <help>Precio unitario de lista máximo para este producto. Se utiliza para aplicar un techo de precio de lista para productos con precios de lista calculados de forma dinámica.</help>
+        <label><!-- Maximum List Unit Price --></label>
+        <name>SBQQ__MaximumPrice__c</name>
+    </fields>
+    <fields>
+        <help>Precio unitario de lista mínimo para este producto. Se utiliza para aplicar un suelo de precio de lista para productos con precios de lista calculados de forma dinámica.</help>
+        <label><!-- Minimum List Unit Price --></label>
+        <name>SBQQ__MinimumPrice__c</name>
+    </fields>
+    <fields>
+        <help>Precio unitario neto para el producto presupuestado por esta partida.</help>
+        <label><!-- Net Unit Price --></label>
+        <name>SBQQ__NetPrice__c</name>
+    </fields>
+    <fields>
+        <help>Precio total neto para esta partida de presupuesto.</help>
+        <label><!-- Net Total --></label>
+        <name>SBQQ__NetTotal__c</name>
+    </fields>
+    <fields>
+        <help>Marca esta partida como que no admite descuentos.</help>
+        <label><!-- Non Discountable --></label>
+        <name>SBQQ__NonDiscountable__c</name>
+    </fields>
+    <fields>
+        <help>Seleccione la casilla de verificación para hacer que esta partida no admita descuentos para socios.</help>
+        <label><!-- Non Partner Discountable --></label>
+        <name>SBQQ__NonPartnerDiscountable__c</name>
+    </fields>
+    <fields>
+        <help>Número que indica la posición de esta partida dentro de su grupo o presupuesto.</help>
+        <label><!-- Number --></label>
+        <name>SBQQ__Number__c</name>
+    </fields>
+    <fields>
+        <help>Descuento ampliado en este producto porque es parte de un paquete.</help>
+        <label><!-- Option Discount (Amt) --></label>
+        <name>SBQQ__OptionDiscountAmount__c</name>
+    </fields>
+    <fields>
+        <help>Si esta línea es para una SKU opcional, este campo captura cualquier descuento asignado al paquete y se amplía a la opción.</help>
+        <label><!-- Option Discount (%) --></label>
+        <name>SBQQ__OptionDiscount__c</name>
+    </fields>
+    <fields>
+        <help>Indica el nivel de anidación de esta opción (solo se aplica a partidas que están generadas a partir de opciones)</help>
+        <label><!-- Option Level --></label>
+        <name>SBQQ__OptionLevel__c</name>
+    </fields>
+    <fields>
+        <help>Indica el Tipo de opción, que se copia desde la Opción de producto relacionada. Determina el modo de cálculo de la cantidad.</help>
+        <label><!-- Option Type --></label>
+        <name>SBQQ__OptionType__c</name>
+        <picklistValues>
+            <masterLabel>Accessory</masterLabel>
+            <translation>Accesorio</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Component</masterLabel>
+            <translation>Componente</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Related Product</masterLabel>
+            <translation>Producto relacionado</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Marca esta partida como opcional. Las partidas opcionales no contribuyen al total del presupuesto ni se transfieren a la oportunidad.</help>
+        <label><!-- Optional --></label>
+        <name>SBQQ__Optional__c</name>
+    </fields>
+    <fields>
+        <help>Precio unitario original para el producto presupuestado por esta partida. El precio original proviene de la lista de precios.</help>
+        <label><!-- Original Price --></label>
+        <name>SBQQ__OriginalPrice__c</name>
+    </fields>
+    <fields>
+        <help>El identificador de la partida de presupuesto original del que se derivó esta partida.</help>
+        <label><!-- Original Quote Line Id --></label>
+        <name>SBQQ__OriginalQuoteLineId__c</name>
+    </fields>
+    <fields>
+        <help>Costo de una unidad del producto presupuestado en esta partida si no se aplicaron las programaciones de costos.</help>
+        <label><!-- Original Unit Cost --></label>
+        <name>SBQQ__OriginalUnitCost__c</name>
+    </fields>
+    <fields>
+        <help>Costo total de este paquete incluyendo el costo de sus componentes.</help>
+        <label><!-- Package Cost --></label>
+        <name>SBQQ__PackageCost__c</name>
+    </fields>
+    <fields>
+        <help>Precio de lista total de este paquete incluyendo sus componentes.</help>
+        <label><!-- Package List Total --></label>
+        <name>SBQQ__PackageListTotal__c</name>
+    </fields>
+    <fields>
+        <help>Lista generada automáticamente de códigos de productos para cada componente de este paquete.</help>
+        <label><!-- Package Product Code --></label>
+        <name>SBQQ__PackageProductCode__c</name>
+    </fields>
+    <fields>
+        <help>Descripción de producto dinámica generada a partir de los componentes de este paquete.</help>
+        <label><!-- Package Product Description --></label>
+        <name>SBQQ__PackageProductDescription__c</name>
+    </fields>
+    <fields>
+        <help>Precio total de este paquete incluyendo sus componentes.</help>
+        <label><!-- Package Total --></label>
+        <name>SBQQ__PackageTotal__c</name>
+    </fields>
+    <fields>
+        <help>Si su organización vende a través de un canal/VARI, se puede dar un descuento de socios en un presupuesto o una partida de productos individual. Los descuentos de socios se aplican después de todos los descuentos automáticos y discrecionales.</help>
+        <label><!-- Partner Discount --></label>
+        <name>SBQQ__PartnerDiscount__c</name>
+    </fields>
+    <fields>
+        <help>Precio después de un descuento de socios pero anterior a un descuento de distribuidor.</help>
+        <label><!-- Partner Unit Price --></label>
+        <name>SBQQ__PartnerPrice__c</name>
+    </fields>
+    <fields>
+        <help>Total del descuento de socios.</help>
+        <label><!-- Partner Total --></label>
+        <name>SBQQ__PartnerTotal__c</name>
+    </fields>
+    <fields>
+        <help>Cuando se establece, este valor toma el lugar del precio normal del segmento anterior cuando se calcula el incremento para este segmento.</help>
+        <label><!-- Previous Segment Regular Price --></label>
+        <name>SBQQ__PreviousSegmentPrice__c</name>
+    </fields>
+    <fields>
+        <help>Cuando se establece, este valor toma el lugar del importe del incremento del segmento anterior cuando se calcula el incremento para este segmento.</help>
+        <label><!-- Previous Segment Uplift --></label>
+        <name>SBQQ__PreviousSegmentUplift__c</name>
+    </fields>
+    <fields>
+        <help>Etiqueta que indica si el precio es modificable para esta partida.</help>
+        <label><!-- Price Editable --></label>
+        <name>SBQQ__PriceEditable__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pricebook Entry Id --></label>
+        <name>SBQQ__PricebookEntryId__c</name>
+    </fields>
+    <fields>
+        <help>Etiqueta que indica si el precio de esta partida es modificable.</help>
+        <label><!-- Pricing Method Editable --></label>
+        <name>SBQQ__PricingMethodEditable__c</name>
+    </fields>
+    <fields>
+        <help>Indica el modo con el que se calcula esta partida. &quot;Lista&quot; = sustracción del descuento del precio de lista. &quot;Costo&quot; = agregando sobreprecio al costo.</help>
+        <label><!-- Pricing Method --></label>
+        <name>SBQQ__PricingMethod__c</name>
+        <picklistValues>
+            <masterLabel>Block</masterLabel>
+            <translation>Bloque</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cost</masterLabel>
+            <translation>Costo</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Custom</masterLabel>
+            <translation>Personalizado</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>List</masterLabel>
+            <translation>Lista</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Percent Of Total</masterLabel>
+            <translation>Porcentaje del total</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Cantidad combinada de este producto de anteriores compras.</help>
+        <label><!-- Prior Quantity --></label>
+        <name>SBQQ__PriorQuantity__c</name>
+    </fields>
+    <fields>
+        <help>Código para el producto al que hace referencia esta partida.</help>
+        <label><!-- Product Code --></label>
+        <name>SBQQ__ProductCode__c</name>
+    </fields>
+    <fields>
+        <help>El modo en que se categoriza/agrupa/organiza esto producto dentro de Salesforce (ya sea una familia de productos nueva o existente). Adicionalmente, este campo puede utilizarse durante la selección de productos para filtrar el producto o SKU de producto correcto.</help>
+        <label><!-- Product Family --></label>
+        <name>SBQQ__ProductFamily__c</name>
+    </fields>
+    <fields>
+        <help>Nombre para el producto al que hace referencia esta partida.</help>
+        <label><!-- Product Name --></label>
+        <name>SBQQ__ProductName__c</name>
+    </fields>
+    <fields>
+        <help>Opción de producto que generó esta partida (si la hubiera).</help>
+        <label><!-- Product Option --></label>
+        <name>SBQQ__ProductOption__c</name>
+        <relationshipLabel><!-- Quote Lines --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Producto presupuestado por esta partida.</help>
+        <label><!-- Product --></label>
+        <name>SBQQ__Product__c</name>
+        <relationshipLabel><!-- Quote Lines --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Índice calculado empleado para computar el precio prorrateado.</help>
+        <label><!-- Prorate Multiplier --></label>
+        <name>SBQQ__ProrateMultiplier__c</name>
+    </fields>
+    <fields>
+        <help>Precio unitario de lista prorrateado.</help>
+        <label><!-- Prorated List Price --></label>
+        <name>SBQQ__ProratedListPrice__c</name>
+    </fields>
+    <fields>
+        <help>Precio prorrateado para el producto presupuestado por esta partida. Este precio solo difiere del precio especial si el producto es una suscripción y se está prorrateando la partida.</help>
+        <label><!-- Prorated Unit Price --></label>
+        <name>SBQQ__ProratedPrice__c</name>
+    </fields>
+    <fields>
+        <help>Cantidad que se está presupuestando.</help>
+        <label><!-- Quantity --></label>
+        <name>SBQQ__Quantity__c</name>
+    </fields>
+    <fields>
+        <help>Presupuesto al que pertenece esta partida.</help>
+        <label><!-- Quote --></label>
+        <name>SBQQ__Quote__c</name>
+        <relationshipLabel><!-- Quote Lines --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Precio unitario antes de descuentos adicionales.</help>
+        <label><!-- Regular Unit Price --></label>
+        <name>SBQQ__RegularPrice__c</name>
+    </fields>
+    <fields>
+        <help>Precio unitario antes de descuentos adicionales multiplicado por cantidad.</help>
+        <label><!-- Regular Total --></label>
+        <name>SBQQ__RegularTotal__c</name>
+    </fields>
+    <fields>
+        <help>Indica que esta partida representa un producto que se está renovando. Este campo no debe modificarse.</help>
+        <label><!-- Renewal --></label>
+        <name>SBQQ__Renewal__c</name>
+    </fields>
+    <fields>
+        <help>Activo que se está renovando si esta partida representa una renovación de producto.</help>
+        <label><!-- Renewed Asset --></label>
+        <name>SBQQ__RenewedAsset__c</name>
+        <relationshipLabel><!-- Quote Lines --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Suscripción que se está renovando a través de esta partida de presupuesto.</help>
+        <label><!-- Renewed Subscription --></label>
+        <name>SBQQ__RenewedSubscription__c</name>
+        <relationshipLabel><!-- Quote Lines --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Indica qué otro producto en este presupuesto lo requiere.</help>
+        <label><!-- Required By --></label>
+        <name>SBQQ__RequiredBy__c</name>
+        <relationshipLabel><!-- Quote Lines --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Para productos con múltiples segmentos, el índice que representa la posición de esta partida en la tabla de segmentos.</help>
+        <label><!-- Segment Index --></label>
+        <name>SBQQ__SegmentIndex__c</name>
+    </fields>
+    <fields>
+        <help>Para productos con segmentos múltiples, esta es una clave compartida empleada para agrupar entre sí partidas de presupuesto con dimensiones múltiples.</help>
+        <label><!-- Segment Key --></label>
+        <name>SBQQ__SegmentKey__c</name>
+    </fields>
+    <fields>
+        <help>Para productos con múltiples segmentos, esta es la etiqueta del encabezado de columna (por ej. &quot;Año 1&quot;) asociada con esta partida.</help>
+        <label><!-- Segment Label --></label>
+        <name>SBQQ__SegmentLabel__c</name>
+    </fields>
+    <fields>
+        <help>Origen de la partida de presupuesto duplicada.</help>
+        <label><!-- Source --></label>
+        <name>SBQQ__Source__c</name>
+        <relationshipLabel><!-- Quote Lines (Source) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Nombre del Nivel de descuentos o Precio contratado que se aplica para alcanzar el precio especial de esta partida.</help>
+        <label><!-- Special Price Description --></label>
+        <name>SBQQ__SpecialPriceDescription__c</name>
+    </fields>
+    <fields>
+        <help>Almacena el tipo del precio especial ofrecido en esta partida. Un valor nulo indica que no hay precio especial.</help>
+        <label><!-- Special Price Type --></label>
+        <name>SBQQ__SpecialPriceType__c</name>
+        <picklistValues>
+            <masterLabel>Contracted Price</masterLabel>
+            <translation>Precio contratado</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Custom</masterLabel>
+            <translation>Personalizado</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Renewal</masterLabel>
+            <translation>Renovación</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Precio unitario especial para esta partida, como un descuento por volumen o un precio contratado.</help>
+        <label><!-- Special Price --></label>
+        <name>SBQQ__SpecialPrice__c</name>
+    </fields>
+    <fields>
+        <help>La fecha en la que comienza la suscripción de este producto.</help>
+        <label><!-- Start Date --></label>
+        <name>SBQQ__StartDate__c</name>
+    </fields>
+    <fields>
+        <help>Lista de activos cubiertos por esta partida de suscripción. No los actualice a no ser que se le indique.</help>
+        <label><!-- Subscribed Asset IDs --></label>
+        <name>SBQQ__SubscribedAssetIds__c</name>
+    </fields>
+    <fields>
+        <help>Determina si el porcentaje del total se calcula a partir de los precios de lista o netos de productos.</help>
+        <label><!-- Percent of Total Base --></label>
+        <name>SBQQ__SubscriptionBase__c</name>
+    </fields>
+    <fields>
+        <help>Categoría definida en el producto para limitar los cálculos de porcentaje del total a ciertos productos. Se copia desde el registro del producto.</help>
+        <label><!-- Percent of Total Category --></label>
+        <name>SBQQ__SubscriptionCategory__c</name>
+        <picklistValues>
+            <masterLabel>Hardware</masterLabel>
+            <translation>Hardware</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Software</masterLabel>
+            <translation>Software</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Porcentaje del total que se utiliza cuando se calcula el precio de esta partida.</help>
+        <label><!-- Percent of Total (%) --></label>
+        <name>SBQQ__SubscriptionPercent__c</name>
+    </fields>
+    <fields>
+        <help>Indica el método para calcular el precio de la suscripción. Si está en blanco, la partida no es un producto de suscripción.</help>
+        <label><!-- Subscription Pricing --></label>
+        <name>SBQQ__SubscriptionPricing__c</name>
+        <picklistValues>
+            <masterLabel>Fixed Price</masterLabel>
+            <translation>Precio fijo</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Percent Of Total</masterLabel>
+            <translation>Porcentaje del total</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Indica el método para calcular el porcentaje de los precios totales: Presupuesto utiliza todos los que no son de suscripción e incluye el porcentaje del total de productos del presupuesto, mientras que Grupo utiliza únicamente productos que no son de suscripción e incluye el porcentaje del total de productos del mismo grupo.</help>
+        <label><!-- Percent of Total Scope --></label>
+        <name>SBQQ__SubscriptionScope__c</name>
+        <picklistValues>
+            <masterLabel>Group</masterLabel>
+            <translation>Grupo</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quote</masterLabel>
+            <translation>Presupuesto</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Precio del producto de destino sobre el que debe calcularse el porcentaje del total.</help>
+        <label><!-- Percent of Total Target Price --></label>
+        <name>SBQQ__SubscriptionTargetPrice__c</name>
+    </fields>
+    <fields>
+        <help>Plazo para esta suscripción. Si este producto no es una suscripción, este valor no tiene efecto.</help>
+        <label><!-- Subscription Term --></label>
+        <name>SBQQ__SubscriptionTerm__c</name>
+    </fields>
+    <fields>
+        <help>Especifica el código impositivo para las reglas de impuestos.</help>
+        <label><!-- Tax code --></label>
+        <name>SBQQ__TaxCode__c</name>
+    </fields>
+    <fields>
+        <help>Indica si se pueden aplicar impuestos a esta partida.</help>
+        <label><!-- Taxable --></label>
+        <name>SBQQ__Taxable__c</name>
+    </fields>
+    <fields>
+        <help>Programación de descuentos basada en el plazo de suscripción. Al establecer esta opción en &quot;Grupo&quot; aplica la tasa de descuento para el plazo del grupo, mientras que al establecerla en &quot;Presupuesto&quot; aplica la tasa de descuento para todo el plazo del presupuesto, sin que importen los plazos diferentes en sus grupos.</help>
+        <label><!-- Term Discount Schedule --></label>
+        <name>SBQQ__TermDiscountSchedule__c</name>
+        <relationshipLabel><!-- Quote Lines (Term Discouned) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Nivel dentro de la programación de descuentos por plazos empleada para aplicar descuentos a esta partida.</help>
+        <label><!-- Term Discount Tier --></label>
+        <name>SBQQ__TermDiscountTier__c</name>
+        <relationshipLabel><!-- Quote Lines (Term Discounted) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Descuento calculando aplicando un plazo de suscripción frente a una programación de descuentos por plazo.</help>
+        <label><!-- Term Discount --></label>
+        <name>SBQQ__TermDiscount__c</name>
+    </fields>
+    <fields>
+        <help>Importe de descuento total para esta partida, incluyendo los descuentos por volumen, los descuentos contratados y los descuentos adicionales.</help>
+        <label><!-- Total Discount (Amt) --></label>
+        <name>SBQQ__TotalDiscountAmount__c</name>
+    </fields>
+    <fields>
+        <help>Descuento total para esta partida, incluyendo los descuentos por volumen, los descuentos contratados y los descuentos adicionales.</help>
+        <label><!-- Total Discount (%) --></label>
+        <name>SBQQ__TotalDiscountRate__c</name>
+    </fields>
+    <fields>
+        <help>Costo de una unidad del producto presupuestado en esta partida.</help>
+        <label><!-- Unit Cost --></label>
+        <name>SBQQ__UnitCost__c</name>
+    </fields>
+    <fields>
+        <help>El precio neto del plazo completo para la partida individual.</help>
+        <label><!-- Unprorated Net Price --></label>
+        <name>SBQQ__UnproratedNetPrice__c</name>
+    </fields>
+    <fields>
+        <help>El activo que está mejorando esta partida de presupuesto. Cuando el presupuesto se contrata, este activo tendrá relleno su campo Fecha de finalización de uso para indicar que está retirado.</help>
+        <label><!-- Upgraded Asset --></label>
+        <name>SBQQ__UpgradedAsset__c</name>
+        <relationshipLabel><!-- Quote Lines (Upgrade) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Parte de la Cantidad anterior de esta partida que se está mejorando a otro producto.</help>
+        <label><!-- Upgraded Quantity --></label>
+        <name>SBQQ__UpgradedQuantity__c</name>
+    </fields>
+    <fields>
+        <help>La suscripción que está mejorando esta partida de presupuesto. Cuando el presupuesto se contrata, esta suscripción tendrá relleno su campo Fecha de terminación.</help>
+        <label><!-- Upgraded Subscription --></label>
+        <name>SBQQ__UpgradedSubscription__c</name>
+        <relationshipLabel><!-- Quote Lines (Upgrade) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>El incremento (Importe) se mide como un importe de divisa. Se trata de un campo calculado por el sistema, ya que Incremento solo puede aplicarse a segmentos MDQ en porcentaje.</help>
+        <label><!-- Uplift (Amt) --></label>
+        <name>SBQQ__UpliftAmount__c</name>
+    </fields>
+    <fields>
+        <help>El incremento se aplica como un porcentaje frente al precio del año anterior; el precio resultante se ingresa en el campo Precio normal sobre Precios especiales o contratados. Los incrementos se acrecientan año tras año. El incremento no puede aplicarse al primer año de cualquier suscripción.</help>
+        <label><!-- Uplift --></label>
+        <name>SBQQ__Uplift__c</name>
+    </fields>
+    <fields>
+        <help>Especifique descuentos por volumen en base a un porcentaje del precio del producto que se descontará empleando la cantidad adquirida o el plazo. Puede establecer los intervalos de cantidad o plazo en niveles de diferentes porcentajes de descuento. También puede aplicar programaciones de descuentos a Plazo de suscripción.</help>
+        <label><!-- Volume Discount --></label>
+        <name>SBQQ__VolumeDiscount__c</name>
+    </fields>
+    <gender>Feminine</gender>
+    <layouts>
+        <layout>Quote Line Layout</layout>
+        <sections>
+            <label>Vínculos personalizados</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>Información de descripción</label>
+            <section>Description Information</section>
+        </sections>
+        <sections>
+            <label>Información de descuento</label>
+            <section>Discount Information</section>
+        </sections>
+        <sections>
+            <label>Información de precios</label>
+            <section>Pricing Information</section>
+        </sections>
+        <sections>
+            <label>Volviendo a calcular</label>
+            <section>Recalculating</section>
+        </sections>
+        <sections>
+            <label>Información de suscripción</label>
+            <section>Subscription Information</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Nombre de partida</nameFieldLabel>
+    <validationRules>
+        <errorMessage><!-- You may not specify additional discount as both percentage and absolute amount. --></errorMessage>
+        <name>SBQQ__Additional_discount_percent_or_amount</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You may not specify markup as both percentage and absolute amount. --></errorMessage>
+        <name>SBQQ__Markup_percent_or_amount</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- When Charge Type is Recurring, a Billing Type must be selected. --></errorMessage>
+        <name>SBQQ__RecurringChargeTypeMustHaveBillingType</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- When Charge Type is One-Time, a Billing Frequency value cannot not be selected. --></errorMessage>
+        <name>SBQQ__Validate_billing_frequency</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- When Charge Type is One-Time or Usage, a Billing Type value cannot be selected. --></errorMessage>
+        <name>SBQQ__Validate_billing_type</name>
+    </validationRules>
+</CustomObjectTranslation>

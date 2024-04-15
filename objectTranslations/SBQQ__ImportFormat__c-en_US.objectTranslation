@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- Select the checkbox to make the input format available for use. --></help>
+        <label><!-- Active --></label>
+        <name>SBQQ__Active__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter a meaningful name that describes the input format. --></help>
+        <label><!-- Import Format Name --></label>
+        <name>SBQQ__ImportFormatName__c</name>
+    </fields>
+    <fields>
+        <help><!-- Target Object to be imported. --></help>
+        <label><!-- Target Object --></label>
+        <name>SBQQ__TargetObject__c</name>
+        <picklistValues>
+            <masterLabel>Quote Line</masterLabel>
+            <translation><!-- Quote Line --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- A count of the unique Keys within the Import Format. --></help>
+        <label><!-- # Unique Key --></label>
+        <name>SBQQ__UniqueKeyCount__c</name>
+    </fields>
+    <layouts>
+        <layout>Import Format Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <validationRules>
+        <errorMessage><!-- More than 1 unique key defined in Import Column. --></errorMessage>
+        <name>SBQQ__Num_Unique_Key_is_not_one</name>
+    </validationRules>
+</CustomObjectTranslation>
