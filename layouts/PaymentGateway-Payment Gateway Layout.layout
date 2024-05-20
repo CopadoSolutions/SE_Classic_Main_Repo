@@ -11,16 +11,20 @@
                 <field>PaymentGatewayName</field>
             </layoutItems>
             <layoutItems>
-                <behavior>Required</behavior>
+                <behavior>Edit</behavior>
                 <field>PaymentGatewayProviderId</field>
             </layoutItems>
             <layoutItems>
-                <behavior>Required</behavior>
+                <behavior>Edit</behavior>
                 <field>MerchantCredentialId</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Required</behavior>
                 <field>Status</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>ExternalReference</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>

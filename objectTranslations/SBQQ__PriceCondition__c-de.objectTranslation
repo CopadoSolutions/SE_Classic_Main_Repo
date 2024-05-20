@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Preisbedingung</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Preisbedingungen</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value><!-- Preisbedingung --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+        <value><!-- Preisbedingungen --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value><!-- Preisbedingung --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>true</plural>
+        <value><!-- Preisbedingungen --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value><!-- Preisbedingung --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value><!-- Preisbedingungen --></value>
+    </caseValues>
+    <fields>
+        <help>Wählen Sie das Feld, das den Wert enthalten soll, den Sie im Feld &quot;Wert&quot; eingeben.</help>
+        <label><!-- Field --></label>
+        <name>SBQQ__Field__c</name>
+        <picklistValues>
+            <masterLabel>Product Code</masterLabel>
+            <translation>Produktcode</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Geben Sie eine Formel mit Operatoren, Funktionen und verfügbaren Feldern in Angebots- und Zielobjekt ein. Wird bei altem Rechner nicht unterstützt.</help>
+        <label><!-- Filter Formula --></label>
+        <name>SBQQ__FilterFormula__c</name>
+    </fields>
+    <fields>
+        <help>Wählen Sie &quot;Variable&quot; aus, um diese Bedingung für eine Zusammenfassungsvariable auszuwerten. Andernfalls wählen Sie &quot;Wert&quot;.</help>
+        <label><!-- Filter Type --></label>
+        <name>SBQQ__FilterType__c</name>
+        <picklistValues>
+            <masterLabel>Formula</masterLabel>
+            <translation>Formel</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Value</masterLabel>
+            <translation>Wert</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Variable</masterLabel>
+            <translation>Variable</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Wählen Sie die Zusammenfassungsvariable aus, die bei dieser Bedingung als Filter verwendet werden sol.</help>
+        <label><!-- Filter Variable --></label>
+        <name>SBQQ__FilterVariable__c</name>
+        <relationshipLabel><!-- Filtered Price Conditions --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Weisen Sie dieser Bedingung eine eindeutige Nummer zu, um sie unter &quot;Erweiterte Bedingung&quot; der Preisregel zu referenzieren.</help>
+        <label><!-- Index --></label>
+        <name>SBQQ__Index__c</name>
+    </fields>
+    <fields>
+        <help>Objekt, für das die Bedingung ausgewertet wird.</help>
+        <label><!-- Object --></label>
+        <name>SBQQ__Object__c</name>
+        <picklistValues>
+            <masterLabel>Product Option</masterLabel>
+            <translation>Produktoption</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quote</masterLabel>
+            <translation>Angebot</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quote Line</masterLabel>
+            <translation>Angebotsbelegposten</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Summary Variable</masterLabel>
+            <translation>Zusammenfassungsvariable</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Wählen Sie den Operator aus, der beim Vergleich von &quot;Feld&quot; mit &quot;Wert&quot; verwendet werden soll.</help>
+        <label><!-- Operator --></label>
+        <name>SBQQ__Operator__c</name>
+        <picklistValues>
+            <masterLabel>contains</masterLabel>
+            <translation>enthält</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ends with</masterLabel>
+            <translation>endet auf</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>equals</masterLabel>
+            <translation>gleich</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>greater or equals</masterLabel>
+            <translation>größer oder gleich</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>greater than</masterLabel>
+            <translation>größer als</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>less or equals</masterLabel>
+            <translation>kleiner oder gleich</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>less than</masterLabel>
+            <translation>kleiner als</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>not equals</masterLabel>
+            <translation>ungleich</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>starts with</masterLabel>
+            <translation>beginnt mit</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- ParentRuleIsActive --></label>
+        <name>SBQQ__ParentRuleIsActive__c</name>
+    </fields>
+    <fields>
+        <label><!-- RuleTargetsCalculator --></label>
+        <name>SBQQ__RuleTargetsCalculator__c</name>
+    </fields>
+    <fields>
+        <help>Preisregel, die diese Bedingung ausführt.</help>
+        <label><!-- Price Rule --></label>
+        <name>SBQQ__Rule__c</name>
+        <relationshipLabel><!-- Price Conditions --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Geben Sie eine Formel mit Operatoren, Funktionen und verfügbaren Feldern in Angebots- und Zielobjekt ein. Wird bei altem Rechner nicht unterstützt.</help>
+        <label><!-- Tested Formula --></label>
+        <name>SBQQ__TestedFormula__c</name>
+    </fields>
+    <fields>
+        <help>Zusammenfassungsvariable, die von dieser Preisbedingung getestet wird.</help>
+        <label><!-- Tested Variable --></label>
+        <name>SBQQ__TestedVariable__c</name>
+        <relationshipLabel><!-- Price Conditions (Tested Variable) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Geben Sie den Wert ein, mit dem das ausgewählte Feld unter Verwendung des festgelegten Operators verglichen werden soll.</help>
+        <label><!-- Filter Value --></label>
+        <name>SBQQ__Value__c</name>
+    </fields>
+    <gender>Feminine</gender>
+    <layouts>
+        <layout>Price Condition Layout</layout>
+        <sections>
+            <label>Benutzerdefinierte Links</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>Filterinformationen</label>
+            <section>Filter Information</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Bedingungsnummer</nameFieldLabel>
+    <validationRules>
+        <errorMessage><!-- If Filter Type is Formula, then Filter Formula cannot be empty. --></errorMessage>
+        <name>SBQQ__Filter_formula_field_null</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You must specify either field or tested variable. --></errorMessage>
+        <name>SBQQ__Tested_field_or_variable</name>
+    </validationRules>
+</CustomObjectTranslation>

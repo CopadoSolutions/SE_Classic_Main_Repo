@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <customHelpPage>SBQQ__LocalizationHelp</customHelpPage>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>false</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>Private</externalSharingModel>
+    <fields>
+        <fullName>SBQQ__APIName__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The API Name of this content.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The API Name of this content.</inlineHelpText>
+        <label>API Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SBQQ__Description__c</fullName>
+        <deprecated>false</deprecated>
+        <description>To describe where the text is located</description>
+        <externalId>false</externalId>
+        <inlineHelpText>To describe where the text is located</inlineHelpText>
+        <label>Description</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SBQQ__Label__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This action’s label in the UI.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This action’s label in the UI.</inlineHelpText>
+        <label>Label</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SBQQ__Language__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The language code for this translation.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The language code for this translation.</inlineHelpText>
+        <label>Language</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SBQQ__LineColumn__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>The line column related to this content.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The line column related to this content.</inlineHelpText>
+        <label>Line Column</label>
+        <referenceTo>SBQQ__LineColumn__c</referenceTo>
+        <relationshipLabel>Localizations</relationshipLabel>
+        <relationshipName>Localizations</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__LongTextArea__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This field stores translations for Long Text fields.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This field stores translations for Long Text fields.</inlineHelpText>
+        <label>Long Text Area</label>
+        <length>32768</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>SBQQ__PriceDimension__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>The Dimension related to this content.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The Dimension related to this content.</inlineHelpText>
+        <label>Price Dimension</label>
+        <referenceTo>SBQQ__Dimension__c</referenceTo>
+        <relationshipLabel>Localizations</relationshipLabel>
+        <relationshipName>Localizations</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__ProductFeature__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>The product feature related to this content.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The product feature related to this content.</inlineHelpText>
+        <label>Product Feature</label>
+        <referenceTo>SBQQ__ProductFeature__c</referenceTo>
+        <relationshipLabel>Localizations</relationshipLabel>
+        <relationshipName>Localizations</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__ProductOption__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>The product option that generated this line.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The product option that generated this line.</inlineHelpText>
+        <label>Product Option</label>
+        <referenceTo>SBQQ__ProductOption__c</referenceTo>
+        <relationshipLabel>Localizations</relationshipLabel>
+        <relationshipName>Localizations</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__Product__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>The product related to this content.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The product related to this content.</inlineHelpText>
+        <label>Product</label>
+        <referenceTo>Product2</referenceTo>
+        <relationshipLabel>Localizations</relationshipLabel>
+        <relationshipName>Localizations</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__QuoteTemplate__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>The template to use for this content.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The template to use for this content.</inlineHelpText>
+        <label>Quote Template</label>
+        <referenceTo>SBQQ__QuoteTemplate__c</referenceTo>
+        <relationshipLabel>Localizations</relationshipLabel>
+        <relationshipName>Localizations</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__QuoteTerm__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>The parent term for this term.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The parent term for this term.</inlineHelpText>
+        <label>Quote Term</label>
+        <referenceTo>SBQQ__QuoteTerm__c</referenceTo>
+        <relationshipLabel>Localizations</relationshipLabel>
+        <relationshipName>Localizations</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__RichTextArea__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This field stores translations for Rich Text fields.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This field stores translations for Rich Text fields.</inlineHelpText>
+        <label>Rich Text Area</label>
+        <length>32768</length>
+        <trackTrending>false</trackTrending>
+        <type>Html</type>
+        <visibleLines>25</visibleLines>
+    </fields>
+    <fields>
+        <fullName>SBQQ__TemplateContent__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>The template content to use for this content.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The template content to use for this content.</inlineHelpText>
+        <label>Template Content</label>
+        <referenceTo>SBQQ__TemplateContent__c</referenceTo>
+        <relationshipLabel>Localizations</relationshipLabel>
+        <relationshipName>Localizations</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__TextArea__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This field stores translations for Text Area fields.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This field stores translations for Text Area fields.</inlineHelpText>
+        <label>Text Area</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__Text__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This field stores translations for Text fields.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This field stores translations for Text fields.</inlineHelpText>
+        <label>Text</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SBQQ__UserDefined__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>To indicate whether this field is user-defined or not.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>To indicate whether this field is user-defined or not.</inlineHelpText>
+        <label>User Defined</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <label>Localization</label>
+    <listViews>
+        <fullName>SBQQ__All</fullName>
+        <columns>NAME</columns>
+        <columns>SBQQ__Language__c</columns>
+        <columns>SBQQ__Label__c</columns>
+        <columns>SBQQ__APIName__c</columns>
+        <columns>SBQQ__QuoteTemplate__c</columns>
+        <columns>SBQQ__LineColumn__c</columns>
+        <columns>SBQQ__Product__c</columns>
+        <columns>SBQQ__ProductOption__c</columns>
+        <columns>SBQQ__ProductFeature__c</columns>
+        <columns>SBQQ__QuoteTerm__c</columns>
+        <columns>SBQQ__Text__c</columns>
+        <columns>SBQQ__TextArea__c</columns>
+        <columns>SBQQ__LongTextArea__c</columns>
+        <columns>SBQQ__RichTextArea__c</columns>
+        <columns>SBQQ__UserDefined__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+        <language>en_US</language>
+    </listViews>
+    <nameField>
+        <displayFormat>L-{00000}</displayFormat>
+        <label>Localization Number</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Localizations</pluralLabel>
+    <searchLayouts>
+        <customTabListAdditionalFields>SBQQ__Language__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>SBQQ__Label__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>SBQQ__APIName__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>SBQQ__QuoteTemplate__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>SBQQ__LineColumn__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>SBQQ__Product__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>SBQQ__ProductOption__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>SBQQ__ProductFeature__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>SBQQ__QuoteTerm__c</customTabListAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

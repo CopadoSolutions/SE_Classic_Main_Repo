@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Colonne d&apos;importation</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Colonnes d&apos;importation</value>
+    </caseValues>
+    <fields>
+        <help>Saisissez une valeur d&apos;index numérique qui représente l&apos;emplacement de la colonne. L&apos;index de la colonne doit commencer à 1.</help>
+        <label><!-- Column Index --></label>
+        <name>SBQQ__ColumnIndex__c</name>
+    </fields>
+    <fields>
+        <help>Saisissez le nom d&apos;API.</help>
+        <label><!-- Field Name --></label>
+        <name>SBQQ__FieldName__c</name>
+        <picklistValues>
+            <masterLabel>Discount (%)</masterLabel>
+            <translation>Remise (%)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Discount (Amt)</masterLabel>
+            <translation>Remise (montant)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>List Price</masterLabel>
+            <translation>Prix catalogue</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Partner Discount</masterLabel>
+            <translation>Remise partenaire</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product Code</masterLabel>
+            <translation>Code produit</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quantity</masterLabel>
+            <translation>Quantité</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Sélectionnez le format d&apos;importation de vos enregistrements.</help>
+        <label><!-- Import Format --></label>
+        <name>SBQQ__ImportFormat__c</name>
+        <relationshipLabel><!-- Import Columns --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Sélectionnez cette case si cette colonne doit être une colonne de clé unique.</help>
+        <label><!-- Key --></label>
+        <name>SBQQ__Key__c</name>
+    </fields>
+    <gender>Feminine</gender>
+    <layouts>
+        <layout>Import Column Layout</layout>
+        <sections>
+            <label>Liens personnalisés</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Nom de la colonne</nameFieldLabel>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Column Index must start from 1. --></errorMessage>
+        <name>SBQQ__Column_index_must_start_from_1</name>
+    </validationRules>
+</CustomObjectTranslation>

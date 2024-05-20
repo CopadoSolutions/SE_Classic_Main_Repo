@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>価格ルール</value>
+    </caseValues>
+    <fields>
+        <help>このルールが有効かどうかを示します。</help>
+        <label><!-- Active --></label>
+        <name>SBQQ__Active__c</name>
+    </fields>
+    <fields>
+        <help>[一致した条件] が [カスタム] の場合にのみ入力できます。価格条件インデックス番号、AND、OR、およびかっこの組み合わせを入力します (例: 「(123 AND 124) AND 125」)。</help>
+        <label><!-- Advanced Condition --></label>
+        <name>SBQQ__AdvancedCondition__c</name>
+    </fields>
+    <fields>
+        <help>条件の動作を選択します。[すべて] は AND、[いずれか] は OR、[カスタム] は AND と OR の組み合わせです。</help>
+        <label><!-- Conditions Met --></label>
+        <name>SBQQ__ConditionsMet__c</name>
+        <picklistValues>
+            <masterLabel>All</masterLabel>
+            <translation>すべて</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Any</masterLabel>
+            <translation>いずれか</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Custom</masterLabel>
+            <translation>カスタム</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>[なし] または [保存] が選択された場合、範囲が設定されたコンフィグレータの価格ルールが保存時に起動されます。[編集] が選択された場合、範囲が設定されたコンフィグレータの価格ルールが編集時および保存時に起動されます。</help>
+        <label><!-- Configurator Evaluation Event --></label>
+        <name>SBQQ__ConfiguratorEvaluationEvent__c</name>
+        <picklistValues>
+            <masterLabel>Edit</masterLabel>
+            <translation>編集</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Save</masterLabel>
+            <translation>保存</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>いつこのルールを評価する必要があるかを指定します。見積品目を対象とする場合のみ使用します。従来の計算機能ではサポートされていません。</help>
+        <label><!-- Calculator Evaluation Event --></label>
+        <name>SBQQ__EvaluationEvent__c</name>
+        <picklistValues>
+            <masterLabel>After Calculate</masterLabel>
+            <translation>計算後</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Before Calculate</masterLabel>
+            <translation>計算前</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>On Calculate</masterLabel>
+            <translation>計算時</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>On Initialization</masterLabel>
+            <translation>初期化時</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>この価格ルールの評価の順序を指定します。高い順序のルールは最後に評価され、矛盾があった場合に優先されます。</help>
+        <label><!-- Evaluation Order --></label>
+        <name>SBQQ__EvaluationOrder__c</name>
+    </fields>
+    <fields>
+        <help>ルックアップデータを保存するカスタムオブジェクトの API 参照名。</help>
+        <label><!-- Lookup Object --></label>
+        <name>SBQQ__LookupObject__c</name>
+        <picklistValues>
+            <masterLabel>SBQQ__LookupData__c</masterLabel>
+            <translation>SBQQ__LookupData__c</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>このルールに関連付ける商品を選択します。</help>
+        <label><!-- Product --></label>
+        <name>SBQQ__Product__c</name>
+        <relationshipLabel><!-- Price Rules --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>このルールが評価されるイベント。</help>
+        <label><!-- Evaluation Scope --></label>
+        <name>SBQQ__TargetObject__c</name>
+        <picklistValues>
+            <masterLabel>Calculator</masterLabel>
+            <translation>計算機能</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Configurator</masterLabel>
+            <translation>コンフィグレータ</translation>
+        </picklistValues>
+    </fields>
+    <layouts>
+        <layout>Price Rule Layout</layout>
+        <sections>
+            <label>カスタムリンク</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>価格ルール名</nameFieldLabel>
+    <webLinks>
+        <label><!-- CloneWithRelated --></label>
+        <name>SBQQ__CloneWithRelated</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- CloneWithRelatedClassic --></label>
+        <name>SBQQ__CloneWithRelatedClassic</name>
+    </webLinks>
+</CustomObjectTranslation>

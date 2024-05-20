@@ -7,4 +7,5 @@
     <enableTerritoryManagement2>false</enableTerritoryManagement2>
     <t2ForecastAccessLevel>Read</t2ForecastAccessLevel>
     <tm2BypassRealignAccInsert>false</tm2BypassRealignAccInsert>
+    <tm2EnableUserAssignmentLog>false</tm2EnableUserAssignmentLog>
 </Territory2Settings>

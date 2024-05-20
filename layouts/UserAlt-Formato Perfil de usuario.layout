@@ -100,9 +100,6 @@
     <relatedLists>
         <relatedList>UserFollowingList</relatedList>
     </relatedLists>
-    <relatedLists>
-        <relatedList>RelatedFeedbackList</relatedList>
-    </relatedLists>
     <showEmailCheckbox>false</showEmailCheckbox>
     <showRunAssignmentRulesCheckbox>false</showRunAssignmentRulesCheckbox>
     <showSubmitAndAttachButton>false</showSubmitAndAttachButton>

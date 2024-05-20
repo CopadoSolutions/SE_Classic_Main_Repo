@@ -4,6 +4,7 @@
     <formFactors>Large</formFactors>
     <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
     <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <isNavTabPersistenceDisabled>false</isNavTabPersistenceDisabled>
     <tabs>standard-Chatter</tabs>
     <tabs>standard-Contact</tabs>
     <tabs>standard-Account</tabs>

@@ -1,0 +1,26 @@
+<apex:page standardController="SBQQ__QuoteDocument__c" extensions="SBQQ.QuoteDocumentController" showHeader="{!(!$Setup.SBQQ__GeneralSettings__c.SBQQ__GlobalHeaderPermUsed__c || !$Permission.SBQQ__HideGlobalHeader)}" standardStylesheets="false">
+	<apex:form >
+		<script type="text/javascript">
+			var uri = {!emailLink};
+
+			function redirect() {
+				if (typeof sforce != 'undefined' && sforce && sforce.one) {
+					var url = document.location.origin + uri + '&isdtp=nv';
+					popupWindow(url, "Email Author", 800, 600);
+					window.history.back();
+				} else {
+					url = document.location.origin + uri;
+					document.location.replace(url);
+				}
+			}
+
+			function popupWindow(url, title, w, h) {
+				var y = window.outerHeight / 2 + window.screenY - ( h / 2)
+				var x = window.outerWidth / 2 + window.screenX - ( w / 2)
+				return window.open(url, title, 'toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=no, resizable=no, copyhistory=no, width='+w+', height='+h+', top='+y+', left='+x);
+			}
+
+			window.onload = redirect;
+		</script>
+	</apex:form>
+</apex:page>

@@ -1,0 +1,667 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Devis</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Devis</value>
+    </caseValues>
+    <fieldSets>
+        <label><!-- Calculating Fields --></label>
+        <name>SBQQ__CalculatingFields</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Line Editor --></label>
+        <name>SBQQ__LineEditor</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Non-Current Quote Locked Fields --></label>
+        <name>SBQQ__NonCurrentQuoteLockedFields</name>
+    </fieldSets>
+    <fields>
+        <help>Le compte client de ce devis. Utilise par défaut le compte de l&apos;opportunité lors de la création d&apos;un devis.</help>
+        <label><!-- Account --></label>
+        <name>SBQQ__Account__c</name>
+        <relationshipLabel><!-- Quotes --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Saisissez le montant après remise supplémentaire de ce devis.</help>
+        <label><!-- Addl. Disc. Amount --></label>
+        <name>SBQQ__AdditionalDiscountAmount__c</name>
+    </fields>
+    <fields>
+        <help>Moyenne de remise client (en pourcentage) de ce devis.</help>
+        <label><!-- Avg. Customer Disc. (%) --></label>
+        <name>SBQQ__AverageCustomerDiscount__c</name>
+    </fields>
+    <fields>
+        <help>Moyenne de la remise partenaire (en pourcentage) de ce devis.</help>
+        <label><!-- Avg. Partner Disc. (%) --></label>
+        <name>SBQQ__AveragePartnerDiscount__c</name>
+    </fields>
+    <fields>
+        <help>Ville de l&apos;adresse de facturation de ce devis.</help>
+        <label><!-- Bill To City --></label>
+        <name>SBQQ__BillingCity__c</name>
+    </fields>
+    <fields>
+        <help>Pays de l&apos;adresse de facturation de ce devis.</help>
+        <label><!-- Bill To Country --></label>
+        <name>SBQQ__BillingCountry__c</name>
+    </fields>
+    <fields>
+        <help>Définit la fréquence de facturation.</help>
+        <label><!-- Billing Frequency --></label>
+        <name>SBQQ__BillingFrequency__c</name>
+    </fields>
+    <fields>
+        <help>Nom de l&apos;adresse de facturation.</help>
+        <label><!-- Bill To Name --></label>
+        <name>SBQQ__BillingName__c</name>
+    </fields>
+    <fields>
+        <help>Code postal de l&apos;adresse de facturation de ce devis.</help>
+        <label><!-- Bill To Postal Code --></label>
+        <name>SBQQ__BillingPostalCode__c</name>
+    </fields>
+    <fields>
+        <help>Région/province de l&apos;adresse de facturation de ce devis.</help>
+        <label><!-- Bill To State --></label>
+        <name>SBQQ__BillingState__c</name>
+    </fields>
+    <fields>
+        <help>Partie Ville de l&apos;adresse de facturation de ce devis.</help>
+        <label><!-- Bill To Street --></label>
+        <name>SBQQ__BillingStreet__c</name>
+    </fields>
+    <fields>
+        <help>« Par date de fin d&apos;abonnement » crée un contrat séparé pour chaque date de fin d&apos;abonnement unique, contenant uniquement ces abonnements. « Contrat unique » crée un contrat contenant tous les abonnements, quelle que soit leur date de fin.</help>
+        <label><!-- Contracting Method --></label>
+        <name>SBQQ__ContractingMethod__c</name>
+        <picklistValues>
+            <masterLabel>By Subscription End Date</masterLabel>
+            <translation>Par date de fin d&apos;abonnement</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Single Contract</masterLabel>
+            <translation>Contrat unique</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Correspond à un champ récapitulatif de cumul.</help>
+        <label><!-- Customer Amount --></label>
+        <name>SBQQ__CustomerAmount__c</name>
+    </fields>
+    <fields>
+        <help>Remise supplémentaire étendue au client dans ce devis. Cette valeur peut être remplacée au niveau de l&apos;élément de ligne individuel. Tout élément de ligne dans lequel aucune remise supplémentaire explicite n&apos;est spécifiée utilise par défaut cette valeur.</help>
+        <label><!-- Additional Disc. (%) --></label>
+        <name>SBQQ__CustomerDiscount__c</name>
+    </fields>
+    <fields>
+        <help>Nombre de jours d&apos;ouverture du devis.</help>
+        <label><!-- Days Quote Open --></label>
+        <name>SBQQ__DaysQuoteOpen__c</name>
+    </fields>
+    <fields>
+        <help>Modèle qui doit être utilisé avec ce devis. Salesforce CPQ sélectionne automatiquement le modèle spécifié ici lorsque vous cliquez sur « Générer le document ».</help>
+        <label><!-- Default Template --></label>
+        <name>SBQQ__DefaultTemplate__c</name>
+        <relationshipLabel><!-- Quotes --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Méthode utilisée pour livrer les produits de ce devis.</help>
+        <label><!-- Delivery Method --></label>
+        <name>SBQQ__DeliveryMethod__c</name>
+        <picklistValues>
+            <masterLabel>Download</masterLabel>
+            <translation>Télécharger</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ship</masterLabel>
+            <translation>Expédier</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Remise distributeur qui s&apos;applique à ce devis, sauf si elle est remplacée au niveau de l&apos;élément de ligne.</help>
+        <label><!-- Distributor Discount --></label>
+        <name>SBQQ__DistributorDiscount__c</name>
+    </fields>
+    <fields>
+        <help>Distributeur de ce devis. Utilise par défaut le partenaire de l&apos;opportunité qui dispose du rôle « Distributeur ».</help>
+        <label><!-- Distributor --></label>
+        <name>SBQQ__Distributor__c</name>
+        <relationshipLabel><!-- Distributor Quotes --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Indique le statut de votre document : En attente, Envoyé, Échoué.</help>
+        <label><!-- Document Status --></label>
+        <name>SBQQ__DocumentStatus__c</name>
+        <picklistValues>
+            <masterLabel>Failed</masterLabel>
+            <translation>Échoué</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending</masterLabel>
+            <translation>En attente</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sent</masterLabel>
+            <translation>Envoyé</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Si vous avez un modèle d&apos;e-mail spécifique à utiliser pour les documents générés et envoyés par e-mail depuis ce devis, saisissez l&apos;ID de ce modèle ici.</help>
+        <label><!-- Email Template Id --></label>
+        <name>SBQQ__EmailTemplateId__c</name>
+    </fields>
+    <fields>
+        <help>Date de fin des abonnements dans ce groupe.</help>
+        <label><!-- End Date --></label>
+        <name>SBQQ__EndDate__c</name>
+    </fields>
+    <fields>
+        <help>Date à laquelle le devis n&apos;est plus valide</help>
+        <label><!-- Expires On --></label>
+        <name>SBQQ__ExpirationDate__c</name>
+    </fields>
+    <fields>
+        <help>Pour les produits à segments multiples, saisissez la date de fin pour calculer au prorata du premier segment.</help>
+        <label><!-- First Segment Term End Date --></label>
+        <name>SBQQ__FirstSegmentTermEndDate__c</name>
+    </fields>
+    <fields>
+        <help>Génère un prix contracté basé sur toutes les lignes de devis ajustées dans le devis s&apos;il est marqué.</help>
+        <label><!-- Generate Contracted Price --></label>
+        <name>SBQQ__GenerateContractedPrice__c</name>
+        <picklistValues>
+            <masterLabel>Discount Schedule</masterLabel>
+            <translation>Barème de remise</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Do Not Generate</masterLabel>
+            <translation>Ne pas générer</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Price</masterLabel>
+            <translation>Prix</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Introduction qui peut être imprimée sur le document PDF généré.</help>
+        <label><!-- Introduction --></label>
+        <name>SBQQ__Introduction__c</name>
+    </fields>
+    <fields>
+        <help>Clé unique interne utilisée pour identifier les devis « Panier d&apos;achat » sans se référer aux ID internes</help>
+        <label><!-- Key --></label>
+        <name>SBQQ__Key__c</name>
+    </fields>
+    <fields>
+        <help>Nombre d&apos;éléments de ligne dans ce devis.</help>
+        <label><!-- Line Item Count --></label>
+        <name>SBQQ__LineItemCount__c</name>
+    </fields>
+    <fields>
+        <help>Sélectionnez cette option pour utiliser SolutionGroups(TM) ou ajoutez vos propres groupes à la page Modifier les lignes afin de classer et de calculer le sous-total des éléments de ligne de devis.</help>
+        <label><!-- Group Line Items --></label>
+        <name>SBQQ__LineItemsGrouped__c</name>
+    </fields>
+    <fields>
+        <help>Sélectionnez cette case pour imprimer les éléments de ligne individuels dans le document de devis PDF généré pour les devis de groupe.</help>
+        <label><!-- Print Line Items --></label>
+        <name>SBQQ__LineItemsPrinted__c</name>
+    </fields>
+    <fields>
+        <help>Montant catalogue total de chaque élément de ligne non facultatif de ce devis.</help>
+        <label><!-- List Amount --></label>
+        <name>SBQQ__ListAmount__c</name>
+    </fields>
+    <fields>
+        <help>Taux de marge par défaut appliqué aux éléments de ligne de ce devis. Vous pouvez remplacer cette valeur au niveau du groupe et de l&apos;élément de ligne.</help>
+        <label><!-- Markup (%) --></label>
+        <name>SBQQ__MarkupRate__c</name>
+    </fields>
+    <fields>
+        <help>Contrat principal avec lequel les produits d&apos;abonnement de ce devis ont des durées identiques</help>
+        <label><!-- Master Contract --></label>
+        <name>SBQQ__MasterContract__c</name>
+        <relationshipLabel><!-- Co-Terminated Quotes --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Montant total net de chaque élément de ligne non facultatif dans ce devis.</help>
+        <label><!-- Net Amount --></label>
+        <name>SBQQ__NetAmount__c</name>
+    </fields>
+    <fields>
+        <help>Notes imprimées dans le document PDF généré.</help>
+        <label><!-- Notes --></label>
+        <name>SBQQ__Notes__c</name>
+    </fields>
+    <fields>
+        <help>Opportunité associée à ce devis.</help>
+        <label><!-- Opportunity --></label>
+        <name>SBQQ__Opportunity2__c</name>
+        <relationshipLabel><!-- Quotes --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>S&apos;il est marqué lors de la définition du devis sur « Commandé », une commande est créée pour chaque groupe de lignes de devis avec ses lignes de devis associées.</help>
+        <label><!-- Order By Quote Line Group --></label>
+        <name>SBQQ__OrderByQuoteLineGroup__c</name>
+    </fields>
+    <fields>
+        <help>Le champ Ligne de devis qui détermine l&apos;organisation de la commande.</help>
+        <label><!-- Order By --></label>
+        <name>SBQQ__OrderBy__c</name>
+        <picklistValues>
+            <masterLabel>ProductFamily__c</masterLabel>
+            <translation>ProductFamily__c</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>QuantityBasedFormulaField__c</masterLabel>
+            <translation>QuantityBasedFormulaField__c</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Identificateur unique de la transaction du nouveau devis d’amendement, qui correspond à l&apos;ID du devis principal d&apos;origine.</help>
+        <label><!-- Order Group ID --></label>
+        <name>SBQQ__OrderGroupID__c</name>
+    </fields>
+    <fields>
+        <help>Sélectionnez cette case pour créer automatiquement une commande à partir de ce devis, s&apos;il s&apos;agit d&apos;un devis principal.</help>
+        <label><!-- Ordered --></label>
+        <name>SBQQ__Ordered__c</name>
+    </fields>
+    <fields>
+        <help>Si cet enregistrement Devis représente un nouveau devis d’amendement, utilisez ce champ pour le réassocier au devis d&apos;origine.</help>
+        <label><!-- Original Quote --></label>
+        <name>SBQQ__OriginalQuote__c</name>
+        <relationshipLabel><!-- Amend: Re-Quotes --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Choisissez le format de papier de ce document.</help>
+        <label><!-- Paper Size --></label>
+        <name>SBQQ__PaperSize__c</name>
+    </fields>
+    <fields>
+        <help>Remise étendue au partenaire de cette opportunité.</help>
+        <label><!-- Partner Discount --></label>
+        <name>SBQQ__PartnerDiscount__c</name>
+    </fields>
+    <fields>
+        <help>Partenaire principal de cette affaire (le cas échéant). Ce champ utilise par défaut le partenaire marqué comme principal dans la liste associée Partenaires de l&apos;opportunité.</help>
+        <label><!-- Partner --></label>
+        <name>SBQQ__Partner__c</name>
+        <relationshipLabel><!-- Partner Quotes --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Clause qui régit le paiement des éléments de ce devis.</help>
+        <label><!-- Payment Terms --></label>
+        <name>SBQQ__PaymentTerms__c</name>
+        <picklistValues>
+            <masterLabel>Due on receipt</masterLabel>
+            <translation>Exigible à la réception</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Net 15</masterLabel>
+            <translation>15 jours net</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Net 30</masterLabel>
+            <translation>30 jours net</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Net 45</masterLabel>
+            <translation>45 jours net</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Net 60</masterLabel>
+            <translation>60 jours net</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Net 90</masterLabel>
+            <translation>90 jours net</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Catalogue de prix associé à ce devis.</help>
+        <label><!-- Price Book --></label>
+        <name>SBQQ__PriceBook__c</name>
+        <relationshipLabel><!-- Quotes --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>ID du catalogue de prix utilisé par ce devis.</help>
+        <label><!-- Pricebook ID --></label>
+        <name>SBQQ__PricebookId__c</name>
+    </fields>
+    <fields>
+        <help>Contact principal du devis. Le nom de cette personne est affiché dans le document de devis généré.</help>
+        <label><!-- Primary Contact --></label>
+        <name>SBQQ__PrimaryContact__c</name>
+        <relationshipLabel><!-- Quotes --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Sélectionnez cette case pour désigner ce devis en tant que principal dans l&apos;opportunité, et synchroniser les éléments de ligne du devis avec les éléments de ligne de l&apos;opportunité.</help>
+        <label><!-- Primary --></label>
+        <name>SBQQ__Primary__c</name>
+    </fields>
+    <fields>
+        <help>Langue utilisée pour ce devis lors de la génération en masse de documents de devis</help>
+        <label><!-- Quote Language --></label>
+        <name>SBQQ__QuoteLanguage__c</name>
+        <picklistValues>
+            <masterLabel>Chinese (Simplified)</masterLabel>
+            <translation>Chinois (simplifié)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chinese (Traditional)</masterLabel>
+            <translation>Chinois (traditionnel)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Danish</masterLabel>
+            <translation>Danois</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dutch</masterLabel>
+            <translation>Hollandais</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>English</masterLabel>
+            <translation>Anglais</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Finnish</masterLabel>
+            <translation>Finnois</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>French</masterLabel>
+            <translation>Français</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>German</masterLabel>
+            <translation>Allemand</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Italian</masterLabel>
+            <translation>Italien</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Japanese</masterLabel>
+            <translation>Japonais</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Korean</masterLabel>
+            <translation>Coréen</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Norwegian</masterLabel>
+            <translation>Norvégien</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Portuguese (Brazilian)</masterLabel>
+            <translation>Portugais (brésilien)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Russian</masterLabel>
+            <translation>Russe</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Spanish</masterLabel>
+            <translation>Espagnol</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Spanish (Mexican)</masterLabel>
+            <translation>Espagnol (mexicain)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Swedish</masterLabel>
+            <translation>Suédois</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Thai</masterLabel>
+            <translation>Thaï</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>ID du processus de vente guidée à utiliser avec ce devis, le cas échéant.</help>
+        <label><!-- Quote Process Id --></label>
+        <name>SBQQ__QuoteProcessId__c</name>
+    </fields>
+    <fields>
+        <help>Stocke un ID de modèle de devis, si un ID doit être spécifié lors de la génération de documents PDF de devis.</help>
+        <label><!-- Quote Template Id --></label>
+        <name>SBQQ__QuoteTemplateId__c</name>
+    </fields>
+    <fields>
+        <help>Montant total des éléments de ligne non facultatifs avant l&apos;application de remises supplémentaires.</help>
+        <label><!-- Regular Amount --></label>
+        <name>SBQQ__RegularAmount__c</name>
+    </fields>
+    <fields>
+        <help>Spécifiez la durée du renouvellement. Elle correspond par défaut à la durée du contrat d&apos;origine.</help>
+        <label><!-- Renewal Term --></label>
+        <name>SBQQ__RenewalTerm__c</name>
+    </fields>
+    <fields>
+        <help>Le taux du prix de renouvellement augmente.</help>
+        <label><!-- Renewal Uplift (%) --></label>
+        <name>SBQQ__RenewalUpliftRate__c</name>
+    </fields>
+    <fields>
+        <help>Commercial responsable de ce devis, s&apos;il est différent de l&apos;utilisateur propriétaire de l&apos;enregistrement du devis.</help>
+        <label><!-- Sales Rep --></label>
+        <name>SBQQ__SalesRep__c</name>
+        <relationshipLabel><!-- Quotes --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Ville de l&apos;adresse de livraison de ce devis.</help>
+        <label><!-- Ship To City --></label>
+        <name>SBQQ__ShippingCity__c</name>
+    </fields>
+    <fields>
+        <help>Pays de l&apos;adresse de livraison de ce devis.</help>
+        <label><!-- Ship To Country --></label>
+        <name>SBQQ__ShippingCountry__c</name>
+    </fields>
+    <fields>
+        <help>Nom de l&apos;adresse de livraison de ce devis.</help>
+        <label><!-- Ship To Name --></label>
+        <name>SBQQ__ShippingName__c</name>
+    </fields>
+    <fields>
+        <help>Code postal de l&apos;adresse de livraison de ce devis.</help>
+        <label><!-- Ship To Postal Code --></label>
+        <name>SBQQ__ShippingPostalCode__c</name>
+    </fields>
+    <fields>
+        <help>Région/province de l&apos;adresse de livraison de ce devis.</help>
+        <label><!-- Ship To State --></label>
+        <name>SBQQ__ShippingState__c</name>
+    </fields>
+    <fields>
+        <help>Ville de l&apos;adresse de livraison de ce devis.</help>
+        <label><!-- Ship To Street --></label>
+        <name>SBQQ__ShippingStreet__c</name>
+    </fields>
+    <fields>
+        <help>Source du devis cloné. S&apos;il est cloné, référence le devis d&apos;origine cloné.</help>
+        <label><!-- Source --></label>
+        <name>SBQQ__Source__c</name>
+        <relationshipLabel><!-- Quotes (Source) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Date de début des abonnements de ce devis.</help>
+        <label><!-- Start Date --></label>
+        <name>SBQQ__StartDate__c</name>
+    </fields>
+    <fields>
+        <help>Statut indiquant la position du devis dans son cycle de vie.</help>
+        <label><!-- Status --></label>
+        <name>SBQQ__Status__c</name>
+        <picklistValues>
+            <masterLabel>Accepted</masterLabel>
+            <translation>Accepté</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Approved</masterLabel>
+            <translation>Approuvé</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Denied</masterLabel>
+            <translation>Refusé</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Draft</masterLabel>
+            <translation>Brouillon</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Review</masterLabel>
+            <translation>Révision en cours</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Presented</masterLabel>
+            <translation>Présenté</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rejected</masterLabel>
+            <translation>Refusée</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Durée d&apos;abonnement utilisée pour calculer les produits éligibles au prorata par jour ou par mois. Ce paramètre doit être défini par votre administrateur.</help>
+        <label><!-- Subscription Term --></label>
+        <name>SBQQ__SubscriptionTerm__c</name>
+    </fields>
+    <fields>
+        <help>Saisissez le montant souhaité par le client pour calculer automatiquement une remise supplémentaire sur les éléments de ligne qui peuvent faire l&apos;objet d&apos;une remise.</help>
+        <label><!-- Target Customer Amount --></label>
+        <name>SBQQ__TargetCustomerAmount__c</name>
+    </fields>
+    <fields>
+        <help>Montant total de la remise client. Elle comprend toute remise contractée, sur volume, à taux composé et supplémentaire.</help>
+        <label><!-- Total Customer Disc. Amount --></label>
+        <name>SBQQ__TotalCustomerDiscountAmount__c</name>
+    </fields>
+    <fields>
+        <help>Indique le type du devis.</help>
+        <label><!-- Type --></label>
+        <name>SBQQ__Type__c</name>
+        <picklistValues>
+            <masterLabel>Amendment</masterLabel>
+            <translation>Amendement</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quote</masterLabel>
+            <translation>Devis</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Re-Quote</masterLabel>
+            <translation>Nouveau devis</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Renewal</masterLabel>
+            <translation>Renouvellement</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Indique si le devis a déjà été ouvert afin de déterminer s’il s’agit d’un nouveau de devis.</help>
+        <label><!-- Unopened --></label>
+        <name>SBQQ__Unopened__c</name>
+    </fields>
+    <fields>
+        <help>Sélectionnez cette case pour afficher le filigrane dans le document de devis.</help>
+        <label><!-- Watermark Shown --></label>
+        <name>SBQQ__WatermarkShown__c</name>
+    </fields>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Quote Layout</layout>
+        <sections>
+            <label>Texte supplémentaire</label>
+            <section>Additional Text</section>
+        </sections>
+        <sections>
+            <label>Coordonnées</label>
+            <section>Address Information</section>
+        </sections>
+        <sections>
+            <label>Informations sur le contrat</label>
+            <section>Contract Information</section>
+        </sections>
+        <sections>
+            <label>Liens personnalisés</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>Informations sur la remise</label>
+            <section>Discount Information</section>
+        </sections>
+        <sections>
+            <label>Informations sur le partenaire</label>
+            <section>Partner Information</section>
+        </sections>
+        <sections>
+            <label>Options de devis</label>
+            <section>Quote Options</section>
+        </sections>
+        <sections>
+            <label>Recalcul</label>
+            <section>Recalculating</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Numéro du devis</nameFieldLabel>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- The End Date must come after the Start Date. --></errorMessage>
+        <name>SBQQ__End_Date_Before_Start_Date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- First Segment Term End Date must fall between Quote Start Date and Quote End Date --></errorMessage>
+        <name>SBQQ__Invalid_First_Segment_Term_End_Date</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- CloneWithRelated --></label>
+        <name>SBQQ__CloneWithRelated</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- CloneWithRelatedClassic --></label>
+        <name>SBQQ__CloneWithRelatedClassic</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- CreateOrderFromQuote --></label>
+        <name>SBQQ__CreateOrderFromQuote</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- EditLines --></label>
+        <name>SBQQ__EditLines</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GenerateDocument --></label>
+        <name>SBQQ__GenerateDocument</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- ImportLines --></label>
+        <name>SBQQ__ImportLines</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- IncludeDocument --></label>
+        <name>SBQQ__IncludeDocument</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- ModifyQuoteTerms --></label>
+        <name>SBQQ__ModifyQuoteTerms</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- PreviewDocument --></label>
+        <name>SBQQ__PreviewDocument</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- RefreshMultiplePrices --></label>
+        <name>SBQQ__RefreshMultiplePrices</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- RefreshPrices --></label>
+        <name>SBQQ__RefreshPrices</name>
+    </webLinks>
+</CustomObjectTranslation>

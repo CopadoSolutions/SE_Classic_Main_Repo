@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help>Référence à votre contrat amendé.</help>
+        <label><!-- Amended Contract --></label>
+        <name>SBQQ__AmendedContract__c</name>
+        <relationshipLabel><!-- Amendment Opportunities --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Salesforce CPQ utilise ce champ pour convertir automatiquement les ressources et les abonnements.</help>
+        <label><!-- Contracted --></label>
+        <name>SBQQ__Contracted__c</name>
+    </fields>
+    <fields>
+        <help>Sélectionnez cette case pour créer des prix contractés sans créer de contrat.</help>
+        <label><!-- Create Contracted Prices --></label>
+        <name>SBQQ__CreateContractedPrices__c</name>
+    </fields>
+    <fields>
+        <help>Identificateur unique de la transaction du nouveau devis d’amendement, qui correspond à l&apos;ID du devis principal d&apos;origine.</help>
+        <label><!-- Order Group ID --></label>
+        <name>SBQQ__OrderGroupID__c</name>
+    </fields>
+    <fields>
+        <help>Sélectionnez cette case pour créer automatiquement une commande à partir du devis principal.</help>
+        <label><!-- Ordered --></label>
+        <name>SBQQ__Ordered__c</name>
+    </fields>
+    <fields>
+        <help>Salesforce CPQ l&apos;utilise pour pointer vers le devis principal de cette opportunité.</help>
+        <label><!-- Primary Quote --></label>
+        <name>SBQQ__PrimaryQuote__c</name>
+        <relationshipLabel><!-- Opportunities --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Quote Pricebook Id --></label>
+        <name>SBQQ__QuotePricebookId__c</name>
+    </fields>
+    <fields>
+        <help>Indique que cette opportunité est un renouvellement.</help>
+        <label><!-- Renewal --></label>
+        <name>SBQQ__Renewal__c</name>
+    </fields>
+    <fields>
+        <help>Contrat renouvelé par cette opportunité de renouvellement. Si les contrats sont cumulés dans cette opportunité, il pointe vers le contrat principal.</help>
+        <label><!-- Renewed Contract --></label>
+        <name>SBQQ__RenewedContract__c</name>
+        <relationshipLabel><!-- Renewal Opportunities --></relationshipLabel>
+    </fields>
+    <layouts>
+        <layout>CPQ Opportunity Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Recalculating --></label>
+            <section>Recalculating</section>
+        </sections>
+        <sections>
+            <label><!-- Salesforce CPQ Information --></label>
+            <section>Salesforce CPQ Information</section>
+        </sections>
+    </layouts>
+    <webLinks>
+        <label><!-- Amend_Assets --></label>
+        <name>SBQQ__Amend_Assets</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Amend_Contract --></label>
+        <name>SBQQ__Amend_Contract</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- CreateOrder --></label>
+        <name>SBQQ__CreateOrder</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Include_Document --></label>
+        <name>SBQQ__Include_Document</name>
+    </webLinks>
+</CustomObjectTranslation>

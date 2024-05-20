@@ -1,0 +1,16 @@
+<apex:page showHeader="true" sidebar="false">
+    <head>
+        <apex:slds />
+    </head>
+
+    <body class="slds-scope">
+    <div class="slds-p-vertical--xx-large slds-m-top--large slds-align--absolute-center slds-grid--vertical slds-text-align--center slds-text-color_weak">
+        <div class="slds-media__figure">
+            <apex:image url="{!$Resource.SBQQ__NoAccessSimplified}" />
+        </div>
+        <div class="slds-text-heading--large slds-p-bottom--large">{!$Label.sbqq__msg_salesforce_no_access_title}</div>
+        <div class="slds-text-heading--medium">{!$Label.sbqq__msg_salesforce_no_access_body}</div>
+    </div>
+    </body>
+
+</apex:page>

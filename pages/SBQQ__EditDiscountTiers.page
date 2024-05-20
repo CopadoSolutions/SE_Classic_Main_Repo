@@ -1,0 +1,93 @@
+<apex:page standardController="SBQQ__DiscountSchedule__c" extensions="SBQQ.DiscountTierEditorController" tabStyle="SBQQ__DiscountSchedule__c" title="{!$Label.sbqq__lbl_edit_discount_tiers}">
+	<apex:sectionHeader title="{!$Label.sbqq__lbl_edit_tiers}" subtitle="{!scheduleModel.schedule.Name}"/>
+	
+	<apex:pageMessages />
+	
+	<apex:form >
+		<apex:pageBlock title="{!$Label.sbqq__lbl_edit_tiers}" rendered="{!initialized}">
+			<apex:pageBlockButtons >
+				<apex:commandButton value="{!$Label.sbqq__lbl_save}" action="{!onSave}"/>
+				<apex:commandButton value="{!$Label.sbqq__lbl_cancel}" action="{!onCancel}" immediate="true"/>
+			</apex:pageBlockButtons>
+			
+			<apex:outputPanel id="tiers">
+				<table class="list" border="0" cellspacing="0" cellpadding="0">
+					<thead class="dr-table-thead">
+						<tr class="headerRow">
+							<th class="headerRow">#</th>
+							<th class="headerRow">
+								<apex:outputText value="{!$ObjectType.SBQQ__DiscountTier__c.fields.Name.label}"/>
+							</th>
+							<th class="headerRow">
+								<apex:outputText value="{!$ObjectType.SBQQ__DiscountTier__c.fields.SBQQ__LowerBound__c.label}"/>
+							</th>
+							<th class="headerRow">
+								<apex:outputText value="{!$ObjectType.SBQQ__DiscountTier__c.fields.SBQQ__UpperBound__c.label}"/>
+							</th>
+							<apex:outputPanel layout="none" rendered="{!scheduleModel.discountUnitPercent}">
+								<th class="headerRow">
+									<apex:outputText value="{!$ObjectType.SBQQ__DiscountTier__c.fields.SBQQ__Discount__c.label}"/>
+								</th>
+							</apex:outputPanel>
+							<apex:outputPanel layout="none" rendered="{!scheduleModel.discountUnitAmount}">
+								<apex:repeat var="currency" value="{!scheduleModel.tiersModel.columnHeadings}">
+									<th class="headerRow">
+										<apex:outputText value="{!$ObjectType.SBQQ__DiscountTier__c.fields.SBQQ__DiscountAmount__c.label}">
+											<apex:param value="{!currency}"/>
+										</apex:outputText>
+									</th>
+								</apex:repeat>
+							</apex:outputPanel>
+							<th class="headerRow"></th>
+						</tr>
+					</thead>
+					<tbody>
+						<apex:repeat var="row" value="{!scheduleModel.tiersModel.tierRows}">
+						<tr class="dataRow">
+							<td class="dataCell">
+								<apex:outputField value="{!row.template.SBQQ__Number__c}"/>
+							</td>
+							<td class="dataCell">
+								<apex:inputText styleClass="tierName" value="{!row.template.Name}"/>
+							</td>
+							<td class="dataCell">
+								<apex:inputText value="{!row.lowerFormatted}"/>
+							</td>
+							<td class="dataCell">
+								<apex:inputText value="{!row.upperFormatted}"/>
+							</td>
+							<apex:outputPanel layout="none" rendered="{!scheduleModel.discountUnitPercent}">
+								<td class="dataCell">
+									<apex:inputField value="{!row.template.SBQQ__Discount__c}"/>
+								</td>
+							</apex:outputPanel>
+							<apex:outputPanel layout="none" rendered="{!scheduleModel.discountUnitAmount}">
+								<apex:repeat var="tier" value="{!row.tiers}">
+									<td class="dataCell">
+										<apex:inputText value="{!tier.discountFormatted}"/>
+									</td>
+								</apex:repeat>
+							</apex:outputPanel>
+							<td class="dataCell">
+								<apex:commandButton value="+" action="{!onAddTier}" oncomplete="setFocusOnNewTier({!newTierIdx})" rerender="tiers">
+									<apex:param name="selection" assignTo="{!targetRowId}" value="{!row.id}"/>
+								</apex:commandButton>
+								<apex:commandButton value="-" action="{!onRemoveTier}" rerender="tiers" rendered="{!OR(scheduleModel.tiersModel.tierCount > 1,NOT(row.first))}">
+									<apex:param name="selection" assignTo="{!targetRowId}" value="{!row.id}"/>
+								</apex:commandButton>
+							</td>
+						</tr>
+						</apex:repeat>
+					</tbody>
+				</table>
+			</apex:outputPanel>
+		</apex:pageBlock>
+	</apex:form>
+	<script language="JavaScript">
+		function setFocusOnNewTier(newTierIdx) {
+			var tierNames = document.getElementsByClassName("tierName");
+			var target = tierNames[newTierIdx];
+			target.focus();
+		}
+	</script>
+</apex:page>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Journal du processeur d&apos;installation</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Journaux du processeur d&apos;installation</value>
+    </caseValues>
+    <fields>
+        <help>Nom de l&apos;exécution de la méthode dans le script d&apos;installation</help>
+        <label><!-- Method Name --></label>
+        <name>SBQQ__MethodName__c</name>
+    </fields>
+    <fields>
+        <help>Date/heure d&apos;exécution de la méthode</help>
+        <label><!-- Time --></label>
+        <name>SBQQ__Time__c</name>
+    </fields>
+    <fields>
+        <help>Version du package au moment de l&apos;exécution de la méthode</help>
+        <label><!-- Version --></label>
+        <name>SBQQ__Version__c</name>
+    </fields>
+    <gender>Masculine</gender>
+    <nameFieldLabel>Nom du journal du processeur d&apos;installat</nameFieldLabel>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

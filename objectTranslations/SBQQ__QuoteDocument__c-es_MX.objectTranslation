@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Documento de presupuesto</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Documentos de presupuesto</value>
+    </caseValues>
+    <fields>
+        <help>Id. del registro de los datos adjuntos generados para este documento.</help>
+        <label><!-- Attachment Id --></label>
+        <name>SBQQ__AttachmentId__c</name>
+    </fields>
+    <fields>
+        <help>Importe del cliente en el presupuesto en el momento en que se generó este documento.</help>
+        <label><!-- Customer Amount --></label>
+        <name>SBQQ__CustomerAmount__c</name>
+    </fields>
+    <fields>
+        <help>Id. del registro Documento que contiene su PDF generado.</help>
+        <label><!-- Document Id --></label>
+        <name>SBQQ__DocumentId__c</name>
+    </fields>
+    <fields>
+        <help>Campo para el documento que hay que firmar electrónicamente.</help>
+        <label><!-- Electronic Signature --></label>
+        <name>SBQQ__ElectronicSignature__c</name>
+    </fields>
+    <fields>
+        <help>Clave empleada para garantizar la combinación exclusiva de Id. de presupuesto y número de versión.</help>
+        <label><!-- Key --></label>
+        <name>SBQQ__Key__c</name>
+    </fields>
+    <fields>
+        <help>Importe de lista del presupuesto en el momento en que se generó este documento.</help>
+        <label><!-- List Amount --></label>
+        <name>SBQQ__ListAmount__c</name>
+    </fields>
+    <fields>
+        <help>Importe neto en el presupuesto en el momento en que se generó este documento.</help>
+        <label><!-- Net Amount --></label>
+        <name>SBQQ__NetAmount__c</name>
+    </fields>
+    <fields>
+        <help>Seleccione la oportunidad principal del presupuesto para este documento.</help>
+        <label><!-- Opportunity --></label>
+        <name>SBQQ__Opportunity__c</name>
+        <relationshipLabel><!-- Quote Documents --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Seleccione el formato de salida para este documento.</help>
+        <label><!-- Output Format --></label>
+        <name>SBQQ__OutputFormat__c</name>
+        <picklistValues>
+            <masterLabel>MS Word</masterLabel>
+            <translation>MS Word</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PDF</masterLabel>
+            <translation>PDF</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Seleccione el tamaño del papel para este documento.</help>
+        <label><!-- Paper Size --></label>
+        <name>SBQQ__PaperSize__c</name>
+    </fields>
+    <fields>
+        <help>Hace referencia al contacto principal del presupuesto que se utilizará en el botón Email, que toma el valor predeterminado del campo Para.</help>
+        <label><!-- Primary Contact Id --></label>
+        <name>SBQQ__PrimaryContactId__c</name>
+    </fields>
+    <fields>
+        <help>Plantilla del presupuesto que generó este documento.</help>
+        <label><!-- Quote Template --></label>
+        <name>SBQQ__QuoteTemplate__c</name>
+        <relationshipLabel><!-- Quote Documents --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Presupuesto al que pertenece este documento de presupuesto.</help>
+        <label><!-- Quote --></label>
+        <name>SBQQ__Quote__c</name>
+        <relationshipLabel><!-- Quote Documents --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Estado de la firma electrónica.</help>
+        <label><!-- Signature Status --></label>
+        <name>SBQQ__SignatureStatus__c</name>
+        <picklistValues>
+            <masterLabel>Expired</masterLabel>
+            <translation>Vencida</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending</masterLabel>
+            <translation>Pendiente</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Revoked</masterLabel>
+            <translation>Revocada</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sent</masterLabel>
+            <translation>Enviada</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Signed</masterLabel>
+            <translation>Firmada</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Nombre de la plantilla empleada para generar este documento.</help>
+        <label><!-- Template --></label>
+        <name>SBQQ__Template__c</name>
+    </fields>
+    <fields>
+        <help>Número de versión incrementado secuencialmente.</help>
+        <label><!-- Version --></label>
+        <name>SBQQ__Version__c</name>
+    </fields>
+    <fields>
+        <help>Permite al usuario ver el Id. del registro Documento de presupuesto.</help>
+        <label><!-- View Record Id --></label>
+        <name>SBQQ__ViewRecordId__c</name>
+    </fields>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Quote Document Layout</layout>
+        <sections>
+            <label>Vínculos personalizados</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Nombre de documento</nameFieldLabel>
+    <webLinks>
+        <label><!-- Email --></label>
+        <name>SBQQ__Email</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- View --></label>
+        <name>SBQQ__View</name>
+    </webLinks>
+</CustomObjectTranslation>

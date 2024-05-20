@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <customHelpPage>SBQQ__BlockPriceHelp</customHelpPage>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <description>Price for a block quantity of the parent product.</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableEnhancedLookup>false</enableEnhancedLookup>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>false</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>Private</externalSharingModel>
+    <fields>
+        <fullName>SBQQ__EffectiveDate__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The date when this block price is effective.  The value is taken when a block price snapshot is taken at order creation time.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The date when this block price is effective.  The value is taken when a block price snapshot is taken at order creation time.</inlineHelpText>
+        <label>Effective Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__LowerBound__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Lower bound of the quantity range for this block price.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Lower bound of the quantity range for this block price.</inlineHelpText>
+        <label>Lower Bound</label>
+        <precision>12</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SBQQ__OrderProduct__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>The order product this Block Price applies to when the order product is created.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The order product this Block Price applies to when the order product is created.</inlineHelpText>
+        <label>Order Product</label>
+        <referenceTo>OrderItem</referenceTo>
+        <relationshipLabel>Block Price Snapshots</relationshipLabel>
+        <relationshipName>BlockPrice</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__OriginalBlockPrice__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>The original product block price where this block price is snapshotted from.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The original product block price where this block price is snapshotted from.</inlineHelpText>
+        <label>Original Block Price</label>
+        <referenceTo>SBQQ__BlockPrice__c</referenceTo>
+        <relationshipLabel>Block Prices</relationshipLabel>
+        <relationshipName>SnapshotBlockPrices</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__PriceBook2__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>Price Book to which block pricing applies.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select the Price Book that should receive block pricing when applicable.</inlineHelpText>
+        <label>Price Book</label>
+        <referenceTo>Pricebook2</referenceTo>
+        <relationshipLabel>Block Prices</relationshipLabel>
+        <relationshipName>BlockPrices</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__Price__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Price for the parent product in specified quantity range.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Price for the parent product in specified quantity range.</inlineHelpText>
+        <label>Price</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__Product__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>Product to which block pricing applies.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select the product that should receive block pricing when applicable.</inlineHelpText>
+        <label>Product</label>
+        <referenceTo>Product2</referenceTo>
+        <relationshipLabel>Block Prices</relationshipLabel>
+        <relationshipName>BlockPrices</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__QuoteLine__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>The quote line where this block price applies to when an order product is created.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The quote line where this block price applies to when an order product is created.</inlineHelpText>
+        <label>Quote Line</label>
+        <referenceTo>SBQQ__QuoteLine__c</referenceTo>
+        <relationshipLabel>Block Prices</relationshipLabel>
+        <relationshipName>BlockPrices</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__UpperBound__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Upper bound of the quantity range for this block price.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Upper bound of the quantity range for this block price.</inlineHelpText>
+        <label>Upper Bound</label>
+        <precision>12</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <label>Block Price</label>
+    <listViews>
+        <fullName>SBQQ__All</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <label>Price Name</label>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Block Prices</pluralLabel>
+    <searchLayouts>
+        <customTabListAdditionalFields>SBQQ__Product__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>SBQQ__QuoteLine__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>SBQQ__OrderProduct__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>SBQQ__LowerBound__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>SBQQ__UpperBound__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>SBQQ__Price__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>SBQQ__PriceBook2__c</customTabListAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
+    <webLinks>
+        <fullName>SBQQ__EditAll</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <height>600</height>
+        <linkType>page</linkType>
+        <masterLabel>Edit All</masterLabel>
+        <openType>sidebar</openType>
+        <page>SBQQ__EditBlockPrices</page>
+        <protected>false</protected>
+        <requireRowSelection>false</requireRowSelection>
+    </webLinks>
+</CustomObject>

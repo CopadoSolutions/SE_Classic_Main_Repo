@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Clause du devis</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Clauses du devis</value>
+    </caseValues>
+    <fields>
+        <help>Indique que cette clause de devis peut être utilisée.</help>
+        <label><!-- Active --></label>
+        <name>SBQQ__Active__c</name>
+    </fields>
+    <fields>
+        <help>Peut être saisie uniquement si Conditions remplies est Personnalisé. Saisissez une combinaison de numéros d&apos;index de condition de clause, AND, OR et des parenthèses (ex.: (123 AND 124) AND 125).</help>
+        <label><!-- Advanced Condition --></label>
+        <name>SBQQ__AdvancedCondition__c</name>
+    </fields>
+    <fields>
+        <help>Contenu du texte de cette clause.</help>
+        <label><!-- Body --></label>
+        <name>SBQQ__Body__c</name>
+    </fields>
+    <fields>
+        <help>Sélectionnez le comportement de vos conditions : Toutes correspond à AND, N&apos;importe correspond à OR, Personnalisé combine AND et OR.</help>
+        <label><!-- Conditions Met --></label>
+        <name>SBQQ__ConditionsMet__c</name>
+        <picklistValues>
+            <masterLabel>All</masterLabel>
+            <translation>Tous</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Any</masterLabel>
+            <translation>N&apos;importe</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Custom</masterLabel>
+            <translation>Personnalisé</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Détermine si les clauses du devis peuvent être modifiées par un utilisateur.</help>
+        <label><!-- Locked --></label>
+        <name>SBQQ__Locked__c</name>
+    </fields>
+    <fields>
+        <help>Clause parente de cette clause.</help>
+        <label><!-- Parent Term --></label>
+        <name>SBQQ__ParentTerm__c</name>
+        <relationshipLabel><!-- Sub Terms --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Spécifie l&apos;ordre dans lequel les clauses sont imprimées dans le document du devis.</help>
+        <label><!-- Print Order --></label>
+        <name>SBQQ__PrintOrder__c</name>
+    </fields>
+    <fields>
+        <help>Devis auquel cette clause s&apos;applique. Si la clause est standard, laissez ce champ vide.</help>
+        <label><!-- Quote --></label>
+        <name>SBQQ__Quote__c</name>
+        <relationshipLabel><!-- Quote Terms --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Spécifie la clause standard qui est modifiée.</help>
+        <label><!-- Standard Term --></label>
+        <name>SBQQ__StandardTerm__c</name>
+        <relationshipLabel><!-- Modified Terms --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Statut de la clause du devis.</help>
+        <label><!-- Status --></label>
+        <name>SBQQ__Status__c</name>
+        <picklistValues>
+            <masterLabel>Approved</masterLabel>
+            <translation>Approuvé</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Draft</masterLabel>
+            <translation>Brouillon</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Review</masterLabel>
+            <translation>Révision en cours</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rejected</masterLabel>
+            <translation>Refusée</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Contenu du modèle auquel cette clause s&apos;applique.</help>
+        <label><!-- Template Content --></label>
+        <name>SBQQ__TemplateContent__c</name>
+        <relationshipLabel><!-- Quote Terms --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Indique si la clause est standard, personnalisée ou modifiée.</help>
+        <label><!-- Type --></label>
+        <name>SBQQ__Type__c</name>
+    </fields>
+    <gender>Feminine</gender>
+    <layouts>
+        <layout>Quote Term Layout</layout>
+        <sections>
+            <label>Corps</label>
+            <section>Body</section>
+        </sections>
+        <sections>
+            <label>Liens personnalisés</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>N° de clause</nameFieldLabel>
+    <startsWith>Consonant</startsWith>
+    <webLinks>
+        <label><!-- Translate --></label>
+        <name>SBQQ__Translate</name>
+    </webLinks>
+</CustomObjectTranslation>

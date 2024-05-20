@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- Enter API name of the field. --></help>
+        <label><!-- Field Name --></label>
+        <name>SBQQ__FieldName__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter API name of the object that contains the field. --></help>
+        <label><!-- Object Name --></label>
+        <name>SBQQ__ObjectName__c</name>
+    </fields>
+</CustomObjectTranslation>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Condition d&apos;entrée de processus</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Conditions d&apos;entrée de processus</value>
+    </caseValues>
+    <fields>
+        <help>Indicateur qui informe si cette règle est active ou inactive.</help>
+        <label><!-- Active --></label>
+        <name>SBQQ__Active__c</name>
+    </fields>
+    <fields>
+        <help>Les valeurs de cette entrée de processus déterminent la visibilité de l&apos;entrée actuelle.</help>
+        <label><!-- Master Process Input --></label>
+        <name>SBQQ__MasterProcessInput__c</name>
+        <relationshipLabel><!-- Process Inputs Regulated --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Sélectionnez l&apos;opérateur à utiliser lors de la comparaison des valeurs d&apos;entrée de processus.</help>
+        <label><!-- Operator --></label>
+        <name>SBQQ__Operator__c</name>
+        <picklistValues>
+            <masterLabel>contains</masterLabel>
+            <translation>contient</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ends with</masterLabel>
+            <translation>se termine par</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>equals</masterLabel>
+            <translation>égal à</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>greater or equals</masterLabel>
+            <translation>supérieur ou égal à</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>greater than</masterLabel>
+            <translation>supérieur à</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>less or equals</masterLabel>
+            <translation>inférieur ou égal à</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>less than</masterLabel>
+            <translation>inférieur à</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>not equals</masterLabel>
+            <translation>différent de</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>starts with</masterLabel>
+            <translation>commence par</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Entrée de processus à laquelle la condition appartient.</help>
+        <label><!-- Process Input --></label>
+        <name>SBQQ__ProcessInput__c</name>
+        <relationshipLabel><!-- Process Input Conditions --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>La valeur utilisée pour comparer l&apos;entrée de processus de contrôle.</help>
+        <label><!-- Value --></label>
+        <name>SBQQ__Value__c</name>
+    </fields>
+    <gender>Feminine</gender>
+    <layouts>
+        <layout>Process Input Condition Layout</layout>
+        <sections>
+            <label>Liens personnalisés</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>Informations sur le filtre</label>
+            <section>Filter Information</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Nom des conditions d&apos;entrée de processus</nameFieldLabel>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- External Id --></label>
+        <name>External_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Region --></label>
+        <name>Region__c</name>
+        <picklistValues>
+            <masterLabel>Midwest</masterLabel>
+            <translation><!-- Midwest --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Northeast</masterLabel>
+            <translation><!-- Northeast --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>South</masterLabel>
+            <translation><!-- South --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Southeast</masterLabel>
+            <translation><!-- Southeast --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>West</masterLabel>
+            <translation><!-- West --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Option qui permet de combiner les quantités de plusieurs ressources d&apos;un même produit sur une seule ligne lors de la génération du devis de renouvellement.</help>
+        <label><!-- Combine Asset Quantities --></label>
+        <name>SBQQ__AssetQuantitiesCombined__c</name>
+    </fields>
+    <fields>
+        <help>Activez pour combiner les ressources et les abonnements de plusieurs contrats à durée identique. Par défaut, chaque contrat à durée identique génère un groupe séparé dans un devis de renouvellement.</help>
+        <label><!-- Combine Co-Termed Contracts --></label>
+        <name>SBQQ__CoTermedContractsCombined__c</name>
+    </fields>
+    <fields>
+        <help>Détermine des contrats à durée identique.</help>
+        <label><!-- Co-Termination Event --></label>
+        <name>SBQQ__CoTerminationEvent__c</name>
+        <picklistValues>
+            <masterLabel>Add-on</masterLabel>
+            <translation>Complément</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Renewal</masterLabel>
+            <translation>Renouvellement</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Détermine comment les contrats de service et d&apos;abonnement de ce client sont définis avec des durées identiques.</help>
+        <label><!-- Contract Co-Termination --></label>
+        <name>SBQQ__ContractCoTermination__c</name>
+        <picklistValues>
+            <masterLabel>Always</masterLabel>
+            <translation>Toujours</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Never</masterLabel>
+            <translation>Jamais</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Prompt</masterLabel>
+            <translation>Demander</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Opportunité par défaut de ce compte utilisée dans un module e-Commerce pour obtenir le prix catalogue du client et associer aux devis « panier d&apos;achat ».</help>
+        <label><!-- Default Opportunity --></label>
+        <name>SBQQ__DefaultOpportunity__c</name>
+        <relationshipLabel><!-- Accounts --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Sélectionnez si les prix contractés doivent être hérités du compte parent.</help>
+        <label><!-- Ignore Parent Contracted Prices --></label>
+        <name>SBQQ__IgnoreParentContractedPrices__c</name>
+    </fields>
+    <fields>
+        <help>Sélectionnez cette case pour préserver la hiérarchie des offres groupées dans les devis de renouvellement et les amendements.</help>
+        <label><!-- Preserve Bundle Structure --></label>
+        <name>SBQQ__PreserveBundle__c</name>
+    </fields>
+    <fields>
+        <help>Saisissez la date limite de maintien des prix.</help>
+        <label><!-- Price Hold End --></label>
+        <name>SBQQ__PriceHoldEnd__c</name>
+    </fields>
+    <fields>
+        <help>Sélectionnez Basé sur les ressources pour générer les renouvellements en fonction des ressources d&apos;un compte ou Basé sur le contrat pour générer les renouvellements en fonction du contrat créé à partir d&apos;un devis.</help>
+        <label><!-- Renewal Model --></label>
+        <name>SBQQ__RenewalModel__c</name>
+        <picklistValues>
+            <masterLabel>Asset Based</masterLabel>
+            <translation>Basé sur les ressources</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contract Based</masterLabel>
+            <translation>Basé sur le contrat</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Utilisez « Identique » pour conserver le dernier prix payé, « Catalogue » pour utiliser le prix catalogue actuel ou « Augmentation » pour utiliser le dernier prix payé avec une augmentation.</help>
+        <label><!-- Renewal Pricing Method --></label>
+        <name>SBQQ__RenewalPricingMethod__c</name>
+        <picklistValues>
+            <masterLabel>List</masterLabel>
+            <translation>Catalogue</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Same</masterLabel>
+            <translation>Identique</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Uplift</masterLabel>
+            <translation>Augmentation</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Sélectionner si ce compte a des certificats actifs</help>
+        <label><!-- Tax-Exempt --></label>
+        <name>SBQQ__TaxExempt__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation>Non</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation>Oui</translation>
+        </picklistValues>
+    </fields>
+    <layouts>
+        <layout>CPQ Account Layout</layout>
+        <sections>
+            <label>Informations supplémentaires</label>
+            <section>Additional Information</section>
+        </sections>
+        <sections>
+            <label>Liens personnalisés</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>Informations sur les renouvellements/durées identiques</label>
+            <section>Renewal/Co-Term Information</section>
+        </sections>
+    </layouts>
+    <webLinks>
+        <label><!-- AltavistaNews --></label>
+        <name>AltavistaNews</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleMaps --></label>
+        <name>GoogleMaps</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleNews --></label>
+        <name>GoogleNews</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleSearch --></label>
+        <name>GoogleSearch</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- HooversProfile --></label>
+        <name>HooversProfile</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Amend_Assets --></label>
+        <name>SBQQ__Amend_Assets</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Renew_Assets --></label>
+        <name>SBQQ__Renew_Assets</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- YahooMaps --></label>
+        <name>YahooMaps</name>
+    </webLinks>
+</CustomObjectTranslation>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Upgrade-Quelle</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Upgrade-Quellen</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value><!-- Upgrade-Quelle --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+        <value><!-- Upgrade-Quellen --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value><!-- Upgrade-Quelle --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>true</plural>
+        <value><!-- Upgrade-Quellen --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value><!-- Upgrade-Quelle --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value><!-- Upgrade-Quellen --></value>
+    </caseValues>
+    <fields>
+        <help>Geben Sie das Produkt an, von dem aus das Upgrade durchgeführt werden soll.</help>
+        <label><!-- Source Product --></label>
+        <name>SBQQ__SourceProduct__c</name>
+        <relationshipLabel><!-- Available Upgrade Sources --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Geben Sie ein Verhältnis für die Mengenkonvertierung von &quot;Upgrade-Quelle&quot; zu &quot;Upgrade-Produkt&quot; an. Beispiel: ein Verhältnis von &quot;5:1&quot; gibt an, dass 5 Einheiten der Upgrade-Quelle in 1 Einheit des Upgrade-Produkts konvertiert werden. Wenn dieses Feld leer ist, wird keine Upgrade-Konvertierungsrate umgesetzt.</help>
+        <label><!-- Upgrade Conversion Rate --></label>
+        <name>SBQQ__UpgradeConversionRate__c</name>
+    </fields>
+    <fields>
+        <help>Geben Sie das Produkt an, auf das das Upgrade durchgeführt werden soll.</help>
+        <label><!-- Upgrade Product --></label>
+        <name>SBQQ__UpgradeProduct__c</name>
+        <relationshipLabel><!-- Upgrade Sources --></relationshipLabel>
+    </fields>
+    <gender>Feminine</gender>
+    <layouts>
+        <layout>Upgrade Source Layout</layout>
+        <sections>
+            <label>Benutzerdefinierte Links</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Name der Quelle</nameFieldLabel>
+    <validationRules>
+        <errorMessage><!-- Conversion Rate must be represented as a ratio of the format &quot;Upgrade Source:Upgrade Product&quot;. --></errorMessage>
+        <name>SBQQ__Conversion_Rate_Must_Fit_Ratio_Format</name>
+    </validationRules>
+</CustomObjectTranslation>

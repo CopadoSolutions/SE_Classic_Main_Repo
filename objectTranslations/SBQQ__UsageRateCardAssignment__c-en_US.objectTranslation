@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- The product that this rate card assignment covers --></help>
+        <label><!-- Product --></label>
+        <name>SBQQ__Product__c</name>
+        <relationshipLabel><!-- Usage Rate Card Assignments --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- The usage rate card associated with this order product --></help>
+        <label><!-- Usage Rate Card --></label>
+        <name>SBQQ__UsageRateCard__c</name>
+        <relationshipLabel><!-- Usage Rate Card Assignments --></relationshipLabel>
+    </fields>
+    <layouts>
+        <layout>Usage Rate Card Assignment Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+</CustomObjectTranslation>

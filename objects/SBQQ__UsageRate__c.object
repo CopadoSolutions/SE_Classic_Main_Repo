@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <description>This object is under development.</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>false</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ControlledByParent</externalSharingModel>
+    <fields>
+        <fullName>SBQQ__Description__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Description</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__LowerBound__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Lower bound of the usage range for this usage rate</inlineHelpText>
+        <label>Lower Bound</label>
+        <precision>12</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SBQQ__PriceBook__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Choose a price book for this usage rate to reference</inlineHelpText>
+        <label>Price Book</label>
+        <referenceTo>Pricebook2</referenceTo>
+        <relationshipLabel>Usage Rates</relationshipLabel>
+        <relationshipName>UsageRates</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__PriceType__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Price Type</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Per Unit</fullName>
+                    <default>false</default>
+                    <label>Per Unit</label>
+                </value>
+                <value>
+                    <fullName>Flat Fee</fullName>
+                    <default>false</default>
+                    <label>Flat Fee</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SBQQ__Price__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Price for the active currency. Use this field in multi-currency orgs.</inlineHelpText>
+        <label>Price</label>
+        <precision>14</precision>
+        <required>false</required>
+        <scale>7</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__UpperBound__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Upper bound of the usage range for this usage rate</inlineHelpText>
+        <label>Upper Bound</label>
+        <precision>12</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SBQQ__UsagePriceMethod__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Usage Price Method</label>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Per Unit</fullName>
+                    <default>false</default>
+                    <label>Per Unit</label>
+                </value>
+                <value>
+                    <fullName>Included Quantity</fullName>
+                    <default>false</default>
+                    <label>Included Quantity</label>
+                </value>
+                <value>
+                    <fullName>Usage Floor Quantity (Minimum)</fullName>
+                    <default>false</default>
+                    <label>Usage Floor Quantity (Minimum)</label>
+                </value>
+                <value>
+                    <fullName>Usage Ceiling Quantity (Maximum)</fullName>
+                    <default>false</default>
+                    <label>Usage Ceiling Quantity (Maximum)</label>
+                </value>
+                <value>
+                    <fullName>Overage (per unit)</fullName>
+                    <default>false</default>
+                    <label>Overage (per unit)</label>
+                </value>
+                <value>
+                    <fullName>Period High Water Mark</fullName>
+                    <default>false</default>
+                    <label>Period High Water Mark</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SBQQ__UsageProcessingOrder__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Define a number for Salesforce Billing to use when ordering usage rates for processing</inlineHelpText>
+        <label>Usage Processing Order</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SBQQ__UsageRateCard__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Parent usage rate card for this usage rate</inlineHelpText>
+        <label>Usage Rate Card</label>
+        <referenceTo>SBQQ__UsageRateCard__c</referenceTo>
+        <relationshipLabel>Usage Rates</relationshipLabel>
+        <relationshipName>UsageRates</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>true</reparentableMasterDetail>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <label>Usage Rate (Reserved)</label>
+    <nameField>
+        <displayFormat>UR-{000}</displayFormat>
+        <label>Usage Rate</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Usage Rates (Reserved)</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

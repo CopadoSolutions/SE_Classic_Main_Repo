@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Preisklasse</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Preisklassen</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value><!-- Preisklasse --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+        <value><!-- Preisklassen --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value><!-- Preisklasse --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>true</plural>
+        <value><!-- Preisklassen --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value><!-- Preisklasse --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value><!-- Preisklassen --></value>
+    </caseValues>
+    <fields>
+        <help>Rabattbetrag, der zur Anwendung kommt, wenn die Menge in diese Rabattklasse fällt.</help>
+        <label><!-- Discount ({0}) --></label>
+        <name>SBQQ__DiscountAmount__c</name>
+    </fields>
+    <fields>
+        <help>Rabattprozentsatz, der zur Anwendung kommt, wenn die Menge in diese Rabattklasse fällt.</help>
+        <label><!-- Discount (%) --></label>
+        <name>SBQQ__DiscountPercentage__c</name>
+    </fields>
+    <fields>
+        <help>Untere Grenze des Mengenbereichs für diese Rabattklasse.</help>
+        <label><!-- Lower Bound --></label>
+        <name>SBQQ__LowerBound__c</name>
+    </fields>
+    <fields>
+        <help>Nummer, die die Position dieser Rabattklasse innerhalb der Rabattregelung angibt.</help>
+        <label><!-- Number --></label>
+        <name>SBQQ__Number__c</name>
+    </fields>
+    <fields>
+        <help>Der Zonenpreis, aus dem diese Preisklasse stammt.</help>
+        <label><!-- Original Block Price --></label>
+        <name>SBQQ__OriginalBlockPrice__c</name>
+        <relationshipLabel><!-- Price Tiers --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Die Rabattklasse, aus der diese Preisklasse stammt.</help>
+        <label><!-- Original Discount Tier --></label>
+        <name>SBQQ__OriginalDiscountTier__c</name>
+        <relationshipLabel><!-- Price Tiers --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Das Preismodell, das bestimmt, wie die Preise berechnet werden.</help>
+        <label><!-- Price Model --></label>
+        <name>SBQQ__PriceModel__c</name>
+    </fields>
+    <fields>
+        <help>Preisregelung, zu der diese Klasse gehört.</help>
+        <label><!-- Schedule --></label>
+        <name>SBQQ__PriceSchedule__c</name>
+        <relationshipLabel><!-- Price Tiers --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Der tatsächliche Preis dieser Preisklasse. Dieses Feld wird beim Erstellen einer neuen Gruppe von Preisregelungen für einen neuen Auftragsdatensatz ausgefüllt.</help>
+        <label><!-- Price --></label>
+        <name>SBQQ__Price__c</name>
+    </fields>
+    <fields>
+        <help>Der gesamte Laufzeitrabatt, der für diese Klasse angesetzt wird.</help>
+        <label><!-- Term Discount --></label>
+        <name>SBQQ__TermDiscount__c</name>
+    </fields>
+    <fields>
+        <help>Obere Grenze des Mengenbereichs für diese Rabattklasse.</help>
+        <label><!-- Upper Bound --></label>
+        <name>SBQQ__UpperBound__c</name>
+    </fields>
+    <fields>
+        <help>Der gesamte Mengenrabatt, der für diese Klasse angesetzt wird.</help>
+        <label><!-- Volume Discount --></label>
+        <name>SBQQ__VolumnDiscount__c</name>
+    </fields>
+    <gender>Feminine</gender>
+    <layouts>
+        <layout>Price Tier Layout</layout>
+        <sections>
+            <label>Benutzerdefinierte Links</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>Preisinformationen</label>
+            <section>Price Information</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Name der Klasse</nameFieldLabel>
+</CustomObjectTranslation>

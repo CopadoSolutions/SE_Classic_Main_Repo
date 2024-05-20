@@ -213,6 +213,12 @@
         <type>Lookup</type>
     </fields>
     <fields>
+        <fullName>PartnerAccountId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
         <fullName>Pricebook2Id</fullName>
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
@@ -221,6 +227,138 @@
         <fullName>Probability</fullName>
         <trackFeedHistory>false</trackFeedHistory>
         <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>SBQQ__AmendedContract__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>Indicates the relationship to your Amended Contract.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Lookup to your Amended Contract.</inlineHelpText>
+        <label>Amended Contract</label>
+        <referenceTo>Contract</referenceTo>
+        <relationshipLabel>Amendment Opportunities</relationshipLabel>
+        <relationshipName>AmendmentOpportunities</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__Contracted__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Internal flag used to kick off automatic asset and subscription conversion.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Salesforce CPQ uses this field to automatically convert assets and subscriptions.</inlineHelpText>
+        <label>Contracted</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__CreateContractedPrices__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Select this checkbox to create Contracted Prices without creating a Contract.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select this checkbox to create Contracted Prices without creating a Contract.</inlineHelpText>
+        <label>Create Contracted Prices</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__OrderGroupID__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The unique identifier for the Amend:Re-Quote transaction, which is the original primary quote&apos;s ID. This is not a reference.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The unique identifier for the Amend:Re-Quote transaction, which is the original primary quote&apos;s ID.</inlineHelpText>
+        <label>Order Group ID</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SBQQ__Ordered__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Internal flag that drives automatic order creation.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select this checkbox to automatically create an order from the primary quote.</inlineHelpText>
+        <label>Ordered</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__PrimaryQuote__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>Points to primary quote on this opportunity.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Salesforce CPQ uses this to point to the primary quote on this opportunity.</inlineHelpText>
+        <label>Primary Quote</label>
+        <lookupFilter>
+            <active>true</active>
+            <filterItems>
+                <field>$Source.Id</field>
+                <operation>equals</operation>
+                <valueField>SBQQ__Quote__c.SBQQ__Opportunity2__c</valueField>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>SBQQ__Quote__c</referenceTo>
+        <relationshipLabel>Opportunities</relationshipLabel>
+        <relationshipName>PrimaryOpportunities</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__QuotePricebookId__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Custom pricebook ID field that updates the standard Pricebook2Id field. Use to automatically drive pricebook selection from workflow rules.</description>
+        <externalId>false</externalId>
+        <label>Quote Pricebook Id</label>
+        <length>18</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SBQQ__Renewal__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Indicates this opportunity is a renewal opportunity.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Indicates this opportunity is a renewal opportunity.</inlineHelpText>
+        <label>Renewal</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__RenewedContract__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>Contract being renewed by this renewal opportunity. In case opportunity rolls up several contracts this points at the master contract.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Contract being renewed by this renewal opportunity. If the several contracts roll up to this opportunity, this points at the master contract.</inlineHelpText>
+        <label>Renewed Contract</label>
+        <referenceTo>Contract</referenceTo>
+        <relationshipLabel>Renewal Opportunities</relationshipLabel>
+        <relationshipName>RenewalOpportunities</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
     </fields>
     <fields>
         <fullName>StageName</fullName>
@@ -332,4 +470,50 @@
         <searchResultsAdditionalFields>CORE.USERS.ALIAS</searchResultsAdditionalFields>
     </searchLayouts>
     <sharingModel>Read</sharingModel>
+    <webLinks>
+        <fullName>SBQQ__Amend_Assets</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <linkType>url</linkType>
+        <masterLabel>Amend Assets</masterLabel>
+        <openType>replace</openType>
+        <protected>false</protected>
+        <url>../apex/SBQQ__AssetSelector?accountId={!Opportunity.AccountId}&amp;oppId={!Opportunity.Id}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>SBQQ__Amend_Contract</fullName>
+        <availability>online</availability>
+        <description>Redirects to a contract selector page to select contracts to amend.</description>
+        <displayType>button</displayType>
+        <height>600</height>
+        <linkType>page</linkType>
+        <masterLabel>Amend Contract</masterLabel>
+        <openType>sidebar</openType>
+        <page>SBQQ__SelectContractOpp</page>
+        <protected>false</protected>
+    </webLinks>
+    <webLinks>
+        <fullName>SBQQ__CreateOrder</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <height>600</height>
+        <linkType>page</linkType>
+        <masterLabel>Create Order</masterLabel>
+        <openType>noSidebar</openType>
+        <page>SBQQ__GenerateOrder</page>
+        <protected>false</protected>
+    </webLinks>
+    <webLinks>
+        <fullName>SBQQ__Include_Document</fullName>
+        <availability>online</availability>
+        <description>Allow users to attach the PDF to the opportunity</description>
+        <displayType>button</displayType>
+        <height>600</height>
+        <linkType>page</linkType>
+        <masterLabel>Include Document</masterLabel>
+        <openType>sidebar</openType>
+        <page>SBQQ__NewOpportunityRelatedContent</page>
+        <protected>false</protected>
+    </webLinks>
 </CustomObject>

@@ -1,0 +1,50 @@
+<apex:page id="page" standardController="SBQQ__RelatedContent__c" extensions="SBQQ.RelatedContentController" showHeader="{!(!$Setup.SBQQ__GeneralSettings__c.SBQQ__GlobalHeaderPermUsed__c || !$Permission.SBQQ__HideGlobalHeader)}" title="{!$Label.sbqq__lbl_edit_related_content}">
+    <apex:sectionHeader title="Related Content Edit" subtitle="New Related Content"/>
+        
+    <apex:pageMessages id="messages"/>
+        
+    <apex:form id="form">
+        <apex:pageBlock mode="edit" title="Related Content Edit">
+            <apex:pageBlockSection title="Information" columns="1">
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="External Id" for="externalId"/>
+                    <apex:inputField value="{!SBQQ__RelatedContent__c.SBQQ__ExternalId__c}" id="externalId">
+                        <apex:actionSupport event="onchange" action="{!updateDocumentName}" rerender="name, messages"/>
+                    </apex:inputField>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="Document Name" for="name"/>
+                    <apex:inputField value="{!SBQQ__RelatedContent__c.Name}" id="name"/>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem helpText="{!$ObjectType.SBQQ__RelatedContent__c.fields.SBQQ__DisplayOrder__c.inlineHelpText}">
+                    <apex:outputLabel value="Display Order" for="displayOrder"/>
+                    <apex:inputField value="{!SBQQ__RelatedContent__c.SBQQ__DisplayOrder__c}" id="displayOrder"/>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem rendered="{!showTemplateLookup}">
+                    <apex:outputLabel value="Quote Template" for="quoteTemplate"/>
+                    <apex:inputField value="{!SBQQ__RelatedContent__c.SBQQ__QuoteTemplate__c}" id="quoteTemplate"/>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem rendered="{!showProductLookup}">
+                    <apex:outputLabel value="Product" for="product"/>
+                    <apex:inputField value="{!SBQQ__RelatedContent__c.SBQQ__Product__c}" id="product"/>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem rendered="{!showQuoteLookup}" helpText="{!$ObjectType.SBQQ__RelatedContent__c.fields.SBQQ__Quote__c.inlineHelpText}">
+                    <apex:outputLabel value="Quote" for="quote"/>
+                    <apex:inputField value="{!SBQQ__RelatedContent__c.SBQQ__Quote__c}" id="quote"/>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem rendered="{!showOpportunityLookup}" helpText="{!$ObjectType.SBQQ__RelatedContent__c.fields.SBQQ__Opportunity__c.inlineHelpText}">
+                    <apex:outputLabel value="Opportunity" for="opportunity"/>
+                    <apex:inputField value="{!SBQQ__RelatedContent__c.SBQQ__Opportunity__c}" id="opportunity"/>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="Required" for="required"/>
+                    <apex:inputField value="{!SBQQ__RelatedContent__c.SBQQ__Required__c}" id="fontSize"/>
+                </apex:pageBlockSectionItem>
+            </apex:pageBlockSection>
+            <apex:pageBlockButtons id="block">
+                <apex:commandButton value="Save" action="{!onSave}"/>
+                <apex:commandButton value="Cancel" action="{!cancel}"/>
+            </apex:pageBlockButtons>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

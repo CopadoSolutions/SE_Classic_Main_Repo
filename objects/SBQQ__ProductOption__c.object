@@ -1,0 +1,918 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <customHelpPage>SBQQ__ProductOptionHelp</customHelpPage>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <description>Option for a configurable product.</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableEnhancedLookup>false</enableEnhancedLookup>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>Private</externalSharingModel>
+    <fieldSets>
+        <fullName>SBQQ__OptionConfiguration</fullName>
+        <availableFields>
+            <field>SBQQ__Bundled__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>SBQQ__Discount__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>SBQQ__ExistingQuantity__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <description>Determines fields presented to users during option configuration.</description>
+        <displayedFields>
+            <field>SBQQ__Quantity__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>SBQQ__ProductCode__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>SBQQ__ProductName__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>SBQQ__ProductDescription__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>SBQQ__UnitPrice__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <label>OptionConfiguration</label>
+    </fieldSets>
+    <fieldSets>
+        <fullName>SBQQ__OptionLookup</fullName>
+        <availableFields>
+            <field>SBQQ__Bundled__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>SBQQ__Discount__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>SBQQ__ExistingQuantity__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>SBQQ__Quantity__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>SBQQ__UnitPrice__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <description>Determines fields presented to user when looking up option to add.</description>
+        <displayedFields>
+            <field>SBQQ__ProductCode__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>SBQQ__ProductName__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>SBQQ__ProductDescription__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <label>OptionLookup</label>
+    </fieldSets>
+    <fieldSets>
+        <fullName>SBQQ__SearchFilters</fullName>
+        <description>This field set is used in the search filter panel of the Product Configurator.</description>
+        <displayedFields>
+            <field>SBQQ__Feature__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>SBQQ__ProductCode__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>SBQQ__ProductName__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <label>SearchFilters</label>
+    </fieldSets>
+    <fields>
+        <fullName>SBQQ__AppliedImmediatelyContext__c</fullName>
+        <deprecated>false</deprecated>
+        <description>&apos;Apply Immediately on Select&apos; applies changes immediately on selection of product, whereas &apos;Apply Immediately on Quantity Change&apos; does that on change of quantity. &apos;Always&apos; applies changes both the times, on selection of product and on change of quantity.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>&apos;Apply Immediately on Select&apos; applies changes immediately on selection of product, whereas &apos;Apply Immediately on Quantity Change&apos; does that on change of quantity. &apos;Always&apos; applies changes both the times, on selection of product and on change of quantity.</inlineHelpText>
+        <label>Apply Immediately Context</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Always</fullName>
+                    <default>false</default>
+                    <label>Always</label>
+                </value>
+                <value>
+                    <fullName>On Selection</fullName>
+                    <default>false</default>
+                    <label>On Selection</label>
+                </value>
+                <value>
+                    <fullName>On Quantity Change</fullName>
+                    <default>false</default>
+                    <label>On Quantity Change</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SBQQ__AppliedImmediately__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Flag that indicates changes to this option should apply immediately.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select the checkbox to immediately apply changes to this option. Use sparingly to avoid slow user experience.</inlineHelpText>
+        <label>Apply Immediately</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__Bundled__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Indicates that related product is bundled with the main product. Bundled options have fixed quantity and zero price.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select the checkbox to indicate that the related product is bundled with the main product. Bundled options have fixed quantity and zero price as price is included in the main product. Leave this unchecked if the price should be added to the option.</inlineHelpText>
+        <label>Bundled</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__ComponentCodePosition__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Position of this component in the generated product code for the configuration.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Position of this component in the generated product code for the configuration.</inlineHelpText>
+        <label>Component Code Position</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SBQQ__ComponentCode__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Code for the component represented by this option. This is used in conjunction with the Configured Code Pattern field on the Product object.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Code for the component represented by this option.</inlineHelpText>
+        <label>Component Code</label>
+        <length>60</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SBQQ__ComponentDescriptionPosition__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Position of this component in the generated product description for the configuration.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Position of this component in the generated product description for the configuration.</inlineHelpText>
+        <label>Component Description Position</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SBQQ__ComponentDescription__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Description for the component represented by this option. This is used in conjunction with the Configured Description Pattern field on the Product object.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Description for the component represented by this option. This is used in conjunction with the Configured Description Pattern field on the Product object.</inlineHelpText>
+        <label>Component Description</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SBQQ__ConfiguredSKU__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>Product SKU of the bundle that is being configured with this option. If you create the option from the product detail page, this should already be populated.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Product SKU of the bundle that is being configured with this option. If you create the option from the product detail page, this should already be populated.</inlineHelpText>
+        <label>Configured SKU</label>
+        <referenceTo>Product2</referenceTo>
+        <relationshipLabel>Options</relationshipLabel>
+        <relationshipName>Options</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__DefaultPricingTable__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Select the pricing table this product should appear in by default when price dimensions are defined.</inlineHelpText>
+        <label>Default Pricing Table</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Segmented</fullName>
+                    <default>false</default>
+                    <label>Segmented</label>
+                </value>
+                <value>
+                    <fullName>Standard</fullName>
+                    <default>false</default>
+                    <label>Standard</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SBQQ__DiscountAmount__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Discount (Amt), based on the field, when the product referenced for this option is offered standalone. But, you&apos;ll need to extend a discount if purchased a part of this product bundled.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Discount (Amt), based on the field, when the product referenced for this option is offered standalone. But, you&apos;ll need to extend a discount if purchased a part of this product bundled.</inlineHelpText>
+        <label>Discount (Amt)</label>
+        <precision>14</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__DiscountSchedule__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>Discount schedule to be applied to the product selected by this option. This discount schedule overrides the discount schedule selected on the product or feature.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Lookup the discount schedule to be applied to the product selected by this option. This discount schedule overrides the discount schedule selected on the product or feature.</inlineHelpText>
+        <label>Discount Schedule</label>
+        <referenceTo>SBQQ__DiscountSchedule__c</referenceTo>
+        <relationshipLabel>Product Options</relationshipLabel>
+        <relationshipName>ProductOptions</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__Discount__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Discount (%), based on the field, when the product referenced for this option is offered standalone. But, you&apos;ll need to extend a discount if purchased a part of this product bundled.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter a Discount (%), based on the field, when the product referenced for this option is offered standalone. But, you&apos;ll need to extend a discount if purchased a part of this product bundled.</inlineHelpText>
+        <label>Discount (%)</label>
+        <precision>9</precision>
+        <required>false</required>
+        <scale>4</scale>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__DiscountedByPackage__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Indicates that quote lines generated from this component should pick up additional discount from the parent package line. Only percentage based discount can be inherited.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Check to automatically apply additional discount from parent package to this component. Only percentage-based discount can be applied.</inlineHelpText>
+        <label>Discounted By Package</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__ExistingQuantity__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Existing quantity of this product. Computed by looking at the assets attached to the account.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Existing quantity of this product. Computed by looking at the assets attached to the account.</inlineHelpText>
+        <label>Existing Quantity</label>
+        <precision>12</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SBQQ__Feature__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>Feature that selects this option.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter or lookup the feature that includes this option. This will be dependent on the Configured SKU.</inlineHelpText>
+        <label>Feature</label>
+        <lookupFilter>
+            <active>true</active>
+            <filterItems>
+                <field>$Source.SBQQ__ConfiguredSKU__c</field>
+                <operation>equals</operation>
+                <valueField>SBQQ__ProductFeature__c.SBQQ__ConfiguredSKU__c</valueField>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>SBQQ__ProductFeature__c</referenceTo>
+        <relationshipLabel>Product Options</relationshipLabel>
+        <relationshipName>ProductOptions</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__MaxQuantity__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Maximum quantity allowed for this option.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Maximum quantity allowed for this option.</inlineHelpText>
+        <label>Max Quantity</label>
+        <precision>12</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SBQQ__MinQuantity__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Minimum quantity allowed for this option.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Minimum quantity allowed for this option.</inlineHelpText>
+        <label>Min Quantity</label>
+        <precision>12</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SBQQ__Number__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Sequential number that determines this option&apos;s sort order.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Set the display order of this option within the feature it&apos;s assigned to.</inlineHelpText>
+        <label>Number</label>
+        <precision>5</precision>
+        <required>true</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SBQQ__OptionalSKU__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>Product SKU added if this option is selected.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter or lookup the product SKU that should be added when this product is selected.</inlineHelpText>
+        <label>Optional SKU</label>
+        <referenceTo>Product2</referenceTo>
+        <relationshipLabel>Optional For</relationshipLabel>
+        <relationshipName>OptionalFor</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__PriceEditable__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Brings over the value of Price Editable field on the optional SKU in order to avoid loading optional product just to know if the price is editable.</description>
+        <externalId>false</externalId>
+        <formula>IF(SBQQ__OptionalSKU__r.SBQQ__PriceEditable__c, &apos;Yes&apos;, &apos;No&apos;)</formula>
+        <inlineHelpText>Select to mark the price as editable, allowing users to make changes to option prices.</inlineHelpText>
+        <label>Price Editable</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SBQQ__ProductCode__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Product Code for the optional product SKU.</description>
+        <externalId>false</externalId>
+        <formula>SBQQ__OptionalSKU__r.ProductCode</formula>
+        <inlineHelpText>Product Code for the optional product SKU.</inlineHelpText>
+        <label>Product Code</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SBQQ__ProductConfigurationType__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Pulls in the value of Configuration Type on Product object in order to avoid loading related product record.</description>
+        <externalId>false</externalId>
+        <formula>TEXT(SBQQ__OptionalSKU__r.SBQQ__ConfigurationType__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Pulls in the value of Configuration Type on Product object in order to avoid loading related product record.</inlineHelpText>
+        <label>Product Configuration Type</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SBQQ__ProductDescription__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Description for the optional SKU.</description>
+        <externalId>false</externalId>
+        <formula>SBQQ__OptionalSKU__r.Description</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Description for the optional SKU.</inlineHelpText>
+        <label>Product Description</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SBQQ__ProductFamily__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Product Family for the optional product SKU.</description>
+        <externalId>false</externalId>
+        <formula>TEXT(SBQQ__OptionalSKU__r.Family)</formula>
+        <inlineHelpText>Product Family for the optional product SKU.</inlineHelpText>
+        <label>Product Family</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SBQQ__ProductName__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Name for the optional SKU.</description>
+        <externalId>false</externalId>
+        <formula>SBQQ__OptionalSKU__r.Name</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Name for the optional SKU.</inlineHelpText>
+        <label>Product Name</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SBQQ__ProductQuantityScale__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Specifies the number of decimal places used in the Quantity field.</description>
+        <externalId>false</externalId>
+        <formula>SBQQ__OptionalSKU__r.SBQQ__QuantityScale__c</formula>
+        <inlineHelpText>Specifies the number of decimal places used in the Quantity field.</inlineHelpText>
+        <label>Product Quantity Scale</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SBQQ__ProductSubscriptionPricing__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Type of pricing to use for this subscription. &quot;None&quot; means this product is not a subscription.</description>
+        <externalId>false</externalId>
+        <formula>TEXT(SBQQ__OptionalSKU__r.SBQQ__SubscriptionPricing__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Type of pricing to use for this subscription. &quot;None&quot; means this product is not a subscription.</inlineHelpText>
+        <label>Product Subscription Pricing</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SBQQ__QuantityEditable__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Flag that determines whether option quantity is editable regardless of Quantity being specified.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Check to allow quantity to be edited even though it&apos;s specified on the option.</inlineHelpText>
+        <label>Quantity Editable</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__Quantity__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Quantity of the related product that should be added to the quote.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Quantity of the related product that should be added to the quote.</inlineHelpText>
+        <label>Quantity</label>
+        <precision>12</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SBQQ__QuoteLineVisibility__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Determines when quote line generated by this option is visible. If your product bundle components are only used to calculate the price of the bundle, you can hide components from users by using this field.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Configure visibility of quote line generated by this option.</inlineHelpText>
+        <label>Quote Line Visibility</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Always</fullName>
+                    <default>false</default>
+                    <label>Always</label>
+                </value>
+                <value>
+                    <fullName>Editor Only</fullName>
+                    <default>false</default>
+                    <label>Editor Only</label>
+                </value>
+                <value>
+                    <fullName>Document Only</fullName>
+                    <default>false</default>
+                    <label>Document Only</label>
+                </value>
+                <value>
+                    <fullName>Never</fullName>
+                    <default>false</default>
+                    <label>Never</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SBQQ__RenewalProductOption__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>Product option that replaces this product option on renewal.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Product option that replaces this product option on renewal. Use this to quote a different SKU when renewing.</inlineHelpText>
+        <label>Renewal Product Option</label>
+        <referenceTo>SBQQ__ProductOption__c</referenceTo>
+        <relationshipLabel>Product Options</relationshipLabel>
+        <relationshipName>ProductOptions</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__Required__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Flag that indicates whether this component is required or not.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select the checkbox if this product is required on the bundle.</inlineHelpText>
+        <label>Required</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__Selected__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Indicates this option should be selected by default.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select the checkbox if this product option should be automatically selected by default.</inlineHelpText>
+        <label>Selected</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__SubscriptionScope__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Specifies percent of total calculation scope for percent of total priced products added as product options.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Choose how this percent of total product option is calculated. Package is specific to the parent product. Components is specific to sibling components. Both is specific to the parent and sibling components.</inlineHelpText>
+        <label>Percent of Total Scope</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Package</fullName>
+                    <default>false</default>
+                    <label>Package</label>
+                </value>
+                <value>
+                    <fullName>Components</fullName>
+                    <default>false</default>
+                    <label>Components</label>
+                </value>
+                <value>
+                    <fullName>Both</fullName>
+                    <default>false</default>
+                    <label>Both</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SBQQ__System__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Marks this option as managed by the system which means users can not manually select or deselect.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select the checkbox to indicate this option is managed by the system which makes it unavailable for user selection.</inlineHelpText>
+        <label>System</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__Type__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Type of this option.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Use &quot;Component&quot; if this option, including quantity, is dependent on parent. Use&quot; Accessory&quot; if this option is dependent on parent but quantity is independent. Use &quot;Related Product&quot; for related but fully independent products.</inlineHelpText>
+        <label>Type</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Component</fullName>
+                    <default>true</default>
+                    <label>Component</label>
+                </value>
+                <value>
+                    <fullName>Accessory</fullName>
+                    <default>false</default>
+                    <label>Accessory</label>
+                </value>
+                <value>
+                    <fullName>Related Product</fullName>
+                    <default>false</default>
+                    <label>Related Product</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SBQQ__UnitPrice__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Unit price for this option. This will override the value from price book.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Unit price for this option. This will override the value from price book.</inlineHelpText>
+        <label>Unit Price</label>
+        <precision>14</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__UpliftedByPackage__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Check to automatically apply uplift from parent package to this component. Only applies to components that are multi-segmented products.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Check to automatically apply uplift from parent package to this component. Only applies to components that are multi-segmented products.</inlineHelpText>
+        <label>Uplifted By Package</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <label>Product Option</label>
+    <nameField>
+        <displayFormat>PO-{000000}</displayFormat>
+        <label>Option Name</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Product Options</pluralLabel>
+    <searchLayouts>
+        <lookupDialogsAdditionalFields>SBQQ__ConfiguredSKU__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>SBQQ__Feature__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>SBQQ__Number__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>SBQQ__OptionalSKU__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>SBQQ__Quantity__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>SBQQ__Bundled__c</lookupDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>SBQQ__ConfiguredSKU__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>SBQQ__Feature__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>SBQQ__Number__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>SBQQ__OptionalSKU__c</lookupPhoneDialogsAdditionalFields>
+        <searchFilterFields>NAME</searchFilterFields>
+        <searchFilterFields>SBQQ__ConfiguredSKU__c</searchFilterFields>
+        <searchFilterFields>SBQQ__Number__c</searchFilterFields>
+        <searchFilterFields>SBQQ__Feature__c</searchFilterFields>
+        <searchFilterFields>SBQQ__OptionalSKU__c</searchFilterFields>
+        <searchFilterFields>SBQQ__Bundled__c</searchFilterFields>
+        <searchFilterFields>SBQQ__Quantity__c</searchFilterFields>
+        <searchFilterFields>SBQQ__Discount__c</searchFilterFields>
+        <searchFilterFields>UPDATEDBY_USER</searchFilterFields>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+    <validationRules>
+        <fullName>SBQQ__Apply_Immediately_Context_Validation</fullName>
+        <active>true</active>
+        <description>The &apos;Apply Immediately&apos; field must be checked before providing an &apos;Apply Immediately Context&apos;. Otherwise, please change the &apos;Apply Immediately Context&apos; field to ‘None&apos;.</description>
+        <errorConditionFormula>AND(TEXT(SBQQ__AppliedImmediatelyContext__c) != null, SBQQ__AppliedImmediately__c == false)</errorConditionFormula>
+        <errorMessage>The &apos;Apply Immediately&apos; field must be checked before providing an &apos;Apply Immediately Context&apos;. Otherwise, please change the &apos;Apply Immediately Context&apos; field to ‘None&apos;.</errorMessage>
+    </validationRules>
+    <visibility>Public</visibility>
+    <webLinks>
+        <fullName>SBQQ__Translate</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <height>600</height>
+        <linkType>url</linkType>
+        <masterLabel>Translate</masterLabel>
+        <openType>noSidebar</openType>
+        <protected>false</protected>
+        <url>/apex/SBQQ__Translations?targetObject=ProductOption&amp;targetId={!SBQQ__ProductOption__c.Id}&amp;supportUserDefined=false&amp;supportStandard=true</url>
+    </webLinks>
+</CustomObject>

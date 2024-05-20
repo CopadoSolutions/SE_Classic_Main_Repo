@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- Color of table borders expressed as a hexadecimal value. --></help>
+        <label><!-- Border Color --></label>
+        <name>SBQQ__BorderColor__c</name>
+    </fields>
+    <fields>
+        <help><!-- Margin left at the bottom of this section. --></help>
+        <label><!-- Bottom Margin --></label>
+        <name>SBQQ__BottomMargin__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select the checkbox to hide the column header. Only applies to sections pointing to template content of type &quot;Line Items&quot;. --></help>
+        <label><!-- Hide Column Header --></label>
+        <name>SBQQ__ColumnHeaderHidden__c</name>
+    </fields>
+    <fields>
+        <help><!-- Field on quote object that controls whether this section prints on generated PDF documents. --></help>
+        <label><!-- Conditional Print Field --></label>
+        <name>SBQQ__ConditionalPrintField__c</name>
+        <picklistValues>
+            <masterLabel>Group Line Items</masterLabel>
+            <translation><!-- Group Line Items --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Primary</masterLabel>
+            <translation><!-- Primary --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Select the template content to display in this template section. --></help>
+        <label><!-- Content --></label>
+        <name>SBQQ__Content__c</name>
+        <relationshipLabel><!-- Template Sections --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Specify the order (top down) in which this section is rendered relative to other sections on the template. --></help>
+        <label><!-- Display Order --></label>
+        <name>SBQQ__DisplayOrder__c</name>
+    </fields>
+    <fields>
+        <help><!-- Field used to filter records rendered by this section. --></help>
+        <label><!-- Filter Field --></label>
+        <name>SBQQ__FilterField__c</name>
+        <picklistValues>
+            <masterLabel>Optional</masterLabel>
+            <translation><!-- Optional --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Operator used for filtering records rendered by this section. --></help>
+        <label><!-- Filter Operator --></label>
+        <name>SBQQ__FilterOperator__c</name>
+        <picklistValues>
+            <masterLabel>contains</masterLabel>
+            <translation><!-- contains --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ends with</masterLabel>
+            <translation><!-- ends with --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>equals</masterLabel>
+            <translation><!-- equals --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>greater or equals</masterLabel>
+            <translation><!-- greater or equals --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>greater than</masterLabel>
+            <translation><!-- greater than --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>less or equals</masterLabel>
+            <translation><!-- less or equals --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>less than</masterLabel>
+            <translation><!-- less than --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>not equals</masterLabel>
+            <translation><!-- not equals --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>starts with</masterLabel>
+            <translation><!-- starts with --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Value used in filtering records rendered by this section. --></help>
+        <label><!-- Filter Value --></label>
+        <name>SBQQ__FilterValue__c</name>
+    </fields>
+    <fields>
+        <help><!-- Specify field used in grouping lines rendered by this section. Only applicable to Line Items section. --></help>
+        <label><!-- Group Field --></label>
+        <name>SBQQ__GroupField__c</name>
+        <picklistValues>
+            <masterLabel>Product Family</masterLabel>
+            <translation><!-- Product Family --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Subscription Category</masterLabel>
+            <translation><!-- Subscription Category --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Specifies whether an attempt should be made to keep contents together on the same page. --></help>
+        <label><!-- Keep Together --></label>
+        <name>SBQQ__KeepTogether__c</name>
+        <picklistValues>
+            <masterLabel>Always</masterLabel>
+            <translation><!-- Always --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Auto</masterLabel>
+            <translation><!-- Auto --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Specifies whether an attempt should be made to keep contents together on the same page with next block of content. --></help>
+        <label><!-- Keep With Next --></label>
+        <name>SBQQ__KeepWithNext__c</name>
+        <picklistValues>
+            <masterLabel>Always</masterLabel>
+            <translation><!-- Always --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Auto</masterLabel>
+            <translation><!-- Auto --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Specifies whether an attempt should be made to keep contents together on the same page with previous block of content. --></help>
+        <label><!-- Keep With Previous --></label>
+        <name>SBQQ__KeepWithPrevious__c</name>
+        <picklistValues>
+            <masterLabel>Always</masterLabel>
+            <translation><!-- Always --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Auto</masterLabel>
+            <translation><!-- Auto --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Specifies whether page break should be inserted before, after or both before/after this content. --></help>
+        <label><!-- Page Break --></label>
+        <name>SBQQ__PageBreak__c</name>
+        <picklistValues>
+            <masterLabel>After</masterLabel>
+            <translation><!-- After --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Before</masterLabel>
+            <translation><!-- Before --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Both</masterLabel>
+            <translation><!-- Both --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Select the checkbox to print quote totals after this section. Only applicable to Line Items sections. --></help>
+        <label><!-- Print Quote Totals --></label>
+        <name>SBQQ__QuoteTotalsPrinted__c</name>
+    </fields>
+    <fields>
+        <help><!-- Quote line field used for roll-up. All lines where this field returns the same value will be rolled up into the first line where the value occurs. --></help>
+        <label><!-- Roll-Up Field --></label>
+        <name>SBQQ__RollUpField__c</name>
+        <picklistValues>
+            <masterLabel>Product</masterLabel>
+            <translation><!-- Product --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Choose &quot;Always&quot; to display subtotal, discounts and grand total regardless of any other settings. Choose &quot;Never&quot; to never display regardless of other settings. Leaving this field blank will render summary as defined by template fields. --></help>
+        <label><!-- Summary Display --></label>
+        <name>SBQQ__SummaryDisplay__c</name>
+        <picklistValues>
+            <masterLabel>Always</masterLabel>
+            <translation><!-- Always --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Never</masterLabel>
+            <translation><!-- Never --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Quote template that uses this template section. --></help>
+        <label><!-- Template --></label>
+        <name>SBQQ__Template__c</name>
+        <relationshipLabel><!-- Sections --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Margin left at the top of this section. --></help>
+        <label><!-- Top Margin --></label>
+        <name>SBQQ__TopMargin__c</name>
+    </fields>
+    <layouts>
+        <layout>Template Section Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Filtering Information --></label>
+            <section>Filtering Information</section>
+        </sections>
+        <sections>
+            <label><!-- Page Breaks --></label>
+            <section>Page Breaks</section>
+        </sections>
+    </layouts>
+    <webLinks>
+        <label><!-- IncludeDocument --></label>
+        <name>SBQQ__IncludeDocument</name>
+    </webLinks>
+</CustomObjectTranslation>

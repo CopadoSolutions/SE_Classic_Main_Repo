@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>New</fullName>
+        <default>false</default>
+        <label>New</label>
+    </customValue>
+    <customValue>
+        <fullName>Quantity Increase</fullName>
+        <default>false</default>
+        <label>Quantity Increase</label>
+    </customValue>
+    <customValue>
+        <fullName>Quantity Decrease</fullName>
+        <default>false</default>
+        <label>Quantity Decrease</label>
+    </customValue>
+    <customValue>
+        <fullName>Product Swap</fullName>
+        <default>false</default>
+        <label>Product Swap</label>
+    </customValue>
+    <customValue>
+        <fullName>Renew</fullName>
+        <default>false</default>
+        <label>Renew</label>
+    </customValue>
+    <customValue>
+        <fullName>Cancel</fullName>
+        <default>false</default>
+        <label>Cancel</label>
+    </customValue>
+    <description>Contract actions</description>
+    <masterLabel>Contract Action</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

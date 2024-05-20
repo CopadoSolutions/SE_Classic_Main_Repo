@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Source de mise à niveau</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Sources de mise à niveau</value>
+    </caseValues>
+    <fields>
+        <help>Spécifiez le produit depuis lequel mettre à niveau.</help>
+        <label><!-- Source Product --></label>
+        <name>SBQQ__SourceProduct__c</name>
+        <relationshipLabel><!-- Available Upgrade Sources --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Spécifiez un ratio pour la conversion de la quantité depuis la Source de mise à niveau vers Produit de mise à niveau. Par exemple, « 5:1 » indique que cinq unités de source de mise à niveau sont converties en une unité de produit de mise à niveau. Si ce champ est vide, aucun taux de conversion de mise à niveau n&apos;est appliqué.</help>
+        <label><!-- Upgrade Conversion Rate --></label>
+        <name>SBQQ__UpgradeConversionRate__c</name>
+    </fields>
+    <fields>
+        <help>Spécifiez le produit vers lequel mettre à niveau.</help>
+        <label><!-- Upgrade Product --></label>
+        <name>SBQQ__UpgradeProduct__c</name>
+        <relationshipLabel><!-- Upgrade Sources --></relationshipLabel>
+    </fields>
+    <gender>Feminine</gender>
+    <layouts>
+        <layout>Upgrade Source Layout</layout>
+        <sections>
+            <label>Liens personnalisés</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Nom de la source</nameFieldLabel>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Conversion Rate must be represented as a ratio of the format &quot;Upgrade Source:Upgrade Product&quot;. --></errorMessage>
+        <name>SBQQ__Conversion_Rate_Must_Fit_Ratio_Format</name>
+    </validationRules>
+</CustomObjectTranslation>

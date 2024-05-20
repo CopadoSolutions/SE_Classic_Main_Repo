@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Variable de resumen</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Variables de resumen</value>
+    </caseValues>
+    <fields>
+        <help>Partida de presupuesto sobre la que actúa la función agregada.</help>
+        <label><!-- Aggregate Field --></label>
+        <name>SBQQ__AggregateField__c</name>
+        <picklistValues>
+            <masterLabel>Quantity</masterLabel>
+            <translation>Cantidad</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Función agregada empleada para calcular esta variable.</help>
+        <label><!-- Aggregate Function --></label>
+        <name>SBQQ__AggregateFunction__c</name>
+        <picklistValues>
+            <masterLabel>Average</masterLabel>
+            <translation>Media</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Count</masterLabel>
+            <translation>Conteo</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Max</masterLabel>
+            <translation>Máximo</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Min</masterLabel>
+            <translation>Mínimo</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sum</masterLabel>
+            <translation>Suma</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Otra variable de resumen para componer con esta variable de resumen si su condición se basa en ambos resultados.</help>
+        <label><!-- Variable Element --></label>
+        <name>SBQQ__CombineWith__c</name>
+        <relationshipLabel><!-- Composed By --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Especifique el modo de componer esta variable con Elemento variable o Elemento valor.</help>
+        <label><!-- Composite Operator --></label>
+        <name>SBQQ__CompositeOperator__c</name>
+        <picklistValues>
+            <masterLabel>Add</masterLabel>
+            <translation>Agregar</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Divide</masterLabel>
+            <translation>Dividir</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Multiply</masterLabel>
+            <translation>Multiplicar</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Subtract</masterLabel>
+            <translation>Restar</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Si desea limitar más los registros en base a un campo de presupuesto, seleccione el campo con el que desea hacer coincidir el mismo campo en el presupuesto.</help>
+        <label><!-- Constraint Field --></label>
+        <name>SBQQ__ConstraintField__c</name>
+        <picklistValues>
+            <masterLabel>Status</masterLabel>
+            <translation>Estado</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Type</masterLabel>
+            <translation>Tipo</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Seleccione el campo que hay que utilizar cuando se filtran elementos para la inclusión en esta variable de resumen.</help>
+        <label><!-- Filter Field --></label>
+        <name>SBQQ__FilterField__c</name>
+        <picklistValues>
+            <masterLabel>Product Code</masterLabel>
+            <translation>Código del producto</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product Family</masterLabel>
+            <translation>Familia de productos</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Ingrese el valor de coincidencia en este filtro.</help>
+        <label><!-- Filter Value --></label>
+        <name>SBQQ__FilterValue__c</name>
+    </fields>
+    <fields>
+        <help>Seleccione el operador para utilizar en su filtro.</help>
+        <label><!-- Operator --></label>
+        <name>SBQQ__Operator__c</name>
+        <picklistValues>
+            <masterLabel>contains</masterLabel>
+            <translation>contiene</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ends with</masterLabel>
+            <translation>termina por</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>equals</masterLabel>
+            <translation>igual a</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>greater or equals</masterLabel>
+            <translation>mayor o igual</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>greater than</masterLabel>
+            <translation>mayor que</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>less or equals</masterLabel>
+            <translation>menor o igual</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>less than</masterLabel>
+            <translation>menor que</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>not equals</masterLabel>
+            <translation>no igual a</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>starts with</masterLabel>
+            <translation>comienza por</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Ingrese el ámbito de su variable de resumen.</help>
+        <label><!-- Scope --></label>
+        <name>SBQQ__Scope__c</name>
+        <picklistValues>
+            <masterLabel>Assets</masterLabel>
+            <translation>Activos</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quote</masterLabel>
+            <translation>Presupuesto</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Seleccione el objeto que desea agregar.</help>
+        <label><!-- Target Object --></label>
+        <name>SBQQ__TargetObject__c</name>
+        <picklistValues>
+            <masterLabel>Asset</masterLabel>
+            <translation>Activo</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product Option</masterLabel>
+            <translation>Opción de producto</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quote Line</masterLabel>
+            <translation>Partida de presupuesto</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Subscription</masterLabel>
+            <translation>Suscripción</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Ingrese un valor para utilizar al componer la operación.</help>
+        <label><!-- Value Element --></label>
+        <name>SBQQ__ValueElement__c</name>
+    </fields>
+    <gender>Feminine</gender>
+    <layouts>
+        <layout>Summary Variable Layout</layout>
+        <sections>
+            <label>Información compuesta</label>
+            <section>Composite Information</section>
+        </sections>
+        <sections>
+            <label>Vínculos personalizados</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>Información de filtro</label>
+            <section>Filter Information</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Nombre de variable</nameFieldLabel>
+</CustomObjectTranslation>
