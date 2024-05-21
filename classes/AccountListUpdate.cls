@@ -5,7 +5,7 @@ public without sharing class AccountListUpdate {
    		for ( Account ac : accounts ) {
       		ac.name = 'First Account';
             accs.add(ac);
-            System.debug('Hello');
+            System.debug('Hello Test 123');
    		}
         try {
             
